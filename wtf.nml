@@ -1,0 +1,523 @@
+//Error: Line 98 (5 in this paste): Read beyond bounds of image file gfx_32bpp/MAG_FLATBED_0000.png
+
+
+
+    template template_wagon16(x, y) {
+        [  0+164*x, 21*y,  10, 20,  -4, -14]
+        [ 11+164*x, 21*y, 20, 16,  -9, -11]
+        [ 32+164*x, 21*y, 23, 16,  -6,  -12]
+        [ 61+164*x, 21*y, 20, 16,  -1,  -7]
+        [ 82+164*x, 21*y,  10, 20,  -4,  -6]
+        [ 93+164*x, 21*y, 20, 16, -17,  -7]
+        [114+164*x, 21*y, 23, 16, -22,  -12]
+        [143+164*x, 21*y, 20, 16,  -9, -11]
+    }
+     
+     
+    spriteset(spriteset_maglevflatbed_bricks, "gfx/maglevflatbed.png") { template_wagon16(0,2) }
+    spriteset(spriteset_maglevflatbed_batteries, "gfx/maglevflatbed.png") { template_wagon16(0,3) }
+    spriteset(spriteset_maglevflatbed_bubbles, "gfx/maglevflatbed.png") { template_wagon16(0,4) }
+    spriteset(spriteset_maglevflatbed_fizzydrinks, "gfx/maglevflatbed.png") { template_wagon16(0,5) }
+    spriteset(spriteset_maglevflatbed_foodblue, "gfx/maglevflatbed.png") { template_wagon16(0,6) }
+    spriteset(spriteset_maglevflatbed_foodgreen, "gfx/maglevflatbed.png") { template_wagon16(0,7) }
+    spriteset(spriteset_maglevflatbed_foodred, "gfx/maglevflatbed.png") { template_wagon16(0,8) }
+    spriteset(spriteset_maglevflatbed_foodyellow, "gfx/maglevflatbed.png") { template_wagon16(0,9) }
+    spriteset(spriteset_maglevflatbed_fruitoranges, "gfx/maglevflatbed.png") { template_wagon16(0,10) }
+    spriteset(spriteset_maglevflatbed_fruitstrawberries, "gfx/maglevflatbed.png") { template_wagon16(0,11) }
+    spriteset(spriteset_maglevflatbed_glass, "gfx/maglevflatbed.png") { template_wagon16(0,12) }
+    spriteset(spriteset_maglevflatbed_goodsblue, "gfx/maglevflatbed.png") { template_wagon16(0,13) }
+    spriteset(spriteset_maglevflatbed_goodsgreen, "gfx/maglevflatbed.png") { template_wagon16(0,14) }
+    spriteset(spriteset_maglevflatbed_goodspurple, "gfx/maglevflatbed.png") { template_wagon16(0,15) }
+    spriteset(spriteset_maglevflatbed_goodspink, "gfx/maglevflatbed.png") { template_wagon16(0,16) }
+    spriteset(spriteset_maglevflatbed_goodsgray, "gfx/maglevflatbed.png") { template_wagon16(0,17) }
+    spriteset(spriteset_maglevflatbed_goodslumber, "gfx/maglevflatbed.png") { template_wagon16(0,18) }
+    spriteset(spriteset_maglevflatbed_goodscrates, "gfx/maglevflatbed.png") { template_wagon16(0,19) }
+    spriteset(spriteset_maglevflatbed_goodsbarrels, "gfx/maglevflatbed.png") { template_wagon16(0,20) }
+    spriteset(spriteset_maglevflatbed_livestockducks1, "gfx/maglevflatbed.png") { template_wagon16(0,21) }
+    spriteset(spriteset_maglevflatbed_livestockducks2, "gfx/maglevflatbed.png") { template_wagon16(0,22) }
+    spriteset(spriteset_maglevflatbed_livestockcows, "gfx/maglevflatbed.png") { template_wagon16(0,23) }
+    spriteset(spriteset_maglevflatbed_livestockpigs, "gfx/maglevflatbed.png") { template_wagon16(0,24) }
+    spriteset(spriteset_maglevflatbed_livestocksheep, "gfx/maglevflatbed.png") { template_wagon16(0,25) }
+    spriteset(spriteset_maglevflatbed_paper, "gfx/maglevflatbed.png") { template_wagon16(0,26) }
+    spriteset(spriteset_maglevflatbed_steel, "gfx/maglevflatbed.png") { template_wagon16(0,27) }
+    spriteset(spriteset_maglevflatbed_sweetsred, "gfx/maglevflatbed.png") { template_wagon16(0,28) }
+    spriteset(spriteset_maglevflatbed_sweetsyellow, "gfx/maglevflatbed.png") { template_wagon16(0,29) }
+    spriteset(spriteset_maglevflatbed_sweetsgreen, "gfx/maglevflatbed.png") { template_wagon16(0,30) }
+    spriteset(spriteset_maglevflatbed_sweetsblue, "gfx/maglevflatbed.png") { template_wagon16(0,31) }
+    spriteset(spriteset_maglevflatbed_sweetspurple, "gfx/maglevflatbed.png") { template_wagon16(0,32) }
+    spriteset(spriteset_maglevflatbed_toysblue, "gfx/maglevflatbed.png") { template_wagon16(0,33) }
+    spriteset(spriteset_maglevflatbed_toysred, "gfx/maglevflatbed.png") { template_wagon16(0,34) }
+    spriteset(spriteset_maglevflatbed_toysyellow, "gfx/maglevflatbed.png") { template_wagon16(0,35) }
+    spriteset(spriteset_maglevflatbed_toysblack, "gfx/maglevflatbed.png") { template_wagon16(0,36) }
+    spriteset(spriteset_maglevflatbed_toysgreen, "gfx/maglevflatbed.png") { template_wagon16(0,37) }
+    spriteset(spriteset_maglevflatbed_toyswhite, "gfx/maglevflatbed.png") { template_wagon16(0,38) }
+    spriteset(spriteset_maglevflatbed_vehicles1, "gfx/maglevflatbed.png") { template_wagon16(0,39) }
+    spriteset(spriteset_maglevflatbed_vehicles2, "gfx/maglevflatbed.png") { template_wagon16(0,46) }
+    spriteset(spriteset_maglevflatbed_wood, "gfx/maglevflatbed.png") { template_wagon16(0,40) }
+    spriteset(spriteset_maglevflatbed_valu, "gfx/maglevflatbed.png") { template_wagon16(0,41) }
+    spriteset(spriteset_maglevflatbed_diam, "gfx/maglevflatbed.png") { template_wagon16(0,42) }
+    spriteset(spriteset_maglevflatbed_gold, "gfx/maglevflatbed.png") { template_wagon16(0,43) }
+    spriteset(spriteset_maglevflatbed_coffee, "gfx/maglevflatbed.png") { template_wagon16(0,44) }
+    spriteset(spriteset_maglevflatbed_YETI_1, "gfx/maglevflatbed.png") { template_wagon16(0,45) }
+    spriteset(spriteset_maglevflatbed_YETI_2, "gfx/maglevflatbed.png") { template_wagon16(0,45) }
+    spriteset(spriteset_maglevflatbed_YETI_3, "gfx/maglevflatbed.png") { template_wagon16(0,45) }
+    spriteset(spriteset_maglevflatbed_YETI_4, "gfx/maglevflatbed.png") { template_wagon16(0,45) }
+    spriteset(spriteset_maglevflatbed_YETI_5, "gfx/maglevflatbed.png") { template_wagon16(0,45) }
+     
+    spriteset(spriteset_maglevflatbed_empty_batteries, "gfx/maglevflatbed.png") { template_wagon16(1,3) }
+    spriteset(spriteset_maglevflatbed_empty_bubbles, "gfx/maglevflatbed.png") { template_wagon16(1,4) }
+    spriteset(spriteset_maglevflatbed_empty_fizzydrinks, "gfx/maglevflatbed.png") { template_wagon16(1,5) }
+    spriteset(spriteset_maglevflatbed_empty_food, "gfx/maglevflatbed.png") { template_wagon16(1,6) }
+    spriteset(spriteset_maglevflatbed_empty_fruit, "gfx/maglevflatbed.png") { template_wagon16(1,10) }
+    spriteset(spriteset_maglevflatbed_empty_goods, "gfx/maglevflatbed.png") { template_wagon16(1,13) }
+    spriteset(spriteset_maglevflatbed_empty_livestock, "gfx/maglevflatbed.png") { template_wagon16(1,21) }
+    spriteset(spriteset_maglevflatbed_empty_paper, "gfx/maglevflatbed.png") { template_wagon16(1,26) }
+    spriteset(spriteset_maglevflatbed_empty_steel, "gfx/maglevflatbed.png") { template_wagon16(1,27) }
+    spriteset(spriteset_maglevflatbed_empty_toys, "gfx/maglevflatbed.png") { template_wagon16(1,33) }
+    spriteset(spriteset_maglevflatbed_empty_vehicles, "gfx/maglevflatbed.png") { template_wagon16(1,39) }
+    spriteset(spriteset_maglevflatbed_empty_wood, "gfx/maglevflatbed.png") { template_wagon16(1,40) }
+    spriteset(spriteset_maglevflatbed_empty_YETI, "gfx/maglevflatbed.png") { template_wagon16(1,45) }
+
+
+
+
+template template_32bpp_vehicle4_MASK(x,y,z,m) {
+	//x= hexa code y=2nd column  z= filename, m = mask filename
+	[ 128+y*1152, 128*x-y*16384,  128, 128,  -60, -113,z,m]
+	[ 256+y*1152, 128*x-y*16384, 128, 128, -56, -97,z,m]
+	[ 384+y*1152, 128*x-y*16384, 128, 128, -32, -95,z,m]
+	[ 512+y*1152, 128*x-y*16384, 128, 128,  -36, -83,z,m]
+	[ 640+y*1152, 128*x-y*16384,  128, 128,  -60, -82,z,m]
+	[ 768+y*1152, 128*x-y*16384, 128, 128, -87, -81,z,m]
+	[ 896+y*1152, 128*x-y*16384, 128, 128, -95, -95,z,m]
+	[ 1024+y*1152,128*x-y*16384, 128, 128,  -68, -99,z,m]
+}
+
+alternative_sprites (spriteset_maglevflatbed_empty_batteries, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP)		{template_32bpp_vehicle4_MASK(0x00,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_empty_bubbles, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP)			{template_32bpp_vehicle4_MASK(0x10,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_empty_fizzydrinks, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP)		{template_32bpp_vehicle4_MASK(0xC0,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_empty_food, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP)				{template_32bpp_vehicle4_MASK(0x50,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_empty_fruit, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP)			{template_32bpp_vehicle4_MASK(0x20,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_empty_goods, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP)			{template_32bpp_vehicle4_MASK(0x30,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_empty_livestock, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP)		{template_32bpp_vehicle4_MASK(0x70,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_empty_paper, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP)			{template_32bpp_vehicle4_MASK(0x90,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_empty_steel, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP)			{template_32bpp_vehicle4_MASK(0xA0,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_empty_toys, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP)				{template_32bpp_vehicle4_MASK(0xB0,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_empty_vehicles, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP)			{template_32bpp_vehicle4_MASK(0xD0,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_empty_wood, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP)				{template_32bpp_vehicle4_MASK(0xE0,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_empty_YETI, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP)				{template_32bpp_vehicle4_MASK(0xF0,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+
+alternative_sprites (spriteset_maglevflatbed_bricks, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0x39,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_batteries, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0x01,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_bubbles, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0x11,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_fizzydrinks, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 			{template_32bpp_vehicle4_MASK(0xC1,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_foodblue, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0x51,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_foodgreen, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0x52,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_foodred, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0x53,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_foodyellow, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 			{template_32bpp_vehicle4_MASK(0x54,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_fruitoranges, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 			{template_32bpp_vehicle4_MASK(0x21,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_fruitstrawberries, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 		{template_32bpp_vehicle4_MASK(0x22,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_glass, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 					{template_32bpp_vehicle4_MASK(0x3A,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_goodsblue, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0x31,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_goodsgreen, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 			{template_32bpp_vehicle4_MASK(0x32,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_goodspurple, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 			{template_32bpp_vehicle4_MASK(0x33,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_goodspink, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0x34,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_goodsgray, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0x35,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_goodslumber, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 			{template_32bpp_vehicle4_MASK(0x36,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_goodscrates, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 			{template_32bpp_vehicle4_MASK(0x37,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_goodsbarrels, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 			{template_32bpp_vehicle4_MASK(0x38,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_livestockducks1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 		{template_32bpp_vehicle4_MASK(0x71,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_livestockducks2, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 		{template_32bpp_vehicle4_MASK(0x72,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_livestockcows, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 			{template_32bpp_vehicle4_MASK(0x73,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_livestockpigs, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 			{template_32bpp_vehicle4_MASK(0x74,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_livestocksheep, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 		{template_32bpp_vehicle4_MASK(0x75,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_paper, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 					{template_32bpp_vehicle4_MASK(0x91,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_steel, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 					{template_32bpp_vehicle4_MASK(0xA1,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_sweetsred, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0x61,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_sweetsyellow, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 			{template_32bpp_vehicle4_MASK(0x62,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_sweetsgreen, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 			{template_32bpp_vehicle4_MASK(0x63,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_sweetsblue, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 			{template_32bpp_vehicle4_MASK(0x64,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_sweetspurple, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 			{template_32bpp_vehicle4_MASK(0x65,0,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_toysblue, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0xB1,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_toysred, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0xB2,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_toysyellow, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 			{template_32bpp_vehicle4_MASK(0xB3,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_toysblack, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0xB4,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_toysgreen, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0xB5,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_toyswhite, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0xB6,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_vehicles1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0xD1,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_vehicles2, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0xD2,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_wood, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 					{template_32bpp_vehicle4_MASK(0xE1,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_valu, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 					{template_32bpp_vehicle4_MASK(0xC2,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_diam, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 					{template_32bpp_vehicle4_MASK(0xC3,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_gold, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 					{template_32bpp_vehicle4_MASK(0xC4,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_coffee, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0xB7,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_YETI_1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0xF1,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_YETI_2, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0xF2,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_YETI_3, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0xF3,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_YETI_4, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0xF4,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+alternative_sprites (spriteset_maglevflatbed_YETI_5, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 				{template_32bpp_vehicle4_MASK(0xF5,1,"gfx_32bpp/MAG_FLATBED_0000.png","gfx_32bpp/MAG_FLATBED_mask_8bpp.png")}
+
+
+
+     
+    //SPRITEGROUPS
+    spritegroup spritegroup_maglevflatbed_bricks {
+        loading: [spriteset_maglevflatbed_empty_goods, spriteset_maglevflatbed_bricks];
+        loaded:  [spriteset_maglevflatbed_empty_goods, spriteset_maglevflatbed_bricks];
+    }
+    spritegroup spritegroup_maglevflatbed_batteries {
+        loading: [spriteset_maglevflatbed_empty_batteries, spriteset_maglevflatbed_batteries];
+        loaded:  [spriteset_maglevflatbed_empty_batteries, spriteset_maglevflatbed_batteries];
+    }
+    spritegroup spritegroup_maglevflatbed_bubbles {
+        loading: [spriteset_maglevflatbed_empty_bubbles, spriteset_maglevflatbed_bubbles];
+        loaded:  [spriteset_maglevflatbed_empty_bubbles, spriteset_maglevflatbed_bubbles];
+    }
+    spritegroup spritegroup_maglevflatbed_fizzydrinks {
+        loading: [spriteset_maglevflatbed_empty_fizzydrinks, spriteset_maglevflatbed_fizzydrinks];
+        loaded:  [spriteset_maglevflatbed_empty_fizzydrinks, spriteset_maglevflatbed_fizzydrinks];
+    }
+    spritegroup spritegroup_maglevflatbed_foodblue {
+        loading: [spriteset_maglevflatbed_empty_food, spriteset_maglevflatbed_foodblue];
+        loaded:  [spriteset_maglevflatbed_empty_food, spriteset_maglevflatbed_foodblue];
+    }
+    spritegroup spritegroup_maglevflatbed_foodgreen {
+        loading: [spriteset_maglevflatbed_empty_food, spriteset_maglevflatbed_foodgreen];
+        loaded:  [spriteset_maglevflatbed_empty_food, spriteset_maglevflatbed_foodgreen];
+    }
+    spritegroup spritegroup_maglevflatbed_foodred {
+        loading: [spriteset_maglevflatbed_empty_food, spriteset_maglevflatbed_foodred];
+        loaded:  [spriteset_maglevflatbed_empty_food, spriteset_maglevflatbed_foodred];
+    }
+    spritegroup spritegroup_maglevflatbed_foodyellow {
+        loading: [spriteset_maglevflatbed_empty_food, spriteset_maglevflatbed_foodyellow];
+        loaded:  [spriteset_maglevflatbed_empty_food, spriteset_maglevflatbed_foodyellow];
+    }
+    spritegroup spritegroup_maglevflatbed_fruitoranges {
+        loading: [spriteset_maglevflatbed_empty_fruit, spriteset_maglevflatbed_fruitoranges];
+        loaded:  [spriteset_maglevflatbed_empty_fruit, spriteset_maglevflatbed_fruitoranges];
+    }
+    spritegroup spritegroup_maglevflatbed_fruitstrawberries {
+        loading: [spriteset_maglevflatbed_empty_fruit, spriteset_maglevflatbed_fruitstrawberries];
+        loaded:  [spriteset_maglevflatbed_empty_fruit, spriteset_maglevflatbed_fruitstrawberries];
+    }
+    spritegroup spritegroup_maglevflatbed_glass {
+        loading: [spriteset_maglevflatbed_empty_goods, spriteset_maglevflatbed_glass];
+        loaded:  [spriteset_maglevflatbed_empty_goods, spriteset_maglevflatbed_glass];
+    }
+    spritegroup spritegroup_maglevflatbed_goodsblue {
+        loading: [spriteset_maglevflatbed_empty_goods, spriteset_maglevflatbed_goodsblue];
+        loaded:  [spriteset_maglevflatbed_empty_goods, spriteset_maglevflatbed_goodsblue];
+    }
+    spritegroup spritegroup_maglevflatbed_goodsgreen {
+        loading: [spriteset_maglevflatbed_empty_goods, spriteset_maglevflatbed_goodsgreen];
+        loaded:  [spriteset_maglevflatbed_empty_goods, spriteset_maglevflatbed_goodsgreen];
+    }
+    spritegroup spritegroup_maglevflatbed_goodspurple {
+        loading: [spriteset_maglevflatbed_empty_goods, spriteset_maglevflatbed_goodspurple];
+        loaded:  [spriteset_maglevflatbed_empty_goods, spriteset_maglevflatbed_goodspurple];
+    }
+    spritegroup spritegroup_maglevflatbed_goodspink {
+        loading: [spriteset_maglevflatbed_empty_goods, spriteset_maglevflatbed_goodspink];
+        loaded:  [spriteset_maglevflatbed_empty_goods, spriteset_maglevflatbed_goodspink];
+    }
+    spritegroup spritegroup_maglevflatbed_goodsgray {
+        loading: [spriteset_maglevflatbed_empty_goods, spriteset_maglevflatbed_goodsgray];
+        loaded:  [spriteset_maglevflatbed_empty_goods, spriteset_maglevflatbed_goodsgray];
+    }
+    spritegroup spritegroup_maglevflatbed_goodslumber {
+        loading: [spriteset_maglevflatbed_empty_goods, spriteset_maglevflatbed_goodslumber];
+        loaded:  [spriteset_maglevflatbed_empty_goods, spriteset_maglevflatbed_goodslumber];
+    }
+    spritegroup spritegroup_maglevflatbed_goodscrates {
+        loading: [spriteset_maglevflatbed_empty_goods, spriteset_maglevflatbed_goodscrates];
+        loaded:  [spriteset_maglevflatbed_empty_goods, spriteset_maglevflatbed_goodscrates];
+    }
+    spritegroup spritegroup_maglevflatbed_goodsbarrels {
+        loading: [spriteset_maglevflatbed_empty_goods, spriteset_maglevflatbed_goodsbarrels];
+        loaded:  [spriteset_maglevflatbed_empty_goods, spriteset_maglevflatbed_goodsbarrels];
+    }
+    spritegroup spritegroup_maglevflatbed_livestockducks1 {
+        loading: [spriteset_maglevflatbed_empty_livestock, spriteset_maglevflatbed_livestockducks1];
+        loaded:  [spriteset_maglevflatbed_empty_livestock, spriteset_maglevflatbed_livestockducks1];
+    }
+    spritegroup spritegroup_maglevflatbed_livestockducks2 {
+        loading: [spriteset_maglevflatbed_empty_livestock, spriteset_maglevflatbed_livestockducks2];
+        loaded:  [spriteset_maglevflatbed_empty_livestock, spriteset_maglevflatbed_livestockducks2];
+    }
+    spritegroup spritegroup_maglevflatbed_livestockcows {
+        loading: [spriteset_maglevflatbed_empty_livestock, spriteset_maglevflatbed_livestockcows];
+        loaded:  [spriteset_maglevflatbed_empty_livestock, spriteset_maglevflatbed_livestockcows];
+    }
+    spritegroup spritegroup_maglevflatbed_livestockpigs {
+        loading: [spriteset_maglevflatbed_empty_livestock, spriteset_maglevflatbed_livestockpigs];
+        loaded:  [spriteset_maglevflatbed_empty_livestock, spriteset_maglevflatbed_livestockpigs];
+    }
+    spritegroup spritegroup_maglevflatbed_livestocksheep {
+        loading: [spriteset_maglevflatbed_empty_livestock, spriteset_maglevflatbed_livestocksheep];
+        loaded:  [spriteset_maglevflatbed_empty_livestock, spriteset_maglevflatbed_livestocksheep];
+    }
+    spritegroup spritegroup_maglevflatbed_paper {
+        loading: [spriteset_maglevflatbed_empty_paper, spriteset_maglevflatbed_paper];
+        loaded:  [spriteset_maglevflatbed_empty_paper, spriteset_maglevflatbed_paper];
+    }
+    spritegroup spritegroup_maglevflatbed_steel {
+        loading: [spriteset_maglevflatbed_empty_steel, spriteset_maglevflatbed_steel];
+        loaded:  [spriteset_maglevflatbed_empty_steel, spriteset_maglevflatbed_steel];
+    }
+    spritegroup spritegroup_maglevflatbed_sweetsred {
+        loading: [spriteset_maglevflatbed_empty_food, spriteset_maglevflatbed_sweetsred];
+        loaded:  [spriteset_maglevflatbed_empty_food, spriteset_maglevflatbed_sweetsred];
+    }
+    spritegroup spritegroup_maglevflatbed_sweetsyellow {
+        loading: [spriteset_maglevflatbed_empty_food, spriteset_maglevflatbed_sweetsyellow];
+        loaded:  [spriteset_maglevflatbed_empty_food, spriteset_maglevflatbed_sweetsyellow];
+    }
+    spritegroup spritegroup_maglevflatbed_sweetsgreen {
+        loading: [spriteset_maglevflatbed_empty_food, spriteset_maglevflatbed_sweetsgreen];
+        loaded:  [spriteset_maglevflatbed_empty_food, spriteset_maglevflatbed_sweetsgreen];
+    }
+    spritegroup spritegroup_maglevflatbed_sweetsblue {
+        loading: [spriteset_maglevflatbed_empty_food, spriteset_maglevflatbed_sweetsblue];
+        loaded:  [spriteset_maglevflatbed_empty_food, spriteset_maglevflatbed_sweetsblue];
+    }
+    spritegroup spritegroup_maglevflatbed_sweetspurple {
+        loading: [spriteset_maglevflatbed_empty_food, spriteset_maglevflatbed_sweetspurple];
+        loaded:  [spriteset_maglevflatbed_empty_food, spriteset_maglevflatbed_sweetspurple];
+    }
+    spritegroup spritegroup_maglevflatbed_toysblue {
+        loading: [spriteset_maglevflatbed_empty_toys, spriteset_maglevflatbed_toysblue];
+        loaded:  [spriteset_maglevflatbed_empty_toys, spriteset_maglevflatbed_toysblue];
+    }
+    spritegroup spritegroup_maglevflatbed_toysred {
+        loading: [spriteset_maglevflatbed_empty_toys, spriteset_maglevflatbed_toysred];
+        loaded:  [spriteset_maglevflatbed_empty_toys, spriteset_maglevflatbed_toysred];
+    }
+    spritegroup spritegroup_maglevflatbed_toysyellow {
+        loading: [spriteset_maglevflatbed_empty_toys, spriteset_maglevflatbed_toysyellow];
+        loaded:  [spriteset_maglevflatbed_empty_toys, spriteset_maglevflatbed_toysyellow];
+    }
+    spritegroup spritegroup_maglevflatbed_toysgreen {
+        loading: [spriteset_maglevflatbed_empty_toys, spriteset_maglevflatbed_toysgreen];
+        loaded:  [spriteset_maglevflatbed_empty_toys, spriteset_maglevflatbed_toysgreen];
+    }
+    spritegroup spritegroup_maglevflatbed_toysblack {
+        loading: [spriteset_maglevflatbed_empty_toys, spriteset_maglevflatbed_toysblack];
+        loaded:  [spriteset_maglevflatbed_empty_toys, spriteset_maglevflatbed_toysblack];
+    }
+    spritegroup spritegroup_maglevflatbed_toyswhite {
+        loading: [spriteset_maglevflatbed_empty_toys, spriteset_maglevflatbed_toyswhite];
+        loaded:  [spriteset_maglevflatbed_empty_toys, spriteset_maglevflatbed_toyswhite];
+    }
+    spritegroup spritegroup_maglevflatbed_vehicles1 {
+        loading: [spriteset_maglevflatbed_empty_vehicles, spriteset_maglevflatbed_vehicles1];
+        loaded:  [spriteset_maglevflatbed_empty_vehicles, spriteset_maglevflatbed_vehicles1];
+    }
+    spritegroup spritegroup_maglevflatbed_vehicles2 {
+        loading: [spriteset_maglevflatbed_empty_vehicles, spriteset_maglevflatbed_vehicles2];
+        loaded:  [spriteset_maglevflatbed_empty_vehicles, spriteset_maglevflatbed_vehicles2];
+    }
+     
+     
+    spritegroup spritegroup_maglevflatbed_wood {
+        loading: [spriteset_maglevflatbed_empty_wood, spriteset_maglevflatbed_wood];
+        loaded:  [spriteset_maglevflatbed_empty_wood, spriteset_maglevflatbed_wood];
+    }
+    spritegroup spritegroup_maglevflatbed_valu {
+        loading: [spriteset_maglevflatbed_empty_fizzydrinks, spriteset_maglevflatbed_valu];
+        loaded:  [spriteset_maglevflatbed_empty_fizzydrinks, spriteset_maglevflatbed_valu];
+    }
+    spritegroup spritegroup_maglevflatbed_diam {
+        loading: [spriteset_maglevflatbed_empty_fizzydrinks, spriteset_maglevflatbed_diam];
+        loaded:  [spriteset_maglevflatbed_empty_fizzydrinks, spriteset_maglevflatbed_diam];
+    }
+    spritegroup spritegroup_maglevflatbed_gold {
+        loading: [spriteset_maglevflatbed_empty_fizzydrinks, spriteset_maglevflatbed_gold];
+        loaded:  [spriteset_maglevflatbed_empty_fizzydrinks, spriteset_maglevflatbed_gold];
+    }
+     
+    spritegroup spritegroup_maglevflatbed_coffee {
+        loading: [spriteset_maglevflatbed_empty_toys, spriteset_maglevflatbed_coffee];
+        loaded:  [spriteset_maglevflatbed_empty_toys, spriteset_maglevflatbed_coffee];
+    }
+     
+    spritegroup spritegroup_maglevflatbed_YETI_1 {
+        loading: [spriteset_maglevflatbed_empty_YETI, spriteset_maglevflatbed_YETI_1];
+        loaded:  [spriteset_maglevflatbed_empty_YETI, spriteset_maglevflatbed_YETI_1];
+    }
+    spritegroup spritegroup_maglevflatbed_YETI_2 {
+        loading: [spriteset_maglevflatbed_empty_YETI, spriteset_maglevflatbed_YETI_2];
+        loaded:  [spriteset_maglevflatbed_empty_YETI, spriteset_maglevflatbed_YETI_2];
+    }
+    spritegroup spritegroup_maglevflatbed_YETI_3 {
+        loading: [spriteset_maglevflatbed_empty_YETI, spriteset_maglevflatbed_YETI_3];
+        loaded:  [spriteset_maglevflatbed_empty_YETI, spriteset_maglevflatbed_YETI_3];
+    }
+    spritegroup spritegroup_maglevflatbed_YETI_4 {
+        loading: [spriteset_maglevflatbed_empty_YETI, spriteset_maglevflatbed_YETI_4];
+        loaded:  [spriteset_maglevflatbed_empty_YETI, spriteset_maglevflatbed_YETI_4];
+    }
+    spritegroup spritegroup_maglevflatbed_YETI_5 {
+        loading: [spriteset_maglevflatbed_empty_YETI, spriteset_maglevflatbed_YETI_5];
+        loaded:  [spriteset_maglevflatbed_empty_YETI, spriteset_maglevflatbed_YETI_5];
+    }
+     
+     
+    //RANDOM SWITCHES
+     
+    random_switch (FEAT_TRAINS, SELF, random_maglevflatbed_VEHI, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+    1: spritegroup_maglevflatbed_vehicles2;
+    1: spritegroup_maglevflatbed_vehicles1;
+    }
+     
+     
+    random_switch (FEAT_TRAINS, SELF, random_maglevflatbed_BDMT, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+    3: spritegroup_maglevflatbed_bricks;
+    2: spritegroup_maglevflatbed_goodslumber;
+    }
+     
+     
+    random_switch (FEAT_TRAINS, SELF, random_maglevflatbed_YETI, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+    1: spritegroup_maglevflatbed_YETI_1;
+    1: spritegroup_maglevflatbed_YETI_2;
+    1: spritegroup_maglevflatbed_YETI_3;
+    1: spritegroup_maglevflatbed_YETI_4;
+    1: spritegroup_maglevflatbed_YETI_5;
+    }
+     
+     
+    random_switch (FEAT_TRAINS, SELF, maglevflatbed_random_sweets, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+    2: spritegroup_maglevflatbed_sweetsblue; //black things
+    1: spritegroup_maglevflatbed_sweetsred;
+    1: spritegroup_maglevflatbed_sweetsgreen;
+    1: spritegroup_maglevflatbed_sweetspurple;
+    1: spritegroup_maglevflatbed_sweetsyellow;
+    }
+     
+    random_switch (FEAT_TRAINS, SELF, maglevflatbed_random_fruit, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+    1: spritegroup_maglevflatbed_fruitoranges;
+    1: spritegroup_maglevflatbed_fruitstrawberries;
+    }
+     
+     
+    random_switch (FEAT_TRAINS, SELF, maglevflatbed_random_livestock_2, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+    1: spritegroup_maglevflatbed_livestockducks1; //PINK ELEPHANTS
+    30: spritegroup_maglevflatbed_livestockducks2;
+    30: spritegroup_maglevflatbed_livestockcows;
+    30: spritegroup_maglevflatbed_livestockpigs;
+    30: spritegroup_maglevflatbed_livestocksheep;
+    }
+    random_switch (FEAT_TRAINS, SELF, maglevflatbed_random_livestock_1, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+    1: maglevflatbed_random_livestock_2;
+    30: spritegroup_maglevflatbed_livestockducks2;
+    30: spritegroup_maglevflatbed_livestockcows;
+    30: spritegroup_maglevflatbed_livestockpigs;
+    30: spritegroup_maglevflatbed_livestocksheep;
+    }
+    random_switch (FEAT_TRAINS, SELF, maglevflatbed_random_livestock, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+    1: maglevflatbed_random_livestock_1;
+    30: spritegroup_maglevflatbed_livestockducks2;
+    30: spritegroup_maglevflatbed_livestockcows;
+    30: spritegroup_maglevflatbed_livestockpigs;
+    30: spritegroup_maglevflatbed_livestocksheep;
+    }
+     
+     
+     
+     
+    random_switch (FEAT_TRAINS, SELF, maglevflatbed_random_food, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+    1: spritegroup_maglevflatbed_foodblue;
+    1: spritegroup_maglevflatbed_foodred;
+    1: spritegroup_maglevflatbed_foodgreen;
+    1: spritegroup_maglevflatbed_foodyellow;
+    }
+     
+    random_switch (FEAT_TRAINS, SELF, maglevflatbed_random_toys, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+    1: spritegroup_maglevflatbed_toysblue;
+    1: spritegroup_maglevflatbed_toysred;
+    1: spritegroup_maglevflatbed_toysgreen;
+    1: spritegroup_maglevflatbed_toysyellow;
+    1: spritegroup_maglevflatbed_toysblack;
+    1: spritegroup_maglevflatbed_toyswhite;
+    }
+     
+     
+    random_switch (FEAT_TRAINS, SELF, maglevflatbed_random_goods, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+    1: spritegroup_maglevflatbed_goodsblue;
+    1: spritegroup_maglevflatbed_goodsgreen;
+    1: spritegroup_maglevflatbed_goodspurple;
+    1: spritegroup_maglevflatbed_goodspink;
+    1: spritegroup_maglevflatbed_goodsgray;
+    1: spritegroup_maglevflatbed_goodscrates;
+    1: spritegroup_maglevflatbed_goodslumber;
+    1: spritegroup_maglevflatbed_glass;
+    1: spritegroup_maglevflatbed_goodsbarrels;
+    1: spritegroup_maglevflatbed_bricks;
+    }
+    random_switch (FEAT_TRAINS, SELF, maglevflatbed_random_supp, bitmask(TRIGGER_VEHICLE_SERVICE)){
+    2: spritegroup_maglevflatbed_foodblue;
+    2: spritegroup_maglevflatbed_foodred;
+    2: spritegroup_maglevflatbed_foodgreen;
+    2: spritegroup_maglevflatbed_foodyellow;
+    1: spritegroup_maglevflatbed_goodsblue;
+    1: spritegroup_maglevflatbed_goodsgreen;
+    1: spritegroup_maglevflatbed_goodspurple;
+    1: spritegroup_maglevflatbed_goodspink;
+    1: spritegroup_maglevflatbed_goodsgray;
+    1: spritegroup_maglevflatbed_goodscrates;
+    //1: spritegroup_maglevflatbed_goodslumber; lumber in LUMB
+    //1: spritegroup_maglevflatbed_glass;
+    1: spritegroup_maglevflatbed_goodsbarrels;
+    1: spritegroup_maglevflatbed_bricks;
+    1: spritegroup_maglevflatbed_toysblue;
+    1: spritegroup_maglevflatbed_toysred;
+    1: spritegroup_maglevflatbed_toysgreen;
+    1: spritegroup_maglevflatbed_toysyellow;
+    1: spritegroup_maglevflatbed_toysblack;
+    1: spritegroup_maglevflatbed_toyswhite;
+    2: spritegroup_maglevflatbed_sweetsblue; //black things
+    1: spritegroup_maglevflatbed_sweetsred;
+    1: spritegroup_maglevflatbed_sweetsgreen;
+    1: spritegroup_maglevflatbed_sweetspurple;
+    1: spritegroup_maglevflatbed_sweetsyellow;
+    3: spritegroup_maglevflatbed_fizzydrinks;
+    }
+     
+    //CARGO SWITCH
+    switch (FEAT_TRAINS, SELF, maglevflatbed_wagon_switch, cargo_type_in_veh) {
+        0: random_maglevflatbed_YETI;
+        1: spritegroup_maglevflatbed_coffee;
+     
+        2: spritegroup_maglevflatbed_goodslumber;
+        3: maglevflatbed_random_supp;
+        4: spritegroup_maglevflatbed_steel;
+     
+        5: spritegroup_maglevflatbed_bricks;
+        6: random_maglevflatbed_BDMT;
+        7: spritegroup_maglevflatbed_batteries;
+        8: spritegroup_maglevflatbed_bubbles;
+        9: spritegroup_maglevflatbed_fizzydrinks;
+        10: maglevflatbed_random_food;
+        11: maglevflatbed_random_fruit;
+        12: maglevflatbed_random_fruit;
+        13: spritegroup_maglevflatbed_glass;
+        14: maglevflatbed_random_goods;
+        15: maglevflatbed_random_livestock;
+        16: spritegroup_maglevflatbed_goodslumber;
+        17: spritegroup_maglevflatbed_goodscrates;
+        18: spritegroup_maglevflatbed_paper;
+        19: spritegroup_maglevflatbed_steel;
+        20: maglevflatbed_random_sweets;
+        21: maglevflatbed_random_toys;
+        22: random_maglevflatbed_VEHI;
+        23: random_maglevflatbed_VEHI;
+        24: spritegroup_maglevflatbed_wood;
+        25: spritegroup_maglevflatbed_valu;
+        26: spritegroup_maglevflatbed_diam;
+        27: spritegroup_maglevflatbed_gold;
+        spritegroup_maglevflatbed_goodscrates;
+    }
+
+
+
+item(FEAT_TRAINS, item_icm) { graphics { default: maglevflatbed_wagon_switch; } }

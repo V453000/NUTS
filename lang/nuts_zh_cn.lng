@@ -1,0 +1,349 @@
+﻿##grflangid 0x56
+# Simplified Chinese lng file
+
+STR_GRF_NAME		:NUTS Unrealistic Train Set {VERSION}
+STR_GRF_DESC		:基于openttdcoop游戏设置的列车集合，提供更多的选择和空间。{} 从1920一直到2070都有新车面市。{} 包括铁轨、单轨和磁浮。{} 新引入通用轨道，便于在不同类型轨道之间的升级过度。{}{} 由V453000为您呈献。{}www.openttdcoop.org
+
+STR_UNIV			: 通用轨道
+STR_RAIL			: 铁轨
+STR_ELRL			: 电气铁轨
+STR_MONO			: 单轨
+STR_MGLV			: 磁悬浮
+STR_MAGL			: 磁浮替代
+STR_WETR			: {LTBLUE}运河{BLACK}
+
+STR_RAILWAGON1		:设计于: {SILVER}1920{}{BLACK}装车速率: {SILVER}2 (x2)
+STR_RAILWAGON2		:设计于: {SILVER}1955{}{BLACK}装车速率: {SILVER}6
+STR_RAILWAGON3		:设计于: {SILVER}1990{}{BLACK}装车速率: {SILVER}7
+STR_MONOWAGON		:装车速率: {GOLD}8
+STR_MAGLEVWAGON		:装车速率: {GOLD}4 (x2)
+STR_CHAMELEONWAGON	:设计于: {SILVER}1960{}{BLACK}装车速率: {GREEN}2 (x2)
+STR_SHIWAGON		:装车速率: {LTBLUE}5
+STR_SHIWAGON_express:装车速率: {LTBLUE}9 {SILVER}倍速
+STR_CHAMIPAX		:设计于: {SILVER}1960{}{SILVER} 可变容量 {}{GREEN}每增加1格，则每单元车厢的容量增加2。{}{BLACK}装车速率: {GREEN}7 倍速(配置).
+
+STR_subtype_CC			:(企业色彩)
+STR_subtype_RANDOM	 	:(随机色彩)
+STR_subtype_BLACK 		:{SILVER}(黑)
+STR_subtype_GRAY 		:{SILVER}(灰)
+STR_subtype_WHITE 		:{WHITE}(白)
+STR_subtype_LTBLUE	 	:{LTBLUE}(浅蓝)
+STR_subtype_BLUE		:{LTBLUE}(蓝)
+STR_subtype_DKBLUE		:{DKBLUE}(深蓝)
+STR_subtype_MAUVE		:{DKBLUE}(淡紫)
+STR_subtype_PURPLE	 	:{PURPLE}(紫)
+STR_subtype_PINK 		:{CREAM}(粉)
+STR_subtype_BROWN 		:{BROWN}(褐)
+STR_subtype_RED  		:{RED}(红)
+STR_subtype_ORANGE 		:{ORANGE}(橙)
+STR_subtype_YELLOW 		:{YELLOW}(黄)
+STR_subtype_GREEN 		:{GREEN}(绿)
+STR_subtype_PALEGREEN	:{DKGREEN}(浅绿)
+STR_subtype_DKGREEN		:{DKGREEN}(深绿)
+
+
+
+
+STR_NAME_RS1		:Revelation Machine {LTBLUE}(蒸汽机)
+STR_NAME_RS2		:The Mountain {LTBLUE}(蒸汽机)
+STR_NAME_RS3		:Heavens {LTBLUE}(蒸汽机)
+STR_NAME_RS4		:Unlucky 13 {LTBLUE}(电力)
+STR_NAME_RS5		:Guilty as Sin {LTBLUE}(电力)
+STR_NAME_RS6		:Driving Darkness {LTBLUE}(内燃机)
+STR_NAME_RS7		:Devildriver {LTBLUE}(内燃机)
+STR_NAME_RS8		:Horse Apocalypse {LTBLUE}(电力)
+STR_NAME_RS9		:Duke NUT'em {LTBLUE}(核动力)
+
+STR_NAME_RSS1		:T-1000 {ORANGE}(蒸汽机)
+STR_NAME_RSS2		:Industrial Discipline {ORANGE}(电力)
+STR_NAME_RSS3		:Full Metal Contact {ORANGE}(内燃机)
+STR_NAME_RSS4		:540 000 F {ORANGE}(内燃机)
+STR_NAME_RSS5		:Meet The Monster {ORANGE}(蒸汽机)
+STR_NAME_RSS6		:X E Qt R {ORANGE}(核动力)
+
+
+STR_NAME_RM1		:Educated Horses {GREEN}(蒸汽机)
+STR_NAME_RM2		:Black Sunshine {GREEN}(蒸汽机)
+STR_NAME_RM3		:Zombie Slam {GREEN}(蒸汽机)
+STR_NAME_RM4		:Zombie Autopilot {GREEN}(内燃机)
+STR_NAME_RM5		:Thunder Kiss {GREEN}(内燃机)
+STR_NAME_RM6		:Superbeast {GREEN}(电力)
+STR_NAME_RM7		:Never Enough {GREEN}(电力)
+STR_NAME_RM8		:Reckoning {GREEN}(电力)
+STR_NAME_RM9		:Mastermind {GREEN}(电力)
+
+
+
+STR_NAME_RF1		:Painkiller {RED}(蒸汽机)
+STR_NAME_RF2		:Power it up {RED}(蒸汽机)
+STR_NAME_RF3		:Morph in {RED}(蒸汽机)
+STR_NAME_RF4		:Lokhi {RED}(内燃机)
+STR_NAME_RF5		:Switch {RED}(内燃机)
+STR_NAME_RF6		:Corpus Dei {RED}(内燃机)
+STR_NAME_RF7		:Voosh {RED}(电力)
+STR_NAME_RF8		:Electrodriving {RED}(电力)
+STR_NAME_RF9		:Banshee {RED}(电力)
+
+
+STR_NAME_RailICE1	:Firestarter {SILVER}(蒸汽机)
+STR_NAME_RailICE2	:No Control {SILVER}(蒸汽机)
+STR_NAME_RailICE3	:Spitfire {SILVER}(蒸汽机)
+STR_NAME_RailICE4	:Cycles of Life {SILVER}(蒸汽机)
+STR_NAME_RailICE5	:Diesel Power {SILVER}(内燃机)
+STR_NAME_RailICE6	:Arms Race {SILVER}(电力)
+STR_NAME_RailICE7	:Artificial Paradise {SILVER}(电力)
+STR_NAME_RailICE8	:The Ultimate {SILVER}(电力)
+STR_NAME_RailICE9	:Wicked Warp {SILVER}(电力)
+
+STR_NAME_RL1		:Bonescraper {YELLOW}(电力)
+STR_NAME_RL2		:Fear Catalyst {YELLOW}(电力)
+STR_NAME_RL3		:Chaosweaver {YELLOW}(电力)
+STR_NAME_RL4		:Mind Machine {YELLOW}(电力)
+STR_NAME_RL5		:Reborn {LTBLUE}({YELLOW}电力{LTBLUE})
+STR_NAME_RL6		:Abstracted {YELLOW}(电力)
+STR_NAME_RL7		:Morphogenesis {GREEN}({YELLOW}电力{GREEN})
+STR_NAME_RL8		:Timewave Zero {LTBLUE}({YELLOW}电力{LTBLUE})
+STR_NAME_RL9		:Holographic Universe {RED}({YELLOW}电力{RED})
+
+
+STR_NAME_MONOM1		:Dogstar {GREEN}(单轨)
+STR_NAME_MONOM2		:Gravastar {GREEN}(单轨)
+STR_NAME_MONOM3		:If I Survive {GREEN}(单轨)
+STR_NAME_MONOM4		:I Choose Noise {GREEN}(单轨)
+
+STR_NAME_MONOF1	:Tesla {RED}(单轨)
+STR_NAME_MONOF2	:2019 {RED}(单轨)
+STR_NAME_MONOF3	:Maximum Pain {RED}(单轨)
+STR_NAME_MONOF4	:Reality {RED}(单轨) 
+
+STR_NAME_MONOICE1	:Flow {SILVER}(单轨)
+STR_NAME_MONOICE2	:Whirpool {SILVER}(单轨)
+STR_NAME_MONOICE3	:Tidal Wrath {SILVER}(单轨)
+STR_NAME_MONOICE4	:Maelstrom {SILVER}(单轨)
+
+STR_NAME_MONOLocal1	:Revolution Begins {YELLOW}(单轨)
+STR_NAME_MONOLocal2	:Instinct {YELLOW}(单轨)
+STR_NAME_MONOLocal3	:Skeleton Dance {YELLOW}(单轨)
+STR_NAME_MONOLocal4	:Apocalypse {YELLOW}(单轨)
+
+STR_NAME_CHAMELEON1	:Brickwalker {LTBLUE}(单轨)
+STR_NAME_CHAMELEON2	:Soilwork {LTBLUE}(单轨)
+STR_NAME_CHAMELEON3	:Light the Torch {LTBLUE}(单轨)
+STR_NAME_CHAMELEON4	:Natural Born Chaos {LTBLUE}(单轨)
+STR_NAME_CHAMELEON5	:Destroyer of Worlds {LTBLUE}(单轨)
+
+STR_NAME_MONOWTF1	:Wut {WHITE}(异怪)
+STR_NAME_MONOWTF2	:Brain Disease {WHITE}(疯狂)
+STR_NAME_MONOWTF3	:Cephalic Carnage {WHITE}(神经)
+STR_NAME_MONOWTF4	:Brainmelter {WHITE}(不可知)
+
+STR_NAME_MagStrong1	:Biomechanic Horse {GREEN}(磁浮)
+STR_NAME_MagStrong2	:Pet Destroyer {GREEN}(磁浮)
+STR_NAME_MagStrong3	:Hellbender {GREEN}(磁浮)
+STR_NAME_MagStrong4	:Get Heavy {GREEN}(磁浮)
+
+STR_NAME_MagM1		:Cyberwaste {WHITE}(磁浮)
+STR_NAME_MagM2		:Machine Debaser {WHITE}(磁浮)
+STR_NAME_MagM3		:Demolition Racer {WHITE}(磁浮)
+STR_NAME_MagM4		:Edgecrusher {WHITE}(磁浮)
+
+
+STR_NAME_MagF1	:Ghost {RED}(磁浮)
+STR_NAME_MagF2	:Wraith {RED}(磁浮)
+STR_NAME_MagF3	:Spectre {RED}(磁浮)
+STR_NAME_MagF4	:Speed Demon {RED}(磁浮)
+
+
+STR_NAME_MagICE1	:Bloodwork {SILVER}(磁浮)
+STR_NAME_MagICE2	:Suicide Code {SILVER}(磁浮)
+STR_NAME_MagICE3	:Touch of Hate {SILVER}(磁浮)
+STR_NAME_MagICE4	:The Day I Die {SILVER}(磁浮)
+
+STR_NAME_RAILFLTBD1 :1st gen Flatbed Wagon {SILVER}(铁轨)
+STR_NAME_RAILTANK1  :1st gen Tanker Wagon {SILVER}(铁轨)
+STR_NAME_RAILHOPPER1:1st gen Hopper Wagon {SILVER}(铁轨)
+STR_NAME_RAILFLTBD2 :3rd gen Flatbed Wagon {SILVER}(铁轨)
+STR_NAME_RAILTANK2  :3rd gen Tanker Wagon {SILVER}(铁轨)
+STR_NAME_RAILHOPPER2:3rd gen Hopper Wagon {SILVER}(铁轨)
+STR_NAME_RAILHOPPER3:2nd gen Hopper Wagon {SILVER}(铁轨)
+STR_NAME_RAILFLTBD3 :2nd gen Flatbed Wagon {SILVER}(铁轨)
+STR_NAME_RAILTANK3  :2nd gen Tanker Wagon {SILVER}(铁轨)
+
+STR_NAME_MONOFLTBD  	:Flatbed Wagon {GOLD}(单轨)
+STR_NAME_MONOTANK		:Tanker Wagon {GOLD}(单轨)
+STR_NAME_MONOHOPPER		:Hopper Wagon {GOLD}(单轨)
+STR_NAME_MONOUNIVERSAL	:Universal Wagon {GOLD}(单轨)
+
+
+STR_NAME_MGLVUNIVERSAL	:Universal Wagon {WHITE}(磁浮)
+STR_NAME_RAILUNIVERSAL1	:1st gen Universal Wagon {SILVER}(铁轨)
+STR_NAME_RAILUNIVERSAL2	:3rd gen Universal Wagon {SILVER}(铁轨)
+STR_NAME_RAILUNIVERSAL3	:2nd gen Universal Wagon {SILVER}(铁轨)
+
+STR_NAME_CHAMELEONFLTBD  		:变色龙 Flatbed {LTBLUE}(单轨)
+STR_NAME_CHAMELEONTANK			:变色龙 Tanker {LTBLUE}(单轨)
+STR_NAME_CHAMELEONHOPPER		:变色龙 Hopper {LTBLUE}(单轨)
+STR_NAME_CHAMELEONUNIVERSAL		:变色龙 Universal{LTBLUE}(单轨)
+
+STR_NAME_SHIFLTBD  				:WET Flatbed {LTBLUE}(运河)
+STR_NAME_SHITANK				:WET Tanker {LTBLUE}(运河)
+STR_NAME_SHIHOPPER				:WET Hopper {LTBLUE}(运河)
+STR_NAME_SHIUNIVERSAL			:WET Universal{LTBLUE}(运河)
+STR_NAME_SHIEXPRESS			:WET Express{LTBLUE}(运河)
+
+STR_NAME_MGLVFLTBD  :Flatbed Wagon {WHITE}(磁浮)
+STR_NAME_MGLVTANK	:Tanker Wagon {WHITE}(磁浮)
+STR_NAME_MGLVHOPPER	:Hopper Wagon {WHITE}(磁浮)
+
+STR_NAME_RAILPAX	:特快车厢 {SILVER}(铁轨)
+STR_NAME_MONOPAX	:特快车厢 {GOLD}(单轨)
+STR_NAME_MAGPAX		:特快车厢 {WHITE}(磁浮)
+STR_NAME_CHAMELEONPAX:Chami Express{LTBLUE}(单轨)
+
+STR_NAME_DUKE		:Duke NUT'em {LTBLUE}(核动力)
+STR_NAME_NYAN		:Teh NYAN Catzor (赛博格)
+STR_NAME_SLUG		:THE SLUG {GOLD}(鼻涕虫)
+STR_NAME_SLUG2		:Animal Express {GOLD}(鼻涕虫)
+STR_NAME_WIDOW		:The Doombringer {SILVER}(暗能量)
+STR_NAME_NW8		:NYAN 8 (霓虹)
+
+STR_NAME_LogicR     :Logic Engine {WHITE}(铁轨)
+STR_NAME_LogicMR    :Logic Engine {WHITE}(单轨)
+STR_NAME_LogicMG    :Logic Engine {WHITE}(磁浮)
+
+STR_NAME_ML1		:Meat Grinder {YELLOW}(磁浮)
+
+STR_NAME_SHI01		:SHI* {GREEN}(运河)
+STR_NAME_SHI02		:TRTL {GREEN}(运河)
+
+
+STR_NAME_C4T01		:C4T {GOLD}(悬浮猫)
+
+STR_EXPRESSWAGON :{BLACK}该车厢的“货物容量”和“装车速率”由机车型号决定。
+
+
+MSS1			:  Cyberwaste {WHITE}(磁浮)
+MSS2			:  Machine Debaser {WHITE}(磁浮)
+MSS3			:  Demolition Racer {WHITE}(磁浮)
+MSS4			:  Edgecrusher {WHITE}(磁浮)
+
+
+
+
+
+
+localpaxcapacity_20: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“铁轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}40{}{BLACK}该列车改装时 不会 改变颜色。
+localpaxcapacity_25: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“铁轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}50{}{BLACK}该列车改装时 不会 改变颜色。
+localpaxcapacity_30: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“铁轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}60{}{BLACK}该列车改装时 不会 改变颜色。
+localpaxcapacity_35: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“铁轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}70{}{BLACK}该列车改装时 不会 改变颜色。
+localpaxcapacity_40: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“铁轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}80{}{BLACK}该列车改装时 不会 改变颜色。
+localpaxcapacity_50: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“铁轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}110{}{BLACK}特快车厢 装车速率: {YELLOW}55{}{BLACK}机车 装车速率: {YELLOW}30{}{BLACK}该列车改装时 会 改变颜色。.
+localpaxcapacity_60: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“铁轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}120{}{BLACK}特快车厢 装车速率: {YELLOW}60{}{BLACK}机车 装车速率: {YELLOW}40{}{BLACK}该列车改装时 会 改变颜色。.
+localpaxcapacity_70: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“铁轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}132{}{BLACK}特快车厢 装车速率: {YELLOW}44{}{BLACK}机车 装车速率: {YELLOW}30{}{BLACK}该列车改装时 会 改变颜色。.
+
+
+additional_railcom1: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“铁轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}110{}{BLACK}特快车厢 装车速率: {YELLOW}55{}{BLACK}机车 装车速率: {YELLOW}30{}{BLACK}该列车改装时 会 改变颜色。.{}
+additional_railcom2: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“铁轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}110{}{BLACK}特快车厢 装车速率: {YELLOW}55{}{BLACK}机车 装车速率: {YELLOW}30{}{BLACK}该列车改装时 会 改变颜色。.{}
+additional_railcom3: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“铁轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}110{}{BLACK}特快车厢 装车速率: {YELLOW}55{}{BLACK}机车 装车速率: {YELLOW}30{}{BLACK}该列车改装时 会 改变颜色。.{}
+additional_railcom4: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“铁轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}110{}{BLACK}特快车厢 装车速率: {YELLOW}55{}{BLACK}机车 装车速率: {YELLOW}30{}{BLACK}该列车改装时 会 改变颜色。.{}
+additional_railcom5: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“铁轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}120{}{BLACK}特快车厢 装车速率: {YELLOW}60{}{BLACK}机车 装车速率: {YELLOW}40{}{BLACK}该列车改装时 会 改变颜色。.{}{LTBLUE}+ 容量, - 速度
+additional_railcom6: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“铁轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}110{}{BLACK}特快车厢 装车速率: {YELLOW}55{}{BLACK}机车 装车速率: {YELLOW}30{}{BLACK}该列车改装时 会 改变颜色。.{}{GREEN}各参数较为均衡
+additional_railcom7: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“铁轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}120{}{BLACK}特快车厢 装车速率: {YELLOW}60{}{BLACK}机车 装车速率: {YELLOW}40{}{BLACK}该列车改装时 会 改变颜色。.{}{GREEN}各参数较为均衡
+additional_railcom8: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“铁轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}132{}{BLACK}特快车厢 装车速率: {YELLOW}44{}{BLACK}机车 装车速率: {YELLOW}30{}{BLACK}该列车改装时 会 改变颜色。.{}{LTBLUE}+ 容量, - 速度
+additional_railcom9: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“铁轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}110{}{BLACK}特快车厢 装车速率: {YELLOW}55{}{BLACK}机车 装车速率: {YELLOW}30{}{BLACK}该列车改装时 会 改变颜色。.{}{RED}+ 速度, - 容量
+
+
+monolocalpaxcapacity_20: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“单轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}40{}{LTBLUE}该机车是流线造型的。{}{BLACK}该列车改装时 不会 改变颜色。
+monolocalpaxcapacity_25: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“单轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}50{}{LTBLUE}该机车是流线造型的。{}{BLACK}该列车改装时 不会 改变颜色。
+monolocalpaxcapacity_30: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“单轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}60{}{LTBLUE}该机车是流线造型的。{}{BLACK}该列车改装时 不会 改变颜色。
+monolocalpaxcapacity_35: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“单轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}70{}{LTBLUE}该机车是流线造型的。{}{BLACK}该列车改装时 不会 改变颜色。
+monolocalpaxcapacity_45: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“单轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}90{}{LTBLUE}该机车是流线造型的。{}{BLACK}特快车厢 装车速率: {YELLOW}30{}{BLACK}机车 装车速率: {YELLOW}20{}{BLACK}该列车改装时 不会 改变颜色。
+monolocalpaxcapacity_40: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“单轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}80{}{LTBLUE}该机车是流线造型的。{}{BLACK}该列车改装时 不会 改变颜色。
+monolocalpaxcapacity_50: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“单轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}100{}{LTBLUE}该机车是流线造型的。{}{BLACK}该列车改装时 不会 改变颜色。
+monolocalpaxcapacity_60: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“单轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}120{}{LTBLUE}该机车是流线造型的。{}{BLACK}该列车改装时 不会 改变颜色。
+monolocalpaxcapacity_70: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“单轨”型的“通勤”机车或者“特快车厢”。{}车厢容量: {YELLOW}140{}{LTBLUE}该机车是流线造型的。{}{BLACK}该列车改装时 不会 改变颜色。
+
+
+icepaxcapacity_20: {BLACK}机车分类:{SILVER} 城际 {}{BLACK}只能挂接“磁浮”型的“城际”机车或者“特快车厢”。{}车厢容量: {SILVER}40{}{BLACK}特快车厢 装车速率: {SILVER}10{}{BLACK}机车 装车速率: {SILVER}5{}{BLACK}该列车改装时 不会 改变颜色。
+icepaxcapacity_25: {BLACK}机车分类:{SILVER} 城际{}{BLACK}只能挂接“城际”机车或者“特快车厢”。{}车厢容量: {SILVER}50{}{BLACK}该列车改装时 不会 改变颜色。
+icepaxcapacity_30: {BLACK}机车分类:{SILVER} 城际{}{BLACK}只能挂接“城际”机车或者“特快车厢”。{}车厢容量: {SILVER}60{}{BLACK}该列车改装时 不会 改变颜色。
+icepaxcapacity_35: {BLACK}机车分类:{SILVER} 城际{}{BLACK}只能挂接“城际”机车或者“特快车厢”。{}车厢容量: {SILVER}70{}{BLACK}该列车改装时 不会 改变颜色。
+icepaxcapacity_40: {BLACK}机车分类:{SILVER} 城际{}{BLACK}只能挂接“铁轨”型的“城际”机车或者“特快车厢”。{}车厢容量: {SILVER}80{}{BLACK}特快车厢 装车速率: {SILVER}10{}{BLACK}机车 装车速率: {SILVER}5{}{BLACK}该列车改装时 不会 改变颜色。
+icepaxcapacity_50: {BLACK}机车分类:{SILVER} 城际{}{BLACK}只能挂接“城际”机车或者“特快车厢”。{}车厢容量: {SILVER}100{}{BLACK}该列车改装时 不会 改变颜色。
+icepaxcapacity_60: {BLACK}机车分类:{SILVER} 城际{}{BLACK}只能挂接“城际”机车或者“特快车厢”。{}车厢容量: {SILVER}120{}{BLACK}该列车改装时 不会 改变颜色。
+icepaxcapacity_70: {BLACK}机车分类:{SILVER} 城际{}{BLACK}只能挂接“城际”机车或者“特快车厢”。{}车厢容量: {SILVER}140{}{BLACK}该列车改装时 不会 改变颜色。
+icepaxcapacity_widow: {BLACK}机车分类:{SILVER} 城际{}{BLACK}只能挂接“铁轨”型的“城际”机车或者“特快车厢”。{}车厢容量: {SILVER}80{}{BLACK}特快车厢 装车速率: {SILVER}20{}{BLACK}机车 装车速率: {SILVER}10{}{BLACK}该列车改装时 不会 改变颜色。
+
+localmagpaxcapacity_70: {BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“磁浮”型的“特快车厢”。{}车厢容量:{YELLOW}72{LTBLUE}{}该机车是流线造型的。{}{BLACK}特快车厢 装车速率:{YELLOW}24{}{BLACK}机车 装车速率:{YELLOW}15{}{BLACK}该列车改装时 会 改变颜色。.
+magicepaxcapacity_30: {BLACK}机车分类:{SILVER} 城际{}{BLACK}只能挂接“城际”机车或者“特快车厢”。{}车厢容量: {SILVER}30 (x2){}{BLACK}特快车厢 装车速率: {SILVER}3 (x2){}{BLACK}机车 装车速率: {SILVER}3{}{BLACK}该列车改装时 不会 改变颜色。
+magicepaxcapacity_35: {BLACK}机车分类:{SILVER} 城际{}{BLACK}只能挂接“城际”机车或者“特快车厢”。{}车厢容量: {SILVER}35 (x2){}{LTBLUE}该机车是流线造型的。{}{BLACK}特快车厢 装车速率: {SILVER}5 (x2){}{BLACK}机车 装车速率: {SILVER}5{}{BLACK}该列车改装时 不会 改变颜色。
+
+monoicepaxcapacity_20: {BLACK}机车分类:{SILVER} 城际 {}{BLACK}只能挂接“单轨”型的“城际”机车或者“特快车厢”。{}车厢容量: {SILVER}40{}{LTBLUE}该机车是流线造型的。{}{BLACK}该列车改装时 不会 改变颜色。
+monoicepaxcapacity_25: {BLACK}机车分类:{SILVER} 城际{}{BLACK}只能挂接“单轨”型的“城际”机车或者“特快车厢”。{}车厢容量: {SILVER}50{}{LTBLUE}该机车是流线造型的。{}{BLACK}该列车改装时 不会 改变颜色。
+monoicepaxcapacity_30: {BLACK}机车分类:{SILVER} 城际{}{BLACK}只能挂接“单轨”型的“城际”机车或者“特快车厢”。{}车厢容量: {SILVER}60{}{LTBLUE}该机车是流线造型的。{}{BLACK}特快车厢 装车速率: {SILVER}3 (x2){}{BLACK}机车 装车速率: {SILVER}4{}{BLACK}该列车改装时 不会 改变颜色。
+monoicepaxcapacity_24: {BLACK}机车分类:{SILVER} 城际{}{BLACK}只能挂接“单轨”型的“城际”机车或者“特快车厢”。{}车厢容量: {SILVER}48{}{BLACK}特快车厢 装车速率: {SILVER}4 (x2){}{BLACK}机车 装车速率: {SILVER}4{}{BLACK}该列车改装时 不会 改变颜色。)
+monoicepaxcapacity_35: {BLACK}机车分类:{SILVER} 城际{}{BLACK}只能挂接“单轨”型的“城际”机车或者“特快车厢”。{}车厢容量: {SILVER}70{}{LTBLUE}该机车是流线造型的。{}{BLACK}该列车改装时 不会 改变颜色。
+monoicepaxcapacity_40: {BLACK}机车分类:{SILVER} 城际{}{BLACK}只能挂接“单轨”型的“城际”机车或者“特快车厢”。{}车厢容量: {SILVER}80{}{LTBLUE}该机车是流线造型的。{}{BLACK}该列车改装时 不会 改变颜色。
+monoicepaxcapacity_50: {BLACK}机车分类:{SILVER} 城际{}{BLACK}只能挂接“单轨”型的“城际”机车或者“特快车厢”。{}车厢容量: {SILVER}100{}{LTBLUE}该机车是流线造型的。{}{BLACK}该列车改装时 不会 改变颜色。
+monoicepaxcapacity_60: {BLACK}机车分类:{SILVER} 城际{}{BLACK}只能挂接“单轨”型的“城际”机车或者“特快车厢”。{}车厢容量: {SILVER}120{}{LTBLUE}该机车是流线造型的。{}{BLACK}该列车改装时 不会 改变颜色。
+monoicepaxcapacity_70: {BLACK}机车分类:{SILVER} 城际{}{BLACK}只能挂接“单轨”型的“城际”机车或者“特快车厢”。{}车厢容量: {SILVER}140{}{LTBLUE}该机车是流线造型的。{}{BLACK}该列车改装时 不会 改变颜色。
+
+#errors
+STR_NAME_ATTACH_CHAMELEON 	:只能挂接“变色龙”机车或者“单轨”货物车厢。
+STR_NAME_ATTACH_CARGO 	:只能挂接车厢或者“强力/均衡/快速”类机车。
+STR_NAME_ATTACH_SUPERSTRONG 	:只能挂接货物机车或者NUTS货物车厢。
+STR_NAME_ATTACH_PAX_ICE	:只能挂接“特快车厢”或者“城际”机车。
+STR_NAME_ATTACH_PAX_LOCAL:只能挂接“铁轨”类“特快车厢”或者“通勤”机车。
+STR_NAME_ATTACH_PAX_LOCAL_MAG:只能挂接“磁浮”类的“特快车厢”或者“通勤”机车。
+STR_NAME_ATTACH_LOGIC	:单独运行，不可挂接其他物事。
+STR_NAME_ATTACH_NYAN	:只能挂接“特快车厢”或者“毛猫虫”。
+STR_NAME_ATTACH_SLUG	:只能挂接“磁浮”车厢或者“鼻涕虫”机车。
+STR_NAME_ATTACH_MONOWTF :只能挂接车厢或者其他坏脑壳机车。
+STR_NAME_ATTACH_SHI		:只能挂接“运河”类车厢。
+
+
+STR_NAME_SUPERSTRONG	:{BLACK}机车分类:{ORANGE} 超强力{}{BLACK}只能挂接“铁轨”型货物机车或者货物车厢。{}{ORANGE}该机车长度为1格！
+STR_NAME_SUPERSTRONG_TILT:{BLACK}机车分类:{ORANGE} 超强力{}{LTBLUE}该机车是流线造型的。{}{BLACK}只能挂接“铁轨”型货物机车或者货物车厢。{}{ORANGE}该机车长度为1格！
+STR_NAME_STRONG			:{BLACK}机车分类:{LTBLUE} 强力{}{BLACK}只能挂接“铁轨”型货物机车或者任意铁轨车厢。{}特快车厢 装车速率: {GOLD}15{}{BLACK}特快车厢容量:{GOLD}90
+STR_NAME_MEDIUM			:{BLACK}机车分类:{GREEN} 均衡{}{BLACK}只能挂接“铁轨”型货物机车或者任意铁轨车厢。{}特快车厢 装车速率: {GOLD}15{}{BLACK}特快车厢容量:{GOLD}90
+STR_NAME_FAST			:{BLACK}机车分类:{RED} 快速{}{BLACK}只能挂接“铁轨”型货物机车或者任意铁轨车厢。{}特快车厢 装车速率: {GOLD}15{}{BLACK}特快车厢容量:{GOLD}90
+
+STR_NAME_magMEDIUM			:{BLACK}机车分类:{GREEN} 均衡{}{BLACK}只能挂接“磁浮”型货物机车或者车厢。{}特快车厢 装车速率: {GOLD}13{}{BLACK}特快车厢容量:{GOLD}39
+STR_NAME_magFAST			:{BLACK}机车分类:{RED} 快速{}{BLACK}只能挂接“磁浮”型货物机车或者车厢。{}特快车厢 装车速率: {GOLD}13{}{BLACK}特快车厢容量:{GOLD}39
+
+STR_NAME_maglevSTRONG	:{BLACK}机车分类:{LTBLUE} 强力{}{BLACK}只能挂接“铁轨”型货物机车或者任意铁轨车厢。{}特快车厢容量: {GOLD}22 (x2){}特快车厢 装车速率: {GOLD}5
+STR_NAME_maglevFAST		:{BLACK}机车分类:{RED} 快速{}{BLACK}只能挂接“铁轨”型货物机车或者任意铁轨车厢。{}特快车厢容量: {GOLD}22 (x2){}特快车厢 装车速率: {GOLD}5
+
+STR_NAME_LOCAL			:{BLACK}机车分类:{YELLOW} 通勤{}{BLACK}只能挂接“铁轨”型的“通勤”机车或者“特快车厢”。
+STR_NAME_ICE			:{BLACK}机车分类:{SILVER} 城际{}{BLACK}只能挂接“铁轨”型的“城际”机车或者“特快车厢”。
+
+STR_MONOWTF1		:{BLACK}机车分类:{PURPLE} 脑{CREAM}壳{RED}秀{ORANGE}逗{GREEN} 心{YELLOW}智{GREEN}混{LTBLUE}乱{}{SILVER}列车弹性参数:{}{PURPLE}功 {CREAM}率 {RED}随 {ORANGE}情 {GREEN}绪 {YELLOW}变 {LTBLUE}化。{}{SILVER}情绪在服役期间阴晴不定。{}情绪在访问车站时阴晴不定。{}{BLACK}可能的取值:{}{SILVER}5000,6000,7000{}{BLACK}只能挂接坏脑壳机车或者单轨车厢。{}特快车厢 装车速率: {GOLD}12{}{BLACK}特快车厢容量:{GOLD}60{}{LTBLUE}该机车是流线造型的。
+STR_MONOWTF2		:{BLACK}机车分类:{PURPLE} 脑{CREAM}壳{RED}秀{ORANGE}逗{GREEN} 心{YELLOW}智{GREEN}混{LTBLUE}乱{}{SILVER}列车弹性参数:{}{PURPLE}功 {CREAM}率 {RED}随 {ORANGE}情 {GREEN}绪 {YELLOW}变 {LTBLUE}化。{}{SILVER}情绪在服役期间阴晴不定。{}情绪在访问车站时阴晴不定。{}{BLACK}可能的取值:{}{SILVER}6000,7500,9000{}{BLACK}只能挂接坏脑壳机车或者单轨车厢。{}特快车厢 装车速率: {GOLD}12{}{BLACK}特快车厢容量:{GOLD}60{}{LTBLUE}该机车是流线造型的。
+STR_MONOWTF3		:{BLACK}机车分类:{PURPLE} 脑{CREAM}壳{RED}秀{ORANGE}逗{GREEN} 心{YELLOW}智{GREEN}混{LTBLUE}乱{}{SILVER}列车弹性参数:{}{PURPLE}功 {CREAM}率 {RED}随 {ORANGE}情 {GREEN}绪 {YELLOW}变 {LTBLUE}化。{}{SILVER}情绪在服役期间阴晴不定。{}情绪在访问车站时阴晴不定。{}{BLACK}可能的取值:{}{SILVER}6000,8000,10000{}{BLACK}只能挂接坏脑壳机车或者单轨车厢。{}特快车厢 装车速率: {GOLD}12{}{BLACK}特快车厢容量:{GOLD}60{}{LTBLUE}该机车是流线造型的。
+STR_MONOWTF4		:{BLACK}机车分类:{PURPLE} 脑{CREAM}壳{RED}秀{ORANGE}逗{GREEN} 心{YELLOW}智{GREEN}混{LTBLUE}乱{}{SILVER}列车弹性参数:{}{PURPLE}功 {CREAM}率 {RED}随 {ORANGE}情 {GREEN}绪 {YELLOW}变 {LTBLUE}化。{}{SILVER}情绪在服役期间阴晴不定。{}情绪在访问车站时阴晴不定。{}{BLACK}可能的取值:{}{SILVER}7000,10000,15000{}{BLACK}只能挂接坏脑壳机车或者单轨车厢。{}特快车厢 装车速率: {GOLD}12{}{BLACK}特快车厢容量:{GOLD}60{}{LTBLUE}该机车是流线造型的。
+
+STR_NAME_MONOMEDIUM		:{BLACK}机车分类:{GREEN} 均衡{}{SILVER}列车弹性参数:{}{GREEN}每增加1单位车厢，牵引力减少 ~31kN。{}{SILVER}最低到500kN。(20个单位，10格长度){}{LTBLUE}该机车是流线造型的。{}{BLACK}只能挂接单轨“均衡”类机车或者单轨车厢。{}特快车厢 装车速率: {GOLD}12{}{BLACK}特快车厢容量:{GOLD}60
+
+STR_CHAMELEON1		:{BLACK}机车分类:{LTBLUE} CHAMELEON{}{SILVER}列车弹性参数:{}{LTBLUE}每增加1单位车厢，最高速率降低2*2 km/h。{}{SILVER}从4单位(1格)长度的160{}降到28单位(7.5格)长度的110{}2单位长度时为210km/h。{}{BLACK}只能挂接“变色龙”机车或者“变色龙”车厢。
+STR_CHAMELEON2		:{BLACK}机车分类:{LTBLUE} CHAMELEON{}{SILVER}列车弹性参数:{}{LTBLUE}每增加1单位车厢，最高速率降低3*2 km/h。{}{SILVER}从4单位(1格)长度的190{}降到28单位(7.5格)长度的115{}2单位长度时为240km/h。{}{BLACK}只能挂接“变色龙”机车或者“变色龙”车厢。
+STR_CHAMELEON3		:{BLACK}机车分类:{LTBLUE} CHAMELEON{}{SILVER}列车弹性参数:{}{LTBLUE}每增加1单位车厢，最高速率降低4*2 km/h。{}{SILVER}从4单位(1格)长度的220{}降到28单位(7.5格)长度的120{}2单位长度时为270km/h。{}{BLACK}只能挂接“变色龙”机车或者“变色龙”车厢。
+STR_CHAMELEON4		:{BLACK}机车分类:{LTBLUE} CHAMELEON{}{SILVER}列车弹性参数:{}{LTBLUE}每增加1单位车厢，最高速率降低5*2 km/h。{}{SILVER}从4单位(1格)长度的255{}降到28单位(7.5格)长度的130{}2单位长度时为310km/h。{}{BLACK}只能挂接“变色龙”机车或者“变色龙”车厢。
+STR_CHAMELEON5		:{BLACK}机车分类:{LTBLUE} CHAMELEON{}{SILVER}列车弹性参数:{}{LTBLUE}每增加1单位车厢，最高速率降低6*2 km/h。{}{SILVER}从4单位(1格)长度的300{}降到28单位(7.5格)长度的150{}2单位长度时为355km/h。{}{BLACK}只能挂接“变色龙”机车或者“变色龙”车厢。
+
+STR_MONOFAST1		:{BLACK}机车分类:{RED} 快速{}{SILVER}列车弹性参数:{}{RED}每增加1单位车厢，功率增长750。{}{SILVER}上限20车厢，功率17 750。(10格长度){}{RED}每增加1单位车厢，牵引力增加~10%。{}{SILVER}上限20单位车厢，牵引力571kN。(10 格长度){}{BLACK}只能挂接单轨“快速”型机车或单轨车厢。{}特快车厢 装车速率: {GOLD}12{}{BLACK}特快车厢容量:{GOLD}60
+STR_MONOFAST2		:{BLACK}机车分类:{RED} 快速{}{SILVER}列车弹性参数:{}{RED}每增加1单位车厢，功率增长1000。{}{SILVER}上限20车厢，功率22 500。(10格长度){}{RED}每增加1单位车厢，牵引力增加~10%。{}{SILVER}上限20单位车厢，牵引力571kN。(10 格长度){}{BLACK}只能挂接单轨“快速”型机车或单轨车厢。{}特快车厢 装车速率: {GOLD}12{}{BLACK}特快车厢容量:{GOLD}60
+STR_MONOFAST3		:{BLACK}机车分类:{RED} 快速{}{SILVER}列车弹性参数:{}{RED}每增加1单位车厢，功率增长1250。{}{SILVER}上限20车厢，功率27 250。(10格长度){}{RED}每增加1单位车厢，牵引力增加~10%。{}{SILVER}上限20单位车厢，牵引力571kN。(10 格长度){}{BLACK}只能挂接单轨“快速”型机车或单轨车厢。{}特快车厢 装车速率: {GOLD}12{}{BLACK}特快车厢容量:{GOLD}60
+STR_MONOFAST4		:{BLACK}机车分类:{RED} 快速{}{SILVER}列车弹性参数:{}{RED}每增加1单位车厢，功率增长1500。{}{SILVER}上限20车厢，功率32 000。(10格长度){}{RED}每增加1单位车厢，牵引力增加~10%。{}{SILVER}上限20单位车厢，牵引力571kN。(10 格长度){}{BLACK}只能挂接单轨“快速”型机车或单轨车厢。{}特快车厢 装车速率: {GOLD}12{}{BLACK}特快车厢容量:{GOLD}60
+
+STR_NAME_MONOLOCAL		:{BLACK}机车分类:{YELLOW} 通勤{}{SILVER}列车弹性参数:{}{YELLOW}每增加2单位车厢，车厢容量减5，并颜色改变。{}{SILVER}容量从130降到75。(最长19个单位,9.5格长度){}{YELLOW}每增加4单位车厢，装车速率的倍速减1。{}{SILVER}倍速从5减到1。(最多18个单位，9格){}{BLACK}装车速率的倍速值可以在车库停车时看到。{}{LTBLUE}该机车是流线造型的。{}{BLACK}只能挂接“单轨”型的“通勤”机车或者“特快车厢”。
+
+STR_NAME_MONOICE		:{BLACK}机车分类:{SILVER} 城际{}{LTBLUE}该机车是流线造型的。{}{BLACK}只能挂接“单轨”型的“城际”机车或者“特快车厢”。
+STR_NAME_DUKE_BEER		:{BLACK}机车分类:{LTBLUE} 强力{}{WHITE}太流弊了，来瓶啤酒庆祝一下。{}{SILVER}And I'm all out of ass.{}{BLACK}只能挂接“铁轨”型货物机车或者任意“铁轨”型车厢，包括啤酒罐。{}特快车厢容量: {GOLD}60{}特快车厢 装车速率: {GOLD}12
+STR_NAME_NYAN_text		:{RED}N{ORANGE}Y{YELLOW}A{GREEN}N{GREEN}Y{LTBLUE}A{RED}N{ORANGE}Y{YELLOW}A{GREEN}N{GREEN}Y{LTBLUE}A{RED}N{ORANGE}Y{YELLOW}A{GREEN}N{GREEN}Y{LTBLUE}A{RED}N{ORANGE}Y{YELLOW}A{GREEN}N{GREEN}Y{LTBLUE}A{RED}N{ORANGE}Y{YELLOW}A{GREEN}N{GREEN}Y{LTBLUE}A{}{BLACK}Can only haul Cat engines or express wagons.{}车厢容量: {RED}30
+STR_NAME_SLUG_text		:{GOLD}进化的力量!!!{}{BLACK}只能挂接“鼻涕虫”机车或者“磁浮”车厢。{}{SILVER}特快车厢容量: {GOLD}25 {BLACK}(x2){}{BLACK}{SILVER}特快车厢 装车速率: {GOLD}5 {BLACK}(x2){}{BLACK}货物车厢容量: {GOLD}12 {BLACK}(x2){}{BLACK}货物车厢装车速率: {GOLD}4 {BLACK}(x2)
+STR_NAME_SLUG2_text		:{GOLD}进化的力量!!!{}{BLACK}只能挂接“鼻涕虫”机车或者“磁浮”车厢。{}{SILVER}特快车厢容量: {GOLD}25 {BLACK}(x2){}{BLACK}{SILVER}特快车厢 装车速率: {GOLD}5 {BLACK}(x2){}{BLACK}货物车厢容量: {GOLD}12 {BLACK}(x2){}{BLACK}货物车厢装车速率: {GOLD}4 {BLACK}(x2) {}{LTBLUE}拐弯时不会降速。
+STR_NAME_LOGIC			:{BLACK}机车分类:{PURPLE} 逻辑机车{}{BLACK}不可挂接任何其他车厢或机车。
+
+STR_NAME_SHI01_text		:{BLACK}机车分类:{GREEN}运河{}{BLACK}只能挂接“运河”型车厢。
+STR_NAME_SHI02_text		:{BLACK}机车分类:{GREEN}运河{}{BLACK}只能挂接“运河”型车厢。
+STR_NAME_C4T01_text		:{BLACK}机车分类:{GOLD}毛猫虫{}{BLACK}只能挂接“运河”型车厢。{}{GOLD}我靠 {BLACK}看{GOLD}那{BLACK}个{GOLD}毛猫{BLACK}虫
