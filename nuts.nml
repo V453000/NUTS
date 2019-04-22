@@ -3339,7 +3339,7 @@ item(FEAT_TRAINS, item_railice4, 77) { //ID77
 		can_attach_wagon: switch_railpax_ice_attach;
 		additional_text: string(icepaxcapacity_40);
 		articulated_part: switch_railice4_articulated;
-		speed: 							190; //maybe for wagons later, not now
+		speed: 							185; //maybe for wagons later, not now
 		power: 							railice4_wetrail_power_switch; //engine only
 		weight: 						140; //engine only
 		tractive_effort_coefficient:	railice4_wetrail_te_switch; //engine only
@@ -3348,7 +3348,7 @@ item(FEAT_TRAINS, item_railice4, 77) { //ID77
 		//purchase_cargo_capacity:		40;
 		cost_factor:						14; //everything
 		running_cost_factor:				100; //only engines
-		purchase_speed:						190;
+		//purchase_speed:						190;
 		purchase_power:						5000;
 		purchase_weight:					140;
 		purchase_tractive_effort_coefficient: 76;
@@ -3450,7 +3450,7 @@ item(FEAT_TRAINS, item_railice5, 79) { //ID79
 		purchase: spriteset_purchaseMenu_railice5;
 		can_attach_wagon: switch_railpax_ice_attach;
 		additional_text: string(icepaxcapacity_40);
-		speed: 							210; //maybe for wagons later, not now
+		speed: 							196; //maybe for wagons later, not now
 		power: 							railice5_wetrail_power_switch; //engine only
 		weight: 						80; //engine only
 		tractive_effort_coefficient:	railice5_wetrail_te_switch; //engine only
@@ -3459,7 +3459,7 @@ item(FEAT_TRAINS, item_railice5, 79) { //ID79
 		//purchase_cargo_capacity:		40;
 		cost_factor:						15; //everything
 		running_cost_factor:				100; //only engines
-		purchase_speed:						210;
+		//purchase_speed:						210;
 		purchase_power:						7000;
 		purchase_weight:					80;
 		purchase_tractive_effort_coefficient: 89;
@@ -3533,7 +3533,7 @@ item(FEAT_TRAINS, item_railice6, 81) { //ID81
 		purchase: spriteset_purchaseMenu_railice6;
 		can_attach_wagon: switch_railpax_ice_attach;
 		additional_text: string(icepaxcapacity_40);
-		speed: 							250; //maybe for wagons later, not now
+		speed: 							230; //maybe for wagons later, not now
 		power: 							railice6_wetrail_power_switch; //engine only
 		weight: 						80; //engine only
 		tractive_effort_coefficient:	railice6_wetrail_te_switch; //engine only
@@ -3542,7 +3542,7 @@ item(FEAT_TRAINS, item_railice6, 81) { //ID81
 		//purchase_cargo_capacity:		40;
 		cost_factor:						16; //everything
 		running_cost_factor:				100; //only engines
-		purchase_speed:						250;
+		//purchase_speed:						250;
 		purchase_power:						9000;
 		purchase_weight:					80;
 		purchase_tractive_effort_coefficient: 96;
@@ -3615,7 +3615,7 @@ item(FEAT_TRAINS, item_railice7, 83) { //ID83
 		purchase: spriteset_purchaseMenu_railice7;
 		can_attach_wagon: switch_railpax_ice_attach;
 		additional_text: string(icepaxcapacity_40);
-		speed: 							270; //maybe for wagons later, not now
+		speed: 							255; //maybe for wagons later, not now
 		power: 							railice7_wetrail_power_switch; //engine only
 		weight: 						80; //engine only
 		tractive_effort_coefficient:	railice7_wetrail_te_switch; //engine only
@@ -3694,7 +3694,7 @@ item(FEAT_TRAINS, item_railice8, 85) { //ID85
 		purchase: spriteset_purchaseMenu_railice8;
 		can_attach_wagon: switch_railpax_ice_attach;
 		additional_text: string(icepaxcapacity_40);
-		speed: 							289; //maybe for wagons later, not now
+		speed: 							280; //maybe for wagons later, not now
 		power: 							railice8_wetrail_power_switch; //engine only
 		weight: 						80; //engine only
 		tractive_effort_coefficient:	railice8_wetrail_te_switch; //engine only
@@ -3703,7 +3703,7 @@ item(FEAT_TRAINS, item_railice8, 85) { //ID85
 		//purchase_cargo_capacity:		40;
 		cost_factor:						18; //everything
 		running_cost_factor:				100; //only engines
-		purchase_speed:						289;
+		//purchase_speed:						289;
 		purchase_power:						16000;
 		purchase_weight:					80;
 		purchase_tractive_effort_coefficient: 107;
@@ -3776,7 +3776,7 @@ item(FEAT_TRAINS, item_railice9, 87) { //ID87
 		purchase: spriteset_purchaseMenu_railice9;
 		can_attach_wagon: switch_railpax_ice_attach;
 		additional_text: string(icepaxcapacity_40);
-		speed: 							300; //maybe for wagons later, not now
+		speed: 							301; //maybe for wagons later, not now
 		power: 							railice9_wetrail_power_switch; //engine only
 		weight: 						80; //engine only
 		tractive_effort_coefficient:	railice9_wetrail_te_switch; //engine only
@@ -3785,7 +3785,7 @@ item(FEAT_TRAINS, item_railice9, 87) { //ID87
 		//purchase_cargo_capacity:		40;
 		cost_factor:						19; //everything
 		running_cost_factor:				100; //only engines
-		purchase_speed:						300;
+		//purchase_speed:						300;
 		purchase_power:						20000;
 		purchase_weight:					80;
 		purchase_tractive_effort_coefficient: 114;
@@ -8731,7 +8731,7 @@ item(FEAT_TRAINS, item_monolocal2, 193) { //ID193
 		can_attach_wagon: switch_monopax_local_attach;
 		purchase: spriteset_purchaseMenu_monolocal2;
 		additional_text: string(STR_NAME_MONOLOCAL);
-		speed: 							130; //maybe for wagons later, not now
+		speed: 							133; //maybe for wagons later, not now
 		power: 							monolocal2_wetrail_power_switch; //engine only
 		weight: 							15; //engine only
 		tractive_effort_coefficient:		monolocal2_wetrail_te_switch; //engine only
@@ -9065,7 +9065,7 @@ item(FEAT_TRAINS, item_magice1, 271) { //ID271
 		cargo_capacity: magice_capacity_switch;
 		//purchase_cargo_capacity: 10;
 		additional_text: string(magicepaxcapacity_30);
-		speed: 							300; //maybe for wagons later, not now
+		speed: 							301; //maybe for wagons later, not now
 		power: 							magice1_wetrail_power_switch; //engine only
 		weight: 							100; //engine only
 		tractive_effort_coefficient:		255; //engine only
@@ -15853,7 +15853,7 @@ item(FEAT_TRAINS, item_monoice1, 171) { //ID171
 		can_attach_wagon: switch_monopax_ice_attach;
 		purchase: spriteset_purchaseMenu_monoice1;
 		additional_text: string(monoicepaxcapacity_24);
-		speed: 							420; //maybe for wagons later, not now
+		speed: 							415; //maybe for wagons later, not now
 		//power: 							25000; //engine only
 		weight: 							80; //engine only
 		tractive_effort_coefficient:		216; //engine only
@@ -15975,7 +15975,7 @@ item(FEAT_TRAINS, item_monoice3, 175) { //ID175
 		can_attach_wagon: switch_monopax_ice_attach;
 		purchase: spriteset_purchaseMenu_monoice3;
 		additional_text: string(monoicepaxcapacity_24);
-		speed: 							550; //maybe for wagons later, not now
+		speed: 							552; //maybe for wagons later, not now
 		//power: 							32000; //engine only
 		weight: 							80; //engine only
 		tractive_effort_coefficient:		242; //engine only
@@ -16036,7 +16036,7 @@ item(FEAT_TRAINS, item_monoice4, 177) { //ID177
 		can_attach_wagon: switch_monopax_ice_attach;
 		purchase: spriteset_purchaseMenu_monoice4;
 		additional_text: string(monoicepaxcapacity_24);
-		speed: 							600; //maybe for wagons later, not now
+		speed: 							663; //maybe for wagons later, not now
 		//power: 							32000; //engine only
 		weight: 							80; //engine only
 		tractive_effort_coefficient:		255; //engine only
@@ -51043,7 +51043,7 @@ item(FEAT_TRAINS, item_monomedium1, 131) { //ID131
 		can_attach_wagon: switch_monomedium_cargo_attach;
 		purchase: spriteset_purchaseMenu_monomedium1;
 		additional_text: string(STR_NAME_MONOMEDIUM);
-		speed: 							241; //maybe for wagons later, not now
+		speed: 							230; //maybe for wagons later, not now
 		power: 							10000; //engine only
 		weight: 						80; //engine only
 		tractive_effort_coefficient:	monomedium_wetrail_te_switch; //engine only
@@ -51106,7 +51106,7 @@ item(FEAT_TRAINS, item_monomedium2, 133) { //ID133
 		can_attach_wagon: switch_monomedium_cargo_attach;
 		purchase: spriteset_purchaseMenu_monomedium2;
 		additional_text: string(STR_NAME_MONOMEDIUM);
-		speed: 							261; //maybe for wagons later, not now
+		speed: 							255; //maybe for wagons later, not now
 		power: 							12000; //engine only
 		weight: 						80; //engine only
 		tractive_effort_coefficient:	monomedium_wetrail_te_switch; //engine only
@@ -51168,7 +51168,7 @@ item(FEAT_TRAINS, item_monomedium3, 135) { //ID135
 		can_attach_wagon: switch_monomedium_cargo_attach;
 		purchase: spriteset_purchaseMenu_monomedium3;
 		additional_text: string(STR_NAME_MONOMEDIUM);
-		speed: 							281; //maybe for wagons later, not now
+		speed: 							280; //maybe for wagons later, not now
 		power: 							15000; //engine only
 		weight: 						80; //engine only
 		tractive_effort_coefficient:	monomedium_wetrail_te_switch; //engine only
@@ -51540,7 +51540,7 @@ item(FEAT_TRAINS, item_monofast2, 153) { //ID153
 		can_attach_wagon: switch_monofast_cargo_attach;
 		purchase: spriteset_purchaseMenu_monofast2;
 		additional_text: string(STR_MONOFAST2);
-		speed: 							310;
+		speed: 							301;
 		power: 							switch_monofast2_power;
 		weight: 						80;
 		tractive_effort_coefficient:	switch_monofast_TE;
@@ -55024,7 +55024,7 @@ item(FEAT_TRAINS, item_magstrong1, 211) { //ID211
 		purchase: spriteset_purchaseMenu_magstrong1;
 		can_attach_wagon: switch_maglevcargo_attach;
 		additional_text: string(STR_NAME_magMEDIUM);
-		speed: 							299; //maybe for wagons later, not now
+		speed: 							301; //maybe for wagons later, not now
 		
 		weight: 							100; //engine only
 		tractive_effort_coefficient:		255; //engine only
@@ -55061,7 +55061,7 @@ item(FEAT_TRAINS, item_magstrong2, 213) { //ID213
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        333 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MGLV;
         ai_special_flag:              AI_FLAG_CARGO;
@@ -55084,8 +55084,8 @@ item(FEAT_TRAINS, item_magstrong2, 213) { //ID213
 		default: spriteset_train_magstrong2;
 		purchase: spriteset_purchaseMenu_magstrong2;
 		can_attach_wagon: switch_maglevcargo_attach;
-		additional_text: string(STR_NAME_magMEDIUM);
-		speed: 							333; //maybe for wagons later, not now
+		additional_text: string(STR_NAME_magMEDIUMtilt);
+		speed: 							316; //maybe for wagons later, not now
 		
 		weight: 							100; //engine only
 		tractive_effort_coefficient:		255; //engine only
@@ -55145,7 +55145,7 @@ item(FEAT_TRAINS, item_magstrong3, 215) { //ID215
 		purchase: spriteset_purchaseMenu_magstrong3;
 		can_attach_wagon: switch_maglevcargo_attach;
 		additional_text: string(STR_NAME_magMEDIUM);
-		speed: 							366; //maybe for wagons later, not now
+		speed: 							340; //maybe for wagons later, not now
 		
 		weight: 							100; //engine only
 		tractive_effort_coefficient:		255; //engine only
@@ -55186,7 +55186,7 @@ item(FEAT_TRAINS, item_magstrong4, 217) { //ID217
         refit_cost:                   0;
         track_type:                   MGLV;
         ai_special_flag:              AI_FLAG_CARGO;
-        power:                        40000 hp;
+        power:                        44000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
         dual_headed:                  1;
         cargo_capacity:               0;
@@ -55206,7 +55206,7 @@ item(FEAT_TRAINS, item_magstrong4, 217) { //ID217
 		purchase: spriteset_purchaseMenu_magstrong4;
 		can_attach_wagon: switch_maglevcargo_attach;
 		additional_text: string(STR_NAME_magMEDIUM);
-		speed: 							399; //maybe for wagons later, not now
+		speed: 							400; //maybe for wagons later, not now
 		
 		weight: 							100; //engine only
 		tractive_effort_coefficient:		255; //engine only
@@ -55360,7 +55360,7 @@ item(FEAT_TRAINS, item_magfast2, 253) { //253
 		purchase: spriteset_purchaseMenu_magfast2;
 		can_attach_wagon: switch_maglevcargo_attach;
 		additional_text: string(STR_NAME_magFAST);
-		speed: 							410; //maybe for wagons later, not now
+		speed: 							415; //maybe for wagons later, not now
 		
 		weight: 							100; //engine only
 		tractive_effort_coefficient:		255; //engine only
@@ -55420,7 +55420,7 @@ item(FEAT_TRAINS, item_magfast3, 255) { //ID255
 		purchase: spriteset_purchaseMenu_magfast3;
 		can_attach_wagon: switch_maglevcargo_attach;
 		additional_text: string(STR_NAME_magFAST);
-		speed: 							450; //maybe for wagons later, not now
+		speed: 							485; //maybe for wagons later, not now
 		
 		weight: 							100; //engine only
 		tractive_effort_coefficient:		255; //engine only
@@ -55480,7 +55480,7 @@ item(FEAT_TRAINS, item_magfast4, 257) { //ID257
 		purchase: spriteset_purchaseMenu_magfast4;
 		can_attach_wagon: switch_maglevcargo_attach;
 		additional_text: string(STR_NAME_magFAST);
-		speed: 								500;
+		speed: 								552;
 		
 		weight: 							100; //engine only
 		tractive_effort_coefficient:		255; //engine only

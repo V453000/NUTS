@@ -1,0 +1,32 @@
+switch(FEAT_RAILTYPES, SELF, BRIX_light_signal_switch_block, (extra_callback_info2 & 0x000000FF)) {
+	0: BRIX_light_signal_block_red;
+	1: BRIX_light_signal_block_green;
+}
+switch(FEAT_RAILTYPES, SELF, BRIX_light_signal_switch_entry, (extra_callback_info2 & 0x000000FF)) {
+	0: BRIX_light_signal_entry_red;
+	1: BRIX_light_signal_entry_green;
+}
+switch(FEAT_RAILTYPES, SELF, BRIX_light_signal_switch_exit, (extra_callback_info2 & 0x000000FF)) {
+	0: BRIX_light_signal_exit_red;
+	1: BRIX_light_signal_exit_green;
+}
+switch(FEAT_RAILTYPES, SELF, BRIX_light_signal_switch_combo, (extra_callback_info2 & 0x000000FF)) {
+	0: BRIX_light_signal_combo_red;
+	1: BRIX_light_signal_combo_green;
+}
+switch(FEAT_RAILTYPES, SELF, BRIX_light_signal_switch_2wayPBS, (extra_callback_info2 & 0x000000FF)) {
+	0: BRIX_light_signal_2wayPBS_red;
+	1: BRIX_light_signal_2wayPBS_green;
+}
+switch(FEAT_RAILTYPES, SELF, BRIX_light_signal_switch_1wayPBS, (extra_callback_info2 & 0x000000FF)) {
+	0: BRIX_light_signal_1wayPBS_red;
+	1: BRIX_light_signal_1wayPBS_green;
+}
+switch(FEAT_RAILTYPES, SELF, BRIX_light_signal_switch_type, (extra_callback_info2 & 0x00FF0000) >> 16) {
+	0: BRIX_light_signal_switch_block;
+	1: BRIX_light_signal_switch_entry;
+	2: BRIX_light_signal_switch_exit;
+	3: BRIX_light_signal_switch_combo;
+	4: BRIX_light_signal_switch_2wayPBS;
+	5: BRIX_light_signal_switch_1wayPBS;
+}

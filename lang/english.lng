@@ -443,6 +443,7 @@ STR_NAME_MEDIUM			:{BLACK}Vehicle class:{GREEN} MEDIUM{}{BLACK}Can only haul {WH
 STR_NAME_FAST			:{BLACK}Vehicle class:{RED} FAST{}{BLACK}Can only haul {WHITE}RAIL CARGO{BLACK} engines or {WHITE}RAIL{BLACK} wagons.{}Express wagon loading speed: {GOLD}18{}{BLACK}Express wagon capacity:{GOLD}90
 
 STR_NAME_magMEDIUM			:{BLACK}Vehicle class:{GREEN} MEDIUM{}{BLACK}Can only haul {RED}MAGLEV CARGO{BLACK} engines or any {RED}MAGLEV{BLACK} wagons.{}Express wagon loading speed: {GOLD}13{}{BLACK}Express wagon capacity:{GOLD}39
+STR_NAME_magMEDIUMtilt	:{BLACK}Vehicle class:{GREEN} MEDIUM{}{BLACK}Can only haul {RED}MAGLEV CARGO{BLACK} engines or any {RED}MAGLEV{BLACK} wagons.{}Express wagon loading speed: {GOLD}13{}{BLACK}Express wagon capacity:{GOLD}39{}{LTBLUE}This vehicle has tilt.
 STR_NAME_magFAST			:{BLACK}Vehicle class:{RED} FAST{}{BLACK}Can only haul maglev {RED}MAGLEV CARGO{BLACK} or any {RED}MAGLEV{BLACK} wagons.{}Express wagon loading speed: {GOLD}13{}{BLACK}Express wagon capacity:{GOLD}39
 
 STR_NAME_maglevSTRONG	:{BLACK}Vehicle class:{LTBLUE} STRONG{}{BLACK}Can only haul {WHITE}RAIL CARGO{BLACK} engines or any rail wagons.{}Express wagon capacity: {GOLD}22 (x2){}Express wagon loading speed: {GOLD}5
