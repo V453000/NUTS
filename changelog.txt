@@ -29,7 +29,7 @@
     - Maglev Intercity 1 (Bloodwork) max speed changed from 300 to 301 km/h.
   
   Added info about Fullspeed curve length to purchase menu for every engine.
-  Added hint about efficient usage to purchase menu for for every.
+  Added hint about efficient usage to purchase menu for for every engine.
     
     
 0.8.0
