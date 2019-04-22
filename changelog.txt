@@ -1,32 +1,796 @@
-switch(FEAT_RAILTYPES, SELF, BRIX_light_signal_switch_block, (extra_callback_info2 & 0x000000FF)) {
-	0: BRIX_light_signal_block_red;
-	1: BRIX_light_signal_block_green;
-}
-switch(FEAT_RAILTYPES, SELF, BRIX_light_signal_switch_entry, (extra_callback_info2 & 0x000000FF)) {
-	0: BRIX_light_signal_entry_red;
-	1: BRIX_light_signal_entry_green;
-}
-switch(FEAT_RAILTYPES, SELF, BRIX_light_signal_switch_exit, (extra_callback_info2 & 0x000000FF)) {
-	0: BRIX_light_signal_exit_red;
-	1: BRIX_light_signal_exit_green;
-}
-switch(FEAT_RAILTYPES, SELF, BRIX_light_signal_switch_combo, (extra_callback_info2 & 0x000000FF)) {
-	0: BRIX_light_signal_combo_red;
-	1: BRIX_light_signal_combo_green;
-}
-switch(FEAT_RAILTYPES, SELF, BRIX_light_signal_switch_2wayPBS, (extra_callback_info2 & 0x000000FF)) {
-	0: BRIX_light_signal_2wayPBS_red;
-	1: BRIX_light_signal_2wayPBS_green;
-}
-switch(FEAT_RAILTYPES, SELF, BRIX_light_signal_switch_1wayPBS, (extra_callback_info2 & 0x000000FF)) {
-	0: BRIX_light_signal_1wayPBS_red;
-	1: BRIX_light_signal_1wayPBS_green;
-}
-switch(FEAT_RAILTYPES, SELF, BRIX_light_signal_switch_type, (extra_callback_info2 & 0x00FF0000) >> 16) {
-	0: BRIX_light_signal_switch_block;
-	1: BRIX_light_signal_switch_entry;
-	2: BRIX_light_signal_switch_exit;
-	3: BRIX_light_signal_switch_combo;
-	4: BRIX_light_signal_switch_2wayPBS;
-	5: BRIX_light_signal_switch_1wayPBS;
-}
+0.8.1
+  Changed the 32bpp parameter to 32bpp SLUGs to make it more clear that it's not for everything.
+  
+  Tweaked train max speeds to make them pair easier between cargo and express classes.
+    - Monorail Local 2 (Instinct) max speed changed from 130 to 133 km/h.
+    - Rail Intercity 4 (Cycles of Life) max speed changed from 190 to 184 km/h.
+    - Rail Intercity 5 (Diesel Power) max speed changed from 210 to 196 km/h.
+    - Rail Intercity 6 (Arms Race) max speed changed from 250 to 229 km/h.
+    - Rail Intercity 7 (Artificial Paradise) max speed changed from 270 to 255 km/h.
+    - Rail Intercity 8 (The Ultimate) max speed changed from 289 to 280 km/h.
+    - Rail Intercity 9 (Wicked Warp) max speed changed from 300 to 301 km/h.
+    - Rail Medium 8 (Reckoning) max speed changed from 186 to 184 km/h.
+    - Rail Fast 5 (Switch) max speed changed from 186 to 184 km/h.
+    - Rail Fast 8 (Electrodriving) max speed changed from 230 to 229 km/h.
+    - Monorail Medium 1 (Atoms and Emptiness) max speed changed from 241 to 229 km/h.
+    - Monorail Medium 2 (Ohm Divinity) max speed changed from 261 to 255 km/h.
+    - Monorail Medium 3 (Owl Vision) max speed changed from 281 to 280 km/h.
+    - Monorail Fast 2 (Tesla) max speed changed from 310 to 301 km/h.
+    - Maglev Medium 1 (Biomechanic Horse) max speed changed from 299 to 301 km/h.
+    - Maglev Medium 2 (Pet Destroyer) max sped changed from 333 to 316 km/h. Added tilt.
+    - Maglev Medium 3 (Hellbender) max sped changed from 366 to 340 km/h.
+    - Maglev Medium 4 (Get Heavy) max speed changed from 399 to 400 km/h. Added a bit more power.
+    - Maglev Fast 2 (Neon) max speed changed from 410 to 415 km/h.
+    - Maglev Fast 3 (Blood) max speed changed from 450 to 463 km/h.
+    - Maglev Fast 4 (MF Torture) max speed changed from 500 to 555 km/h.
+    - Monorail Intercity 1 (War on Error) max speed changed from 420 to 415 km/h.
+    - Monorail Intercity 3 (Blind Desire) max speed changed from 550 to 555 km/h.
+    - Monorail Intercity 4 (The Fall) max speed changed from 600 to 666 km/h.
+    - Maglev Intercity 1 (Bloodwork) max speed changed from 300 to 301 km/h.
+  
+  Added info about Fullspeed curve length to purchase menu for every engine.
+  Added hint about efficient usage to purchase menu for for every.
+    
+    
+0.8.0
+  All units which could load passengers can also refit to YETI and tired YETIs now. (only with YETI Extended Town & Industries on)
+    - YETI looks like mail in intercity/local trains
+    - tired YETI looks like valuables/gold/diamonds in intercity/local trains
+  
+  Reworked the parameter controlling signals:
+    - Signal graphics replaced with BRIX signals.
+    - NUTS can no longer detect BRIX (this prevented BRIX to be used as a static NewGRF alongside with NUTS in multiplayer)
+    - There are now two parameters controlling how singnals look:
+      - Which railtypes to replace
+        - None
+        - WETRail
+        - WETRail and PURR
+        - WETRail, PURR, Rail, Electrified rail, Monorail, Maglev (all railtypes that NUTS uses) (Default)
+      - Which rows of signals to replace
+        - Both - replaces signals just like BRIX would (Default)
+        - Semaphore - replaces only semaphore signals (the first row in the signal GUI)
+        - Light - replaces only light signals (the second row in the signal GUI)
+        - Semaphore in Light row - replaces only light signals, but with BRIX semaphore signals
+        - Light in Semaphore row - replaces only semaphore signals, but with BRIX light signals
+        - Both inverted - replaces both rows of signals, but in the opposite way than default
+        
+  Fixed a bunch of wrong mail/valuable capacities in Monorail Intercity.
+  Fixed graphical support for YETI cargo for flatbed wagons (turned off by default, universal ones worked correctly)
+  Added graphical support for tired YETI cargo for flatbed wagons.
+  
+  Migrated repository to https://github.com/V453000/NUTS
+  
+
+0.7.9
+  32bpp/ExtraZoom removed:
+    - They looked way worse than the 8bpp ones.
+    - Making them look nice would take a lot more time which I don't want to put into NUTS right now
+    - This gets even worse considering there are many more graphics to replace
+    - They took a lot of filesize for no big reason
+    - Slugs keep 32bpp, with a parameter to enable/disable it (of course you can always force 8bpp by setting blitter in openttd.cfg)
+    - IF it's convenient, I will release a second version of NUTS which defines 32bpp as 0.7.8 did and upload it to devzone later.
+  Added more parameter settings:
+    - for disabling/enabling slug 32bpp
+    - for disabling/enabling NUTS signals - separately for all semaphore signals, and for wetrail electric signals
+      0 for automatic (will only disable itself when BRIX is loaded)
+      1 for disabled (base set / BRIX signals will show)
+      2 for enabled (NUTS signals will show)
+  Fixed some other small issues I don't even remember, from what I can remember:
+    - basic support for some new FIRS2.0 cargoes (unfinished, not sure what is missing)
+    - some chameleon engines had broken rear engine drawing when double-headed
+  This release is a candidate for eventual finished NUTS in terms of main features.
+  If anything, I will rewrite the cargo wagon definitions with a more versatile system, and supporting all of the cargoes available at that time.
+  Please report bugs you find, even if you already reported it in the past, I clearly forgot if it still isn't fixed.
+
+
+0.7.8
+	32bpp/ExtraZoom:
+		Added Company Colouring to all existing 32bpp vehicles.
+		Redone Maglev FAST class to make it look nicer.
+		Added more specific colours to SLUG flatbeds to recognize cargo type better, and make RAINBOW SLUGs look more consistent.
+		Moved hopper part in SLUG hoppers so the SLUG backs do not show.
+		Redone CHAMELEON Tanker cargo to make it look better.
+		Nicer details for some flatbed cargoes - Bubbles, Wood, Machinery.
+		Added Maglev Express wagon for FAST/MEDIUM classes.
+	
+	Monorail INTERCITY:
+	Loading speed drastically reduced.
+	Loading speed is now constant value of 2, so the increasing capacity with increasing length will also increase amount of loading stages by 1 per 1 extra tile.
+	Amount of loading stages is 16 at 1 tile, 25 at 10 tiles.
+	Engine capacity reduced and made it scale with length.
+	
+	
+0.7.7
+	YES.
+	SLUGs in 32bpp/EZ now! Including company colours, so RAINBOW SLUGS as well! Also Animal Express.
+	
+0.7.6
+	32bpp/ExtraZoom CHAMELEON!
+	Various new cargo models, and also some clones from maglev.
+	
+	Rail Fast 7 now expires as it should.
+
+0.7.5
+	FIRST 32bpp/ExtraZoom sprites for NUTS!
+	Maglev MEDIUM and Maglev FAST classes are now replaced
+		- cargo wagons included
+		- only for 32bpp blitters, if you do not want to see the new stuff, just force 8bpp blitter in your config file
+	Minor tweaks to some introduction dates, ...
+	
+0.7.4
+	Fixed monorail medium to reduce tractive effort as it should.
+	Fixed monorail intercity wagons to have recolouring applied when cloning trains.
+	NEW visual appearance of maglev fast 2 and 3, and changed recolouring of 4. New names assigned as well.
+	Fixed minor alignment with Meat Grinder.
+	Fixed broken loading stages for YETI dudes of Rail Universal 3 and Monorail Universal wagons.
+	
+0.7.3
+	Making express wagons and express engines not able to carry YETI (Workers).
+	Added URAN (Uranium) cargo sprites for hopper wagons. Hopper and Universal wagons can load Uranium.
+	Other minor bugfixes.
+	
+0.7.2
+	Reworked Monorail INTERCITY
+		Visually:
+			- NEW engine and wagon sprites
+			- FIRST INTERCITY train with refit RECOLOURING
+			- passenger wagons have random sprites
+		Functionally:
+			- no longer has powered wagons
+			- wagons GAIN CAPACITY as the train gets longer
+			- base power increased considerably		
+		-> Makes Monorail INTERCITY convenient to use in any situation
+		-> Makes Monorail INTERCITY superior to use with long trains.
+		
+	Added YETI (Workers) cargo sprites for wagons. Only Universal wagons can load Workers.
+	
+	
+	New Monorail MEDIUM sprites. Also a new sprite for the first Monorail FAST.
+	
+0.7.1
+	HUGE FEATURE: All engines have 255 year life to prevent red numbers for 255 years :D
+
+0.7.0
+	MEOW Caboose now uses MEOW flatbed wagons. (livestock/goods)
+
+0.6.9
+	Made the first engine actually available with expiring vehicles.
+	Now introduction date is 1661 and it has 254 years before expiring (1915)
+	
+	Fixed some purchase menu strings (Chameleon and Rail Intercity)
+
+0.6.8
+	--------------------------
+	2nd NUTS BIRTHDAY IS HERE!
+	ARE YOU NUTS?
+	--------------------------
+	Changes and news:
+	
+	ALL ENGINES ARE 1 TILE LONG
+	For more autoreplace friendliness and generally more convenient vehicle purchase.
+	Adapted trains:
+	Rail STRONG - same stats, attached wagon
+	Rail MEDIUM - same stats, attached wagon
+	Rail FAST - dual headed, increased T.E. - should compete more easily with 2-headed Rail MEDIUM and other trains
+	
+	Monorail MEDIUM - double headed, double weight simply doubles the max T.E.
+	Monorail FAST - had to reduce the power, reduced weight, increased T.E. coefficient
+	Monorail CHAMELEON - just doubled
+	Monorail MENTALLY DISTURBED - dual headed
+	
+	Maglev MEDIUM - dual headed
+	Maglev FAST - dual headed
+	
+	Only to remain 0.5 tile long are LOGIC engines.
+	
+	
+	NEW parameter added: Wagons choice? with 2 options:
+	- ALL - Flatbed, Hopper, Tanker, Universal and Express wagon for each type like before
+	- Universal & Express ONLY
+		
+	NEW early "BASIC" train class:
+	In 1900, you get one available train class, you can make your first choice in 1920.
+	- 3 trains included - 1900, 1908, 1914
+	- 1st "classed" trains get introduced:
+		- 1920 STRONG
+		- 1922 LOCAL
+		- 1924 MEDIUM
+		- 1926 INTERCITY
+		- 1928 FAST
+		to match the later "one train per 10 years per class scheme" without a 10 year gap
+	
+	CHANGED INTRODUCTION DATES:
+	Rail wagon generations: 1900, 1950, 1985
+	7th Rail Generation: Strong 1985, Medium 1989, Fast 1993
+	
+	MEOW base Power and T.E. and speed reduced to increase necessity of other than red PURR and give other classes a chance.
+	
+	Maglev MEDIUM power rescaled - early maglevs get a bit more power.
+	
+	Chami got MEOW!
+	New head-less Chami train which has the power of rainbow!
+	
+	NEW Caboose.
+	Realism has arrived to NUTS!
+	Comes in 1950.
+	
+	Rail BASIC 1 and 1st gen wagons for rail introduction dates moved to year 0
+	Recommended start is in 1900 though.
+	
+	String colours changed so it is more obvious what engine can attach to which wagon.
+
+0.6.7
+	Some new rail 3rd gen wagons for rail MEOW - livestock and goods.
+
+0.6.6
+	Rail Fast 8 now also expires.
+
+0.6.5
+	VEHICLES NEVER EXPIRE is now possible to change!
+	If setting "vehicles never expire is off", trains will stop being available
+	-> you always have 1-2 last engines of a class
+	-> by the endgame you only have useful engines (41 total)
+	- wagons never expire
+		
+	CLEAN PURR cheaper than other PURRs.
+
+0.6.4
+	WETRail cargo-eating ships get +300% power bonus instead of +100% when loaded(fed)
+	LARGE ships get cargo capacity (including C4T)
+	Maglev wagons weigh less (80t -> 60t)
+		
+0.6.3
+	Rail MEOW now has correct tenders and change colours on rails properly.
+	Monorail MEOW Goods and Livestock flatbeds changed, cargo is bigger, looks nicer and with more colour variety.
+	The Doombringer now belongs to the MEOW class - it gets bonuses from PURR, but can transport only passengers.
+	
+0.6.2
+	MEOW reworked - all MEOW trains are now 1 tile long
+	Rail MEOW - enlarged steamers in style of Rail Intercity
+		- rainbow "tenders" are temporary! :D
+		- not sure what to do with them Doomies yet
+	Monorail MEOW - now dual-headed trains
+	
+	MEOW performance stats scaled and adjusted
+	
+	More MEOW improvements to come!
+
+
+0.6.1
+	PURR included in NUTS. Reason below :)
+
+	NEW train class: MEOW
+		- trains which change stats based on colour of PURR they drive on (details in purchase menu)
+		- two sub-classes:
+			- Rail MEOW
+				- 7 engines in 1929-1989 (each 10 years)
+				- 2 engines in 2020 and 2057
+				- uses any rail wagons
+			- Mono MEOW 
+				- 6 engines from 1995 to 2068
+				- uses monorail (not chami) wagons
+				- has special visual appearance of attached cargo wagons
+			and more!
+				
+	More smaller changes like introduction dates of some vehicles or minor bugfixes.
+
+0.6.0
+	WETRAIL Cargo-Eating ships now double power when they have any cargo loaded.
+	
+	Fixes around new ships.
+
+0.5.9
+	WETRAIL POPULATION GROWS!
+	- 2 new classes - SMALL and LARGE ships
+		- SMALL are suitable for refit networks
+		- LARGE are suitable for when you need large capacity
+	- ship wagons change their stats based on which ship they are attached to	
+	
+	- WETRAIL engines while driving on UNIVERSAL rails lose:
+		- 30% power
+		- 30% tractive effort 
+		- 30% max speed
+
+	RAINBOW SLUGS have one head changed (new), Animal Express gets the cat instead.
+
+	Slight increase of tractive effort for modern Rail FAST class.
+	Chameleon Brickwalker: only first engine makes steam.
+
+0.5.8
+	RAINBOW SLUG random reworked by frosch
+		- hopefully operational now
+
+0.5.7
+	Touches to RAINBOW SLUG
+		- colour random has more possibilities, mainly the ZEBRA colour scheme
+		- sprites are randomized independently, meaning you can get the unique heads with any colour
+		- unique heads:
+			- standard
+			- bigger eyes
+			- unicorn
+			- cat
+			- FASHION!! (hat)
+		- small chance to drive backwards
+		- the total amount of possible combinations is very high :)
+			
+	Reduced weight of maglev express wagons (it was accidentally doubled when making them articulated)
+	Reduced power gain of monorail FAST class.
+	Maglev Express wagons should look a bit nicer with SLUGs in || direction.
+	
+	
+0.5.6
+	NEW RAINBOW SLUG, comes in 2099!
+		- random colour scheme
+		- including RAINBOW and ZEBRA
+		- chance for RAINBOW scheme to have unique head
+		- same stats as THE SLUG
+		
+	C4T Introduction date -> 2052
+	various smaller fixes like strings etc.
+	
+0.5.5
+	Compatibility things related to new rail newGRF - PURR!
+	Return of expensive univ rail (no clue why it dissapeared)
+
+0.5.4
+	Fixed a bug where maglev had WETRail signals on both semaphores and normal signal types.
+	More small fixes like corrections of strings in purchase menu about capacity of rail express wagons with cargo-engines.
+
+0.5.3
+	Monorail Mentally Disturbed trains now have tilt
+	Added traditional Chinese translation (from dirace)
+
+0.5.2
+	Fixed WETRail universal & express wagons
+	 - CAN break newGRF compatibility if changed in running game from version 0.5.1!
+	 - only if you have any WETRail univ/express wagons
+	 
+	Appearance of WETRail express wagon adjusted so they also show with C4T correctly.
+	
+	Animal Express speed set to 211 to truly never slow down in curves. (90 deg turns do not count)
+		
+	Monorail INTERCITY extra power per wagon increased by 50%.
+
+	Fixed middle units of Animal Express to look the same way Slug middle units do.
+	Fixed Mail/Gold/Valuable/Diamond Slug wagons showing correctly.
+	
+	C4T universal wagons actually reall truly do show correct sprites now.
+	
+	Added hints into purchase menu for some LOCAL rail trains to demonstrate their sub-class better.
+	(as described on wiki at nuts.openttdcoop.org)
+	
+0.5.1
+	Mono FAST introduction dates rescaled to make 2019 come in 2019.
+	
+	Animal Express speed increased to 222 km/h.
+	Animal Express wagon capacity same as THE SLUG now.
+
+0.5.0
+	THE SLUG just got some new friends!
+	
+	WETRail express wagon added.
+	
+	Various small balance changes in train stats
+	- a bit more tractive effort for modern rail FAST
+	- a bit less power for monorail MEDIUM
+	- less power for chameleons
+	
+0.4.9
+	WETRail road crossings added.
+	WETRail tunnels now have the dirty shore on the sides.
+	 - this disables itself when BK tunnels are loaded as it does not fit with BK tunnels
+		- applies to 0.3b and 1.0 both from download content
+	WETRail signals made thicker in the | directions by 1px.
+		
+	Chameleon base speeds slightly reduced,
+	additionally speed reduction per unit reduced.
+	Chameleon tractive effort reduced.
+	Chameleon power slightly increased.
+	
+	Rail and Monorail Express wagon capacity increased when hauled by cargo trains.
+	Loading speed adjusted correspondingly.
+	
+	Monorail fast class tractive effort reduced by 25%
+	Monorail fast 4 (Reality) max speed increased from 370 to 415.
+	
+	Monorail wagons loading speed from 6 to 8. (4 loading stages now)
+	
+	Maglev ICE 4 The Day I Die now has the same max speed as Maglev Medium 4 Get Heavy.
+	Meat Grinder capacity/loading speed changed slightly.
+	
+	Early steamers redrawn!
+	
+	All of rail fast class redrawn or improved and their appearance moved around a bit.
+	
+	Chameleon class appearance re-coded.
+	When engine is in the middle of the train, it will show as 1 wagon + one (new) middle engine
+	
+	C4T universal wagons show correct sprites now.
+	
+	Added some purchase costs to the superstrong engines.
+
+0.4.8
+	1st NUTS BIRTHDAY IS HERE!
+
+	NEW Railtype! WETRails, bringing WTF and 2 new engines!
+	WETRails introduce new signals!
+	Those signals can also be used as Semaphores on all other railtypes.	
+	
+	Bauxite colour changed to match FIRS/CHIPS better in future.
+	
+	Coal hoppers always metal-grey	
+	Changed colours in the purchase menu a bit.
+	
+0.4.7
+	Proper support for Martian Industries cargoes.
+	RailLocal9 wagon capacity is now 110 to correspond to purchase menu info.
+	Fixed visual appearance for Chameleon engines while in the rear of the train.
+
+0.4.6
+	Chameleons now randomize from 20 colours instead of length-colour fixation.
+	They randomize in upon unloading, visiting depots and loading any new cargo.
+	
+	MonoLocal power reduced slightly.
+
+0.4.5
+	Monorail Local trains have more capacity and loading speed to make them more useful in general.
+	Monorail Medium trains scale tractive efford according to purchase menu info.
+	Monorail Mentally Disturbed engines have only 3 random stages instead of 5.
+	Maglev Express wagons weight 60t, same as cargo wagons.
+	Maglev Fast trains have a little bit more power. 
+		
+	Fixed major issue where monorail Intercity 2, 3 and 4 did not get powered wagons correctly.
+	Monorail Intercity have correct wagon capacities according to purchase menu.
+	Maglev passenger wagons do not accidentally double capacity anymore due to consisting of 2 vehicles.
+	
+	Chami Express wagons purchase menu says 84 which is the capacity it has at the length of 1 tile.
+	The Slug has more accurate purchase menu including more info.
+	Maglev cargo wagons purchase menu says 22 capacity correctly according to the real capacity.
+	Duke NUT'em purchase menu info includes express wagon capacity.
+	
+0.4.4
+	Chameleon express wagon capacity reworked,
+	now capacity increases with length of train, for passengers by 2 passengers per tile, for each train unit.
+	For mail by 1 per tile for each train unit, mail also has has half capacity in general.
+	Valuables / Gold / Diamonds always have the same capacity as normal wagons - 14.
+	Loading speed scales so that in all configurations there are 7 loading stages.
+	
+	Improved chameleon hopper - rubber and grain
+	Other minor graphical fixes
+
+0.4.3
+	Mentally Disturbed trains now have their power random directly dependent on mood random.
+	NEW NUTS WIKI!
+	http://dev.openttdcoop.org/projects/nuts/wiki
+
+0.4.2
+	Maglev Express wagons are articulated short like other maglev wagons
+		- to make them behave the same way as other maglev wagons in curves
+		- The Slug now looks acceptable when multiple Slugs are in one consist
+		- Maglev Local (Meat Grinder) wagons redrawn due to the shortening
+	Maglev INTERCITY class redrawn
+		- old Maglev Intercity moved to Monorail Intercity sprites, old Monorail Intercity sprites removed
+	Universal Rail introduction date moved to 1958 from 1988 to correspond with Chameleon introduction.
+	
+	New wagons: Chameleon Express Wagon
+	Chameleons can now carry all cargoes.
+	Early Chameleon cost reduced to make them more affordable early on.
+	Fixed Chameleon speed formulas to correspond to the info in purchase menu.
+
+
+0.4.1
+	NEW Class of trains: CHAMELEON Class
+		- special class of trains which changes Maximum Speed and colour based on length of consist
+		- the train itself can load any cargo
+		- loses maximum speed with increasing length
+		- comes with a whole new set of wagons with 28t capacity, but loading in 7 stages
+		- first train comes in 1960
+	Reduced power of all mentally disturbed trains significantly.
+
+0.4.0
+	ALL reversible engines reverse AUTOMATICALLY when at the end of the train.
+		This can be over-ridden by flipping the vehicle by Ctrl+click.
+			
+	Monorail FAST class reworked
+	Engine power increases by 10% with every wagon added. This bonus stacks and applies to every engine in the train.
+	Extremely effective with long trains - but you have to keep clean curves which is not too easy with longer trains.
+	- they no longer have tilt
+	
+	Monorail INTERCITY clas reworked
+	Wagons are powered - they add extra power to the train.
+	Extremely effective with long trains - but you have to keep clean curves which is not too easy with longer trains.
+	
+	Monorail MEDIUM class reworked
+	Engine power decreases by 10% with every wagon added. This bonus stacks and applies to every engine in the train.
+	Extremely effective with short trains.
+	
+	Monorail LOCAL class reworked
+	Capacity drops by 5 at every ODD amount of units in consist.
+	Colour changes based on capacity.
+	Loading stages decrease by 1 at every EVEN amount of units in consist.
+	You can see the number of loading stages on the front of the vehicle when stopped in depot.
+	
+	Monorail MENTALLY DISTURBED class reworked
+	Power of the engine randomly changes based on the mood of the train.
+	This is re-randomized at every station or depot visit.
+		
+	Normal Maglev cargo wagons capacity reduced from 24 to 22. SLUG capacity stays at 24.
+	
+	Slight purchase menu icon color improvements.
+	
+	Other smaller fixes.
+
+0.3.9
+	Fixed a minor issue with flatbeds.
+
+0.3.8
+	Added flatbeds for the new wagons.
+	Fixed some alignments and stuff of the new wagons.
+
+0.3.7
+	Slugs are now bigger, and better.
+	Cargo wagons can now load GOLD/VALUABLES/DIAMONDS - Flatbed (or Universal) wagons
+	Monorail Flatbed wagons now recognize toys properly instead of showing crates.
+	RailFlatbed1 - goods now does not have white wagons for rubberducks.
+	Various small graphical improvements/fixes to wagons.
+
+0.3.6
+	Tankers now have default cargo OIL, not livestock.
+	Hoppers now have default cargo COAL.
+	Flatbeds now have default cargo GOODS.
+	Universal wagons now have default cargo GOODS.
+	(Monorail) text is now gold in all cases.
+	After reversing symmetric vehicles in the depot by ctrl+clicking them, they will show reversed icon when stopped in the depot. This also shows in train lists.
+	Unattached maglev and monorail Express Wagons will now not all appear as rail 1st gen express wagons, but as monorail/maglev.
+	All Engineering Supplies flatbeds are now red.
+	
+0.3.5
+	SUPERSTRONG speeds adjusted, now 5 and 6 are with TILT, 5 having CL1, 6 having CL1.5. Speeds of early SUPERSTRONG trains slightly increased.
+	Changes to GOLD/DIAMonds/VALUables capacities, they should always be lower than mail capacities.
+	Duke NUT'em does not require electrification as it is an Uranium engine.
+	Bubbles and batteries loading stages fixed for Rail 2nd gen Flatbed.
+	
+0.3.4
+	Added FRVG - FIRS Fruit, formerly Fruit and Vegetables, amongst supported cargoes.
+	Improved || alignment of short wagons; now they look the same in both directions.
+
+0.3.3
+	Fixed a bug where 3rd gen rail tankers only had 2 loading stages when in motion. (Moving trains looked empty when 50% full etc)
+
+0.3.2
+	All monorail cargo trains gain +1500 power, this makes especially the early monorail trains a bit stronger than before.
+	Rail SuperStrong trains are now able to haul 2nd gen hoppers.
+	FAST maglev trains now do not claim being MEDIUM.
+	Rail SuperStrong 6 (X E Qt R) now does not need electrification.
+	
+0.3.1
+	Maglev Flatbed - livestock redrawn, Now coming in special Holy Shit Animals edition!
+	Minor fixes like glowing colours and some recolouring.
+	
+0.3.0
+	Colours for maglev flatbed.
+
+0.2.9
+	Rail 1st gen wagon capacity increased from 20 to 24
+		- to cause less difference when upgrading to 2nd gen (30)
+		- to make early game less hectic, allowing to connect more industries.
+		- loading speed is unchanged as of 2 (x2 for articulation), so there is one more loading stage now.
+	Maglev Tankers redrawn
+	Maglev Flatbed sweets now in various kinds.
+	Maglev Flatbed beer (fizzy drinks) improved slightly.
+	
+
+0.2.8
+	Cargo trains Express wagon capacities increased.
+	Enhanced Purchase Menu:
+	 - each train has a coloured number next to it. The number means it's chronological number in the train class and the colour indicates the class:
+		orange = SUPERSTRONG
+		blue = STRONG
+		green = MEDIUM
+		red = FAST
+		grey = INTERCITY
+		yellow = LOCAL
+		and more extra icons
+	 - the info on which rail trains go is also coloured now:
+		grey = rail
+		blue = electrified rail
+		gold = monorail
+		white = maglev
+	Touched up sprites of Diesel Power and Duke NUT'em, also improved alignment of Duke NUT'em to other vehicles.		
+
+0.2.7
+	Making recolouring of maglev express (Meat Grinder only for now) wagons actually work.
+
+
+0.2.6
+	Added a new maglev local train: Meat Grinder
+	 - 211 km/h maglev train with tilt means no slowdowns in curves
+	 - a bit weaker acceleration than monorail local trains
+	 - lower capacity than local monorail trains means that it is very useful in suburbs where traffic is low
+	 - is able to recolour by refit!
+	Timewave Zero loading stages increased from 2 to 3.
+	Timewave Zero engine/wagon capacity decreased from 110/130 to 90/132.
+	SLUG speed decreased from 211 to 177.
+	Fixed some loading times so engines load as long as their wagons.
+	Express wagons now inform about changing capacity and loading speed based on which engine they are hauled to.
+	Maglev Intercity trains now inform about loading speeds and capacities in the purchase menu.
+
+0.2.5
+	Purchase menu information fixes and loading speed adjustments.	
+
+0.2.4
+	Major stat rework of passenger trains:
+	- Maglev and Monorail INTERCITY trains swapped around. This is to make them differ a lot.
+		The faster ones (monorail now) are very vulnerable to short curves but have high max throughput, being effective on clean networks.
+		The slower ones (maglev now) are almost immune to slowdowns on curves but their throughput is capped a bit lower, being effective on networks where space is very limited.
+	- Monorail Local speed reduced
+		This way they are less overpowered in compare with Rail Local, but are even more comfortable to use than before (full speed in all curves, instant acceleration).
+	- rescaled stats of Rail Local to make them more balanced
+	- SLUG is slower, but with higher capacity
+	"This vehicle has tilt." text made blue to be better visible as there is starting to be a lot of text.
+	
+	
+
+0.2.3
+	Rail local trains redrawn.
+	
+0.2.2
+	Rail local trains have their stats majorly changed.
+	Most of these changes are reducing their acceleration drastically.
+	This is to make them comparably strong to monorail local trains. You get similar throughput, but you can:
+		- either have trains with the same capacity as in previous versions, but with bad acceleration
+		- or have trains with less capacity than in the previous versions, but with about as good acceleration as it was
+	The throughput is affected the same way as reducing capacities would, but gives a little more choice.
+	Also, single-engine 3 tile local trains will have considerable problems with climbing hills, while double-engine 3 tile local trains will not.
+
+	All rail and monorail cargo wagons now have colours so you can recognize them even when empty.
+	
+	Minor graphical touches to RailMedium9.
+
+0.2.1
+	Rail local trains are able to refit to colour liveries.
+	Now you can choose how exactly should your rail local trains look. Note that rail intercity trains also can haul these wagons, but will take no recolouring effect.
+	Purchase menu sprites stay coloured, to have some difference between trains (until I redraw them to make each one look different).
+	
+	Loading speed info was added to the purchase menu:
+	Cargo wagons have the loading speed at each wagon.
+	Articulated wagons consisting of 2 segments have their loading speed wrote per segment, so the effective loading speed for the whole twin-wagon is double of that number.
+	Express wagons have loading speed noted on engine as it depends which engine they are attached to
+	Passenger engines have loading speed noted on the engine.
+	
+	3rd gen rail wagon loading speed scaled from 8 to 7 (according to the 40->35 reduction).
+	
+	Attach info in purchase menu was improved, now says "can haul any RAIL cargo engines or any RAIL cargo wagons", so the logic how attach allowances works is more clear.
+	RailFast 2, 3 and 8 redrawn to a different drawing technique, more adjustments to come!
+	Alignment of SLUG mail/gold wagons fixed.
+	
+
+0.2.0
+	All maglev wagons are redrawn!
+	All maglev cargo medium engines, and half of the fast engines are redrawn!
+	Introduction dates adjusted - modern engines come in longer intervals.
+	Last trains now come in 2069.
+	Nyan cat removed from the set.
+	
+
+0.1.9
+	Redrawn maglev hopper wagons.
+	Modern Rail Medium trains have slightly lower power.
+	3rd gen Rail wagons capacity reduced to 35 units.
+	Swapped colours of stone/sugar hoppers for better variety at FIRS farms.
+	Swapped colours of clay/bauxite hoppers for better difference of wagons like blue/ltblue+brown-ish clay/iron ore.
+
+0.1.8
+	2nd gen rail hoppers, 3rd gen rail hoppers and monorail hoppers now have colours too
+	1st and 2nd gen rail hoppers also have 5 random liveries.
+	Fixed minor graphical issues of monorail medium trains.
+
+0.1.7
+	Many new flatbed cargoes drawn for monorail flatbed wagons.
+	Rail Tankers have colours now for all generations.
+	1st Rail Hoppers now have colours - each cargo is different!
+	1st gen rail tankers are improved and fit the new flatbeds now.
+	Water in tankers shows properly now.
+	3rd gen rail hoppers loading stages fixed.
+	3rd gen rail wagons are back to 1990.
+
+0.1.6
+	Many visual changes to rail wagons.
+	First generation Rail Flatbeds were completely redrawn.
+	Second and third generation Rail Flatbeds now use more specific cargo sprites and many sprites were improved.
+	Third generation Rail Hoppers have completely redrawn cargo "heaps" in them.
+	Colourful 3rd gen Rail Tankers for more cargoes than just toyland.
+	All third generation rail wagons moved to 2010.
+	
+0.1.5
+	Fixed loading speeds of all passenger wagons (capacity was increased but loadspeed was not in the last change)
+	Loading speeds synchronized, so trains load as quickly as wagons do.
+	Rail cargo wagons now have the Designed date in the purchase menu.
+
+0.1.4
+	Maglev ICE passenger/mail capacity +20%
+	Doubled capacity of all passenger/mail/gold trains. (maglev gets 20% first, doubled after)
+	Maglev ICE trains acceleration slightly reduced.
+	Issues with Cereals (ecs) fixed for all wagons.
+	
+
+0.1.3
+	NEW generation of rail wagons - the 2nd gen flatbed, hopper, tanker and universal wagon.
+		With unique sprites for ALL known cargoes including all ECS, FIRS and pikka basic industries!
+	Balance changes to ICE trains for monorail and maglev - power raised significantly.
+	Hopefully finally fixed issues with railflatbed1 wrong sprites when empty.
+		
+
+0.1.2
+	Completely re-ordered the code of the whole newGRF so it can compile now without running out of action2 IDs.
+	Added Cola, Beer and Plastic tankers for toyland - now with colours!
+	Added cargo-specific Railflatbed3 Sweets.
+
+0.1.1
+	Fixed major bugs with acceleration models and curve speeds of railtypes.
+
+0.1.0
+	UNIVERSAL RAIL added. You can now smoothly autoreplace between track types using universal rail.
+	1st gen hopper rail wagons have improved sprites.
+	Added 2nd gen hoppers for rail.
+	Increased capacity of Local engines to make them more viable.	
+	
+0.0.9
+	Rail INTERCITY got 4 trains redrawn. Hooray!
+	RailICE1 - the Firestarter moved to 1920 to be usable from the start, instead of 1926.
+	More bugs fixed:
+	Empty 1st gen rail flatbed wagons had some wrong sprites when empty.
+	Alignment of mail wagons for Rail Local 8 and 9 fixed.
+	Fixed some mis-informing strings.
+
+
+0.0.8
+	RailSuperStrong class is now available! Time for some hardcore low curve length Sparta!
+	Randomized cargoes now also on normal wagons and on maglev and rail.
+	Minor buffs of a early steamer trains.
+	Early fast maglevs are a bit faster.
+	
+	
+0.0.7 
+	Maglev trains now come in 2000 to compete with monorail better.
+	Most maglev cargo trains have increased power.
+	Maglev hopers can now load farm supplies.
+	All white pixel errors eliminated.
+	
+
+0.0.6 
+	Maglev Universal wagons now randomize when loaded with: sweets/goods/fruit/livestock/food
+	Fixed some minor cosmetic bugs.
+
+0.0.5 Fixed a minor sprite bug.
+	
+
+0.0.4 First balance release
+	Attempt to balance train stats:
+	Maglevs has appropriately heavy wagons now.
+	Local trains are useful - their capacity is increased.
+	Added a sub-class in local trains - choose between speed or capacity.
+	Monorail ICE and Fast trains are speed-compatible for mixed networks.
+	
+
+0.0.3 Second bugfix release
+	Further bugs fixed, mainly purchase menu and alignments.
+	Maglev wagon capacity increased.
+	Monorail strength reduced drastically.
+	Stats of passenger trains adjusted.
+	Rail ICE class now has the same speed as rail fast to encourage mixed networks on rail.
+
+
+0.0.2 First bugfix relase
+	Many detected bugs are fixed, mostly typos and various small problems.
+	Train stats are changed a lot.
+	Many other fixes :)
+
+
+0.0.1	First alpha release version
+	Many things still missing, but it is 1.4.2012 the first playable version is here! This is no joke!
+	Most notably is missing:
+			Some wagons will show inappropriate cargo sprites outside temperate climate or with industry sets loaded. Only temperate with original industries works at the moment.
+			Train stats are just guessed, testing starts now!
+			Many sprites are going to be enhanced and improved in future versions.
+			Features like parameter settings or universal rail type are yet to come.
