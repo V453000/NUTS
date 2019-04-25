@@ -47824,6 +47824,75 @@ switch (FEAT_TRAINS, SELF, switch_railmedium4_reversing, var[0xC8, 0, 0xFF]) {
 0xFF: switch_railmedium4_stopped;
 }
 
+
+//------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
+//   ARTICULATED GRAPHICS HACK
+//------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium4_capacity_engine, cargo_type_in_veh){
+	PASS: 15;
+	GOOD: 5;
+	5;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium4_capacity_2, position_in_consist & 1){
+	0: switch_railmedium4_capacity_engine;
+	25;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium4_capacity_1, position_in_consist_from_end){
+	0: switch_railmedium4_capacity_engine;
+	1: 25;
+	switch_railmedium4_capacity_2;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium4_capacity, position_in_consist){
+	0: switch_railmedium4_capacity_engine;
+	1: 25;
+	switch_railmedium4_capacity_1;
+}
+//--------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium4_loadspeed_engine, cargo_type_in_veh){
+	PASS: 3;
+	GOOD: 1;
+	1;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium4_loadspeed_2, position_in_consist & 1){
+	0: switch_railmedium4_loadspeed_engine;
+	5;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium4_loadspeed_1, position_in_consist_from_end){
+	0: switch_railmedium4_loadspeed_engine;
+	1: 5;
+	switch_railmedium4_loadspeed_2;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium4_loadspeed, position_in_consist){
+	0: switch_railmedium4_loadspeed_engine;
+	1: 5;
+	switch_railmedium4_loadspeed_1;
+}
+//--------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium4_graphics_2, position_in_consist & 1){
+	0: spriteset_train_railmedium4;
+	railuniversal3_wagon_switch;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium4_graphics_1, position_in_consist_from_end){
+	0: spriteset_train_railmedium4;
+	1: railuniversal3_wagon_switch;
+	switch_railmedium4_graphics_2;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium4_graphics, position_in_consist){
+	0: spriteset_train_railmedium4;
+	1: railuniversal3_wagon_switch;
+	switch_railmedium4_graphics_1;
+}
+//--------------------------------------------------------------------------------------------
+//----- Articulation
+switch (FEAT_TRAINS, SELF, switch_railmedium4_articulated, extra_callback_info1){
+	1: item_railmedium4;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
 switch (FEAT_TRAINS, SELF, switch_railmedium4_attach, vehicle_type_id){
 	item_railmedium4: CB_RESULT_ATTACH_ALLOW;
 
@@ -47853,8 +47922,9 @@ item(FEAT_TRAINS, item_railmedium4, 37) { //ID37
         vehicle_life:                 255;
         reliability_decay:            5;
 		//Just an engine, no refit
-        refittable_cargo_classes:     bitmask(NO_CARGO_CLASS);
+        refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+				default_cargo_type:           GOOD;
 
         loading_speed:                5;
         cost_factor:                  10;
@@ -47869,7 +47939,7 @@ item(FEAT_TRAINS, item_railmedium4, 37) { //ID37
         power:                        2000 hp;
         running_cost_base:            RUNNING_COST_DIESEL;
         dual_headed:                  0;
-        cargo_capacity:               0;
+        cargo_capacity:               30;
         weight:                       50 ton;
         ai_engine_rank:               0;
         engine_class:                 ENGINE_CLASS_DIESEL;
@@ -47882,8 +47952,8 @@ item(FEAT_TRAINS, item_railmedium4, 37) { //ID37
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: switch_railmedium4_reversing;//spriteset_train_railmedium4;
-		articulated_part: switch_rail_articulated_2;
+		default: switch_railmedium4_graphics;//spriteset_train_railmedium4;
+		articulated_part: switch_railmedium4_articulated;
 		purchase: spriteset_purchaseMenu_railmedium4;
 		can_attach_wagon: switch_railmedium4_attach;
 		additional_text: string(info_rail_medium_4);
@@ -47893,6 +47963,8 @@ item(FEAT_TRAINS, item_railmedium4, 37) { //ID37
 		tractive_effort_coefficient:		117; //engine only
 		cost_factor:						10; //everything
 		running_cost_factor:				100; //only engines
+		cargo_capacity: switch_railmedium4_capacity;
+		loading_speed: switch_railmedium4_loadspeed;
 	}
 }
 switch(FEAT_TRAINS, SELF, switch_railmedium5_depotted, vehicle_is_in_depot){
@@ -47907,6 +47979,75 @@ switch (FEAT_TRAINS, SELF, switch_railmedium5_reversing, var[0xC8, 0, 0xFF]) {
 0xFD: spriteset_train_railmedium5;
 0xFE: switch_railmedium5_stopped;
 0xFF: switch_railmedium5_stopped;
+}
+
+
+//------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
+//   ARTICULATED GRAPHICS HACK
+//------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium5_capacity_engine, cargo_type_in_veh){
+	PASS: 15;
+	GOOD: 5;
+	5;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium5_capacity_2, position_in_consist & 1){
+	0: switch_railmedium5_capacity_engine;
+	25;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium5_capacity_1, position_in_consist_from_end){
+	0: switch_railmedium5_capacity_engine;
+	1: 25;
+	switch_railmedium5_capacity_2;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium5_capacity, position_in_consist){
+	0: switch_railmedium5_capacity_engine;
+	1: 25;
+	switch_railmedium5_capacity_1;
+}
+//--------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium5_loadspeed_engine, cargo_type_in_veh){
+	PASS: 3;
+	GOOD: 1;
+	1;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium5_loadspeed_2, position_in_consist & 1){
+	0: switch_railmedium5_loadspeed_engine;
+	5;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium5_loadspeed_1, position_in_consist_from_end){
+	0: switch_railmedium5_loadspeed_engine;
+	1: 5;
+	switch_railmedium5_loadspeed_2;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium5_loadspeed, position_in_consist){
+	0: switch_railmedium5_loadspeed_engine;
+	1: 5;
+	switch_railmedium5_loadspeed_1;
+}
+//--------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium5_graphics_2, position_in_consist & 1){
+	0: spriteset_train_railmedium5;
+	railuniversal3_wagon_switch;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium5_graphics_1, position_in_consist_from_end){
+	0: spriteset_train_railmedium5;
+	1: railuniversal3_wagon_switch;
+	switch_railmedium5_graphics_2;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium5_graphics, position_in_consist){
+	0: spriteset_train_railmedium5;
+	1: railuniversal3_wagon_switch;
+	switch_railmedium5_graphics_1;
+}
+//--------------------------------------------------------------------------------------------
+//----- Articulation
+switch (FEAT_TRAINS, SELF, switch_railmedium5_articulated, extra_callback_info1){
+	1: item_railmedium5;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
 switch (FEAT_TRAINS, SELF, switch_railmedium5_attach, vehicle_type_id){
@@ -47938,8 +48079,9 @@ item(FEAT_TRAINS, item_railmedium5, 39) { //ID39
         vehicle_life:                 255;
         reliability_decay:            5;
 		//Just an engine, no refit
-        refittable_cargo_classes:     bitmask(NO_CARGO_CLASS);
+        refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+				default_cargo_type:           GOOD;
 
         loading_speed:                5;
         cost_factor:                  10;
@@ -47953,7 +48095,7 @@ item(FEAT_TRAINS, item_railmedium5, 39) { //ID39
         power:                        2700 hp;
         running_cost_base:            RUNNING_COST_DIESEL;
         dual_headed:                  0;
-        cargo_capacity:               0;
+        cargo_capacity:               30;
         weight:                       50 ton;
         ai_engine_rank:               0;
         engine_class:                 ENGINE_CLASS_DIESEL;
@@ -47966,8 +48108,8 @@ item(FEAT_TRAINS, item_railmedium5, 39) { //ID39
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: switch_railmedium5_reversing;//spriteset_train_railmedium5;
-		articulated_part: switch_rail_articulated_2;
+		default: switch_railmedium5_graphics;//spriteset_train_railmedium5;
+		articulated_part: switch_railmedium5_articulated;
 		purchase: spriteset_purchaseMenu_railmedium5;
 		can_attach_wagon: switch_railmedium5_attach;
 		additional_text: string(info_rail_medium_5);
@@ -47977,6 +48119,8 @@ item(FEAT_TRAINS, item_railmedium5, 39) { //ID39
 		tractive_effort_coefficient:		127; //engine only
 		cost_factor:						11; //everything
 		running_cost_factor:				100; //only engines
+		cargo_capacity: switch_railmedium5_graphics;
+		loading_speed: switch_railmedium5_loadspeed;
 	}
 }
 
@@ -47992,6 +48136,75 @@ switch (FEAT_TRAINS, SELF, switch_railmedium6_reversing, var[0xC8, 0, 0xFF]) {
 0xFD: spriteset_train_railmedium6;
 0xFE: switch_railmedium6_stopped;
 0xFF: switch_railmedium6_stopped;
+}
+
+
+//------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
+//   ARTICULATED GRAPHICS HACK
+//------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium6_capacity_engine, cargo_type_in_veh){
+	PASS: 15;
+	GOOD: 5;
+	5;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium6_capacity_2, position_in_consist & 1){
+	0: switch_railmedium6_capacity_engine;
+	25;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium6_capacity_1, position_in_consist_from_end){
+	0: switch_railmedium6_capacity_engine;
+	1: 25;
+	switch_railmedium6_capacity_2;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium6_capacity, position_in_consist){
+	0: switch_railmedium6_capacity_engine;
+	1: 25;
+	switch_railmedium6_capacity_1;
+}
+//--------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium6_loadspeed_engine, cargo_type_in_veh){
+	PASS: 3;
+	GOOD: 1;
+	1;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium6_loadspeed_2, position_in_consist & 1){
+	0: switch_railmedium6_loadspeed_engine;
+	5;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium6_loadspeed_1, position_in_consist_from_end){
+	0: switch_railmedium6_loadspeed_engine;
+	1: 5;
+	switch_railmedium6_loadspeed_2;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium6_loadspeed, position_in_consist){
+	0: switch_railmedium6_loadspeed_engine;
+	1: 5;
+	switch_railmedium6_loadspeed_1;
+}
+//--------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium6_graphics_2, position_in_consist & 1){
+	0: spriteset_train_railmedium6;
+	railuniversal3_wagon_switch;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium6_graphics_1, position_in_consist_from_end){
+	0: spriteset_train_railmedium6;
+	1: railuniversal3_wagon_switch;
+	switch_railmedium6_graphics_2;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium6_graphics, position_in_consist){
+	0: spriteset_train_railmedium6;
+	1: railuniversal3_wagon_switch;
+	switch_railmedium6_graphics_1;
+}
+//--------------------------------------------------------------------------------------------
+//----- Articulation
+switch (FEAT_TRAINS, SELF, switch_railmedium6_articulated, extra_callback_info1){
+	1: item_railmedium6;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
 switch (FEAT_TRAINS, SELF, switch_railmedium6_attach, vehicle_type_id){
@@ -48023,8 +48236,9 @@ item(FEAT_TRAINS, item_railmedium6, 41) { //ID41
         vehicle_life:                 255;
         reliability_decay:            5;
 		//Just an engine, no refit
-        refittable_cargo_classes:     bitmask(NO_CARGO_CLASS);
+        refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+				default_cargo_type:           GOOD;
 
         loading_speed:                5;
         cost_factor:                  10;
@@ -48038,7 +48252,7 @@ item(FEAT_TRAINS, item_railmedium6, 41) { //ID41
         power:                        3500 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
         dual_headed:                  0;
-        cargo_capacity:               0;
+        cargo_capacity:               30;
         weight:                       80 ton;
         ai_engine_rank:               0;
         engine_class:                 ENGINE_CLASS_ELECTRIC;
@@ -48051,8 +48265,8 @@ item(FEAT_TRAINS, item_railmedium6, 41) { //ID41
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: switch_railmedium6_reversing;//spriteset_train_railmedium6;
-		articulated_part: switch_rail_articulated_2;
+		default: switch_railmedium6_graphics;//spriteset_train_railmedium6;
+		articulated_part: switch_railmedium6_articulated;
 		purchase: spriteset_purchaseMenu_railmedium6;
 		can_attach_wagon: switch_railmedium6_attach;
 		additional_text: string(info_rail_medium_6);
@@ -48062,20 +48276,78 @@ item(FEAT_TRAINS, item_railmedium6, 41) { //ID41
 		tractive_effort_coefficient:		140; //engine only
 		cost_factor:						12; //everything
 		running_cost_factor:				100; //only engines
+		cargo_capacity: switch_railmedium6_capacity;
+		loading_speed: switch_railmedium6_loadspeed;
 	}
 }
-switch(FEAT_TRAINS, SELF, switch_railmedium7_depotted, vehicle_is_in_depot){
-1:spriteset_train_railmedium7_reversed;
-0:spriteset_train_railmedium7;
+
+
+//------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
+//   ARTICULATED GRAPHICS HACK
+//------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium7_capacity_engine, cargo_type_in_veh){
+	PASS: 15;
+	GOOD: 5;
+	5;
 }
-switch (FEAT_TRAINS,SELF, switch_railmedium7_stopped, vehicle_is_stopped){
-1:switch_railmedium7_depotted;
-0:spriteset_train_railmedium7;
+switch(FEAT_TRAINS, SELF, switch_railmedium7_capacity_2, position_in_consist & 1){
+	0: switch_railmedium7_capacity_engine;
+	30;
 }
-switch (FEAT_TRAINS, SELF, switch_railmedium7_reversing, var[0xC8, 0, 0xFF]) {
-0xFD: spriteset_train_railmedium7;
-0xFE: switch_railmedium7_stopped;
-0xFF: switch_railmedium7_stopped;
+switch(FEAT_TRAINS, SELF, switch_railmedium7_capacity_1, position_in_consist_from_end){
+	0: switch_railmedium7_capacity_engine;
+	1: 30;
+	switch_railmedium7_capacity_2;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium7_capacity, position_in_consist){
+	0: switch_railmedium7_capacity_engine;
+	1: 30;
+	switch_railmedium7_capacity_1;
+}
+//--------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium7_loadspeed_engine, cargo_type_in_veh){
+	PASS: 3;
+	GOOD: 1;
+	1;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium7_loadspeed_2, position_in_consist & 1){
+	0: switch_railmedium7_loadspeed_engine;
+	6;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium7_loadspeed_1, position_in_consist_from_end){
+	0: switch_railmedium7_loadspeed_engine;
+	1: 6;
+	switch_railmedium7_loadspeed_2;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium7_loadspeed, position_in_consist){
+	0: switch_railmedium7_loadspeed_engine;
+	1: 6;
+	switch_railmedium7_loadspeed_1;
+}
+//--------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium7_graphics_2, position_in_consist & 1){
+	0: spriteset_train_railmedium7;
+	railuniversal2_wagon_switch;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium7_graphics_1, position_in_consist_from_end){
+	0: spriteset_train_railmedium7;
+	1: railuniversal2_wagon_switch;
+	switch_railmedium7_graphics_2;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium7_graphics, position_in_consist){
+	0: spriteset_train_railmedium7;
+	1: railuniversal2_wagon_switch;
+	switch_railmedium7_graphics_1;
+}
+//--------------------------------------------------------------------------------------------
+//----- Articulation
+switch (FEAT_TRAINS, SELF, switch_railmedium7_articulated, extra_callback_info1){
+	1: item_railmedium7;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
 switch (FEAT_TRAINS, SELF, switch_railmedium7_attach, vehicle_type_id){
@@ -48106,8 +48378,9 @@ item(FEAT_TRAINS, item_railmedium7, 43) { //ID43
         model_life:                   40;
         vehicle_life:                 255;
         reliability_decay:            5;
-        refittable_cargo_classes:     bitmask(NO_CARGO_CLASS);
+        refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+				default_cargo_type:           GOOD;
 
         loading_speed:                5;
         cost_factor:                  10;
@@ -48121,7 +48394,7 @@ item(FEAT_TRAINS, item_railmedium7, 43) { //ID43
         power:                        4000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
         dual_headed:                  0;
-        cargo_capacity:               0;
+        cargo_capacity:               35;
         weight:                       70 ton;
         ai_engine_rank:               0;
         engine_class:                 ENGINE_CLASS_ELECTRIC;
@@ -48134,8 +48407,8 @@ item(FEAT_TRAINS, item_railmedium7, 43) { //ID43
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: switch_railmedium7_reversing;//spriteset_train_railmedium7;
-		articulated_part: switch_rail_articulated_3;
+		default: switch_railmedium7_graphics;//spriteset_train_railmedium7;
+		articulated_part: switch_railmedium7_articulated;
 		purchase: spriteset_purchaseMenu_railmedium7;
 		can_attach_wagon: switch_railmedium7_attach;
 		additional_text: string(info_rail_medium_7);
@@ -48145,6 +48418,8 @@ item(FEAT_TRAINS, item_railmedium7, 43) { //ID43
 		tractive_effort_coefficient:		153; //engine only
 		cost_factor:						13; //everything
 		running_cost_factor:				100; //only engines
+		cargo_capacity: switch_railmedium7_capacity;
+		loading_speed:  switch_railmedium7_loadspeed;
 	}
 }
 
@@ -48156,6 +48431,77 @@ switch(FEAT_TRAINS, SELF, railmedium8_visualswitch, position_in_consist){
 0: spriteset_train_railmedium8;
 railmedium8_endswitch;
 }
+
+//------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
+//   ARTICULATED GRAPHICS HACK
+//------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium8_capacity_engine, cargo_type_in_veh){
+	PASS: 15;
+	GOOD: 5;
+	5;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium8_capacity_2, position_in_consist & 1){
+	0: switch_railmedium8_capacity_engine;
+	30;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium8_capacity_1, position_in_consist_from_end){
+	0: switch_railmedium8_capacity_engine;
+	1: 30;
+	switch_railmedium8_capacity_2;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium8_capacity, position_in_consist){
+	0: switch_railmedium8_capacity_engine;
+	1: 30;
+	switch_railmedium8_capacity_1;
+}
+//--------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium8_loadspeed_engine, cargo_type_in_veh){
+	PASS: 3;
+	GOOD: 1;
+	1;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium8_loadspeed_2, position_in_consist & 1){
+	0: switch_railmedium8_loadspeed_engine;
+	6;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium8_loadspeed_1, position_in_consist_from_end){
+	0: switch_railmedium8_loadspeed_engine;
+	1: 6;
+	switch_railmedium8_loadspeed_2;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium8_loadspeed, position_in_consist){
+	0: switch_railmedium8_loadspeed_engine;
+	1: 6;
+	switch_railmedium8_loadspeed_1;
+}
+//--------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium8_graphics_2, position_in_consist & 1){
+	0: spriteset_train_railmedium8;
+	railuniversal2_wagon_switch;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium8_graphics_1, position_in_consist_from_end){
+	0: spriteset_train_railmedium8_end;
+	1: railuniversal2_wagon_switch;
+	switch_railmedium8_graphics_2;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium8_graphics, position_in_consist){
+	0: spriteset_train_railmedium8;
+	1: railuniversal2_wagon_switch;
+	switch_railmedium8_graphics_1;
+}
+//--------------------------------------------------------------------------------------------
+//----- Articulation
+switch (FEAT_TRAINS, SELF, switch_railmedium8_articulated, extra_callback_info1){
+	1: item_railmedium8;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+//------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
 
 switch (FEAT_TRAINS, SELF, switch_railmedium8_attach, vehicle_type_id){
 	item_railmedium8: CB_RESULT_ATTACH_ALLOW;
@@ -48186,8 +48532,9 @@ item(FEAT_TRAINS, item_railmedium8, 45) { //ID45
         vehicle_life:                 255;
         reliability_decay:            5;
 		//Just an engine, no refit
-        refittable_cargo_classes:     bitmask(NO_CARGO_CLASS);
+        refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+				default_cargo_type:           GOOD;
 
         loading_speed:                5;
         cost_factor:                  10;
@@ -48201,7 +48548,7 @@ item(FEAT_TRAINS, item_railmedium8, 45) { //ID45
         power:                        6000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
         dual_headed:                  0;
-        cargo_capacity:               0;
+        cargo_capacity:               35;
         weight:                       75 ton;
         ai_engine_rank:               0;
         engine_class:                 ENGINE_CLASS_ELECTRIC;
@@ -48214,8 +48561,8 @@ item(FEAT_TRAINS, item_railmedium8, 45) { //ID45
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: railmedium8_visualswitch;
-		articulated_part: switch_rail_articulated_3;
+		default: switch_railmedium8_graphics;
+		articulated_part: switch_railmedium8_articulated;
 		purchase: spriteset_purchaseMenu_railmedium8;
 		can_attach_wagon: switch_railmedium8_attach;
 		additional_text: string(info_rail_medium_8);
@@ -48225,21 +48572,83 @@ item(FEAT_TRAINS, item_railmedium8, 45) { //ID45
 		tractive_effort_coefficient:		165; //engine only
 		cost_factor:						14; //everything
 		running_cost_factor:				100; //only engines
+		cargo_capacity: switch_railmedium8_capacity;
+		loading_speed:  switch_railmedium8_loadspeed;
 	}
 }
-switch(FEAT_TRAINS, SELF, switch_railmedium9_depotted, vehicle_is_in_depot){
-1:spriteset_train_railmedium9_reversed;
-0:spriteset_train_railmedium9;
+
+
+//------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
+//   ARTICULATED GRAPHICS HACK
+//------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium9_capacity_engine, cargo_type_in_veh){
+	PASS: 5;
+	GOOD: 5;
+	5;
 }
-switch (FEAT_TRAINS,SELF, switch_railmedium9_stopped, vehicle_is_stopped){
-1:switch_railmedium9_depotted;
-0:spriteset_train_railmedium9;
+switch(FEAT_TRAINS, SELF, switch_railmedium9_capacity_2, position_in_consist & 1){
+	0: switch_railmedium9_capacity_engine;
+	30;
 }
-switch (FEAT_TRAINS, SELF, switch_railmedium9_reversing, var[0xC8, 0, 0xFF]) {
-0xFD: spriteset_train_railmedium9;
-0xFE: switch_railmedium9_stopped;
-0xFF: switch_railmedium9_stopped;
+switch(FEAT_TRAINS, SELF, switch_railmedium9_capacity_1, position_in_consist_from_end){
+	0: switch_railmedium9_capacity_engine;
+	1: 30;
+	switch_railmedium9_capacity_2;
 }
+switch(FEAT_TRAINS, SELF, switch_railmedium9_capacity, position_in_consist){
+	0: switch_railmedium9_capacity_engine;
+	1: 30;
+	switch_railmedium9_capacity_1;
+}
+//--------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium9_loadspeed_engine, cargo_type_in_veh){
+	PASS: 1;
+	GOOD: 1;
+	1;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_loadspeed_2, position_in_consist & 1){
+	0: switch_railmedium9_loadspeed_engine;
+	6;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_loadspeed_1, position_in_consist_from_end){
+	0: switch_railmedium9_loadspeed_engine;
+	1: 6;
+	switch_railmedium9_loadspeed_2;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_loadspeed, position_in_consist){
+	0: switch_railmedium9_loadspeed_engine;
+	1: 6;
+	switch_railmedium9_loadspeed_1;
+}
+//--------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_2, position_in_consist & 1){
+	0: spriteset_train_railmedium9;
+	railuniversal2_wagon_switch;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_1, position_in_consist_from_end){
+	0: spriteset_train_railmedium9;
+	1: railuniversal2_wagon_switch;
+	switch_railmedium9_graphics_2;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics, position_in_consist){
+	0: spriteset_train_railmedium9;
+	1: railuniversal2_wagon_switch;
+	switch_railmedium9_graphics_1;
+}
+//--------------------------------------------------------------------------------------------
+//----- Articulation
+switch (FEAT_TRAINS, SELF, switch_railmedium9_articulated, extra_callback_info1){
+	1: item_railmedium9;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+//------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------
+
 
 switch (FEAT_TRAINS, SELF, switch_railmedium9_attach, vehicle_type_id){
 	item_railmedium9: CB_RESULT_ATTACH_ALLOW;
@@ -48270,8 +48679,9 @@ item(FEAT_TRAINS, item_railmedium9, 47) { //ID47
         vehicle_life:                 255;
         reliability_decay:            5;
 		//Just an engine, no refit
-        refittable_cargo_classes:     bitmask(NO_CARGO_CLASS);
+        refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+				default_cargo_type:           GOOD;
 
         loading_speed:                5;
         cost_factor:                  10;
@@ -48285,7 +48695,7 @@ item(FEAT_TRAINS, item_railmedium9, 47) { //ID47
         power:                        7000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
         dual_headed:                  0;
-        cargo_capacity:               0;
+        cargo_capacity:               35;
         weight:                       50 ton;
         ai_engine_rank:               0;
         engine_class:                 ENGINE_CLASS_ELECTRIC;
@@ -48298,8 +48708,8 @@ item(FEAT_TRAINS, item_railmedium9, 47) { //ID47
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: switch_railmedium9_reversing;//spriteset_train_railmedium9;
-		articulated_part: switch_rail_articulated_3;
+		default: switch_railmedium9_graphics;//switch_railmedium9_reversing;//spriteset_train_railmedium9;
+		articulated_part: switch_railmedium9_articulated;
 		purchase: spriteset_purchaseMenu_railmedium9;
 		can_attach_wagon: switch_railmedium9_attach;
 		additional_text: string(info_rail_medium_9);
@@ -48309,6 +48719,8 @@ item(FEAT_TRAINS, item_railmedium9, 47) { //ID47
 		tractive_effort_coefficient:		178; //engine only
 		cost_factor:						15; //everything
 		running_cost_factor:				100; //only engines
+		loading_speed:   switch_railmedium9_loadspeed;
+		cargo_capacity:  switch_railmedium9_capacity;
 		}
 }
 
