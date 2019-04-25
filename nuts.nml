@@ -2,7 +2,7 @@ grf {
 	grfid: "HA\01\01";
 	name: string(STR_GRF_NAME);
 	desc: string(STR_GRF_DESC);
-	version: 80;
+	version: 82;
 	url  : string(STR_GRF_WEBSITE);
 	min_compatible_version: 68;
 
@@ -2867,7 +2867,7 @@ item_railice6: return 5;
 item_railice7: return 5;
 item_railice8: return 5;
 item_railice9: return 5;
-item_WIDOW: return 10;
+item_doombringer: return 10;
 item_MEOW_rail_b1: return 10;
 
 item_railcom1: 		30;
@@ -2899,7 +2899,7 @@ item_magice3: return 5;
 item_magice4: return 3;
 
 item_SLUG: return 4;
-item_SLUG2: return 4;
+item_ANIMALEXPRESS: return 4;
 item_RAINBOWSLUG: return 4;
 item_MagCom1: return 15;
 
@@ -2908,20 +2908,7 @@ item_MagCom1: return 15;
 }
 
 //RAIL PAX TRAINS
-switch (FEAT_TRAINS, SELF, switch_railpax_ice_attach, vehicle_type_id){
-item_railpax: CB_RESULT_ATTACH_ALLOW;
-item_railice1: CB_RESULT_ATTACH_ALLOW;
-item_railice2: CB_RESULT_ATTACH_ALLOW;
-item_railice3: CB_RESULT_ATTACH_ALLOW;
-item_railice4: CB_RESULT_ATTACH_ALLOW;
-item_railice5: CB_RESULT_ATTACH_ALLOW;
-item_railice6: CB_RESULT_ATTACH_ALLOW;
-item_railice7: CB_RESULT_ATTACH_ALLOW;
-item_railice8: CB_RESULT_ATTACH_ALLOW;
-item_railice9: CB_RESULT_ATTACH_ALLOW;
-item_WIDOW: CB_RESULT_ATTACH_ALLOW;
-return string(STR_NAME_ATTACH_PAX_ICE);
-}
+
 //RAILICE
 //RAILICE 1
 spriteset(spriteset_purchaseMenu_railice1, 		"gfx/PurchaseMenu.png"){template_purchaseMenu(4,0)}
@@ -2939,6 +2926,13 @@ WETR: 2000*7/10;
 switch(FEAT_TRAINS, SELF, railice1_wetrail_te_switch, current_railtype){
 WETR: 51*7/10;
 51;
+}
+
+
+switch(FEAT_TRAINS, SELF, switch_railice1_attach, vehicle_type_id){
+	item_railice1:            CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_rail_express);
 }
 
 item(FEAT_TRAINS, item_railice1, 71) { //ID71
@@ -2979,7 +2973,7 @@ item(FEAT_TRAINS, item_railice1, 71) { //ID71
 	}
 	graphics {
 		default: spriteset_train_steamerICE1_engine;
-		can_attach_wagon: switch_railpax_ice_attach;
+		can_attach_wagon: switch_railice1_attach;
 		additional_text: string(info_rail_intercity_1);
 		articulated_part: switch_railice1_articulated;
 		purchase: spriteset_purchaseMenu_railice1;
@@ -3058,6 +3052,11 @@ WETR: 58*7/10;
 58;
 }
 
+switch(FEAT_TRAINS, SELF, switch_railice2_attach, vehicle_type_id){
+	item_railice2:            CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_rail_express);
+}
 item(FEAT_TRAINS, item_railice2, 73) { //ID73
 	property {
 		name:                         string(STR_NAME_RailICE2);
@@ -3098,7 +3097,7 @@ item(FEAT_TRAINS, item_railice2, 73) { //ID73
 	graphics {
 		default: spriteset_train_steamerICE2_engine;
 		purchase: spriteset_purchaseMenu_railice2;
-		can_attach_wagon: switch_railpax_ice_attach;
+		can_attach_wagon: switch_railice2_attach;
 		additional_text: string(info_rail_intercity_2);
 		articulated_part: switch_railice2_articulated;
 		speed: 							150; //maybe for wagons later, not now
@@ -3178,6 +3177,11 @@ WETR: 66*7/10;
 66;
 }
 
+switch(FEAT_TRAINS, SELF, switch_railice3_attach, vehicle_type_id){
+	item_railice3:            CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_rail_express);
+}
 item(FEAT_TRAINS, item_railice3, 75) { //ID75
 	property {
 		name:                         string(STR_NAME_RailICE3);
@@ -3218,7 +3222,7 @@ item(FEAT_TRAINS, item_railice3, 75) { //ID75
 	graphics {
 		default: spriteset_train_steamerICE3_engine;
 		purchase: spriteset_purchaseMenu_railice3;
-		can_attach_wagon: switch_railpax_ice_attach;
+		can_attach_wagon: switch_railice3_attach;
 		additional_text: string(info_rail_intercity_3);
 		articulated_part: switch_railice3_articulated;
 		speed: 							170; //maybe for wagons later, not now
@@ -3296,6 +3300,11 @@ WETR: 76*7/10;
 76;
 }
 
+switch(FEAT_TRAINS, SELF, switch_railice4_attach, vehicle_type_id){
+	item_railice4:            CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_rail_express);
+}
 item(FEAT_TRAINS, item_railice4, 77) { //ID77
 	property {
 		name:                         string(STR_NAME_RailICE4);
@@ -3336,7 +3345,7 @@ item(FEAT_TRAINS, item_railice4, 77) { //ID77
 	graphics {
 		default: spriteset_train_steamerICE4_engine;
 		purchase: spriteset_purchaseMenu_railice4;
-		can_attach_wagon: switch_railpax_ice_attach;
+		can_attach_wagon: switch_railice4_attach;
 		additional_text: string(info_rail_intercity_1);
 		articulated_part: switch_railice4_articulated;
 		speed: 							183; //maybe for wagons later, not now
@@ -3408,6 +3417,11 @@ WETR: 89*7/10;
 89;
 }
 
+switch(FEAT_TRAINS, SELF, switch_railice5_attach, vehicle_type_id){
+	item_railice5:            CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_rail_express);
+}
 item(FEAT_TRAINS, item_railice5, 79) { //ID79
 	property {
 		name:                         string(STR_NAME_RailICE5);
@@ -3448,7 +3462,7 @@ item(FEAT_TRAINS, item_railice5, 79) { //ID79
 	graphics {
 		default: spriteset_train_railice5;
 		purchase: spriteset_purchaseMenu_railice5;
-		can_attach_wagon: switch_railpax_ice_attach;
+		can_attach_wagon: switch_railice5_attach;
 		additional_text: string(info_rail_intercity_5);
 		speed: 							196; //maybe for wagons later, not now
 		power: 							railice5_wetrail_power_switch; //engine only
@@ -3491,6 +3505,12 @@ WETR: 96*7/10;
 96;
 }
 
+switch(FEAT_TRAINS, SELF, switch_railice6_attach, vehicle_type_id){
+	item_railice6:            CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_rail_express);
+}
+
 item(FEAT_TRAINS, item_railice6, 81) { //ID81
 	property {
 		name:                         string(STR_NAME_RailICE6);
@@ -3531,7 +3551,7 @@ item(FEAT_TRAINS, item_railice6, 81) { //ID81
 	graphics {
 		default: railice6colourswitch;
 		purchase: spriteset_purchaseMenu_railice6;
-		can_attach_wagon: switch_railpax_ice_attach;
+		can_attach_wagon: switch_railice6_attach;
 		additional_text: string(info_rail_intercity_6);
 		speed: 							228; //maybe for wagons later, not now
 		power: 							railice6_wetrail_power_switch; //engine only
@@ -3571,6 +3591,12 @@ WETR: 12000*7/10;
 switch(FEAT_TRAINS, SELF, railice7_wetrail_te_switch, current_railtype){
 WETR: 102*7/10;
 102;
+}
+
+switch(FEAT_TRAINS, SELF, switch_railice7_attach, vehicle_type_id){
+	item_railice7:            CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_rail_express);
 }
 
 item(FEAT_TRAINS, item_railice7, 83) { //ID83
@@ -3613,7 +3639,7 @@ item(FEAT_TRAINS, item_railice7, 83) { //ID83
 	graphics {
 		default: railice7colourswitch;//spriteset_train_railice7;
 		purchase: spriteset_purchaseMenu_railice7;
-		can_attach_wagon: switch_railpax_ice_attach;
+		can_attach_wagon: switch_railice7_attach;
 		additional_text: string(info_rail_intercity_7);
 		speed: 							255; //maybe for wagons later, not now
 		power: 							railice7_wetrail_power_switch; //engine only
@@ -3650,6 +3676,12 @@ WETR: 16000*7/10;
 switch(FEAT_TRAINS, SELF, railice8_wetrail_te_switch, current_railtype){
 WETR: 107*7/10;
 107;
+}
+
+switch(FEAT_TRAINS, SELF, switch_railice8_attach, vehicle_type_id){
+	item_railice8:            CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_rail_express);
 }
 
 item(FEAT_TRAINS, item_railice8, 85) { //ID85
@@ -3692,7 +3724,7 @@ item(FEAT_TRAINS, item_railice8, 85) { //ID85
 	graphics {
 		default: railice8colourswitch;//spriteset_train_railice8;
 		purchase: spriteset_purchaseMenu_railice8;
-		can_attach_wagon: switch_railpax_ice_attach;
+		can_attach_wagon: switch_railice8_attach;
 		additional_text: string(info_rail_intercity_8);
 		speed: 							280; //maybe for wagons later, not now
 		power: 							railice8_wetrail_power_switch; //engine only
@@ -3732,6 +3764,12 @@ WETR: 20000*7/10;
 switch(FEAT_TRAINS, SELF, railice9_wetrail_te_switch, current_railtype){
 WETR: 114*7/10;
 114;
+}
+
+switch(FEAT_TRAINS, SELF, switch_railice9_attach, vehicle_type_id){
+	item_railice9:            CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_rail_express);
 }
 
 item(FEAT_TRAINS, item_railice9, 87) { //ID87
@@ -3774,7 +3812,7 @@ item(FEAT_TRAINS, item_railice9, 87) { //ID87
 	graphics {
 		default: railice9colourswitch; //spriteset_train_railice9;
 		purchase: spriteset_purchaseMenu_railice9;
-		can_attach_wagon: switch_railpax_ice_attach;
+		can_attach_wagon: switch_railice9_attach;
 		additional_text: string(info_rail_intercity_9);
 		speed: 							301; //maybe for wagons later, not now
 		power: 							railice9_wetrail_power_switch; //engine only
@@ -3829,7 +3867,7 @@ spriteset_WIDOW_tender;
 }
 
 switch (FEAT_TRAINS, SELF, switch_WIDOW_articulated, extra_callback_info1){
-1: return item_WIDOW_tender;
+1: return item_doombringer_tender;
 return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
@@ -3855,7 +3893,12 @@ UNI5: 8000*11/10;
 8000;
 }
 
-item(FEAT_TRAINS, item_WIDOW, 301) { //ID301
+switch(FEAT_TRAINS, SELF, switch_doombringer_attach, vehicle_type_id){
+	item_doombringer:            CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_rail_express);
+}
+item(FEAT_TRAINS, item_doombringer, 301) { //ID301
 	property {
 		name:                         string(STR_NAME_WIDOW);
         climates_available:           ALL_CLIMATES;
@@ -3895,7 +3938,7 @@ item(FEAT_TRAINS, item_WIDOW, 301) { //ID301
 	graphics {
 		default: spriteset_WIDOW_MEOW;
 		purchase: spriteset_purchaseMenu_WIDOW;
-		can_attach_wagon: switch_railpax_ice_attach;
+		can_attach_wagon: switch_doombringer_attach;
 		cargo_capacity: railpax_capacity_switch;
 		//purchase_cargo_capacity: 40;
 		additional_text: string(info_rail_doombringer);
@@ -3911,7 +3954,7 @@ item(FEAT_TRAINS, item_WIDOW, 301) { //ID301
 		}
 }
 
-item(FEAT_TRAINS, item_WIDOW_tender, 302) { //ID301
+item(FEAT_TRAINS, item_doombringer_tender, 302) { //ID301
 	property {
 		name:                         string(STR_NAME_WIDOW);
         climates_available:           NO_CLIMATE;
@@ -3948,25 +3991,10 @@ item(FEAT_TRAINS, item_WIDOW_tender, 302) { //ID301
 	}
 	graphics {
 		default: spriteset_WIDOW_MEOW_tender;
-		purchase: spriteset_purchaseMenu_WIDOW;
-		can_attach_wagon: switch_railpax_ice_attach;
 	}
 }
 
 //RAILLOCAL
-switch (FEAT_TRAINS, SELF, switch_railpax_local_attach, vehicle_type_id){
-item_railpax: CB_RESULT_ATTACH_ALLOW;
-item_railcom1: CB_RESULT_ATTACH_ALLOW;
-item_railcom2: CB_RESULT_ATTACH_ALLOW;
-item_railcom3: CB_RESULT_ATTACH_ALLOW;
-item_railcom4: CB_RESULT_ATTACH_ALLOW;
-item_railcom5: CB_RESULT_ATTACH_ALLOW;
-item_railcom6: CB_RESULT_ATTACH_ALLOW;
-item_railcom7: CB_RESULT_ATTACH_ALLOW;
-item_railcom8: CB_RESULT_ATTACH_ALLOW;
-item_railcom9: CB_RESULT_ATTACH_ALLOW;
-return string(STR_NAME_ATTACH_PAX_LOCAL);
-}
 
 //RAIL LOCAL1
 //COLOURED SPRITESETS (ENGINES AND WAGONS)
@@ -5289,6 +5317,11 @@ WETR: 51*7/10;
 51;
 }
 
+switch(FEAT_TRAINS, SELF, switch_railcom1_attach, vehicle_type_id){
+	item_railcom1:            CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_rail_express);
+}
 
 item(FEAT_TRAINS, item_railcom1, 91) { //ID91
 	property {
@@ -5330,7 +5363,7 @@ item(FEAT_TRAINS, item_railcom1, 91) { //ID91
 		default: switch_railcom1_front;//switch_railcom1;
 		cargo_subtype_text: railcom1_subtype_text;
 		purchase: spriteset_purchaseMenu_raillocal1;
-		can_attach_wagon: switch_railpax_local_attach;
+		can_attach_wagon: switch_railcom1_attach;
 		additional_text: string(info_rail_local_1);
 		speed: 							raillocal1_wetrail_speed_switch; //maybe for wagons later, not now
 		power: 							raillocal1_wetrail_power_switch; //engine only
@@ -5667,6 +5700,12 @@ WETR: 56*7/10;
 56;
 }
 
+switch(FEAT_TRAINS, SELF, switch_railcom2_attach, vehicle_type_id){
+	item_railcom2:            CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_rail_express);
+}
+
 item(FEAT_TRAINS, item_railcom2, 93) { //ID93
 	property {
 		name:                         string(STR_NAME_RL2);
@@ -5707,7 +5746,7 @@ item(FEAT_TRAINS, item_railcom2, 93) { //ID93
 		default: switch_railcom2_front;//switch_railcom2;
 		cargo_subtype_text: railcom2_subtype_text;
 		purchase: spriteset_purchaseMenu_raillocal2;
-		can_attach_wagon: switch_railpax_local_attach;
+		can_attach_wagon: switch_railcom2_attach;
 		additional_text: string(info_rail_local_2);
 		speed: 							raillocal2_wetrail_speed_switch; //maybe for wagons later, not now
 		power: 							raillocal2_wetrail_power_switch; //engine only
@@ -6041,6 +6080,12 @@ WETR: 66*7/10;
 66;
 }
 
+switch(FEAT_TRAINS, SELF, switch_railcom3_attach, vehicle_type_id){
+	item_railcom3:            CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_rail_express);
+}
+
 item(FEAT_TRAINS, item_railcom3, 95) { //ID95
 	property {
 		name:                         string(STR_NAME_RL3);
@@ -6081,7 +6126,7 @@ item(FEAT_TRAINS, item_railcom3, 95) { //ID95
 		default: switch_railcom3_front;//switch_railcom3;
 		cargo_subtype_text: railcom3_subtype_text;
 		purchase: spriteset_purchaseMenu_raillocal3;
-		can_attach_wagon: switch_railpax_local_attach;
+		can_attach_wagon: switch_railcom3_attach;
 		additional_text: string(info_rail_local_3);
 		speed: 							raillocal3_wetrail_speed_switch; //maybe for wagons later, not now
 		power: 							raillocal3_wetrail_power_switch; //engine only
@@ -6416,6 +6461,11 @@ WETR: 76*7/10;
 76;
 }
 
+switch(FEAT_TRAINS, SELF, switch_railcom4_attach, vehicle_type_id){
+	item_railcom4:            CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_rail_express);
+}
 
 item(FEAT_TRAINS, item_railcom4, 97) { //ID97
 	property {
@@ -6457,7 +6507,7 @@ item(FEAT_TRAINS, item_railcom4, 97) { //ID97
 				default: switch_railcom4_front;//switch_railcom4;
 		cargo_subtype_text: railcom4_subtype_text;
 		purchase: spriteset_purchaseMenu_raillocal4;
-		can_attach_wagon: switch_railpax_local_attach;
+		can_attach_wagon: switch_railcom4_attach;
 		additional_text: string(info_rail_local_4);
 		speed: 							raillocal4_wetrail_speed_switch; //maybe for wagons later, not now
 		power: 							raillocal4_wetrail_power_switch; //engine only
@@ -6793,6 +6843,12 @@ WETR: 61*7/10;
 61;
 }
 
+switch(FEAT_TRAINS, SELF, switch_railcom5_attach, vehicle_type_id){
+	item_railcom5:            CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_rail_express);
+}
+
 item(FEAT_TRAINS, item_railcom5, 99) { //ID99
 	property {
 		name:                         string(STR_NAME_RL5);
@@ -6833,7 +6889,7 @@ item(FEAT_TRAINS, item_railcom5, 99) { //ID99
 				default: switch_railcom5_front;//switch_railcom5;
 		cargo_subtype_text: railcom5_subtype_text;
 		purchase: spriteset_purchaseMenu_raillocal5;
-		can_attach_wagon: switch_railpax_local_attach;
+		can_attach_wagon: switch_railcom5_attach;
 		additional_text: string(info_rail_local_5);
 		speed: 							raillocal5_wetrail_speed_switch; //maybe for wagons later, not now
 		power: 							raillocal5_wetrail_power_switch; //engine only
@@ -7168,6 +7224,12 @@ WETR: 102*7/10;
 102;
 }
 
+switch(FEAT_TRAINS, SELF, switch_railcom6_attach, vehicle_type_id){
+	item_railcom6:            CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_rail_express);
+}
+
 item(FEAT_TRAINS, item_railcom6, 101) { //ID101
 	property {
 		name:                         string(STR_NAME_RL6);
@@ -7208,7 +7270,7 @@ item(FEAT_TRAINS, item_railcom6, 101) { //ID101
 				default: switch_railcom6_front;//switch_railcom6;
 		cargo_subtype_text: railcom6_subtype_text;
 		purchase: spriteset_purchaseMenu_raillocal6;
-		can_attach_wagon: switch_railpax_local_attach;
+		can_attach_wagon: switch_railcom6_attach;
 		additional_text: string(info_rail_local_6);
 		speed: 							raillocal6_wetrail_speed_switch; //maybe for wagons later, not now
 		power: 							raillocal6_wetrail_power_switch; //engine only
@@ -7545,6 +7607,12 @@ WETR: 89*7/10;
 89;
 }
 
+switch(FEAT_TRAINS, SELF, switch_railcom7_attach, vehicle_type_id){
+	item_railcom7:            CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_rail_express);
+}
+
 item(FEAT_TRAINS, item_railcom7, 103) { //ID103
 	property {
 		name:                         string(STR_NAME_RL7);
@@ -7585,7 +7653,7 @@ item(FEAT_TRAINS, item_railcom7, 103) { //ID103
 				default: switch_railcom7_front;//switch_railcom7;
 		cargo_subtype_text: railcom7_subtype_text;
 		purchase: spriteset_purchaseMenu_raillocal7;
-		can_attach_wagon: switch_railpax_local_attach;
+		can_attach_wagon: switch_railcom7_attach;
 		additional_text: string(info_rail_local_7);
 		speed: 							raillocal7_wetrail_speed_switch; //maybe for wagons later, not now
 		power: 							raillocal7_wetrail_power_switch; //engine only
@@ -7920,6 +7988,12 @@ WETR: 76*7/10;
 76;
 }
 
+switch(FEAT_TRAINS, SELF, switch_railcom8_attach, vehicle_type_id){
+	item_railcom8:            CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_rail_express);
+}
+
 item(FEAT_TRAINS, item_railcom8, 105) { //ID105
 	property {
 		name:                         string(STR_NAME_RL8);
@@ -7960,7 +8034,7 @@ item(FEAT_TRAINS, item_railcom8, 105) { //ID105
 				default: switch_railcom8_front;//switch_railcom8_x;//switch_railcom8;
 		cargo_subtype_text: railcom8_subtype_text;
 		purchase: spriteset_purchaseMenu_raillocal8;
-		can_attach_wagon: switch_railpax_local_attach;
+		can_attach_wagon: switch_railcom8_attach;
 		additional_text: string(info_rail_local_8);
 		speed: 							raillocal8_wetrail_speed_switch; //maybe for wagons later, not now
 		power: 							raillocal8_wetrail_power_switch; //engine only
@@ -8295,6 +8369,12 @@ WETR: 102*7/10;
 102;
 }
 
+switch(FEAT_TRAINS, SELF, switch_railcom9_attach, vehicle_type_id){
+	item_railcom9:            CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_rail_express);
+}
+
 item(FEAT_TRAINS, item_railcom9, 107) { //ID107
 	property {
 		name:                         string(STR_NAME_RL9);
@@ -8335,7 +8415,7 @@ item(FEAT_TRAINS, item_railcom9, 107) { //ID107
 				default: switch_railcom9_front;//switch_railcom9_x;//switch_railcom9;
 		cargo_subtype_text: railcom9_subtype_text;
 		purchase: spriteset_purchaseMenu_raillocal9;
-		can_attach_wagon: switch_railpax_local_attach;
+		can_attach_wagon: switch_railcom9_attach;
 		additional_text: string(info_rail_local_9);
 		speed: 							raillocal9_wetrail_speed_switch; //maybe for wagons later, not now
 		power: 							raillocal9_wetrail_power_switch; //engine only
@@ -8456,15 +8536,6 @@ DIAM: 9;
 */
 
 //MONOLOCAL
-switch (FEAT_TRAINS, SELF, switch_monopax_local_attach, vehicle_type_id){
-item_monopax: CB_RESULT_ATTACH_ALLOW;
-item_monolocal1: CB_RESULT_ATTACH_ALLOW;
-item_monolocal2: CB_RESULT_ATTACH_ALLOW;
-item_monolocal3: CB_RESULT_ATTACH_ALLOW;
-item_monolocal4: CB_RESULT_ATTACH_ALLOW;
-return string(STR_NAME_ATTACH_PAX_LOCAL);
-}
-
 switch (FEAT_TRAINS, SELF, switch_monolocal_engine_capacity, num_vehs_in_consist){
 1 : 60;//TL0.5 doesnt exist
 2 : 60;//TL 1
@@ -8620,6 +8691,12 @@ WETR: 153*7/10;
 153;
 }
 
+switch(FEAT_TRAINS, SELF, switch_monolocal1_attach, vehicle_type_id){
+	item_monolocal1:            CB_RESULT_ATTACH_ALLOW;
+	item_monopax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_express);
+}
+
 //MONOLOCAL1
 spriteset(spriteset_purchaseMenu_monolocal1, 		"gfx/PurchaseMenu.png"){template_purchaseMenu2(3,10)}
 item(FEAT_TRAINS, item_monolocal1, 191) { //ID191
@@ -8660,7 +8737,7 @@ item(FEAT_TRAINS, item_monolocal1, 191) { //ID191
 	}
 	graphics {
 		default: 								switch_monolocal_visual;
-		can_attach_wagon: 						switch_monopax_local_attach;
+		can_attach_wagon: 						switch_monolocal1_attach;
 		purchase: 								spriteset_purchaseMenu_monolocal1;
 		additional_text: 						string(info_mono_local_1);
 		speed: 									120;
@@ -8687,6 +8764,12 @@ WETR: 4000*7/10;
 switch(FEAT_TRAINS, SELF, monolocal2_wetrail_te_switch, current_railtype){
 WETR: 173*7/10;
 173;
+}
+
+switch(FEAT_TRAINS, SELF, switch_monolocal2_attach, vehicle_type_id){
+	item_monolocal2:            CB_RESULT_ATTACH_ALLOW;
+	item_monopax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_express);
 }
 
 item(FEAT_TRAINS, item_monolocal2, 193) { //ID193
@@ -8727,7 +8810,7 @@ item(FEAT_TRAINS, item_monolocal2, 193) { //ID193
 	}
 	graphics {
 		default: switch_monolocal_visual;
-		can_attach_wagon: switch_monopax_local_attach;
+		can_attach_wagon: switch_monolocal2_attach;
 		purchase: spriteset_purchaseMenu_monolocal2;
 		additional_text: string(info_mono_local_2);
 		speed: 							133; //maybe for wagons later, not now
@@ -8755,6 +8838,12 @@ WETR: 5000*7/10;
 switch(FEAT_TRAINS, SELF, monolocal3_wetrail_te_switch, current_railtype){
 WETR: 188*7/10;
 188;
+}
+
+switch(FEAT_TRAINS, SELF, switch_monolocal3_attach, vehicle_type_id){
+	item_monolocal3:            CB_RESULT_ATTACH_ALLOW;
+	item_monopax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_express);
 }
 
 item(FEAT_TRAINS, item_monolocal3, 195) { //ID195
@@ -8795,7 +8884,7 @@ item(FEAT_TRAINS, item_monolocal3, 195) { //ID195
 	}
 	graphics {
 		default: switch_monolocal_visual;
-		can_attach_wagon: switch_monopax_local_attach;
+		can_attach_wagon: switch_monolocal3_attach;
 		purchase: spriteset_purchaseMenu_monolocal3;
 		additional_text: string(info_mono_local_3);
 		speed: 								140; //maybe for wagons later, not now
@@ -8824,6 +8913,12 @@ WETR: 6000*7/10;
 switch(FEAT_TRAINS, SELF, monolocal4_wetrail_te_switch, current_railtype){
 WETR: 204*7/10;
 204;
+}
+
+switch(FEAT_TRAINS, SELF, switch_monolocal4_attach, vehicle_type_id){
+	item_monolocal4:            CB_RESULT_ATTACH_ALLOW;
+	item_monopax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_express);
 }
 
 item(FEAT_TRAINS, item_monolocal4, 197) { //ID197
@@ -8864,7 +8959,7 @@ item(FEAT_TRAINS, item_monolocal4, 197) { //ID197
 	}
 	graphics {
 		default: switch_monolocal_visual;
-		can_attach_wagon: switch_monopax_local_attach;
+		can_attach_wagon: switch_monolocal4_attach;
 		purchase: spriteset_purchaseMenu_monolocal4;
 		additional_text: string(info_mono_local_4);
 		speed: 							158; //maybe for wagons later, not now
@@ -8990,14 +9085,6 @@ DIAM: 15;
 20;
 }
 //MAGLEV ICE
-switch (FEAT_TRAINS, SELF, switch_magICE_attach, vehicle_type_id){
-item_magpax: CB_RESULT_ATTACH_ALLOW;
-item_magice1: CB_RESULT_ATTACH_ALLOW;
-item_magice2: CB_RESULT_ATTACH_ALLOW;
-item_magice3: CB_RESULT_ATTACH_ALLOW;
-item_magice4: CB_RESULT_ATTACH_ALLOW;
-return string(STR_NAME_ATTACH_PAX_ICE);
-}
 //MAGLEV ICE 1
 spriteset(spriteset_purchaseMenu_magice1, 			"gfx/PurchaseMenu.png"){template_purchaseMenu2(4,15)}
 spriteset(spriteset_train_MagICE1pass, "gfx/MagICE.png") { template_engine32WTF_mag(0, 0) }
@@ -9018,6 +9105,12 @@ spriteset_train_MagICE1gold;
 switch(FEAT_TRAINS, SELF, magice1_wetrail_power_switch, current_railtype){
 WETR: 15000*7/10;
 15000;
+}
+
+switch(FEAT_TRAINS, SELF, switch_magice1_attach, vehicle_type_id){
+	item_magice1:            CB_RESULT_ATTACH_ALLOW;
+	item_magpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mglv_express);
 }
 
 item(FEAT_TRAINS, item_magice1, 271) { //ID271
@@ -9060,7 +9153,7 @@ item(FEAT_TRAINS, item_magice1, 271) { //ID271
 	graphics {
 		default: magice1_cargosprite;
 		purchase: spriteset_purchaseMenu_magice1;
-		can_attach_wagon: switch_magICE_attach;
+		can_attach_wagon: switch_magice1_attach;
 		cargo_capacity: magice_capacity_switch;
 		//purchase_cargo_capacity: 10;
 		additional_text: string(info_mglv_intercity_1);
@@ -9094,6 +9187,13 @@ switch(FEAT_TRAINS, SELF, magice2_wetrail_power_switch, current_railtype){
 WETR: 18000*7/10;
 18000;
 }
+
+switch(FEAT_TRAINS, SELF, switch_magice2_attach, vehicle_type_id){
+	item_magice2:            CB_RESULT_ATTACH_ALLOW;
+	item_magpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mglv_express);
+}
+
 item(FEAT_TRAINS, item_magice2, 273) { //ID273
 	property {
 		name:                         string(STR_NAME_MagICE2);
@@ -9134,7 +9234,7 @@ item(FEAT_TRAINS, item_magice2, 273) { //ID273
 	graphics {
 		default: magice2_cargosprite;
 		purchase: spriteset_purchaseMenu_magice2;
-		can_attach_wagon: switch_magICE_attach;
+		can_attach_wagon: switch_magice2_attach;
 		cargo_capacity: magice_capacity_switch;
 		//purchase_cargo_capacity: 10;
 		additional_text: string(info_mglv_intercity_2);
@@ -9167,6 +9267,12 @@ spriteset_train_MagICE3gold;
 switch(FEAT_TRAINS, SELF, magice3_wetrail_power_switch, current_railtype){
 WETR: 17000*7/10;
 17000;
+}
+
+switch(FEAT_TRAINS, SELF, switch_magice3_attach, vehicle_type_id){
+	item_magice3:            CB_RESULT_ATTACH_ALLOW;
+	item_magpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mglv_express);
 }
 
 item(FEAT_TRAINS, item_magice3, 275) { //ID275
@@ -9209,7 +9315,7 @@ item(FEAT_TRAINS, item_magice3, 275) { //ID275
 	graphics {
 		default: magice3_cargosprite;
 		purchase: spriteset_purchaseMenu_magice3;
-		can_attach_wagon: switch_magICE_attach;
+		can_attach_wagon: switch_magice3_attach;
 		cargo_capacity: magice_35capacity_switch;
 		//purchase_cargo_capacity: 10;
 		additional_text: string(info_mglv_intercity_3);
@@ -9242,6 +9348,13 @@ switch(FEAT_TRAINS, SELF, magice4_wetrail_power_switch, current_railtype){
 WETR: 25000*7/10;
 25000;
 }
+
+switch(FEAT_TRAINS, SELF, switch_magice4_attach, vehicle_type_id){
+	item_magice4:            CB_RESULT_ATTACH_ALLOW;
+	item_magpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mglv_express);
+}
+
 item(FEAT_TRAINS, item_magice4, 277) { //ID277
 	property {
 		name:                         string(STR_NAME_MagICE4);
@@ -9282,7 +9395,7 @@ item(FEAT_TRAINS, item_magice4, 277) { //ID277
 	graphics {
 		default: magice4_cargosprite;
 		purchase: spriteset_purchaseMenu_magice4;
-		can_attach_wagon: switch_magICE_attach;
+		can_attach_wagon: switch_magice4_attach;
 		cargo_capacity: magice_capacity_switch;
 		//purchase_cargo_capacity: 10;
 		additional_text: string(info_mglv_intercity_4);
@@ -9726,16 +9839,15 @@ switch(FEAT_TRAINS, SELF, switch_magcom1_front, position_in_consist){
 return switch_magcom1_rear;
 }
 
-
-switch (FEAT_TRAINS, SELF, switch_magpax_local_attach, vehicle_type_id){
-item_magpax: CB_RESULT_ATTACH_ALLOW;
-item_MagCom1: CB_RESULT_ATTACH_ALLOW;
-return string(STR_NAME_ATTACH_PAX_LOCAL_MAG);
-}
-
 switch(FEAT_TRAINS, SELF, maglocal1_wetrail_power_switch, current_railtype){
 WETR: 15000*7/10;
 15000;
+}
+
+switch(FEAT_TRAINS, SELF, switch_magcom1_attach, vehicle_type_id){
+	item_MagCom1:            CB_RESULT_ATTACH_ALLOW;
+	item_magpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mglv_express);
 }
 
 item(FEAT_TRAINS, item_MagCom1, 300) { //ID300
@@ -9778,7 +9890,7 @@ item(FEAT_TRAINS, item_MagCom1, 300) { //ID300
 				default: switch_magcom1_front;
 		cargo_subtype_text: magcom1_subtype_text;
 		purchase: spriteset_purchaseMenu_maglocal1;
-		can_attach_wagon: switch_magpax_local_attach;
+		can_attach_wagon: switch_magcom1_attach;
 		additional_text: string(info_meat_grinder);
 		speed: 							211; //maybe for wagons later, not now
 		power: 							maglocal1_wetrail_power_switch; //engine only
@@ -9824,17 +9936,14 @@ return switch_SLUG_consist_rear;
 }
 
 switch (FEAT_TRAINS, SELF, switch_SLUG_attach, vehicle_type_id){
-item_magpax: CB_RESULT_ATTACH_ALLOW;
-item_maglevhopper: CB_RESULT_ATTACH_ALLOW;
-item_maglevflatbed: CB_RESULT_ATTACH_ALLOW;
-item_maglevtanker: CB_RESULT_ATTACH_ALLOW;
-item_maglevuniversal: CB_RESULT_ATTACH_ALLOW;
-item_SLUG: CB_RESULT_ATTACH_ALLOW;
-item_SLUG2: CB_RESULT_ATTACH_ALLOW;
-item_RAINBOWSLUG: CB_RESULT_ATTACH_ALLOW;
-return string(STR_NAME_ATTACH_SLUG);
+	item_magpax: CB_RESULT_ATTACH_ALLOW;
+	item_maglevhopper: CB_RESULT_ATTACH_ALLOW;
+	item_maglevflatbed: CB_RESULT_ATTACH_ALLOW;
+	item_maglevtanker: CB_RESULT_ATTACH_ALLOW;
+	item_maglevuniversal: CB_RESULT_ATTACH_ALLOW;
+	item_SLUG: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mglv_freight);
 }
-
 
 item(FEAT_TRAINS, item_SLUG, 321) { //ID321
 	property {
@@ -9957,7 +10066,18 @@ WETR: 28000*7/10;
 28000;
 }
 
-item(FEAT_TRAINS, item_SLUG2, 319) { //ID323
+switch (FEAT_TRAINS, SELF, switch_ANIMALEXPRESS_attach, vehicle_type_id){
+	item_magpax: CB_RESULT_ATTACH_ALLOW;
+	item_maglevhopper: CB_RESULT_ATTACH_ALLOW;
+	item_maglevflatbed: CB_RESULT_ATTACH_ALLOW;
+	item_maglevtanker: CB_RESULT_ATTACH_ALLOW;
+	item_maglevuniversal: CB_RESULT_ATTACH_ALLOW;
+	item_ANIMALEXPRESS: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mglv_freight);
+}
+
+
+item(FEAT_TRAINS, item_ANIMALEXPRESS, 319) { //ID323
 	property {
 		name:                         string(STR_NAME_SLUG2);
         climates_available:           ALL_CLIMATES;
@@ -9995,7 +10115,7 @@ item(FEAT_TRAINS, item_SLUG2, 319) { //ID323
 	}
 	graphics {
 		default: switch_SLUG2_consist_front;
-		can_attach_wagon: switch_SLUG_attach;
+		can_attach_wagon: switch_ANIMALEXPRESS_attach;
 		additional_text: string(ingo_mglv_animal_express);
 		purchase: spriteset_purchaseMenu_SLUG2;
 		speed: 							211; //maybe for wagons later, not now
@@ -10437,7 +10557,15 @@ CB_FAILED;
 //==============================================================================================================================
 // ITEM
 //==============================================================================================================================
-
+switch (FEAT_TRAINS, SELF, switch_RAINBOWSLUG_attach, vehicle_type_id){
+	item_magpax: CB_RESULT_ATTACH_ALLOW;
+	item_maglevhopper: CB_RESULT_ATTACH_ALLOW;
+	item_maglevflatbed: CB_RESULT_ATTACH_ALLOW;
+	item_maglevtanker: CB_RESULT_ATTACH_ALLOW;
+	item_maglevuniversal: CB_RESULT_ATTACH_ALLOW;
+	item_RAINBOWSLUG: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mglv_freight);
+}
 item(FEAT_TRAINS, item_RAINBOWSLUG, 323) { //ID323
 	property {
 		name:                         string(STR_NAME_RAINBOWSLUG);
@@ -10476,7 +10604,7 @@ item(FEAT_TRAINS, item_RAINBOWSLUG, 323) { //ID323
 	}
 	graphics {
 		default: RAINBOWSLUG_reverse_random;//SLUGreverseswitch;
-		can_attach_wagon: switch_SLUG_attach;
+		can_attach_wagon: switch_RAINBOWSLUG_attach;
 		additional_text: string(info_mglv_RAINBOW_SLUG);
 		purchase: spriteset_purchaseMenu_RAINBOWSLUG;
 		speed: 							264; //maybe for wagons later, not now
@@ -13223,7 +13351,7 @@ random_switch (FEAT_TRAINS, SELF, random_railcom9_wagons_gold){
 
 switch (FEAT_TRAINS, PARENT, switch_pax_wagons_maglev, vehicle_type_id){
 		item_SLUG:			switch_SLUG_wagons;
-		item_SLUG2:			switch_SLUG_wagons;
+		item_ANIMALEXPRESS:			switch_SLUG_wagons;
 		item_RAINBOWSLUG:	switch_SLUG_wagons;
 		item_magice1:		switch_magice1_wagons;
 		item_magice2:		switch_magice2_wagons;
@@ -13856,7 +13984,7 @@ switch(FEAT_TRAINS, SELF, monopax_subtype_switch, cargo_subtype) {
 		item_monoWTF3:		switch_WTF_wagons;
 		item_monoWTF4:		switch_WTF_wagons;
 		item_NYAN:			switch_NYAN_wagons;
-		item_WIDOW:			switch_WIDOW_wagons;
+		item_doombringer:			switch_WIDOW_wagons;
 		item_MEOW_rail_b1:	switch_WIDOW_wagons;
 		item_monoice1:		monopax_subtype_switch;
 		item_monoice2:		monopax_subtype_switch;
@@ -13877,7 +14005,7 @@ switch(FEAT_TRAINS, SELF, monopax_subtype_switch, cargo_subtype) {
 		return switch_monodefault1_wagons;
 	}
 	switch (FEAT_TRAINS, PARENT, switch_pax_wagons_rail, vehicle_type_id){
-		item_WIDOW:			switch_WIDOW_wagons;
+		item_doombringer:			switch_WIDOW_wagons;
 		item_railice1: 		switch_railice1_wagons;
 		item_railice2: 		switch_railice2_wagons;
 		item_railice3: 		switch_railice3_wagons;
@@ -14070,10 +14198,10 @@ item_magice2: magpax30_capacity_switch;
 item_magice3: magpax35_capacity_switch;
 item_magice4: magpax30_capacity_switch;
 
-item_WIDOW: railpax40_capacity_switch;
+item_doombringer: railpax40_capacity_switch;
 item_NYAN: monopax30_capacity_switch;
 item_SLUG: magpaxSLUGwagon_capacity_switch;
-item_SLUG2: magpaxSLUGwagon_capacity_switch;
+item_ANIMALEXPRESS: magpaxSLUGwagon_capacity_switch;
 item_RAINBOWSLUG: magpaxSLUGwagon_capacity_switch;
 item_MagCom1: magpax_local1_wagon_capacity_switch;
 
@@ -14183,7 +14311,7 @@ switch(FEAT_TRAINS, PARENT, switch_loadspeed_railpax, vehicle_type_id){
 		item_railcom7: 		60;
 		item_railcom8: 		44;
 		item_railcom9: 		55;
-		item_WIDOW:			20;
+		item_doombringer:			20;
 		return 16;
 }
 item(FEAT_TRAINS, item_railpax, 451) { //ID451
@@ -14425,7 +14553,7 @@ item_magice3: return 5;
 item_magice4: return 3;
 item_MagCom1: return 24;
 item_SLUG: return 5;
-item_SLUG2: return 5;
+item_ANIMALEXPRESS: return 5;
 item_RAINBOWSLUG: return 5;
 5;
 }
@@ -14902,14 +15030,6 @@ YETY: 1;
 1;
 }
 
-switch (FEAT_TRAINS, SELF, switch_monopax_ice_attach, vehicle_type_id){
-item_monopax: CB_RESULT_ATTACH_ALLOW;
-item_monoice1: CB_RESULT_ATTACH_ALLOW;
-item_monoice2: CB_RESULT_ATTACH_ALLOW;
-item_monoice3: CB_RESULT_ATTACH_ALLOW;
-item_monoice4: CB_RESULT_ATTACH_ALLOW;
-return string(STR_NAME_ATTACH_PAX_ICE);
-}
 //MONOICE1
 spriteset(spriteset_purchaseMenu_monoice1, 			"gfx/PurchaseMenu.png"){template_purchaseMenu2(4,10)}
 /* --------------MOVED UP FOR WAGONS ^
@@ -15810,6 +15930,11 @@ switch(FEAT_TRAINS, SELF, MonoICE_subtype_switch, cargo_subtype) {
 }
 
 
+switch(FEAT_TRAINS, SELF, switch_monoice1_attach, vehicle_type_id){
+	item_monoice1:            CB_RESULT_ATTACH_ALLOW;
+	item_monopax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_express);
+}
 
 item(FEAT_TRAINS, item_monoice1, 171) { //ID171
 	property {
@@ -15849,7 +15974,7 @@ item(FEAT_TRAINS, item_monoice1, 171) { //ID171
 	graphics {
 		default: MonoICE_subtype_switch;
 		cargo_subtype_text: MonoICE_subtype_text;
-		can_attach_wagon: switch_monopax_ice_attach;
+		can_attach_wagon: switch_monoice1_attach;
 		purchase: spriteset_purchaseMenu_monoice1;
 		additional_text: string(info_mono_intercity_1);
 		speed: 							415; //maybe for wagons later, not now
@@ -15872,6 +15997,12 @@ item(FEAT_TRAINS, item_monoice1, 171) { //ID171
 //MONOICE2
 spriteset(spriteset_purchaseMenu_monoice2, 			"gfx/PurchaseMenu.png"){template_purchaseMenu2(4,11)}
 spriteset(spriteset_train_monoice2, "gfx/MonoICE.png") { template_engine32(0, 1) }
+
+switch(FEAT_TRAINS, SELF, switch_monoice2_attach, vehicle_type_id){
+	item_monoice2:            CB_RESULT_ATTACH_ALLOW;
+	item_monopax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_express);
+}
 item(FEAT_TRAINS, item_monoice2, 173) { //ID173
 	property {
 		name:                         string(STR_NAME_MONOICE2);
@@ -15910,7 +16041,7 @@ item(FEAT_TRAINS, item_monoice2, 173) { //ID173
 	graphics {
 		default: MonoICE_subtype_switch;
 		cargo_subtype_text: MonoICE_subtype_text;
-		can_attach_wagon: switch_monopax_ice_attach;
+		can_attach_wagon: switch_monoice2_attach;
 		purchase: spriteset_purchaseMenu_monoice2;
 		additional_text: string(info_mono_intercity_2);
 		speed: 							461; //maybe for wagons later, not now
@@ -15933,6 +16064,12 @@ item(FEAT_TRAINS, item_monoice2, 173) { //ID173
 //MONOICE3
 spriteset(spriteset_train_monoice3, "gfx/MonoICE.png") { template_engine32(0, 2) }
 spriteset(spriteset_purchaseMenu_monoice3, 			"gfx/PurchaseMenu.png"){template_purchaseMenu2(4,12)}
+
+switch(FEAT_TRAINS, SELF, switch_monoice3_attach, vehicle_type_id){
+	item_monoice3:            CB_RESULT_ATTACH_ALLOW;
+	item_monopax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_express);
+}
 item(FEAT_TRAINS, item_monoice3, 175) { //ID175
 	property {
 		name:                         string(STR_NAME_MONOICE3);
@@ -15971,7 +16108,7 @@ item(FEAT_TRAINS, item_monoice3, 175) { //ID175
 	graphics {
 		default: MonoICE_subtype_switch;
 		cargo_subtype_text: MonoICE_subtype_text;
-		can_attach_wagon: switch_monopax_ice_attach;
+		can_attach_wagon: switch_monoice3_attach;
 		purchase: spriteset_purchaseMenu_monoice3;
 		additional_text: string(info_mono_intercity_3);
 		speed: 							552; //maybe for wagons later, not now
@@ -15994,6 +16131,12 @@ item(FEAT_TRAINS, item_monoice3, 175) { //ID175
 //MONOICE4
 spriteset(spriteset_train_monoice4, "gfx/MonoICE.png") { template_engine32(0, 3) }
 spriteset(spriteset_purchaseMenu_monoice4,	 		"gfx/PurchaseMenu.png"){template_purchaseMenu2(4,13)}
+
+switch(FEAT_TRAINS, SELF, switch_monoice4_attach, vehicle_type_id){
+	item_monoice4:            CB_RESULT_ATTACH_ALLOW;
+	item_monopax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_express);
+}
 item(FEAT_TRAINS, item_monoice4, 177) { //ID177
 	property {
 		name:                         string(STR_NAME_MONOICE4);
@@ -16032,7 +16175,7 @@ item(FEAT_TRAINS, item_monoice4, 177) { //ID177
 	graphics {
 		default: MonoICE_subtype_switch;
 		cargo_subtype_text: MonoICE_subtype_text;
-		can_attach_wagon: switch_monopax_ice_attach;
+		can_attach_wagon: switch_monoice4_attach;
 		purchase: spriteset_purchaseMenu_monoice4;
 		additional_text: string(info_mono_intercity_4);
 		speed: 							663; //maybe for wagons later, not now
@@ -16057,14 +16200,15 @@ spriteset(spriteset_purchaseMenu_NYAN, 				"gfx/PurchaseMenu.png"){template_purc
 spriteset(spriteset_train_NYAN, "gfx/NYAN_wtf.png") { template_engine32WTF(0, 0) }
 spriteset(spriteset_train_NYAN8, "gfx/NYAN_wtf.png") { template_engine32WTF(0, 1) }
 spriteset(spriteset_train_NYANrear, "gfx/NYAN_wtf.png") { template_engine32WTF(0, 2) }
-switch (FEAT_TRAINS, SELF, switch_NYAN_attach, vehicle_type_id){
-item_monopax: CB_RESULT_ATTACH_ALLOW;
-item_NYAN: CB_RESULT_ATTACH_ALLOW;
-return string(STR_NAME_ATTACH_NYAN);
-}
+
 switch (FEAT_TRAINS, SELF, switch_NYANreverseswitch, position_in_consist_from_end) {
 	0: spriteset_train_NYANrear;
 	spriteset_train_NYAN;
+}
+switch(FEAT_TRAINS, SELF, switch_NYAN_attach, vehicle_type_id){
+	item_NYAN:            CB_RESULT_ATTACH_ALLOW;
+	item_monopax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_express);
 }
 item(FEAT_TRAINS, item_NYAN, 311) { //ID311
 	property {
@@ -26840,7 +26984,7 @@ switch(FEAT_TRAINS, SELF, switch_capacity_maglevuniversal_SLUG, cargo_type_in_ve
 
 switch(FEAT_TRAINS, PARENT, switch_capacity_maglevuniversal, vehicle_type_id){
 item_SLUG: switch_capacity_maglevuniversal_SLUG;
-item_SLUG2: switch_capacity_maglevuniversal_SLUG;
+item_ANIMALEXPRESS: switch_capacity_maglevuniversal_SLUG;
 item_RAINBOWSLUG: switch_capacity_maglevuniversal_SLUG;
 switch_capacity_maglevuniversal_normal;
 }
@@ -28276,7 +28420,7 @@ return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 //ITEM
 switch (FEAT_TRAINS, PARENT, maglevflatbed_switch, vehicle_type_id) {
 item_SLUG: SLUGflatbed_wagon_switch;
-item_SLUG2: SLUGflatbed_wagon_switch;
+item_ANIMALEXPRESS: SLUGflatbed_wagon_switch;
 item_RAINBOWSLUG: SLUGflatbed_wagon_switch;
 item_magstrong1: maglevflatbed_wagon_switch;
 item_magstrong2: maglevflatbed_wagon_switch;
@@ -29223,7 +29367,7 @@ return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 
 switch (FEAT_TRAINS, PARENT, maglevhopper_switch, vehicle_type_id) {
 item_SLUG: SLUGhopper_wagon_switch;
-item_SLUG2: SLUGhopper_wagon_switch;
+item_ANIMALEXPRESS: SLUGhopper_wagon_switch;
 item_RAINBOWSLUG: SLUGhopper_wagon_switch;
 item_magstrong1: maglevhopper_wagon_switch;
 item_magstrong2: maglevhopper_wagon_switch;
@@ -29753,7 +29897,7 @@ return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 //ITEM
 switch (FEAT_TRAINS, PARENT, maglevtanker_switch, vehicle_type_id) {
 item_SLUG: SLUGtanker_wagon_switch;
-item_SLUG2: SLUGtanker_wagon_switch;
+item_ANIMALEXPRESS: SLUGtanker_wagon_switch;
 item_RAINBOWSLUG: SLUGtanker_wagon_switch;
 item_magstrong1: maglevtanker_wagon_switch;
 item_magstrong2: maglevtanker_wagon_switch;
@@ -30039,7 +30183,7 @@ return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 //ITEM
 switch (FEAT_TRAINS, PARENT, maglevuniversal_switch, vehicle_type_id) {
 item_SLUG: SLUGuniversal_wagon_switch;
-item_SLUG2: SLUGuniversal_wagon_switch;
+item_ANIMALEXPRESS: SLUGuniversal_wagon_switch;
 item_RAINBOWSLUG: SLUGuniversal_wagon_switch;
 item_magstrong1: maglevuniversal_wagon_switch;
 item_magstrong2: maglevuniversal_wagon_switch;
@@ -45009,63 +45153,6 @@ item(FEAT_TRAINS, item_ULTIMATE_wagon_END, 668) { //ID669
 //CARGO ENGINES
 
 //RAIL CARGO ENGINES
-//ATTACH
-switch (FEAT_TRAINS, SELF, switch_railcargo_attach, vehicle_type_id){
-item_railflatbed1: CB_RESULT_ATTACH_ALLOW;
-item_railflatbed2: CB_RESULT_ATTACH_ALLOW;
-item_railflatbed3: CB_RESULT_ATTACH_ALLOW;
-item_railhopper1: CB_RESULT_ATTACH_ALLOW;
-item_railhopper2: CB_RESULT_ATTACH_ALLOW;
-item_railhopper3: CB_RESULT_ATTACH_ALLOW;
-item_railtanker1: CB_RESULT_ATTACH_ALLOW;
-item_railtanker2: CB_RESULT_ATTACH_ALLOW;
-item_railtanker3: CB_RESULT_ATTACH_ALLOW;
-item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
-item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
-item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
-item_railpax: CB_RESULT_ATTACH_ALLOW;
-item_railsuperstrong1: CB_RESULT_ATTACH_ALLOW;
-item_railsuperstrong2: CB_RESULT_ATTACH_ALLOW;
-item_railsuperstrong3: CB_RESULT_ATTACH_ALLOW;
-item_railsuperstrong4: CB_RESULT_ATTACH_ALLOW;
-item_railsuperstrong5: CB_RESULT_ATTACH_ALLOW;
-item_railsuperstrong6: CB_RESULT_ATTACH_ALLOW;
-item_rail_EARLY_01: CB_RESULT_ATTACH_ALLOW;
-item_rail_EARLY_02: CB_RESULT_ATTACH_ALLOW;
-item_rail_EARLY_03: CB_RESULT_ATTACH_ALLOW;
-item_railstrong1: CB_RESULT_ATTACH_ALLOW;
-item_railstrong2: CB_RESULT_ATTACH_ALLOW;
-item_railstrong3: CB_RESULT_ATTACH_ALLOW;
-item_railstrong4: CB_RESULT_ATTACH_ALLOW;
-item_railstrong5: CB_RESULT_ATTACH_ALLOW;
-item_railstrong6: CB_RESULT_ATTACH_ALLOW;
-item_railstrong7: CB_RESULT_ATTACH_ALLOW;
-item_railstrong8: CB_RESULT_ATTACH_ALLOW;
-item_railstrong9: CB_RESULT_ATTACH_ALLOW;
-item_railmedium1: CB_RESULT_ATTACH_ALLOW;
-item_railmedium2: CB_RESULT_ATTACH_ALLOW;
-item_railmedium3: CB_RESULT_ATTACH_ALLOW;
-item_railmedium4: CB_RESULT_ATTACH_ALLOW;
-item_railmedium5: CB_RESULT_ATTACH_ALLOW;
-item_railmedium6: CB_RESULT_ATTACH_ALLOW;
-item_railmedium7: CB_RESULT_ATTACH_ALLOW;
-item_railmedium8: CB_RESULT_ATTACH_ALLOW;
-item_railmedium9: CB_RESULT_ATTACH_ALLOW;
-item_railfast1: CB_RESULT_ATTACH_ALLOW;
-item_railfast2: CB_RESULT_ATTACH_ALLOW;
-item_railfast3: CB_RESULT_ATTACH_ALLOW;
-item_railfast4: CB_RESULT_ATTACH_ALLOW;
-item_railfast5: CB_RESULT_ATTACH_ALLOW;
-item_railfast6: CB_RESULT_ATTACH_ALLOW;
-item_railfast7: CB_RESULT_ATTACH_ALLOW;
-item_railfast8: CB_RESULT_ATTACH_ALLOW;
-item_railfast9: CB_RESULT_ATTACH_ALLOW;
-item_CABOOSE_1: CB_RESULT_ATTACH_ALLOW;
-item_CABOOSE_2: CB_RESULT_ATTACH_ALLOW;
-
-//item_ULTIMATE_wagon: CB_RESULT_ATTACH_ALLOW;
-return string(STR_NAME_ATTACH_CARGO);
-}
 //RAIL SUPERSTRONG
 //PURCHASE MENU
 spriteset(spriteset_purchaseMenu_railsuperstrong1, 		"gfx/PurchaseMenu.png"){template_purchaseMenu(5,0)}
@@ -45087,57 +45174,6 @@ spriteset(spriteset_train_railsuperstrong5_front,    "gfx/railSuperStrong.png"){
 spriteset(spriteset_train_railsuperstrong5_rear,	 "gfx/railSuperStrong.png"){template_engine32WTF(0, 9)}
 spriteset(spriteset_train_railsuperstrong6_front,	 "gfx/railSuperStrong.png"){template_engine32WTF(0, 10)}
 spriteset(spriteset_train_railsuperstrong6_rear,	 "gfx/railSuperStrong.png"){template_engine32WTF(0, 11)}
-//ATTACH
-switch (FEAT_TRAINS, SELF, switch_superstrong_attach, vehicle_type_id){
-item_railflatbed1: CB_RESULT_ATTACH_ALLOW;
-item_railflatbed2: CB_RESULT_ATTACH_ALLOW;
-item_railflatbed3: CB_RESULT_ATTACH_ALLOW;
-item_railhopper1: CB_RESULT_ATTACH_ALLOW;
-item_railhopper2: CB_RESULT_ATTACH_ALLOW;
-item_railhopper3: CB_RESULT_ATTACH_ALLOW;
-item_railtanker1: CB_RESULT_ATTACH_ALLOW;
-item_railtanker2: CB_RESULT_ATTACH_ALLOW;
-item_railtanker3: CB_RESULT_ATTACH_ALLOW;
-item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
-item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
-item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
-item_railsuperstrong1: CB_RESULT_ATTACH_ALLOW;
-item_railsuperstrong2: CB_RESULT_ATTACH_ALLOW;
-item_railsuperstrong3: CB_RESULT_ATTACH_ALLOW;
-item_railsuperstrong4: CB_RESULT_ATTACH_ALLOW;
-item_railsuperstrong5: CB_RESULT_ATTACH_ALLOW;
-item_railsuperstrong6: CB_RESULT_ATTACH_ALLOW;
-item_railstrong1: CB_RESULT_ATTACH_ALLOW;
-item_railstrong2: CB_RESULT_ATTACH_ALLOW;
-item_railstrong3: CB_RESULT_ATTACH_ALLOW;
-item_railstrong4: CB_RESULT_ATTACH_ALLOW;
-item_railstrong5: CB_RESULT_ATTACH_ALLOW;
-item_railstrong6: CB_RESULT_ATTACH_ALLOW;
-item_railstrong7: CB_RESULT_ATTACH_ALLOW;
-item_railstrong8: CB_RESULT_ATTACH_ALLOW;
-item_railstrong9: CB_RESULT_ATTACH_ALLOW;
-item_railmedium1: CB_RESULT_ATTACH_ALLOW;
-item_railmedium2: CB_RESULT_ATTACH_ALLOW;
-item_railmedium3: CB_RESULT_ATTACH_ALLOW;
-item_railmedium4: CB_RESULT_ATTACH_ALLOW;
-item_railmedium5: CB_RESULT_ATTACH_ALLOW;
-item_railmedium6: CB_RESULT_ATTACH_ALLOW;
-item_railmedium7: CB_RESULT_ATTACH_ALLOW;
-item_railmedium8: CB_RESULT_ATTACH_ALLOW;
-item_railmedium9: CB_RESULT_ATTACH_ALLOW;
-item_railfast1: CB_RESULT_ATTACH_ALLOW;
-item_railfast2: CB_RESULT_ATTACH_ALLOW;
-item_railfast3: CB_RESULT_ATTACH_ALLOW;
-item_railfast4: CB_RESULT_ATTACH_ALLOW;
-item_railfast5: CB_RESULT_ATTACH_ALLOW;
-item_railfast6: CB_RESULT_ATTACH_ALLOW;
-item_railfast7: CB_RESULT_ATTACH_ALLOW;
-item_railfast8: CB_RESULT_ATTACH_ALLOW;
-item_railfast9: CB_RESULT_ATTACH_ALLOW;
-
-//item_ULTIMATE_wagon: CB_RESULT_ATTACH_ALLOW;
-return string(STR_NAME_ATTACH_SUPERSTRONG);
-}
 //ARTICULATION
 switch (FEAT_TRAINS, SELF, switch_railsuperstrong1_articulated, extra_callback_info1){
 1: return item_railsuperstrong1_rear;
@@ -45177,6 +45213,26 @@ WETR: 255*7/10;
 255;
 }
 
+switch (FEAT_TRAINS, SELF, switch_railsuperstrong1_attach, vehicle_type_id){
+	item_railsuperstrong1: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 
 item(FEAT_TRAINS, item_railsuperstrong1, 1) { //ID1
 	property {
@@ -45218,7 +45274,7 @@ item(FEAT_TRAINS, item_railsuperstrong1, 1) { //ID1
 		default: spriteset_train_railsuperstrong1_front;
 		articulated_part: switch_railsuperstrong1_articulated;
 		purchase: spriteset_purchaseMenu_railsuperstrong1;
-		can_attach_wagon: switch_superstrong_attach;
+		can_attach_wagon: switch_railsuperstrong1_attach;
 		additional_text: string(info_rail_superstrong_1);
 		speed: 								railsuperstrong1_wetrail_speed_switch; //maybe for wagons later, not now
 		power: 								railsuperstrong1_wetrail_power_switch; //engine only
@@ -45273,7 +45329,6 @@ item(FEAT_TRAINS, item_railsuperstrong1_rear, 380) { //ID380
 	graphics {
 		default: spriteset_train_railsuperstrong1_rear;
 		//purchase: spriteset_purchaseMenu_railsuperstrong1;
-		can_attach_wagon: switch_railcargo_attach;
 		speed: 								72; //maybe for wagons later, not now
 		power: 								5000; //engine only
 		weight: 							120; //engine only
@@ -45295,6 +45350,27 @@ WETR: 9000*7/10;
 switch(FEAT_TRAINS, SELF, railsuperstrong2_wetrail_te_switch, current_railtype){
 WETR: 255*7/10;
 255;
+}
+
+switch (FEAT_TRAINS, SELF, switch_railsuperstrong2_attach, vehicle_type_id){
+	item_railsuperstrong2: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
 }
 item(FEAT_TRAINS, item_railsuperstrong2, 2) { //ID2
 	property {
@@ -45336,7 +45412,7 @@ item(FEAT_TRAINS, item_railsuperstrong2, 2) { //ID2
 		default: spriteset_train_railsuperstrong2_front;
 		articulated_part: switch_railsuperstrong2_articulated;
 		purchase: spriteset_purchaseMenu_railsuperstrong2;
-		can_attach_wagon: switch_superstrong_attach;
+		can_attach_wagon: switch_railsuperstrong2_attach;
 		additional_text: string(info_rail_superstrong_2);
 		speed: 								railsuperstrong2_wetrail_speed_switch; //maybe for wagons later, not now
 		power: 								railsuperstrong2_wetrail_power_switch; //engine only
@@ -45390,7 +45466,6 @@ item(FEAT_TRAINS, item_railsuperstrong2_rear, 381) { //ID381
 	graphics {
 		default: spriteset_train_railsuperstrong2_rear;
 		//purchase: spriteset_purchaseMenu_railsuperstrong1;
-		can_attach_wagon: switch_railcargo_attach;
 		speed: 								88; //maybe for wagons later, not now
 		power: 								9000; //engine only
 		weight: 							140; //engine only
@@ -45411,6 +45486,27 @@ WETR: 12000*7/10;
 switch(FEAT_TRAINS, SELF, railsuperstrong3_wetrail_te_switch, current_railtype){
 WETR: 255*7/10;
 255;
+}
+
+switch (FEAT_TRAINS, SELF, switch_railsuperstrong3_attach, vehicle_type_id){
+	item_railsuperstrong3: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
 }
 item(FEAT_TRAINS, item_railsuperstrong3, 3) { //ID3
 	property {
@@ -45452,7 +45548,7 @@ item(FEAT_TRAINS, item_railsuperstrong3, 3) { //ID3
 		default: spriteset_train_railsuperstrong3_front;
 		articulated_part: switch_railsuperstrong3_articulated;
 		purchase: spriteset_purchaseMenu_railsuperstrong3;
-		can_attach_wagon: switch_superstrong_attach;
+		can_attach_wagon: switch_railsuperstrong3_attach;
 		additional_text: string(info_rail_superstrong_3);
 		speed: 								railsuperstrong3_wetrail_speed_switch; //maybe for wagons later, not now
 		power: 								railsuperstrong3_wetrail_power_switch; //engine only
@@ -45506,15 +45602,12 @@ item(FEAT_TRAINS, item_railsuperstrong3_rear, 382) { //ID382
 	graphics {
 		default: spriteset_train_railsuperstrong3_rear;
 		//purchase: spriteset_purchaseMenu_railsuperstrong1;
-		can_attach_wagon: switch_railcargo_attach;
 		speed: 								99; //maybe for wagons later, not now
 		power: 								12000; //engine only
 		weight: 							170; //engine only
 		tractive_effort_coefficient:		255; //engine only
 		cost_factor:						27; //switch_cost_global; //everything
 		running_cost_factor:				100; //only engines
-
-		
 	}
 }
 switch(FEAT_TRAINS, SELF, railsuperstrong4_wetrail_speed_switch, current_railtype){
@@ -45530,6 +45623,26 @@ WETR: 255*7/10;
 255;
 }
 
+switch (FEAT_TRAINS, SELF, switch_railsuperstrong4_attach, vehicle_type_id){
+	item_railsuperstrong4: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railsuperstrong4, 4) { //ID4
 	property {
 		name:                         string(STR_NAME_RSS4);
@@ -45570,7 +45683,7 @@ item(FEAT_TRAINS, item_railsuperstrong4, 4) { //ID4
 		default: spriteset_train_railsuperstrong4_front;
 		articulated_part: switch_railsuperstrong4_articulated;
 		purchase: spriteset_purchaseMenu_railsuperstrong4;
-		can_attach_wagon: switch_superstrong_attach;
+		can_attach_wagon: switch_railsuperstrong4_attach;
 		additional_text: string(info_rail_superstrong_4);
 		speed: 								railsuperstrong4_wetrail_speed_switch; //maybe for wagons later, not now
 		power: 								railsuperstrong4_wetrail_power_switch; //engine only
@@ -45624,7 +45737,6 @@ item(FEAT_TRAINS, item_railsuperstrong4_rear, 383) { //ID383
 	graphics {
 		default: spriteset_train_railsuperstrong4_rear;
 		//purchase: spriteset_purchaseMenu_railsuperstrong1;
-		can_attach_wagon: switch_railcargo_attach;
 		speed: 								111; //maybe for wagons later, not now
 		power: 								15000; //engine only
 		weight: 							210; //engine only
@@ -45648,6 +45760,26 @@ WETR: 255*7/10;
 255;
 }
 
+switch (FEAT_TRAINS, SELF, switch_railsuperstrong5_attach, vehicle_type_id){
+	item_railsuperstrong5: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+  item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railsuperstrong5, 5) { //ID5
 	property {
 		name:                         string(STR_NAME_RSS5);
@@ -45688,7 +45820,7 @@ item(FEAT_TRAINS, item_railsuperstrong5, 5) { //ID5
 		default: spriteset_train_railsuperstrong5_front;
 		articulated_part: switch_railsuperstrong5_articulated;
 		purchase: spriteset_purchaseMenu_railsuperstrong5;
-		can_attach_wagon: switch_superstrong_attach;
+		can_attach_wagon: switch_railsuperstrong5_attach;
 		additional_text: string(info_rail_superstrong_5);
 		speed: 								railsuperstrong5_wetrail_speed_switch; //maybe for wagons later, not now
 		power: 								railsuperstrong5_wetrail_power_switch; //engine only
@@ -45743,7 +45875,6 @@ item(FEAT_TRAINS, item_railsuperstrong5_rear, 384) { //ID384
 	graphics {
 		default: spriteset_train_railsuperstrong5_rear;
 		//purchase: spriteset_purchaseMenu_railsuperstrong1;
-		can_attach_wagon: switch_railcargo_attach;
 		speed: 								111; //maybe for wagons later, not now
 		power: 								20000; //engine only
 		weight: 							250; //engine only
@@ -45771,6 +45902,26 @@ WETR: 255*7/10;
 255;
 }
 
+switch (FEAT_TRAINS, SELF, switch_railsuperstrong6_attach, vehicle_type_id){
+	item_railsuperstrong6: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railsuperstrong6, 6) { //ID6
 	property {
 		name:                         string(STR_NAME_RSS6);
@@ -45811,7 +45962,7 @@ item(FEAT_TRAINS, item_railsuperstrong6, 6) { //ID6
 		default: spriteset_train_railsuperstrong6_front;
 		articulated_part: switch_railsuperstrong6_articulated;
 		purchase: spriteset_purchaseMenu_railsuperstrong6;
-		can_attach_wagon: switch_superstrong_attach;
+		can_attach_wagon: switch_railsuperstrong6_attach;
 		additional_text: string(info_rail_superstrong_6);
 		speed: 								railsuperstrong6_wetrail_speed_switch; //maybe for wagons later, not now
 		power: 								railsuperstrong6_wetrail_power_switch; //engine only
@@ -45867,7 +46018,6 @@ item(FEAT_TRAINS, item_railsuperstrong6_rear, 385) { //ID385
 	graphics {
 		default: spriteset_train_railsuperstrong6_rear;
 		//purchase: spriteset_purchaseMenu_railsuperstrong1;
-		can_attach_wagon: switch_railcargo_attach;
 		speed: 								133; //maybe for wagons later, not now
 		power: 								25000; //engine only
 		weight: 							300; //engine only
@@ -45903,7 +46053,26 @@ return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 
 spriteset(spriteset_purchaseMenu_RAIL_EARLY_01, 		"gfx/PurchaseMenu.png"){template_purchaseMenu(6,24)}
 spriteset(spriteset_train_RAIL_EARLY_01, "gfx/RAIL_EARLY.png") { template_engine32(0, 0) }
+switch (FEAT_TRAINS, SELF, switch_rail_EARLY_01_attach, vehicle_type_id){
+	item_rail_EARLY_01: CB_RESULT_ATTACH_ALLOW;
 
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_rail_EARLY_01, 7) { //ID7
 	property {
 		name:                         string(STR_NAME_EARLY_01);
@@ -45944,7 +46113,7 @@ item(FEAT_TRAINS, item_rail_EARLY_01, 7) { //ID7
 		default: spriteset_train_RAIL_EARLY_01;//spriteset_train_railstrong1;
 		articulated_part: switch_rail_articulated_1;
 		purchase: spriteset_purchaseMenu_RAIL_EARLY_01;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_rail_EARLY_01_attach;
 		additional_text: string(info_rail_early_1);
 		speed: 								70; //maybe for wagons later, not now
 		power: 								650; //engine only
@@ -45958,7 +46127,26 @@ item(FEAT_TRAINS, item_rail_EARLY_01, 7) { //ID7
 
 spriteset(spriteset_purchaseMenu_RAIL_EARLY_02, 		"gfx/PurchaseMenu.png"){template_purchaseMenu(6,25)}
 spriteset(spriteset_train_RAIL_EARLY_02, "gfx/RAIL_EARLY.png") { template_engine32(0, 1) }
+switch (FEAT_TRAINS, SELF, switch_rail_EARLY_02_attach, vehicle_type_id){
+	item_rail_EARLY_02: CB_RESULT_ATTACH_ALLOW;
 
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_rail_EARLY_02, 8) { //ID8
 	property {
 		name:                         string(STR_NAME_EARLY_02);
@@ -45999,7 +46187,7 @@ item(FEAT_TRAINS, item_rail_EARLY_02, 8) { //ID8
 		default: spriteset_train_RAIL_EARLY_02;//spriteset_train_railstrong1;
 		articulated_part: switch_rail_articulated_1;
 		purchase: spriteset_purchaseMenu_RAIL_EARLY_02;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_rail_EARLY_02_attach;
 		additional_text: string(info_rail_early_2);
 		speed: 								75; //maybe for wagons later, not now
 		power: 								720; //engine only
@@ -46014,7 +46202,26 @@ item(FEAT_TRAINS, item_rail_EARLY_02, 8) { //ID8
 
 spriteset(spriteset_purchaseMenu_RAIL_EARLY_03, 		"gfx/PurchaseMenu.png"){template_purchaseMenu(6,26)}
 spriteset(spriteset_train_RAIL_EARLY_03, "gfx/RAIL_EARLY.png") { template_engine32(0, 2) }
+switch (FEAT_TRAINS, SELF, switch_rail_EARLY_03_attach, vehicle_type_id){
+	item_rail_EARLY_03: CB_RESULT_ATTACH_ALLOW;
 
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_rail_EARLY_03, 9) { //ID9
 	property {
 		name:                         string(STR_NAME_EARLY_03);
@@ -46055,7 +46262,7 @@ item(FEAT_TRAINS, item_rail_EARLY_03, 9) { //ID9
 		default: spriteset_train_RAIL_EARLY_03;//spriteset_train_railstrong1;
 		articulated_part: switch_rail_articulated_1;
 		purchase: spriteset_purchaseMenu_RAIL_EARLY_03;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_rail_EARLY_03_attach;
 		additional_text: string(info_rail_early_3);
 		speed: 								80; //maybe for wagons later, not now
 		power: 								800; //engine only
@@ -46115,7 +46322,26 @@ railstrong1_endswitch;
 }
 
 
+switch (FEAT_TRAINS, SELF, switch_railstrong1_attach, vehicle_type_id){
+	item_railstrong1: CB_RESULT_ATTACH_ALLOW;
 
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 //ITEMS
 item(FEAT_TRAINS, item_railstrong1, 11) { //ID11
 	property {
@@ -46157,7 +46383,7 @@ item(FEAT_TRAINS, item_railstrong1, 11) { //ID11
 		default: railstrong1_visualswitch;//spriteset_train_railstrong1;
 		articulated_part: switch_rail_articulated_1;
 		purchase: spriteset_purchaseMenu_railstrong1;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railstrong1_attach;
 		additional_text: string(info_rail_strong_1);
 		speed: 								80; //maybe for wagons later, not now
 		power: 								1000; //engine only
@@ -46177,7 +46403,26 @@ switch(FEAT_TRAINS, SELF, railstrong2_visualswitch, position_in_consist){
 railstrong2_endswitch;
 }
 
+switch (FEAT_TRAINS, SELF, switch_railstrong2_attach, vehicle_type_id){
+	item_railstrong2: CB_RESULT_ATTACH_ALLOW;
 
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railstrong2, 13) { //ID13
 	property {
 		name:                         string(STR_NAME_RS2);
@@ -46218,7 +46463,7 @@ item(FEAT_TRAINS, item_railstrong2, 13) { //ID13
 		default: railstrong2_visualswitch;
 		articulated_part: switch_rail_articulated_1;
 		purchase: spriteset_purchaseMenu_railstrong2;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railstrong2_attach;
 		additional_text: string(info_rail_strong_1);
 		speed: 								90; //maybe for wagons later, not now
 		power: 								1500; //engine only
@@ -46240,6 +46485,26 @@ switch(FEAT_TRAINS, SELF, railstrong3_visualswitch, position_in_consist){
 railstrong3_endswitch;
 }
 
+switch (FEAT_TRAINS, SELF, switch_railstrong3_attach, vehicle_type_id){
+	item_railstrong3: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railstrong3, 15) { //ID15
 	property {
 		name:                         string(STR_NAME_RS3);
@@ -46280,7 +46545,7 @@ item(FEAT_TRAINS, item_railstrong3, 15) { //ID15
 		default: railstrong3_visualswitch;
 		articulated_part: switch_rail_articulated_1;
 		purchase: spriteset_purchaseMenu_railstrong3;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railstrong3_attach;
 		additional_text: string(info_rail_strong_3);
 		speed: 								100; //maybe for wagons later, not now
 		power: 								2000; //engine only
@@ -46305,6 +46570,26 @@ switch (FEAT_TRAINS, SELF, switch_railstrong4_reversing, var[0xC8, 0, 0xFF]) {
 0xFF: switch_railstrong4_stopped;
 }
 
+switch (FEAT_TRAINS, SELF, switch_railstrong4_attach, vehicle_type_id){
+	item_railstrong4: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railstrong4, 17) { //ID17
 	property {
 		name:                         string(STR_NAME_RS4);
@@ -46345,7 +46630,7 @@ item(FEAT_TRAINS, item_railstrong4, 17) { //ID17
 		default: switch_railstrong4_reversing;//spriteset_train_railstrong4;
 		purchase: spriteset_purchaseMenu_railstrong4;
 		articulated_part: switch_rail_articulated_2;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railstrong4_attach;
 		additional_text: string(info_rail_strong_4);
 		speed: 								110; //maybe for wagons later, not now
 		power: 								3000; //engine only
@@ -46365,6 +46650,26 @@ switch(FEAT_TRAINS, SELF, railstrong5_visualswitch, position_in_consist){
 railstrong5_endswitch;
 }
 
+switch (FEAT_TRAINS, SELF, switch_railstrong5_attach, vehicle_type_id){
+	item_railstrong5: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railstrong5, 19) { //ID19
 	property {
 		name:                         string(STR_NAME_RS5);
@@ -46405,7 +46710,7 @@ item(FEAT_TRAINS, item_railstrong5, 19) { //ID19
 		default: railstrong5_visualswitch;
 		articulated_part: switch_rail_articulated_2;
 		purchase: spriteset_purchaseMenu_railstrong5;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railstrong5_attach;
 		additional_text: string(info_rail_strong_5);
 		speed: 								125; //maybe for wagons later, not now
 		power: 								4000; //engine only
@@ -46423,6 +46728,26 @@ spriteset_train_railstrong6;
 switch(FEAT_TRAINS, SELF, railstrong6_visualswitch, position_in_consist){
 0: spriteset_train_railstrong6;
 railstrong6_endswitch;
+}
+switch (FEAT_TRAINS, SELF, switch_railstrong6_attach, vehicle_type_id){
+	item_railstrong6: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
 }
 item(FEAT_TRAINS, item_railstrong6, 21) { //ID21
 	property {
@@ -46464,7 +46789,7 @@ item(FEAT_TRAINS, item_railstrong6, 21) { //ID21
 		default: railstrong6_visualswitch;
 		articulated_part: switch_rail_articulated_2;
 		purchase: spriteset_purchaseMenu_railstrong6;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railstrong6_attach;
 		additional_text: string(info_rail_strong_6);
 		speed: 								140; //maybe for wagons later, not now
 		power: 								5000; //engine only
@@ -46489,6 +46814,26 @@ switch (FEAT_TRAINS, SELF, switch_railstrong7_reversing, var[0xC8, 0, 0xFF]) {
 0xFF: switch_railstrong7_stopped;
 }
 
+switch (FEAT_TRAINS, SELF, switch_railstrong7_attach, vehicle_type_id){
+	item_railstrong7: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railstrong7, 23) { //ID23
 	property {
 		name:                         string(STR_NAME_RS7);
@@ -46529,7 +46874,7 @@ item(FEAT_TRAINS, item_railstrong7, 23) { //ID23
 		default: switch_railstrong7_reversing;//spriteset_train_railstrong7;
 		articulated_part: switch_rail_articulated_3;
 		purchase: spriteset_purchaseMenu_railstrong7;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railstrong7_attach;
 		additional_text: string(info_rail_strong_7);
 		speed: 								150; //maybe for wagons later, not now
 		power: 								6000; //engine only
@@ -46554,7 +46899,26 @@ switch (FEAT_TRAINS, SELF, switch_railstrong8_reversing, var[0xC8, 0, 0xFF]) {
 0xFF: switch_railstrong8_stopped;
 }
 
+switch (FEAT_TRAINS, SELF, switch_railstrong8_attach, vehicle_type_id){
+	item_railstrong8: CB_RESULT_ATTACH_ALLOW;
 
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railstrong8, 25) { //ID25
 	property {
 		name:                         string(STR_NAME_RS8);
@@ -46595,7 +46959,7 @@ item(FEAT_TRAINS, item_railstrong8, 25) { //ID25
 		default: switch_railstrong8_reversing;
 		articulated_part: switch_rail_articulated_3;
 		purchase: spriteset_purchaseMenu_railstrong8;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railstrong8_attach;
 		additional_text: string(info_rail_strong_8);
 		speed: 								155; //maybe for wagons later, not now
 		power: 								8000; //engine only
@@ -46615,7 +46979,26 @@ switch(FEAT_TRAINS, SELF, railstrong9_visualswitch, position_in_consist){
 railstrong9_endswitch;
 }
 
+switch (FEAT_TRAINS, SELF, switch_railstrong9_attach, vehicle_type_id){
+	item_railstrong9: CB_RESULT_ATTACH_ALLOW;
 
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railstrong9, 27) { //ID27
 	property {
 		name:                         string(STR_NAME_DUKE);
@@ -46656,7 +47039,7 @@ item(FEAT_TRAINS, item_railstrong9, 27) { //ID27
 		default: railstrong9_visualswitch;//spriteset_train_dukenukem;
 		articulated_part: switch_rail_articulated_3;
 		purchase: spriteset_purchaseMenu_railstrong9;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railstrong9_attach;
 		additional_text: string(info_rail_strong_9);
 		speed: 								160; //maybe for wagons later, not now
 		power: 								10000; //engine only
@@ -46765,6 +47148,67 @@ switch(FEAT_TRAINS, SELF, switch_capacity_CABOOSE_1, cargo_type_in_veh){
 	return 15;
 }
 
+switch (FEAT_TRAINS, SELF, switch_rail_CABOOSE_1_attach, vehicle_type_id){
+	item_railsuperstrong1: CB_RESULT_ATTACH_ALLOW;
+	item_railsuperstrong2: CB_RESULT_ATTACH_ALLOW;
+	item_railsuperstrong3: CB_RESULT_ATTACH_ALLOW;
+	item_railsuperstrong4: CB_RESULT_ATTACH_ALLOW;
+	item_railsuperstrong5: CB_RESULT_ATTACH_ALLOW;
+	item_railsuperstrong6: CB_RESULT_ATTACH_ALLOW;
+	item_railstrong1: CB_RESULT_ATTACH_ALLOW;
+	item_railstrong2: CB_RESULT_ATTACH_ALLOW;
+	item_railstrong3: CB_RESULT_ATTACH_ALLOW;
+	item_railstrong4: CB_RESULT_ATTACH_ALLOW;
+	item_railstrong5: CB_RESULT_ATTACH_ALLOW;
+	item_railstrong6: CB_RESULT_ATTACH_ALLOW;
+	item_railstrong7: CB_RESULT_ATTACH_ALLOW;
+	item_railstrong8: CB_RESULT_ATTACH_ALLOW;
+	item_railstrong9: CB_RESULT_ATTACH_ALLOW;
+	item_railmedium1: CB_RESULT_ATTACH_ALLOW;
+	item_railmedium2: CB_RESULT_ATTACH_ALLOW;
+	item_railmedium3: CB_RESULT_ATTACH_ALLOW;
+	item_railmedium4: CB_RESULT_ATTACH_ALLOW;
+	item_railmedium5: CB_RESULT_ATTACH_ALLOW;
+	item_railmedium6: CB_RESULT_ATTACH_ALLOW;
+	item_railmedium7: CB_RESULT_ATTACH_ALLOW;
+	item_railmedium8: CB_RESULT_ATTACH_ALLOW;
+	item_railmedium9: CB_RESULT_ATTACH_ALLOW;
+	item_railfast1: CB_RESULT_ATTACH_ALLOW;
+	item_railfast2: CB_RESULT_ATTACH_ALLOW;
+	item_railfast3: CB_RESULT_ATTACH_ALLOW;
+	item_railfast4: CB_RESULT_ATTACH_ALLOW;
+	item_railfast5: CB_RESULT_ATTACH_ALLOW;
+	item_railfast6: CB_RESULT_ATTACH_ALLOW;
+	item_railfast7: CB_RESULT_ATTACH_ALLOW;
+	item_railfast8: CB_RESULT_ATTACH_ALLOW;
+	item_railfast9: CB_RESULT_ATTACH_ALLOW;
+	item_MEOW_rail_01: CB_RESULT_ATTACH_ALLOW;
+	item_MEOW_rail_02: CB_RESULT_ATTACH_ALLOW;
+	item_MEOW_rail_03: CB_RESULT_ATTACH_ALLOW;
+	item_MEOW_rail_04: CB_RESULT_ATTACH_ALLOW;
+	item_MEOW_rail_05: CB_RESULT_ATTACH_ALLOW;
+	item_MEOW_rail_06: CB_RESULT_ATTACH_ALLOW;
+	item_MEOW_rail_07: CB_RESULT_ATTACH_ALLOW;
+	item_MEOW_rail_08: CB_RESULT_ATTACH_ALLOW;
+	item_MEOW_rail_09: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_caboose);
+}
 item(FEAT_TRAINS, item_CABOOSE_1, 28) { //ID28
 	property {
 		name:                         string(STR_NAME_CABOOSE_1);
@@ -46806,7 +47250,7 @@ item(FEAT_TRAINS, item_CABOOSE_1, 28) { //ID28
 	}
 	graphics {
 		default: switch_CABOOSE_1_visualswitch;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_rail_CABOOSE_1_attach;
 		additional_text: string(info_rail_CABOOSE_1);
 		purchase: spriteset_purchaseMenu_CABOOSE_01;
 		speed: 							105;
@@ -46955,6 +47399,67 @@ switch(FEAT_TRAINS, SELF, switch_capacity_CABOOSE_2, cargo_type_in_veh){
 	GOLD: 17;
 	return 17;
 }
+switch (FEAT_TRAINS, SELF, switch_rail_CABOOSE_2_attach, vehicle_type_id){
+	item_railsuperstrong1: CB_RESULT_ATTACH_ALLOW;
+	item_railsuperstrong2: CB_RESULT_ATTACH_ALLOW;
+	item_railsuperstrong3: CB_RESULT_ATTACH_ALLOW;
+	item_railsuperstrong4: CB_RESULT_ATTACH_ALLOW;
+	item_railsuperstrong5: CB_RESULT_ATTACH_ALLOW;
+	item_railsuperstrong6: CB_RESULT_ATTACH_ALLOW;
+	item_railstrong1: CB_RESULT_ATTACH_ALLOW;
+	item_railstrong2: CB_RESULT_ATTACH_ALLOW;
+	item_railstrong3: CB_RESULT_ATTACH_ALLOW;
+	item_railstrong4: CB_RESULT_ATTACH_ALLOW;
+	item_railstrong5: CB_RESULT_ATTACH_ALLOW;
+	item_railstrong6: CB_RESULT_ATTACH_ALLOW;
+	item_railstrong7: CB_RESULT_ATTACH_ALLOW;
+	item_railstrong8: CB_RESULT_ATTACH_ALLOW;
+	item_railstrong9: CB_RESULT_ATTACH_ALLOW;
+	item_railmedium1: CB_RESULT_ATTACH_ALLOW;
+	item_railmedium2: CB_RESULT_ATTACH_ALLOW;
+	item_railmedium3: CB_RESULT_ATTACH_ALLOW;
+	item_railmedium4: CB_RESULT_ATTACH_ALLOW;
+	item_railmedium5: CB_RESULT_ATTACH_ALLOW;
+	item_railmedium6: CB_RESULT_ATTACH_ALLOW;
+	item_railmedium7: CB_RESULT_ATTACH_ALLOW;
+	item_railmedium8: CB_RESULT_ATTACH_ALLOW;
+	item_railmedium9: CB_RESULT_ATTACH_ALLOW;
+	item_railfast1: CB_RESULT_ATTACH_ALLOW;
+	item_railfast2: CB_RESULT_ATTACH_ALLOW;
+	item_railfast3: CB_RESULT_ATTACH_ALLOW;
+	item_railfast4: CB_RESULT_ATTACH_ALLOW;
+	item_railfast5: CB_RESULT_ATTACH_ALLOW;
+	item_railfast6: CB_RESULT_ATTACH_ALLOW;
+	item_railfast7: CB_RESULT_ATTACH_ALLOW;
+	item_railfast8: CB_RESULT_ATTACH_ALLOW;
+	item_railfast9: CB_RESULT_ATTACH_ALLOW;
+	item_MEOW_rail_01: CB_RESULT_ATTACH_ALLOW;
+	item_MEOW_rail_02: CB_RESULT_ATTACH_ALLOW;
+	item_MEOW_rail_03: CB_RESULT_ATTACH_ALLOW;
+	item_MEOW_rail_04: CB_RESULT_ATTACH_ALLOW;
+	item_MEOW_rail_05: CB_RESULT_ATTACH_ALLOW;
+	item_MEOW_rail_06: CB_RESULT_ATTACH_ALLOW;
+	item_MEOW_rail_07: CB_RESULT_ATTACH_ALLOW;
+	item_MEOW_rail_08: CB_RESULT_ATTACH_ALLOW;
+	item_MEOW_rail_09: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_caboose);
+}
 item(FEAT_TRAINS, item_CABOOSE_2, 29) { //ID29
 	property {
 		name:                         string(STR_NAME_CABOOSE_2);
@@ -46996,7 +47501,7 @@ item(FEAT_TRAINS, item_CABOOSE_2, 29) { //ID29
 	}
 	graphics {
 		default: switch_CABOOSE_2_visualswitch;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_rail_CABOOSE_2_attach;
 		additional_text: string(info_rail_CABOOSE_2);
 		purchase: spriteset_purchaseMenu_CABOOSE_02;
 		speed: 							CABOOSE_MEOW_speed_switch;
@@ -47071,6 +47576,26 @@ switch(FEAT_TRAINS, SELF, railmedium1_visualswitch, position_in_consist){
 railmedium1_endswitch;
 }
 
+switch (FEAT_TRAINS, SELF, switch_railmedium1_attach, vehicle_type_id){
+	item_railmedium1: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 //ITEMS
 item(FEAT_TRAINS, item_railmedium1, 31) { //ID31
 	property {
@@ -47112,7 +47637,7 @@ item(FEAT_TRAINS, item_railmedium1, 31) { //ID31
 		default: railmedium1_visualswitch;
 		articulated_part: switch_rail_articulated_1;
 		purchase: spriteset_purchaseMenu_railmedium1;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railmedium1_attach;
 		additional_text: string(info_rail_medium_1);
 		speed: 								100; //maybe for wagons later, not now
 		power: 								900; //engine only
@@ -47132,6 +47657,26 @@ switch(FEAT_TRAINS, SELF, railmedium2_visualswitch, position_in_consist){
 railmedium2_endswitch;
 }
 
+switch (FEAT_TRAINS, SELF, switch_railmedium2_attach, vehicle_type_id){
+	item_railmedium2: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railmedium2, 33) { //ID33
 	property {
 		name:                         string(STR_NAME_RM2);
@@ -47172,7 +47717,7 @@ item(FEAT_TRAINS, item_railmedium2, 33) { //ID33
 		default: railmedium2_visualswitch;
 		articulated_part: switch_rail_articulated_1;
 		purchase: spriteset_purchaseMenu_railmedium2;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railmedium2_attach;
 		additional_text: string(info_rail_medium_2);
 		speed: 								115; //maybe for wagons later, not now
 		power: 								1200; //engine only
@@ -47193,7 +47738,26 @@ railmedium3_endswitch;
 }
 
 
+switch (FEAT_TRAINS, SELF, switch_railmedium3_attach, vehicle_type_id){
+	item_railmedium3: CB_RESULT_ATTACH_ALLOW;
 
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railmedium3, 35) { //ID35
 	property {
 		name:                         string(STR_NAME_RM3);
@@ -47234,7 +47798,7 @@ item(FEAT_TRAINS, item_railmedium3, 35) { //ID35
 		default: railmedium3_visualswitch;
 		articulated_part: switch_rail_articulated_1;
 		purchase: spriteset_purchaseMenu_railmedium3;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railmedium3_attach;
 		additional_text: string(info_rail_medium_3);
 		speed: 								130; //maybe for wagons later, not now
 		power: 								1700; //engine only
@@ -47258,6 +47822,26 @@ switch (FEAT_TRAINS, SELF, switch_railmedium4_reversing, var[0xC8, 0, 0xFF]) {
 0xFF: switch_railmedium4_stopped;
 }
 
+switch (FEAT_TRAINS, SELF, switch_railmedium4_attach, vehicle_type_id){
+	item_railmedium4: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railmedium4, 37) { //ID37
 	property {
 		name:                         string(STR_NAME_RM4);
@@ -47299,7 +47883,7 @@ item(FEAT_TRAINS, item_railmedium4, 37) { //ID37
 		default: switch_railmedium4_reversing;//spriteset_train_railmedium4;
 		articulated_part: switch_rail_articulated_2;
 		purchase: spriteset_purchaseMenu_railmedium4;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railmedium4_attach;
 		additional_text: string(info_rail_medium_4);
 		speed: 								140; //maybe for wagons later, not now
 		power: 								2000; //engine only
@@ -47323,7 +47907,26 @@ switch (FEAT_TRAINS, SELF, switch_railmedium5_reversing, var[0xC8, 0, 0xFF]) {
 0xFF: switch_railmedium5_stopped;
 }
 
+switch (FEAT_TRAINS, SELF, switch_railmedium5_attach, vehicle_type_id){
+	item_railmedium5: CB_RESULT_ATTACH_ALLOW;
 
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railmedium5, 39) { //ID39
 	property {
 		name:                         string(STR_NAME_RM5);
@@ -47364,7 +47967,7 @@ item(FEAT_TRAINS, item_railmedium5, 39) { //ID39
 		default: switch_railmedium5_reversing;//spriteset_train_railmedium5;
 		articulated_part: switch_rail_articulated_2;
 		purchase: spriteset_purchaseMenu_railmedium5;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railmedium5_attach;
 		additional_text: string(info_rail_medium_5);
 		speed: 								155; //maybe for wagons later, not now
 		power: 								2700; //engine only
@@ -47389,7 +47992,26 @@ switch (FEAT_TRAINS, SELF, switch_railmedium6_reversing, var[0xC8, 0, 0xFF]) {
 0xFF: switch_railmedium6_stopped;
 }
 
+switch (FEAT_TRAINS, SELF, switch_railmedium6_attach, vehicle_type_id){
+	item_railmedium6: CB_RESULT_ATTACH_ALLOW;
 
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railmedium6, 41) { //ID41
 	property {
 		name:                         string(STR_NAME_RM6);
@@ -47430,7 +48052,7 @@ item(FEAT_TRAINS, item_railmedium6, 41) { //ID41
 		default: switch_railmedium6_reversing;//spriteset_train_railmedium6;
 		articulated_part: switch_rail_articulated_2;
 		purchase: spriteset_purchaseMenu_railmedium6;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railmedium6_attach;
 		additional_text: string(info_rail_medium_6);
 		speed: 								160; //maybe for wagons later, not now
 		power: 								3500; //engine only
@@ -47454,6 +48076,26 @@ switch (FEAT_TRAINS, SELF, switch_railmedium7_reversing, var[0xC8, 0, 0xFF]) {
 0xFF: switch_railmedium7_stopped;
 }
 
+switch (FEAT_TRAINS, SELF, switch_railmedium7_attach, vehicle_type_id){
+	item_railmedium7: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railmedium7, 43) { //ID43
 	property {
 		name:                         string(STR_NAME_RM7);
@@ -47493,7 +48135,7 @@ item(FEAT_TRAINS, item_railmedium7, 43) { //ID43
 		default: switch_railmedium7_reversing;//spriteset_train_railmedium7;
 		articulated_part: switch_rail_articulated_3;
 		purchase: spriteset_purchaseMenu_railmedium7;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railmedium7_attach;
 		additional_text: string(info_rail_medium_7);
 		speed: 								177; //maybe for wagons later, not now
 		power: 								4000; //engine only
@@ -47513,6 +48155,26 @@ switch(FEAT_TRAINS, SELF, railmedium8_visualswitch, position_in_consist){
 railmedium8_endswitch;
 }
 
+switch (FEAT_TRAINS, SELF, switch_railmedium8_attach, vehicle_type_id){
+	item_railmedium8: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railmedium8, 45) { //ID45
 	property {
 		name:                         string(STR_NAME_RM8);
@@ -47553,7 +48215,7 @@ item(FEAT_TRAINS, item_railmedium8, 45) { //ID45
 		default: railmedium8_visualswitch;
 		articulated_part: switch_rail_articulated_3;
 		purchase: spriteset_purchaseMenu_railmedium8;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railmedium8_attach;
 		additional_text: string(info_rail_medium_8);
 		speed: 								183; //maybe for wagons later, not now
 		power: 								5500; //engine only
@@ -47577,7 +48239,26 @@ switch (FEAT_TRAINS, SELF, switch_railmedium9_reversing, var[0xC8, 0, 0xFF]) {
 0xFF: switch_railmedium9_stopped;
 }
 
+switch (FEAT_TRAINS, SELF, switch_railmedium9_attach, vehicle_type_id){
+	item_railmedium9: CB_RESULT_ATTACH_ALLOW;
 
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railmedium9, 47) { //ID47
 	property {
 		name:                         string(STR_NAME_RM9);
@@ -47618,7 +48299,7 @@ item(FEAT_TRAINS, item_railmedium9, 47) { //ID47
 		default: switch_railmedium9_reversing;//spriteset_train_railmedium9;
 		articulated_part: switch_rail_articulated_3;
 		purchase: spriteset_purchaseMenu_railmedium9;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railmedium9_attach;
 		additional_text: string(info_rail_medium_9);
 		speed: 								196; //maybe for wagons later, not now
 		power: 								7000; //engine only
@@ -47685,6 +48366,26 @@ railfast1_endswitch;
 
 
 //ITEMS
+switch (FEAT_TRAINS, SELF, switch_railfast1_attach, vehicle_type_id){
+	item_railfast1: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railfast1, 51) {
 	property {
 		name:                         string(STR_NAME_RF1);
@@ -47724,7 +48425,7 @@ item(FEAT_TRAINS, item_railfast1, 51) {
 	graphics {
 		default: spriteset_train_railfast1;//railfast1_visualswitch;
 		purchase: spriteset_purchaseMenu_railfast1;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railfast1_attach;
 		additional_text: string(info_rail_fast_1);
 		speed: 								120; //maybe for wagons later, not now
 		power: 								1200; //engine only
@@ -47744,6 +48445,26 @@ switch(FEAT_TRAINS, SELF, railfast2_visualswitch, position_in_consist){
 railfast2_endswitch;
 }
 */
+switch (FEAT_TRAINS, SELF, switch_railfast2_attach, vehicle_type_id){
+	item_railfast2: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railfast2, 53) { //ID53
 	property {
 		name:                         string(STR_NAME_RF2);
@@ -47783,7 +48504,7 @@ item(FEAT_TRAINS, item_railfast2, 53) { //ID53
 	graphics {
 		default: spriteset_train_railfast2;
 		purchase: spriteset_purchaseMenu_railfast2;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railfast2_attach;
 		additional_text: string(info_rail_fast_2);
 		speed: 								140; //maybe for wagons later, not now
 		power: 								1700; //engine only
@@ -47803,6 +48524,26 @@ switch(FEAT_TRAINS, SELF, railfast3_visualswitch, position_in_consist){
 railfast3_endswitch;
 }
 */
+switch (FEAT_TRAINS, SELF, switch_railfast3_attach, vehicle_type_id){
+	item_railfast3: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railfast3, 55) { //ID55
 	property {
 		name:                         string(STR_NAME_RF3);
@@ -47842,7 +48583,7 @@ item(FEAT_TRAINS, item_railfast3, 55) { //ID55
 	graphics {
 		default: spriteset_train_railfast3;
 		purchase: spriteset_purchaseMenu_railfast3;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railfast3_attach;
 		additional_text: string(info_rail_fast_3);
 		speed: 								150; //maybe for wagons later, not now
 		power: 								2000; //engine only
@@ -47863,6 +48604,26 @@ railfast4_endswitch;
 }
 */
 
+switch (FEAT_TRAINS, SELF, switch_railfast4_attach, vehicle_type_id){
+	item_railfast4: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railfast4, 57) { //ID57
 	property {
 		name:                         string(STR_NAME_RF4);
@@ -47902,7 +48663,7 @@ item(FEAT_TRAINS, item_railfast4, 57) { //ID57
 	graphics {
 		default: spriteset_train_railfast4;
 		purchase: spriteset_purchaseMenu_railfast4;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railfast4_attach;
 		additional_text: string(info_rail_fast_4);
 		speed: 								170;
 		power: 								3200; //engine only
@@ -47937,6 +48698,26 @@ switch (FEAT_TRAINS, SELF, switch_railfast5_reversing, var[0xC8, 0, 0xFF]) {
 0xFF: switch_railfast5_stopped;
 }
 */
+switch (FEAT_TRAINS, SELF, switch_railfast5_attach, vehicle_type_id){
+	item_railfast5: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railfast5, 59) { //ID59
 	property {
 		name:                         string(STR_NAME_RF5);
@@ -47976,7 +48757,7 @@ item(FEAT_TRAINS, item_railfast5, 59) { //ID59
 	graphics {
 		default: spriteset_train_railfast5;
 		purchase: spriteset_purchaseMenu_railfast5;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railfast5_attach;
 		additional_text: string(info_rail_fast_5);
 		speed: 								183; //maybe for wagons later, not now
 		power: 								4600; //engine only
@@ -47998,6 +48779,26 @@ railfast6_endswitch;
 }
 */
 
+switch (FEAT_TRAINS, SELF, switch_railfast6_attach, vehicle_type_id){
+	item_railfast6: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railfast6, 61) { //ID61
 	property {
 		name:                         string(STR_NAME_RF6);
@@ -48037,7 +48838,7 @@ item(FEAT_TRAINS, item_railfast6, 61) { //ID61
 	graphics {
 		default: spriteset_train_railfast6;
 		purchase: spriteset_purchaseMenu_railfast6;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railfast6_attach;
 		additional_text: string(info_rail_fast_6);
 		speed: 								190; //maybe for wagons later, not now
 		power: 								6000; //engine only
@@ -48063,6 +48864,26 @@ switch (FEAT_TRAINS, SELF, switch_railfast7_reversing, var[0xC8, 0, 0xFF]) {
 0xFF: switch_railfast7_stopped;
 }
 */
+switch (FEAT_TRAINS, SELF, switch_railfast7_attach, vehicle_type_id){
+	item_railfast7: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railfast7, 63) { //ID63
 	property {
 		name:                         string(STR_NAME_RF7);
@@ -48102,7 +48923,7 @@ item(FEAT_TRAINS, item_railfast7, 63) { //ID63
 	graphics {
 		default: spriteset_train_railfast7;//spriteset_train_railfast7;
 		purchase: spriteset_purchaseMenu_railfast7;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railfast7_attach;
 		additional_text: string(info_rail_fast_7);
 		speed: 								207; //maybe for wagons later, not now
 		power: 								7000; //engine only
@@ -48123,6 +48944,26 @@ railfast8_endswitch;
 }
 */
 
+switch (FEAT_TRAINS, SELF, switch_railfast8_attach, vehicle_type_id){
+	item_railfast8: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railfast8, 65) { //ID65
 	property {
 		name:                         string(STR_NAME_RF8);
@@ -48162,7 +49003,7 @@ item(FEAT_TRAINS, item_railfast8, 65) { //ID65
 	graphics {
 		default: spriteset_train_railfast8;
 		purchase: spriteset_purchaseMenu_railfast8;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railfast8_attach;
 		additional_text: string(info_rail_fast_8);
 		speed: 								228; //maybe for wagons later, not now
 		power: 								8000; //engine only
@@ -48182,6 +49023,26 @@ switch(FEAT_TRAINS, SELF, railfast9_visualswitch, position_in_consist){
 railfast9_endswitch;
 }
 */
+switch (FEAT_TRAINS, SELF, switch_railfast9_attach, vehicle_type_id){
+	item_railfast9: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
 item(FEAT_TRAINS, item_railfast9, 67) { //ID67
 	property {
 		name:                         string(STR_NAME_RF9);
@@ -48221,7 +49082,7 @@ item(FEAT_TRAINS, item_railfast9, 67) { //ID67
 	graphics {
 		default: spriteset_train_railfast9;
 		purchase: spriteset_purchaseMenu_railfast9;
-		can_attach_wagon: switch_railcargo_attach;
+		can_attach_wagon: switch_railfast9_attach;
 		additional_text: string(info_rail_fast_9);
 		speed: 								255; //maybe for wagons later, not now
 		power: 								10000; //engine only
@@ -48236,55 +49097,7 @@ item(FEAT_TRAINS, item_railfast9, 67) { //ID67
 
 
 //MONORAIL CARGO ENGINES
-//ATTACH
-switch (FEAT_TRAINS, SELF, switch_monomedium_cargo_attach, vehicle_type_id){
-item_monomedium1: CB_RESULT_ATTACH_ALLOW;
-item_monomedium2: CB_RESULT_ATTACH_ALLOW;
-item_monomedium3: CB_RESULT_ATTACH_ALLOW;
-item_monomedium4: CB_RESULT_ATTACH_ALLOW;
 
-item_monotanker: CB_RESULT_ATTACH_ALLOW;
-item_monoflatbed: CB_RESULT_ATTACH_ALLOW;
-item_monohopper: CB_RESULT_ATTACH_ALLOW;
-item_monopax: CB_RESULT_ATTACH_ALLOW;
-item_monouniversal: CB_RESULT_ATTACH_ALLOW;
-
-return string(STR_NAME_ATTACH_CARGO);
-}
-switch (FEAT_TRAINS, SELF, switch_monofast_cargo_attach, vehicle_type_id){
-item_monofast1: CB_RESULT_ATTACH_ALLOW;
-item_monofast2: CB_RESULT_ATTACH_ALLOW;
-item_monofast3: CB_RESULT_ATTACH_ALLOW;
-item_monofast4: CB_RESULT_ATTACH_ALLOW;
-
-item_monotanker: CB_RESULT_ATTACH_ALLOW;
-item_monoflatbed: CB_RESULT_ATTACH_ALLOW;
-item_monohopper: CB_RESULT_ATTACH_ALLOW;
-item_monopax: CB_RESULT_ATTACH_ALLOW;
-item_monouniversal: CB_RESULT_ATTACH_ALLOW;
-
-return string(STR_NAME_ATTACH_CARGO);
-}
-
-
-//ATTACH
-switch (FEAT_TRAINS, SELF, switch_CHAMELEON_attach, vehicle_type_id){
-item_CHAMELEONtanker: CB_RESULT_ATTACH_ALLOW;
-item_CHAMELEONflatbed: CB_RESULT_ATTACH_ALLOW;
-item_CHAMELEONhopper: CB_RESULT_ATTACH_ALLOW;
-item_CHAMELEONuniversal: CB_RESULT_ATTACH_ALLOW;
-item_CHAMELEONpax: CB_RESULT_ATTACH_ALLOW;
-
-item_CHAMELEON1: CB_RESULT_ATTACH_ALLOW;
-item_CHAMELEON2: CB_RESULT_ATTACH_ALLOW;
-item_CHAMELEON3: CB_RESULT_ATTACH_ALLOW;
-item_CHAMELEON4: CB_RESULT_ATTACH_ALLOW;
-item_CHAMELEON5: CB_RESULT_ATTACH_ALLOW;
-
-item_MEOWCHAMI_1: CB_RESULT_ATTACH_ALLOW;
-
-return string(STR_NAME_ATTACH_CHAMELEON);
-}
 
 spriteset(spriteset_purchaseMenu_CHAMELEON1, "gfx/PurchaseMenu.png"){template_purchaseMenu(5,10)}
 
@@ -48633,6 +49446,20 @@ switch(FEAT_TRAINS, SELF, switch_CHAMELEON1_wetrail_te_switch, current_railtype)
 WETR: 175/7*10;
 175;
 }
+
+switch (FEAT_TRAINS, SELF, switch_CHAMELEON1_attach, vehicle_type_id){
+item_CHAMELEONtanker: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONflatbed: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONhopper: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONuniversal: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONpax: CB_RESULT_ATTACH_ALLOW;
+
+item_CHAMELEON1: CB_RESULT_ATTACH_ALLOW;
+
+item_MEOWCHAMI_1: CB_RESULT_ATTACH_ALLOW;
+
+return string(error_attach_mono_chameleon);
+}
 //CHAMELEON
 item(FEAT_TRAINS, item_CHAMELEON1, 121) { //ID121
 	property {
@@ -48671,7 +49498,7 @@ item(FEAT_TRAINS, item_CHAMELEON1, 121) { //ID121
 	graphics {
 		default: switch_CHAMELEON1_consist_1;
 		purchase: spriteset_purchaseMenu_CHAMELEON1;
-		can_attach_wagon: switch_CHAMELEON_attach;
+		can_attach_wagon: switch_CHAMELEON1_attach;
 		additional_text: string(info_mono_chameleon_1);
 		articulated_part: switch_CHAMELEON1_articulated;
 		speed: 							switch_CHAMELEON1_speed;
@@ -49045,6 +49872,19 @@ WETR: 183/7*10;
 }
 
 //CHAMELEON
+switch (FEAT_TRAINS, SELF, switch_CHAMELEON2_attach, vehicle_type_id){
+item_CHAMELEONtanker: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONflatbed: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONhopper: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONuniversal: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONpax: CB_RESULT_ATTACH_ALLOW;
+
+item_CHAMELEON2: CB_RESULT_ATTACH_ALLOW;
+
+item_MEOWCHAMI_1: CB_RESULT_ATTACH_ALLOW;
+
+return string(error_attach_mono_chameleon);
+}
 item(FEAT_TRAINS, item_CHAMELEON2, 123) { //ID123
 	property {
 		name:                         string(STR_NAME_CHAMELEON2);
@@ -49082,7 +49922,7 @@ item(FEAT_TRAINS, item_CHAMELEON2, 123) { //ID123
 	graphics {
 		default: switch_CHAMELEON2_consist_1;
 		purchase: spriteset_purchaseMenu_CHAMELEON2;
-		can_attach_wagon: switch_CHAMELEON_attach;
+		can_attach_wagon: switch_CHAMELEON2_attach;
 		additional_text: string(info_mono_chameleon_2);
 		articulated_part: switch_CHAMELEON2_articulated;
 		speed: 							switch_CHAMELEON2_speed;
@@ -49443,6 +50283,19 @@ WETR: 190/7*10;
 }
 
 //CHAMELEON
+switch (FEAT_TRAINS, SELF, switch_CHAMELEON3_attach, vehicle_type_id){
+item_CHAMELEONtanker: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONflatbed: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONhopper: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONuniversal: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONpax: CB_RESULT_ATTACH_ALLOW;
+
+item_CHAMELEON3: CB_RESULT_ATTACH_ALLOW;
+
+item_MEOWCHAMI_1: CB_RESULT_ATTACH_ALLOW;
+
+return string(error_attach_mono_chameleon);
+}
 item(FEAT_TRAINS, item_CHAMELEON3, 125) { //ID125
 	property {
 		name:                         string(STR_NAME_CHAMELEON3);
@@ -49480,7 +50333,7 @@ item(FEAT_TRAINS, item_CHAMELEON3, 125) { //ID125
 	graphics {
 		default: switch_CHAMELEON3_consist_1;
 		purchase: spriteset_purchaseMenu_CHAMELEON3;
-		can_attach_wagon: switch_CHAMELEON_attach;
+		can_attach_wagon: switch_CHAMELEON3_attach;
 		additional_text: string(info_mono_chameleon_3);
 		articulated_part: switch_CHAMELEON3_articulated;
 		speed: 							switch_CHAMELEON3_speed;
@@ -49848,6 +50701,19 @@ WETR: 197/7*10;
 }
 
 //CHAMELEON
+switch (FEAT_TRAINS, SELF, switch_CHAMELEON4_attach, vehicle_type_id){
+item_CHAMELEONtanker: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONflatbed: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONhopper: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONuniversal: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONpax: CB_RESULT_ATTACH_ALLOW;
+
+item_CHAMELEON4: CB_RESULT_ATTACH_ALLOW;
+
+item_MEOWCHAMI_1: CB_RESULT_ATTACH_ALLOW;
+
+return string(error_attach_mono_chameleon);
+}
 item(FEAT_TRAINS, item_CHAMELEON4, 127) { //ID127
 	property {
 		name:                         string(STR_NAME_CHAMELEON4);
@@ -49885,7 +50751,7 @@ item(FEAT_TRAINS, item_CHAMELEON4, 127) { //ID127
 	graphics {
 		default: switch_CHAMELEON4_consist_1;
 		purchase: spriteset_purchaseMenu_CHAMELEON4;
-		can_attach_wagon: switch_CHAMELEON_attach;
+		can_attach_wagon: switch_CHAMELEON4_attach;
 		additional_text: string(info_mono_chameleon_4);
 		articulated_part: switch_CHAMELEON4_articulated;
 		speed: 							switch_CHAMELEON4_speed;
@@ -50241,6 +51107,19 @@ WETR: 205/7*10;
 }
 
 //CHAMELEON
+switch (FEAT_TRAINS, SELF, switch_CHAMELEON5_attach, vehicle_type_id){
+item_CHAMELEONtanker: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONflatbed: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONhopper: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONuniversal: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONpax: CB_RESULT_ATTACH_ALLOW;
+
+item_CHAMELEON5: CB_RESULT_ATTACH_ALLOW;
+
+item_MEOWCHAMI_1: CB_RESULT_ATTACH_ALLOW;
+
+return string(error_attach_mono_chameleon);
+}
 item(FEAT_TRAINS, item_CHAMELEON5, 129) { //ID129
 	property {
 		name:                         string(STR_NAME_CHAMELEON5);
@@ -50278,7 +51157,7 @@ item(FEAT_TRAINS, item_CHAMELEON5, 129) { //ID129
 	graphics {
 		default: switch_CHAMELEON5_consist_1;
 		purchase: spriteset_purchaseMenu_CHAMELEON5;
-		can_attach_wagon: switch_CHAMELEON_attach;
+		can_attach_wagon: switch_CHAMELEON5_attach;
 		additional_text: string(info_mono_chameleon_5);
 		articulated_part: switch_CHAMELEON5_articulated;
 		speed: 							switch_CHAMELEON5_speed;
@@ -50433,6 +51312,23 @@ switch (FEAT_TRAINS, SELF, switch_MEOWCHAMI_1_articulated, extra_callback_info1)
 CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
+switch (FEAT_TRAINS, SELF, switch_MEOWCHAMI_attach, vehicle_type_id){
+item_CHAMELEONtanker: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONflatbed: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONhopper: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONuniversal: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEONpax: CB_RESULT_ATTACH_ALLOW;
+
+item_CHAMELEON1: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEON2: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEON3: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEON4: CB_RESULT_ATTACH_ALLOW;
+item_CHAMELEON5: CB_RESULT_ATTACH_ALLOW;
+
+item_MEOWCHAMI_1: CB_RESULT_ATTACH_ALLOW;
+
+return string(error_attach_mono_chameleon);
+}
 //CHAMELEON
 item(FEAT_TRAINS, item_MEOWCHAMI_1, 130) { //ID130
 	property {
@@ -50471,7 +51367,7 @@ item(FEAT_TRAINS, item_MEOWCHAMI_1, 130) { //ID130
 	graphics {
 		default: CHAMELEONuniversal_wagon_switch;
 		purchase: spriteset_purchaseMenu_MEOWCHAMI_1;
-		can_attach_wagon: switch_CHAMELEON_attach;
+		can_attach_wagon: switch_MEOWCHAMI_attach;
 		additional_text: string(info_mono_MEOWCHAMI_1);
 		articulated_part: switch_MEOWCHAMI_1_articulated;
 		speed: 							MEOWCHAMI_speed_switch;
@@ -50508,19 +51404,6 @@ item(FEAT_TRAINS, item_MEOWCHAMI_1, 130) { //ID130
 
 //WTF CLASS
 
-//ATTACH
-switch (FEAT_TRAINS, SELF, switch_monoWTF_attach, vehicle_type_id){
-item_monoWTF1: CB_RESULT_ATTACH_ALLOW;
-item_monoWTF2: CB_RESULT_ATTACH_ALLOW;
-item_monoWTF3: CB_RESULT_ATTACH_ALLOW;
-item_monoWTF4: CB_RESULT_ATTACH_ALLOW;
-item_monotanker: CB_RESULT_ATTACH_ALLOW;
-item_monoflatbed: CB_RESULT_ATTACH_ALLOW;
-item_monohopper: CB_RESULT_ATTACH_ALLOW;
-item_monopax: CB_RESULT_ATTACH_ALLOW;
-item_monouniversal: CB_RESULT_ATTACH_ALLOW;
-return string(STR_NAME_ATTACH_MONOWTF);
-}
 //PURCHASE MENU
 spriteset(spriteset_purchaseMenu_monoWTF1, 			"gfx/PurchaseMenu.png"){template_purchaseMenu2(4,21)}
 spriteset(spriteset_purchaseMenu_monoWTF2, 			"gfx/PurchaseMenu.png"){template_purchaseMenu2(4,22)}
@@ -50608,6 +51491,16 @@ dependent: monowtf1_power;
 */
 
 //ITEMS
+switch (FEAT_TRAINS, SELF, switch_monoWTF1_attach, vehicle_type_id){
+	item_monoWTF1: CB_RESULT_ATTACH_ALLOW;
+	
+	item_monopax:       CB_RESULT_ATTACH_ALLOW;
+	item_monoflatbed:   CB_RESULT_ATTACH_ALLOW;
+	item_monohopper:    CB_RESULT_ATTACH_ALLOW;
+	item_monotanker:    CB_RESULT_ATTACH_ALLOW;
+	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_freight);
+}
 item(FEAT_TRAINS, item_monoWTF1, 111) { //ID111
 	property {
 		name:                         string(STR_NAME_MONOWTF1);
@@ -50648,7 +51541,7 @@ item(FEAT_TRAINS, item_monoWTF1, 111) { //ID111
 		random_trigger: monowtf1_power;
 		default: monowtf1_sprite;
 		purchase: spriteset_purchaseMenu_monoWTF1;
-		can_attach_wagon: switch_monoWTF_attach;
+		can_attach_wagon: switch_monoWTF1_attach;
 		additional_text: string(info_mono_wtf_1);
 		speed: 							199; //maybe for wagons later, not now
 		power: 							monowtf1_power;
@@ -50685,6 +51578,16 @@ switch(FEAT_TRAINS, SELF, monoWTF2_visualswitch, position_in_consist){
 monoWTF2_endswitch;
 }
 */
+switch (FEAT_TRAINS, SELF, switch_monoWTF2_attach, vehicle_type_id){
+	item_monoWTF2: CB_RESULT_ATTACH_ALLOW;
+	
+	item_monopax:       CB_RESULT_ATTACH_ALLOW;
+	item_monoflatbed:   CB_RESULT_ATTACH_ALLOW;
+	item_monohopper:    CB_RESULT_ATTACH_ALLOW;
+	item_monotanker:    CB_RESULT_ATTACH_ALLOW;
+	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_freight);
+}
 item(FEAT_TRAINS, item_monoWTF2, 113) { //ID113
 	property {
 		name:                         string(STR_NAME_MONOWTF2);
@@ -50723,7 +51626,7 @@ item(FEAT_TRAINS, item_monoWTF2, 113) { //ID113
 	}
 	graphics {
 		default: monowtf2_sprite;
-		can_attach_wagon: switch_monoWTF_attach;
+		can_attach_wagon: switch_monoWTF2_attach;
 		purchase: spriteset_purchaseMenu_monoWTF2;
 		additional_text: string(info_mono_wtf_2);
 		speed: 							211; //maybe for wagons later, not now
@@ -50761,6 +51664,17 @@ switch(FEAT_TRAINS, SELF, monoWTF3_visualswitch, position_in_consist){
 monoWTF3_endswitch;
 }
 */
+
+switch (FEAT_TRAINS, SELF, switch_monoWTF3_attach, vehicle_type_id){
+	item_monoWTF3: CB_RESULT_ATTACH_ALLOW;
+	
+	item_monopax:       CB_RESULT_ATTACH_ALLOW;
+	item_monoflatbed:   CB_RESULT_ATTACH_ALLOW;
+	item_monohopper:    CB_RESULT_ATTACH_ALLOW;
+	item_monotanker:    CB_RESULT_ATTACH_ALLOW;
+	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_freight);
+}
 item(FEAT_TRAINS, item_monoWTF3, 115) { //ID115
 	property {
 		name:                         string(STR_NAME_MONOWTF3);
@@ -50799,7 +51713,7 @@ item(FEAT_TRAINS, item_monoWTF3, 115) { //ID115
 	}
 	graphics {
 		default: monowtf3_sprite;
-		can_attach_wagon: switch_monoWTF_attach;
+		can_attach_wagon: switch_monoWTF3_attach;
 		purchase: spriteset_purchaseMenu_monoWTF3;
 		additional_text: string(info_mono_wtf_3);
 		speed: 							222; //maybe for wagons later, not now
@@ -50843,6 +51757,16 @@ monoWTF4_endswitch;
 }
 */
 
+switch (FEAT_TRAINS, SELF, switch_monoWTF4_attach, vehicle_type_id){
+	item_monoWTF4: CB_RESULT_ATTACH_ALLOW;
+	
+	item_monopax:       CB_RESULT_ATTACH_ALLOW;
+	item_monoflatbed:   CB_RESULT_ATTACH_ALLOW;
+	item_monohopper:    CB_RESULT_ATTACH_ALLOW;
+	item_monotanker:    CB_RESULT_ATTACH_ALLOW;
+	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_freight);
+}
 item(FEAT_TRAINS, item_monoWTF4, 117) { //ID117
 	property {
 		name:                         string(STR_NAME_MONOWTF4);
@@ -50884,7 +51808,7 @@ item(FEAT_TRAINS, item_monoWTF4, 117) { //ID117
 		random_trigger: monowtf4_power;
 				
 		default: monowtf4_sprite;
-		can_attach_wagon: switch_monoWTF_attach;
+		can_attach_wagon: switch_monoWTF4_attach;
 		purchase: spriteset_purchaseMenu_monoWTF4;
 		additional_text: string(info_mono_wtf_4);
 		speed: 							236;
@@ -50995,6 +51919,16 @@ monomedium1_endswitch;
 
 */
 //ITEMS
+switch (FEAT_TRAINS, SELF, switch_monomedium1_attach, vehicle_type_id){
+	item_monomedium1:   CB_RESULT_ATTACH_ALLOW;
+
+	item_monotanker:    CB_RESULT_ATTACH_ALLOW;
+	item_monoflatbed:   CB_RESULT_ATTACH_ALLOW;
+	item_monohopper:	  CB_RESULT_ATTACH_ALLOW;
+	item_monopax:			  CB_RESULT_ATTACH_ALLOW;
+	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_freight);
+}
 item(FEAT_TRAINS, item_monomedium1, 131) { //ID131
 	property {
 		name:                         string(STR_NAME_MONOM1);
@@ -51033,7 +51967,7 @@ item(FEAT_TRAINS, item_monomedium1, 131) { //ID131
 	}
 	graphics {
 		default: spriteset_train_monomedium1;
-		can_attach_wagon: switch_monomedium_cargo_attach;
+		can_attach_wagon: switch_monomedium1_attach;
 		purchase: spriteset_purchaseMenu_monomedium1;
 		additional_text: string(info_mono_medium_1);
 		speed: 							228; //maybe for wagons later, not now
@@ -51057,7 +51991,16 @@ switch(FEAT_TRAINS, SELF, monomedium2_visualswitch, position_in_consist){
 monomedium2_endswitch;
 }
 */
+switch (FEAT_TRAINS, SELF, switch_monomedium2_attach, vehicle_type_id){
+	item_monomedium2:   CB_RESULT_ATTACH_ALLOW;
 
+	item_monotanker:    CB_RESULT_ATTACH_ALLOW;
+	item_monoflatbed:   CB_RESULT_ATTACH_ALLOW;
+	item_monohopper:	  CB_RESULT_ATTACH_ALLOW;
+	item_monopax:			  CB_RESULT_ATTACH_ALLOW;
+	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_freight);
+}
 item(FEAT_TRAINS, item_monomedium2, 133) { //ID133
 	property {
 		name:                         string(STR_NAME_MONOM2);
@@ -51096,7 +52039,7 @@ item(FEAT_TRAINS, item_monomedium2, 133) { //ID133
 	}
 	graphics {
 		default: spriteset_train_monomedium2;
-		can_attach_wagon: switch_monomedium_cargo_attach;
+		can_attach_wagon: switch_monomedium2_attach;
 		purchase: spriteset_purchaseMenu_monomedium2;
 		additional_text: string(info_mono_medium_2);
 		speed: 							255; //maybe for wagons later, not now
@@ -51119,7 +52062,16 @@ switch(FEAT_TRAINS, SELF, monomedium3_visualswitch, position_in_consist){
 monomedium3_endswitch;
 }
 */
+switch (FEAT_TRAINS, SELF, switch_monomedium3_attach, vehicle_type_id){
+	item_monomedium3:   CB_RESULT_ATTACH_ALLOW;
 
+	item_monotanker:    CB_RESULT_ATTACH_ALLOW;
+	item_monoflatbed:   CB_RESULT_ATTACH_ALLOW;
+	item_monohopper:	  CB_RESULT_ATTACH_ALLOW;
+	item_monopax:			  CB_RESULT_ATTACH_ALLOW;
+	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_freight);
+}
 item(FEAT_TRAINS, item_monomedium3, 135) { //ID135
 	property {
 		name:                         string(STR_NAME_MONOM3);
@@ -51158,7 +52110,7 @@ item(FEAT_TRAINS, item_monomedium3, 135) { //ID135
 	}
 	graphics {
 		default: spriteset_train_monomedium3;
-		can_attach_wagon: switch_monomedium_cargo_attach;
+		can_attach_wagon: switch_monomedium3_attach;
 		purchase: spriteset_purchaseMenu_monomedium3;
 		additional_text: string(info_mono_medium_3);
 		speed: 							280; //maybe for wagons later, not now
@@ -51188,7 +52140,16 @@ random_switch(FEAT_TRAINS, SELF, monomedium4_random){
 1: spriteset_train_monomedium4;
 1: spriteset_train_monomedium4_2;
 }
+switch (FEAT_TRAINS, SELF, switch_monomedium4_attach, vehicle_type_id){
+	item_monomedium4:   CB_RESULT_ATTACH_ALLOW;
 
+	item_monotanker:    CB_RESULT_ATTACH_ALLOW;
+	item_monoflatbed:   CB_RESULT_ATTACH_ALLOW;
+	item_monohopper:	  CB_RESULT_ATTACH_ALLOW;
+	item_monopax:			  CB_RESULT_ATTACH_ALLOW;
+	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_freight);
+}
 item(FEAT_TRAINS, item_monomedium4, 137) { //ID137
 	property {
 		name:                         string(STR_NAME_MONOM4);
@@ -51227,7 +52188,7 @@ item(FEAT_TRAINS, item_monomedium4, 137) { //ID137
 	}
 	graphics {
 		default: monomedium4_random;
-		can_attach_wagon: switch_monomedium_cargo_attach;
+		can_attach_wagon: switch_monomedium4_attach;
 		purchase: spriteset_purchaseMenu_monomedium4;
 		additional_text: string(info_mono_medium_4);
 		speed: 							301; //maybe for wagons later, not now
@@ -51430,6 +52391,16 @@ monofast1_endswitch;
 }
 */
 //ITEMS
+switch (FEAT_TRAINS, SELF, switch_monofast1_attach, vehicle_type_id){
+	item_monofast1:   CB_RESULT_ATTACH_ALLOW;
+
+	item_monotanker:    CB_RESULT_ATTACH_ALLOW;
+	item_monoflatbed:   CB_RESULT_ATTACH_ALLOW;
+	item_monohopper:	  CB_RESULT_ATTACH_ALLOW;
+	item_monopax:			  CB_RESULT_ATTACH_ALLOW;
+	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_freight);
+}
 item(FEAT_TRAINS, item_monofast1, 151) { //ID151
 	property {
 		name:                         string(STR_NAME_MONOF1);
@@ -51468,7 +52439,7 @@ item(FEAT_TRAINS, item_monofast1, 151) { //ID151
 	}
 	graphics {
 		default: spriteset_train_monofast1;
-		can_attach_wagon: switch_monofast_cargo_attach;
+		can_attach_wagon: switch_monofast1_attach;
 		purchase: spriteset_purchaseMenu_monofast1;
 		additional_text: string(info_mono_fast_1);
 		speed: 							280;
@@ -51492,6 +52463,16 @@ switch(FEAT_TRAINS, SELF, monofast2_visualswitch, position_in_consist){
 monofast2_endswitch;
 }
 */
+switch (FEAT_TRAINS, SELF, switch_monofast2_attach, vehicle_type_id){
+	item_monofast2:   CB_RESULT_ATTACH_ALLOW;
+
+	item_monotanker:    CB_RESULT_ATTACH_ALLOW;
+	item_monoflatbed:   CB_RESULT_ATTACH_ALLOW;
+	item_monohopper:	  CB_RESULT_ATTACH_ALLOW;
+	item_monopax:			  CB_RESULT_ATTACH_ALLOW;
+	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_freight);
+}
 item(FEAT_TRAINS, item_monofast2, 153) { //ID153
 	property {
 		name:                         string(STR_NAME_MONOF2);
@@ -51530,7 +52511,7 @@ item(FEAT_TRAINS, item_monofast2, 153) { //ID153
 	}
 	graphics {
 		default: spriteset_train_monofast2;
-		can_attach_wagon: switch_monofast_cargo_attach;
+		can_attach_wagon: switch_monofast2_attach;
 		purchase: spriteset_purchaseMenu_monofast2;
 		additional_text: string(info_mono_fast_2);
 		speed: 							301;
@@ -51554,6 +52535,16 @@ switch(FEAT_TRAINS, SELF, monofast3_visualswitch, position_in_consist){
 monofast3_endswitch;
 }
 */
+switch (FEAT_TRAINS, SELF, switch_monofast3_attach, vehicle_type_id){
+	item_monofast3:   CB_RESULT_ATTACH_ALLOW;
+
+	item_monotanker:    CB_RESULT_ATTACH_ALLOW;
+	item_monoflatbed:   CB_RESULT_ATTACH_ALLOW;
+	item_monohopper:	  CB_RESULT_ATTACH_ALLOW;
+	item_monopax:			  CB_RESULT_ATTACH_ALLOW;
+	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_freight);
+}
 item(FEAT_TRAINS, item_monofast3, 155) { //ID155
 	property {
 		name:                         string(STR_NAME_MONOF3);
@@ -51592,7 +52583,7 @@ item(FEAT_TRAINS, item_monofast3, 155) { //ID155
 	}
 	graphics {
 		default: spriteset_train_monofast3;
-		can_attach_wagon: switch_monofast_cargo_attach;
+		can_attach_wagon: switch_monofast3_attach;
 		purchase: spriteset_purchaseMenu_monofast3;
 		additional_text: string(info_mono_fast_3);
 		speed: 							340;
@@ -51616,6 +52607,16 @@ switch(FEAT_TRAINS, SELF, monofast4_visualswitch, position_in_consist){
 monofast4_endswitch;
 }
 */
+switch (FEAT_TRAINS, SELF, switch_monofast4_attach, vehicle_type_id){
+	item_monofast4:   CB_RESULT_ATTACH_ALLOW;
+
+	item_monotanker:    CB_RESULT_ATTACH_ALLOW;
+	item_monoflatbed:   CB_RESULT_ATTACH_ALLOW;
+	item_monohopper:	  CB_RESULT_ATTACH_ALLOW;
+	item_monopax:			  CB_RESULT_ATTACH_ALLOW;
+	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_freight);
+}
 item(FEAT_TRAINS, item_monofast4, 157) { //ID157
 	property {
 		name:                         string(STR_NAME_MONOF4);
@@ -51654,7 +52655,7 @@ item(FEAT_TRAINS, item_monofast4, 157) { //ID157
 	}
 	graphics {
 		default: spriteset_train_monofast4;
-		can_attach_wagon: switch_monofast_cargo_attach;
+		can_attach_wagon: switch_monofast4_attach;
 		purchase: spriteset_purchaseMenu_monofast4;
 		additional_text: string(info_mono_fast_4);
 		speed: 							415; //maybe for wagons later, not now
@@ -51686,50 +52687,8 @@ item(FEAT_TRAINS, item_monofast4, 157) { //ID157
 
 
 
-switch (FEAT_TRAINS, SELF, switch_MEOWrail_attach, vehicle_type_id){
-item_MEOW_rail_01: CB_RESULT_ATTACH_ALLOW;
-item_MEOW_rail_02: CB_RESULT_ATTACH_ALLOW;
-item_MEOW_rail_03: CB_RESULT_ATTACH_ALLOW;
-item_MEOW_rail_04: CB_RESULT_ATTACH_ALLOW;
-item_MEOW_rail_05: CB_RESULT_ATTACH_ALLOW;
-item_MEOW_rail_06: CB_RESULT_ATTACH_ALLOW;
-item_MEOW_rail_07: CB_RESULT_ATTACH_ALLOW;
-item_MEOW_rail_08: CB_RESULT_ATTACH_ALLOW;
-item_MEOW_rail_09: CB_RESULT_ATTACH_ALLOW;
 
-item_MEOW_rail_b1: CB_RESULT_ATTACH_ALLOW;
 
-item_railflatbed1: CB_RESULT_ATTACH_ALLOW;
-item_railflatbed2: CB_RESULT_ATTACH_ALLOW;
-item_railflatbed3: CB_RESULT_ATTACH_ALLOW;
-item_railhopper1: CB_RESULT_ATTACH_ALLOW;
-item_railhopper2: CB_RESULT_ATTACH_ALLOW;
-item_railhopper3: CB_RESULT_ATTACH_ALLOW;
-item_railtanker1: CB_RESULT_ATTACH_ALLOW;
-item_railtanker2: CB_RESULT_ATTACH_ALLOW;
-item_railtanker3: CB_RESULT_ATTACH_ALLOW;
-item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
-item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
-item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
-item_railpax: CB_RESULT_ATTACH_ALLOW;
-return string(STR_NAME_ATTACH_MEOWrail);
-}
-switch (FEAT_TRAINS, SELF, switch_MEOWmono_attach, vehicle_type_id){
-item_MEOW_mono_01: CB_RESULT_ATTACH_ALLOW;
-item_MEOW_mono_02: CB_RESULT_ATTACH_ALLOW;
-item_MEOW_mono_03: CB_RESULT_ATTACH_ALLOW;
-item_MEOW_mono_04: CB_RESULT_ATTACH_ALLOW;
-item_MEOW_mono_05: CB_RESULT_ATTACH_ALLOW;
-item_MEOW_mono_06: CB_RESULT_ATTACH_ALLOW;
-item_MEOW_mono_b1: CB_RESULT_ATTACH_ALLOW;
-
-item_monoflatbed: CB_RESULT_ATTACH_ALLOW;
-item_monohopper: CB_RESULT_ATTACH_ALLOW;
-item_monotanker: CB_RESULT_ATTACH_ALLOW;
-item_monouniversal: CB_RESULT_ATTACH_ALLOW;
-item_monopax: CB_RESULT_ATTACH_ALLOW;
-return string(STR_NAME_ATTACH_MEOWmono);
-}
 
 
 spriteset(spriteset_purchaseMenu_MEOW_rail_01, 		"gfx/PurchaseMenu.png"){template_purchaseMenu(6,0)}
@@ -54003,6 +54962,26 @@ item(FEAT_TRAINS, item_MEOW_rail_b1_tender, 790) { //ID291
 
 
 
+switch (FEAT_TRAINS, SELF, switch_MEOW_rail_01_attach, vehicle_type_id){
+	item_MEOW_rail_01: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
+	string(STR_NAME_ATTACH_MEOWrail);
+}
 item(FEAT_TRAINS, item_MEOW_rail_01, 801) {
 	property {
 		name:                         string(STR_NAME_MEOW_rail_01);
@@ -54041,7 +55020,7 @@ item(FEAT_TRAINS, item_MEOW_rail_01, 801) {
 	}
 	graphics {
 		default: MEOW_rail_01_PURR_visual_switch;
-		can_attach_wagon: switch_MEOWrail_attach;
+		can_attach_wagon: switch_MEOW_rail_01_attach;
 		purchase: spriteset_purchaseMenu_MEOW_rail_01;
 		additional_text: string(info_rail_MEOW_1);
 		weight: 							80;
@@ -54056,6 +55035,26 @@ item(FEAT_TRAINS, item_MEOW_rail_01, 801) {
 		}
 }
 
+switch (FEAT_TRAINS, SELF, switch_MEOW_rail_02_attach, vehicle_type_id){
+	item_MEOW_rail_02: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
+	string(STR_NAME_ATTACH_MEOWrail);
+}
 item(FEAT_TRAINS, item_MEOW_rail_02, 802) {
 	property {
 		name:                         string(STR_NAME_MEOW_rail_02);
@@ -54094,7 +55093,7 @@ item(FEAT_TRAINS, item_MEOW_rail_02, 802) {
 	}
 	graphics {
 		default: MEOW_rail_02_PURR_visual_switch;
-		can_attach_wagon: switch_MEOWrail_attach;
+		can_attach_wagon: switch_MEOW_rail_02_attach;
 		purchase: spriteset_purchaseMenu_MEOW_rail_02;
 		additional_text: string(info_rail_MEOW_2);
 		weight: 							80;
@@ -54109,6 +55108,26 @@ item(FEAT_TRAINS, item_MEOW_rail_02, 802) {
 		}
 }
 
+switch (FEAT_TRAINS, SELF, switch_MEOW_rail_03_attach, vehicle_type_id){
+	item_MEOW_rail_03: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
+	string(STR_NAME_ATTACH_MEOWrail);
+}
 item(FEAT_TRAINS, item_MEOW_rail_03, 803) {
 	property {
 		name:                         string(STR_NAME_MEOW_rail_03);
@@ -54147,7 +55166,7 @@ item(FEAT_TRAINS, item_MEOW_rail_03, 803) {
 	}
 	graphics {
 		default: MEOW_rail_03_PURR_visual_switch;
-		can_attach_wagon: switch_MEOWrail_attach;
+		can_attach_wagon: switch_MEOW_rail_03_attach;
 		purchase: spriteset_purchaseMenu_MEOW_rail_03;
 		additional_text: string(info_rail_MEOW_3);
 		weight: 							80;
@@ -54162,6 +55181,26 @@ item(FEAT_TRAINS, item_MEOW_rail_03, 803) {
 		}
 }
 
+switch (FEAT_TRAINS, SELF, switch_MEOW_rail_04_attach, vehicle_type_id){
+	item_MEOW_rail_04: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
+	string(STR_NAME_ATTACH_MEOWrail);
+}
 item(FEAT_TRAINS, item_MEOW_rail_04, 804) {
 	property {
 		name:                         string(STR_NAME_MEOW_rail_04);
@@ -54200,7 +55239,7 @@ item(FEAT_TRAINS, item_MEOW_rail_04, 804) {
 	}
 	graphics {
 		default: MEOW_rail_04_PURR_visual_switch;
-		can_attach_wagon: switch_MEOWrail_attach;
+		can_attach_wagon: switch_MEOW_rail_04_attach;
 		purchase: spriteset_purchaseMenu_MEOW_rail_04;
 		additional_text: string(info_rail_MEOW_4);
 		weight: 							80;
@@ -54215,6 +55254,26 @@ item(FEAT_TRAINS, item_MEOW_rail_04, 804) {
 		}
 }
 
+switch (FEAT_TRAINS, SELF, switch_MEOW_rail_05_attach, vehicle_type_id){
+	item_MEOW_rail_05: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
+	string(STR_NAME_ATTACH_MEOWrail);
+}
 item(FEAT_TRAINS, item_MEOW_rail_05, 805) {
 	property {
 		name:                         string(STR_NAME_MEOW_rail_05);
@@ -54253,7 +55312,7 @@ item(FEAT_TRAINS, item_MEOW_rail_05, 805) {
 	}
 	graphics {
 		default: MEOW_rail_05_PURR_visual_switch;
-		can_attach_wagon: switch_MEOWrail_attach;
+		can_attach_wagon: switch_MEOW_rail_05_attach;
 		purchase: spriteset_purchaseMenu_MEOW_rail_05;
 		additional_text: string(info_rail_MEOW_5);
 		weight: 							80;
@@ -54266,6 +55325,27 @@ item(FEAT_TRAINS, item_MEOW_rail_05, 805) {
 		power: 							MEOW_rail_05_PURR_power_switch;
 		tractive_effort_coefficient:			MEOW_rail_05_PURR_te_switch;
 		}
+}
+
+switch (FEAT_TRAINS, SELF, switch_MEOW_rail_06_attach, vehicle_type_id){
+	item_MEOW_rail_06: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
+	string(STR_NAME_ATTACH_MEOWrail);
 }
 item(FEAT_TRAINS, item_MEOW_rail_06, 806) {
 	property {
@@ -54305,7 +55385,7 @@ item(FEAT_TRAINS, item_MEOW_rail_06, 806) {
 	}
 	graphics {
 		default: MEOW_rail_06_PURR_visual_switch;
-		can_attach_wagon: switch_MEOWrail_attach;
+		can_attach_wagon: switch_MEOW_rail_06_attach;
 		purchase: spriteset_purchaseMenu_MEOW_rail_06;
 		additional_text: string(info_rail_MEOW_6);
 		weight: 							80;
@@ -54318,6 +55398,26 @@ item(FEAT_TRAINS, item_MEOW_rail_06, 806) {
 		power: 							MEOW_rail_06_PURR_power_switch;
 		tractive_effort_coefficient:			MEOW_rail_06_PURR_te_switch;
 		}
+}
+switch (FEAT_TRAINS, SELF, switch_MEOW_rail_07_attach, vehicle_type_id){
+	item_MEOW_rail_07: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
+	string(STR_NAME_ATTACH_MEOWrail);
 }
 item(FEAT_TRAINS, item_MEOW_rail_07, 807) {
 	property {
@@ -54357,7 +55457,7 @@ item(FEAT_TRAINS, item_MEOW_rail_07, 807) {
 	}
 	graphics {
 		default: MEOW_rail_07_PURR_visual_switch;
-		can_attach_wagon: switch_MEOWrail_attach;
+		can_attach_wagon: switch_MEOW_rail_07_attach;
 		purchase: spriteset_purchaseMenu_MEOW_rail_07;
 		additional_text: string(info_rail_MEOW_7);
 		weight: 							80;
@@ -54370,6 +55470,26 @@ item(FEAT_TRAINS, item_MEOW_rail_07, 807) {
 		power: 							MEOW_rail_07_PURR_power_switch;
 		tractive_effort_coefficient:			MEOW_rail_07_PURR_te_switch;
 		}
+}
+switch (FEAT_TRAINS, SELF, switch_MEOW_rail_08_attach, vehicle_type_id){
+	item_MEOW_rail_08: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
+	string(STR_NAME_ATTACH_MEOWrail);
 }
 item(FEAT_TRAINS, item_MEOW_rail_08, 808) {
 	property {
@@ -54409,7 +55529,7 @@ item(FEAT_TRAINS, item_MEOW_rail_08, 808) {
 	}
 	graphics {
 		default: MEOW_rail_08_PURR_visual_switch;
-		can_attach_wagon: switch_MEOWrail_attach;
+		can_attach_wagon: switch_MEOW_rail_08_attach;
 		purchase: spriteset_purchaseMenu_MEOW_rail_08;
 		additional_text: string(info_rail_MEOW_8);
 		weight: 							80;
@@ -54422,6 +55542,26 @@ item(FEAT_TRAINS, item_MEOW_rail_08, 808) {
 		power: 							MEOW_rail_08_PURR_power_switch;
 		tractive_effort_coefficient:			MEOW_rail_08_PURR_te_switch;
 		}
+}
+switch (FEAT_TRAINS, SELF, switch_MEOW_rail_09_attach, vehicle_type_id){
+	item_MEOW_rail_09: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
+	string(STR_NAME_ATTACH_MEOWrail);
 }
 item(FEAT_TRAINS, item_MEOW_rail_09, 809) {
 	property {
@@ -54461,7 +55601,7 @@ item(FEAT_TRAINS, item_MEOW_rail_09, 809) {
 	}
 	graphics {
 		default: MEOW_rail_09_PURR_visual_switch;
-		can_attach_wagon: switch_MEOWrail_attach;
+		can_attach_wagon: switch_MEOW_rail_09_attach;
 		purchase: spriteset_purchaseMenu_MEOW_rail_09;
 		additional_text: string(info_rail_MEOW_9);
 		weight: 							80;
@@ -54474,6 +55614,26 @@ item(FEAT_TRAINS, item_MEOW_rail_09, 809) {
 		power: 							MEOW_rail_09_PURR_power_switch;
 		tractive_effort_coefficient:			MEOW_rail_09_PURR_te_switch;
 		}
+}
+switch (FEAT_TRAINS, SELF, switch_MEOW_rail_b1_attach, vehicle_type_id){
+	item_MEOW_rail_b1: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2: CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2: CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2: CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
+	string(STR_NAME_ATTACH_MEOWrail);
 }
 item(FEAT_TRAINS, item_MEOW_rail_b1, 820) {
 	property {
@@ -54513,7 +55673,7 @@ item(FEAT_TRAINS, item_MEOW_rail_b1, 820) {
 	}
 	graphics {
 		default: MEOW_rail_b1_PURR_visual_switch;
-		can_attach_wagon: switch_MEOWrail_attach;
+		can_attach_wagon: switch_MEOW_rail_b1_attach;
 		purchase: spriteset_purchaseMenu_MEOW_rail_b1;
 		additional_text: string(info_rail_MEOW_1);
 		weight: 							80;
@@ -54528,6 +55688,16 @@ item(FEAT_TRAINS, item_MEOW_rail_b1, 820) {
 		}
 }
 
+switch (FEAT_TRAINS, SELF, switch_MEOW_mono_01_attach, vehicle_type_id){
+	item_MEOW_mono_01: CB_RESULT_ATTACH_ALLOW;
+
+	item_monoflatbed: CB_RESULT_ATTACH_ALLOW;
+	item_monohopper: CB_RESULT_ATTACH_ALLOW;
+	item_monotanker: CB_RESULT_ATTACH_ALLOW;
+	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
+	item_monopax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_freight);
+}
 item(FEAT_TRAINS, item_MEOW_mono_01, 831) {
 	property {
 		name:                         string(STR_NAME_MEOW_mono_01);
@@ -54566,7 +55736,7 @@ item(FEAT_TRAINS, item_MEOW_mono_01, 831) {
 	}
 	graphics {
 		default: MEOW_mono_01_PURR_visual_switch;
-		can_attach_wagon: switch_MEOWmono_attach;
+		can_attach_wagon: switch_MEOW_mono_01_attach;
 		purchase: spriteset_purchaseMenu_MEOW_mono_01;
 		additional_text: string(info_mono_MEOW_1);
 		weight: 							80;
@@ -54577,6 +55747,16 @@ item(FEAT_TRAINS, item_MEOW_mono_01, 831) {
 		power: 							MEOW_mono_01_PURR_power_switch;
 		tractive_effort_coefficient:			MEOW_mono_01_PURR_te_switch;
 		}
+}
+switch (FEAT_TRAINS, SELF, switch_MEOW_mono_02_attach, vehicle_type_id){
+	item_MEOW_mono_02: CB_RESULT_ATTACH_ALLOW;
+
+	item_monoflatbed: CB_RESULT_ATTACH_ALLOW;
+	item_monohopper: CB_RESULT_ATTACH_ALLOW;
+	item_monotanker: CB_RESULT_ATTACH_ALLOW;
+	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
+	item_monopax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_freight);
 }
 item(FEAT_TRAINS, item_MEOW_mono_02, 832) {
 	property {
@@ -54616,7 +55796,7 @@ item(FEAT_TRAINS, item_MEOW_mono_02, 832) {
 	}
 	graphics {
 		default: MEOW_mono_02_PURR_visual_switch;
-		can_attach_wagon: switch_MEOWmono_attach;
+		can_attach_wagon: switch_MEOW_mono_02_attach;
 		purchase: spriteset_purchaseMenu_MEOW_mono_02;
 		additional_text: string(info_mono_MEOW_2);
 		weight: 							80;
@@ -54627,6 +55807,16 @@ item(FEAT_TRAINS, item_MEOW_mono_02, 832) {
 		power: 							MEOW_mono_02_PURR_power_switch;
 		tractive_effort_coefficient:			MEOW_mono_02_PURR_te_switch;
 		}
+}
+switch (FEAT_TRAINS, SELF, switch_MEOW_mono_03_attach, vehicle_type_id){
+	item_MEOW_mono_03: CB_RESULT_ATTACH_ALLOW;
+
+	item_monoflatbed: CB_RESULT_ATTACH_ALLOW;
+	item_monohopper: CB_RESULT_ATTACH_ALLOW;
+	item_monotanker: CB_RESULT_ATTACH_ALLOW;
+	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
+	item_monopax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_freight);
 }
 item(FEAT_TRAINS, item_MEOW_mono_03, 833) {
 	property {
@@ -54666,7 +55856,7 @@ item(FEAT_TRAINS, item_MEOW_mono_03, 833) {
 	}
 	graphics {
 		default: MEOW_mono_03_PURR_visual_switch;
-		can_attach_wagon: switch_MEOWmono_attach;
+		can_attach_wagon: switch_MEOW_mono_03_attach;
 		purchase: spriteset_purchaseMenu_MEOW_mono_03;
 		additional_text: string(info_mono_MEOW_3);
 		weight: 							80;
@@ -54677,6 +55867,16 @@ item(FEAT_TRAINS, item_MEOW_mono_03, 833) {
 		power: 							MEOW_mono_03_PURR_power_switch;
 		tractive_effort_coefficient:			MEOW_mono_03_PURR_te_switch;
 		}
+}
+switch (FEAT_TRAINS, SELF, switch_MEOW_mono_04_attach, vehicle_type_id){
+	item_MEOW_mono_04: CB_RESULT_ATTACH_ALLOW;
+
+	item_monoflatbed: CB_RESULT_ATTACH_ALLOW;
+	item_monohopper: CB_RESULT_ATTACH_ALLOW;
+	item_monotanker: CB_RESULT_ATTACH_ALLOW;
+	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
+	item_monopax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_freight);
 }
 item(FEAT_TRAINS, item_MEOW_mono_04, 834) {
 	property {
@@ -54716,7 +55916,7 @@ item(FEAT_TRAINS, item_MEOW_mono_04, 834) {
 	}
 	graphics {
 		default: MEOW_mono_04_PURR_visual_switch;
-		can_attach_wagon: switch_MEOWmono_attach;
+		can_attach_wagon: switch_MEOW_mono_04_attach;
 		purchase: spriteset_purchaseMenu_MEOW_mono_04;
 		additional_text: string(info_mono_MEOW_4);
 		weight: 							80;
@@ -54728,7 +55928,16 @@ item(FEAT_TRAINS, item_MEOW_mono_04, 834) {
 		tractive_effort_coefficient:			MEOW_mono_04_PURR_te_switch;
 		}
 }
+switch (FEAT_TRAINS, SELF, switch_MEOW_mono_05_attach, vehicle_type_id){
+	item_MEOW_mono_05: CB_RESULT_ATTACH_ALLOW;
 
+	item_monoflatbed: CB_RESULT_ATTACH_ALLOW;
+	item_monohopper: CB_RESULT_ATTACH_ALLOW;
+	item_monotanker: CB_RESULT_ATTACH_ALLOW;
+	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
+	item_monopax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_freight);
+}
 item(FEAT_TRAINS, item_MEOW_mono_05, 835) {
 	property {
 		name:                         string(STR_NAME_MEOW_mono_05);
@@ -54767,7 +55976,7 @@ item(FEAT_TRAINS, item_MEOW_mono_05, 835) {
 	}
 	graphics {
 		default: MEOW_mono_05_PURR_visual_switch;
-		can_attach_wagon: switch_MEOWmono_attach;
+		can_attach_wagon: switch_MEOW_mono_05_attach;
 		purchase: spriteset_purchaseMenu_MEOW_mono_05;
 		additional_text: string(info_mono_MEOW_5);
 		weight: 							80;
@@ -54778,6 +55987,16 @@ item(FEAT_TRAINS, item_MEOW_mono_05, 835) {
 		power: 							MEOW_mono_05_PURR_power_switch;
 		tractive_effort_coefficient:			MEOW_mono_05_PURR_te_switch;
 		}
+}
+switch (FEAT_TRAINS, SELF, switch_MEOW_mono_06_attach, vehicle_type_id){
+	item_MEOW_mono_06: CB_RESULT_ATTACH_ALLOW;
+
+	item_monoflatbed: CB_RESULT_ATTACH_ALLOW;
+	item_monohopper: CB_RESULT_ATTACH_ALLOW;
+	item_monotanker: CB_RESULT_ATTACH_ALLOW;
+	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
+	item_monopax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_freight);
 }
 item(FEAT_TRAINS, item_MEOW_mono_06, 836) {
 	property {
@@ -54817,7 +56036,7 @@ item(FEAT_TRAINS, item_MEOW_mono_06, 836) {
 	}
 	graphics {
 		default: MEOW_mono_06_PURR_visual_switch;
-		can_attach_wagon: switch_MEOWmono_attach;
+		can_attach_wagon: switch_MEOW_mono_06_attach;
 		purchase: spriteset_purchaseMenu_MEOW_mono_06;
 		additional_text: string(info_mono_MEOW_6);
 		weight: 							80;
@@ -54829,7 +56048,16 @@ item(FEAT_TRAINS, item_MEOW_mono_06, 836) {
 		tractive_effort_coefficient:			MEOW_mono_06_PURR_te_switch;
 		}
 }
+switch (FEAT_TRAINS, SELF, switch_MEOW_mono_b1_attach, vehicle_type_id){
+	item_MEOW_mono_b1: CB_RESULT_ATTACH_ALLOW;
 
+	item_monoflatbed: CB_RESULT_ATTACH_ALLOW;
+	item_monohopper: CB_RESULT_ATTACH_ALLOW;
+	item_monotanker: CB_RESULT_ATTACH_ALLOW;
+	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
+	item_monopax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_freight);
+}
 item(FEAT_TRAINS, item_MEOW_mono_b1, 850) {
 	property {
 		name:                         string(STR_NAME_MEOW_mono_b1);
@@ -54868,7 +56096,7 @@ item(FEAT_TRAINS, item_MEOW_mono_b1, 850) {
 	}
 	graphics {
 		default: MEOW_mono_b1_PURR_visual_switch;
-		can_attach_wagon: switch_MEOWmono_attach;
+		can_attach_wagon: switch_MEOW_mono_b1_attach;
 		purchase: spriteset_purchaseMenu_MEOW_mono_b1;
 		additional_text: string(info_mono_MEOW_7);
 		weight: 							80;
@@ -54922,22 +56150,7 @@ item(FEAT_TRAINS, item_MEOW_mono_b1, 850) {
 
 
 //MAGLEV CARGO ENGINES
-switch (FEAT_TRAINS, SELF, switch_maglevcargo_attach, vehicle_type_id){
-item_magpax: CB_RESULT_ATTACH_ALLOW;
-item_maglevflatbed: CB_RESULT_ATTACH_ALLOW;
-item_maglevhopper: CB_RESULT_ATTACH_ALLOW;
-item_maglevtanker: CB_RESULT_ATTACH_ALLOW;
-item_maglevuniversal: CB_RESULT_ATTACH_ALLOW;
-item_magstrong1: CB_RESULT_ATTACH_ALLOW;
-item_magstrong2: CB_RESULT_ATTACH_ALLOW;
-item_magstrong3: CB_RESULT_ATTACH_ALLOW;
-item_magstrong4: CB_RESULT_ATTACH_ALLOW;
-item_magfast1: CB_RESULT_ATTACH_ALLOW;
-item_magfast2: CB_RESULT_ATTACH_ALLOW;
-item_magfast3: CB_RESULT_ATTACH_ALLOW;
-item_magfast4: CB_RESULT_ATTACH_ALLOW;
-return string(STR_NAME_ATTACH_CARGO);
-}
+
 //MAGLEV MEDIUM
 //PURCHASE MENU
 spriteset(spriteset_purchaseMenu_magstrong1, 		"gfx/PurchaseMenu.png"){template_purchaseMenu2(0,15)}
@@ -54975,6 +56188,16 @@ magstrong1_endswitch;
 */
 
 
+switch (FEAT_TRAINS, SELF, switch_mglv_strong1_attach, vehicle_type_id){
+	item_magstrong1:      CB_RESULT_ATTACH_ALLOW;
+	
+	item_magpax:			    CB_RESULT_ATTACH_ALLOW;
+	item_maglevflatbed:   CB_RESULT_ATTACH_ALLOW;
+	item_maglevhopper:    CB_RESULT_ATTACH_ALLOW;
+	item_maglevtanker:    CB_RESULT_ATTACH_ALLOW;
+	item_maglevuniversal: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mglv_freight);
+}
 //ITEMS
 item(FEAT_TRAINS, item_magstrong1, 211) { //ID211
 	property {
@@ -55015,7 +56238,7 @@ item(FEAT_TRAINS, item_magstrong1, 211) { //ID211
 	graphics {
 		default: spriteset_train_magstrong1;
 		purchase: spriteset_purchaseMenu_magstrong1;
-		can_attach_wagon: switch_maglevcargo_attach;
+		can_attach_wagon: switch_mglv_strong1_attach;
 		additional_text: string(info_mglv_medium_1);
 		speed: 							301; //maybe for wagons later, not now
 		
@@ -55036,7 +56259,16 @@ switch(FEAT_TRAINS, SELF, magstrong2_visualswitch, position_in_consist){
 magstrong2_endswitch;
 }
 */
-
+switch (FEAT_TRAINS, SELF, switch_mglv_strong2_attach, vehicle_type_id){
+	item_magstrong2:      CB_RESULT_ATTACH_ALLOW;
+	
+	item_magpax:			    CB_RESULT_ATTACH_ALLOW;
+	item_maglevflatbed:   CB_RESULT_ATTACH_ALLOW;
+	item_maglevhopper:    CB_RESULT_ATTACH_ALLOW;
+	item_maglevtanker:    CB_RESULT_ATTACH_ALLOW;
+	item_maglevuniversal: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mglv_freight);
+}
 item(FEAT_TRAINS, item_magstrong2, 213) { //ID213
 	property {
 		name:                         string(STR_NAME_MagStrong2);
@@ -55076,7 +56308,7 @@ item(FEAT_TRAINS, item_magstrong2, 213) { //ID213
 	graphics {
 		default: spriteset_train_magstrong2;
 		purchase: spriteset_purchaseMenu_magstrong2;
-		can_attach_wagon: switch_maglevcargo_attach;
+		can_attach_wagon: switch_mglv_strong2_attach;
 		additional_text: string(info_mglv_medium_2);
 		speed: 							316; //maybe for wagons later, not now
 		
@@ -55097,6 +56329,16 @@ switch(FEAT_TRAINS, SELF, magstrong3_visualswitch, position_in_consist){
 magstrong3_endswitch;
 }
 */
+switch (FEAT_TRAINS, SELF, switch_mglv_strong3_attach, vehicle_type_id){
+	item_magstrong3:      CB_RESULT_ATTACH_ALLOW;
+	
+	item_magpax:			    CB_RESULT_ATTACH_ALLOW;
+	item_maglevflatbed:   CB_RESULT_ATTACH_ALLOW;
+	item_maglevhopper:    CB_RESULT_ATTACH_ALLOW;
+	item_maglevtanker:    CB_RESULT_ATTACH_ALLOW;
+	item_maglevuniversal: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mglv_freight);
+}
 item(FEAT_TRAINS, item_magstrong3, 215) { //ID215
 	property {
 		name:                         string(STR_NAME_MagStrong3);
@@ -55136,7 +56378,7 @@ item(FEAT_TRAINS, item_magstrong3, 215) { //ID215
 	graphics {
 		default: spriteset_train_magstrong3;
 		purchase: spriteset_purchaseMenu_magstrong3;
-		can_attach_wagon: switch_maglevcargo_attach;
+		can_attach_wagon: switch_mglv_strong3_attach;
 		additional_text: string(info_mglv_medium_3);
 		speed: 							340; //maybe for wagons later, not now
 		
@@ -55158,6 +56400,16 @@ switch(FEAT_TRAINS, SELF, magstrong4_visualswitch, position_in_consist){
 magstrong4_endswitch;
 }
 */
+switch (FEAT_TRAINS, SELF, switch_mglv_strong4_attach, vehicle_type_id){
+	item_magstrong4:      CB_RESULT_ATTACH_ALLOW;
+	
+	item_magpax:			    CB_RESULT_ATTACH_ALLOW;
+	item_maglevflatbed:   CB_RESULT_ATTACH_ALLOW;
+	item_maglevhopper:    CB_RESULT_ATTACH_ALLOW;
+	item_maglevtanker:    CB_RESULT_ATTACH_ALLOW;
+	item_maglevuniversal: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mglv_freight);
+}
 item(FEAT_TRAINS, item_magstrong4, 217) { //ID217
 	property {
 		name:                         string(STR_NAME_MagStrong4);
@@ -55197,7 +56449,7 @@ item(FEAT_TRAINS, item_magstrong4, 217) { //ID217
 	graphics {
 		default: spriteset_train_magstrong4;
 		purchase: spriteset_purchaseMenu_magstrong4;
-		can_attach_wagon: switch_maglevcargo_attach;
+		can_attach_wagon: switch_mglv_strong4_attach;
 		additional_text: string(info_mglv_medium_4);
 		speed: 							400; //maybe for wagons later, not now
 		
@@ -55251,6 +56503,16 @@ magfast1_endswitch;
 }
 */
 
+switch (FEAT_TRAINS, SELF, switch_mglv_fast1_attach, vehicle_type_id){
+	item_magfast1:      CB_RESULT_ATTACH_ALLOW;
+	
+	item_magpax:			    CB_RESULT_ATTACH_ALLOW;
+	item_maglevflatbed:   CB_RESULT_ATTACH_ALLOW;
+	item_maglevhopper:    CB_RESULT_ATTACH_ALLOW;
+	item_maglevtanker:    CB_RESULT_ATTACH_ALLOW;
+	item_maglevuniversal: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mglv_freight);
+}
 //ITEMS
 item(FEAT_TRAINS, item_magfast1, 251) { //ID251
 	property {
@@ -55291,7 +56553,7 @@ item(FEAT_TRAINS, item_magfast1, 251) { //ID251
 	graphics {
 		default: spriteset_train_magfast1;
 		purchase: spriteset_purchaseMenu_magfast1;
-		can_attach_wagon: switch_maglevcargo_attach;
+		can_attach_wagon: switch_mglv_fast1_attach;
 		additional_text: string(info_mglv_fast_1);
 		speed: 							365; //maybe for wagons later, not now
 		
@@ -55312,6 +56574,16 @@ switch(FEAT_TRAINS, SELF, magfast2_visualswitch, position_in_consist){
 magfast2_endswitch;
 }
 */
+switch (FEAT_TRAINS, SELF, switch_mglv_fast2_attach, vehicle_type_id){
+	item_magfast2:      CB_RESULT_ATTACH_ALLOW;
+	
+	item_magpax:			    CB_RESULT_ATTACH_ALLOW;
+	item_maglevflatbed:   CB_RESULT_ATTACH_ALLOW;
+	item_maglevhopper:    CB_RESULT_ATTACH_ALLOW;
+	item_maglevtanker:    CB_RESULT_ATTACH_ALLOW;
+	item_maglevuniversal: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mglv_freight);
+}
 item(FEAT_TRAINS, item_magfast2, 253) { //253
 	property {
 		name:                         string(STR_NAME_MagF2);
@@ -55351,7 +56623,7 @@ item(FEAT_TRAINS, item_magfast2, 253) { //253
 	graphics {
 		default: spriteset_train_magfast2;
 		purchase: spriteset_purchaseMenu_magfast2;
-		can_attach_wagon: switch_maglevcargo_attach;
+		can_attach_wagon: switch_mglv_fast2_attach;
 		additional_text: string(info_mglv_fast_2);
 		speed: 							415; //maybe for wagons later, not now
 		
@@ -55372,6 +56644,16 @@ switch(FEAT_TRAINS, SELF, magfast3_visualswitch, position_in_consist){
 magfast3_endswitch;
 }
 */
+switch (FEAT_TRAINS, SELF, switch_mglv_fast3_attach, vehicle_type_id){
+	item_magfast3:      CB_RESULT_ATTACH_ALLOW;
+	
+	item_magpax:			    CB_RESULT_ATTACH_ALLOW;
+	item_maglevflatbed:   CB_RESULT_ATTACH_ALLOW;
+	item_maglevhopper:    CB_RESULT_ATTACH_ALLOW;
+	item_maglevtanker:    CB_RESULT_ATTACH_ALLOW;
+	item_maglevuniversal: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mglv_freight);
+}
 item(FEAT_TRAINS, item_magfast3, 255) { //ID255
 	property {
 		name:                         string(STR_NAME_MagF3);
@@ -55411,7 +56693,7 @@ item(FEAT_TRAINS, item_magfast3, 255) { //ID255
 	graphics {
 		default: spriteset_train_magfast3;
 		purchase: spriteset_purchaseMenu_magfast3;
-		can_attach_wagon: switch_maglevcargo_attach;
+		can_attach_wagon: switch_mglv_fast3_attach;
 		additional_text: string(info_mglv_fast_3);
 		speed: 							461; //maybe for wagons later, not now
 		
@@ -55432,6 +56714,16 @@ switch(FEAT_TRAINS, SELF, magfast4_visualswitch, position_in_consist){
 magfast4_endswitch;
 }
 */
+switch (FEAT_TRAINS, SELF, switch_mglv_fast4_attach, vehicle_type_id){
+	item_magfast4:      CB_RESULT_ATTACH_ALLOW;
+	
+	item_magpax:			    CB_RESULT_ATTACH_ALLOW;
+	item_maglevflatbed:   CB_RESULT_ATTACH_ALLOW;
+	item_maglevhopper:    CB_RESULT_ATTACH_ALLOW;
+	item_maglevtanker:    CB_RESULT_ATTACH_ALLOW;
+	item_maglevuniversal: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mglv_freight);
+}
 item(FEAT_TRAINS, item_magfast4, 257) { //ID257
 	property {
 		name:                         string(STR_NAME_MagF4);
@@ -55471,7 +56763,7 @@ item(FEAT_TRAINS, item_magfast4, 257) { //ID257
 	graphics {
 		default: spriteset_train_magfast4;
 		purchase: spriteset_purchaseMenu_magfast4;
-		can_attach_wagon: switch_maglevcargo_attach;
+		can_attach_wagon: switch_mglv_fast4_attach;
 		additional_text: string(info_mglv_fast_4);
 		speed: 								552;
 		
@@ -55488,16 +56780,16 @@ item(FEAT_TRAINS, item_magfast4, 257) { //ID257
 
 //LOGIC ENGINES
 switch (FEAT_TRAINS, SELF, switch_logicrail_attach, vehicle_type_id){
-item_logicRail: CB_RESULT_ATTACH_ALLOW;
-return string(STR_NAME_ATTACH_LOGIC);
+	item_logicRail: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_logic);
 }
 switch (FEAT_TRAINS, SELF, switch_logicmonorail_attach, vehicle_type_id){
-item_logicMonorail: CB_RESULT_ATTACH_ALLOW;
-return string(STR_NAME_ATTACH_LOGIC);
+	item_logicMonorail: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_logic);
 }
 switch (FEAT_TRAINS, SELF, switch_logicmaglev_attach, vehicle_type_id){
-item_logicMaglev: CB_RESULT_ATTACH_ALLOW;
-return string(STR_NAME_ATTACH_LOGIC);
+	item_logicMaglev: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_logic);
 }
 //PURCHASE MENU
 spriteset(spriteset_purchaseMenu_logicRail,			"gfx/PurchaseMenu.png"){template_purchaseMenu(3,23)}
@@ -55657,7 +56949,7 @@ item_SHItanker: CB_RESULT_ATTACH_ALLOW;
 item_SHIuniversal: CB_RESULT_ATTACH_ALLOW;
 item_SHIexpress: CB_RESULT_ATTACH_ALLOW;
 
-return string(STR_NAME_ATTACH_SHI);
+return string(error_attach_wetr);
 }
 
 switch (FEAT_TRAINS,SELF, switch_SHIP_cargo_capacity, cargo_type_in_veh){
@@ -57068,8 +58360,8 @@ item_MEOW_mono_05,
 item_MEOW_mono_06,
 item_MEOW_rail_b1,
 item_MEOW_mono_b1,
-item_WIDOW,
-item_SLUG2,
+item_doombringer,
+item_ANIMALEXPRESS,
 item_SLUG,
 item_RAINBOWSLUG,
 item_SHIP_SMALL01,
