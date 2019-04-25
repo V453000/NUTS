@@ -1,3 +1,10 @@
+0.8.2
+	Slightly changed/simplified vehicle attaching rules:
+		- Engines can no longer attach to other engines in the same class. I do not see a valid use case for this, you always want the best.
+		- Superstrong engines are allowed to attach express wagons. It was a rather obscure rule. If you want your passengers to travel slowly, you can now.
+		-> Now engines can only attach the same engine, or the correct wagons for them. This allows the text in the purchase menu to be removed, and error messages simplified.
+	
+
 0.8.1
   Changed the 32bpp parameter to 32bpp SLUGs to make it more clear that it's not for everything.
   
