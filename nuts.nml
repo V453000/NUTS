@@ -49758,6 +49758,75 @@ switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics, position_in_consist){
 	1: railuniversal2_wagon_switch;
 	switch_railmedium9_graphics_1;
 }
+
+//------------------------------------------------------------------------------------------------------------
+// GRAPHICS EXPERIMENT
+//------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium_9_graphics_front_draw1, position_in_consist){
+	0: spriteset_train_railmedium9;
+	railuniversal2_wagon_switch;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium_9_graphics_front_draw2, position_in_consist){
+	0..2: spriteset_train_railmedium9;
+	railuniversal2_wagon_switch;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium_9_graphics_front_draw3, position_in_consist){
+	0..3: spriteset_train_railmedium9;
+	railuniversal2_wagon_switch;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front, count_veh_id(47)){
+	0..2: switch_railmedium_9_graphics_front_draw1;
+	3..4: switch_railmedium_9_graphics_front_draw2;
+	5..6: switch_railmedium_9_graphics_front_draw3;
+	switch_railmedium_9_graphics_front_draw1;
+}
+//------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium_9_graphics_both_draw1, position_in_consist){
+	0: spriteset_train_railmedium9;
+	railuniversal2_wagon_switch;
+}
+//--------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium_9_graphics_both_draw2_end, position_in_consist_from_end){
+	0: spriteset_train_railmedium9;
+	railuniversal2_wagon_switch;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium_9_graphics_both_draw2, position_in_consist){
+	0: spriteset_train_railmedium9;
+	switch_railmedium_9_graphics_both_draw2_end;
+}
+//--------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium_9_graphics_both_draw3_end, position_in_consist_from_end){
+	0: spriteset_train_railmedium9;
+	railuniversal2_wagon_switch;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium_9_graphics_both_draw3, position_in_consist){
+	0: spriteset_train_railmedium9;
+	1: spriteset_train_railmedium9;
+	switch_railmedium_9_graphics_both_draw3_end;
+}
+//--------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium_9_graphics_both_draw4_end, position_in_consist_from_end){
+	0: spriteset_train_railmedium9;
+	1: spriteset_train_railmedium9;
+	railuniversal2_wagon_switch;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium_9_graphics_both_draw4, position_in_consist){
+	0: spriteset_train_railmedium9;
+	1: spriteset_train_railmedium9;
+	switch_railmedium_9_graphics_both_draw4_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both, count_veh_id(47)){
+	0..2: switch_railmedium_9_graphics_both_draw1;
+	3..4: switch_railmedium_9_graphics_both_draw2;
+	5..6: switch_railmedium_9_graphics_both_draw3;
+	7..8: switch_railmedium_9_graphics_both_draw4;
+	switch_railmedium_9_graphics_both_draw4;
+}
+
+
+
+
+
 //--------------------------------------------------------------------------------------------
 //----- Articulation
 switch (FEAT_TRAINS, SELF, switch_railmedium9_articulated, extra_callback_info1){
@@ -49827,7 +49896,7 @@ item(FEAT_TRAINS, item_railmedium9, 47) { //ID47
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: switch_railmedium9_graphics;//switch_railmedium9_reversing;//spriteset_train_railmedium9;
+		default: switch_railmedium9_graphics_both;//switch_railmedium9_reversing;//spriteset_train_railmedium9;
 		articulated_part: switch_railmedium9_articulated;
 		purchase: spriteset_purchaseMenu_railmedium9;
 		can_attach_wagon: switch_railmedium9_attach;
@@ -49842,7 +49911,6 @@ item(FEAT_TRAINS, item_railmedium9, 47) { //ID47
 		cargo_capacity:  switch_railmedium9_capacity;
 		}
 }
-
 
 
 //RAIL FAST
