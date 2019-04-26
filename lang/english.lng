@@ -358,19 +358,6 @@ MSS4			:  Edgecrusher {WHITE}(Maglev)
 
 
 #errors
-STR_NAME_ATTACH_CHAMELEON 	  :Can only attach CHAMI engines or monorail cargo wagons.
-STR_NAME_ATTACH_CARGO 	      :Can only attach wagons or STRONG/MEDIUM/FAST engines.
-STR_NAME_ATTACH_SUPERSTRONG 	:Can only attach cargo engines or NUTS cargo wagons.
-STR_NAME_ATTACH_PAX_ICE     	:{}Can attach only {LTBLUE}RAIL wagons{WHITE},{}or other engines of the same type.{}
-STR_NAME_ATTACH_PAX_LOCAL     :Can attach only {YELLOW}RAIL EXPRESS{BLACK} wagons or {YELLOW}RAIL LOCAL{BLACK} engines.
-STR_NAME_ATTACH_PAX_LOCAL_MAG :Can attach only maglev express wagons or maglev {YELLOW}LOCAL{BLACK} engines.
-STR_NAME_ATTACH_NYAN	        :Can attach only express wagons or NYAN CATS.
-STR_NAME_ATTACH_SLUG	        :Can attach only maglev wagons or SLUGS.
-STR_NAME_ATTACH_MONOWTF       :Can attach only wagons or other Mentally Disturbed engines.
-STR_NAME_ATTACH_SHI		        :Can attach only WET wagons.
-STR_NAME_ATTACH_MEOWrail	    :Can attach only rail wagons or rail MEOW engines.
-STR_NAME_ATTACH_MEOWmono	    :Can attach only monorail wagons or monorail MEOW engines.
-
 error_attach_rail_express   :{}Can attach only {LTBLUE}Rail Express wagons{WHITE},{}or engines of the same type.{}
 error_attach_rail_freight   :{}Can attach only {LTBLUE}Rail wagons{WHITE},{}or engines of the same type.{}
 error_attach_rail_caboose   :{}Can attach only {LTBLUE}Rail wagons{WHITE},{} {LTBLUE}Rail freight {WHITE}engines,{}or {LTBLUE}Rail Intercity {WHITE}engines.{}
