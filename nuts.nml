@@ -225,6 +225,17 @@ template template_engine32(x, y) { //8/8 or 32px
 	[120+x, 25*y, 32, 12, -16, -7]
 	[153+x, 25*y, 22, 17,  -5, -8]
 }
+template template_engine32_4unit_articulated_hack(x, y, u) { //8/8 or 32px
+	//[left_x,  upper_y,    width,     height,     offset_x,     offset_y]
+	[  0+x, 25*y,  8, 24,  -3  +0*u, -11  -8*u]
+	[  9+x, 25*y, 22, 17, -13  +8*u,  -9  -4*u]
+	[ 32+x, 25*y, 32, 12, -16 +16*u,  -7  +0*u]
+	[ 65+x, 25*y, 22, 17,  -5  +8*u,  -8  +4*u]
+	[ 88+x, 25*y,  8, 24,  -3  +0*u, -11 +16*u]
+	[ 97+x, 25*y, 22, 17, -13  -8*u,  -9  +4*u]
+	[120+x, 25*y, 32, 12, -16 -16*u,  -7  +0*u]
+	[153+x, 25*y, 22, 17,  -5  -8*u,  -8  -4*u]
+}
 template template_engine32_end(x, y) { //8/8 or 32px
 	//[left_x,  upper_y,    width,     height,     offset_x,     offset_y]
 	[ 88+x, 25*y,  8, 24,  -3, -11]
@@ -44899,7 +44910,7 @@ CB_FAILED;
 
 
 
-spriteset(sprite_INVISIBLE,  	 "gfx/INVISIBLE.png"){template_engine32WTF(0,0)}
+
 
 switch (FEAT_TRAINS,PARENT, ULTIMATE_WAGON_visual_FRONT, vehicle_type_id){
 sprite_INVISIBLE;
@@ -46035,6 +46046,7 @@ item(FEAT_TRAINS, item_railsuperstrong6_rear, 385) { //ID385
 	}
 }
 
+spriteset(sprite_INVISIBLE,  	 "gfx/INVISIBLE.png"){template_engine32WTF(0,0)}
 
 switch (FEAT_TRAINS, SELF, switch_rail_articulated_1, extra_callback_info1){
 1: return item_railuniversal1;
@@ -46291,7 +46303,7 @@ spriteset(spriteset_purchaseMenu_railstrong9, 		"gfx/PurchaseMenu.png"){template
 //SPRITESETS
 spriteset(spriteset_train_railstrong1, "gfx/railstrong_steam.png") { template_engine32(0, 2) }
 spriteset(spriteset_train_railstrong2, "gfx/railstrong_steam.png") { template_engine32(0, 1) }
-spriteset(spriteset_train_railstrong3, "gfx/railstrong_steam.png") { template_engine32(0, 0) }
+spriteset(spriteset_train_railstrong3, "gfx/railstrong_steam.png") { template_engine32_4unit_articulated_hack(0, 0, 4) }
 spriteset(spriteset_train_railstrong4, "gfx/railstrong_modern_extra.png") { template_engine32_4plus(0, 0)}
 spriteset(spriteset_train_railstrong5, "gfx/railstrong_modern_extra.png") { template_engine32_4plus(0, 1)}
 spriteset(spriteset_train_railstrong6, "gfx/railstrong_modern.png") { template_engine32(0, 2) }
@@ -46477,14 +46489,43 @@ item(FEAT_TRAINS, item_railstrong2, 13) { //ID13
 }
 
 
-
-switch(FEAT_TRAINS, SELF, railstrong3_endswitch, position_in_consist_from_end){
-0: spriteset_train_railstrong3_end;
-spriteset_train_railstrong3;
+switch (FEAT_TRAINS, SELF, switch_railstrong3_graphics_2, position_in_articulated_veh){
+	0: sprite_INVISIBLE;
+	1: spriteset_train_railstrong3;
+	railuniversal1_wagon_switch;
 }
-switch(FEAT_TRAINS, SELF, railstrong3_visualswitch, position_in_consist){
-0: spriteset_train_railstrong3;
-railstrong3_endswitch;
+switch (FEAT_TRAINS, SELF, switch_railstrong3_graphics_1, position_in_consist_from_end){
+  0: sprite_INVISIBLE;
+	1: spriteset_train_railstrong3_end;
+	2: railuniversal1_wagon_switch;
+	3: railuniversal1_wagon_switch;
+	switch_railstrong3_graphics_2;
+}
+switch (FEAT_TRAINS, SELF, switch_railstrong3_graphics, position_in_consist){
+  0: sprite_INVISIBLE;
+	1: spriteset_train_railstrong3;
+	2: railuniversal1_wagon_switch;
+	3: railuniversal1_wagon_switch;
+	switch_railstrong3_graphics_1;
+}
+//--------------------------------------------------------------------------------------------
+//----- Articulation
+switch (FEAT_TRAINS, SELF, switch_railstrong3_articulated, extra_callback_info1){
+	1: item_railstrong3;
+	2: item_railstrong3;
+	3: item_railstrong3;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+switch (FEAT_TRAINS, SELF, switch_railstrong3_length, position_in_articulated_veh){
+	0: 4;
+	1: 4;
+	2: 4;
+	3: 4;
+	4;
+}
+switch (FEAT_TRAINS, SELF, switch_railstrong3_effect, position_in_articulated_veh){
+2: visual_effect_and_powered(VISUAL_EFFECT_STEAM, -2, DISABLE_WAGON_POWER);
+return VISUAL_EFFECT_DISABLE;
 }
 
 switch (FEAT_TRAINS, SELF, switch_railstrong3_attach, vehicle_type_id){
@@ -46544,17 +46585,20 @@ item(FEAT_TRAINS, item_railstrong3, 15) { //ID15
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: railstrong3_visualswitch;
-		articulated_part: switch_rail_articulated_1;
-		purchase: spriteset_purchaseMenu_railstrong3;
-		can_attach_wagon: switch_railstrong3_attach;
-		additional_text: string(info_rail_strong_3);
-		speed: 								100; //maybe for wagons later, not now
-		power: 								2000; //engine only
-		weight: 							80; //engine only
-		tractive_effort_coefficient:		168; //engine only
-		cost_factor:						10; //everything
-		running_cost_factor:				100; //only engines
+		articulated_part: 							switch_railstrong3_articulated;
+		length: 												switch_railstrong3_length;               
+		visual_effect_and_powered:      switch_railstrong3_effect;
+
+		default:                        switch_railstrong3_graphics;
+		purchase:                       spriteset_purchaseMenu_railstrong3;
+		can_attach_wagon:               switch_railstrong3_attach;
+		additional_text:							  string(info_rail_strong_3);
+		speed: 								          100; 
+		power: 								          2000;
+		weight: 							          80;  
+		tractive_effort_coefficient:		168; 
+		cost_factor:					        	10;
+		running_cost_factor:	    			100; 
 		}
 }
 
@@ -46620,7 +46664,7 @@ switch(FEAT_TRAINS, SELF, switch_railstrong4_loadspeed, position_in_consist){
 }
 //--------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------
-switch(FEAT_TRAINS, SELF, switch_railstrong4_graphics_2, position_in_consist & 1){
+switch(FEAT_TRAINS, SELF, switch_railstrong4_graphics_2, position_in_articulated_veh){
 	0: spriteset_train_railstrong4;
 	railuniversal3_wagon_switch;
 }
@@ -46775,7 +46819,7 @@ switch(FEAT_TRAINS, SELF, switch_railstrong5_loadspeed, position_in_consist){
 }
 //--------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------
-switch(FEAT_TRAINS, SELF, switch_railstrong5_graphics_2, position_in_consist & 1){
+switch(FEAT_TRAINS, SELF, switch_railstrong5_graphics_2, position_in_articulated_veh){
 	0: spriteset_train_railstrong5;
 	railuniversal3_wagon_switch;
 }
@@ -46929,7 +46973,7 @@ switch(FEAT_TRAINS, SELF, switch_railstrong6_loadspeed, position_in_consist){
 }
 //--------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------
-switch(FEAT_TRAINS, SELF, switch_railstrong6_graphics_2, position_in_consist & 1){
+switch(FEAT_TRAINS, SELF, switch_railstrong6_graphics_2, position_in_articulated_veh){
 	0: spriteset_train_railstrong6;
 	railuniversal3_wagon_switch;
 }
@@ -47088,7 +47132,7 @@ switch(FEAT_TRAINS, SELF, switch_railstrong7_loadspeed, position_in_consist){
 }
 //--------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------
-switch(FEAT_TRAINS, SELF, switch_railstrong7_graphics_2, position_in_consist & 1){
+switch(FEAT_TRAINS, SELF, switch_railstrong7_graphics_2, position_in_articulated_veh){
 	0: spriteset_train_railstrong7;
 	railuniversal2_wagon_switch;
 }
@@ -47247,7 +47291,7 @@ switch(FEAT_TRAINS, SELF, switch_railstrong8_loadspeed, position_in_consist){
 }
 //--------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------
-switch(FEAT_TRAINS, SELF, switch_railstrong8_graphics_2, position_in_consist & 1){
+switch(FEAT_TRAINS, SELF, switch_railstrong8_graphics_2, position_in_articulated_veh){
 	0: spriteset_train_railstrong8;
 	railuniversal2_wagon_switch;
 }
@@ -47402,7 +47446,7 @@ switch(FEAT_TRAINS, SELF, switch_railstrong9_loadspeed, position_in_consist){
 }
 //--------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------
-switch(FEAT_TRAINS, SELF, switch_railstrong9_graphics_2, position_in_consist & 1){
+switch(FEAT_TRAINS, SELF, switch_railstrong9_graphics_2, position_in_articulated_veh){
 	0: spriteset_train_dukenukem;
 	railuniversal2_wagon_switch;
 }
@@ -48321,7 +48365,7 @@ switch(FEAT_TRAINS, SELF, switch_railmedium4_loadspeed, position_in_consist){
 }
 //--------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------
-switch(FEAT_TRAINS, SELF, switch_railmedium4_graphics_2, position_in_consist & 1){
+switch(FEAT_TRAINS, SELF, switch_railmedium4_graphics_2, position_in_articulated_veh){
 	0: spriteset_train_railmedium4;
 	railuniversal3_wagon_switch;
 }
@@ -48478,7 +48522,7 @@ switch(FEAT_TRAINS, SELF, switch_railmedium5_loadspeed, position_in_consist){
 }
 //--------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------
-switch(FEAT_TRAINS, SELF, switch_railmedium5_graphics_2, position_in_consist & 1){
+switch(FEAT_TRAINS, SELF, switch_railmedium5_graphics_2, position_in_articulated_veh){
 	0: spriteset_train_railmedium5;
 	railuniversal3_wagon_switch;
 }
@@ -48635,7 +48679,7 @@ switch(FEAT_TRAINS, SELF, switch_railmedium6_loadspeed, position_in_consist){
 }
 //--------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------
-switch(FEAT_TRAINS, SELF, switch_railmedium6_graphics_2, position_in_consist & 1){
+switch(FEAT_TRAINS, SELF, switch_railmedium6_graphics_2, position_in_articulated_veh){
 	0: spriteset_train_railmedium6;
 	railuniversal3_wagon_switch;
 }
@@ -48778,7 +48822,7 @@ switch(FEAT_TRAINS, SELF, switch_railmedium7_loadspeed, position_in_consist){
 }
 //--------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------
-switch(FEAT_TRAINS, SELF, switch_railmedium7_graphics_2, position_in_consist & 1){
+switch(FEAT_TRAINS, SELF, switch_railmedium7_graphics_2, position_in_articulated_veh){
 	0: spriteset_train_railmedium7;
 	railuniversal2_wagon_switch;
 }
@@ -48928,7 +48972,7 @@ switch(FEAT_TRAINS, SELF, switch_railmedium8_loadspeed, position_in_consist){
 }
 //--------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------
-switch(FEAT_TRAINS, SELF, switch_railmedium8_graphics_2, position_in_consist & 1){
+switch(FEAT_TRAINS, SELF, switch_railmedium8_graphics_2, position_in_articulated_veh){
 	0: spriteset_train_railmedium8;
 	railuniversal2_wagon_switch;
 }
@@ -49074,7 +49118,7 @@ switch(FEAT_TRAINS, SELF, switch_railmedium9_loadspeed, position_in_consist){
 }
 //--------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------
-switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_2, position_in_consist & 1){
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_2, position_in_articulated_veh){
 	0: spriteset_train_railmedium9;
 	railuniversal2_wagon_switch;
 }
@@ -55843,7 +55887,7 @@ switch (FEAT_TRAINS, SELF, switch_MEOW_rail_01_attach, vehicle_type_id){
 	item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
 	item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
 	item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
-	string(STR_NAME_ATTACH_MEOWrail);
+	string(error_attach_rail_freight);
 }
 item(FEAT_TRAINS, item_MEOW_rail_01, 801) {
 	property {
@@ -55916,7 +55960,7 @@ switch (FEAT_TRAINS, SELF, switch_MEOW_rail_02_attach, vehicle_type_id){
 	item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
 	item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
 	item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
-	string(STR_NAME_ATTACH_MEOWrail);
+	string(error_attach_rail_freight);
 }
 item(FEAT_TRAINS, item_MEOW_rail_02, 802) {
 	property {
@@ -55989,7 +56033,7 @@ switch (FEAT_TRAINS, SELF, switch_MEOW_rail_03_attach, vehicle_type_id){
 	item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
 	item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
 	item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
-	string(STR_NAME_ATTACH_MEOWrail);
+	string(error_attach_rail_freight);
 }
 item(FEAT_TRAINS, item_MEOW_rail_03, 803) {
 	property {
@@ -56062,7 +56106,7 @@ switch (FEAT_TRAINS, SELF, switch_MEOW_rail_04_attach, vehicle_type_id){
 	item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
 	item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
 	item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
-	string(STR_NAME_ATTACH_MEOWrail);
+	string(error_attach_rail_freight);
 }
 item(FEAT_TRAINS, item_MEOW_rail_04, 804) {
 	property {
@@ -56135,7 +56179,7 @@ switch (FEAT_TRAINS, SELF, switch_MEOW_rail_05_attach, vehicle_type_id){
 	item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
 	item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
 	item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
-	string(STR_NAME_ATTACH_MEOWrail);
+	string(error_attach_rail_freight);
 }
 item(FEAT_TRAINS, item_MEOW_rail_05, 805) {
 	property {
@@ -56208,7 +56252,7 @@ switch (FEAT_TRAINS, SELF, switch_MEOW_rail_06_attach, vehicle_type_id){
 	item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
 	item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
 	item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
-	string(STR_NAME_ATTACH_MEOWrail);
+	string(error_attach_rail_freight);
 }
 item(FEAT_TRAINS, item_MEOW_rail_06, 806) {
 	property {
@@ -56280,7 +56324,7 @@ switch (FEAT_TRAINS, SELF, switch_MEOW_rail_07_attach, vehicle_type_id){
 	item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
 	item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
 	item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
-	string(STR_NAME_ATTACH_MEOWrail);
+	string(error_attach_rail_freight);
 }
 item(FEAT_TRAINS, item_MEOW_rail_07, 807) {
 	property {
@@ -56352,7 +56396,7 @@ switch (FEAT_TRAINS, SELF, switch_MEOW_rail_08_attach, vehicle_type_id){
 	item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
 	item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
 	item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
-	string(STR_NAME_ATTACH_MEOWrail);
+	string(error_attach_rail_freight);
 }
 item(FEAT_TRAINS, item_MEOW_rail_08, 808) {
 	property {
@@ -56424,7 +56468,7 @@ switch (FEAT_TRAINS, SELF, switch_MEOW_rail_09_attach, vehicle_type_id){
 	item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
 	item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
 	item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
-	string(STR_NAME_ATTACH_MEOWrail);
+	string(error_attach_rail_freight);
 }
 item(FEAT_TRAINS, item_MEOW_rail_09, 809) {
 	property {
@@ -56496,7 +56540,7 @@ switch (FEAT_TRAINS, SELF, switch_MEOW_rail_b1_attach, vehicle_type_id){
 	item_railuniversal1: CB_RESULT_ATTACH_ALLOW;
 	item_railuniversal2: CB_RESULT_ATTACH_ALLOW;
 	item_railuniversal3: CB_RESULT_ATTACH_ALLOW;
-	string(STR_NAME_ATTACH_MEOWrail);
+	string(error_attach_rail_freight);
 }
 item(FEAT_TRAINS, item_MEOW_rail_b1, 820) {
 	property {
@@ -58898,7 +58942,7 @@ item_SHIuniversal: CB_RESULT_ATTACH_ALLOW;
 item_SHIexpress: CB_RESULT_ATTACH_ALLOW;
 //item_SHI01: CB_RESULT_ATTACH_ALLOW;
 //item_C4T01: CB_RESULT_ATTACH_ALLOW;
-return string(STR_NAME_ATTACH_SHI);
+return string(error_attach_wetr);
 }
 item(FEAT_TRAINS, item_SHI01, 700) { //ID700 ...shipMEDIUM2
 	property {
