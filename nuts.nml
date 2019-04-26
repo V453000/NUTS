@@ -225,16 +225,16 @@ template template_engine32(x, y) { //8/8 or 32px
 	[120+x, 25*y, 32, 12, -16, -7]
 	[153+x, 25*y, 22, 17,  -5, -8]
 }
-template template_engine32_4unit_articulated_hack(x, y, u) { //8/8 or 32px
+template template_engine32_articulated_hack(x, y, u) { //8/8 or 32px
 	//[left_x,  upper_y,    width,     height,     offset_x,     offset_y]
-	[  0+x, 25*y,  8, 24,  -3  +0*u, -11  -8*u]
-	[  9+x, 25*y, 22, 17, -13  +8*u,  -9  -4*u]
-	[ 32+x, 25*y, 32, 12, -16 +16*u,  -7  +0*u]
-	[ 65+x, 25*y, 22, 17,  -5  +8*u,  -8  +4*u]
-	[ 88+x, 25*y,  8, 24,  -3  +0*u, -11 +16*u]
-	[ 97+x, 25*y, 22, 17, -13  -8*u,  -9  +4*u]
-	[120+x, 25*y, 32, 12, -16 -16*u,  -7  +0*u]
-	[153+x, 25*y, 22, 17,  -5  -8*u,  -8  -4*u]
+	[  0+x, 25*y,  8, 24,  -3 +0*u, -11 -2*u]
+	[  9+x, 25*y, 22, 17, -13 +2*u,  -9 -1*u]
+	[ 32+x, 25*y, 32, 12, -16 +4*u,  -7 +0*u]
+	[ 65+x, 25*y, 22, 17,  -5 +2*u,  -8 +1*u]
+	[ 88+x, 25*y,  8, 24,  -3 +0*u, -11 +2*u]
+	[ 97+x, 25*y, 22, 17, -13 -2*u,  -9 +1*u]
+	[120+x, 25*y, 32, 12, -16 -4*u,  -7 +0*u]
+	[153+x, 25*y, 22, 17,  -5 -2*u,  -8 -1*u]
 }
 template template_engine32_end(x, y) { //8/8 or 32px
 	//[left_x,  upper_y,    width,     height,     offset_x,     offset_y]
@@ -46303,7 +46303,7 @@ spriteset(spriteset_purchaseMenu_railstrong9, 		"gfx/PurchaseMenu.png"){template
 //SPRITESETS
 spriteset(spriteset_train_railstrong1, "gfx/railstrong_steam.png") { template_engine32(0, 2) }
 spriteset(spriteset_train_railstrong2, "gfx/railstrong_steam.png") { template_engine32(0, 1) }
-spriteset(spriteset_train_railstrong3, "gfx/railstrong_steam.png") { template_engine32_4unit_articulated_hack(0, 0, 4) }
+spriteset(spriteset_train_railstrong3, "gfx/railstrong_steam.png") { template_engine32_articulated_hack(0, 0, 4) }
 spriteset(spriteset_train_railstrong4, "gfx/railstrong_modern_extra.png") { template_engine32_4plus(0, 0)}
 spriteset(spriteset_train_railstrong5, "gfx/railstrong_modern_extra.png") { template_engine32_4plus(0, 1)}
 spriteset(spriteset_train_railstrong6, "gfx/railstrong_modern.png") { template_engine32(0, 2) }
