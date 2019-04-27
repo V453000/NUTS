@@ -16283,10 +16283,6 @@ item(FEAT_TRAINS, item_NYAN, 311) { //ID311
 	//	}
 }
 
-
-//#include src-includes/rail_freight_graphics.nml
-
-
 //CARGO WAGONS
 
 //RAIL WAGONS 1
@@ -48427,6 +48423,50 @@ item(FEAT_TRAINS, item_CABOOSE_2, 29) { //ID29
 }
 
 //RAIL MEDIUM
+//PURCHASE MENU
+spriteset(spriteset_purchaseMenu_railmedium1,		"gfx/PurchaseMenu.png"){template_purchaseMenu(1,0)}
+spriteset(spriteset_purchaseMenu_railmedium2,		"gfx/PurchaseMenu.png"){template_purchaseMenu(1,1)}
+spriteset(spriteset_purchaseMenu_railmedium3,		"gfx/PurchaseMenu.png"){template_purchaseMenu(1,2)}
+spriteset(spriteset_purchaseMenu_railmedium4,		"gfx/PurchaseMenu.png"){template_purchaseMenu(1,3)}
+spriteset(spriteset_purchaseMenu_railmedium5,		"gfx/PurchaseMenu.png"){template_purchaseMenu(1,4)}
+spriteset(spriteset_purchaseMenu_railmedium6,		"gfx/PurchaseMenu.png"){template_purchaseMenu(1,5)}
+spriteset(spriteset_purchaseMenu_railmedium7,		"gfx/PurchaseMenu.png"){template_purchaseMenu(1,6)}
+spriteset(spriteset_purchaseMenu_railmedium8,		"gfx/PurchaseMenu.png"){template_purchaseMenu(1,7)}
+spriteset(spriteset_purchaseMenu_railmedium9,		"gfx/PurchaseMenu.png"){template_purchaseMenu(1,8)}
+//SPRITESETS
+
+spriteset(spriteset_train_railmedium1middle, "gfx/railmedium_steam.png") { template_engine32(0, 3) }
+spriteset(spriteset_train_railmedium2middle, "gfx/railmedium_steam.png") { template_engine32(0, 4) }
+spriteset(spriteset_train_railmedium3middle, "gfx/railmedium_steam.png") { template_engine32(0, 5) }
+
+spriteset(spriteset_train_railmedium1, "gfx/railmedium_steam.png") { template_engine32_articulated_hack(0, 2, 4) }
+spriteset(spriteset_train_railmedium2, "gfx/railmedium_steam.png") { template_engine32_articulated_hack(0, 1, 4) }
+spriteset(spriteset_train_railmedium3, "gfx/railmedium_steam.png") { template_engine32_articulated_hack(0, 0, 4) }
+spriteset(spriteset_train_railmedium4, "gfx/railmedium_modern.png") { template_engine32(0, 0) }
+spriteset(spriteset_train_railmedium5, "gfx/railmedium_modern.png") { template_engine32(0, 1) }
+spriteset(spriteset_train_railmedium6, "gfx/railmedium_modern.png") { template_engine32(0, 2) }
+spriteset(spriteset_train_railmedium7, "gfx/railmedium_modern.png") { template_engine32(0, 3) }
+spriteset(spriteset_train_railmedium8, "gfx/railmedium_modern.png") { template_engine32(0, 4) }
+spriteset(spriteset_train_railmedium9, "gfx/railmedium_modern.png") { template_engine32(0, 5) }
+
+//END
+spriteset(spriteset_train_railmedium1_end, "gfx/railmedium_steam.png") { template_engine32_end(0, 2) }
+spriteset(spriteset_train_railmedium2_end, "gfx/railmedium_steam.png") { template_engine32_end(0, 1) }
+spriteset(spriteset_train_railmedium3_end, "gfx/railmedium_steam.png") { template_engine32_end(0, 0) }
+//spriteset(spriteset_train_railmedium4_end, "gfx/railmedium_modern.png") { template_engine32_end(0, 0) }
+//spriteset(spriteset_train_railmedium5_end, "gfx/railmedium_modern.png") { template_engine32_end(0, 1) }
+//spriteset(spriteset_train_railmedium6_end, "gfx/railmedium_modern.png") { template_engine32_end(0, 2) }
+//spriteset(spriteset_train_railmedium7_end, "gfx/railmedium_modern.png") { template_engine32_end(0, 3) }
+spriteset(spriteset_train_railmedium8_end, "gfx/railmedium_modern.png") { template_engine32_end(0, 4) }
+//spriteset(spriteset_train_railmedium9_end, "gfx/railmedium_modern.png") { template_engine32_end(0, 5) }
+
+//reversed
+spriteset(spriteset_train_railmedium4_reversed, "gfx/railmedium_modern.png") { template_engine32(176, 0) }
+spriteset(spriteset_train_railmedium5_reversed, "gfx/railmedium_modern.png") { template_engine32(176, 1) }
+spriteset(spriteset_train_railmedium6_reversed, "gfx/railmedium_modern.png") { template_engine32(176, 2) }
+spriteset(spriteset_train_railmedium7_reversed, "gfx/railmedium_modern.png") { template_engine32(176, 3) }
+spriteset(spriteset_train_railmedium9_reversed, "gfx/railmedium_modern.png") { template_engine32(176, 5) }
+
 
 switch(FEAT_TRAINS, SELF, railmedium1_endswitch, position_in_consist_from_end){
 0: spriteset_train_railmedium1_end;
@@ -49720,7 +49760,79 @@ switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics, position_in_consist){
 }
 
 
+//#include src-includes/rail_freight_graphics.nml
 
+//------------------------------------------------------------------------------------------------------------
+// GRAPHICS EXPERIMENT
+//------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium_9_graphics_front_draw1, position_in_consist){
+	0: spriteset_train_railmedium9;
+	railuniversal2_wagon_switch;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium_9_graphics_front_draw2, position_in_consist){
+	0..2: spriteset_train_railmedium9;
+	railuniversal2_wagon_switch;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium_9_graphics_front_draw3, position_in_consist){
+	0..3: spriteset_train_railmedium9;
+	railuniversal2_wagon_switch;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front, count_veh_id(47)){
+	0..2: switch_railmedium_9_graphics_front_draw1;
+	3..4: switch_railmedium_9_graphics_front_draw2;
+	5..6: switch_railmedium_9_graphics_front_draw3;
+	switch_railmedium_9_graphics_front_draw1;
+}
+//------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium_9_graphics_both_draw1, position_in_consist){
+	0: spriteset_train_railmedium9;
+	railuniversal2_wagon_switch;
+}
+//--------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium_9_graphics_both_draw2_end, position_in_consist_from_end){
+	0: spriteset_train_railmedium9;
+	railuniversal2_wagon_switch;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium_9_graphics_both_draw2, position_in_consist){
+	0: spriteset_train_railmedium9;
+	switch_railmedium_9_graphics_both_draw2_end;
+}
+//--------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium_9_graphics_both_draw3_end, position_in_consist_from_end){
+	0: spriteset_train_railmedium9;
+	railuniversal2_wagon_switch;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium_9_graphics_both_draw3, position_in_consist){
+	0: spriteset_train_railmedium9;
+	1: spriteset_train_railmedium9;
+	switch_railmedium_9_graphics_both_draw3_end;
+}
+//--------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railmedium_9_graphics_both_draw4_end, position_in_consist_from_end){
+	0: spriteset_train_railmedium9;
+	1: spriteset_train_railmedium9;
+	railuniversal2_wagon_switch;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium_9_graphics_both_draw4, position_in_consist){
+	0: spriteset_train_railmedium9;
+	1: spriteset_train_railmedium9;
+	switch_railmedium_9_graphics_both_draw4_end;
+}
+switch(FEAT_TRAINS, PARENT, switch_railmedium9_graphics_both, count_veh_id(47)){
+	0..2: switch_railmedium_9_graphics_both_draw1;
+	3..4: switch_railmedium_9_graphics_both_draw2;
+	5..6: switch_railmedium_9_graphics_both_draw3;
+	7..8: switch_railmedium_9_graphics_both_draw4;
+	switch_railmedium_9_graphics_both_draw4;
+}
+
+
+switch(FEAT_TRAINS,PARENT, switch_railmedium9_graphics_decider, [
+STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+]){
+	47: switch_railmedium9_graphics_both;//vehicle ID here
+	switch_railmedium9_graphics_front;
+}
 
 
 //--------------------------------------------------------------------------------------------
