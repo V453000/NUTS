@@ -1,0 +1,898 @@
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw1, position_in_consist){
+  0: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw2_end, position_in_consist_from_end){
+  0: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw2, position_in_consist){
+  0: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw2_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw3_end, position_in_consist_from_end){
+  0: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw3, position_in_consist){
+  0..1: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw3_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw4_end, position_in_consist_from_end){
+  0..1: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw4, position_in_consist){
+  0..1: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw4_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw5_end, position_in_consist_from_end){
+  0..1: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw5, position_in_consist){
+  0..2: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw5_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw6_end, position_in_consist_from_end){
+  0..2: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw6, position_in_consist){
+  0..2: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw6_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw7_end, position_in_consist_from_end){
+  0..2: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw7, position_in_consist){
+  0..3: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw7_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw8_end, position_in_consist_from_end){
+  0..3: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw8, position_in_consist){
+  0..3: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw8_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw9_end, position_in_consist_from_end){
+  0..3: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw9, position_in_consist){
+  0..4: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw9_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw10_end, position_in_consist_from_end){
+  0..4: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw10, position_in_consist){
+  0..4: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw10_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw11_end, position_in_consist_from_end){
+  0..4: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw11, position_in_consist){
+  0..5: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw11_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw12_end, position_in_consist_from_end){
+  0..5: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw12, position_in_consist){
+  0..5: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw12_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw13_end, position_in_consist_from_end){
+  0..5: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw13, position_in_consist){
+  0..6: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw13_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw14_end, position_in_consist_from_end){
+  0..6: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw14, position_in_consist){
+  0..6: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw14_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw15_end, position_in_consist_from_end){
+  0..6: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw15, position_in_consist){
+  0..7: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw15_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw16_end, position_in_consist_from_end){
+  0..7: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw16, position_in_consist){
+  0..7: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw16_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw17_end, position_in_consist_from_end){
+  0..7: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw17, position_in_consist){
+  0..8: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw17_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw18_end, position_in_consist_from_end){
+  0..8: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw18, position_in_consist){
+  0..8: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw18_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw19_end, position_in_consist_from_end){
+  0..8: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw19, position_in_consist){
+  0..9: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw19_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw20_end, position_in_consist_from_end){
+  0..9: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw20, position_in_consist){
+  0..9: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw20_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw21_end, position_in_consist_from_end){
+  0..9: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw21, position_in_consist){
+  0..10: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw21_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw22_end, position_in_consist_from_end){
+  0..10: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw22, position_in_consist){
+  0..10: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw22_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw23_end, position_in_consist_from_end){
+  0..10: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw23, position_in_consist){
+  0..11: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw23_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw24_end, position_in_consist_from_end){
+  0..11: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw24, position_in_consist){
+  0..11: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw24_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw25_end, position_in_consist_from_end){
+  0..11: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw25, position_in_consist){
+  0..12: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw25_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw26_end, position_in_consist_from_end){
+  0..12: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw26, position_in_consist){
+  0..12: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw26_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw27_end, position_in_consist_from_end){
+  0..12: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw27, position_in_consist){
+  0..13: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw27_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw28_end, position_in_consist_from_end){
+  0..13: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw28, position_in_consist){
+  0..13: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw28_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw29_end, position_in_consist_from_end){
+  0..13: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw29, position_in_consist){
+  0..14: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw29_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw30_end, position_in_consist_from_end){
+  0..14: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw30, position_in_consist){
+  0..14: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw30_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw31_end, position_in_consist_from_end){
+  0..14: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw31, position_in_consist){
+  0..15: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw31_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw32_end, position_in_consist_from_end){
+  0..15: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw32, position_in_consist){
+  0..15: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw32_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw33_end, position_in_consist_from_end){
+  0..15: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw33, position_in_consist){
+  0..16: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw33_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw34_end, position_in_consist_from_end){
+  0..16: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw34, position_in_consist){
+  0..16: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw34_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw35_end, position_in_consist_from_end){
+  0..16: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw35, position_in_consist){
+  0..17: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw35_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw36_end, position_in_consist_from_end){
+  0..17: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw36, position_in_consist){
+  0..17: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw36_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw37_end, position_in_consist_from_end){
+  0..17: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw37, position_in_consist){
+  0..18: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw37_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw38_end, position_in_consist_from_end){
+  0..18: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw38, position_in_consist){
+  0..18: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw38_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw39_end, position_in_consist_from_end){
+  0..18: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw39, position_in_consist){
+  0..19: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw39_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw40_end, position_in_consist_from_end){
+  0..19: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw40, position_in_consist){
+  0..19: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw40_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw41_end, position_in_consist_from_end){
+  0..19: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw41, position_in_consist){
+  0..20: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw41_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw42_end, position_in_consist_from_end){
+  0..20: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw42, position_in_consist){
+  0..20: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw42_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw43_end, position_in_consist_from_end){
+  0..20: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw43, position_in_consist){
+  0..21: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw43_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw44_end, position_in_consist_from_end){
+  0..21: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw44, position_in_consist){
+  0..21: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw44_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw45_end, position_in_consist_from_end){
+  0..21: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw45, position_in_consist){
+  0..22: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw45_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw46_end, position_in_consist_from_end){
+  0..22: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw46, position_in_consist){
+  0..22: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw46_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw47_end, position_in_consist_from_end){
+  0..22: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw47, position_in_consist){
+  0..23: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw47_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw48_end, position_in_consist_from_end){
+  0..23: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw48, position_in_consist){
+  0..23: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw48_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw49_end, position_in_consist_from_end){
+  0..23: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw49, position_in_consist){
+  0..24: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw49_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw50_end, position_in_consist_from_end){
+  0..24: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw50, position_in_consist){
+  0..24: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw50_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw51_end, position_in_consist_from_end){
+  0..24: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw51, position_in_consist){
+  0..25: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw51_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw52_end, position_in_consist_from_end){
+  0..25: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw52, position_in_consist){
+  0..25: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw52_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw53_end, position_in_consist_from_end){
+  0..25: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw53, position_in_consist){
+  0..26: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw53_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw54_end, position_in_consist_from_end){
+  0..26: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw54, position_in_consist){
+  0..26: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw54_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw55_end, position_in_consist_from_end){
+  0..26: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw55, position_in_consist){
+  0..27: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw55_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw56_end, position_in_consist_from_end){
+  0..27: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw56, position_in_consist){
+  0..27: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw56_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw57_end, position_in_consist_from_end){
+  0..27: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw57, position_in_consist){
+  0..28: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw57_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw58_end, position_in_consist_from_end){
+  0..28: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw58, position_in_consist){
+  0..28: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw58_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw59_end, position_in_consist_from_end){
+  0..28: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw59, position_in_consist){
+  0..29: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw59_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw60_end, position_in_consist_from_end){
+  0..29: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw60, position_in_consist){
+  0..29: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw60_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw61_end, position_in_consist_from_end){
+  0..29: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw61, position_in_consist){
+  0..30: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw61_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw62_end, position_in_consist_from_end){
+  0..30: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw62, position_in_consist){
+  0..30: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw62_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw63_end, position_in_consist_from_end){
+  0..30: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw63, position_in_consist){
+  0..31: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw63_end;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw64_end, position_in_consist_from_end){
+  0..31: switch_rail_freight_vehid_back;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_both_draw64, position_in_consist){
+  0..31: switch_rail_freight_vehid_front;
+  switch_railmedium9_graphics_both_draw64_end;
+}
+switch(FEAT_TRAINS, PARENT, switch_railmedium9_graphics_both, count_veh_id(47)){
+  1..2: switch_railmedium9_graphics_both_draw1;
+  3..4: switch_railmedium9_graphics_both_draw2;
+  5..6: switch_railmedium9_graphics_both_draw3;
+  7..8: switch_railmedium9_graphics_both_draw4;
+  9..10: switch_railmedium9_graphics_both_draw5;
+  11..12: switch_railmedium9_graphics_both_draw6;
+  13..14: switch_railmedium9_graphics_both_draw7;
+  15..16: switch_railmedium9_graphics_both_draw8;
+  17..18: switch_railmedium9_graphics_both_draw9;
+  19..20: switch_railmedium9_graphics_both_draw10;
+  21..22: switch_railmedium9_graphics_both_draw11;
+  23..24: switch_railmedium9_graphics_both_draw12;
+  25..26: switch_railmedium9_graphics_both_draw13;
+  27..28: switch_railmedium9_graphics_both_draw14;
+  29..30: switch_railmedium9_graphics_both_draw15;
+  31..32: switch_railmedium9_graphics_both_draw16;
+  33..34: switch_railmedium9_graphics_both_draw17;
+  35..36: switch_railmedium9_graphics_both_draw18;
+  37..38: switch_railmedium9_graphics_both_draw19;
+  39..40: switch_railmedium9_graphics_both_draw20;
+  41..42: switch_railmedium9_graphics_both_draw21;
+  43..44: switch_railmedium9_graphics_both_draw22;
+  45..46: switch_railmedium9_graphics_both_draw23;
+  47..48: switch_railmedium9_graphics_both_draw24;
+  49..50: switch_railmedium9_graphics_both_draw25;
+  51..52: switch_railmedium9_graphics_both_draw26;
+  53..54: switch_railmedium9_graphics_both_draw27;
+  55..56: switch_railmedium9_graphics_both_draw28;
+  57..58: switch_railmedium9_graphics_both_draw29;
+  59..60: switch_railmedium9_graphics_both_draw30;
+  61..62: switch_railmedium9_graphics_both_draw31;
+  63..64: switch_railmedium9_graphics_both_draw32;
+  65..66: switch_railmedium9_graphics_both_draw33;
+  67..68: switch_railmedium9_graphics_both_draw34;
+  69..70: switch_railmedium9_graphics_both_draw35;
+  71..72: switch_railmedium9_graphics_both_draw36;
+  73..74: switch_railmedium9_graphics_both_draw37;
+  75..76: switch_railmedium9_graphics_both_draw38;
+  77..78: switch_railmedium9_graphics_both_draw39;
+  79..80: switch_railmedium9_graphics_both_draw40;
+  81..82: switch_railmedium9_graphics_both_draw41;
+  83..84: switch_railmedium9_graphics_both_draw42;
+  85..86: switch_railmedium9_graphics_both_draw43;
+  87..88: switch_railmedium9_graphics_both_draw44;
+  89..90: switch_railmedium9_graphics_both_draw45;
+  91..92: switch_railmedium9_graphics_both_draw46;
+  93..94: switch_railmedium9_graphics_both_draw47;
+  95..96: switch_railmedium9_graphics_both_draw48;
+  97..98: switch_railmedium9_graphics_both_draw49;
+  99..100: switch_railmedium9_graphics_both_draw50;
+  101..102: switch_railmedium9_graphics_both_draw51;
+  103..104: switch_railmedium9_graphics_both_draw52;
+  105..106: switch_railmedium9_graphics_both_draw53;
+  107..108: switch_railmedium9_graphics_both_draw54;
+  109..110: switch_railmedium9_graphics_both_draw55;
+  111..112: switch_railmedium9_graphics_both_draw56;
+  113..114: switch_railmedium9_graphics_both_draw57;
+  115..116: switch_railmedium9_graphics_both_draw58;
+  117..118: switch_railmedium9_graphics_both_draw59;
+  119..120: switch_railmedium9_graphics_both_draw60;
+  121..122: switch_railmedium9_graphics_both_draw61;
+  123..124: switch_railmedium9_graphics_both_draw62;
+  125..126: switch_railmedium9_graphics_both_draw63;
+  127..128: switch_railmedium9_graphics_both_draw64;
+  switch_railmedium9_graphics_both_draw64;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw1, position_in_consist){
+  0..0: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw2, position_in_consist){
+  0..1: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw3, position_in_consist){
+  0..2: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw4, position_in_consist){
+  0..3: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw5, position_in_consist){
+  0..4: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw6, position_in_consist){
+  0..5: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw7, position_in_consist){
+  0..6: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw8, position_in_consist){
+  0..7: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw9, position_in_consist){
+  0..8: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw10, position_in_consist){
+  0..9: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw11, position_in_consist){
+  0..10: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw12, position_in_consist){
+  0..11: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw13, position_in_consist){
+  0..12: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw14, position_in_consist){
+  0..13: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw15, position_in_consist){
+  0..14: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw16, position_in_consist){
+  0..15: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw17, position_in_consist){
+  0..16: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw18, position_in_consist){
+  0..17: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw19, position_in_consist){
+  0..18: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw20, position_in_consist){
+  0..19: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw21, position_in_consist){
+  0..20: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw22, position_in_consist){
+  0..21: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw23, position_in_consist){
+  0..22: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw24, position_in_consist){
+  0..23: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw25, position_in_consist){
+  0..24: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw26, position_in_consist){
+  0..25: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw27, position_in_consist){
+  0..26: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw28, position_in_consist){
+  0..27: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw29, position_in_consist){
+  0..28: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw30, position_in_consist){
+  0..29: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw31, position_in_consist){
+  0..30: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw32, position_in_consist){
+  0..31: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw33, position_in_consist){
+  0..32: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw34, position_in_consist){
+  0..33: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw35, position_in_consist){
+  0..34: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw36, position_in_consist){
+  0..35: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw37, position_in_consist){
+  0..36: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw38, position_in_consist){
+  0..37: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw39, position_in_consist){
+  0..38: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw40, position_in_consist){
+  0..39: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw41, position_in_consist){
+  0..40: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw42, position_in_consist){
+  0..41: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw43, position_in_consist){
+  0..42: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw44, position_in_consist){
+  0..43: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw45, position_in_consist){
+  0..44: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw46, position_in_consist){
+  0..45: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw47, position_in_consist){
+  0..46: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw48, position_in_consist){
+  0..47: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw49, position_in_consist){
+  0..48: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw50, position_in_consist){
+  0..49: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw51, position_in_consist){
+  0..50: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw52, position_in_consist){
+  0..51: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw53, position_in_consist){
+  0..52: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw54, position_in_consist){
+  0..53: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw55, position_in_consist){
+  0..54: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw56, position_in_consist){
+  0..55: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw57, position_in_consist){
+  0..56: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw58, position_in_consist){
+  0..57: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw59, position_in_consist){
+  0..58: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw60, position_in_consist){
+  0..59: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw61, position_in_consist){
+  0..60: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw62, position_in_consist){
+  0..61: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw63, position_in_consist){
+  0..62: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, SELF, switch_railmedium9_graphics_front_draw64, position_in_consist){
+  0..63: switch_rail_freight_vehid_front;
+  switch_rail_freight_vehid_wagons;
+}
+switch(FEAT_TRAINS, PARENT, switch_railmedium9_graphics_front, count_veh_id(47)){
+  1..2: switch_railmedium9_graphics_front_draw1;
+  3..4: switch_railmedium9_graphics_front_draw2;
+  5..6: switch_railmedium9_graphics_front_draw3;
+  7..8: switch_railmedium9_graphics_front_draw4;
+  9..10: switch_railmedium9_graphics_front_draw5;
+  11..12: switch_railmedium9_graphics_front_draw6;
+  13..14: switch_railmedium9_graphics_front_draw7;
+  15..16: switch_railmedium9_graphics_front_draw8;
+  17..18: switch_railmedium9_graphics_front_draw9;
+  19..20: switch_railmedium9_graphics_front_draw10;
+  21..22: switch_railmedium9_graphics_front_draw11;
+  23..24: switch_railmedium9_graphics_front_draw12;
+  25..26: switch_railmedium9_graphics_front_draw13;
+  27..28: switch_railmedium9_graphics_front_draw14;
+  29..30: switch_railmedium9_graphics_front_draw15;
+  31..32: switch_railmedium9_graphics_front_draw16;
+  33..34: switch_railmedium9_graphics_front_draw17;
+  35..36: switch_railmedium9_graphics_front_draw18;
+  37..38: switch_railmedium9_graphics_front_draw19;
+  39..40: switch_railmedium9_graphics_front_draw20;
+  41..42: switch_railmedium9_graphics_front_draw21;
+  43..44: switch_railmedium9_graphics_front_draw22;
+  45..46: switch_railmedium9_graphics_front_draw23;
+  47..48: switch_railmedium9_graphics_front_draw24;
+  49..50: switch_railmedium9_graphics_front_draw25;
+  51..52: switch_railmedium9_graphics_front_draw26;
+  53..54: switch_railmedium9_graphics_front_draw27;
+  55..56: switch_railmedium9_graphics_front_draw28;
+  57..58: switch_railmedium9_graphics_front_draw29;
+  59..60: switch_railmedium9_graphics_front_draw30;
+  61..62: switch_railmedium9_graphics_front_draw31;
+  63..64: switch_railmedium9_graphics_front_draw32;
+  65..66: switch_railmedium9_graphics_front_draw33;
+  67..68: switch_railmedium9_graphics_front_draw34;
+  69..70: switch_railmedium9_graphics_front_draw35;
+  71..72: switch_railmedium9_graphics_front_draw36;
+  73..74: switch_railmedium9_graphics_front_draw37;
+  75..76: switch_railmedium9_graphics_front_draw38;
+  77..78: switch_railmedium9_graphics_front_draw39;
+  79..80: switch_railmedium9_graphics_front_draw40;
+  81..82: switch_railmedium9_graphics_front_draw41;
+  83..84: switch_railmedium9_graphics_front_draw42;
+  85..86: switch_railmedium9_graphics_front_draw43;
+  87..88: switch_railmedium9_graphics_front_draw44;
+  89..90: switch_railmedium9_graphics_front_draw45;
+  91..92: switch_railmedium9_graphics_front_draw46;
+  93..94: switch_railmedium9_graphics_front_draw47;
+  95..96: switch_railmedium9_graphics_front_draw48;
+  97..98: switch_railmedium9_graphics_front_draw49;
+  99..100: switch_railmedium9_graphics_front_draw50;
+  101..102: switch_railmedium9_graphics_front_draw51;
+  103..104: switch_railmedium9_graphics_front_draw52;
+  105..106: switch_railmedium9_graphics_front_draw53;
+  107..108: switch_railmedium9_graphics_front_draw54;
+  109..110: switch_railmedium9_graphics_front_draw55;
+  111..112: switch_railmedium9_graphics_front_draw56;
+  113..114: switch_railmedium9_graphics_front_draw57;
+  115..116: switch_railmedium9_graphics_front_draw58;
+  117..118: switch_railmedium9_graphics_front_draw59;
+  119..120: switch_railmedium9_graphics_front_draw60;
+  121..122: switch_railmedium9_graphics_front_draw61;
+  123..124: switch_railmedium9_graphics_front_draw62;
+  125..126: switch_railmedium9_graphics_front_draw63;
+  127..128: switch_railmedium9_graphics_front_draw64;
+  switch_railmedium9_graphics_front_draw64;
+}

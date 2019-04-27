@@ -1,0 +1,1413 @@
+//RAIL WAGONS 3
+//UNIVERSAL CARGO SWITCH
+switch(FEAT_TRAINS, SELF, switch_capacity_railuniversal2, cargo_type_in_veh){
+	CERE: 35;
+	CMNT: 35;
+	COLA: 35;
+	BEER: 35;
+	RFPR: 35;
+	FISH: 35;
+	MILK: 35;
+	OIL_: 35;
+	PETR: 35;
+	PLAS: 35;
+	PLST: 35;
+	WATR: 35;
+	AORE: 35;
+	LIME: 35;
+	CTCD: 35;
+	CLAY: 35;
+	POTA: 35;
+	COAL: 35;
+	CORE: 35;
+	FMSP: 35;
+	FERT: 35;
+	GRAI: 35;
+	WHEA: 35;
+	MAIZ: 35;
+	IORE: 35;
+	OLSD: 35;
+	FICR: 35;
+	RUBR: 35;
+	SCMT: 35;
+	SAND: 35;
+	GRVL: 35;
+	SUGR: 35;
+	SGBT: 35;
+	SGCN: 35;
+	TOFF: 35;
+	WOOL: 35;
+	RCYC: 35;
+	BRCK: 35;
+	BDMT: 35;
+	BATT: 35;
+	BUBL: 35;
+	FZDR: 35;
+	FOOD: 35;
+	FRUT: 35;
+	GLAS: 35;
+	GOOD: 35;
+	LVST: 35;
+	WDPR: 35;
+	MNSP: 35;
+	PAPR: 35;
+	STEL: 35;
+	SWET: 35;
+	TOYS: 35;
+	VEHI: 35;
+	ENSP: 35;
+	WOOD: 35;
+	VALU: 35;
+	DIAM: 35;
+	GOLD: 35;
+	return 35;
+}
+
+//RAIL FLATBED 3
+//SPRITESETS
+spriteset(spriteset_purchaseMenu_railflatbed2,		"gfx/PurchaseMenu.png"){template_purchaseMenu(0,23)}
+spriteset(spriteset_railflatbed2_empty_bricks, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 0) }
+spriteset(spriteset_railflatbed2_empty_batteries, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 2) }
+spriteset(spriteset_railflatbed2_empty_bubbles, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 4) }
+spriteset(spriteset_railflatbed2_empty_fizzydrinks, 	"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 6) }
+spriteset(spriteset_railflatbed2_empty_food, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 8) }
+spriteset(spriteset_railflatbed2_empty_fruit, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 10) }
+spriteset(spriteset_railflatbed2_empty_glass, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 12) }
+spriteset(spriteset_railflatbed2_empty_containers, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 14) }
+spriteset(spriteset_railflatbed2_empty_lumber, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 16) }
+spriteset(spriteset_railflatbed2_empty_crates, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 18) }
+spriteset(spriteset_railflatbed2_empty_barrels, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 20) }
+spriteset(spriteset_railflatbed2_empty_livestock, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 22) }
+spriteset(spriteset_railflatbed2_empty_paper, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 24) }
+spriteset(spriteset_railflatbed2_empty_steel, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 26) }
+spriteset(spriteset_railflatbed2_empty_sweets, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 28) }
+spriteset(spriteset_railflatbed2_empty_toys, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 30) }
+spriteset(spriteset_railflatbed2_empty_cars, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 32) }
+spriteset(spriteset_railflatbed2_empty_vehicles, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 34) }
+spriteset(spriteset_railflatbed2_empty_wood, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 36) }
+spriteset(spriteset_railflatbed2_empty_valu, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 38) }
+spriteset(spriteset_railflatbed2_empty_diam, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 40) }
+spriteset(spriteset_railflatbed2_empty_gold, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 42) }
+
+spriteset(spriteset_railflatbed2_full_bricks, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 0) }
+spriteset(spriteset_railflatbed2_full_batteries, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 2) }
+spriteset(spriteset_railflatbed2_full_bubbles, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 4) }
+spriteset(spriteset_railflatbed2_full_fizzydrinks, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 6) }
+spriteset(spriteset_railflatbed2_full_food, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 8) }
+spriteset(spriteset_railflatbed2_full_fruit, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 10) }
+spriteset(spriteset_railflatbed2_full_glass, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 12) }
+spriteset(spriteset_railflatbed2_full_containers, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 14) }
+spriteset(spriteset_railflatbed2_full_lumber, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 16) }
+spriteset(spriteset_railflatbed2_full_crates, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 18) }
+spriteset(spriteset_railflatbed2_full_barrels, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 20) }
+spriteset(spriteset_railflatbed2_full_livestock, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 22) }
+spriteset(spriteset_railflatbed2_full_paper, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 24) }
+spriteset(spriteset_railflatbed2_full_steel, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 26) }
+spriteset(spriteset_railflatbed2_full_sweets, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 28) }
+spriteset(spriteset_railflatbed2_full_toys, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 30) }
+spriteset(spriteset_railflatbed2_full_cars, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 32) }
+spriteset(spriteset_railflatbed2_full_vehicles, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 34) }
+spriteset(spriteset_railflatbed2_full_wood, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 36) }
+spriteset(spriteset_railflatbed2_full_valu, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 38) }
+spriteset(spriteset_railflatbed2_full_diam, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 40) }
+spriteset(spriteset_railflatbed2_full_gold, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 42) }
+
+spriteset(spriteset_railflatbed2_1full_bricks, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 1) }
+spriteset(spriteset_railflatbed2_1full_batteries, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 3) }
+spriteset(spriteset_railflatbed2_1full_bubbles, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 5) }
+spriteset(spriteset_railflatbed2_1full_fizzydrinks, 	"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 7) }
+spriteset(spriteset_railflatbed2_1full_food, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 9) }
+spriteset(spriteset_railflatbed2_1full_fruit, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 11) }
+spriteset(spriteset_railflatbed2_1full_glass, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 13) }
+spriteset(spriteset_railflatbed2_1full_containers, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 15) }
+spriteset(spriteset_railflatbed2_1full_lumber, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 17) }
+spriteset(spriteset_railflatbed2_1full_crates, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 19) }
+spriteset(spriteset_railflatbed2_1full_barrels, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 21) }
+spriteset(spriteset_railflatbed2_1full_livestock, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 23) }
+spriteset(spriteset_railflatbed2_1full_paper, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 25) }
+spriteset(spriteset_railflatbed2_1full_steel, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 27) }
+spriteset(spriteset_railflatbed2_1full_sweets, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 29) }
+spriteset(spriteset_railflatbed2_1full_toys, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 31) }
+spriteset(spriteset_railflatbed2_1full_cars, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 33) }
+spriteset(spriteset_railflatbed2_1full_vehicles, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 35) }
+spriteset(spriteset_railflatbed2_1full_wood, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 37) }
+spriteset(spriteset_railflatbed2_1full_valu, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 39) }
+spriteset(spriteset_railflatbed2_1full_diam, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 41) }
+spriteset(spriteset_railflatbed2_1full_gold, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 43) }
+
+spriteset(spriteset_railflatbed2_2full_bricks, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 1) }
+spriteset(spriteset_railflatbed2_2full_batteries, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 3) }
+spriteset(spriteset_railflatbed2_2full_bubbles, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 5) }
+spriteset(spriteset_railflatbed2_2full_fizzydrinks, 	"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 7) }
+spriteset(spriteset_railflatbed2_2full_food, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 9) }
+spriteset(spriteset_railflatbed2_2full_fruit, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 11) }
+spriteset(spriteset_railflatbed2_2full_glass, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 13) }
+spriteset(spriteset_railflatbed2_2full_containers, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 15) }
+spriteset(spriteset_railflatbed2_2full_lumber, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 17) }
+spriteset(spriteset_railflatbed2_2full_crates, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 19) }
+spriteset(spriteset_railflatbed2_2full_barrels, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 21) }
+spriteset(spriteset_railflatbed2_2full_livestock, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 23) }
+spriteset(spriteset_railflatbed2_2full_paper, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 25) }
+spriteset(spriteset_railflatbed2_2full_steel, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 27) }
+spriteset(spriteset_railflatbed2_2full_sweets, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 29) }
+spriteset(spriteset_railflatbed2_2full_toys, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 31) }
+spriteset(spriteset_railflatbed2_2full_cars, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 33) }
+spriteset(spriteset_railflatbed2_2full_vehicles, 		"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 35) }
+spriteset(spriteset_railflatbed2_2full_wood, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 37) }
+spriteset(spriteset_railflatbed2_2full_valu, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 39) }
+spriteset(spriteset_railflatbed2_2full_diam, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 41) }
+spriteset(spriteset_railflatbed2_2full_gold, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 43) }
+
+//FOOD
+spriteset(spriteset_railflatbed2_food_0full_bgr, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(0, 0) }
+spriteset(spriteset_railflatbed2_food_1full_bgr, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(0, 1) }
+spriteset(spriteset_railflatbed2_food_2full_bgr, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(184, 1) }
+spriteset(spriteset_railflatbed2_food_3full_bgr, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(184, 0) }
+
+spriteset(spriteset_railflatbed2_food_0full_gbr, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(0, 2) }
+spriteset(spriteset_railflatbed2_food_1full_gbr, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(0, 3) }
+spriteset(spriteset_railflatbed2_food_2full_gbr, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(184, 3) }
+spriteset(spriteset_railflatbed2_food_3full_gbr, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(184, 2) }
+
+spriteset(spriteset_railflatbed2_food_0full_rbg, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(0, 4) }
+spriteset(spriteset_railflatbed2_food_1full_rbg, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(0, 5) }
+spriteset(spriteset_railflatbed2_food_2full_rbg, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(184, 5) }
+spriteset(spriteset_railflatbed2_food_3full_rbg, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(184, 4) }
+
+spriteset(spriteset_railflatbed2_food_0full_bgy, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(0, 6) }
+spriteset(spriteset_railflatbed2_food_1full_bgy, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(0, 7) }
+spriteset(spriteset_railflatbed2_food_2full_bgy, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(184, 7) }
+spriteset(spriteset_railflatbed2_food_3full_bgy, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(184, 6) }
+
+spriteset(spriteset_railflatbed2_food_0full_gyb, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(0, 8) }
+spriteset(spriteset_railflatbed2_food_1full_gyb, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(0, 9) }
+spriteset(spriteset_railflatbed2_food_2full_gyb, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(184, 9) }
+spriteset(spriteset_railflatbed2_food_3full_gyb, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(184, 8) }
+
+spriteset(spriteset_railflatbed2_food_0full_ybg, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(0, 10) }
+spriteset(spriteset_railflatbed2_food_1full_ybg, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(0, 11) }
+spriteset(spriteset_railflatbed2_food_2full_ybg, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(184, 11) }
+spriteset(spriteset_railflatbed2_food_3full_ybg, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(184, 10) }
+
+spriteset(spriteset_railflatbed2_food_0full_byr, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(0, 12) }
+spriteset(spriteset_railflatbed2_food_1full_byr, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(0, 13) }
+spriteset(spriteset_railflatbed2_food_2full_byr, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(184, 13) }
+spriteset(spriteset_railflatbed2_food_3full_byr, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(184, 12) }
+
+spriteset(spriteset_railflatbed2_food_0full_yrb, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(0, 14) }
+spriteset(spriteset_railflatbed2_food_1full_yrb, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(0, 15) }
+spriteset(spriteset_railflatbed2_food_2full_yrb, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(184, 15) }
+spriteset(spriteset_railflatbed2_food_3full_yrb, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(184, 14) }
+
+spriteset(spriteset_railflatbed2_food_0full_rby, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(0, 16) }
+spriteset(spriteset_railflatbed2_food_1full_rby, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(0, 17) }
+spriteset(spriteset_railflatbed2_food_2full_rby, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(184, 17) }
+spriteset(spriteset_railflatbed2_food_3full_rby, 		"gfx/RailWagons_2nd_Flatbed_food.png") { template_engine32WTF(184, 16) }
+//SPRITEGROUPS
+spritegroup spritegroup_railflatbed2_bricks {
+	loading: [spriteset_railflatbed2_empty_bricks, spriteset_railflatbed2_1full_bricks, spriteset_railflatbed2_2full_bricks, spriteset_railflatbed2_full_bricks];
+	loaded:  [spriteset_railflatbed2_empty_bricks, spriteset_railflatbed2_1full_bricks, spriteset_railflatbed2_2full_bricks, spriteset_railflatbed2_full_bricks];
+}
+spritegroup spritegroup_railflatbed2_batteries {
+	loading: [spriteset_railflatbed2_empty_batteries, spriteset_railflatbed2_1full_batteries, spriteset_railflatbed2_2full_batteries, spriteset_railflatbed2_full_batteries];
+	loaded:  [spriteset_railflatbed2_empty_batteries, spriteset_railflatbed2_1full_batteries, spriteset_railflatbed2_2full_batteries, spriteset_railflatbed2_full_batteries];
+}
+spritegroup spritegroup_railflatbed2_bubbles {
+	loading: [spriteset_railflatbed2_empty_bubbles, spriteset_railflatbed2_1full_bubbles, spriteset_railflatbed2_2full_bubbles, spriteset_railflatbed2_full_bubbles];
+	loaded:  [spriteset_railflatbed2_empty_bubbles, spriteset_railflatbed2_1full_bubbles, spriteset_railflatbed2_2full_bubbles, spriteset_railflatbed2_full_bubbles];
+}
+spritegroup spritegroup_railflatbed2_fizzydrinks {
+	loading: [spriteset_railflatbed2_empty_fizzydrinks, spriteset_railflatbed2_1full_fizzydrinks, spriteset_railflatbed2_2full_fizzydrinks, spriteset_railflatbed2_full_fizzydrinks];
+	loaded:  [spriteset_railflatbed2_empty_fizzydrinks, spriteset_railflatbed2_1full_fizzydrinks, spriteset_railflatbed2_2full_fizzydrinks, spriteset_railflatbed2_full_fizzydrinks];
+}
+
+spritegroup spritegroup_railflatbed2_fruit {
+	loading: [spriteset_railflatbed2_empty_fruit, spriteset_railflatbed2_1full_fruit, spriteset_railflatbed2_2full_fruit, spriteset_railflatbed2_full_fruit];
+	loaded:  [spriteset_railflatbed2_empty_fruit, spriteset_railflatbed2_1full_fruit, spriteset_railflatbed2_2full_fruit, spriteset_railflatbed2_full_fruit];
+}
+spritegroup spritegroup_railflatbed2_glass {
+	loading: [spriteset_railflatbed2_empty_glass, spriteset_railflatbed2_1full_glass, spriteset_railflatbed2_2full_glass, spriteset_railflatbed2_full_glass];
+	loaded:  [spriteset_railflatbed2_empty_glass, spriteset_railflatbed2_1full_glass, spriteset_railflatbed2_2full_glass, spriteset_railflatbed2_full_glass];
+}
+spritegroup spritegroup_railflatbed2_containers {
+	loaded: [spriteset_railflatbed2_empty_containers, spriteset_railflatbed2_1full_containers, spriteset_railflatbed2_2full_containers, spriteset_railflatbed2_full_containers];
+	loading:  [spriteset_railflatbed2_empty_containers, spriteset_railflatbed2_1full_containers, spriteset_railflatbed2_2full_containers, spriteset_railflatbed2_full_containers];
+}
+spritegroup spritegroup_railflatbed2_lumber {
+	loading: [spriteset_railflatbed2_empty_lumber, spriteset_railflatbed2_1full_lumber, spriteset_railflatbed2_2full_lumber, spriteset_railflatbed2_full_lumber];
+	loaded:  [spriteset_railflatbed2_empty_lumber, spriteset_railflatbed2_1full_lumber, spriteset_railflatbed2_2full_lumber, spriteset_railflatbed2_full_lumber];
+}
+spritegroup spritegroup_railflatbed2_crates {
+	loading: [spriteset_railflatbed2_empty_crates, spriteset_railflatbed2_1full_crates, spriteset_railflatbed2_2full_crates, spriteset_railflatbed2_full_crates];
+	loaded:  [spriteset_railflatbed2_empty_crates, spriteset_railflatbed2_1full_crates, spriteset_railflatbed2_2full_crates, spriteset_railflatbed2_full_crates];
+}
+
+spritegroup spritegroup_railflatbed2_livestock {
+	loading: [spriteset_railflatbed2_empty_livestock, spriteset_railflatbed2_1full_livestock, spriteset_railflatbed2_2full_livestock, spriteset_railflatbed2_full_livestock];
+	loaded:  [spriteset_railflatbed2_empty_livestock, spriteset_railflatbed2_1full_livestock, spriteset_railflatbed2_2full_livestock, spriteset_railflatbed2_full_livestock];
+}
+spritegroup spritegroup_railflatbed2_paper {
+	loading: [spriteset_railflatbed2_empty_paper, spriteset_railflatbed2_1full_paper, spriteset_railflatbed2_2full_paper, spriteset_railflatbed2_full_paper];
+	loaded:  [spriteset_railflatbed2_empty_paper, spriteset_railflatbed2_1full_paper, spriteset_railflatbed2_2full_paper, spriteset_railflatbed2_full_paper];
+
+}
+spritegroup spritegroup_railflatbed2_steel {
+	loading: [spriteset_railflatbed2_empty_steel, spriteset_railflatbed2_1full_steel, spriteset_railflatbed2_2full_steel, spriteset_railflatbed2_full_steel];
+	loaded:  [spriteset_railflatbed2_empty_steel, spriteset_railflatbed2_1full_steel, spriteset_railflatbed2_2full_steel, spriteset_railflatbed2_full_steel];
+}
+spritegroup spritegroup_railflatbed2_sweets {
+	loading: [spriteset_railflatbed2_empty_sweets, spriteset_railflatbed2_1full_sweets, spriteset_railflatbed2_2full_sweets, spriteset_railflatbed2_full_sweets];
+	loaded:  [spriteset_railflatbed2_empty_sweets, spriteset_railflatbed2_1full_sweets, spriteset_railflatbed2_2full_sweets, spriteset_railflatbed2_full_sweets];
+}
+
+spritegroup spritegroup_railflatbed2_rubberduckies {
+	loading: [spriteset_railflatbed2_empty_toys, spriteset_railflatbed2_1full_toys, spriteset_railflatbed2_2full_toys, spriteset_railflatbed2_full_toys];
+	loaded:  [spriteset_railflatbed2_empty_toys, spriteset_railflatbed2_1full_toys, spriteset_railflatbed2_2full_toys, spriteset_railflatbed2_full_toys];
+}
+spritegroup spritegroup_railflatbed2_cars {
+	loading: [spriteset_railflatbed2_empty_cars, spriteset_railflatbed2_1full_cars, spriteset_railflatbed2_2full_cars, spriteset_railflatbed2_full_cars];
+	loaded:  [spriteset_railflatbed2_empty_cars, spriteset_railflatbed2_1full_cars, spriteset_railflatbed2_2full_cars, spriteset_railflatbed2_full_cars];
+}
+
+spritegroup spritegroup_railflatbed2_wood {
+	loading: [spriteset_railflatbed2_empty_wood, spriteset_railflatbed2_1full_wood, spriteset_railflatbed2_2full_wood, spriteset_railflatbed2_full_wood];
+	loaded:  [spriteset_railflatbed2_empty_wood, spriteset_railflatbed2_1full_wood, spriteset_railflatbed2_2full_wood, spriteset_railflatbed2_full_wood];
+}
+spritegroup spritegroup_railflatbed2_valu {
+	loading: [spriteset_railflatbed2_empty_valu, spriteset_railflatbed2_1full_valu, spriteset_railflatbed2_2full_valu, spriteset_railflatbed2_full_valu];
+	loaded:  [spriteset_railflatbed2_empty_valu, spriteset_railflatbed2_1full_valu, spriteset_railflatbed2_2full_valu, spriteset_railflatbed2_full_valu];
+}
+spritegroup spritegroup_railflatbed2_diam {
+	loading: [spriteset_railflatbed2_empty_diam, spriteset_railflatbed2_1full_diam, spriteset_railflatbed2_2full_diam, spriteset_railflatbed2_full_diam];
+	loaded:  [spriteset_railflatbed2_empty_diam, spriteset_railflatbed2_1full_diam, spriteset_railflatbed2_2full_diam, spriteset_railflatbed2_full_diam];
+}
+spritegroup spritegroup_railflatbed2_gold {
+	loading: [spriteset_railflatbed2_empty_gold, spriteset_railflatbed2_1full_gold, spriteset_railflatbed2_2full_gold, spriteset_railflatbed2_full_gold];
+	loaded:  [spriteset_railflatbed2_empty_gold, spriteset_railflatbed2_1full_gold, spriteset_railflatbed2_2full_gold, spriteset_railflatbed2_full_gold];
+}
+spritegroup spritegroup_railflatbed2_food_bgr {
+	loading: [spriteset_railflatbed2_food_0full_bgr, spriteset_railflatbed2_food_1full_bgr, spriteset_railflatbed2_food_2full_bgr, spriteset_railflatbed2_food_3full_bgr];
+	loaded:  [spriteset_railflatbed2_food_0full_bgr, spriteset_railflatbed2_food_1full_bgr, spriteset_railflatbed2_food_2full_bgr, spriteset_railflatbed2_food_3full_bgr];
+}
+spritegroup spritegroup_railflatbed2_food_gbr {
+	loading: [spriteset_railflatbed2_food_0full_gbr, spriteset_railflatbed2_food_1full_gbr, spriteset_railflatbed2_food_2full_gbr, spriteset_railflatbed2_food_3full_gbr];
+	loaded:  [spriteset_railflatbed2_food_0full_gbr, spriteset_railflatbed2_food_1full_gbr, spriteset_railflatbed2_food_2full_gbr, spriteset_railflatbed2_food_3full_gbr];
+}
+spritegroup spritegroup_railflatbed2_food_rbg {
+	loading: [spriteset_railflatbed2_food_0full_rbg, spriteset_railflatbed2_food_1full_rbg, spriteset_railflatbed2_food_2full_rbg, spriteset_railflatbed2_food_3full_rbg];
+	loaded:  [spriteset_railflatbed2_food_0full_rbg, spriteset_railflatbed2_food_1full_rbg, spriteset_railflatbed2_food_2full_rbg, spriteset_railflatbed2_food_3full_rbg];
+}
+spritegroup spritegroup_railflatbed2_food_bgy {
+	loading: [spriteset_railflatbed2_food_0full_bgy, spriteset_railflatbed2_food_1full_bgy, spriteset_railflatbed2_food_2full_bgy, spriteset_railflatbed2_food_3full_bgy];
+	loaded:  [spriteset_railflatbed2_food_0full_bgy, spriteset_railflatbed2_food_1full_bgy, spriteset_railflatbed2_food_2full_bgy, spriteset_railflatbed2_food_3full_bgy];
+}
+spritegroup spritegroup_railflatbed2_food_gyb {
+	loading: [spriteset_railflatbed2_food_0full_gyb, spriteset_railflatbed2_food_1full_gyb, spriteset_railflatbed2_food_2full_gyb, spriteset_railflatbed2_food_3full_gyb];
+	loaded:  [spriteset_railflatbed2_food_0full_gyb, spriteset_railflatbed2_food_1full_gyb, spriteset_railflatbed2_food_2full_gyb, spriteset_railflatbed2_food_3full_gyb];
+}
+spritegroup spritegroup_railflatbed2_food_ybg {
+	loading: [spriteset_railflatbed2_food_0full_ybg, spriteset_railflatbed2_food_1full_ybg, spriteset_railflatbed2_food_2full_ybg, spriteset_railflatbed2_food_3full_ybg];
+	loaded:  [spriteset_railflatbed2_food_0full_ybg, spriteset_railflatbed2_food_1full_ybg, spriteset_railflatbed2_food_2full_ybg, spriteset_railflatbed2_food_3full_ybg];
+}
+spritegroup spritegroup_railflatbed2_food_byr {
+	loading: [spriteset_railflatbed2_food_0full_byr, spriteset_railflatbed2_food_1full_byr, spriteset_railflatbed2_food_2full_byr, spriteset_railflatbed2_food_3full_byr];
+	loaded:  [spriteset_railflatbed2_food_0full_byr, spriteset_railflatbed2_food_1full_byr, spriteset_railflatbed2_food_2full_byr, spriteset_railflatbed2_food_3full_byr];
+}
+spritegroup spritegroup_railflatbed2_food_yrb {
+	loading: [spriteset_railflatbed2_food_0full_yrb, spriteset_railflatbed2_food_1full_yrb, spriteset_railflatbed2_food_2full_yrb, spriteset_railflatbed2_food_3full_yrb];
+	loaded:  [spriteset_railflatbed2_food_0full_yrb, spriteset_railflatbed2_food_1full_yrb, spriteset_railflatbed2_food_2full_yrb, spriteset_railflatbed2_food_3full_yrb];
+}
+spritegroup spritegroup_railflatbed2_food_rby {
+	loading: [spriteset_railflatbed2_food_0full_rby, spriteset_railflatbed2_food_1full_rby, spriteset_railflatbed2_food_2full_rby, spriteset_railflatbed2_food_3full_rby];
+	loaded:  [spriteset_railflatbed2_food_0full_rby, spriteset_railflatbed2_food_1full_rby, spriteset_railflatbed2_food_2full_rby, spriteset_railflatbed2_food_3full_rby];
+}
+
+
+
+//RANDOM SWITCHES
+random_switch (FEAT_TRAINS, SELF, railflatbed2_random_food, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_railflatbed2_food_bgr;
+1: spritegroup_railflatbed2_food_gbr;
+1: spritegroup_railflatbed2_food_rbg;
+1: spritegroup_railflatbed2_food_bgy;
+1: spritegroup_railflatbed2_food_gyb;
+1: spritegroup_railflatbed2_food_ybg;
+1: spritegroup_railflatbed2_food_byr;
+1: spritegroup_railflatbed2_food_yrb;
+1: spritegroup_railflatbed2_food_rby;
+}
+random_switch (FEAT_TRAINS, SELF, railflatbed2_random_supp, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_railflatbed2_food_bgr;
+1: spritegroup_railflatbed2_food_gbr;
+1: spritegroup_railflatbed2_food_rbg;
+1: spritegroup_railflatbed2_food_bgy;
+1: spritegroup_railflatbed2_food_gyb;
+1: spritegroup_railflatbed2_food_ybg;
+1: spritegroup_railflatbed2_food_byr;
+1: spritegroup_railflatbed2_food_yrb;
+1: spritegroup_railflatbed2_food_rby;
+8: spritegroup_railflatbed2_containers;
+5: spritegroup_railflatbed2_fizzydrinks;
+4: spritegroup_railflatbed2_sweets;
+3: spritegroup_railflatbed2_rubberduckies;
+}
+
+//MEOW
+spriteset(spriteset_MEOW_flatbed_goods_01_load0, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(0,0,10) }
+spriteset(spriteset_MEOW_flatbed_goods_01_load1, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(0,1,10) }
+spriteset(spriteset_MEOW_flatbed_goods_01_load2, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(0,2,10) }
+spriteset(spriteset_MEOW_flatbed_goods_01_load3, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(0,3,10) }
+
+spriteset(spriteset_MEOW_flatbed_goods_02_load0, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(1,0,10) }
+spriteset(spriteset_MEOW_flatbed_goods_02_load1, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(1,1,10) }
+spriteset(spriteset_MEOW_flatbed_goods_02_load2, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(1,2,10) }
+spriteset(spriteset_MEOW_flatbed_goods_02_load3, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(1,3,10) }
+
+spriteset(spriteset_MEOW_flatbed_goods_03_load0, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(2,0,10) }
+spriteset(spriteset_MEOW_flatbed_goods_03_load1, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(2,1,10) }
+spriteset(spriteset_MEOW_flatbed_goods_03_load2, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(2,2,10) }
+spriteset(spriteset_MEOW_flatbed_goods_03_load3, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(2,3,10) }
+
+spriteset(spriteset_MEOW_flatbed_goods_04_load0, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(3,0,10) }
+spriteset(spriteset_MEOW_flatbed_goods_04_load1, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(3,1,10) }
+spriteset(spriteset_MEOW_flatbed_goods_04_load2, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(3,2,10) }
+spriteset(spriteset_MEOW_flatbed_goods_04_load3, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(3,3,10) }
+
+spriteset(spriteset_MEOW_flatbed_goods_05_load0, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(4,0,10) }
+spriteset(spriteset_MEOW_flatbed_goods_05_load1, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(4,1,10) }
+spriteset(spriteset_MEOW_flatbed_goods_05_load2, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(4,2,10) }
+spriteset(spriteset_MEOW_flatbed_goods_05_load3, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(4,3,10) }
+
+spriteset(spriteset_MEOW_flatbed_goods_06_load0, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(5,0,10) }
+spriteset(spriteset_MEOW_flatbed_goods_06_load1, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(5,1,10) }
+spriteset(spriteset_MEOW_flatbed_goods_06_load2, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(5,2,10) }
+spriteset(spriteset_MEOW_flatbed_goods_06_load3, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(5,3,10) }
+
+spriteset(spriteset_MEOW_flatbed_goods_07_load0, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(6,0,10) }
+spriteset(spriteset_MEOW_flatbed_goods_07_load1, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(6,1,10) }
+spriteset(spriteset_MEOW_flatbed_goods_07_load2, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(6,2,10) }
+spriteset(spriteset_MEOW_flatbed_goods_07_load3, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(6,3,10) }
+
+spriteset(spriteset_MEOW_flatbed_goods_08_load0, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(7,0,10) }
+spriteset(spriteset_MEOW_flatbed_goods_08_load1, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(7,1,10) }
+spriteset(spriteset_MEOW_flatbed_goods_08_load2, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(7,2,10) }
+spriteset(spriteset_MEOW_flatbed_goods_08_load3, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(7,3,10) }
+
+
+spritegroup random_railflatbed2_MEOW_flatbed_goods_01 {
+	loading: [	spriteset_MEOW_flatbed_goods_01_load0,
+				spriteset_MEOW_flatbed_goods_01_load1,
+				spriteset_MEOW_flatbed_goods_01_load2,
+				spriteset_MEOW_flatbed_goods_01_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_goods_01_load0,
+				spriteset_MEOW_flatbed_goods_01_load1,
+				spriteset_MEOW_flatbed_goods_01_load2,
+				spriteset_MEOW_flatbed_goods_01_load3
+			];}
+			
+spritegroup random_railflatbed2_MEOW_flatbed_goods_02 {
+	loading: [	spriteset_MEOW_flatbed_goods_02_load0,
+				spriteset_MEOW_flatbed_goods_02_load1,
+				spriteset_MEOW_flatbed_goods_02_load2,
+				spriteset_MEOW_flatbed_goods_02_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_goods_02_load0,
+				spriteset_MEOW_flatbed_goods_02_load1,
+				spriteset_MEOW_flatbed_goods_02_load2,
+				spriteset_MEOW_flatbed_goods_02_load3
+			];}
+			
+spritegroup random_railflatbed2_MEOW_flatbed_goods_03 {
+	loading: [	spriteset_MEOW_flatbed_goods_03_load0,
+				spriteset_MEOW_flatbed_goods_03_load1,
+				spriteset_MEOW_flatbed_goods_03_load2,
+				spriteset_MEOW_flatbed_goods_03_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_goods_03_load0,
+				spriteset_MEOW_flatbed_goods_03_load1,
+				spriteset_MEOW_flatbed_goods_03_load2,
+				spriteset_MEOW_flatbed_goods_03_load3
+			];}
+spritegroup random_railflatbed2_MEOW_flatbed_goods_04 {
+loading: [	spriteset_MEOW_flatbed_goods_04_load0,
+				spriteset_MEOW_flatbed_goods_04_load1,
+				spriteset_MEOW_flatbed_goods_04_load2,
+				spriteset_MEOW_flatbed_goods_04_load3
+			];				
+loaded:  [	spriteset_MEOW_flatbed_goods_04_load0,
+				spriteset_MEOW_flatbed_goods_04_load1,
+				spriteset_MEOW_flatbed_goods_04_load2,
+				spriteset_MEOW_flatbed_goods_04_load3
+			];}
+spritegroup random_railflatbed2_MEOW_flatbed_goods_05 {
+loading: [	spriteset_MEOW_flatbed_goods_05_load0,
+				spriteset_MEOW_flatbed_goods_05_load1,
+				spriteset_MEOW_flatbed_goods_05_load2,
+				spriteset_MEOW_flatbed_goods_05_load3
+			];				
+loaded:  [	spriteset_MEOW_flatbed_goods_05_load0,
+				spriteset_MEOW_flatbed_goods_05_load1,
+				spriteset_MEOW_flatbed_goods_05_load2,
+				spriteset_MEOW_flatbed_goods_05_load3
+			];}
+spritegroup random_railflatbed2_MEOW_flatbed_goods_06 {
+loading: [	spriteset_MEOW_flatbed_goods_06_load0,
+				spriteset_MEOW_flatbed_goods_06_load1,
+				spriteset_MEOW_flatbed_goods_06_load2,
+				spriteset_MEOW_flatbed_goods_06_load3
+			];				
+loaded:  [	spriteset_MEOW_flatbed_goods_06_load0,
+				spriteset_MEOW_flatbed_goods_06_load1,
+				spriteset_MEOW_flatbed_goods_06_load2,
+				spriteset_MEOW_flatbed_goods_06_load3
+			];}
+spritegroup random_railflatbed2_MEOW_flatbed_goods_07 {
+loading: [	spriteset_MEOW_flatbed_goods_07_load0,
+				spriteset_MEOW_flatbed_goods_07_load1,
+				spriteset_MEOW_flatbed_goods_07_load2,
+				spriteset_MEOW_flatbed_goods_07_load3
+			];				
+loaded:  [	spriteset_MEOW_flatbed_goods_07_load0,
+				spriteset_MEOW_flatbed_goods_07_load1,
+				spriteset_MEOW_flatbed_goods_07_load2,
+				spriteset_MEOW_flatbed_goods_07_load3
+			];}
+			
+spritegroup random_railflatbed2_MEOW_flatbed_goods_08 {
+loading: [	spriteset_MEOW_flatbed_goods_08_load0,
+				spriteset_MEOW_flatbed_goods_08_load1,
+				spriteset_MEOW_flatbed_goods_08_load2,
+				spriteset_MEOW_flatbed_goods_08_load3
+			];				
+loaded:  [	spriteset_MEOW_flatbed_goods_08_load0,
+				spriteset_MEOW_flatbed_goods_08_load1,
+				spriteset_MEOW_flatbed_goods_08_load2,
+				spriteset_MEOW_flatbed_goods_08_load3
+			];}
+
+
+random_switch (FEAT_TRAINS, SELF, random_railflatbed2_MEOW_goods, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: random_railflatbed2_MEOW_flatbed_goods_01;
+1: random_railflatbed2_MEOW_flatbed_goods_02;
+1: random_railflatbed2_MEOW_flatbed_goods_03;
+1: random_railflatbed2_MEOW_flatbed_goods_04;
+1: random_railflatbed2_MEOW_flatbed_goods_05;
+1: random_railflatbed2_MEOW_flatbed_goods_06;
+1: random_railflatbed2_MEOW_flatbed_goods_07;
+1: random_railflatbed2_MEOW_flatbed_goods_08;
+}
+
+
+
+
+
+
+
+
+spriteset(spriteset_MEOW_flatbed_livestock_01_load0, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(0,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_01_load1, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(0,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_01_load2, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(0,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_01_load3, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(0,3,11) }
+
+spriteset(spriteset_MEOW_flatbed_livestock_02_load0, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(1,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_02_load1, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(1,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_02_load2, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(1,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_02_load3, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(1,3,11) }
+
+spriteset(spriteset_MEOW_flatbed_livestock_03_load0, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(2,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_03_load1, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(2,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_03_load2, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(2,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_03_load3, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(2,3,11) }
+
+spriteset(spriteset_MEOW_flatbed_livestock_04_load0, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(3,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_04_load1, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(3,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_04_load2, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(3,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_04_load3, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(3,3,11) }
+
+spriteset(spriteset_MEOW_flatbed_livestock_05_load0, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(4,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_05_load1, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(4,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_05_load2, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(4,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_05_load3, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(4,3,11) }
+
+spriteset(spriteset_MEOW_flatbed_livestock_06_load0, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(5,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_06_load1, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(5,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_06_load2, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(5,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_06_load3, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(5,3,11) }
+
+spriteset(spriteset_MEOW_flatbed_livestock_07_load0, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(6,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_07_load1, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(6,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_07_load2, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(6,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_07_load3, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(6,3,11) }
+
+spriteset(spriteset_MEOW_flatbed_livestock_08_load0, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(7,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_08_load1, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(7,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_08_load2, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(7,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_08_load3, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(7,3,11) }
+
+spriteset(spriteset_MEOW_flatbed_livestock_09_load0, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(8,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_09_load1, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(8,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_09_load2, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(8,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_09_load3, 			"gfx/RailWagons_2nd_MEOW_Flatbed.png") { template_MEOW(8,3,11) }
+
+spritegroup random_railflatbed2_MEOW_flatbed_livestock_01 {
+	loading: [	spriteset_MEOW_flatbed_livestock_01_load0,
+				spriteset_MEOW_flatbed_livestock_01_load1,
+				spriteset_MEOW_flatbed_livestock_01_load2,
+				spriteset_MEOW_flatbed_livestock_01_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_01_load0,
+				spriteset_MEOW_flatbed_livestock_01_load1,
+				spriteset_MEOW_flatbed_livestock_01_load2,
+				spriteset_MEOW_flatbed_livestock_01_load3
+			];}
+			
+spritegroup random_railflatbed2_MEOW_flatbed_livestock_02 {
+	loading: [	spriteset_MEOW_flatbed_livestock_02_load0,
+				spriteset_MEOW_flatbed_livestock_02_load1,
+				spriteset_MEOW_flatbed_livestock_02_load2,
+				spriteset_MEOW_flatbed_livestock_02_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_02_load0,
+				spriteset_MEOW_flatbed_livestock_02_load1,
+				spriteset_MEOW_flatbed_livestock_02_load2,
+				spriteset_MEOW_flatbed_livestock_02_load3
+			];}
+			
+spritegroup random_railflatbed2_MEOW_flatbed_livestock_03 {
+	loading: [	spriteset_MEOW_flatbed_livestock_03_load0,
+				spriteset_MEOW_flatbed_livestock_03_load1,
+				spriteset_MEOW_flatbed_livestock_03_load2,
+				spriteset_MEOW_flatbed_livestock_03_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_03_load0,
+				spriteset_MEOW_flatbed_livestock_03_load1,
+				spriteset_MEOW_flatbed_livestock_03_load2,
+				spriteset_MEOW_flatbed_livestock_03_load3
+			];}
+spritegroup random_railflatbed2_MEOW_flatbed_livestock_04 {
+loading: [	spriteset_MEOW_flatbed_livestock_04_load0,
+				spriteset_MEOW_flatbed_livestock_04_load1,
+				spriteset_MEOW_flatbed_livestock_04_load2,
+				spriteset_MEOW_flatbed_livestock_04_load3
+			];				
+loaded:  [	spriteset_MEOW_flatbed_livestock_04_load0,
+				spriteset_MEOW_flatbed_livestock_04_load1,
+				spriteset_MEOW_flatbed_livestock_04_load2,
+				spriteset_MEOW_flatbed_livestock_04_load3
+			];}
+spritegroup random_railflatbed2_MEOW_flatbed_livestock_05 {
+loading: [	spriteset_MEOW_flatbed_livestock_05_load0,
+				spriteset_MEOW_flatbed_livestock_05_load1,
+				spriteset_MEOW_flatbed_livestock_05_load2,
+				spriteset_MEOW_flatbed_livestock_05_load3
+			];				
+loaded:  [	spriteset_MEOW_flatbed_livestock_05_load0,
+				spriteset_MEOW_flatbed_livestock_05_load1,
+				spriteset_MEOW_flatbed_livestock_05_load2,
+				spriteset_MEOW_flatbed_livestock_05_load3
+			];}
+spritegroup random_railflatbed2_MEOW_flatbed_livestock_06 {
+loading: [	spriteset_MEOW_flatbed_livestock_06_load0,
+				spriteset_MEOW_flatbed_livestock_06_load1,
+				spriteset_MEOW_flatbed_livestock_06_load2,
+				spriteset_MEOW_flatbed_livestock_06_load3
+			];				
+loaded:  [	spriteset_MEOW_flatbed_livestock_06_load0,
+				spriteset_MEOW_flatbed_livestock_06_load1,
+				spriteset_MEOW_flatbed_livestock_06_load2,
+				spriteset_MEOW_flatbed_livestock_06_load3
+			];}
+spritegroup random_railflatbed2_MEOW_flatbed_livestock_07 {
+loading: [	spriteset_MEOW_flatbed_livestock_07_load0,
+				spriteset_MEOW_flatbed_livestock_07_load1,
+				spriteset_MEOW_flatbed_livestock_07_load2,
+				spriteset_MEOW_flatbed_livestock_07_load3
+			];				
+loaded:  [	spriteset_MEOW_flatbed_livestock_07_load0,
+				spriteset_MEOW_flatbed_livestock_07_load1,
+				spriteset_MEOW_flatbed_livestock_07_load2,
+				spriteset_MEOW_flatbed_livestock_07_load3
+			];}
+spritegroup random_railflatbed2_MEOW_flatbed_livestock_08 {
+loading: [	spriteset_MEOW_flatbed_livestock_08_load0,
+				spriteset_MEOW_flatbed_livestock_08_load1,
+				spriteset_MEOW_flatbed_livestock_08_load2,
+				spriteset_MEOW_flatbed_livestock_08_load3
+			];				
+loaded:  [	spriteset_MEOW_flatbed_livestock_08_load0,
+				spriteset_MEOW_flatbed_livestock_08_load1,
+				spriteset_MEOW_flatbed_livestock_08_load2,
+				spriteset_MEOW_flatbed_livestock_08_load3
+			];}
+spritegroup random_railflatbed2_MEOW_flatbed_livestock_09 {
+loading: [	spriteset_MEOW_flatbed_livestock_09_load0,
+				spriteset_MEOW_flatbed_livestock_09_load1,
+				spriteset_MEOW_flatbed_livestock_09_load2,
+				spriteset_MEOW_flatbed_livestock_09_load3
+			];				
+loaded:  [	spriteset_MEOW_flatbed_livestock_09_load0,
+				spriteset_MEOW_flatbed_livestock_09_load1,
+				spriteset_MEOW_flatbed_livestock_09_load2,
+				spriteset_MEOW_flatbed_livestock_09_load3
+			];}
+
+
+
+random_switch (FEAT_TRAINS, SELF, random_railflatbed2_MEOW_livestock, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+4: random_railflatbed2_MEOW_flatbed_livestock_01;
+4: random_railflatbed2_MEOW_flatbed_livestock_02;
+14: random_railflatbed2_MEOW_flatbed_livestock_03;
+14: random_railflatbed2_MEOW_flatbed_livestock_04;
+14: random_railflatbed2_MEOW_flatbed_livestock_05;
+14: random_railflatbed2_MEOW_flatbed_livestock_06;
+8: random_railflatbed2_MEOW_flatbed_livestock_07;
+8: random_railflatbed2_MEOW_flatbed_livestock_08;
+1: random_railflatbed2_MEOW_flatbed_livestock_09;
+}
+
+spriteset(spriteset_railflatbed2_empty_YETI, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 46) }
+spriteset(spriteset_railflatbed2_full_YETI, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 47) }
+spriteset(spriteset_railflatbed2_1full_YETI, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 47) }
+spriteset(spriteset_railflatbed2_2full_YETI, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 46) }
+spritegroup spritegroup_railflatbed2_YETI {
+	loading: [spriteset_railflatbed2_empty_YETI, spriteset_railflatbed2_1full_YETI, spriteset_railflatbed2_2full_YETI, spriteset_railflatbed2_full_YETI];
+	loaded:  [spriteset_railflatbed2_empty_YETI, spriteset_railflatbed2_1full_YETI, spriteset_railflatbed2_2full_YETI, spriteset_railflatbed2_full_YETI];
+}
+spriteset(spriteset_railflatbed2_empty_YETY, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 48) }
+spriteset(spriteset_railflatbed2_full_YETY, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 49) }
+spriteset(spriteset_railflatbed2_1full_YETY, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(0, 49) }
+spriteset(spriteset_railflatbed2_2full_YETY, 			"gfx/RailWagons_2nd_Flatbed.png") { template_engine32WTF(184, 48) }
+spritegroup spritegroup_railflatbed2_YETY {
+	loading: [spriteset_railflatbed2_empty_YETY, spriteset_railflatbed2_1full_YETY, spriteset_railflatbed2_2full_YETY, spriteset_railflatbed2_full_YETY];
+	loaded:  [spriteset_railflatbed2_empty_YETY, spriteset_railflatbed2_1full_YETY, spriteset_railflatbed2_2full_YETY, spriteset_railflatbed2_full_YETY];
+}
+
+//CARGO SWITCHES
+switch (FEAT_TRAINS, SELF, railflatbed2_wagon_switch, cargo_type_in_veh) {
+	YETI: spritegroup_railflatbed2_YETI;
+	YETY: spritegroup_railflatbed2_YETY;
+
+	LUMB: spritegroup_railflatbed2_lumber;
+	SUPP: railflatbed2_random_supp;
+	ALOY: spritegroup_railflatbed2_steel;
+
+	BRCK: spritegroup_railflatbed2_bricks;
+	BDMT: spritegroup_railflatbed2_bricks;
+	BATT: spritegroup_railflatbed2_batteries;
+	BUBL: spritegroup_railflatbed2_bubbles;
+	FZDR: spritegroup_railflatbed2_fizzydrinks;
+	FOOD: railflatbed2_random_food;
+	FRUT: spritegroup_railflatbed2_fruit;
+	FRVG: spritegroup_railflatbed2_fruit;
+	GLAS: spritegroup_railflatbed2_glass;
+	GOOD: spritegroup_railflatbed2_containers;
+	LVST: spritegroup_railflatbed2_livestock;
+	WDPR: spritegroup_railflatbed2_lumber;
+	MNSP: spritegroup_railflatbed2_crates;
+	PAPR: spritegroup_railflatbed2_paper;
+	STEL: spritegroup_railflatbed2_steel;
+	SWET: spritegroup_railflatbed2_sweets;
+	TOYS: spritegroup_railflatbed2_rubberduckies;
+	VEHI: spritegroup_railflatbed2_cars;
+	ENSP: spritegroup_railflatbed2_cars;
+	WOOD: spritegroup_railflatbed2_wood;
+	VALU: spritegroup_railflatbed2_valu;
+	DIAM: spritegroup_railflatbed2_diam;
+	GOLD: spritegroup_railflatbed2_gold;
+	spritegroup_railflatbed2_crates;
+}
+
+switch (FEAT_TRAINS, SELF, railflatbed2_MEOW_wagon_switch, cargo_type_in_veh) {
+	LUMB: spritegroup_railflatbed2_lumber;
+	SUPP: railflatbed2_random_supp;
+	ALOY: spritegroup_railflatbed2_steel;
+
+	BRCK: spritegroup_railflatbed2_bricks;
+	BDMT: spritegroup_railflatbed2_bricks;
+	BATT: spritegroup_railflatbed2_batteries;
+	BUBL: spritegroup_railflatbed2_bubbles;
+	FZDR: spritegroup_railflatbed2_fizzydrinks;
+	FOOD: railflatbed2_random_food;
+	FRUT: spritegroup_railflatbed2_fruit;
+	FRVG: spritegroup_railflatbed2_fruit;
+	GLAS: spritegroup_railflatbed2_glass;
+	GOOD: random_railflatbed2_MEOW_goods;
+	LVST: random_railflatbed2_MEOW_livestock;
+	WDPR: spritegroup_railflatbed2_lumber;
+	MNSP: spritegroup_railflatbed2_crates;
+	PAPR: spritegroup_railflatbed2_paper;
+	STEL: spritegroup_railflatbed2_steel;
+	SWET: spritegroup_railflatbed2_sweets;
+	TOYS: spritegroup_railflatbed2_rubberduckies;
+	VEHI: spritegroup_railflatbed2_cars;
+	ENSP: spritegroup_railflatbed2_cars;
+	WOOD: spritegroup_railflatbed2_wood;
+	VALU: spritegroup_railflatbed2_valu;
+	DIAM: spritegroup_railflatbed2_diam;
+	GOLD: spritegroup_railflatbed2_gold;
+	spritegroup_railflatbed2_crates;
+}
+
+
+switch (FEAT_TRAINS, PARENT, railflatbed2_MEOWorNOT, vehicle_type_id)
+{
+item_MEOW_rail_01: railflatbed2_MEOW_wagon_switch;
+item_MEOW_rail_02: railflatbed2_MEOW_wagon_switch;
+item_MEOW_rail_03: railflatbed2_MEOW_wagon_switch;
+item_MEOW_rail_04: railflatbed2_MEOW_wagon_switch;
+item_MEOW_rail_05: railflatbed2_MEOW_wagon_switch;
+item_MEOW_rail_06: railflatbed2_MEOW_wagon_switch;
+item_MEOW_rail_07: railflatbed2_MEOW_wagon_switch;
+item_MEOW_rail_08: railflatbed2_MEOW_wagon_switch;
+item_MEOW_rail_09: railflatbed2_MEOW_wagon_switch;
+item_CABOOSE_2: railflatbed2_MEOW_wagon_switch;
+railflatbed2_wagon_switch;
+}
+
+
+
+//SPRITESETS
+spriteset(spriteset_purchaseMenu_railhopper2, 		"gfx/PurchaseMenu.png"){template_purchaseMenu(0,24)}
+spriteset(spriteset_railhopper2_empty_bauxite, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 0) }
+spriteset(spriteset_railhopper2_empty_candyfloss, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 2) }
+spriteset(spriteset_railhopper2_empty_clay, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 4) }
+spriteset(spriteset_railhopper2_empty_coal, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 6) }
+spriteset(spriteset_railhopper2_empty_copperore, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 8) }
+spriteset(spriteset_railhopper2_empty_fertiliser, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 10) }
+spriteset(spriteset_railhopper2_empty_grain, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 12) }
+spriteset(spriteset_railhopper2_empty_ironore, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 14) }
+spriteset(spriteset_railhopper2_empty_oilseeds, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 16) }
+spriteset(spriteset_railhopper2_empty_plantfibres, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 18) }
+spriteset(spriteset_railhopper2_empty_rubber, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 20) }
+spriteset(spriteset_railhopper2_empty_sand, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 22) }
+spriteset(spriteset_railhopper2_empty_scrapmetal, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 24) }
+spriteset(spriteset_railhopper2_empty_stone, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 26) }
+spriteset(spriteset_railhopper2_empty_sugar, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 28) }
+spriteset(spriteset_railhopper2_empty_toffee, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 30) }
+spriteset(spriteset_railhopper2_empty_wool, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 32) }
+spriteset(spriteset_railhopper2_empty_recyclables, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 34) }
+
+// rail hopper gen2 1/3 full
+spriteset(spriteset_railhopper2_1full_bauxite, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 1) }
+spriteset(spriteset_railhopper2_1full_candyfloss, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 3) }
+spriteset(spriteset_railhopper2_1full_clay, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 5) }
+spriteset(spriteset_railhopper2_1full_coal, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 7) }
+spriteset(spriteset_railhopper2_1full_copperore, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 9) }
+spriteset(spriteset_railhopper2_1full_fertiliser, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 11) }
+spriteset(spriteset_railhopper2_1full_grain, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 13) }
+spriteset(spriteset_railhopper2_1full_ironore, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 15) }
+spriteset(spriteset_railhopper2_1full_oilseeds,				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 17) }
+spriteset(spriteset_railhopper2_1full_plantfibres, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 19) }
+spriteset(spriteset_railhopper2_1full_rubber, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 21) }
+spriteset(spriteset_railhopper2_1full_sand, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 23) }
+spriteset(spriteset_railhopper2_1full_scrapmetal, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 25) }
+spriteset(spriteset_railhopper2_1full_stone, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 27) }
+spriteset(spriteset_railhopper2_1full_sugar, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 29) }
+spriteset(spriteset_railhopper2_1full_toffee, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 31) }
+spriteset(spriteset_railhopper2_1full_wool, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 33) }
+spriteset(spriteset_railhopper2_1full_recyclables, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 35) }
+
+// rail hopper gen2 2/3 full
+spriteset(spriteset_railhopper2_2full_bauxite, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 1) }
+spriteset(spriteset_railhopper2_2full_candyfloss, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 3) }
+spriteset(spriteset_railhopper2_2full_clay, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 5) }
+spriteset(spriteset_railhopper2_2full_coal, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 7) }
+spriteset(spriteset_railhopper2_2full_copperore, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 9) }
+spriteset(spriteset_railhopper2_2full_fertiliser, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 11) }
+spriteset(spriteset_railhopper2_2full_grain, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 13) }
+spriteset(spriteset_railhopper2_2full_ironore, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 15) }
+spriteset(spriteset_railhopper2_2full_oilseeds,				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 17) }
+spriteset(spriteset_railhopper2_2full_plantfibres, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 19) }
+spriteset(spriteset_railhopper2_2full_rubber, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 21) }
+spriteset(spriteset_railhopper2_2full_sand, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 23) }
+spriteset(spriteset_railhopper2_2full_scrapmetal, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 25) }
+spriteset(spriteset_railhopper2_2full_stone, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 27) }
+spriteset(spriteset_railhopper2_2full_sugar, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 29) }
+spriteset(spriteset_railhopper2_2full_toffee, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 31) }
+spriteset(spriteset_railhopper2_2full_wool, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 33) }
+spriteset(spriteset_railhopper2_2full_recyclables, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 35) }
+
+// rail hopper gen2 full
+spriteset(spriteset_railhopper2_full_bauxite, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 0) }
+spriteset(spriteset_railhopper2_full_candyfloss, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 2) }
+spriteset(spriteset_railhopper2_full_clay, 					"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 4) }
+spriteset(spriteset_railhopper2_full_coal, 					"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 6) }
+spriteset(spriteset_railhopper2_full_copperore, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 8) }
+spriteset(spriteset_railhopper2_full_fertiliser, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 10) }
+spriteset(spriteset_railhopper2_full_grain, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 12) }
+spriteset(spriteset_railhopper2_full_ironore, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 14) }
+spriteset(spriteset_railhopper2_full_oilseeds,				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 16) }
+spriteset(spriteset_railhopper2_full_plantfibres, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 18) }
+spriteset(spriteset_railhopper2_full_rubber, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 20) }
+spriteset(spriteset_railhopper2_full_sand, 					"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 22) }
+spriteset(spriteset_railhopper2_full_scrapmetal, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 24) }
+spriteset(spriteset_railhopper2_full_stone, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 26) }
+spriteset(spriteset_railhopper2_full_sugar, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 28) }
+spriteset(spriteset_railhopper2_full_toffee, 				"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 30) }
+spriteset(spriteset_railhopper2_full_wool, 					"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 32) }
+spriteset(spriteset_railhopper2_full_recyclables, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 34) }
+
+spriteset(spriteset_railhopper2_empty_uranium, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 36) }
+spriteset(spriteset_railhopper2_1full_uranium, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(0, 37) }
+spriteset(spriteset_railhopper2_2full_uranium, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 37) }
+spriteset(spriteset_railhopper2_full_uranium, 			"gfx/RailWagons_2nd_Hopper.png") { template_engine32WTF(184, 36) }
+//SPRITEGROUPS
+// 2ND HOPPERS
+
+spritegroup spritegroup_railhopper2_bauxite {
+	loaded: [spriteset_railhopper2_empty_bauxite, spriteset_railhopper2_1full_bauxite, spriteset_railhopper2_2full_bauxite, spriteset_railhopper2_full_bauxite];
+	loading:  [spriteset_railhopper2_empty_bauxite, spriteset_railhopper2_1full_bauxite, spriteset_railhopper2_2full_bauxite, spriteset_railhopper2_full_bauxite];
+}
+spritegroup spritegroup_railhopper2_candyfloss {
+	loaded: [spriteset_railhopper2_empty_candyfloss,spriteset_railhopper2_1full_candyfloss , spriteset_railhopper2_2full_candyfloss, spriteset_railhopper2_full_candyfloss];
+	loading:  [spriteset_railhopper2_empty_candyfloss,spriteset_railhopper2_1full_candyfloss , spriteset_railhopper2_2full_candyfloss, spriteset_railhopper2_full_candyfloss];
+}
+spritegroup spritegroup_railhopper2_clay {
+	loaded: [spriteset_railhopper2_empty_clay, spriteset_railhopper2_1full_clay, spriteset_railhopper2_2full_clay, spriteset_railhopper2_full_clay];
+	loading:  [spriteset_railhopper2_empty_clay, spriteset_railhopper2_1full_clay, spriteset_railhopper2_2full_clay, spriteset_railhopper2_full_clay];
+}
+spritegroup spritegroup_railhopper2_coal {
+	loaded: [spriteset_railhopper2_empty_coal, spriteset_railhopper2_1full_coal, spriteset_railhopper2_2full_coal, spriteset_railhopper2_full_coal];
+	loading:  [spriteset_railhopper2_empty_coal, spriteset_railhopper2_1full_coal, spriteset_railhopper2_2full_coal, spriteset_railhopper2_full_coal];
+}
+spritegroup spritegroup_railhopper2_copperore {
+	loaded: [spriteset_railhopper2_empty_copperore, spriteset_railhopper2_1full_copperore, spriteset_railhopper2_2full_copperore, spriteset_railhopper2_full_copperore];
+	loading:  [spriteset_railhopper2_empty_copperore, spriteset_railhopper2_1full_copperore, spriteset_railhopper2_2full_copperore, spriteset_railhopper2_full_copperore];
+}
+spritegroup spritegroup_railhopper2_fertiliser {
+	loaded: [spriteset_railhopper2_empty_fertiliser, spriteset_railhopper2_1full_fertiliser, spriteset_railhopper2_2full_fertiliser, spriteset_railhopper2_full_fertiliser];
+	loading:  [spriteset_railhopper2_empty_fertiliser, spriteset_railhopper2_1full_fertiliser, spriteset_railhopper2_2full_fertiliser, spriteset_railhopper2_full_fertiliser];
+}
+spritegroup spritegroup_railhopper2_grain {
+	loaded: [spriteset_railhopper2_empty_grain, spriteset_railhopper2_1full_grain, spriteset_railhopper2_2full_grain, spriteset_railhopper2_full_grain];
+	loading:  [spriteset_railhopper2_empty_grain, spriteset_railhopper2_1full_grain, spriteset_railhopper2_2full_grain, spriteset_railhopper2_full_grain];
+}
+spritegroup spritegroup_railhopper2_ironore {
+	loaded: [spriteset_railhopper2_empty_ironore, spriteset_railhopper2_1full_ironore, spriteset_railhopper2_2full_ironore, spriteset_railhopper2_full_ironore];
+	loading:  [spriteset_railhopper2_empty_ironore, spriteset_railhopper2_1full_ironore, spriteset_railhopper2_2full_ironore, spriteset_railhopper2_full_ironore];
+}
+spritegroup spritegroup_railhopper2_oilseeds {
+	loaded: [spriteset_railhopper2_empty_oilseeds, spriteset_railhopper2_1full_oilseeds, spriteset_railhopper2_2full_oilseeds, spriteset_railhopper2_full_oilseeds];
+	loading:  [spriteset_railhopper2_empty_oilseeds, spriteset_railhopper2_1full_oilseeds, spriteset_railhopper2_2full_oilseeds, spriteset_railhopper2_full_oilseeds];
+}
+spritegroup spritegroup_railhopper2_plantfibres {
+	loaded: [spriteset_railhopper2_empty_plantfibres, spriteset_railhopper2_1full_plantfibres, spriteset_railhopper2_2full_plantfibres, spriteset_railhopper2_full_plantfibres];
+	loading:  [spriteset_railhopper2_empty_plantfibres, spriteset_railhopper2_1full_plantfibres, spriteset_railhopper2_2full_plantfibres, spriteset_railhopper2_full_plantfibres];
+}
+spritegroup spritegroup_railhopper2_rubber {
+	loaded: [spriteset_railhopper2_empty_rubber, spriteset_railhopper2_1full_rubber, spriteset_railhopper2_2full_rubber, spriteset_railhopper2_full_rubber];
+	loading:  [spriteset_railhopper2_empty_rubber, spriteset_railhopper2_1full_rubber, spriteset_railhopper2_2full_rubber, spriteset_railhopper2_full_rubber];
+}
+spritegroup spritegroup_railhopper2_sand {
+	loaded: [spriteset_railhopper2_empty_sand, spriteset_railhopper2_1full_sand, spriteset_railhopper2_2full_sand, spriteset_railhopper2_full_sand];
+	loading:  [spriteset_railhopper2_empty_sand, spriteset_railhopper2_1full_sand, spriteset_railhopper2_2full_sand, spriteset_railhopper2_full_sand];
+}
+spritegroup spritegroup_railhopper2_scrapmetal {
+	loaded: [spriteset_railhopper2_empty_scrapmetal, spriteset_railhopper2_1full_scrapmetal, spriteset_railhopper2_2full_scrapmetal, spriteset_railhopper2_full_scrapmetal];
+	loading:  [spriteset_railhopper2_empty_scrapmetal, spriteset_railhopper2_1full_scrapmetal, spriteset_railhopper2_2full_scrapmetal, spriteset_railhopper2_full_scrapmetal];
+}
+spritegroup spritegroup_railhopper2_stone {
+	loaded: [spriteset_railhopper2_empty_stone, spriteset_railhopper2_1full_stone, spriteset_railhopper2_2full_stone, spriteset_railhopper2_full_stone];
+	loading:  [spriteset_railhopper2_empty_stone, spriteset_railhopper2_1full_stone, spriteset_railhopper2_2full_stone, spriteset_railhopper2_full_stone];
+
+}
+spritegroup spritegroup_railhopper2_sugar {
+	loaded: [spriteset_railhopper2_empty_sugar, spriteset_railhopper2_1full_sugar, spriteset_railhopper2_2full_sugar, spriteset_railhopper2_full_sugar];
+	loading:  [spriteset_railhopper2_empty_sugar, spriteset_railhopper2_1full_sugar, spriteset_railhopper2_2full_sugar, spriteset_railhopper2_full_sugar];
+}
+spritegroup spritegroup_railhopper2_toffee {
+	loaded: [spriteset_railhopper2_empty_toffee, spriteset_railhopper2_1full_toffee, spriteset_railhopper2_2full_toffee, spriteset_railhopper2_full_toffee];
+	loading:  [spriteset_railhopper2_empty_toffee, spriteset_railhopper2_1full_toffee, spriteset_railhopper2_2full_toffee, spriteset_railhopper2_full_toffee];
+}
+spritegroup spritegroup_railhopper2_wool {
+	loaded: [spriteset_railhopper2_empty_wool, spriteset_railhopper2_1full_wool, spriteset_railhopper2_2full_wool, spriteset_railhopper2_full_wool];
+	loading:  [spriteset_railhopper2_empty_wool, spriteset_railhopper2_1full_wool, spriteset_railhopper2_2full_wool, spriteset_railhopper2_full_wool];
+}
+spritegroup spritegroup_railhopper2_recyclables {
+	loaded: [spriteset_railhopper2_empty_recyclables, spriteset_railhopper2_1full_recyclables, spriteset_railhopper2_2full_recyclables, spriteset_railhopper2_full_recyclables];
+	loading:  [spriteset_railhopper2_empty_recyclables, spriteset_railhopper2_1full_recyclables, spriteset_railhopper2_2full_recyclables, spriteset_railhopper2_full_recyclables];
+}
+spritegroup spritegroup_railhopper2_uranium {
+	loaded: [spriteset_railhopper2_empty_uranium, spriteset_railhopper2_1full_uranium, spriteset_railhopper2_2full_uranium, spriteset_railhopper2_full_uranium];
+	loading:  [spriteset_railhopper2_empty_uranium, spriteset_railhopper2_1full_uranium, spriteset_railhopper2_2full_uranium, spriteset_railhopper2_full_uranium];
+}
+//RANDOM SWITCHES
+//CARGO SWITCH
+switch (FEAT_TRAINS, SELF, railhopper2_wagon_switch, cargo_type_in_veh) {
+	URAN: spritegroup_railhopper2_uranium;
+	DIAT: spritegroup_railhopper2_sugar;
+	
+	CMNT: spritegroup_railhopper2_bauxite;
+	AORE: spritegroup_railhopper2_bauxite;
+	LIME: spritegroup_railhopper2_bauxite;
+	CTCD: spritegroup_railhopper2_candyfloss;
+	CLAY: spritegroup_railhopper2_clay;
+	POTA: spritegroup_railhopper2_clay;
+	COAL: spritegroup_railhopper2_coal;
+	CORE: spritegroup_railhopper2_copperore;
+	FMSP: spritegroup_railhopper2_fertiliser;
+	FERT: spritegroup_railhopper2_fertiliser;
+	CERE: spritegroup_railhopper2_grain;
+	GRAI: spritegroup_railhopper2_grain;
+	WHEA: spritegroup_railhopper2_grain;
+	MAIZ: spritegroup_railhopper2_grain;
+	IORE: spritegroup_railhopper2_ironore;
+	OLSD: spritegroup_railhopper2_oilseeds;
+	FICR: spritegroup_railhopper2_plantfibres;
+	RUBR: spritegroup_railhopper2_rubber;
+	SCMT: spritegroup_railhopper2_scrapmetal;
+	SAND: spritegroup_railhopper2_sand;
+	GRVL: spritegroup_railhopper2_stone;
+	SUGR: spritegroup_railhopper2_sugar;
+	SGBT: spritegroup_railhopper2_sugar;
+	SGCN: spritegroup_railhopper2_sugar;
+	TOFF: spritegroup_railhopper2_toffee;
+	WOOL: spritegroup_railhopper2_wool;
+	RCYC: spritegroup_railhopper2_recyclables;
+	spritegroup_railhopper2_coal;
+}
+
+
+
+//RAIL TANKER 3
+//SPRITESETS
+spriteset(spriteset_purchaseMenu_railtanker2, 		"gfx/PurchaseMenu.png"){template_purchaseMenu(0,25)}
+
+spriteset(spriteset_railtanker2_empty_cola, 						"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(0, 0) }
+spriteset(spriteset_railtanker2_empty_beer, 						"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(0, 2) }
+spriteset(spriteset_railtanker2_empty_chemicals, 					"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(0, 4) }
+spriteset(spriteset_railtanker2_empty_refinedproducts, 				"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(0, 6) }
+spriteset(spriteset_railtanker2_empty_fish, 						"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(0, 8) }
+spriteset(spriteset_railtanker2_empty_milk, 						"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(0, 10) }
+spriteset(spriteset_railtanker2_empty_oil, 							"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(0, 12) }
+spriteset(spriteset_railtanker2_empty_plastic, 						"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(0, 14) }
+spriteset(spriteset_railtanker2_empty_water, 						"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(0, 16) }
+
+// rail tanker gen1 1/3 full
+spriteset(spriteset_railtanker2_1full_cola, 						"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(0, 1) }
+spriteset(spriteset_railtanker2_1full_beer, 						"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(0, 3) }
+spriteset(spriteset_railtanker2_1full_chemicals, 					"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(0, 5) }
+spriteset(spriteset_railtanker2_1full_refinedproducts, 				"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(0, 7) }
+spriteset(spriteset_railtanker2_1full_fish, 						"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(0, 9) }
+spriteset(spriteset_railtanker2_1full_milk, 						"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(0, 11) }
+spriteset(spriteset_railtanker2_1full_oil, 							"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(0, 13) }
+spriteset(spriteset_railtanker2_1full_plastic, 						"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(0, 15) }
+spriteset(spriteset_railtanker2_1full_water,						"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(0, 17) }
+
+// rail tanker gen1 2/3 full
+spriteset(spriteset_railtanker2_2full_cola, 						"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(184, 1) }
+spriteset(spriteset_railtanker2_2full_beer, 						"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(184, 3) }
+spriteset(spriteset_railtanker2_2full_chemicals, 					"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(184, 5) }
+spriteset(spriteset_railtanker2_2full_refinedproducts, 				"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(184, 7) }
+spriteset(spriteset_railtanker2_2full_fish, 						"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(184, 9) }
+spriteset(spriteset_railtanker2_2full_milk, 						"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(184, 11) }
+spriteset(spriteset_railtanker2_2full_oil, 							"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(184, 13) }
+spriteset(spriteset_railtanker2_2full_plastic, 						"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(184, 15) }
+spriteset(spriteset_railtanker2_2full_water,						"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(184, 17) }
+
+// rail tanker gen1 full
+spriteset(spriteset_railtanker2_full_cola, 							"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(184, 0) }
+spriteset(spriteset_railtanker2_full_beer, 							"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(184, 2) }
+spriteset(spriteset_railtanker2_full_chemicals, 					"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(184, 4) }
+spriteset(spriteset_railtanker2_full_refinedproducts, 				"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(184, 6) }
+spriteset(spriteset_railtanker2_full_fish, 							"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(184, 8) }
+spriteset(spriteset_railtanker2_full_milk, 							"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(184, 10) }
+spriteset(spriteset_railtanker2_full_oil, 							"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(184, 12) }
+spriteset(spriteset_railtanker2_full_plastic, 						"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(184, 14) }
+spriteset(spriteset_railtanker2_full_water, 						"gfx/RailWagons_2nd_Tanker.png") { template_engine32WTF(184, 16) }
+
+//RAIL TANKER 2 COLOURSSSS
+spriteset(spriteset_railtanker2_0full_cola_white,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 0) }
+spriteset(spriteset_railtanker2_0full_cola_ltblue,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 2) }
+spriteset(spriteset_railtanker2_0full_cola_blue,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 4) }
+spriteset(spriteset_railtanker2_0full_cola_pink,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 6) }
+spriteset(spriteset_railtanker2_0full_cola_purple,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 8) }
+spriteset(spriteset_railtanker2_1full_cola_white,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 1) }
+spriteset(spriteset_railtanker2_1full_cola_ltblue,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 3) }
+spriteset(spriteset_railtanker2_1full_cola_blue,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 5) }
+spriteset(spriteset_railtanker2_1full_cola_pink,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 7) }
+spriteset(spriteset_railtanker2_1full_cola_purple,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 9) }
+spriteset(spriteset_railtanker2_2full_cola_white,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 1) }
+spriteset(spriteset_railtanker2_2full_cola_ltblue,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 3) }
+spriteset(spriteset_railtanker2_2full_cola_blue,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 4) }
+spriteset(spriteset_railtanker2_2full_cola_pink,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 5) }
+spriteset(spriteset_railtanker2_2full_cola_purple,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 6) }
+spriteset(spriteset_railtanker2_3full_cola_white,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 0) }
+spriteset(spriteset_railtanker2_3full_cola_ltblue,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 2) }
+spriteset(spriteset_railtanker2_3full_cola_blue,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 4) }
+spriteset(spriteset_railtanker2_3full_cola_pink,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 6) }
+spriteset(spriteset_railtanker2_3full_cola_purple,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 8) }
+
+spriteset(spriteset_railtanker2_0full_plastic_pink,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 10) }
+spriteset(spriteset_railtanker2_0full_plastic_orange,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 12) }
+spriteset(spriteset_railtanker2_0full_plastic_red,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 14) }
+spriteset(spriteset_railtanker2_0full_plastic_cream,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 16) }
+spriteset(spriteset_railtanker2_0full_plastic_yellow,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 18) }
+spriteset(spriteset_railtanker2_1full_plastic_pink,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 11) }
+spriteset(spriteset_railtanker2_1full_plastic_orange,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 13) }
+spriteset(spriteset_railtanker2_1full_plastic_red,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 15) }
+spriteset(spriteset_railtanker2_1full_plastic_cream,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 17) }
+spriteset(spriteset_railtanker2_1full_plastic_yellow,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 19) }
+spriteset(spriteset_railtanker2_2full_plastic_pink,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 11) }
+spriteset(spriteset_railtanker2_2full_plastic_orange,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 13) }
+spriteset(spriteset_railtanker2_2full_plastic_red,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 15) }
+spriteset(spriteset_railtanker2_2full_plastic_cream,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 17) }
+spriteset(spriteset_railtanker2_2full_plastic_yellow,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 19) }
+spriteset(spriteset_railtanker2_3full_plastic_pink,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 10) }
+spriteset(spriteset_railtanker2_3full_plastic_orange,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 12) }
+spriteset(spriteset_railtanker2_3full_plastic_red,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 14) }
+spriteset(spriteset_railtanker2_3full_plastic_cream,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 16) }
+spriteset(spriteset_railtanker2_3full_plastic_yellow,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 18) }
+
+spriteset(spriteset_railtanker2_0full_beer_green,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 20) }
+spriteset(spriteset_railtanker2_0full_beer_darkgreen,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 22) }
+spriteset(spriteset_railtanker2_0full_beer_palegreen,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 24) }
+spriteset(spriteset_railtanker2_0full_beer_brown1,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 26) }
+spriteset(spriteset_railtanker2_0full_beer_brown2,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 28) }
+spriteset(spriteset_railtanker2_0full_beer_brown3,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 30) }
+spriteset(spriteset_railtanker2_1full_beer_green,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 21) }
+spriteset(spriteset_railtanker2_1full_beer_darkgreen,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 23) }
+spriteset(spriteset_railtanker2_1full_beer_palegreen,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 25) }
+spriteset(spriteset_railtanker2_1full_beer_brown1,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 27) }
+spriteset(spriteset_railtanker2_1full_beer_brown2,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 29) }
+spriteset(spriteset_railtanker2_1full_beer_brown3,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(0, 31) }
+spriteset(spriteset_railtanker2_2full_beer_green,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 21) }
+spriteset(spriteset_railtanker2_2full_beer_darkgreen,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 23) }
+spriteset(spriteset_railtanker2_2full_beer_palegreen,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 25) }
+spriteset(spriteset_railtanker2_2full_beer_brown1,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 27) }
+spriteset(spriteset_railtanker2_2full_beer_brown2,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 29) }
+spriteset(spriteset_railtanker2_2full_beer_brown3,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 31) }
+spriteset(spriteset_railtanker2_3full_beer_green,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 20) }
+spriteset(spriteset_railtanker2_3full_beer_darkgreen,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 22) }
+spriteset(spriteset_railtanker2_3full_beer_palegreen,	"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 24) }
+spriteset(spriteset_railtanker2_3full_beer_brown1,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 26) }
+spriteset(spriteset_railtanker2_3full_beer_brown2,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 28) }
+spriteset(spriteset_railtanker2_3full_beer_brown3,		"gfx/RailWagons_2nd_Tanker_colours.png") { template_engine32WTF(184, 30) }
+
+//SPRITEGROUPS
+spritegroup spritegroup_railtanker2_chemicals {
+	loaded: [spriteset_railtanker2_empty_chemicals, spriteset_railtanker2_1full_chemicals, spriteset_railtanker2_2full_chemicals, spriteset_railtanker2_full_chemicals];
+	loading:  [spriteset_railtanker2_empty_chemicals, spriteset_railtanker2_1full_chemicals, spriteset_railtanker2_2full_chemicals, spriteset_railtanker2_full_chemicals];
+}
+spritegroup spritegroup_railtanker2_refinedproducts {
+	loaded: [spriteset_railtanker2_empty_refinedproducts, spriteset_railtanker2_1full_refinedproducts, spriteset_railtanker2_2full_refinedproducts, spriteset_railtanker2_full_refinedproducts];
+	loading:  [spriteset_railtanker2_empty_refinedproducts, spriteset_railtanker2_1full_refinedproducts, spriteset_railtanker2_2full_refinedproducts, spriteset_railtanker2_full_refinedproducts];
+}
+spritegroup spritegroup_railtanker2_fish {
+	loaded: [spriteset_railtanker2_empty_fish, spriteset_railtanker2_1full_fish, spriteset_railtanker2_2full_fish, spriteset_railtanker2_full_fish];
+	loading:  [spriteset_railtanker2_empty_fish, spriteset_railtanker2_1full_fish, spriteset_railtanker2_2full_fish, spriteset_railtanker2_full_fish];
+}
+spritegroup spritegroup_railtanker2_milk {
+	loaded: [spriteset_railtanker2_empty_milk, spriteset_railtanker2_1full_milk, spriteset_railtanker2_2full_milk, spriteset_railtanker2_full_milk];
+	loading:  [spriteset_railtanker2_empty_milk, spriteset_railtanker2_1full_milk, spriteset_railtanker2_2full_milk, spriteset_railtanker2_full_milk];
+}
+spritegroup spritegroup_railtanker2_oil {
+	loaded: [spriteset_railtanker2_empty_oil, spriteset_railtanker2_1full_oil, spriteset_railtanker2_2full_oil, spriteset_railtanker2_full_oil];
+	loading:  [spriteset_railtanker2_empty_oil, spriteset_railtanker2_1full_oil, spriteset_railtanker2_2full_oil, spriteset_railtanker2_full_oil];
+}
+spritegroup spritegroup_railtanker2_plastic {
+	loaded: [spriteset_railtanker2_empty_plastic, spriteset_railtanker2_1full_plastic, spriteset_railtanker2_2full_plastic, spriteset_railtanker2_full_plastic];
+	loading:  [spriteset_railtanker2_empty_plastic, spriteset_railtanker2_1full_plastic, spriteset_railtanker2_2full_plastic, spriteset_railtanker2_full_plastic];
+}
+spritegroup spritegroup_railtanker2_water {
+	loaded: [spriteset_railtanker2_empty_water, spriteset_railtanker2_1full_water, spriteset_railtanker2_2full_water, spriteset_railtanker2_full_water];
+	loading:  [spriteset_railtanker2_empty_water, spriteset_railtanker2_1full_water, spriteset_railtanker2_2full_water, spriteset_railtanker2_full_water];
+}
+
+
+//RAILTANKER2 COLOURS
+
+spritegroup spritegroup_railtanker2_cola_white {
+	loaded: [spriteset_railtanker2_0full_cola_white, spriteset_railtanker2_1full_cola_white, spriteset_railtanker2_2full_cola_white, spriteset_railtanker2_3full_cola_white];
+	loading:  [spriteset_railtanker2_0full_cola_white, spriteset_railtanker2_1full_cola_white, spriteset_railtanker2_2full_cola_white, spriteset_railtanker2_3full_cola_white];
+}
+spritegroup spritegroup_railtanker2_cola_ltblue {
+	loaded: [spriteset_railtanker2_0full_cola_ltblue, spriteset_railtanker2_1full_cola_ltblue, spriteset_railtanker2_2full_cola_ltblue, spriteset_railtanker2_3full_cola_ltblue];
+	loading:  [spriteset_railtanker2_0full_cola_ltblue, spriteset_railtanker2_1full_cola_ltblue, spriteset_railtanker2_2full_cola_ltblue, spriteset_railtanker2_3full_cola_ltblue];
+}
+spritegroup spritegroup_railtanker2_cola_blue {
+	loaded: [spriteset_railtanker2_0full_cola_blue, spriteset_railtanker2_1full_cola_blue, spriteset_railtanker2_2full_cola_blue, spriteset_railtanker2_3full_cola_blue];
+	loading:  [spriteset_railtanker2_0full_cola_blue, spriteset_railtanker2_1full_cola_blue, spriteset_railtanker2_2full_cola_blue, spriteset_railtanker2_3full_cola_blue];
+}
+spritegroup spritegroup_railtanker2_cola_pink {
+	loaded: [spriteset_railtanker2_0full_cola_pink, spriteset_railtanker2_1full_cola_pink, spriteset_railtanker2_2full_cola_pink, spriteset_railtanker2_3full_cola_pink];
+	loading:  [spriteset_railtanker2_0full_cola_pink, spriteset_railtanker2_1full_cola_pink, spriteset_railtanker2_2full_cola_pink, spriteset_railtanker2_3full_cola_pink];
+}
+spritegroup spritegroup_railtanker2_cola_purple {
+	loaded: [spriteset_railtanker2_0full_cola_purple, spriteset_railtanker2_1full_cola_purple, spriteset_railtanker2_2full_cola_purple, spriteset_railtanker2_3full_cola_purple];
+	loading:  [spriteset_railtanker2_0full_cola_purple, spriteset_railtanker2_1full_cola_purple, spriteset_railtanker2_2full_cola_purple, spriteset_railtanker2_3full_cola_purple];
+}
+
+spritegroup spritegroup_railtanker2_plastic_pink {
+	loaded: [spriteset_railtanker2_0full_plastic_pink, spriteset_railtanker2_1full_plastic_pink, spriteset_railtanker2_2full_plastic_pink, spriteset_railtanker2_3full_plastic_pink];
+	loading:  [spriteset_railtanker2_0full_plastic_pink, spriteset_railtanker2_1full_plastic_pink, spriteset_railtanker2_2full_plastic_pink, spriteset_railtanker2_3full_plastic_pink];
+}
+spritegroup spritegroup_railtanker2_plastic_orange {
+	loaded: [spriteset_railtanker2_0full_plastic_orange, spriteset_railtanker2_1full_plastic_orange, spriteset_railtanker2_2full_plastic_orange, spriteset_railtanker2_3full_plastic_orange];
+	loading:  [spriteset_railtanker2_0full_plastic_orange, spriteset_railtanker2_1full_plastic_orange, spriteset_railtanker2_2full_plastic_orange, spriteset_railtanker2_3full_plastic_orange];
+}
+spritegroup spritegroup_railtanker2_plastic_red {
+	loaded: [spriteset_railtanker2_0full_plastic_red, spriteset_railtanker2_1full_plastic_red, spriteset_railtanker2_2full_plastic_red, spriteset_railtanker2_3full_plastic_red];
+	loading:  [spriteset_railtanker2_0full_plastic_red, spriteset_railtanker2_1full_plastic_red, spriteset_railtanker2_2full_plastic_red, spriteset_railtanker2_3full_plastic_red];
+}
+spritegroup spritegroup_railtanker2_plastic_cream {
+	loaded: [spriteset_railtanker2_0full_plastic_cream, spriteset_railtanker2_1full_plastic_cream, spriteset_railtanker2_2full_plastic_cream, spriteset_railtanker2_3full_plastic_cream];
+	loading:  [spriteset_railtanker2_0full_plastic_cream, spriteset_railtanker2_1full_plastic_cream, spriteset_railtanker2_2full_plastic_cream, spriteset_railtanker2_3full_plastic_cream];
+}
+spritegroup spritegroup_railtanker2_plastic_yellow {
+	loaded: [spriteset_railtanker2_0full_plastic_yellow, spriteset_railtanker2_1full_plastic_yellow, spriteset_railtanker2_2full_plastic_yellow, spriteset_railtanker2_3full_plastic_yellow];
+	loading:  [spriteset_railtanker2_0full_plastic_yellow, spriteset_railtanker2_1full_plastic_yellow, spriteset_railtanker2_2full_plastic_yellow, spriteset_railtanker2_3full_plastic_yellow];
+}
+
+spritegroup spritegroup_railtanker2_beer_green {
+	loaded: [spriteset_railtanker2_0full_beer_green, spriteset_railtanker2_1full_beer_green, spriteset_railtanker2_2full_beer_green, spriteset_railtanker2_3full_beer_green];
+	loading:  [spriteset_railtanker2_0full_beer_green, spriteset_railtanker2_1full_beer_green, spriteset_railtanker2_2full_beer_green, spriteset_railtanker2_3full_beer_green];
+}
+spritegroup spritegroup_railtanker2_beer_darkgreen {
+	loaded: [spriteset_railtanker2_0full_beer_darkgreen, spriteset_railtanker2_1full_beer_darkgreen, spriteset_railtanker2_2full_beer_darkgreen, spriteset_railtanker2_3full_beer_darkgreen];
+	loading:  [spriteset_railtanker2_0full_beer_darkgreen, spriteset_railtanker2_1full_beer_darkgreen, spriteset_railtanker2_2full_beer_darkgreen, spriteset_railtanker2_3full_beer_darkgreen];
+}
+spritegroup spritegroup_railtanker2_beer_palegreen {
+	loaded: [spriteset_railtanker2_0full_beer_palegreen, spriteset_railtanker2_1full_beer_palegreen, spriteset_railtanker2_2full_beer_palegreen, spriteset_railtanker2_3full_beer_palegreen];
+	loading:  [spriteset_railtanker2_0full_beer_palegreen, spriteset_railtanker2_1full_beer_palegreen, spriteset_railtanker2_2full_beer_palegreen, spriteset_railtanker2_3full_beer_palegreen];
+}
+spritegroup spritegroup_railtanker2_beer_brown1 {
+	loaded: [spriteset_railtanker2_0full_beer_brown1, spriteset_railtanker2_1full_beer_brown1, spriteset_railtanker2_2full_beer_brown1, spriteset_railtanker2_3full_beer_brown1];
+	loading:  [spriteset_railtanker2_0full_beer_brown1, spriteset_railtanker2_1full_beer_brown1, spriteset_railtanker2_2full_beer_brown1, spriteset_railtanker2_3full_beer_brown1];
+}
+spritegroup spritegroup_railtanker2_beer_brown2 {
+	loaded: [spriteset_railtanker2_0full_beer_brown2, spriteset_railtanker2_1full_beer_brown2, spriteset_railtanker2_2full_beer_brown2, spriteset_railtanker2_3full_beer_brown2];
+	loading:  [spriteset_railtanker2_0full_beer_brown2, spriteset_railtanker2_1full_beer_brown2, spriteset_railtanker2_2full_beer_brown2, spriteset_railtanker2_3full_beer_brown2];
+}
+spritegroup spritegroup_railtanker2_beer_brown3 {
+	loaded: [spriteset_railtanker2_0full_beer_brown3, spriteset_railtanker2_1full_beer_brown3, spriteset_railtanker2_2full_beer_brown3, spriteset_railtanker2_3full_beer_brown3];
+	loading:  [spriteset_railtanker2_0full_beer_brown3, spriteset_railtanker2_1full_beer_brown3, spriteset_railtanker2_2full_beer_brown3, spriteset_railtanker2_3full_beer_brown3];
+}
+//RANDOM SWITCHES
+
+random_switch (FEAT_TRAINS, SELF, railtanker2_random_cola){
+1: spritegroup_railtanker2_cola_white;
+1: spritegroup_railtanker2_cola_ltblue;
+1: spritegroup_railtanker2_cola_blue;
+1: spritegroup_railtanker2_cola_pink;
+1: spritegroup_railtanker2_cola_purple;
+}
+random_switch (FEAT_TRAINS, SELF, railtanker2_random_plastic){
+1: spritegroup_railtanker2_plastic_pink;
+1: spritegroup_railtanker2_plastic_orange;
+1: spritegroup_railtanker2_plastic_red;
+1: spritegroup_railtanker2_plastic_cream;
+1: spritegroup_railtanker2_plastic_yellow;
+}
+random_switch (FEAT_TRAINS, SELF, railtanker2_random_beer){
+1: spritegroup_railtanker2_beer_green;
+1: spritegroup_railtanker2_beer_darkgreen;
+1: spritegroup_railtanker2_beer_palegreen;
+1: spritegroup_railtanker2_beer_brown1;
+1: spritegroup_railtanker2_beer_brown2;
+1: spritegroup_railtanker2_beer_brown3;
+}
+//CARGO SWITCH
+switch (FEAT_TRAINS, SELF, railtanker2_wagon_switch, cargo_type_in_veh) {
+	CHEM: spritegroup_railtanker2_chemicals;
+	HYCH: railtanker2_random_cola;
+	DEUT: spritegroup_railtanker2_water;
+
+	COLA: railtanker2_random_cola;
+	BEER: railtanker2_random_beer;
+	FZDR: railtanker2_random_beer;
+	RFPR: spritegroup_railtanker2_chemicals;
+	LVST: spritegroup_railtanker2_fish;
+	FISH: spritegroup_railtanker2_fish;
+	MILK: spritegroup_railtanker2_milk;
+	OIL_: spritegroup_railtanker2_oil;
+	PETR: spritegroup_railtanker2_refinedproducts;
+	PLAS: spritegroup_railtanker2_plastic;
+	PLST: railtanker2_random_plastic;
+	WATR: spritegroup_railtanker2_water;
+	spritegroup_railtanker2_oil;
+}
+
+
+//RAIL UNIVERSAL 3
+//PURCHASE MENU
+spriteset(spriteset_purchaseMenu_railuniversal2,	"gfx/PurchaseMenu.png"){template_purchaseMenu(5,16)}
+//CARGO SWITCH
+switch (FEAT_TRAINS, SELF, railuniversal2_wagon_switch, cargo_type_in_veh) {
+	URAN: spritegroup_railhopper2_uranium;
+	YETI: spritegroup_railflatbed2_YETI;
+	YETY: spritegroup_railflatbed2_YETY;
+
+	PASS: spritegroup_railflatbed2_livestock;
+	MAIL: spritegroup_railflatbed2_crates;
+
+	LUMB: spritegroup_railflatbed2_lumber;
+	SUPP: railflatbed2_random_supp;
+	ALOY: spritegroup_railflatbed2_steel;
+
+	DIAT: spritegroup_railhopper2_sugar;
+		
+	CHEM: spritegroup_railtanker2_chemicals;
+	HYCH: railtanker2_random_cola;
+	DEUT: spritegroup_railtanker2_water;
+	
+	CMNT: spritegroup_railhopper2_bauxite;
+	COLA: railtanker2_random_cola;
+	BEER: railtanker2_random_beer;
+	RFPR: spritegroup_railtanker2_chemicals;
+	FISH: spritegroup_railtanker2_fish;
+	MILK: spritegroup_railtanker2_milk;
+	OIL_: spritegroup_railtanker2_oil;
+	PETR: spritegroup_railtanker2_refinedproducts;
+	PLAS: spritegroup_railtanker2_plastic;
+	PLST: railtanker2_random_plastic;
+	WATR: spritegroup_railtanker2_water;
+	AORE: spritegroup_railhopper2_bauxite;
+	LIME: spritegroup_railhopper2_bauxite;
+	CTCD: spritegroup_railhopper2_candyfloss;
+	CLAY: spritegroup_railhopper2_clay;
+	POTA: spritegroup_railhopper2_clay;
+	COAL: spritegroup_railhopper2_coal;
+	CORE: spritegroup_railhopper2_copperore;
+	FMSP: spritegroup_railhopper2_fertiliser;
+	FERT: spritegroup_railhopper2_fertiliser;
+	CERE: spritegroup_railhopper2_grain;
+	GRAI: spritegroup_railhopper2_grain;
+	WHEA: spritegroup_railhopper2_grain;
+	MAIZ: spritegroup_railhopper2_grain;
+	IORE: spritegroup_railhopper2_ironore;
+	OLSD: spritegroup_railhopper2_oilseeds;
+	FICR: spritegroup_railhopper2_plantfibres;
+	RUBR: spritegroup_railhopper2_rubber;
+	SCMT: spritegroup_railhopper2_scrapmetal;
+	SAND: spritegroup_railhopper2_sand;
+	GRVL: spritegroup_railhopper2_stone;
+	SUGR: spritegroup_railhopper2_sugar;
+	SGBT: spritegroup_railhopper2_sugar;
+	SGCN: spritegroup_railhopper2_sugar;
+	TOFF: spritegroup_railhopper2_toffee;
+	WOOL: spritegroup_railhopper2_wool;
+	RCYC: spritegroup_railhopper2_recyclables;
+	BRCK: spritegroup_railflatbed2_bricks;
+	BDMT: spritegroup_railflatbed2_bricks;
+	BATT: spritegroup_railflatbed2_batteries;
+	BUBL: spritegroup_railflatbed2_bubbles;
+	FZDR: spritegroup_railflatbed2_fizzydrinks;
+	FOOD: railflatbed2_random_food;
+	FRUT: spritegroup_railflatbed2_fruit;
+	FRVG: spritegroup_railflatbed2_fruit;
+	GLAS: spritegroup_railflatbed2_glass;
+	GOOD: spritegroup_railflatbed2_crates;
+	LVST: spritegroup_railflatbed2_livestock;
+	WDPR: spritegroup_railflatbed2_lumber;
+	MNSP: spritegroup_railflatbed2_crates;
+	PAPR: spritegroup_railflatbed2_paper;
+	STEL: spritegroup_railflatbed2_steel;
+	SWET: spritegroup_railflatbed2_sweets;
+	TOYS: spritegroup_railflatbed2_rubberduckies;
+	VEHI: spritegroup_railflatbed2_cars;
+	ENSP: spritegroup_railflatbed2_cars;
+	WOOD: spritegroup_railflatbed2_wood;
+	VALU: spritegroup_railflatbed2_valu;
+	DIAM: spritegroup_railflatbed2_diam;
+	GOLD: spritegroup_railflatbed2_gold;
+
+	spritegroup_railhopper2_coal;
+}
+
+switch (FEAT_TRAINS, SELF, railuniversal2_MEOW_wagon_switch, cargo_type_in_veh) {
+	YETI: spritegroup_railflatbed2_YETI;
+	YETY: spritegroup_railflatbed2_YETY;
+
+	PASS: random_railflatbed2_MEOW_livestock;
+	MAIL: spritegroup_railflatbed2_crates;
+	
+	LUMB: spritegroup_railflatbed2_lumber;
+	SUPP: railflatbed2_random_supp;
+	ALOY: spritegroup_railflatbed2_steel;
+
+	DIAT: spritegroup_railhopper2_sugar;
+		
+	CHEM: spritegroup_railtanker2_chemicals;
+	HYCH: railtanker2_random_cola;
+	DEUT: spritegroup_railtanker2_water;
+	
+	CMNT: spritegroup_railhopper2_bauxite;
+	COLA: railtanker2_random_cola;
+	BEER: railtanker2_random_beer;
+	RFPR: spritegroup_railtanker2_chemicals;
+	FISH: spritegroup_railtanker2_fish;
+	MILK: spritegroup_railtanker2_milk;
+	OIL_: spritegroup_railtanker2_oil;
+	PETR: spritegroup_railtanker2_refinedproducts;
+	PLAS: spritegroup_railtanker2_plastic;
+	PLST: railtanker2_random_plastic;
+	WATR: spritegroup_railtanker2_water;
+	AORE: spritegroup_railhopper2_bauxite;
+	LIME: spritegroup_railhopper2_bauxite;
+	CTCD: spritegroup_railhopper2_candyfloss;
+	CLAY: spritegroup_railhopper2_clay;
+	POTA: spritegroup_railhopper2_clay;
+	COAL: spritegroup_railhopper2_coal;
+	CORE: spritegroup_railhopper2_copperore;
+	FMSP: spritegroup_railhopper2_fertiliser;
+	FERT: spritegroup_railhopper2_fertiliser;
+	CERE: spritegroup_railhopper2_grain;
+	GRAI: spritegroup_railhopper2_grain;
+	WHEA: spritegroup_railhopper2_grain;
+	MAIZ: spritegroup_railhopper2_grain;
+	IORE: spritegroup_railhopper2_ironore;
+	OLSD: spritegroup_railhopper2_oilseeds;
+	FICR: spritegroup_railhopper2_plantfibres;
+	RUBR: spritegroup_railhopper2_rubber;
+	SCMT: spritegroup_railhopper2_scrapmetal;
+	SAND: spritegroup_railhopper2_sand;
+	GRVL: spritegroup_railhopper2_stone;
+	SUGR: spritegroup_railhopper2_sugar;
+	SGBT: spritegroup_railhopper2_sugar;
+	SGCN: spritegroup_railhopper2_sugar;
+	TOFF: spritegroup_railhopper2_toffee;
+	WOOL: spritegroup_railhopper2_wool;
+	RCYC: spritegroup_railhopper2_recyclables;
+	BRCK: spritegroup_railflatbed2_bricks;
+	BDMT: spritegroup_railflatbed2_bricks;
+	BATT: spritegroup_railflatbed2_batteries;
+	BUBL: spritegroup_railflatbed2_bubbles;
+	FZDR: spritegroup_railflatbed2_fizzydrinks;
+	FOOD: railflatbed2_random_food;
+	FRUT: spritegroup_railflatbed2_fruit;
+	FRVG: spritegroup_railflatbed2_fruit;
+	GLAS: spritegroup_railflatbed2_glass;
+	GOOD: random_railflatbed2_MEOW_goods;
+	LVST: random_railflatbed2_MEOW_livestock;
+	WDPR: spritegroup_railflatbed2_lumber;
+	MNSP: spritegroup_railflatbed2_crates;
+	PAPR: spritegroup_railflatbed2_paper;
+	STEL: spritegroup_railflatbed2_steel;
+	SWET: spritegroup_railflatbed2_sweets;
+	TOYS: spritegroup_railflatbed2_rubberduckies;
+	VEHI: spritegroup_railflatbed2_cars;
+	ENSP: spritegroup_railflatbed2_cars;
+	WOOD: spritegroup_railflatbed2_wood;
+	VALU: spritegroup_railflatbed2_valu;
+	DIAM: spritegroup_railflatbed2_diam;
+	GOLD: spritegroup_railflatbed2_gold;
+
+	spritegroup_railhopper2_coal;
+}
+
+switch (FEAT_TRAINS, PARENT, railuniversal2_MEOWorNOT, vehicle_type_id)
+{
+item_MEOW_rail_01: railuniversal2_MEOW_wagon_switch;
+item_MEOW_rail_02: railuniversal2_MEOW_wagon_switch;
+item_MEOW_rail_03: railuniversal2_MEOW_wagon_switch;
+item_MEOW_rail_04: railuniversal2_MEOW_wagon_switch;
+item_MEOW_rail_05: railuniversal2_MEOW_wagon_switch;
+item_MEOW_rail_06: railuniversal2_MEOW_wagon_switch;
+item_MEOW_rail_07: railuniversal2_MEOW_wagon_switch;
+item_MEOW_rail_08: railuniversal2_MEOW_wagon_switch;
+item_MEOW_rail_09: railuniversal2_MEOW_wagon_switch;
+item_CABOOSE_2: railuniversal2_MEOW_wagon_switch;
+railuniversal2_wagon_switch;
+}
