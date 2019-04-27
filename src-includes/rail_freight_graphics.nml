@@ -44,21 +44,27 @@ spriteset(spriteset_train_railmedium9_reversed, "gfx/railmedium_modern.png") { t
 
 
 switch(FEAT_TRAINS, PARENT, switch_rail_freight_vehid_front, vehicle_type_id){
+  item_railmedium4: spriteset_train_railmedium4;
+  item_railmedium5: spriteset_train_railmedium5;
+  item_railmedium6: spriteset_train_railmedium6;
   item_railmedium7: spriteset_train_railmedium7;
   item_railmedium8: spriteset_train_railmedium8;
   item_railmedium9: spriteset_train_railmedium9;
   spriteset_train_railmedium9;
 }
 switch(FEAT_TRAINS, PARENT, switch_rail_freight_vehid_back, vehicle_type_id){
+  item_railmedium4: spriteset_train_railmedium4;
+  item_railmedium5: spriteset_train_railmedium5;
+  item_railmedium6: spriteset_train_railmedium6;
   item_railmedium7: spriteset_train_railmedium7;
-  item_railmedium8: spriteset_train_railmedium8;
+  item_railmedium8: spriteset_train_railmedium8_end;
   item_railmedium9: spriteset_train_railmedium9;
   spriteset_train_railmedium9;
 }
 switch(FEAT_TRAINS, PARENT, switch_rail_freight_vehid_wagons_parent, vehicle_type_id){
-  //item_railmedium4: railuniversal3_wagon_switch;
-  //item_railmedium5: railuniversal3_wagon_switch;
-  //item_railmedium6: railuniversal3_wagon_switch;
+  item_railmedium4: railuniversal3_wagon_switch;
+  item_railmedium5: railuniversal3_wagon_switch;
+  item_railmedium6: railuniversal3_wagon_switch;
   item_railmedium7: railuniversal2_wagon_switch;
   item_railmedium8: railuniversal2_wagon_switch;
   item_railmedium9: railuniversal2_wagon_switch;
@@ -69,10 +75,10 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_vehid_wagons_self, vehicle_type_id
   //item_railhopper1:     railuniversal1_wagon_switch;
   //item_railtanker1:     railuniversal1_wagon_switch;
   //item_railuniversal1:  railuniversal1_wagon_switch;
-  //item_railflatbed3:    railuniversal3_wagon_switch;
-  //item_railhopper3:     railuniversal3_wagon_switch;
-  //item_railtanker3:     railuniversal3_wagon_switch;
-  //item_railuniversal3:  railuniversal3_wagon_switch;
+  item_railflatbed3:    railuniversal3_wagon_switch;
+  item_railhopper3:     railuniversal3_wagon_switch;
+  item_railtanker3:     railuniversal3_wagon_switch;
+  item_railuniversal3:  railuniversal3_wagon_switch;
   item_railflatbed2:    railuniversal2_wagon_switch;
   item_railhopper2:     railuniversal2_wagon_switch;
   item_railtanker2:     railuniversal2_wagon_switch;
@@ -594,7 +600,14 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw64, position_in_
   0..31: switch_rail_freight_vehid_front;
   switch_rail_freight_graphics_both_draw64_end;
 }
-switch(FEAT_TRAINS, PARENT, switch_rail_freight_graphics_both, count_veh_id(47)){
+switch(FEAT_TRAINS, PARENT, switch_rail_freight_graphics_both,
+  count_veh_id(37) +
+  count_veh_id(39) +
+  count_veh_id(41) +
+  count_veh_id(43) +
+  count_veh_id(45) +
+  count_veh_id(47)
+  ){
   1..2: switch_rail_freight_graphics_both_draw1;
   3..4: switch_rail_freight_graphics_both_draw2;
   5..6: switch_rail_freight_graphics_both_draw3;
@@ -924,7 +937,14 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw64, position_in
   0..63: switch_rail_freight_vehid_front;
   switch_rail_freight_vehid_wagons_self;
 }
-switch(FEAT_TRAINS, PARENT, switch_rail_freight_graphics_front, count_veh_id(47)){
+switch(FEAT_TRAINS, PARENT, switch_rail_freight_graphics_front,
+  count_veh_id(37) +
+  count_veh_id(39) +
+  count_veh_id(41) +
+  count_veh_id(43) +
+  count_veh_id(45) +
+  count_veh_id(47)
+  ){
   1..2: switch_rail_freight_graphics_front_draw1;
   3..4: switch_rail_freight_graphics_front_draw2;
   5..6: switch_rail_freight_graphics_front_draw3;
@@ -998,6 +1018,11 @@ switch(FEAT_TRAINS, PARENT, switch_rail_freight_graphics_front, count_veh_id(47)
 switch(FEAT_TRAINS,PARENT, switch_rail_freight_graphics_decider, [
 STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
 ]){
+	37: switch_rail_freight_graphics_both;//vehicle ID here
+	39: switch_rail_freight_graphics_both;//vehicle ID here
+	41: switch_rail_freight_graphics_both;//vehicle ID here
+	43: switch_rail_freight_graphics_both;//vehicle ID here
+	45: switch_rail_freight_graphics_both;//vehicle ID here
 	47: switch_rail_freight_graphics_both;//vehicle ID here
 	switch_rail_freight_graphics_front;
 }
