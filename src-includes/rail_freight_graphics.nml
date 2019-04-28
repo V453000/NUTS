@@ -723,7 +723,8 @@ switch(FEAT_TRAINS, PARENT, switch_rail_freight_graphics_both,
   count_veh_id(65) +
   count_veh_id(67)   // railfast9
   ){
-  0..2: switch_rail_freight_graphics_both_draw1;
+  0: switch_rail_freight_vehid_wagons_self;
+  1..2: switch_rail_freight_graphics_both_draw1;
   3..4: switch_rail_freight_graphics_both_draw2;
   5..6: switch_rail_freight_graphics_both_draw3;
   7..8: switch_rail_freight_graphics_both_draw4;
@@ -1072,7 +1073,8 @@ switch(FEAT_TRAINS, PARENT, switch_rail_freight_graphics_front,
   count_veh_id(65) +
   count_veh_id(67)   // railfast9
   ){
-  0..2: switch_rail_freight_graphics_front_draw1;
+  0: switch_rail_freight_vehid_wagons_self;
+  1..2: switch_rail_freight_graphics_front_draw1;
   3..4: switch_rail_freight_graphics_front_draw2;
   5..6: switch_rail_freight_graphics_front_draw3;
   7..8: switch_rail_freight_graphics_front_draw4;
