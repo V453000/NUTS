@@ -1403,7 +1403,7 @@ item(FEAT_TRAINS, item_railmedium9, 47) { //ID47
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        201 km/h; // actually 140, but there are rounding errors
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
         ai_special_flag:              AI_FLAG_CARGO;

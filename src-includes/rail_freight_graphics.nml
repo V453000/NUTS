@@ -1144,7 +1144,7 @@ switch(FEAT_TRAINS, PARENT, switch_rail_freight_graphics_front,
 
 
 
-switch(FEAT_TRAINS,PARENT, switch_rail_freight_graphics_decider, [
+switch(FEAT_TRAINS,PARENT, switch_rail_freight_graphics_which_end, [
 STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
 ]){
 	17: switch_rail_freight_graphics_both;//vehicle ID here // railstrong4
@@ -1167,3 +1167,26 @@ STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
 	67: switch_rail_freight_graphics_both;//vehicle ID here // railfast9
 	switch_rail_freight_graphics_front;
 }
+
+
+spriteset(sprite_attach_overlay_8_rail_freight_engine,  	 "gfx/attach_highlights.png"){template_attach_overlay_8(0)}
+spriteset(sprite_attach_overlay_8_rail_freight_wagon,   	 "gfx/attach_highlights.png"){template_attach_overlay_8(1)}
+
+switch (FEAT_TRAINS,SELF, switch_rail_freight_graphics_decider, [
+  STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 4 ? CB_FLAG_MORE_SPRITES  : 0) + PALETTE_USE_DEFAULT, 0x100),
+  getbits(extra_callback_info1, 8, 8)
+  ]){
+  0: sprite_attach_overlay_8_rail_freight_engine;
+  1: sprite_attach_overlay_8_rail_freight_engine;
+  2: switch_rail_freight_graphics_which_end;
+  3: switch_rail_freight_graphics_which_end;
+  return sprite_attach_overlay_8_rail_freight_engine;
+
+}
+
+/*
+switch (FEAT_TRAINS,SELF, switch_rail_freight_graphics_decider,vehicle_is_in_depot){// vehicle_is_stopped + 
+  1: switch_rail_freight_attach_overlay;
+  switch_rail_freight_attach_overlay;
+}
+*/
