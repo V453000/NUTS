@@ -80,7 +80,7 @@ item(FEAT_TRAINS, item_railstrong4, 17) { //ID17
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        120 km/h; // actually 140, but there are rounding errors
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
         ai_special_flag:              AI_FLAG_CARGO;
@@ -194,7 +194,7 @@ item(FEAT_TRAINS, item_railstrong5, 19) { //ID19
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        130 km/h; // actually 140, but there are rounding errors
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
         ai_special_flag:              AI_FLAG_CARGO;
@@ -310,7 +310,7 @@ item(FEAT_TRAINS, item_railstrong6, 21) { //ID21
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        140 km/h; // actually 140, but there are rounding errors
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
         ai_special_flag:              AI_FLAG_CARGO;
@@ -424,7 +424,7 @@ item(FEAT_TRAINS, item_railstrong7, 23) { //ID23
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        150 km/h; // actually 140, but there are rounding errors
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
         ai_special_flag:              AI_FLAG_CARGO;
@@ -538,7 +538,7 @@ item(FEAT_TRAINS, item_railstrong8, 25) { //ID25
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        155 km/h; // actually 140, but there are rounding errors
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
         ai_special_flag:              AI_FLAG_CARGO;
@@ -652,7 +652,7 @@ item(FEAT_TRAINS, item_railstrong9, 27) { //ID27
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        157 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
         ai_special_flag:              AI_FLAG_CARGO;
@@ -842,7 +842,7 @@ item(FEAT_TRAINS, item_railmedium4, 37) { //ID37
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
 
         speed:                        140 km/h; // actually 140, but there are rounding errors
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
         ai_special_flag:              AI_FLAG_CARGO;
@@ -954,7 +954,7 @@ item(FEAT_TRAINS, item_railmedium5, 39) { //ID39
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        155 km/h; // actually 140, but there are rounding errors
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
         ai_special_flag:              AI_FLAG_CARGO;
@@ -1065,7 +1065,7 @@ item(FEAT_TRAINS, item_railmedium6, 41) { //ID41
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        160 km/h; // actually 140, but there are rounding errors
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
         ai_special_flag:              AI_FLAG_CARGO;
@@ -1175,7 +1175,7 @@ item(FEAT_TRAINS, item_railmedium7, 43) { //ID43
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        177 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
         ai_special_flag:              AI_FLAG_CARGO;
@@ -1290,7 +1290,7 @@ item(FEAT_TRAINS, item_railmedium8, 45) { //ID45
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        185 km/h; // actually 140, but there are rounding errors
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
         ai_special_flag:              AI_FLAG_CARGO;
@@ -1513,7 +1513,7 @@ item(FEAT_TRAINS, item_railfast4, 57) { //ID57
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        170 km/h; // actually 140, but there are rounding errors
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
         ai_special_flag:              AI_FLAG_CARGO;
@@ -1622,7 +1622,7 @@ item(FEAT_TRAINS, item_railfast5, 59) { //ID59
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        185 km/h; // actually 140, but there are rounding errors
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
         ai_special_flag:              AI_FLAG_CARGO;
@@ -1730,7 +1730,7 @@ item(FEAT_TRAINS, item_railfast6, 61) { //ID61
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        190 km/h; // actually 140, but there are rounding errors
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
         ai_special_flag:              AI_FLAG_CARGO;
@@ -1838,7 +1838,7 @@ item(FEAT_TRAINS, item_railfast7, 63) { //ID63
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        200 km/h; // actually 140, but there are rounding errors
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
         ai_special_flag:              AI_FLAG_CARGO;
@@ -1946,7 +1946,7 @@ item(FEAT_TRAINS, item_railfast8, 65) { //ID65
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        220 km/h; // actually 140, but there are rounding errors
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
         ai_special_flag:              AI_FLAG_CARGO;
@@ -2054,7 +2054,7 @@ item(FEAT_TRAINS, item_railfast9, 67) { //ID67
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        241 km/h; // actually 140, but there are rounding errors
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
         ai_special_flag:              AI_FLAG_CARGO;
