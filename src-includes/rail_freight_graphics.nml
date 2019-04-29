@@ -252,8 +252,31 @@ switch (FEAT_TRAINS,SELF, switch_rail_freight_vehid_wagons_parent_layers, [
   1: switch_rail_freight_vehid_wagons_parent;
   return switch_rail_freight_vehid_wagons_overlay_articulated_pos;
 }
+switch(FEAT_TRAINS, PARENT, switch_rail_freight_vehid_wagons_first_engine_switch,
+  count_veh_id(17) + // railstrong4
+  count_veh_id(19) +
+  count_veh_id(21) +
+  count_veh_id(23) +
+  count_veh_id(25) +
+  count_veh_id(27) + // railstrong9
+  count_veh_id(37) + // railmedium4
+  count_veh_id(39) +
+  count_veh_id(41) +
+  count_veh_id(43) +
+  count_veh_id(45) +
+  count_veh_id(47) + // railmedium9
+  count_veh_id(57) + // railfast4
+  count_veh_id(59) +
+  count_veh_id(61) +
+  count_veh_id(63) +
+  count_veh_id(65) +
+  count_veh_id(67)   // railfast9
+  ){
+  0..2: switch_rail_freight_vehid_wagons_parent;
+  switch_rail_freight_vehid_wagons_parent_layers;
+}
 switch(FEAT_TRAINS, PARENT, switch_rail_freight_vehid_wagons_depot_switch, vehicle_is_stopped + vehicle_is_in_depot){
-  2:    switch_rail_freight_vehid_wagons_parent_layers;
+  2:    switch_rail_freight_vehid_wagons_first_engine_switch;
   switch_rail_freight_vehid_wagons_parent;
 }
 // check if the to-be-drawn-as-wagon is actually a real wagon item
@@ -788,7 +811,6 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw64, position_in_
   switch_rail_freight_graphics_both_draw64_end;
 }
 switch(FEAT_TRAINS, PARENT, switch_rail_freight_graphics_both,
-  
   count_veh_id(17) + // railstrong4
   count_veh_id(19) +
   count_veh_id(21) +
