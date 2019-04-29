@@ -1542,8 +1542,8 @@ item(FEAT_TRAINS, item_railfast4, 57) { //ID57
 		can_attach_wagon: switch_railfast4_attach;
 		additional_text: string(info_rail_fast_4);
 		speed: 								170;
-		power: 								3200; //engine only
-		weight: 							80; //engine only
+		power: 								3200/2; //engine only
+		weight: 							80/2; //engine only
 		tractive_effort_coefficient:			56; //engine only
 		cost_factor:						12; //everything
 		running_cost_factor:				100; //only engines
@@ -1650,8 +1650,8 @@ item(FEAT_TRAINS, item_railfast5, 59) { //ID59
 		can_attach_wagon: switch_railfast5_attach;
 		additional_text: string(info_rail_fast_5);
 		speed: 								183; //maybe for wagons later, not now
-		power: 								4600; //engine only
-		weight: 							80; //engine only
+		power: 								4600/2; //engine only
+		weight: 							80/2; //engine only
 		tractive_effort_coefficient:			68; //engine only
 		cost_factor:						13; //everything
 		running_cost_factor:				100; //only engines
@@ -1758,8 +1758,8 @@ item(FEAT_TRAINS, item_railfast6, 61) { //ID61
 		can_attach_wagon: switch_railfast6_attach;
 		additional_text: string(info_rail_fast_6);
 		speed: 								190; //maybe for wagons later, not now
-		power: 								6000; //engine only
-		weight: 							80; //engine only
+		power: 								6000/2; //engine only
+		weight: 							80/2; //engine only
 		tractive_effort_coefficient:			84; //engine only
 		cost_factor:						14; //everything
 		running_cost_factor:				100; //only engines
@@ -1866,8 +1866,8 @@ item(FEAT_TRAINS, item_railfast7, 63) { //ID63
 		can_attach_wagon: switch_railfast7_attach;
 		additional_text: string(info_rail_fast_7);
 		speed: 								207; //maybe for wagons later, not now
-		power: 								7000; //engine only
-		weight: 							80; //engine only
+		power: 								7000/2; //engine only
+		weight: 							80/2; //engine only
 		tractive_effort_coefficient:			92; //engine only
 		cost_factor:						15; //everything
 		running_cost_factor:				100; //only engines
@@ -1974,8 +1974,8 @@ item(FEAT_TRAINS, item_railfast8, 65) { //ID65
 		can_attach_wagon: switch_railfast8_attach;
 		additional_text: string(info_rail_fast_8);
 		speed: 								228; //maybe for wagons later, not now
-		power: 								8000; //engine only
-		weight: 							80; //engine only
+		power: 								8000/2; //engine only
+		weight: 							80/2; //engine only
 		tractive_effort_coefficient:			115; //engine only
 		cost_factor:						16; //everything
 		running_cost_factor:				100; //only engines
@@ -2082,8 +2082,8 @@ item(FEAT_TRAINS, item_railfast9, 67) { //ID67
 		can_attach_wagon: switch_railfast9_attach;
 		additional_text: string(info_rail_fast_9);
 		speed: 								255; //maybe for wagons later, not now
-		power: 								10000; //engine only
-		weight: 							80; //engine only
+		power: 								10000/2; //engine only
+		weight: 							80/2; //engine only
 		tractive_effort_coefficient:			142; //engine only
 		cost_factor:						17; //everything
 		running_cost_factor:				100; //only engines
