@@ -4,6 +4,17 @@
 		- Superstrong engines are allowed to attach express wagons. It was a rather obscure rule. If you want your passengers to travel slowly, you can now.
 		-> Now engines can only attach the same engine, or the correct wagons for them. This allows the text in the purchase menu to be removed, and error messages simplified.
 	
+	When multiple engines of the same type are used in one train, wagons no longer show between engines.
+	Engines automatically draw at the front of the train, no matter where is the engine placed.
+	Exception: When one engine is placed at the end of the train, the train looks like dual-headed, and automatically distributes engines at the front and back.
+	
+	When multiple engines of the same type are used in one train, visualisation shows when a real engine looks like a wagon and vice versa.
+
+	Rail Fast class is no longer dual-headed and has an articulated wagon just like many other rail engines.
+	Rail Fast class power and tractive effort (through lost weight) halved to keep balance with other rail engines.
+
+	In the purchase menu, loading speed is written in number of stages instead of the code number.
+	In the purchase menu, articulated wagons don't mention (x2) for capacity as it does not matter if you do not need to calculate the loading stages.
 
 0.8.1
   Changed the 32bpp parameter to 32bpp SLUGs to make it more clear that it's not for everything.
