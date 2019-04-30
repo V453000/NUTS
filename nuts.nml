@@ -25799,69 +25799,69 @@ item(FEAT_TRAINS, item_maglevuniversal, 641) { //ID641
 
 
 switch(FEAT_TRAINS, SELF, switch_capacity_SHIuniversal, cargo_type_in_veh){
-	CERE: 45;
-	CMNT: 45;
-	COLA: 45;
-	BEER: 45;
-	RFPR: 45;
-	FISH: 45;
-	MILK: 45;
-	OIL_: 45;
-	PETR: 45;
-	PLAS: 45;
-	PLST: 45;
-	WATR: 45;
-	AORE: 45;
-	LIME: 45;
-	CTCD: 45;
-	CLAY: 45;
-	POTA: 45;
-	COAL: 45;
-	CORE: 45;
-	FMSP: 45;
-	FERT: 45;
-	GRAI: 45;
-	WHEA: 45;
-	MAIZ: 45;
-	IORE: 45;
-	OLSD: 45;
-	FICR: 45;
-	RUBR: 45;
-	SCMT: 45;
-	SAND: 45;
-	GRVL: 45;
-	SUGR: 45;
-	SGBT: 45;
-	SGCN: 45;
-	TOFF: 45;
-	WOOL: 45;
-	RCYC: 45;
-	BRCK: 45;
-	BDMT: 45;
-	BATT: 45;
-	BUBL: 45;
-	FZDR: 45;
-	FOOD: 45;
-	FRUT: 45;
-	GLAS: 45;
-	GOOD: 45;
-	LVST: 45;
-	WDPR: 45;
-	MNSP: 45;
-	PAPR: 45;
-	STEL: 45;
-	SWET: 45;
-	TOYS: 45;
-	VEHI: 45;
-	ENSP: 45;
-	WOOD: 45;
-	VALU: 45;
-	GOLD: 45;
-	DIAM: 45;
-	
 	PASS: 108;
+	CERE: 54;
+	CMNT: 54;
+	COLA: 54;
+	BEER: 54;
+	RFPR: 54;
+	FISH: 54;
+	MILK: 54;
+	OIL_: 54;
+	PETR: 54;
+	PLAS: 54;
+	PLST: 54;
+	WATR: 54;
+	AORE: 54;
+	LIME: 54;
+	CTCD: 54;
+	CLAY: 54;
+	POTA: 54;
+	COAL: 54;
+	CORE: 54;
+	FMSP: 54;
+	FERT: 54;
+	GRAI: 54;
+	WHEA: 54;
+	MAIZ: 54;
+	IORE: 54;
+	OLSD: 54;
+	FICR: 54;
+	RUBR: 54;
+	SCMT: 54;
+	SAND: 54;
+	GRVL: 54;
+	SUGR: 54;
+	SGBT: 54;
+	SGCN: 54;
+	TOFF: 54;
+	WOOL: 54;
+	RCYC: 54;
+	BRCK: 54;
+	BDMT: 54;
+	BATT: 54;
+	BUBL: 54;
+	FZDR: 54;
+	FOOD: 54;
+	FRUT: 54;
+	GLAS: 54;
+	GOOD: 54;
+	LVST: 54;
+	WDPR: 54;
+	MNSP: 54;
+	PAPR: 54;
+	STEL: 54;
+	SWET: 54;
+	TOYS: 54;
+	VEHI: 54;
+	ENSP: 54;
+	WOOD: 54;
+	VALU: 54;
+	GOLD: 54;
+	DIAM: 54;
+	
 	MAIL: 54;
-	return 45;
+	return 54;
 }
 
 //-------------------------------------------------------------------------------------------------------------------------------------------
@@ -26017,70 +26017,70 @@ switch(FEAT_TRAINS, SELF, switch_loadspeed_SHIP_EARLY_UNIVERSAL, cargo_type_in_v
 	return 20;
 }
 switch(FEAT_TRAINS, SELF, switch_loadspeed_SHIP_MODERN_UNIVERSAL, cargo_type_in_veh){
-	CERE: 5;
-	CMNT: 5;
-	COLA: 5;
-	BEER: 5;
-	RFPR: 5;
-	FISH: 5;
-	MILK: 5;
-	OIL_: 5;
-	PETR: 5;
-	PLAS: 5;
-	PLST: 5;
-	WATR: 5;
-	AORE: 5;
-	LIME: 5;
-	CTCD: 5;
-	CLAY: 5;
-	POTA: 5;
-	COAL: 5;
-	CORE: 5;
-	FMSP: 5;
-	FERT: 5;
-	GRAI: 5;
-	WHEA: 5;
-	MAIZ: 5;
-	IORE: 5;
-	OLSD: 5;
-	FICR: 5;
-	RUBR: 5;
-	SCMT: 5;
-	SAND: 5;
-	GRVL: 5;
-	SUGR: 5;
-	SGBT: 5;
-	SGCN: 5;
-	TOFF: 5;
-	WOOL: 5;
-	RCYC: 5;
-	BRCK: 5;
-	BDMT: 5;
-	BATT: 5;
-	BUBL: 5;
-	FZDR: 5;
-	FOOD: 5;
-	FRUT: 5;
-	GLAS: 5;
-	GOOD: 5;
-	LVST: 5;
-	WDPR: 5;
-	MNSP: 5;
-	PAPR: 5;
-	STEL: 5;
-	SWET: 5;
-	TOYS: 5;
-	VEHI: 5;
-	ENSP: 5;
-	WOOD: 5;
-	VALU: 5;
-	GOLD: 5;
-	DIAM: 5;
-	JAVA: 5;
+	CERE: 6;
+	CMNT: 6;
+	COLA: 6;
+	BEER: 6;
+	RFPR: 6;
+	FISH: 6;
+	MILK: 6;
+	OIL_: 6;
+	PETR: 6;
+	PLAS: 6;
+	PLST: 6;
+	WATR: 6;
+	AORE: 6;
+	LIME: 6;
+	CTCD: 6;
+	CLAY: 6;
+	POTA: 6;
+	COAL: 6;
+	CORE: 6;
+	FMSP: 6;
+	FERT: 6;
+	GRAI: 6;
+	WHEA: 6;
+	MAIZ: 6;
+	IORE: 6;
+	OLSD: 6;
+	FICR: 6;
+	RUBR: 6;
+	SCMT: 6;
+	SAND: 6;
+	GRVL: 6;
+	SUGR: 6;
+	SGBT: 6;
+	SGCN: 6;
+	TOFF: 6;
+	WOOL: 6;
+	RCYC: 6;
+	BRCK: 6;
+	BDMT: 6;
+	BATT: 6;
+	BUBL: 6;
+	FZDR: 6;
+	FOOD: 6;
+	FRUT: 6;
+	GLAS: 6;
+	GOOD: 6;
+	LVST: 6;
+	WDPR: 6;
+	MNSP: 6;
+	PAPR: 6;
+	STEL: 6;
+	SWET: 6;
+	TOYS: 6;
+	VEHI: 6;
+	ENSP: 6;
+	WOOD: 6;
+	VALU: 6;
+	GOLD: 6;
+	DIAM: 6;
+	JAVA: 6;
 	
 	PASS: 12;
 	MAIL: 6;
-	return 5;
+	return 6;
 }
 
 switch(FEAT_TRAINS,PARENT, SHIP_WAGON_LOADSPEED_SWITCH, vehicle_type_id){
@@ -50433,6 +50433,7 @@ item(FEAT_TRAINS, item_SHIP_LARGE01, 690) { //ID690
 		//Just an engine, no refit
         refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+				default_cargo_type:           GOOD;
 
         loading_speed:                5;
         cost_factor:                  10;
@@ -50467,11 +50468,12 @@ item(FEAT_TRAINS, item_SHIP_LARGE01, 690) { //ID690
 		power: 							SHIP_LARGE01_wetrail_power_switch;
 		weight: 							100;
 		tractive_effort_coefficient:			SHIP_LARGE01_wetrail_te_switch;
-		loading_speed:					5;
 		cost_factor:						9;
 		running_cost_factor:				100;
 		visual_effect_and_powered: switch_SHIP_DIESEL;
-	
+		cargo_capacity: switch_capacity_SHIuniversal;
+		purchase_cargo_capacity: 108-60;
+		loading_speed:	switch_loadspeed_SHIP_MODERN_UNIVERSAL;
 		}
 }
 
@@ -50499,6 +50501,7 @@ item(FEAT_TRAINS, item_SHIP_LARGE02, 692) { //ID692
 		//Just an engine, no refit
         refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+				default_cargo_type:           GOOD;
 
         loading_speed:                5;
         cost_factor:                  10;
@@ -50533,11 +50536,12 @@ item(FEAT_TRAINS, item_SHIP_LARGE02, 692) { //ID692
 		power: 							SHIP_LARGE02_wetrail_power_switch;
 		weight: 							100;
 		tractive_effort_coefficient:			SHIP_LARGE02_wetrail_te_switch;
-		loading_speed:					5;
 		cost_factor:						11;
 		running_cost_factor:				100;
 		visual_effect_and_powered: switch_SHIP_DIESEL;
-	
+		cargo_capacity: switch_capacity_SHIuniversal;
+		purchase_cargo_capacity: 108-60;
+		loading_speed:	switch_loadspeed_SHIP_MODERN_UNIVERSAL;
 		}
 }
 
@@ -50566,6 +50570,7 @@ item(FEAT_TRAINS, item_SHIP_LARGE03, 694) { //ID694
 		//Just an engine, no refit
         refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+				default_cargo_type:           GOOD;
 
         loading_speed:                5;
         cost_factor:                  10;
@@ -50600,11 +50605,12 @@ item(FEAT_TRAINS, item_SHIP_LARGE03, 694) { //ID694
 		power: 							SHIP_LARGE03_wetrail_power_switch;
 		weight: 							100;
 		tractive_effort_coefficient:			SHIP_LARGE03_wetrail_te_switch;
-		loading_speed:					5;
 		cost_factor:						13;
 		running_cost_factor:				100;
 		visual_effect_and_powered: switch_SHIP_DIESEL;
-	
+		cargo_capacity: switch_capacity_SHIuniversal;
+		purchase_cargo_capacity: 108-60;
+		loading_speed:	switch_loadspeed_SHIP_MODERN_UNIVERSAL;
 		}
 }
 
@@ -51158,6 +51164,7 @@ item(FEAT_TRAINS, item_C4T01, 730) { //ID700
 		//Just an engine, no refit
         refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+				default_cargo_type:           GOOD;
 
         loading_speed:                5;
         cost_factor:                  10;
@@ -51192,10 +51199,11 @@ item(FEAT_TRAINS, item_C4T01, 730) { //ID700
 		power: 							1500;
 		weight: 							100;
 		tractive_effort_coefficient:			190;
-		loading_speed:					5;
 		cost_factor:						40;
 		running_cost_factor:				100;
-		cargo_capacity: 					60;
+		cargo_capacity: switch_capacity_SHIuniversal;
+		purchase_cargo_capacity: 108-60;
+		loading_speed:	switch_loadspeed_SHIP_MODERN_UNIVERSAL;
 		}
 
 }

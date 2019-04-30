@@ -77,7 +77,7 @@ STR_RAILWAGON3		:Designed: {SILVER}1985{}{BLACK}Loading stages: {SILVER}5
 STR_MONOWAGON		:Loading stages: {GOLD}4
 STR_MAGLEVWAGON		:Loading stages: {GOLD}3
 STR_CHAMELEONWAGON	:Designed: {SILVER}1960{}{BLACK}Loading stages: {DKGREEN}7
-STR_SHIWAGON		:{LTBLUE}SMALL{BLACK} ships:{}{BLACK}Capacity: {LTBLUE}40{}{BLACK}Loading stages:{LTBLUE}2{}{BLUE}LARGE{BLACK} ships:{}{BLACK}Capacity: {BLUE}45{}{BLACK}Loading stages:{BLUE}9
+STR_SHIWAGON		:{LTBLUE}SMALL{BLACK} ships:{}{BLACK}Capacity: {LTBLUE}40{}{BLACK}Loading stages:{LTBLUE}2{}{BLUE}LARGE{BLACK} ships:{}{BLACK}Capacity: {BLUE}54{}{BLACK}Loading stages:{BLUE}9
 STR_SHIWAGON_express:Stats depend on leading engine.
 STR_CHAMIPAX		:Designed: {SILVER}1960{}{BLACK}Loading stages: {DKGREEN}7
 

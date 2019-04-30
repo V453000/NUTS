@@ -17,6 +17,8 @@
 	In the purchase menu, articulated wagons don't mention (x2) for capacity as it does not matter if you do not need to calculate the loading stages.
 	In the purchase menu, rules which vehicles can the engine attach are not shown. The rules should be simple enough now, and the error messages should be clear.
 
+	Large ship capacity increased to 54 from 45. Loading stages are still 9.
+
 0.8.1
   Changed the 32bpp parameter to 32bpp SLUGs to make it more clear that it's not for everything.
   
