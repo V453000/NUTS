@@ -113,6 +113,7 @@ item(FEAT_TRAINS, item_railstrong4, 17) { //ID17
 		running_cost_factor:				100; //only engines
 		cargo_capacity: switch_railstrong4_capacity;
 		loading_speed: switch_railstrong4_loadspeed;
+		visual_effect_and_powered: switch_rail_freight_powered_decider;
 	}
 }
 
@@ -227,6 +228,7 @@ item(FEAT_TRAINS, item_railstrong5, 19) { //ID19
 		running_cost_factor:				100; //only engines
 		cargo_capacity: switch_railstrong5_capacity;
 		loading_speed: switch_railstrong5_loadspeed;
+		visual_effect_and_powered: switch_rail_freight_powered_decider;
 	}
 }
 
@@ -343,6 +345,7 @@ item(FEAT_TRAINS, item_railstrong6, 21) { //ID21
 		running_cost_factor:				100; //only engines
 		cargo_capacity: switch_railstrong6_capacity;
 		loading_speed: switch_railstrong6_loadspeed;
+		visual_effect_and_powered: switch_rail_freight_powered_decider;
 	}
 }
 
@@ -457,6 +460,7 @@ item(FEAT_TRAINS, item_railstrong7, 23) { //ID23
 		running_cost_factor:				100; //only engines
 		cargo_capacity: switch_railstrong7_capacity;
 		loading_speed: switch_railstrong7_loadspeed;
+		visual_effect_and_powered: switch_rail_freight_powered_decider;
 	}
 }
 
@@ -571,6 +575,7 @@ item(FEAT_TRAINS, item_railstrong8, 25) { //ID25
 		running_cost_factor:				100; //only engines
 		cargo_capacity: switch_railstrong8_capacity;
 		loading_speed: switch_railstrong8_loadspeed;
+		visual_effect_and_powered: switch_rail_freight_powered_decider;
 	}
 }
 
@@ -685,6 +690,7 @@ item(FEAT_TRAINS, item_railstrong9, 27) { //ID27
 		running_cost_factor:				100; //only engines
 		cargo_capacity: switch_railstrong9_capacity;
 		loading_speed: switch_railstrong9_loadspeed;
+		visual_effect_and_powered: switch_rail_freight_powered_decider;
 	}
 }
 
@@ -875,6 +881,7 @@ item(FEAT_TRAINS, item_railmedium4, 37) { //ID37
 		running_cost_factor:				100; //only engines
 		cargo_capacity: switch_railmedium4_capacity;
 		loading_speed: switch_railmedium4_loadspeed;
+		visual_effect_and_powered: switch_rail_freight_powered_decider;
 	}
 }
 
@@ -987,6 +994,7 @@ item(FEAT_TRAINS, item_railmedium5, 39) { //ID39
 		running_cost_factor:				100; //only engines
 		cargo_capacity: switch_railmedium5_capacity;
 		loading_speed: switch_railmedium5_loadspeed;
+		visual_effect_and_powered: switch_rail_freight_powered_decider;
 	}
 }
 
@@ -1098,6 +1106,7 @@ item(FEAT_TRAINS, item_railmedium6, 41) { //ID41
 		running_cost_factor:				100; //only engines
 		cargo_capacity: switch_railmedium6_capacity;
 		loading_speed: switch_railmedium6_loadspeed;
+		visual_effect_and_powered: switch_rail_freight_powered_decider;
 	}
 }
 
@@ -1208,6 +1217,7 @@ item(FEAT_TRAINS, item_railmedium7, 43) { //ID43
 		running_cost_factor:				100; //only engines
 		cargo_capacity: switch_railmedium7_capacity;
 		loading_speed:  switch_railmedium7_loadspeed;
+		visual_effect_and_powered: switch_rail_freight_powered_decider;
 	}
 }
 
@@ -1323,6 +1333,7 @@ item(FEAT_TRAINS, item_railmedium8, 45) { //ID45
 		running_cost_factor:				100; //only engines
 		cargo_capacity: switch_railmedium8_capacity;
 		loading_speed:  switch_railmedium8_loadspeed;
+		visual_effect_and_powered: switch_rail_freight_powered_decider;
 	}
 }
 
@@ -1437,6 +1448,7 @@ item(FEAT_TRAINS, item_railmedium9, 47) { //ID47
 		tractive_effort_coefficient:		178; //engine only
 		cost_factor:						15; //everything
 		running_cost_factor:				100; //only engines
+		visual_effect_and_powered: switch_rail_freight_powered_decider;
 		}
 }
 
@@ -1547,6 +1559,7 @@ item(FEAT_TRAINS, item_railfast4, 57) { //ID57
 		tractive_effort_coefficient:			56; //engine only
 		cost_factor:						12; //everything
 		running_cost_factor:				100; //only engines
+		visual_effect_and_powered: switch_rail_freight_powered_decider;
 	}
 }
 
@@ -1655,6 +1668,7 @@ item(FEAT_TRAINS, item_railfast5, 59) { //ID59
 		tractive_effort_coefficient:			68; //engine only
 		cost_factor:						13; //everything
 		running_cost_factor:				100; //only engines
+		visual_effect_and_powered: switch_rail_freight_powered_decider;
 	}
 }
 
@@ -1763,7 +1777,8 @@ item(FEAT_TRAINS, item_railfast6, 61) { //ID61
 		tractive_effort_coefficient:			84; //engine only
 		cost_factor:						14; //everything
 		running_cost_factor:				100; //only engines
-			}
+		visual_effect_and_powered: switch_rail_freight_powered_decider;
+	}
 }
 
 switch(FEAT_TRAINS, SELF, switch_railfast7_capacity_2, cargo_type_in_veh){
@@ -1871,6 +1886,7 @@ item(FEAT_TRAINS, item_railfast7, 63) { //ID63
 		tractive_effort_coefficient:			92; //engine only
 		cost_factor:						15; //everything
 		running_cost_factor:				100; //only engines
+		visual_effect_and_powered: switch_rail_freight_powered_decider;
 	}
 }
 
@@ -1979,6 +1995,7 @@ item(FEAT_TRAINS, item_railfast8, 65) { //ID65
 		tractive_effort_coefficient:			115; //engine only
 		cost_factor:						16; //everything
 		running_cost_factor:				100; //only engines
+		visual_effect_and_powered: switch_rail_freight_powered_decider;
 		}
 }
 
@@ -2087,6 +2104,7 @@ item(FEAT_TRAINS, item_railfast9, 67) { //ID67
 		tractive_effort_coefficient:			142; //engine only
 		cost_factor:						17; //everything
 		running_cost_factor:				100; //only engines
+		visual_effect_and_powered: switch_rail_freight_powered_decider;
 	}
 }
 
