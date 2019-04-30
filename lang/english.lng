@@ -2,7 +2,7 @@
 # English lng file
 
 STR_GRF_NAME		:NUTS Unrealistic Train Set {VERSION}
-STR_GRF_DESC		:Train set based on gameplay of openttdcoop, built around providing choices and space for making decisions.{}New trains come between 1920 all the way to 2099.{}Rail, monorail and maglev included.{}Includes universal rail for railtype transitions.{}{}Brought to you by V453000{}www.openttdcoop.org
+STR_GRF_DESC		:Train set based on gameplay of openttdcoop, built around providing choices and space for making decisions.{}New trains come between 1920 all the way to 2099.{}Rail, monorail and maglev included.{}Includes universal rail for railtype transitions.{}Install PURR 0.0.6+ to get 32bpp/ExtraZoom for PURR.{}{}Brought to you by V453000{}{GOLD}www.openttdcoop.org
 STR_GRF_WEBSITE		:http://dev.openttdcoop.org/projects/nuts/wiki
 
 STR_PARAM_WAGONS: Wagon choice
