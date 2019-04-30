@@ -143,7 +143,7 @@ item(FEAT_TRAINS, item_rail_EARLY_01, 7) { //ID7
 	graphics {
 		articulated_part: 							switch_rail_EARLY_01_articulated;
 		length: 												switch_rail_EARLY_01_length;               
-		visual_effect_and_powered:      switch_rail_EARLY_01_effect;
+		visual_effect_and_powered:      switch_rail_freight_short_powered_decider;
 		cargo_capacity:                 switch_rail_EARLY_01_capacity;
 		loading_speed:                  switch_rail_EARLY_01_loadspeed;
 		default:                        switch_rail_freight_short_graphics_decider;
@@ -289,7 +289,7 @@ item(FEAT_TRAINS, item_rail_EARLY_02, 8) { //ID8
 	graphics {
 		articulated_part: 							switch_rail_EARLY_02_articulated;
 		length: 												switch_rail_EARLY_02_length;               
-		visual_effect_and_powered:      switch_rail_EARLY_02_effect;
+		visual_effect_and_powered:      switch_rail_freight_short_powered_decider;
 		cargo_capacity:                 switch_rail_EARLY_02_capacity;
 		loading_speed:                  switch_rail_EARLY_02_loadspeed;
 		default:                        switch_rail_freight_short_graphics_decider;
@@ -436,7 +436,7 @@ item(FEAT_TRAINS, item_rail_EARLY_03, 9) { //ID9
 	graphics {
 		articulated_part: 							switch_rail_EARLY_03_articulated;
 		length: 												switch_rail_EARLY_03_length;               
-		visual_effect_and_powered:      switch_rail_EARLY_03_effect;
+		visual_effect_and_powered:      switch_rail_freight_short_powered_decider;
 		cargo_capacity:                 switch_rail_EARLY_03_capacity;
 		loading_speed:                  switch_rail_EARLY_03_loadspeed;
 		default:                        switch_rail_freight_short_graphics_decider;
@@ -594,7 +594,7 @@ item(FEAT_TRAINS, item_railstrong1, 11) { //ID11
 	graphics {
 		articulated_part: 							switch_railstrong1_articulated;
 		length: 												switch_railstrong1_length;               
-		visual_effect_and_powered:      switch_railstrong1_effect;
+		visual_effect_and_powered:      switch_rail_freight_short_powered_decider;
 		cargo_capacity:                 switch_railstrong1_capacity;
 		loading_speed:                  switch_railstrong1_loadspeed;
 		default:                        switch_rail_freight_short_graphics_decider;
@@ -748,7 +748,7 @@ item(FEAT_TRAINS, item_railstrong2, 13) { //ID13
 	graphics {
 		articulated_part: 							switch_railstrong2_articulated;
 		length: 												switch_railstrong2_length;               
-		visual_effect_and_powered:      switch_railstrong2_effect;
+		visual_effect_and_powered:      switch_rail_freight_short_powered_decider;
 		cargo_capacity:                 switch_railstrong2_capacity;
 		loading_speed:                  switch_railstrong2_loadspeed;
 		default:                        switch_rail_freight_short_graphics_decider;
@@ -893,7 +893,7 @@ item(FEAT_TRAINS, item_railstrong3, 15) { //ID15
 	graphics {
 		articulated_part: 							switch_railstrong3_articulated;
 		length: 												switch_railstrong3_length;               
-		visual_effect_and_powered:      switch_railstrong3_effect;
+		visual_effect_and_powered:      switch_rail_freight_short_powered_decider;
 		cargo_capacity:                 switch_railstrong3_capacity;
 		loading_speed:                  switch_railstrong3_loadspeed;
 		default:                        switch_rail_freight_short_graphics_decider;
@@ -1043,7 +1043,7 @@ item(FEAT_TRAINS, item_railmedium1, 31) { //ID31
 	graphics {
 		articulated_part: 							switch_railmedium1_articulated;
 		length: 												switch_railmedium1_length;               
-		visual_effect_and_powered:      switch_railmedium1_effect;
+		visual_effect_and_powered:      switch_rail_freight_short_powered_decider;
 		cargo_capacity:                 switch_railmedium1_capacity;
 		loading_speed:                  switch_railmedium1_loadspeed;
 		default:                        switch_rail_freight_short_graphics_decider;
@@ -1197,7 +1197,7 @@ item(FEAT_TRAINS, item_railmedium2, 33) { //ID33
 	graphics {
 		articulated_part: 							switch_railmedium2_articulated;
 		length: 												switch_railmedium2_length;               
-		visual_effect_and_powered:      switch_railmedium2_effect;
+		visual_effect_and_powered:      switch_rail_freight_short_powered_decider;
 		cargo_capacity:                 switch_railmedium2_capacity;
 		loading_speed:                  switch_railmedium2_loadspeed;
 		default:                        switch_rail_freight_short_graphics_decider;
@@ -1350,7 +1350,7 @@ item(FEAT_TRAINS, item_railmedium3, 35) { //ID35
 	graphics {
 		articulated_part: 							switch_railmedium3_articulated;
 		length: 												switch_railmedium3_length;               
-		visual_effect_and_powered:      switch_railmedium3_effect;
+		visual_effect_and_powered:      switch_rail_freight_short_powered_decider;
 		cargo_capacity:                 switch_railmedium3_capacity;
 		loading_speed:                  switch_railmedium3_loadspeed;
 		default:                        switch_rail_freight_short_graphics_decider;
@@ -1475,6 +1475,7 @@ item(FEAT_TRAINS, item_railfast1, 51) {
     length:           switch_railfast1_length;
     cargo_capacity:   switch_railfast1_capacity;
     loading_speed:    switch_railfast1_loadspeed;
+		visual_effect_and_powered:      switch_rail_freight_short_powered_decider;
 
 		purchase: spriteset_purchaseMenu_railfast1;
 		can_attach_wagon: switch_railfast1_attach;
@@ -1579,6 +1580,7 @@ item(FEAT_TRAINS, item_railfast2, 53) { //ID53
     length:           switch_railfast2_length;
     cargo_capacity:   switch_railfast2_capacity;
     loading_speed:    switch_railfast2_loadspeed;
+		visual_effect_and_powered:      switch_rail_freight_short_powered_decider;
 
     purchase: spriteset_purchaseMenu_railfast2;
 		can_attach_wagon: switch_railfast2_attach;
@@ -1683,6 +1685,7 @@ item(FEAT_TRAINS, item_railfast3, 55) { //ID55
     length:           switch_railfast3_length;
     cargo_capacity:   switch_railfast3_capacity;
     loading_speed:    switch_railfast3_loadspeed;
+		visual_effect_and_powered:      switch_rail_freight_short_powered_decider;
 
 		purchase: spriteset_purchaseMenu_railfast3;
 		can_attach_wagon: switch_railfast3_attach;

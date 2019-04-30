@@ -16307,6 +16307,7 @@ item(FEAT_TRAINS, item_NYAN, 311) { //ID311
 
 //#include src-includes/rail_freight_wagons_1_graphics.nml
 //#include src-includes/rail_freight_short_graphics.nml
+//#include src-includes/rail_freight_short_other.nml
 //#include src-includes/rail_freight_short_engines.nml
 
 //#include src-includes/rail_freight_wagons_2_graphics.nml
@@ -16361,7 +16362,7 @@ item(FEAT_TRAINS, item_railflatbed1, 411) { //ID411
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: railflatbed1_wagon_switch;
+		default: switch_rail_freight_short_graphics_decider;
 		purchase: spriteset_purchaseMenu_railflatbed1;
 		articulated_part: switch_railflatbed_articulated;
 		cargo_capacity:   switch_capacity_railuniversal1;
@@ -16426,7 +16427,7 @@ item(FEAT_TRAINS, item_railhopper1, 421) { //ID421
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: railhopper1_wagon_switch;
+		default: switch_rail_freight_short_graphics_decider;
 		purchase: spriteset_purchaseMenu_railhopper1;
 		articulated_part: switch_railhopper_articulated;
 		cargo_capacity:   switch_capacity_railuniversal1;
@@ -16490,7 +16491,7 @@ item(FEAT_TRAINS, item_railtanker1, 431) { //ID431
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: railtanker1_wagon_switch;
+		default: switch_rail_freight_short_graphics_decider;
 		purchase: spriteset_purchaseMenu_railtanker1;
 		articulated_part: switch_railtanker_articulated;
 		cargo_capacity:   switch_capacity_railuniversal1;
@@ -16553,7 +16554,7 @@ item(FEAT_TRAINS, item_railuniversal1, 441) { //ID441
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: railuniversal1_wagon_switch;
+		default: switch_rail_freight_short_graphics_decider;
 		purchase: spriteset_purchaseMenu_railuniversal1;
 		articulated_part: switch_railuniversal1_articulated;
 		cargo_capacity:   switch_capacity_railuniversal1;
