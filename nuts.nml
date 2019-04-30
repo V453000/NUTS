@@ -14239,6 +14239,13 @@ item_ANIMALEXPRESS: magpaxSLUGwagon_capacity_switch;
 item_RAINBOWSLUG: magpaxSLUGwagon_capacity_switch;
 item_MagCom1: magpax_local1_wagon_capacity_switch;
 
+item_railsuperstrong1: railpax_cargo_capacity_switch;
+item_railsuperstrong2: railpax_cargo_capacity_switch;
+item_railsuperstrong3: railpax_cargo_capacity_switch;
+item_railsuperstrong4: railpax_cargo_capacity_switch;
+item_railsuperstrong5: railpax_cargo_capacity_switch;
+item_railsuperstrong6: railpax_cargo_capacity_switch;
+
 item_railstrong1: railpax_cargo_capacity_switch;
 item_railstrong2: railpax_cargo_capacity_switch;
 item_railstrong3: railpax_cargo_capacity_switch;
@@ -14291,7 +14298,7 @@ item_magfast2: magpax_cargo_capacity_switch;
 item_magfast3: magpax_cargo_capacity_switch;
 item_magfast4: magpax_cargo_capacity_switch;
 
-40;
+90;
 }
 
 //PURCHASE MENU SPRITES
@@ -14300,6 +14307,12 @@ spriteset(spriteset_purchaseMenu_monopax,		"gfx/PurchaseMenu.png"){template_purc
 spriteset(spriteset_purchaseMenu_magpax,		"gfx/PurchaseMenu.png"){template_purchaseMenu(2,26)}
 //PAX WAGON ITEMS and loadspeed switches
 switch(FEAT_TRAINS, PARENT, switch_loadspeed_railpax, vehicle_type_id){
+		item_railsuperstrong1:	18;
+		item_railsuperstrong2:	18;
+		item_railsuperstrong3:	18;
+		item_railsuperstrong4:	18;
+		item_railsuperstrong5:	18;
+		item_railsuperstrong6:	18;
 		item_railstrong1:	18;
 		item_railstrong2:	18;
 		item_railstrong3:	18;
@@ -14333,7 +14346,7 @@ switch(FEAT_TRAINS, PARENT, switch_loadspeed_railpax, vehicle_type_id){
 		item_railice4: 		10;
 		item_railice5: 		10;
 		item_railice6: 		10;
-		item_railice7: 	    10;
+		item_railice7: 	  10;
 		item_railice8: 		10;
 		item_railice9: 		10;
 		item_railcom1: 		55;
@@ -14346,7 +14359,7 @@ switch(FEAT_TRAINS, PARENT, switch_loadspeed_railpax, vehicle_type_id){
 		item_railcom8: 		44;
 		item_railcom9: 		55;
 		item_doombringer:			20;
-		return 16;
+		return 18;
 }
 item(FEAT_TRAINS, item_railpax, 451) { //ID451
 	property {
