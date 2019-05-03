@@ -3439,7 +3439,19 @@ item(FEAT_TRAINS, item_railice4_tender, 297) { //ID297
 }
 //RAILICE5
 spriteset(spriteset_purchaseMenu_railice5, 			"gfx/PurchaseMenu.png"){template_purchaseMenu2(4,4)}
-spriteset(spriteset_train_railice5, 			"gfx/RailICEmodern.png") { template_engine32(0, 0) }
+spriteset(spriteset_train_railice5, 		  	"gfx/RailICEmodern_wtf.png") { template_engine32WTF(0, 12) }
+spriteset(spriteset_train_railice5_mail, 		"gfx/RailICEmodern_wtf.png") { template_engine32WTF(0, 13) }
+spriteset(spriteset_train_railice5_gold, 		"gfx/RailICEmodern_wtf.png") { template_engine32WTF(0, 14) }
+switch(FEAT_TRAINS, SELF, railice5colourswitch, cargo_type_in_veh){
+PASS: return spriteset_train_railice5;
+MAIL: return spriteset_train_railice5_mail;
+GOLD: return spriteset_train_railice5_gold;
+VALU: return spriteset_train_railice5_gold;
+DIAM: return spriteset_train_railice5_gold;
+YETI: return spriteset_train_railice5_mail;
+YETY: return spriteset_train_railice5_gold;
+spriteset_train_railice5;
+}
 
 
 switch(FEAT_TRAINS, SELF, railice5_wetrail_power_switch, current_railtype){
@@ -3494,7 +3506,7 @@ item(FEAT_TRAINS, item_railice5, 79) { //ID79
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: spriteset_train_railice5;
+		default: railice5colourswitch;
 		purchase: spriteset_purchaseMenu_railice5;
 		can_attach_wagon: switch_railice5_attach;
 		additional_text: string(info_rail_intercity_5);
