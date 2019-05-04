@@ -252,6 +252,27 @@ switch (FEAT_TRAINS,SELF, switch_rail_freight_vehid_wagons_parent_layers, [
   1: switch_rail_freight_vehid_wagons_parent;
   return switch_rail_freight_vehid_wagons_overlay_articulated_pos;
 }
+switch(FEAT_TRAINS, PARENT, switch_rail_freight_vehid_wagons_depot_switch, vehicle_is_stopped + vehicle_is_in_depot){
+  2:    switch_rail_freight_vehid_wagons_parent_layers;//switch_rail_freight_vehid_wagons_first_engine_switch;
+  switch_rail_freight_vehid_wagons_parent;
+}
+// check if the to-be-drawn-as-wagon is actually a real wagon item
+switch(FEAT_TRAINS, SELF, switch_rail_freight_vehid_wagons_self, vehicle_type_id){
+  //item_railflatbed1:    railuniversal1_wagon_switch;
+  //item_railhopper1:     railuniversal1_wagon_switch;
+  //item_railtanker1:     railuniversal1_wagon_switch;
+  //item_railuniversal1:  railuniversal1_wagon_switch;
+  item_railflatbed3:    railuniversal3_wagon_switch;
+  item_railhopper3:     railuniversal3_wagon_switch;
+  item_railtanker3:     railuniversal3_wagon_switch;
+  item_railuniversal3:  railuniversal3_wagon_switch;
+  item_railflatbed2:    railuniversal2_wagon_switch;
+  item_railhopper2:     railuniversal2_wagon_switch;
+  item_railtanker2:     railuniversal2_wagon_switch;
+  item_railuniversal2:  railuniversal2_wagon_switch;
+  switch_rail_freight_vehid_wagons_depot_switch;
+}
+//-------------------------------------------------------------------------------------------
 switch(FEAT_TRAINS, PARENT, switch_rail_freight_vehid_wagons_first_engine_switch,
   count_veh_id(17) + // railstrong4
   count_veh_id(19) +
@@ -273,28 +294,9 @@ switch(FEAT_TRAINS, PARENT, switch_rail_freight_vehid_wagons_first_engine_switch
   count_veh_id(67)   // railfast9
   ){
   0..2: switch_rail_freight_vehid_wagons_parent;
-  switch_rail_freight_vehid_wagons_parent_layers;
+  switch_rail_freight_vehid_wagons_self;
 }
-switch(FEAT_TRAINS, PARENT, switch_rail_freight_vehid_wagons_depot_switch, vehicle_is_stopped + vehicle_is_in_depot){
-  2:    switch_rail_freight_vehid_wagons_first_engine_switch;
-  switch_rail_freight_vehid_wagons_parent;
-}
-// check if the to-be-drawn-as-wagon is actually a real wagon item
-switch(FEAT_TRAINS, SELF, switch_rail_freight_vehid_wagons_self, vehicle_type_id){
-  //item_railflatbed1:    railuniversal1_wagon_switch;
-  //item_railhopper1:     railuniversal1_wagon_switch;
-  //item_railtanker1:     railuniversal1_wagon_switch;
-  //item_railuniversal1:  railuniversal1_wagon_switch;
-  item_railflatbed3:    railuniversal3_wagon_switch;
-  item_railhopper3:     railuniversal3_wagon_switch;
-  item_railtanker3:     railuniversal3_wagon_switch;
-  item_railuniversal3:  railuniversal3_wagon_switch;
-  item_railflatbed2:    railuniversal2_wagon_switch;
-  item_railhopper2:     railuniversal2_wagon_switch;
-  item_railtanker2:     railuniversal2_wagon_switch;
-  item_railuniversal2:  railuniversal2_wagon_switch;
-  switch_rail_freight_vehid_wagons_depot_switch;
-}
+//-------------------------------------------------------------------------------------------
 
 
 
@@ -304,11 +306,11 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_vehid_wagons_self, vehicle_type_id
 //------------------------------------------------------------------------------------------------------------
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw1, position_in_consist){
   0: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw2_end, position_in_consist_from_end){
   0: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw2, position_in_consist){
   0: switch_rail_freight_vehid_front;
@@ -316,7 +318,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw2, position_in_c
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw3_end, position_in_consist_from_end){
   0: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw3, position_in_consist){
   0..1: switch_rail_freight_vehid_front;
@@ -324,7 +326,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw3, position_in_c
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw4_end, position_in_consist_from_end){
   0..1: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw4, position_in_consist){
   0..1: switch_rail_freight_vehid_front;
@@ -332,7 +334,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw4, position_in_c
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw5_end, position_in_consist_from_end){
   0..1: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw5, position_in_consist){
   0..2: switch_rail_freight_vehid_front;
@@ -340,7 +342,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw5, position_in_c
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw6_end, position_in_consist_from_end){
   0..2: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw6, position_in_consist){
   0..2: switch_rail_freight_vehid_front;
@@ -348,7 +350,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw6, position_in_c
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw7_end, position_in_consist_from_end){
   0..2: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw7, position_in_consist){
   0..3: switch_rail_freight_vehid_front;
@@ -356,7 +358,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw7, position_in_c
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw8_end, position_in_consist_from_end){
   0..3: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw8, position_in_consist){
   0..3: switch_rail_freight_vehid_front;
@@ -364,7 +366,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw8, position_in_c
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw9_end, position_in_consist_from_end){
   0..3: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw9, position_in_consist){
   0..4: switch_rail_freight_vehid_front;
@@ -372,7 +374,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw9, position_in_c
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw10_end, position_in_consist_from_end){
   0..4: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw10, position_in_consist){
   0..4: switch_rail_freight_vehid_front;
@@ -380,7 +382,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw10, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw11_end, position_in_consist_from_end){
   0..4: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw11, position_in_consist){
   0..5: switch_rail_freight_vehid_front;
@@ -388,7 +390,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw11, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw12_end, position_in_consist_from_end){
   0..5: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw12, position_in_consist){
   0..5: switch_rail_freight_vehid_front;
@@ -396,7 +398,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw12, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw13_end, position_in_consist_from_end){
   0..5: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw13, position_in_consist){
   0..6: switch_rail_freight_vehid_front;
@@ -404,7 +406,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw13, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw14_end, position_in_consist_from_end){
   0..6: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw14, position_in_consist){
   0..6: switch_rail_freight_vehid_front;
@@ -412,7 +414,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw14, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw15_end, position_in_consist_from_end){
   0..6: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw15, position_in_consist){
   0..7: switch_rail_freight_vehid_front;
@@ -420,7 +422,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw15, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw16_end, position_in_consist_from_end){
   0..7: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw16, position_in_consist){
   0..7: switch_rail_freight_vehid_front;
@@ -428,7 +430,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw16, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw17_end, position_in_consist_from_end){
   0..7: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw17, position_in_consist){
   0..8: switch_rail_freight_vehid_front;
@@ -436,7 +438,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw17, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw18_end, position_in_consist_from_end){
   0..8: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw18, position_in_consist){
   0..8: switch_rail_freight_vehid_front;
@@ -444,7 +446,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw18, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw19_end, position_in_consist_from_end){
   0..8: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw19, position_in_consist){
   0..9: switch_rail_freight_vehid_front;
@@ -452,7 +454,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw19, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw20_end, position_in_consist_from_end){
   0..9: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw20, position_in_consist){
   0..9: switch_rail_freight_vehid_front;
@@ -460,7 +462,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw20, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw21_end, position_in_consist_from_end){
   0..9: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw21, position_in_consist){
   0..10: switch_rail_freight_vehid_front;
@@ -468,7 +470,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw21, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw22_end, position_in_consist_from_end){
   0..10: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw22, position_in_consist){
   0..10: switch_rail_freight_vehid_front;
@@ -476,7 +478,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw22, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw23_end, position_in_consist_from_end){
   0..10: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw23, position_in_consist){
   0..11: switch_rail_freight_vehid_front;
@@ -484,7 +486,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw23, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw24_end, position_in_consist_from_end){
   0..11: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw24, position_in_consist){
   0..11: switch_rail_freight_vehid_front;
@@ -492,7 +494,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw24, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw25_end, position_in_consist_from_end){
   0..11: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw25, position_in_consist){
   0..12: switch_rail_freight_vehid_front;
@@ -500,7 +502,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw25, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw26_end, position_in_consist_from_end){
   0..12: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw26, position_in_consist){
   0..12: switch_rail_freight_vehid_front;
@@ -508,7 +510,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw26, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw27_end, position_in_consist_from_end){
   0..12: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw27, position_in_consist){
   0..13: switch_rail_freight_vehid_front;
@@ -516,7 +518,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw27, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw28_end, position_in_consist_from_end){
   0..13: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw28, position_in_consist){
   0..13: switch_rail_freight_vehid_front;
@@ -524,7 +526,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw28, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw29_end, position_in_consist_from_end){
   0..13: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw29, position_in_consist){
   0..14: switch_rail_freight_vehid_front;
@@ -532,7 +534,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw29, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw30_end, position_in_consist_from_end){
   0..14: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw30, position_in_consist){
   0..14: switch_rail_freight_vehid_front;
@@ -540,7 +542,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw30, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw31_end, position_in_consist_from_end){
   0..14: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw31, position_in_consist){
   0..15: switch_rail_freight_vehid_front;
@@ -548,7 +550,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw31, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw32_end, position_in_consist_from_end){
   0..15: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw32, position_in_consist){
   0..15: switch_rail_freight_vehid_front;
@@ -556,7 +558,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw32, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw33_end, position_in_consist_from_end){
   0..15: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw33, position_in_consist){
   0..16: switch_rail_freight_vehid_front;
@@ -564,7 +566,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw33, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw34_end, position_in_consist_from_end){
   0..16: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw34, position_in_consist){
   0..16: switch_rail_freight_vehid_front;
@@ -572,7 +574,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw34, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw35_end, position_in_consist_from_end){
   0..16: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw35, position_in_consist){
   0..17: switch_rail_freight_vehid_front;
@@ -580,7 +582,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw35, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw36_end, position_in_consist_from_end){
   0..17: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw36, position_in_consist){
   0..17: switch_rail_freight_vehid_front;
@@ -588,7 +590,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw36, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw37_end, position_in_consist_from_end){
   0..17: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw37, position_in_consist){
   0..18: switch_rail_freight_vehid_front;
@@ -596,7 +598,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw37, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw38_end, position_in_consist_from_end){
   0..18: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw38, position_in_consist){
   0..18: switch_rail_freight_vehid_front;
@@ -604,7 +606,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw38, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw39_end, position_in_consist_from_end){
   0..18: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw39, position_in_consist){
   0..19: switch_rail_freight_vehid_front;
@@ -612,7 +614,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw39, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw40_end, position_in_consist_from_end){
   0..19: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw40, position_in_consist){
   0..19: switch_rail_freight_vehid_front;
@@ -620,7 +622,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw40, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw41_end, position_in_consist_from_end){
   0..19: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw41, position_in_consist){
   0..20: switch_rail_freight_vehid_front;
@@ -628,7 +630,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw41, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw42_end, position_in_consist_from_end){
   0..20: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw42, position_in_consist){
   0..20: switch_rail_freight_vehid_front;
@@ -636,7 +638,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw42, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw43_end, position_in_consist_from_end){
   0..20: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw43, position_in_consist){
   0..21: switch_rail_freight_vehid_front;
@@ -644,7 +646,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw43, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw44_end, position_in_consist_from_end){
   0..21: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw44, position_in_consist){
   0..21: switch_rail_freight_vehid_front;
@@ -652,7 +654,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw44, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw45_end, position_in_consist_from_end){
   0..21: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw45, position_in_consist){
   0..22: switch_rail_freight_vehid_front;
@@ -660,7 +662,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw45, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw46_end, position_in_consist_from_end){
   0..22: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw46, position_in_consist){
   0..22: switch_rail_freight_vehid_front;
@@ -668,7 +670,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw46, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw47_end, position_in_consist_from_end){
   0..22: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw47, position_in_consist){
   0..23: switch_rail_freight_vehid_front;
@@ -676,7 +678,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw47, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw48_end, position_in_consist_from_end){
   0..23: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw48, position_in_consist){
   0..23: switch_rail_freight_vehid_front;
@@ -684,7 +686,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw48, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw49_end, position_in_consist_from_end){
   0..23: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw49, position_in_consist){
   0..24: switch_rail_freight_vehid_front;
@@ -692,7 +694,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw49, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw50_end, position_in_consist_from_end){
   0..24: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw50, position_in_consist){
   0..24: switch_rail_freight_vehid_front;
@@ -700,7 +702,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw50, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw51_end, position_in_consist_from_end){
   0..24: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw51, position_in_consist){
   0..25: switch_rail_freight_vehid_front;
@@ -708,7 +710,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw51, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw52_end, position_in_consist_from_end){
   0..25: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw52, position_in_consist){
   0..25: switch_rail_freight_vehid_front;
@@ -716,7 +718,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw52, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw53_end, position_in_consist_from_end){
   0..25: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw53, position_in_consist){
   0..26: switch_rail_freight_vehid_front;
@@ -724,7 +726,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw53, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw54_end, position_in_consist_from_end){
   0..26: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw54, position_in_consist){
   0..26: switch_rail_freight_vehid_front;
@@ -732,7 +734,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw54, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw55_end, position_in_consist_from_end){
   0..26: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw55, position_in_consist){
   0..27: switch_rail_freight_vehid_front;
@@ -740,7 +742,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw55, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw56_end, position_in_consist_from_end){
   0..27: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw56, position_in_consist){
   0..27: switch_rail_freight_vehid_front;
@@ -748,7 +750,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw56, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw57_end, position_in_consist_from_end){
   0..27: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw57, position_in_consist){
   0..28: switch_rail_freight_vehid_front;
@@ -756,7 +758,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw57, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw58_end, position_in_consist_from_end){
   0..28: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw58, position_in_consist){
   0..28: switch_rail_freight_vehid_front;
@@ -764,7 +766,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw58, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw59_end, position_in_consist_from_end){
   0..28: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw59, position_in_consist){
   0..29: switch_rail_freight_vehid_front;
@@ -772,7 +774,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw59, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw60_end, position_in_consist_from_end){
   0..29: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw60, position_in_consist){
   0..29: switch_rail_freight_vehid_front;
@@ -780,7 +782,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw60, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw61_end, position_in_consist_from_end){
   0..29: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw61, position_in_consist){
   0..30: switch_rail_freight_vehid_front;
@@ -788,7 +790,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw61, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw62_end, position_in_consist_from_end){
   0..30: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw62, position_in_consist){
   0..30: switch_rail_freight_vehid_front;
@@ -796,7 +798,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw62, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw63_end, position_in_consist_from_end){
   0..30: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw63, position_in_consist){
   0..31: switch_rail_freight_vehid_front;
@@ -804,7 +806,7 @@ switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw63, position_in_
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw64_end, position_in_consist_from_end){
   0..31: switch_rail_freight_vehid_back;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_both_draw64, position_in_consist){
   0..31: switch_rail_freight_vehid_front;
@@ -830,7 +832,7 @@ switch(FEAT_TRAINS, PARENT, switch_rail_freight_graphics_both,
   count_veh_id(65) +
   count_veh_id(67)   // railfast9
   ){
-  0: switch_rail_freight_vehid_wagons_self;
+  0: switch_rail_freight_vehid_wagons_first_engine_switch;
   1..2: switch_rail_freight_graphics_both_draw1;
   3..4: switch_rail_freight_graphics_both_draw2;
   5..6: switch_rail_freight_graphics_both_draw3;
@@ -906,259 +908,259 @@ switch(FEAT_TRAINS, PARENT, switch_rail_freight_graphics_both,
 
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw1, position_in_consist){
   0..0: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw2, position_in_consist){
   0..1: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw3, position_in_consist){
   0..2: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw4, position_in_consist){
   0..3: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw5, position_in_consist){
   0..4: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw6, position_in_consist){
   0..5: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw7, position_in_consist){
   0..6: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw8, position_in_consist){
   0..7: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw9, position_in_consist){
   0..8: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw10, position_in_consist){
   0..9: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw11, position_in_consist){
   0..10: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw12, position_in_consist){
   0..11: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw13, position_in_consist){
   0..12: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw14, position_in_consist){
   0..13: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw15, position_in_consist){
   0..14: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw16, position_in_consist){
   0..15: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw17, position_in_consist){
   0..16: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw18, position_in_consist){
   0..17: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw19, position_in_consist){
   0..18: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw20, position_in_consist){
   0..19: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw21, position_in_consist){
   0..20: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw22, position_in_consist){
   0..21: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw23, position_in_consist){
   0..22: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw24, position_in_consist){
   0..23: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw25, position_in_consist){
   0..24: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw26, position_in_consist){
   0..25: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw27, position_in_consist){
   0..26: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw28, position_in_consist){
   0..27: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw29, position_in_consist){
   0..28: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw30, position_in_consist){
   0..29: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw31, position_in_consist){
   0..30: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw32, position_in_consist){
   0..31: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw33, position_in_consist){
   0..32: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw34, position_in_consist){
   0..33: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw35, position_in_consist){
   0..34: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw36, position_in_consist){
   0..35: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw37, position_in_consist){
   0..36: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw38, position_in_consist){
   0..37: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw39, position_in_consist){
   0..38: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw40, position_in_consist){
   0..39: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw41, position_in_consist){
   0..40: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw42, position_in_consist){
   0..41: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw43, position_in_consist){
   0..42: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw44, position_in_consist){
   0..43: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw45, position_in_consist){
   0..44: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw46, position_in_consist){
   0..45: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw47, position_in_consist){
   0..46: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw48, position_in_consist){
   0..47: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw49, position_in_consist){
   0..48: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw50, position_in_consist){
   0..49: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw51, position_in_consist){
   0..50: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw52, position_in_consist){
   0..51: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw53, position_in_consist){
   0..52: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw54, position_in_consist){
   0..53: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw55, position_in_consist){
   0..54: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw56, position_in_consist){
   0..55: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw57, position_in_consist){
   0..56: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw58, position_in_consist){
   0..57: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw59, position_in_consist){
   0..58: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw60, position_in_consist){
   0..59: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw61, position_in_consist){
   0..60: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw62, position_in_consist){
   0..61: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw63, position_in_consist){
   0..62: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, SELF, switch_rail_freight_graphics_front_draw64, position_in_consist){
   0..63: switch_rail_freight_vehid_front;
-  switch_rail_freight_vehid_wagons_self;
+  switch_rail_freight_vehid_wagons_first_engine_switch;
 }
 switch(FEAT_TRAINS, PARENT, switch_rail_freight_graphics_front,
   count_veh_id(17) + // railstrong4
@@ -1180,7 +1182,7 @@ switch(FEAT_TRAINS, PARENT, switch_rail_freight_graphics_front,
   count_veh_id(65) +
   count_veh_id(67)   // railfast9
   ){
-  0: switch_rail_freight_vehid_wagons_self;
+  0: switch_rail_freight_vehid_wagons_first_engine_switch;
   1..2: switch_rail_freight_graphics_front_draw1;
   3..4: switch_rail_freight_graphics_front_draw2;
   5..6: switch_rail_freight_graphics_front_draw3;
@@ -1250,8 +1252,7 @@ switch(FEAT_TRAINS, PARENT, switch_rail_freight_graphics_front,
 
 
 
-
-switch(FEAT_TRAINS,PARENT, switch_rail_freight_graphics_decider, [
+switch(FEAT_TRAINS,PARENT, switch_rail_freight_graphics_decider_2, [
 STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
 ]){
 	17: switch_rail_freight_graphics_both;//vehicle ID here // railstrong4
@@ -1273,6 +1274,30 @@ STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
 	65: switch_rail_freight_graphics_both;//vehicle ID here
 	67: switch_rail_freight_graphics_both;//vehicle ID here // railfast9
 	switch_rail_freight_graphics_front;
+}
+
+switch(FEAT_TRAINS,PARENT, switch_rail_freight_graphics_decider, [
+STORE_TEMP(position_in_consist, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+]){
+	17: switch_rail_freight_graphics_decider_2;//vehicle ID here // railstrong4
+	19: switch_rail_freight_graphics_decider_2;//vehicle ID here
+	21: switch_rail_freight_graphics_decider_2;//vehicle ID here
+	23: switch_rail_freight_graphics_decider_2;//vehicle ID here
+	25: switch_rail_freight_graphics_decider_2;//vehicle ID here
+	27: switch_rail_freight_graphics_decider_2;//vehicle ID here // railstrong9
+	37: switch_rail_freight_graphics_decider_2;//vehicle ID here // railmedium4
+	39: switch_rail_freight_graphics_decider_2;//vehicle ID here
+	41: switch_rail_freight_graphics_decider_2;//vehicle ID here
+	43: switch_rail_freight_graphics_decider_2;//vehicle ID here
+	45: switch_rail_freight_graphics_decider_2;//vehicle ID here
+	47: switch_rail_freight_graphics_decider_2;//vehicle ID here // railmedium9
+	57: switch_rail_freight_graphics_decider_2;//vehicle ID here // railfast4
+	59: switch_rail_freight_graphics_decider_2;//vehicle ID here
+	61: switch_rail_freight_graphics_decider_2;//vehicle ID here
+	63: switch_rail_freight_graphics_decider_2;//vehicle ID here
+	65: switch_rail_freight_graphics_decider_2;//vehicle ID here
+	67: switch_rail_freight_graphics_decider_2;//vehicle ID here // railfast9
+	switch_rail_freight_vehid_wagons_self;
 }
 
 /*
