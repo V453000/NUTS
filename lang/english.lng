@@ -271,9 +271,9 @@ STR_NAME_MGLVFLTBD  :Flatbed Wagon {RED}(Maglev)
 STR_NAME_MGLVTANK	:Tanker Wagon {RED}(Maglev)
 STR_NAME_MGLVHOPPER	:Hopper Wagon {RED}(Maglev)
 
-STR_NAME_RAILPAX	:Wagon {YELLOW}(Rail)
-STR_NAME_MONOPAX	:Wagon {GOLD}(Monorail)
-STR_NAME_MAGPAX		:Wagon {RED}(Maglev)
+STR_NAME_RAILPAX	:Express Wagon {YELLOW}(Rail)
+STR_NAME_MONOPAX	:Express Wagon {GOLD}(Monorail)
+STR_NAME_MAGPAX		:Express Wagon {RED}(Maglev)
 STR_NAME_CHAMELEONPAX:Chami Express{DKGREEN}(Monorail)
 
 STR_NAME_DUKE		:Duke NUT'em {WHITE}(Uranium)
