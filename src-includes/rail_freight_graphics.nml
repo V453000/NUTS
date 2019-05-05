@@ -1299,21 +1299,3 @@ STORE_TEMP(position_in_consist, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
 	67: switch_rail_freight_graphics_decider_2;//vehicle ID here // railfast9
 	switch_rail_freight_vehid_wagons_self;
 }
-
-/*
-switch (FEAT_TRAINS,SELF, switch_rail_freight_graphics_decider, [
-  STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 4 ? CB_FLAG_MORE_SPRITES  : 0) + PALETTE_USE_DEFAULT, 0x100),
-  getbits(extra_callback_info1, 8, 8)
-  ]){
-  0: sprite_attach_background_8_rail_freight_engine;
-  1: switch_rail_freight_graphics_which_end;
-  return sprite_attach_foreground_8_rail_freight_engine;
-
-}
-*/
-/*
-switch (FEAT_TRAINS,SELF, switch_rail_freight_graphics_decider,vehicle_is_in_depot){// vehicle_is_stopped + 
-  1: switch_rail_freight_attach_overlay;
-  switch_rail_freight_attach_overlay;
-}
-*/
