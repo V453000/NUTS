@@ -23,11 +23,15 @@ with open('generated-freight-mglv-graphics.nml', 'w') as output_nml:
       spritesheet = 'switch_mglv_freight_short_vehid_back;\n'
       default_spritesheet = '  switch_mglv_freight_short_vehid_wagons_self;\n'
       
-      for n in range(0, int(i_test*1)):
-        #if (n%2)==0:
-        #  spritesheet = 'sprite_INVISIBLE;\n'
-        #else:
-        spritesheet = 'switch_mglv_freight_short_vehid_back;\n'
+      for n in range(0, int(i_test*2)):
+        if (n%4)==0:
+          spritesheet = 'sprite_INVISIBLE;\n'
+        elif (n%4)==1:
+          spritesheet = 'switch_mglv_freight_short_vehid_back;\n'
+        elif (n%4)==2:
+          spritesheet = 'switch_mglv_freight_short_vehid_front;\n'
+        elif (n%4)==3:
+          spritesheet = 'sprite_INVISIBLE;\n'
         output_nml.write('  ' + str(n) + ': ' + spritesheet)
       output_nml.write(default_spritesheet)
       output_nml.write('}\n')
@@ -54,10 +58,11 @@ with open('generated-freight-mglv-graphics.nml', 'w') as output_nml:
       elif (n%4)==1:
         spritesheet = 'switch_mglv_freight_short_vehid_front;\n'
       elif (n%4)==2:
-        spritesheet = 'sprite_INVISIBLE;\n'
-      elif (n%4)==3:
         spritesheet = 'switch_mglv_freight_short_vehid_back;\n'
+      elif (n%4)==3:
+        spritesheet = 'sprite_INVISIBLE;\n'
       output_nml.write('  ' + str(n) + ': ' + spritesheet)
+
     output_nml.write(default_spritesheet)
     output_nml.write('}\n')
 
@@ -98,11 +103,11 @@ with open('generated-freight-mglv-graphics.nml', 'w') as output_nml:
       if (n%4)==0:
         spritesheet = 'sprite_INVISIBLE;\n'
       elif (n%4)==1:
-        spritesheet = 'switch_mglv_freight_short_vehid_back;\n'
-      elif (n%4)==2:
-        spritesheet = 'sprite_INVISIBLE;\n'
-      elif (n%4)==3:
         spritesheet = 'switch_mglv_freight_short_vehid_front;\n'
+      elif (n%4)==2:
+        spritesheet = 'switch_mglv_freight_short_vehid_back;\n'
+      elif (n%4)==3:
+        spritesheet = 'sprite_INVISIBLE;\n'
       output_nml.write('  ' + str(n) + ': ' + spritesheet)
     output_nml.write(default_spritesheet)
     output_nml.write('}\n')
