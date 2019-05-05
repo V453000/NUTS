@@ -1,0 +1,404 @@
+
+//UNIVERSAL CAPACITY SWITCH
+switch(FEAT_TRAINS, SELF, switch_capacity_maglevuniversal_normal, cargo_type_in_veh){
+	CERE: 11;
+	CMNT: 11;
+	COLA: 11;
+	BEER: 11;
+	RFPR: 11;
+	FISH: 11;
+	MILK: 11;
+	OIL_: 11;
+	PETR: 11;
+	PLAS: 11;
+	PLST: 11;
+	WATR: 11;
+	AORE: 11;
+	LIME: 11;
+	CTCD: 11;
+	CLAY: 11;
+	POTA: 11;
+	COAL: 11;
+	CORE: 11;
+	FMSP: 11;
+	FERT: 11;
+	GRAI: 11;
+	WHEA: 11;
+	MAIZ: 11;
+	IORE: 11;
+	OLSD: 11;
+	FICR: 11;
+	RUBR: 11;
+	SCMT: 11;
+	SAND: 11;
+	GRVL: 11;
+	SUGR: 11;
+	SGBT: 11;
+	SGCN: 11;
+	TOFF: 11;
+	WOOL: 11;
+	RCYC: 11;
+	BRCK: 11;
+	BDMT: 11;
+	BATT: 11;
+	BUBL: 11;
+	FZDR: 11;
+	FOOD: 11;
+	FRUT: 11;
+	GLAS: 11;
+	GOOD: 11;
+	LVST: 11;
+	WDPR: 11;
+	MNSP: 11;
+	PAPR: 11;
+	STEL: 11;
+	SWET: 11;
+	TOYS: 11;
+	VEHI: 11;
+	ENSP: 11;
+	WOOD: 11;
+	VALU: 11;
+	GOLD: 11;
+	DIAM: 11;
+	return 11;
+}
+switch(FEAT_TRAINS, SELF, switch_capacity_maglevuniversal_SLUG, cargo_type_in_veh){
+	CERE: 12;
+	CMNT: 12;
+	COLA: 12;
+	BEER: 12;
+	RFPR: 12;
+	FISH: 12;
+	MILK: 12;
+	OIL_: 12;
+	PETR: 12;
+	PLAS: 12;
+	PLST: 12;
+	WATR: 12;
+	AORE: 12;
+	LIME: 12;
+	CTCD: 12;
+	CLAY: 12;
+	POTA: 12;
+	COAL: 12;
+	CORE: 12;
+	FMSP: 12;
+	FERT: 12;
+	GRAI: 12;
+	WHEA: 12;
+	MAIZ: 12;
+	IORE: 12;
+	OLSD: 12;
+	FICR: 12;
+	RUBR: 12;
+	SCMT: 12;
+	SAND: 12;
+	GRVL: 12;
+	SUGR: 12;
+	SGBT: 12;
+	SGCN: 12;
+	TOFF: 12;
+	WOOL: 12;
+	RCYC: 12;
+	BRCK: 12;
+	BDMT: 12;
+	BATT: 12;
+	BUBL: 12;
+	FZDR: 12;
+	FOOD: 12;
+	FRUT: 12;
+	GLAS: 12;
+	GOOD: 12;
+	LVST: 12;
+	WDPR: 12;
+	MNSP: 12;
+	PAPR: 12;
+	STEL: 12;
+	SWET: 12;
+	TOYS: 12;
+	VEHI: 12;
+	ENSP: 12;
+	WOOD: 12;
+	VALU: 12;
+	GOLD: 12;
+	DIAM: 12;
+	return 12;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_capacity_maglevuniversal, vehicle_type_id){
+item_SLUG: switch_capacity_maglevuniversal_SLUG;
+item_ANIMALEXPRESS: switch_capacity_maglevuniversal_SLUG;
+item_RAINBOWSLUG: switch_capacity_maglevuniversal_SLUG;
+switch_capacity_maglevuniversal_normal;
+}
+
+//ARTICULATION
+switch (FEAT_TRAINS, SELF, switch_maglevflatbed_articulated, extra_callback_info1){
+1: return item_maglevflatbed;
+return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+item(FEAT_TRAINS, item_maglevflatbed, 611) { //ID611
+	property {
+		name:                         string(STR_NAME_MGLVFLTBD);
+        climates_available:           ALL_CLIMATES;
+        introduction_date:            date(1997, 1, 1);
+        model_life:                   VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                 255;
+        reliability_decay:            5;
+        refittable_cargo_classes:     bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED, CC_OVERSIZED, CC_ARMOURED);
+        non_refittable_cargo_classes: bitmask();
+
+		cargo_disallow_refit:		  [BEER, FMSP, FERT, FISH, MILK, FICR, RCYC, WOOL];
+		default_cargo_type:			  GOOD;
+        loading_speed:                5;
+        cost_factor:                  10;
+        running_cost_factor:          0;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        speed:                        0;
+        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        refit_cost:                   0;
+        track_type:                   MGLV;
+        ai_special_flag:              AI_FLAG_CARGO;
+        power:                        0;
+        running_cost_base:            RUNNING_COST_NONE;
+        dual_headed:                  0;
+        cargo_capacity:               10;
+        weight:                       40 ton;
+        ai_engine_rank:               0;
+        extra_power_per_wagon:        0 kW;
+        tractive_effort_coefficient:  0;
+        air_drag_coefficient:         0;
+        length: 4;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
+        extra_weight_per_wagon:       0 ton;
+        bitmask_vehicle_info:         0;
+	}
+	graphics {
+		default: maglevflatbed_switch;//maglevflatbed_wagon_switch;
+		additional_text: string(STR_MAGLEVWAGON);
+		purchase: spriteset_purchaseMenu_magflatbed;
+		articulated_part: switch_maglevflatbed_articulated;
+		cargo_capacity:   switch_capacity_maglevuniversal;
+		purchase_cargo_capacity:   11;
+		loading_speed:		4;
+		cost_factor:		40;
+		weight:				40;
+		colour_mapping: RAINBOWWAGONS_enginecheck;
+		purchase_colour_mapping: CB_FAILED;
+	}
+}
+if (param_wagons == 0) {
+	item(FEAT_TRAINS, item_maglevflatbed, 611) {
+		property {
+		climates_available: NO_CLIMATE;
+		}
+	}
+} else  {
+	item(FEAT_TRAINS, item_maglevflatbed, 611) {
+		property {
+		climates_available: ALL_CLIMATES;
+		}
+	}
+}
+
+
+//ARTICULATION
+switch (FEAT_TRAINS, SELF, switch_maglevhopper_articulated, extra_callback_info1){
+1: return item_maglevhopper;
+return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+item(FEAT_TRAINS, item_maglevhopper, 621) { //ID621
+	property {
+		name:                         string(STR_NAME_MGLVHOPPER);
+        climates_available:           ALL_CLIMATES;
+        introduction_date:            date(1997, 1, 1);
+        model_life:                   VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                 255;
+        reliability_decay:            5;
+        refittable_cargo_classes:     bitmask(CC_BULK, CC_COVERED);
+        non_refittable_cargo_classes: bitmask(CC_REFRIGERATED);
+
+				cargo_allow_refit:			  [RUBR, FMSP];
+				cargo_disallow_refit:		  [WDPR, FRUT, BDMT, PLST, LUMB];
+				default_cargo_type:			  COAL;
+				loading_speed:                5;
+        cost_factor:                  10;
+        running_cost_factor:          0;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        speed:                        0;
+        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        refit_cost:                   0;
+        track_type:                   MGLV;
+        ai_special_flag:              AI_FLAG_CARGO;
+        power:                        0;
+        running_cost_base:            RUNNING_COST_NONE;
+        dual_headed:                  0;
+        cargo_capacity:               10;
+        weight:                       40 ton;
+        ai_engine_rank:               0;
+        extra_power_per_wagon:        0 kW;
+        tractive_effort_coefficient:  0;
+        air_drag_coefficient:         0;
+        length: 4;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
+        extra_weight_per_wagon:       0 ton;
+        bitmask_vehicle_info:         0;
+	}
+	graphics {
+		default: maglevhopper_switch;
+		additional_text: string(STR_MAGLEVWAGON);
+		purchase: spriteset_purchaseMenu_maghopper;
+		articulated_part: switch_maglevhopper_articulated;
+		cargo_capacity:   switch_capacity_maglevuniversal;
+		purchase_cargo_capacity:   11;
+		loading_speed:		4;
+		cost_factor:		40;
+		//weight:				switch_weight_global;
+		weight:				40;
+		//colour_mapping: RAINBOWWAGONS_enginecheck;
+		purchase_colour_mapping: CB_FAILED;
+	}
+}
+if (param_wagons == 0) {
+	item(FEAT_TRAINS, item_maglevhopper, 621) {
+		property {
+		climates_available: NO_CLIMATE;
+		}
+	}
+} else  {
+	item(FEAT_TRAINS, item_maglevhopper, 621) {
+		property {
+		climates_available: ALL_CLIMATES;
+		}
+	}
+}
+
+
+//ARTICULATION
+switch (FEAT_TRAINS, SELF, switch_maglevtanker_articulated, extra_callback_info1){
+1: return item_maglevtanker;
+return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+item(FEAT_TRAINS, item_maglevtanker, 631) { //ID631
+	property {
+		name:                         string(STR_NAME_MGLVTANK);
+        climates_available:           ALL_CLIMATES;
+        introduction_date:            date(1997, 1, 1);
+        model_life:                   VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                 255;
+        reliability_decay:            5;
+        refittable_cargo_classes:     bitmask(CC_LIQUID);
+        non_refittable_cargo_classes: bitmask(CC_BULK);
+
+		cargo_allow_refit:			  [LVST, FISH, FZDR, PLST];
+		cargo_disallow_refit:		  [RUBR];
+		default_cargo_type:			  OIL_;
+        loading_speed:                5;
+        cost_factor:                  10;
+        running_cost_factor:          0;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        speed:                        0;
+        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        refit_cost:                   0;
+        track_type:                   MGLV;
+        ai_special_flag:              AI_FLAG_CARGO;
+        power:                        0;
+        running_cost_base:            RUNNING_COST_NONE;
+        dual_headed:                  0;
+        cargo_capacity:               10;
+        weight:                       40 ton;
+        ai_engine_rank:               0;
+        extra_power_per_wagon:        0 kW;
+        tractive_effort_coefficient:  0;
+        air_drag_coefficient:         0;
+        length: 4;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
+        extra_weight_per_wagon:       0 ton;
+        bitmask_vehicle_info:         0;
+	}
+	graphics {
+		default: maglevtanker_switch;//maglevtanker_wagon_switch;
+		additional_text: string(STR_MAGLEVWAGON);
+		purchase: spriteset_purchaseMenu_magtanker;
+		articulated_part: switch_maglevtanker_articulated;
+		cargo_capacity:   switch_capacity_maglevuniversal;
+		purchase_cargo_capacity:   11;
+		loading_speed:		4;
+		cost_factor:		40;
+		weight:				40;
+		colour_mapping: RAINBOWWAGONS_enginecheck;
+		purchase_colour_mapping: CB_FAILED;
+	}
+}
+if (param_wagons == 0) {
+	item(FEAT_TRAINS, item_maglevtanker, 631) {
+		property {
+		climates_available: NO_CLIMATE;
+		}
+	}
+} else  {
+	item(FEAT_TRAINS, item_maglevtanker, 631) {
+		property {
+		climates_available: ALL_CLIMATES;
+		}
+	}
+}
+
+//ARTICULATION
+switch (FEAT_TRAINS, SELF, switch_maglevuniversal_articulated, extra_callback_info1){
+1: return item_maglevuniversal;
+return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+item(FEAT_TRAINS, item_maglevuniversal, 641) { //ID641
+	property {
+		name:                         string(STR_NAME_MGLVUNIVERSAL);
+        climates_available:           ALL_CLIMATES;
+        introduction_date:            date(1997, 1, 1);
+        model_life:                   VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                 255;
+        reliability_decay:            5;
+        refittable_cargo_classes:     ALL_NORMAL_CARGO_CLASSES;
+        //non_refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL);
+		default_cargo_type:			  GOOD;
+
+		cargo_allow_refit:			  [];
+		cargo_disallow_refit:		  [];
+        loading_speed:                5;
+        cost_factor:                  10;
+        running_cost_factor:          0;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        speed:                        0;
+        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        refit_cost:                   0;
+        track_type:                   MGLV;
+        ai_special_flag:              AI_FLAG_CARGO;
+        power:                        0;
+        running_cost_base:            RUNNING_COST_NONE;
+        dual_headed:                  0;
+        cargo_capacity:               10;
+        weight:                       40 ton;
+        ai_engine_rank:               0;
+        extra_power_per_wagon:        0 kW;
+        tractive_effort_coefficient:  0;
+        air_drag_coefficient:         0;
+        length: 4;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
+        extra_weight_per_wagon:       0 ton;
+        bitmask_vehicle_info:         0;
+	}
+	graphics {
+		default: maglevuniversal_switch;//maglevuniversal_wagon_switch;
+		additional_text: string(STR_MAGLEVWAGON);
+		purchase: spriteset_purchaseMenu_maguniversal;
+		articulated_part: switch_maglevuniversal_articulated;
+		cargo_capacity:   switch_capacity_maglevuniversal;
+		purchase_cargo_capacity:   11;
+		loading_speed:		4;
+		cost_factor:		40;
+		//weight:				switch_weight_global;
+		weight:				40;
+		colour_mapping: RAINBOWWAGONS_enginecheck;
+		purchase_colour_mapping: CB_FAILED;
+	}
+}
