@@ -1,0 +1,1464 @@
+
+//MONORAIL FLATBED
+
+
+//SPRITESETS
+spriteset(spriteset_purchaseMenu_monoflatbed,		"gfx/PurchaseMenu.png"){template_purchaseMenu(1,20)}
+//monorail flatbed gen1 empty
+spriteset(spriteset_monoflatbed_empty_bricks, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 0) }
+spriteset(spriteset_monoflatbed_empty_batteries, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 2) }
+spriteset(spriteset_monoflatbed_empty_bubbles, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 4) }
+spriteset(spriteset_monoflatbed_empty_fizzydrinks, 	"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 6) }
+spriteset(spriteset_monoflatbed_empty_food, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 8) }
+spriteset(spriteset_monoflatbed_empty_fruit, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 10) }
+spriteset(spriteset_monoflatbed_empty_glass, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 12) }
+spriteset(spriteset_monoflatbed_empty_containers, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 14) }
+spriteset(spriteset_monoflatbed_empty_lumber, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 16) }
+spriteset(spriteset_monoflatbed_empty_crates, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 18) }
+spriteset(spriteset_monoflatbed_empty_barrels, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 20) }
+spriteset(spriteset_monoflatbed_empty_livestock, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 22) }
+spriteset(spriteset_monoflatbed_empty_paper, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 24) }
+spriteset(spriteset_monoflatbed_empty_steel, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 26) }
+spriteset(spriteset_monoflatbed_empty_sweets, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 28) }
+spriteset(spriteset_monoflatbed_empty_toys, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 30) }
+spriteset(spriteset_monoflatbed_empty_cars, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 32) }
+spriteset(spriteset_monoflatbed_empty_vehicles, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 34) }
+spriteset(spriteset_monoflatbed_empty_wood, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 36) }
+spriteset(spriteset_monoflatbed_empty_valu, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 38) }
+spriteset(spriteset_monoflatbed_empty_diam, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 40) }
+spriteset(spriteset_monoflatbed_empty_gold, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 42) }
+
+spriteset(spriteset_monoflatbed_1full_bricks, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 1) }
+spriteset(spriteset_monoflatbed_1full_batteries, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 3) }
+spriteset(spriteset_monoflatbed_1full_bubbles, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 5) }
+spriteset(spriteset_monoflatbed_1full_fizzydrinks, 	"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 7) }
+spriteset(spriteset_monoflatbed_1full_food, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 9) }
+spriteset(spriteset_monoflatbed_1full_fruit, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 11) }
+spriteset(spriteset_monoflatbed_1full_glass, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 13) }
+spriteset(spriteset_monoflatbed_1full_containers, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 15) }
+spriteset(spriteset_monoflatbed_1full_lumber, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 17) }
+spriteset(spriteset_monoflatbed_1full_crates, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 19) }
+spriteset(spriteset_monoflatbed_1full_barrels, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 21) }
+spriteset(spriteset_monoflatbed_1full_livestock, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 23) }
+spriteset(spriteset_monoflatbed_1full_paper, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 25) }
+spriteset(spriteset_monoflatbed_1full_steel, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 27) }
+spriteset(spriteset_monoflatbed_1full_sweets, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 29) }
+spriteset(spriteset_monoflatbed_1full_toys, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 31) }
+spriteset(spriteset_monoflatbed_1full_cars, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 33) }
+spriteset(spriteset_monoflatbed_1full_vehicles, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 35) }
+spriteset(spriteset_monoflatbed_1full_wood, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 37) }
+spriteset(spriteset_monoflatbed_1full_valu, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 39) }
+spriteset(spriteset_monoflatbed_1full_diam, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 41) }
+spriteset(spriteset_monoflatbed_1full_gold, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 43) }
+
+spriteset(spriteset_monoflatbed_2full_bricks, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 1) }
+spriteset(spriteset_monoflatbed_2full_batteries, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 3) }
+spriteset(spriteset_monoflatbed_2full_bubbles, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 5) }
+spriteset(spriteset_monoflatbed_2full_fizzydrinks, 	"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 7) }
+spriteset(spriteset_monoflatbed_2full_food, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 9) }
+spriteset(spriteset_monoflatbed_2full_fruit, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 11) }
+spriteset(spriteset_monoflatbed_2full_glass, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 13) }
+spriteset(spriteset_monoflatbed_2full_containers, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 15) }
+spriteset(spriteset_monoflatbed_2full_lumber, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 17) }
+spriteset(spriteset_monoflatbed_2full_crates, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 19) }
+spriteset(spriteset_monoflatbed_2full_barrels, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 21) }
+spriteset(spriteset_monoflatbed_2full_livestock, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 23) }
+spriteset(spriteset_monoflatbed_2full_paper, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 25) }
+spriteset(spriteset_monoflatbed_2full_steel, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 27) }
+spriteset(spriteset_monoflatbed_2full_sweets, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 29) }
+spriteset(spriteset_monoflatbed_2full_toys, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 31) }
+spriteset(spriteset_monoflatbed_2full_cars, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 33) }
+spriteset(spriteset_monoflatbed_2full_vehicles, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 35) }
+spriteset(spriteset_monoflatbed_2full_wood, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 37) }
+spriteset(spriteset_monoflatbed_2full_valu, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 39) }
+spriteset(spriteset_monoflatbed_2full_diam, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 41) }
+spriteset(spriteset_monoflatbed_2full_gold, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 43) }
+
+// monorail flatbed gen1 full
+spriteset(spriteset_monoflatbed_full_bricks, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 0) }
+spriteset(spriteset_monoflatbed_full_batteries, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 2) }
+spriteset(spriteset_monoflatbed_full_bubbles, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 4) }
+spriteset(spriteset_monoflatbed_full_fizzydrinks, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 6) }
+spriteset(spriteset_monoflatbed_full_food, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 8) }
+spriteset(spriteset_monoflatbed_full_fruit,			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 10) }
+spriteset(spriteset_monoflatbed_full_glass, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 12) }
+spriteset(spriteset_monoflatbed_full_containers, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 14) }
+spriteset(spriteset_monoflatbed_full_lumber, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 16) }
+spriteset(spriteset_monoflatbed_full_crates, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 18) }
+spriteset(spriteset_monoflatbed_full_barrels, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 20) }
+spriteset(spriteset_monoflatbed_full_livestock, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 22) } //livestock takes 20 21 22
+spriteset(spriteset_monoflatbed_full_paper, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 24) }
+spriteset(spriteset_monoflatbed_full_steel, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 26) }
+spriteset(spriteset_monoflatbed_full_sweets, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 28) }
+spriteset(spriteset_monoflatbed_full_toys, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 30) } //toys take 26 27 28 29 30
+spriteset(spriteset_monoflatbed_full_cars, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 32) }
+spriteset(spriteset_monoflatbed_full_vehicles, 		"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 34) }
+spriteset(spriteset_monoflatbed_full_wood, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 36) }
+spriteset(spriteset_monoflatbed_full_valu, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 38) }
+spriteset(spriteset_monoflatbed_full_diam, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 40) }
+spriteset(spriteset_monoflatbed_full_gold, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 42) }
+//SPRITEGROUPS
+spritegroup spritegroup_monoflatbed_bricks {
+	loading: [spriteset_monoflatbed_empty_bricks, spriteset_monoflatbed_1full_bricks, spriteset_monoflatbed_2full_bricks, spriteset_monoflatbed_full_bricks];
+	loaded:  [spriteset_monoflatbed_empty_bricks, spriteset_monoflatbed_1full_bricks, spriteset_monoflatbed_2full_bricks, spriteset_monoflatbed_full_bricks];
+}
+spritegroup spritegroup_monoflatbed_batteries {
+	loading: [spriteset_monoflatbed_empty_batteries, spriteset_monoflatbed_1full_batteries, spriteset_monoflatbed_2full_batteries, spriteset_monoflatbed_full_batteries];
+	loaded:  [spriteset_monoflatbed_empty_batteries, spriteset_monoflatbed_1full_batteries, spriteset_monoflatbed_2full_batteries, spriteset_monoflatbed_full_batteries];
+}
+spritegroup spritegroup_monoflatbed_bubbles {
+	loading: [spriteset_monoflatbed_empty_bubbles, spriteset_monoflatbed_1full_bubbles, spriteset_monoflatbed_2full_bubbles, spriteset_monoflatbed_full_bubbles];
+	loaded:  [spriteset_monoflatbed_empty_bubbles, spriteset_monoflatbed_1full_bubbles, spriteset_monoflatbed_2full_bubbles, spriteset_monoflatbed_full_bubbles];
+}
+spritegroup spritegroup_monoflatbed_fizzydrinks {
+	loading: [spriteset_monoflatbed_empty_fizzydrinks, spriteset_monoflatbed_1full_fizzydrinks, spriteset_monoflatbed_2full_fizzydrinks, spriteset_monoflatbed_full_fizzydrinks];
+	loaded:  [spriteset_monoflatbed_empty_fizzydrinks, spriteset_monoflatbed_1full_fizzydrinks, spriteset_monoflatbed_2full_fizzydrinks, spriteset_monoflatbed_full_fizzydrinks];
+}
+spritegroup spritegroup_monoflatbed_food {
+	loading: [spriteset_monoflatbed_empty_food, spriteset_monoflatbed_1full_food, spriteset_monoflatbed_2full_food, spriteset_monoflatbed_full_food];
+	loaded:  [spriteset_monoflatbed_empty_food, spriteset_monoflatbed_1full_food, spriteset_monoflatbed_2full_food, spriteset_monoflatbed_full_food];
+}
+spritegroup spritegroup_monoflatbed_fruit {
+	loading: [spriteset_monoflatbed_empty_fruit, spriteset_monoflatbed_1full_fruit, spriteset_monoflatbed_2full_fruit, spriteset_monoflatbed_full_fruit];
+	loaded:  [spriteset_monoflatbed_empty_fruit, spriteset_monoflatbed_1full_fruit, spriteset_monoflatbed_2full_fruit, spriteset_monoflatbed_full_fruit];
+}
+spritegroup spritegroup_monoflatbed_glass {
+	loading: [spriteset_monoflatbed_empty_glass, spriteset_monoflatbed_1full_glass, spriteset_monoflatbed_2full_glass, spriteset_monoflatbed_full_glass];
+	loaded:  [spriteset_monoflatbed_empty_glass, spriteset_monoflatbed_1full_glass, spriteset_monoflatbed_2full_glass, spriteset_monoflatbed_full_glass];
+}
+spritegroup spritegroup_monoflatbed_containers {
+	loading: [spriteset_monoflatbed_empty_containers, spriteset_monoflatbed_1full_containers, spriteset_monoflatbed_2full_containers, spriteset_monoflatbed_full_containers];
+	loaded:  [spriteset_monoflatbed_empty_containers, spriteset_monoflatbed_1full_containers, spriteset_monoflatbed_2full_containers, spriteset_monoflatbed_full_containers];
+}
+spritegroup spritegroup_monoflatbed_lumber {
+	loading: [spriteset_monoflatbed_empty_lumber, spriteset_monoflatbed_1full_lumber, spriteset_monoflatbed_2full_lumber, spriteset_monoflatbed_full_lumber];
+	loaded:  [spriteset_monoflatbed_empty_lumber, spriteset_monoflatbed_1full_lumber, spriteset_monoflatbed_2full_lumber, spriteset_monoflatbed_full_lumber];
+}
+spritegroup spritegroup_monoflatbed_crates {
+	loading: [spriteset_monoflatbed_empty_crates, spriteset_monoflatbed_1full_crates, spriteset_monoflatbed_2full_crates, spriteset_monoflatbed_full_crates];
+	loaded:  [spriteset_monoflatbed_empty_crates, spriteset_monoflatbed_1full_crates, spriteset_monoflatbed_2full_crates, spriteset_monoflatbed_full_crates];
+}
+
+spritegroup spritegroup_monoflatbed_livestock {
+	loading: [spriteset_monoflatbed_empty_livestock, spriteset_monoflatbed_1full_livestock, spriteset_monoflatbed_2full_livestock, spriteset_monoflatbed_full_livestock];
+	loaded:  [spriteset_monoflatbed_empty_livestock, spriteset_monoflatbed_1full_livestock, spriteset_monoflatbed_2full_livestock, spriteset_monoflatbed_full_livestock];
+}
+spritegroup spritegroup_monoflatbed_paper {
+	loading: [spriteset_monoflatbed_empty_paper, spriteset_monoflatbed_1full_paper, spriteset_monoflatbed_2full_paper, spriteset_monoflatbed_full_paper];
+	loaded:  [spriteset_monoflatbed_empty_paper, spriteset_monoflatbed_1full_paper, spriteset_monoflatbed_2full_paper, spriteset_monoflatbed_full_paper];
+
+}
+spritegroup spritegroup_monoflatbed_steel {
+	loading: [spriteset_monoflatbed_empty_steel, spriteset_monoflatbed_1full_steel, spriteset_monoflatbed_2full_steel, spriteset_monoflatbed_full_steel];
+	loaded:  [spriteset_monoflatbed_empty_steel, spriteset_monoflatbed_1full_steel, spriteset_monoflatbed_2full_steel, spriteset_monoflatbed_full_steel];
+}
+spritegroup spritegroup_monoflatbed_sweets {
+	loading: [spriteset_monoflatbed_empty_sweets, spriteset_monoflatbed_1full_sweets, spriteset_monoflatbed_2full_sweets, spriteset_monoflatbed_full_sweets];
+	loaded:  [spriteset_monoflatbed_empty_sweets, spriteset_monoflatbed_1full_sweets, spriteset_monoflatbed_2full_sweets, spriteset_monoflatbed_full_sweets];
+}
+spritegroup spritegroup_monoflatbed_toys {
+	loading: [spriteset_monoflatbed_empty_toys, spriteset_monoflatbed_1full_toys, spriteset_monoflatbed_2full_toys, spriteset_monoflatbed_full_toys];
+	loaded:  [spriteset_monoflatbed_empty_toys, spriteset_monoflatbed_1full_toys, spriteset_monoflatbed_2full_toys, spriteset_monoflatbed_full_toys];
+}
+spritegroup spritegroup_monoflatbed_cars {
+	loading: [spriteset_monoflatbed_empty_cars, spriteset_monoflatbed_1full_cars, spriteset_monoflatbed_2full_cars, spriteset_monoflatbed_full_cars];
+	loaded:  [spriteset_monoflatbed_empty_cars, spriteset_monoflatbed_1full_cars, spriteset_monoflatbed_2full_cars, spriteset_monoflatbed_full_cars];
+}
+
+spritegroup spritegroup_monoflatbed_wood {
+	loading: [spriteset_monoflatbed_empty_wood, spriteset_monoflatbed_1full_wood, spriteset_monoflatbed_2full_wood, spriteset_monoflatbed_full_wood];
+	loaded:  [spriteset_monoflatbed_empty_wood, spriteset_monoflatbed_1full_wood, spriteset_monoflatbed_2full_wood, spriteset_monoflatbed_full_wood];
+}
+spritegroup spritegroup_monoflatbed_valu {
+	loading: [spriteset_monoflatbed_empty_valu, spriteset_monoflatbed_1full_valu, spriteset_monoflatbed_2full_valu, spriteset_monoflatbed_full_valu];
+	loaded:  [spriteset_monoflatbed_empty_valu, spriteset_monoflatbed_1full_valu, spriteset_monoflatbed_2full_valu, spriteset_monoflatbed_full_valu];
+}
+spritegroup spritegroup_monoflatbed_diam {
+	loading: [spriteset_monoflatbed_empty_diam, spriteset_monoflatbed_1full_diam, spriteset_monoflatbed_2full_diam, spriteset_monoflatbed_full_diam];
+	loaded:  [spriteset_monoflatbed_empty_diam, spriteset_monoflatbed_1full_diam, spriteset_monoflatbed_2full_diam, spriteset_monoflatbed_full_diam];
+}
+spritegroup spritegroup_monoflatbed_gold {
+	loading: [spriteset_monoflatbed_empty_gold, spriteset_monoflatbed_1full_gold, spriteset_monoflatbed_2full_gold, spriteset_monoflatbed_full_gold];
+	loaded:  [spriteset_monoflatbed_empty_gold, spriteset_monoflatbed_1full_gold, spriteset_monoflatbed_2full_gold, spriteset_monoflatbed_full_gold];
+}
+//RANDOM SWITCHES
+random_switch (FEAT_TRAINS, SELF, monoflatbed_random_supp, bitmask(TRIGGER_VEHICLE_SERVICE)){
+1: spritegroup_monoflatbed_containers;
+1: spritegroup_monoflatbed_food;
+1: spritegroup_monoflatbed_valu;
+1: spritegroup_monoflatbed_crates;
+}
+
+
+spriteset(spriteset_monoflatbed_empty_YETI, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 44) }
+spriteset(spriteset_monoflatbed_1full_YETI, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 45) }
+spriteset(spriteset_monoflatbed_2full_YETI, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 45) }
+spriteset(spriteset_monoflatbed_full_YETI, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 44) }
+spritegroup spritegroup_monoflatbed_YETI {
+	loading: [spriteset_monoflatbed_empty_YETI, spriteset_monoflatbed_1full_YETI, spriteset_monoflatbed_2full_YETI, spriteset_monoflatbed_full_YETI];
+	loaded:  [spriteset_monoflatbed_empty_YETI, spriteset_monoflatbed_1full_YETI, spriteset_monoflatbed_2full_YETI, spriteset_monoflatbed_full_YETI];
+}
+spriteset(spriteset_monoflatbed_empty_YETY, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 46) }
+spriteset(spriteset_monoflatbed_1full_YETY, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(0, 47) }
+spriteset(spriteset_monoflatbed_2full_YETY, 			"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 47) }
+spriteset(spriteset_monoflatbed_full_YETY, 		   	"gfx/MonoWagons_Flatbed.png") { template_engine32WTF(184, 46) }
+spritegroup spritegroup_monoflatbed_YETY {
+	loading: [spriteset_monoflatbed_empty_YETY, spriteset_monoflatbed_1full_YETY, spriteset_monoflatbed_2full_YETY, spriteset_monoflatbed_full_YETY];
+	loaded:  [spriteset_monoflatbed_empty_YETY, spriteset_monoflatbed_1full_YETY, spriteset_monoflatbed_2full_YETY, spriteset_monoflatbed_full_YETY];
+}
+
+//CARGO SWITCH
+switch (FEAT_TRAINS, SELF, monoflatbed_wagon_switch, cargo_type_in_veh) {
+	YETI: spritegroup_monoflatbed_YETI;
+	YETY: spritegroup_monoflatbed_YETY;
+
+	LUMB: spritegroup_monoflatbed_lumber;
+	SUPP: monoflatbed_random_supp;
+	ALOY: spritegroup_monoflatbed_steel;
+
+	BRCK: spritegroup_monoflatbed_bricks;
+	BDMT: spritegroup_monoflatbed_bricks;
+	BATT: spritegroup_monoflatbed_batteries;
+	BUBL: spritegroup_monoflatbed_bubbles;
+	FZDR: spritegroup_monoflatbed_fizzydrinks;
+	FOOD: spritegroup_monoflatbed_food;
+	FRUT: spritegroup_monoflatbed_fruit;
+	FRVG: spritegroup_monoflatbed_fruit;
+	GLAS: spritegroup_monoflatbed_glass;
+	GOOD: spritegroup_monoflatbed_containers;
+	LVST: spritegroup_monoflatbed_livestock;
+	WDPR: spritegroup_monoflatbed_lumber;
+	MNSP: spritegroup_monoflatbed_crates;
+	PAPR: spritegroup_monoflatbed_paper;
+	STEL: spritegroup_monoflatbed_steel;
+	SWET: spritegroup_monoflatbed_sweets;
+	TOYS: spritegroup_monoflatbed_toys;
+	VEHI: spritegroup_monoflatbed_cars;
+	ENSP: spritegroup_monoflatbed_cars;
+	WOOD: spritegroup_monoflatbed_wood;
+	VALU: spritegroup_monoflatbed_valu;
+	DIAM: spritegroup_monoflatbed_diam;
+	GOLD: spritegroup_monoflatbed_gold;
+	spritegroup_monoflatbed_crates;
+}
+
+
+//--------------   BRICKS   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_flatbed_bricks_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,0) }
+spriteset(spriteset_MEOW_flatbed_bricks_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,0) }
+spriteset(spriteset_MEOW_flatbed_bricks_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,0) }
+spriteset(spriteset_MEOW_flatbed_bricks_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,0) }
+
+spritegroup random_MEOW_flatbed_bricks { //spritegroup_MEOW_flatbed_bricks_1 {
+	loading: [	spriteset_MEOW_flatbed_bricks_1_load0,
+				spriteset_MEOW_flatbed_bricks_1_load1,
+				spriteset_MEOW_flatbed_bricks_1_load2,
+				spriteset_MEOW_flatbed_bricks_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_bricks_1_load0,
+				spriteset_MEOW_flatbed_bricks_1_load1,
+				spriteset_MEOW_flatbed_bricks_1_load2,
+				spriteset_MEOW_flatbed_bricks_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_bricks, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_flatbed_bricks_1;
+}
+*/
+//--------------   batteries   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_flatbed_batteries_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,1) }
+spriteset(spriteset_MEOW_flatbed_batteries_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,1) }
+spriteset(spriteset_MEOW_flatbed_batteries_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,1) }
+spriteset(spriteset_MEOW_flatbed_batteries_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,1) }
+
+spritegroup random_MEOW_flatbed_batteries { //spritegroup_MEOW_flatbed_batteries_1 {
+	loading: [	spriteset_MEOW_flatbed_batteries_1_load0,
+				spriteset_MEOW_flatbed_batteries_1_load1,
+				spriteset_MEOW_flatbed_batteries_1_load2,
+				spriteset_MEOW_flatbed_batteries_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_batteries_1_load0,
+				spriteset_MEOW_flatbed_batteries_1_load1,
+				spriteset_MEOW_flatbed_batteries_1_load2,
+				spriteset_MEOW_flatbed_batteries_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_batteries, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_flatbed_batteries_1;
+}
+*/
+//--------------   bubbles   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_flatbed_bubbles_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,2) }
+spriteset(spriteset_MEOW_flatbed_bubbles_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,2) }
+spriteset(spriteset_MEOW_flatbed_bubbles_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,2) }
+spriteset(spriteset_MEOW_flatbed_bubbles_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,2) }
+
+spritegroup random_MEOW_flatbed_bubbles { //spritegroup_MEOW_flatbed_bubbles_1 {
+	loading: [	spriteset_MEOW_flatbed_bubbles_1_load0,
+				spriteset_MEOW_flatbed_bubbles_1_load1,
+				spriteset_MEOW_flatbed_bubbles_1_load2,
+				spriteset_MEOW_flatbed_bubbles_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_bubbles_1_load0,
+				spriteset_MEOW_flatbed_bubbles_1_load1,
+				spriteset_MEOW_flatbed_bubbles_1_load2,
+				spriteset_MEOW_flatbed_bubbles_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_bubbles, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_flatbed_bubbles_1;
+}
+*/
+//--------------   beer   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_flatbed_beer_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,3) }
+spriteset(spriteset_MEOW_flatbed_beer_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,3) }
+spriteset(spriteset_MEOW_flatbed_beer_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,3) }
+spriteset(spriteset_MEOW_flatbed_beer_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,3) }
+
+spritegroup random_MEOW_flatbed_beer { //spritegroup_MEOW_flatbed_beer_1 {
+	loading: [	spriteset_MEOW_flatbed_beer_1_load0,
+				spriteset_MEOW_flatbed_beer_1_load1,
+				spriteset_MEOW_flatbed_beer_1_load2,
+				spriteset_MEOW_flatbed_beer_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_beer_1_load0,
+				spriteset_MEOW_flatbed_beer_1_load1,
+				spriteset_MEOW_flatbed_beer_1_load2,
+				spriteset_MEOW_flatbed_beer_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_beer, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_flatbed_beer_1;
+}
+*/
+//--------------   food   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_flatbed_food_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,4) }
+spriteset(spriteset_MEOW_flatbed_food_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,4) }
+spriteset(spriteset_MEOW_flatbed_food_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,4) }
+spriteset(spriteset_MEOW_flatbed_food_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,4) }
+
+spritegroup random_MEOW_flatbed_food { //spritegroup_MEOW_flatbed_food_1 {
+	loading: [	spriteset_MEOW_flatbed_food_1_load0,
+				spriteset_MEOW_flatbed_food_1_load1,
+				spriteset_MEOW_flatbed_food_1_load2,
+				spriteset_MEOW_flatbed_food_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_food_1_load0,
+				spriteset_MEOW_flatbed_food_1_load1,
+				spriteset_MEOW_flatbed_food_1_load2,
+				spriteset_MEOW_flatbed_food_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_food, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_flatbed_food_1;
+}
+*/
+//--------------   fruit   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_flatbed_fruit_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,5) }
+spriteset(spriteset_MEOW_flatbed_fruit_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,5) }
+spriteset(spriteset_MEOW_flatbed_fruit_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,5) }
+spriteset(spriteset_MEOW_flatbed_fruit_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,5) }
+
+spritegroup spritegroup_MEOW_flatbed_fruit_1 {
+	loading: [	spriteset_MEOW_flatbed_fruit_1_load0,
+				spriteset_MEOW_flatbed_fruit_1_load1,
+				spriteset_MEOW_flatbed_fruit_1_load2,
+				spriteset_MEOW_flatbed_fruit_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_fruit_1_load0,
+				spriteset_MEOW_flatbed_fruit_1_load1,
+				spriteset_MEOW_flatbed_fruit_1_load2,
+				spriteset_MEOW_flatbed_fruit_1_load3
+			];}
+			
+spriteset(spriteset_MEOW_flatbed_fruit_2_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(1,0,5) }
+spriteset(spriteset_MEOW_flatbed_fruit_2_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(1,1,5) }
+spriteset(spriteset_MEOW_flatbed_fruit_2_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(1,2,5) }
+spriteset(spriteset_MEOW_flatbed_fruit_2_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(1,3,5) }
+
+spritegroup spritegroup_MEOW_flatbed_fruit_2 {
+	loading: [	spriteset_MEOW_flatbed_fruit_2_load0,
+				spriteset_MEOW_flatbed_fruit_2_load1,
+				spriteset_MEOW_flatbed_fruit_2_load2,
+				spriteset_MEOW_flatbed_fruit_2_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_fruit_2_load0,
+				spriteset_MEOW_flatbed_fruit_2_load1,
+				spriteset_MEOW_flatbed_fruit_2_load2,
+				spriteset_MEOW_flatbed_fruit_2_load3
+			];}
+
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_fruit, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_flatbed_fruit_1;
+1: spritegroup_MEOW_flatbed_fruit_2;
+}
+
+//--------------   glass   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_flatbed_glass_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,6) }
+spriteset(spriteset_MEOW_flatbed_glass_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,6) }
+spriteset(spriteset_MEOW_flatbed_glass_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,6) }
+spriteset(spriteset_MEOW_flatbed_glass_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,6) }
+
+spritegroup random_MEOW_flatbed_glass { //spritegroup_MEOW_flatbed_glass_1 {
+	loading: [	spriteset_MEOW_flatbed_glass_1_load0,
+				spriteset_MEOW_flatbed_glass_1_load1,
+				spriteset_MEOW_flatbed_glass_1_load2,
+				spriteset_MEOW_flatbed_glass_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_glass_1_load0,
+				spriteset_MEOW_flatbed_glass_1_load1,
+				spriteset_MEOW_flatbed_glass_1_load2,
+				spriteset_MEOW_flatbed_glass_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_glass, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_flatbed_glass_1;
+}
+*/
+//--------------   lumber   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_flatbed_lumber_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,7) }
+spriteset(spriteset_MEOW_flatbed_lumber_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,7) }
+spriteset(spriteset_MEOW_flatbed_lumber_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,7) }
+spriteset(spriteset_MEOW_flatbed_lumber_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,7) }
+
+spritegroup random_MEOW_flatbed_lumber { //spritegroup_MEOW_flatbed_lumber_1 {
+	loading: [	spriteset_MEOW_flatbed_lumber_1_load0,
+				spriteset_MEOW_flatbed_lumber_1_load1,
+				spriteset_MEOW_flatbed_lumber_1_load2,
+				spriteset_MEOW_flatbed_lumber_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_lumber_1_load0,
+				spriteset_MEOW_flatbed_lumber_1_load1,
+				spriteset_MEOW_flatbed_lumber_1_load2,
+				spriteset_MEOW_flatbed_lumber_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_lumber, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_flatbed_lumber_1;
+}
+*/
+//--------------   crates   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_flatbed_crates_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,8) }
+spriteset(spriteset_MEOW_flatbed_crates_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,8) }
+spriteset(spriteset_MEOW_flatbed_crates_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,8) }
+spriteset(spriteset_MEOW_flatbed_crates_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,8) }
+
+spritegroup random_MEOW_flatbed_crates { //spritegroup_MEOW_flatbed_crates_1 {
+	loading: [	spriteset_MEOW_flatbed_crates_1_load0,
+				spriteset_MEOW_flatbed_crates_1_load1,
+				spriteset_MEOW_flatbed_crates_1_load2,
+				spriteset_MEOW_flatbed_crates_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_crates_1_load0,
+				spriteset_MEOW_flatbed_crates_1_load1,
+				spriteset_MEOW_flatbed_crates_1_load2,
+				spriteset_MEOW_flatbed_crates_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_crates, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_flatbed_crates_1;
+}
+*/
+//--------------   barrels   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_flatbed_barrels_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,9) }
+spriteset(spriteset_MEOW_flatbed_barrels_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,9) }
+spriteset(spriteset_MEOW_flatbed_barrels_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,9) }
+spriteset(spriteset_MEOW_flatbed_barrels_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,9) }
+
+spritegroup random_MEOW_flatbed_barrels { //spritegroup_MEOW_flatbed_barrels_1 {
+	loading: [	spriteset_MEOW_flatbed_barrels_1_load0,
+				spriteset_MEOW_flatbed_barrels_1_load1,
+				spriteset_MEOW_flatbed_barrels_1_load2,
+				spriteset_MEOW_flatbed_barrels_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_barrels_1_load0,
+				spriteset_MEOW_flatbed_barrels_1_load1,
+				spriteset_MEOW_flatbed_barrels_1_load2,
+				spriteset_MEOW_flatbed_barrels_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_barrels, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_flatbed_barrels_1;
+}
+*/
+
+//--------------   containers   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_flatbed_containers_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,10) }
+spriteset(spriteset_MEOW_flatbed_containers_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,10) }
+spriteset(spriteset_MEOW_flatbed_containers_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,10) }
+spriteset(spriteset_MEOW_flatbed_containers_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,10) }
+
+spritegroup spritegroup_MEOW_flatbed_containers_1 {
+	loading: [	spriteset_MEOW_flatbed_containers_1_load0,
+				spriteset_MEOW_flatbed_containers_1_load1,
+				spriteset_MEOW_flatbed_containers_1_load2,
+				spriteset_MEOW_flatbed_containers_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_containers_1_load0,
+				spriteset_MEOW_flatbed_containers_1_load1,
+				spriteset_MEOW_flatbed_containers_1_load2,
+				spriteset_MEOW_flatbed_containers_1_load3
+			];}
+			
+spriteset(spriteset_MEOW_flatbed_containers_2_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(1,0,10) }
+spriteset(spriteset_MEOW_flatbed_containers_2_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(1,1,10) }
+spriteset(spriteset_MEOW_flatbed_containers_2_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(1,2,10) }
+spriteset(spriteset_MEOW_flatbed_containers_2_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(1,3,10) }
+
+spritegroup spritegroup_MEOW_flatbed_containers_2 {
+	loading: [	spriteset_MEOW_flatbed_containers_2_load0,
+				spriteset_MEOW_flatbed_containers_2_load1,
+				spriteset_MEOW_flatbed_containers_2_load2,
+				spriteset_MEOW_flatbed_containers_2_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_containers_2_load0,
+				spriteset_MEOW_flatbed_containers_2_load1,
+				spriteset_MEOW_flatbed_containers_2_load2,
+				spriteset_MEOW_flatbed_containers_2_load3
+			];}
+			
+spriteset(spriteset_MEOW_flatbed_containers_3_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(2,0,10) }
+spriteset(spriteset_MEOW_flatbed_containers_3_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(2,1,10) }
+spriteset(spriteset_MEOW_flatbed_containers_3_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(2,2,10) }
+spriteset(spriteset_MEOW_flatbed_containers_3_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(2,3,10) }
+
+spritegroup spritegroup_MEOW_flatbed_containers_3 {
+	loading: [	spriteset_MEOW_flatbed_containers_3_load0,
+				spriteset_MEOW_flatbed_containers_3_load1,
+				spriteset_MEOW_flatbed_containers_3_load2,
+				spriteset_MEOW_flatbed_containers_3_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_containers_3_load0,
+				spriteset_MEOW_flatbed_containers_3_load1,
+				spriteset_MEOW_flatbed_containers_3_load2,
+				spriteset_MEOW_flatbed_containers_3_load3
+			];}
+
+spriteset(spriteset_MEOW_flatbed_containers_4_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(3,0,10) }
+spriteset(spriteset_MEOW_flatbed_containers_4_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(3,1,10) }
+spriteset(spriteset_MEOW_flatbed_containers_4_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(3,2,10) }
+spriteset(spriteset_MEOW_flatbed_containers_4_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(3,3,10) }
+
+spritegroup spritegroup_MEOW_flatbed_containers_4 {
+	loading: [	spriteset_MEOW_flatbed_containers_4_load0,
+				spriteset_MEOW_flatbed_containers_4_load1,
+				spriteset_MEOW_flatbed_containers_4_load2,
+				spriteset_MEOW_flatbed_containers_4_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_containers_4_load0,
+				spriteset_MEOW_flatbed_containers_4_load1,
+				spriteset_MEOW_flatbed_containers_4_load2,
+				spriteset_MEOW_flatbed_containers_4_load3
+			];}
+			
+spriteset(spriteset_MEOW_flatbed_containers_5_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(4,0,10) }
+spriteset(spriteset_MEOW_flatbed_containers_5_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(4,1,10) }
+spriteset(spriteset_MEOW_flatbed_containers_5_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(4,2,10) }
+spriteset(spriteset_MEOW_flatbed_containers_5_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(4,3,10) }
+
+spritegroup spritegroup_MEOW_flatbed_containers_5 {
+	loading: [	spriteset_MEOW_flatbed_containers_5_load0,
+				spriteset_MEOW_flatbed_containers_5_load1,
+				spriteset_MEOW_flatbed_containers_5_load2,
+				spriteset_MEOW_flatbed_containers_5_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_containers_5_load0,
+				spriteset_MEOW_flatbed_containers_5_load1,
+				spriteset_MEOW_flatbed_containers_5_load2,
+				spriteset_MEOW_flatbed_containers_5_load3
+			];}
+			
+spriteset(spriteset_MEOW_flatbed_containers_6_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(5,0,10) }
+spriteset(spriteset_MEOW_flatbed_containers_6_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(5,1,10) }
+spriteset(spriteset_MEOW_flatbed_containers_6_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(5,2,10) }
+spriteset(spriteset_MEOW_flatbed_containers_6_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(5,3,10) }
+
+spritegroup spritegroup_MEOW_flatbed_containers_6 {
+	loading: [	spriteset_MEOW_flatbed_containers_6_load0,
+				spriteset_MEOW_flatbed_containers_6_load1,
+				spriteset_MEOW_flatbed_containers_6_load2,
+				spriteset_MEOW_flatbed_containers_6_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_containers_6_load0,
+				spriteset_MEOW_flatbed_containers_6_load1,
+				spriteset_MEOW_flatbed_containers_6_load2,
+				spriteset_MEOW_flatbed_containers_6_load3
+			];}			
+spriteset(spriteset_MEOW_flatbed_containers_7_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(6,0,10) }
+spriteset(spriteset_MEOW_flatbed_containers_7_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(6,1,10) }
+spriteset(spriteset_MEOW_flatbed_containers_7_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(6,2,10) }
+spriteset(spriteset_MEOW_flatbed_containers_7_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(6,3,10) }
+
+spritegroup spritegroup_MEOW_flatbed_containers_7 {
+	loading: [	spriteset_MEOW_flatbed_containers_7_load0,
+				spriteset_MEOW_flatbed_containers_7_load1,
+				spriteset_MEOW_flatbed_containers_7_load2,
+				spriteset_MEOW_flatbed_containers_7_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_containers_7_load0,
+				spriteset_MEOW_flatbed_containers_7_load1,
+				spriteset_MEOW_flatbed_containers_7_load2,
+				spriteset_MEOW_flatbed_containers_7_load3
+			];}
+			
+spriteset(spriteset_MEOW_flatbed_containers_8_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(7,0,10) }
+spriteset(spriteset_MEOW_flatbed_containers_8_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(7,1,10) }
+spriteset(spriteset_MEOW_flatbed_containers_8_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(7,2,10) }
+spriteset(spriteset_MEOW_flatbed_containers_8_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(7,3,10) }
+
+spritegroup spritegroup_MEOW_flatbed_containers_8 {
+	loading: [	spriteset_MEOW_flatbed_containers_8_load0,
+				spriteset_MEOW_flatbed_containers_8_load1,
+				spriteset_MEOW_flatbed_containers_8_load2,
+				spriteset_MEOW_flatbed_containers_8_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_containers_8_load0,
+				spriteset_MEOW_flatbed_containers_8_load1,
+				spriteset_MEOW_flatbed_containers_8_load2,
+				spriteset_MEOW_flatbed_containers_8_load3
+			];}
+			
+spriteset(spriteset_MEOW_flatbed_containers_9_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(8,0,10) }
+spriteset(spriteset_MEOW_flatbed_containers_9_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(8,1,10) }
+spriteset(spriteset_MEOW_flatbed_containers_9_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(8,2,10) }
+spriteset(spriteset_MEOW_flatbed_containers_9_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(8,3,10) }
+
+spritegroup spritegroup_MEOW_flatbed_containers_9 {
+	loading: [	spriteset_MEOW_flatbed_containers_9_load0,
+				spriteset_MEOW_flatbed_containers_9_load1,
+				spriteset_MEOW_flatbed_containers_9_load2,
+				spriteset_MEOW_flatbed_containers_9_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_containers_9_load0,
+				spriteset_MEOW_flatbed_containers_9_load1,
+				spriteset_MEOW_flatbed_containers_9_load2,
+				spriteset_MEOW_flatbed_containers_9_load3
+			];}
+			
+spriteset(spriteset_MEOW_flatbed_containers_10_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(9,0,10) }
+spriteset(spriteset_MEOW_flatbed_containers_10_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(9,1,10) }
+spriteset(spriteset_MEOW_flatbed_containers_10_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(9,2,10) }
+spriteset(spriteset_MEOW_flatbed_containers_10_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(9,3,10) }
+
+spritegroup spritegroup_MEOW_flatbed_containers_10 {
+	loading: [	spriteset_MEOW_flatbed_containers_10_load0,
+				spriteset_MEOW_flatbed_containers_10_load1,
+				spriteset_MEOW_flatbed_containers_10_load2,
+				spriteset_MEOW_flatbed_containers_10_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_containers_10_load0,
+				spriteset_MEOW_flatbed_containers_10_load1,
+				spriteset_MEOW_flatbed_containers_10_load2,
+				spriteset_MEOW_flatbed_containers_10_load3
+			];}
+
+spriteset(spriteset_MEOW_flatbed_containers_11_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(10,0,10) }
+spriteset(spriteset_MEOW_flatbed_containers_11_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(10,1,10) }
+spriteset(spriteset_MEOW_flatbed_containers_11_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(10,2,10) }
+spriteset(spriteset_MEOW_flatbed_containers_11_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(10,3,10) }
+
+spritegroup spritegroup_MEOW_flatbed_containers_11 {
+	loading: [	spriteset_MEOW_flatbed_containers_11_load0,
+				spriteset_MEOW_flatbed_containers_11_load1,
+				spriteset_MEOW_flatbed_containers_11_load2,
+				spriteset_MEOW_flatbed_containers_11_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_containers_11_load0,
+				spriteset_MEOW_flatbed_containers_11_load1,
+				spriteset_MEOW_flatbed_containers_11_load2,
+				spriteset_MEOW_flatbed_containers_11_load3
+			];}	
+
+spriteset(spriteset_MEOW_flatbed_containers_12_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(11,0,10) }
+spriteset(spriteset_MEOW_flatbed_containers_12_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(11,1,10) }
+spriteset(spriteset_MEOW_flatbed_containers_12_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(11,2,10) }
+spriteset(spriteset_MEOW_flatbed_containers_12_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(11,3,10) }
+
+spritegroup spritegroup_MEOW_flatbed_containers_12 {
+	loading: [	spriteset_MEOW_flatbed_containers_12_load0,
+				spriteset_MEOW_flatbed_containers_12_load1,
+				spriteset_MEOW_flatbed_containers_12_load2,
+				spriteset_MEOW_flatbed_containers_12_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_containers_12_load0,
+				spriteset_MEOW_flatbed_containers_12_load1,
+				spriteset_MEOW_flatbed_containers_12_load2,
+				spriteset_MEOW_flatbed_containers_12_load3
+			];}
+
+spriteset(spriteset_MEOW_flatbed_containers_13_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(12,0,10) }
+spriteset(spriteset_MEOW_flatbed_containers_13_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(12,1,10) }
+spriteset(spriteset_MEOW_flatbed_containers_13_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(12,2,10) }
+spriteset(spriteset_MEOW_flatbed_containers_13_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(12,3,10) }
+
+spritegroup spritegroup_MEOW_flatbed_containers_13 {
+	loading: [	spriteset_MEOW_flatbed_containers_13_load0,
+				spriteset_MEOW_flatbed_containers_13_load1,
+				spriteset_MEOW_flatbed_containers_13_load2,
+				spriteset_MEOW_flatbed_containers_13_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_containers_13_load0,
+				spriteset_MEOW_flatbed_containers_13_load1,
+				spriteset_MEOW_flatbed_containers_13_load2,
+				spriteset_MEOW_flatbed_containers_13_load3
+			];}
+
+spriteset(spriteset_MEOW_flatbed_containers_14_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(13,0,10) }
+spriteset(spriteset_MEOW_flatbed_containers_14_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(13,1,10) }
+spriteset(spriteset_MEOW_flatbed_containers_14_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(13,2,10) }
+spriteset(spriteset_MEOW_flatbed_containers_14_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(13,3,10) }
+
+spritegroup spritegroup_MEOW_flatbed_containers_14 {
+	loading: [	spriteset_MEOW_flatbed_containers_14_load0,
+				spriteset_MEOW_flatbed_containers_14_load1,
+				spriteset_MEOW_flatbed_containers_14_load2,
+				spriteset_MEOW_flatbed_containers_14_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_containers_14_load0,
+				spriteset_MEOW_flatbed_containers_14_load1,
+				spriteset_MEOW_flatbed_containers_14_load2,
+				spriteset_MEOW_flatbed_containers_14_load3
+			];}	
+	
+
+spriteset(spriteset_MEOW_flatbed_containers_15_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(14,0,10) }
+spriteset(spriteset_MEOW_flatbed_containers_15_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(14,1,10) }
+spriteset(spriteset_MEOW_flatbed_containers_15_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(14,2,10) }
+spriteset(spriteset_MEOW_flatbed_containers_15_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(14,3,10) }
+
+spritegroup spritegroup_MEOW_flatbed_containers_15 {
+	loading: [	spriteset_MEOW_flatbed_containers_15_load0,
+				spriteset_MEOW_flatbed_containers_15_load1,
+				spriteset_MEOW_flatbed_containers_15_load2,
+				spriteset_MEOW_flatbed_containers_15_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_containers_15_load0,
+				spriteset_MEOW_flatbed_containers_15_load1,
+				spriteset_MEOW_flatbed_containers_15_load2,
+				spriteset_MEOW_flatbed_containers_15_load3
+			];}
+			
+spriteset(spriteset_MEOW_flatbed_containers_16_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(15,0,10) }
+spriteset(spriteset_MEOW_flatbed_containers_16_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(15,1,10) }
+spriteset(spriteset_MEOW_flatbed_containers_16_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(15,2,10) }
+spriteset(spriteset_MEOW_flatbed_containers_16_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(15,3,10) }
+
+spritegroup spritegroup_MEOW_flatbed_containers_16 {
+	loading: [	spriteset_MEOW_flatbed_containers_16_load0,
+				spriteset_MEOW_flatbed_containers_16_load1,
+				spriteset_MEOW_flatbed_containers_16_load2,
+				spriteset_MEOW_flatbed_containers_16_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_containers_16_load0,
+				spriteset_MEOW_flatbed_containers_16_load1,
+				spriteset_MEOW_flatbed_containers_16_load2,
+				spriteset_MEOW_flatbed_containers_16_load3
+			];}			
+	
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_containers, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_flatbed_containers_1;
+1: spritegroup_MEOW_flatbed_containers_2;
+1: spritegroup_MEOW_flatbed_containers_3;
+1: spritegroup_MEOW_flatbed_containers_4;
+1: spritegroup_MEOW_flatbed_containers_5;
+1: spritegroup_MEOW_flatbed_containers_6;
+1: spritegroup_MEOW_flatbed_containers_7;
+1: spritegroup_MEOW_flatbed_containers_8;
+1: spritegroup_MEOW_flatbed_containers_9;
+1: spritegroup_MEOW_flatbed_containers_10;
+1: spritegroup_MEOW_flatbed_containers_11;
+1: spritegroup_MEOW_flatbed_containers_12;
+1: spritegroup_MEOW_flatbed_containers_13;
+1: spritegroup_MEOW_flatbed_containers_14;
+1: spritegroup_MEOW_flatbed_containers_15;
+1: spritegroup_MEOW_flatbed_containers_16;
+}
+
+//--------------   livestock   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_flatbed_livestock_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,11) }
+
+spritegroup spritegroup_MEOW_flatbed_livestock_1 {
+	loading: [	spriteset_MEOW_flatbed_livestock_1_load0,
+				spriteset_MEOW_flatbed_livestock_1_load1,
+				spriteset_MEOW_flatbed_livestock_1_load2,
+				spriteset_MEOW_flatbed_livestock_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_1_load0,
+				spriteset_MEOW_flatbed_livestock_1_load1,
+				spriteset_MEOW_flatbed_livestock_1_load2,
+				spriteset_MEOW_flatbed_livestock_1_load3
+			];}
+			
+spriteset(spriteset_MEOW_flatbed_livestock_2_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(1,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_2_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(1,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_2_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(1,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_2_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(1,3,11) }
+
+spritegroup spritegroup_MEOW_flatbed_livestock_2 {
+	loading: [	spriteset_MEOW_flatbed_livestock_2_load0,
+				spriteset_MEOW_flatbed_livestock_2_load1,
+				spriteset_MEOW_flatbed_livestock_2_load2,
+				spriteset_MEOW_flatbed_livestock_2_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_2_load0,
+				spriteset_MEOW_flatbed_livestock_2_load1,
+				spriteset_MEOW_flatbed_livestock_2_load2,
+				spriteset_MEOW_flatbed_livestock_2_load3
+			];}
+
+spriteset(spriteset_MEOW_flatbed_livestock_3_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(2,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_3_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(2,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_3_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(2,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_3_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(2,3,11) }
+
+spritegroup spritegroup_MEOW_flatbed_livestock_3 {
+	loading: [	spriteset_MEOW_flatbed_livestock_3_load0,
+				spriteset_MEOW_flatbed_livestock_3_load1,
+				spriteset_MEOW_flatbed_livestock_3_load2,
+				spriteset_MEOW_flatbed_livestock_3_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_3_load0,
+				spriteset_MEOW_flatbed_livestock_3_load1,
+				spriteset_MEOW_flatbed_livestock_3_load2,
+				spriteset_MEOW_flatbed_livestock_3_load3
+			];}			
+			
+spriteset(spriteset_MEOW_flatbed_livestock_4_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(3,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_4_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(3,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_4_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(3,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_4_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(3,3,11) }
+
+spritegroup spritegroup_MEOW_flatbed_livestock_4 {
+	loading: [	spriteset_MEOW_flatbed_livestock_4_load0,
+				spriteset_MEOW_flatbed_livestock_4_load1,
+				spriteset_MEOW_flatbed_livestock_4_load2,
+				spriteset_MEOW_flatbed_livestock_4_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_4_load0,
+				spriteset_MEOW_flatbed_livestock_4_load1,
+				spriteset_MEOW_flatbed_livestock_4_load2,
+				spriteset_MEOW_flatbed_livestock_4_load3
+			];}			
+			
+spriteset(spriteset_MEOW_flatbed_livestock_5_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(4,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_5_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(4,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_5_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(4,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_5_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(4,3,11) }
+
+spritegroup spritegroup_MEOW_flatbed_livestock_5 {
+	loading: [	spriteset_MEOW_flatbed_livestock_5_load0,
+				spriteset_MEOW_flatbed_livestock_5_load1,
+				spriteset_MEOW_flatbed_livestock_5_load2,
+				spriteset_MEOW_flatbed_livestock_5_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_5_load0,
+				spriteset_MEOW_flatbed_livestock_5_load1,
+				spriteset_MEOW_flatbed_livestock_5_load2,
+				spriteset_MEOW_flatbed_livestock_5_load3
+			];}	
+			
+spriteset(spriteset_MEOW_flatbed_livestock_6_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(5,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_6_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(5,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_6_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(5,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_6_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(5,3,11) }
+
+spritegroup spritegroup_MEOW_flatbed_livestock_6 {
+	loading: [	spriteset_MEOW_flatbed_livestock_6_load0,
+				spriteset_MEOW_flatbed_livestock_6_load1,
+				spriteset_MEOW_flatbed_livestock_6_load2,
+				spriteset_MEOW_flatbed_livestock_6_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_6_load0,
+				spriteset_MEOW_flatbed_livestock_6_load1,
+				spriteset_MEOW_flatbed_livestock_6_load2,
+				spriteset_MEOW_flatbed_livestock_6_load3
+			];}	
+
+spriteset(spriteset_MEOW_flatbed_livestock_7_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(6,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_7_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(6,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_7_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(6,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_7_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(6,3,11) }
+
+spritegroup spritegroup_MEOW_flatbed_livestock_7 {
+	loading: [	spriteset_MEOW_flatbed_livestock_7_load0,
+				spriteset_MEOW_flatbed_livestock_7_load1,
+				spriteset_MEOW_flatbed_livestock_7_load2,
+				spriteset_MEOW_flatbed_livestock_7_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_7_load0,
+				spriteset_MEOW_flatbed_livestock_7_load1,
+				spriteset_MEOW_flatbed_livestock_7_load2,
+				spriteset_MEOW_flatbed_livestock_7_load3
+			];}	
+
+spriteset(spriteset_MEOW_flatbed_livestock_8_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(7,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_8_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(7,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_8_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(7,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_8_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(7,3,11) }
+
+spritegroup spritegroup_MEOW_flatbed_livestock_8 {
+	loading: [	spriteset_MEOW_flatbed_livestock_8_load0,
+				spriteset_MEOW_flatbed_livestock_8_load1,
+				spriteset_MEOW_flatbed_livestock_8_load2,
+				spriteset_MEOW_flatbed_livestock_8_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_8_load0,
+				spriteset_MEOW_flatbed_livestock_8_load1,
+				spriteset_MEOW_flatbed_livestock_8_load2,
+				spriteset_MEOW_flatbed_livestock_8_load3
+			];}	
+
+spriteset(spriteset_MEOW_flatbed_livestock_9_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(8,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_9_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(8,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_9_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(8,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_9_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(8,3,11) }
+
+spritegroup spritegroup_MEOW_flatbed_livestock_9 {
+	loading: [	spriteset_MEOW_flatbed_livestock_9_load0,
+				spriteset_MEOW_flatbed_livestock_9_load1,
+				spriteset_MEOW_flatbed_livestock_9_load2,
+				spriteset_MEOW_flatbed_livestock_9_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_9_load0,
+				spriteset_MEOW_flatbed_livestock_9_load1,
+				spriteset_MEOW_flatbed_livestock_9_load2,
+				spriteset_MEOW_flatbed_livestock_9_load3
+			];}	
+
+spriteset(spriteset_MEOW_flatbed_livestock_10_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(9,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_10_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(9,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_10_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(9,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_10_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(9,3,11) }
+
+spritegroup spritegroup_MEOW_flatbed_livestock_10 {
+	loading: [	spriteset_MEOW_flatbed_livestock_10_load0,
+				spriteset_MEOW_flatbed_livestock_10_load1,
+				spriteset_MEOW_flatbed_livestock_10_load2,
+				spriteset_MEOW_flatbed_livestock_10_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_10_load0,
+				spriteset_MEOW_flatbed_livestock_10_load1,
+				spriteset_MEOW_flatbed_livestock_10_load2,
+				spriteset_MEOW_flatbed_livestock_10_load3
+			];}	
+
+spriteset(spriteset_MEOW_flatbed_livestock_11_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(10,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_11_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(10,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_11_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(10,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_11_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(10,3,11) }
+
+spritegroup spritegroup_MEOW_flatbed_livestock_11 {
+	loading: [	spriteset_MEOW_flatbed_livestock_11_load0,
+				spriteset_MEOW_flatbed_livestock_11_load1,
+				spriteset_MEOW_flatbed_livestock_11_load2,
+				spriteset_MEOW_flatbed_livestock_11_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_11_load0,
+				spriteset_MEOW_flatbed_livestock_11_load1,
+				spriteset_MEOW_flatbed_livestock_11_load2,
+				spriteset_MEOW_flatbed_livestock_11_load3
+			];}	
+
+spriteset(spriteset_MEOW_flatbed_livestock_12_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(11,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_12_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(11,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_12_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(11,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_12_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(11,3,11) }
+
+spritegroup spritegroup_MEOW_flatbed_livestock_12 {
+	loading: [	spriteset_MEOW_flatbed_livestock_12_load0,
+				spriteset_MEOW_flatbed_livestock_12_load1,
+				spriteset_MEOW_flatbed_livestock_12_load2,
+				spriteset_MEOW_flatbed_livestock_12_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_12_load0,
+				spriteset_MEOW_flatbed_livestock_12_load1,
+				spriteset_MEOW_flatbed_livestock_12_load2,
+				spriteset_MEOW_flatbed_livestock_12_load3
+			];}	
+
+spriteset(spriteset_MEOW_flatbed_livestock_13_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(12,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_13_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(12,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_13_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(12,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_13_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(12,3,11) }
+
+spritegroup spritegroup_MEOW_flatbed_livestock_13 {
+	loading: [	spriteset_MEOW_flatbed_livestock_13_load0,
+				spriteset_MEOW_flatbed_livestock_13_load1,
+				spriteset_MEOW_flatbed_livestock_13_load2,
+				spriteset_MEOW_flatbed_livestock_13_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_13_load0,
+				spriteset_MEOW_flatbed_livestock_13_load1,
+				spriteset_MEOW_flatbed_livestock_13_load2,
+				spriteset_MEOW_flatbed_livestock_13_load3
+			];}	
+
+spriteset(spriteset_MEOW_flatbed_livestock_14_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(13,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_14_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(13,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_14_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(13,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_14_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(13,3,11) }
+
+spritegroup spritegroup_MEOW_flatbed_livestock_14 {
+	loading: [	spriteset_MEOW_flatbed_livestock_14_load0,
+				spriteset_MEOW_flatbed_livestock_14_load1,
+				spriteset_MEOW_flatbed_livestock_14_load2,
+				spriteset_MEOW_flatbed_livestock_14_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_14_load0,
+				spriteset_MEOW_flatbed_livestock_14_load1,
+				spriteset_MEOW_flatbed_livestock_14_load2,
+				spriteset_MEOW_flatbed_livestock_14_load3
+			];}				
+			
+spriteset(spriteset_MEOW_flatbed_livestock_15_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(14,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_15_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(14,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_15_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(14,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_15_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(14,3,11) }
+
+spritegroup spritegroup_MEOW_flatbed_livestock_15 {
+	loading: [	spriteset_MEOW_flatbed_livestock_15_load0,
+				spriteset_MEOW_flatbed_livestock_15_load1,
+				spriteset_MEOW_flatbed_livestock_15_load2,
+				spriteset_MEOW_flatbed_livestock_15_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_15_load0,
+				spriteset_MEOW_flatbed_livestock_15_load1,
+				spriteset_MEOW_flatbed_livestock_15_load2,
+				spriteset_MEOW_flatbed_livestock_15_load3
+			];}			
+			
+spriteset(spriteset_MEOW_flatbed_livestock_16_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(15,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_16_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(15,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_16_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(15,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_16_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(15,3,11) }
+
+spritegroup spritegroup_MEOW_flatbed_livestock_16 {
+	loading: [	spriteset_MEOW_flatbed_livestock_16_load0,
+				spriteset_MEOW_flatbed_livestock_16_load1,
+				spriteset_MEOW_flatbed_livestock_16_load2,
+				spriteset_MEOW_flatbed_livestock_16_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_16_load0,
+				spriteset_MEOW_flatbed_livestock_16_load1,
+				spriteset_MEOW_flatbed_livestock_16_load2,
+				spriteset_MEOW_flatbed_livestock_16_load3
+			];}				
+			
+spriteset(spriteset_MEOW_flatbed_livestock_17_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(16,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_17_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(16,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_17_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(16,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_17_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(16,3,11) }
+
+spritegroup spritegroup_MEOW_flatbed_livestock_17 {
+	loading: [	spriteset_MEOW_flatbed_livestock_17_load0,
+				spriteset_MEOW_flatbed_livestock_17_load1,
+				spriteset_MEOW_flatbed_livestock_17_load2,
+				spriteset_MEOW_flatbed_livestock_17_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_17_load0,
+				spriteset_MEOW_flatbed_livestock_17_load1,
+				spriteset_MEOW_flatbed_livestock_17_load2,
+				spriteset_MEOW_flatbed_livestock_17_load3
+			];}	
+
+spriteset(spriteset_MEOW_flatbed_livestock_18_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(17,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_18_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(17,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_18_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(17,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_18_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(17,3,11) }
+
+spritegroup spritegroup_MEOW_flatbed_livestock_18 {
+	loading: [	spriteset_MEOW_flatbed_livestock_18_load0,
+				spriteset_MEOW_flatbed_livestock_18_load1,
+				spriteset_MEOW_flatbed_livestock_18_load2,
+				spriteset_MEOW_flatbed_livestock_18_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_18_load0,
+				spriteset_MEOW_flatbed_livestock_18_load1,
+				spriteset_MEOW_flatbed_livestock_18_load2,
+				spriteset_MEOW_flatbed_livestock_18_load3
+			];}	
+
+spriteset(spriteset_MEOW_flatbed_livestock_19_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(18,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_19_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(18,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_19_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(18,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_19_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(18,3,11) }
+
+spritegroup spritegroup_MEOW_flatbed_livestock_19 {
+	loading: [	spriteset_MEOW_flatbed_livestock_19_load0,
+				spriteset_MEOW_flatbed_livestock_19_load1,
+				spriteset_MEOW_flatbed_livestock_19_load2,
+				spriteset_MEOW_flatbed_livestock_19_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_19_load0,
+				spriteset_MEOW_flatbed_livestock_19_load1,
+				spriteset_MEOW_flatbed_livestock_19_load2,
+				spriteset_MEOW_flatbed_livestock_19_load3
+			];}	
+
+spriteset(spriteset_MEOW_flatbed_livestock_20_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(19,0,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_20_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(19,1,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_20_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(19,2,11) }
+spriteset(spriteset_MEOW_flatbed_livestock_20_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(19,3,11) }
+
+spritegroup spritegroup_MEOW_flatbed_livestock_20 {
+	loading: [	spriteset_MEOW_flatbed_livestock_20_load0,
+				spriteset_MEOW_flatbed_livestock_20_load1,
+				spriteset_MEOW_flatbed_livestock_20_load2,
+				spriteset_MEOW_flatbed_livestock_20_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_livestock_20_load0,
+				spriteset_MEOW_flatbed_livestock_20_load1,
+				spriteset_MEOW_flatbed_livestock_20_load2,
+				spriteset_MEOW_flatbed_livestock_20_load3
+			];}	
+
+
+
+
+
+			
+			
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_livestock, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_flatbed_livestock_1;
+1: spritegroup_MEOW_flatbed_livestock_2;
+1: spritegroup_MEOW_flatbed_livestock_3;
+1: spritegroup_MEOW_flatbed_livestock_4;
+1: spritegroup_MEOW_flatbed_livestock_5;
+1: spritegroup_MEOW_flatbed_livestock_6;
+1: spritegroup_MEOW_flatbed_livestock_7;
+1: spritegroup_MEOW_flatbed_livestock_8;
+1: spritegroup_MEOW_flatbed_livestock_9;
+1: spritegroup_MEOW_flatbed_livestock_10;
+1: spritegroup_MEOW_flatbed_livestock_11;
+1: spritegroup_MEOW_flatbed_livestock_12;
+1: spritegroup_MEOW_flatbed_livestock_13;
+1: spritegroup_MEOW_flatbed_livestock_14;
+1: spritegroup_MEOW_flatbed_livestock_15;
+1: spritegroup_MEOW_flatbed_livestock_16;
+1: spritegroup_MEOW_flatbed_livestock_17;
+1: spritegroup_MEOW_flatbed_livestock_18;
+1: spritegroup_MEOW_flatbed_livestock_19;
+1: spritegroup_MEOW_flatbed_livestock_20;
+}
+
+//--------------   paper   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_flatbed_paper_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,12) }
+spriteset(spriteset_MEOW_flatbed_paper_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,12) }
+spriteset(spriteset_MEOW_flatbed_paper_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,12) }
+spriteset(spriteset_MEOW_flatbed_paper_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,12) }
+
+spritegroup random_MEOW_flatbed_paper { //spritegroup_MEOW_flatbed_paper_1 {
+	loading: [	spriteset_MEOW_flatbed_paper_1_load0,
+				spriteset_MEOW_flatbed_paper_1_load1,
+				spriteset_MEOW_flatbed_paper_1_load2,
+				spriteset_MEOW_flatbed_paper_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_paper_1_load0,
+				spriteset_MEOW_flatbed_paper_1_load1,
+				spriteset_MEOW_flatbed_paper_1_load2,
+				spriteset_MEOW_flatbed_paper_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_paper, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_flatbed_paper_1;
+}
+*/
+//--------------   steel   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_flatbed_steel_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,13) }
+spriteset(spriteset_MEOW_flatbed_steel_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,13) }
+spriteset(spriteset_MEOW_flatbed_steel_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,13) }
+spriteset(spriteset_MEOW_flatbed_steel_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,13) }
+
+spritegroup random_MEOW_flatbed_steel { //spritegroup_MEOW_flatbed_steel_1 {
+	loading: [	spriteset_MEOW_flatbed_steel_1_load0,
+				spriteset_MEOW_flatbed_steel_1_load1,
+				spriteset_MEOW_flatbed_steel_1_load2,
+				spriteset_MEOW_flatbed_steel_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_steel_1_load0,
+				spriteset_MEOW_flatbed_steel_1_load1,
+				spriteset_MEOW_flatbed_steel_1_load2,
+				spriteset_MEOW_flatbed_steel_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_steel, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_flatbed_steel_1;
+}
+*/
+//--------------   sweets   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_flatbed_sweets_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,14) }
+spriteset(spriteset_MEOW_flatbed_sweets_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,14) }
+spriteset(spriteset_MEOW_flatbed_sweets_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,14) }
+spriteset(spriteset_MEOW_flatbed_sweets_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,14) }
+
+spritegroup random_MEOW_flatbed_sweets { //spritegroup_MEOW_flatbed_sweets_1 {
+	loading: [	spriteset_MEOW_flatbed_sweets_1_load0,
+				spriteset_MEOW_flatbed_sweets_1_load1,
+				spriteset_MEOW_flatbed_sweets_1_load2,
+				spriteset_MEOW_flatbed_sweets_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_sweets_1_load0,
+				spriteset_MEOW_flatbed_sweets_1_load1,
+				spriteset_MEOW_flatbed_sweets_1_load2,
+				spriteset_MEOW_flatbed_sweets_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_sweets, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_flatbed_sweets_1;
+}
+*/
+//--------------   toys   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_flatbed_toys_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,15) }
+spriteset(spriteset_MEOW_flatbed_toys_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,15) }
+spriteset(spriteset_MEOW_flatbed_toys_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,15) }
+spriteset(spriteset_MEOW_flatbed_toys_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,15) }
+
+spritegroup random_MEOW_flatbed_toys { //spritegroup_MEOW_flatbed_toys_1 {
+	loading: [	spriteset_MEOW_flatbed_toys_1_load0,
+				spriteset_MEOW_flatbed_toys_1_load1,
+				spriteset_MEOW_flatbed_toys_1_load2,
+				spriteset_MEOW_flatbed_toys_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_toys_1_load0,
+				spriteset_MEOW_flatbed_toys_1_load1,
+				spriteset_MEOW_flatbed_toys_1_load2,
+				spriteset_MEOW_flatbed_toys_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_toys, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_flatbed_toys_1;
+}
+*/
+//--------------   ES   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_flatbed_ES_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,16) }
+spriteset(spriteset_MEOW_flatbed_ES_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,16) }
+spriteset(spriteset_MEOW_flatbed_ES_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,16) }
+spriteset(spriteset_MEOW_flatbed_ES_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,16) }
+
+spritegroup random_MEOW_flatbed_ES { //spritegroup_MEOW_flatbed_ES_1 {
+	loading: [	spriteset_MEOW_flatbed_ES_1_load0,
+				spriteset_MEOW_flatbed_ES_1_load1,
+				spriteset_MEOW_flatbed_ES_1_load2,
+				spriteset_MEOW_flatbed_ES_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_ES_1_load0,
+				spriteset_MEOW_flatbed_ES_1_load1,
+				spriteset_MEOW_flatbed_ES_1_load2,
+				spriteset_MEOW_flatbed_ES_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_ES, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_flatbed_ES_1;
+}
+*/
+//--------------   wood   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_flatbed_wood_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,17) }
+spriteset(spriteset_MEOW_flatbed_wood_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,17) }
+spriteset(spriteset_MEOW_flatbed_wood_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,17) }
+spriteset(spriteset_MEOW_flatbed_wood_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,17) }
+
+spritegroup random_MEOW_flatbed_wood { //spritegroup_MEOW_flatbed_wood_1 {
+	loading: [	spriteset_MEOW_flatbed_wood_1_load0,
+				spriteset_MEOW_flatbed_wood_1_load1,
+				spriteset_MEOW_flatbed_wood_1_load2,
+				spriteset_MEOW_flatbed_wood_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_wood_1_load0,
+				spriteset_MEOW_flatbed_wood_1_load1,
+				spriteset_MEOW_flatbed_wood_1_load2,
+				spriteset_MEOW_flatbed_wood_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_wood, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_flatbed_wood_1;
+}
+*/
+//--------------   valu   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_flatbed_valu_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,18) }
+spriteset(spriteset_MEOW_flatbed_valu_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,18) }
+spriteset(spriteset_MEOW_flatbed_valu_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,18) }
+spriteset(spriteset_MEOW_flatbed_valu_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,18) }
+
+spritegroup random_MEOW_flatbed_valu { //spritegroup_MEOW_flatbed_valu_1 {
+	loading: [	spriteset_MEOW_flatbed_valu_1_load0,
+				spriteset_MEOW_flatbed_valu_1_load1,
+				spriteset_MEOW_flatbed_valu_1_load2,
+				spriteset_MEOW_flatbed_valu_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_valu_1_load0,
+				spriteset_MEOW_flatbed_valu_1_load1,
+				spriteset_MEOW_flatbed_valu_1_load2,
+				spriteset_MEOW_flatbed_valu_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_valu, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_flatbed_valu_1;
+}
+*/
+//--------------   diam   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_flatbed_diam_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,19) }
+spriteset(spriteset_MEOW_flatbed_diam_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,19) }
+spriteset(spriteset_MEOW_flatbed_diam_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,19) }
+spriteset(spriteset_MEOW_flatbed_diam_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,19) }
+
+spritegroup random_MEOW_flatbed_diam { //spritegroup_MEOW_flatbed_diam_1 {
+	loading: [	spriteset_MEOW_flatbed_diam_1_load0,
+				spriteset_MEOW_flatbed_diam_1_load1,
+				spriteset_MEOW_flatbed_diam_1_load2,
+				spriteset_MEOW_flatbed_diam_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_diam_1_load0,
+				spriteset_MEOW_flatbed_diam_1_load1,
+				spriteset_MEOW_flatbed_diam_1_load2,
+				spriteset_MEOW_flatbed_diam_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_diam, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_flatbed_diam_1;
+}
+*/
+//--------------   gold   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_flatbed_gold_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,20) }
+spriteset(spriteset_MEOW_flatbed_gold_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,20) }
+spriteset(spriteset_MEOW_flatbed_gold_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,20) }
+spriteset(spriteset_MEOW_flatbed_gold_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,20) }
+
+spritegroup random_MEOW_flatbed_gold { //spritegroup_MEOW_flatbed_gold_1 {
+	loading: [	spriteset_MEOW_flatbed_gold_1_load0,
+				spriteset_MEOW_flatbed_gold_1_load1,
+				spriteset_MEOW_flatbed_gold_1_load2,
+				spriteset_MEOW_flatbed_gold_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_gold_1_load0,
+				spriteset_MEOW_flatbed_gold_1_load1,
+				spriteset_MEOW_flatbed_gold_1_load2,
+				spriteset_MEOW_flatbed_gold_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_gold, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_flatbed_gold_1;
+}
+*/
+//--------------   coffee   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_flatbed_coffee_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,21) }
+spriteset(spriteset_MEOW_flatbed_coffee_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,21) }
+spriteset(spriteset_MEOW_flatbed_coffee_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,21) }
+spriteset(spriteset_MEOW_flatbed_coffee_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,21) }
+
+spritegroup random_MEOW_flatbed_coffee { //spritegroup_MEOW_flatbed_coffee_1 {
+	loading: [	spriteset_MEOW_flatbed_coffee_1_load0,
+				spriteset_MEOW_flatbed_coffee_1_load1,
+				spriteset_MEOW_flatbed_coffee_1_load2,
+				spriteset_MEOW_flatbed_coffee_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_coffee_1_load0,
+				spriteset_MEOW_flatbed_coffee_1_load1,
+				spriteset_MEOW_flatbed_coffee_1_load2,
+				spriteset_MEOW_flatbed_coffee_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_coffee, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_flatbed_coffee_1;
+}
+*/
+
+
+
+//-------------------------------------------------------------------------------------------------------------------------------------------
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_goods, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+2: random_MEOW_flatbed_lumber;
+2: random_MEOW_flatbed_crates;
+2: random_MEOW_flatbed_barrels;
+2: random_MEOW_flatbed_glass;
+2: random_MEOW_flatbed_bricks;
+
+16: random_MEOW_flatbed_containers;
+}
+//-------------------------------------------------------------------------------------------------------------------------------------------
+random_switch (FEAT_TRAINS, SELF, random_MEOW_flatbed_supp, bitmask(TRIGGER_VEHICLE_SERVICE)){
+1:random_MEOW_flatbed_goods;
+1:random_MEOW_flatbed_food;
+}
+
+spriteset(spriteset_MEOW_flatbed_YETI_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,22) }
+spriteset(spriteset_MEOW_flatbed_YETI_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,22) }
+spriteset(spriteset_MEOW_flatbed_YETI_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,22) }
+spriteset(spriteset_MEOW_flatbed_YETI_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,22) }
+
+spritegroup random_MEOW_flatbed_YETI { //spritegroup_MEOW_flatbed_YETI_1 {
+	loading: [	spriteset_MEOW_flatbed_YETI_1_load0,
+				spriteset_MEOW_flatbed_YETI_1_load1,
+				spriteset_MEOW_flatbed_YETI_1_load2,
+				spriteset_MEOW_flatbed_YETI_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_YETI_1_load0,
+				spriteset_MEOW_flatbed_YETI_1_load1,
+				spriteset_MEOW_flatbed_YETI_1_load2,
+				spriteset_MEOW_flatbed_YETI_1_load3
+			];}
+spriteset(spriteset_MEOW_flatbed_YETY_1_load0, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,0,23) }
+spriteset(spriteset_MEOW_flatbed_YETY_1_load1, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,1,23) }
+spriteset(spriteset_MEOW_flatbed_YETY_1_load2, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,2,23) }
+spriteset(spriteset_MEOW_flatbed_YETY_1_load3, 			"gfx/MEOW_Wagons_FLATBED.png") { template_MEOW(0,3,23) }
+
+spritegroup random_MEOW_flatbed_YETY { //spritegroup_MEOW_flatbed_YETI_1 {
+	loading: [	spriteset_MEOW_flatbed_YETY_1_load0,
+				spriteset_MEOW_flatbed_YETY_1_load1,
+				spriteset_MEOW_flatbed_YETY_1_load2,
+				spriteset_MEOW_flatbed_YETY_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_flatbed_YETY_1_load0,
+				spriteset_MEOW_flatbed_YETY_1_load1,
+				spriteset_MEOW_flatbed_YETY_1_load2,
+				spriteset_MEOW_flatbed_YETY_1_load3
+			];}
+
+switch (FEAT_TRAINS, SELF, MEOW_flatbed_cargo_switch, cargo_type_in_veh) {
+	YETI: random_MEOW_flatbed_YETI;
+	YETY: random_MEOW_flatbed_YETY;
+
+	LUMB: random_MEOW_flatbed_lumber;
+	SUPP: random_MEOW_flatbed_supp;
+	ALOY: random_MEOW_flatbed_steel;
+
+	BRCK: random_MEOW_flatbed_bricks;
+	BDMT: random_MEOW_flatbed_bricks;
+	BATT: random_MEOW_flatbed_batteries;
+	BUBL: random_MEOW_flatbed_bubbles;
+	FZDR: random_MEOW_flatbed_beer;
+	FOOD: random_MEOW_flatbed_food;
+	FRUT: random_MEOW_flatbed_fruit;
+	FRVG: random_MEOW_flatbed_fruit;
+	GLAS: random_MEOW_flatbed_glass;
+	GOOD: random_MEOW_flatbed_goods;
+	LVST: random_MEOW_flatbed_livestock;
+	WDPR: random_MEOW_flatbed_lumber;
+	MNSP: random_MEOW_flatbed_crates;
+	PAPR: random_MEOW_flatbed_paper;
+	STEL: random_MEOW_flatbed_steel;
+	SWET: random_MEOW_flatbed_sweets;
+	TOYS: random_MEOW_flatbed_toys;
+	VEHI: random_MEOW_flatbed_ES;
+	ENSP: random_MEOW_flatbed_ES;
+	WOOD: random_MEOW_flatbed_wood;
+	VALU: random_MEOW_flatbed_valu;
+	DIAM: random_MEOW_flatbed_diam;
+	GOLD: random_MEOW_flatbed_gold;
+	JAVA: random_MEOW_flatbed_coffee;
+	random_MEOW_flatbed_crates;
+}
+
+switch(FEAT_TRAINS, PARENT, switch_monoflatbed_meowornot, vehicle_type_id){
+item_MEOW_mono_01: MEOW_flatbed_cargo_switch;
+item_MEOW_mono_02: MEOW_flatbed_cargo_switch;
+item_MEOW_mono_03: MEOW_flatbed_cargo_switch;
+item_MEOW_mono_04: MEOW_flatbed_cargo_switch;
+item_MEOW_mono_05: MEOW_flatbed_cargo_switch;
+item_MEOW_mono_06: MEOW_flatbed_cargo_switch;
+item_MEOW_mono_b1: MEOW_flatbed_cargo_switch;
+
+monoflatbed_wagon_switch;
+}

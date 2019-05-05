@@ -1,0 +1,678 @@
+
+
+//MONORAIL HOPPER
+//SPRITESETS
+spriteset(spriteset_purchaseMenu_monohopper, 		"gfx/PurchaseMenu.png"){template_purchaseMenu(1,21)}
+spriteset(spriteset_monohopper_empty_bauxite, 				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 0) }
+spriteset(spriteset_monohopper_empty_candyfloss, 			"gfx/monowagons_hopper.png") { template_engine32WTF(0, 2) }
+spriteset(spriteset_monohopper_empty_clay, 				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 4) }
+spriteset(spriteset_monohopper_empty_coal, 				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 6) }
+spriteset(spriteset_monohopper_empty_copperore, 			"gfx/monowagons_hopper.png") { template_engine32WTF(0, 8) }
+spriteset(spriteset_monohopper_empty_fertiliser, 			"gfx/monowagons_hopper.png") { template_engine32WTF(0, 10) }
+spriteset(spriteset_monohopper_empty_grain, 				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 12) }
+spriteset(spriteset_monohopper_empty_ironore, 				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 14) }
+spriteset(spriteset_monohopper_empty_oilseeds, 			"gfx/monowagons_hopper.png") { template_engine32WTF(0, 16) }
+spriteset(spriteset_monohopper_empty_plantfibres, 			"gfx/monowagons_hopper.png") { template_engine32WTF(0, 18) }
+spriteset(spriteset_monohopper_empty_rubber, 				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 20) }
+spriteset(spriteset_monohopper_empty_sand, 				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 22) }
+spriteset(spriteset_monohopper_empty_scrapmetal, 			"gfx/monowagons_hopper.png") { template_engine32WTF(0, 24) }
+spriteset(spriteset_monohopper_empty_stone, 				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 26) }
+spriteset(spriteset_monohopper_empty_sugar, 				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 28) }
+spriteset(spriteset_monohopper_empty_toffee, 				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 30) }
+spriteset(spriteset_monohopper_empty_wool, 				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 32) }
+spriteset(spriteset_monohopper_empty_recyclables, 			"gfx/monowagons_hopper.png") { template_engine32WTF(0, 34) }
+
+// monorail hopper gen2 1/3 full
+spriteset(spriteset_monohopper_1full_bauxite, 				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 1) }
+spriteset(spriteset_monohopper_1full_candyfloss, 			"gfx/monowagons_hopper.png") { template_engine32WTF(0, 3) }
+spriteset(spriteset_monohopper_1full_clay, 				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 5) }
+spriteset(spriteset_monohopper_1full_coal, 				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 7) }
+spriteset(spriteset_monohopper_1full_copperore, 			"gfx/monowagons_hopper.png") { template_engine32WTF(0, 9) }
+spriteset(spriteset_monohopper_1full_fertiliser, 			"gfx/monowagons_hopper.png") { template_engine32WTF(0, 11) }
+spriteset(spriteset_monohopper_1full_grain, 				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 13) }
+spriteset(spriteset_monohopper_1full_ironore, 				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 15) }
+spriteset(spriteset_monohopper_1full_oilseeds,				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 17) }
+spriteset(spriteset_monohopper_1full_plantfibres, 			"gfx/monowagons_hopper.png") { template_engine32WTF(0, 19) }
+spriteset(spriteset_monohopper_1full_rubber, 				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 21) }
+spriteset(spriteset_monohopper_1full_sand, 				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 23) }
+spriteset(spriteset_monohopper_1full_scrapmetal, 			"gfx/monowagons_hopper.png") { template_engine32WTF(0, 25) }
+spriteset(spriteset_monohopper_1full_stone, 				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 27) }
+spriteset(spriteset_monohopper_1full_sugar, 				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 29) }
+spriteset(spriteset_monohopper_1full_toffee, 				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 31) }
+spriteset(spriteset_monohopper_1full_wool, 				"gfx/monowagons_hopper.png") { template_engine32WTF(0, 33) }
+spriteset(spriteset_monohopper_1full_recyclables, 			"gfx/monowagons_hopper.png") { template_engine32WTF(0, 35) }
+
+// monorail hopper gen2 2/3 full
+spriteset(spriteset_monohopper_2full_bauxite, 				"gfx/monowagons_hopper.png") { template_engine32WTF(184, 1) }
+spriteset(spriteset_monohopper_2full_candyfloss, 			"gfx/monowagons_hopper.png") { template_engine32WTF(184, 3) }
+spriteset(spriteset_monohopper_2full_clay, 				"gfx/monowagons_hopper.png") { template_engine32WTF(184, 5) }
+spriteset(spriteset_monohopper_2full_coal, 				"gfx/monowagons_hopper.png") { template_engine32WTF(184, 7) }
+spriteset(spriteset_monohopper_2full_copperore, 			"gfx/monowagons_hopper.png") { template_engine32WTF(184, 9) }
+spriteset(spriteset_monohopper_2full_fertiliser, 			"gfx/monowagons_hopper.png") { template_engine32WTF(184, 11) }
+spriteset(spriteset_monohopper_2full_grain, 				"gfx/monowagons_hopper.png") { template_engine32WTF(184, 13) }
+spriteset(spriteset_monohopper_2full_ironore, 				"gfx/monowagons_hopper.png") { template_engine32WTF(184, 15) }
+spriteset(spriteset_monohopper_2full_oilseeds,				"gfx/monowagons_hopper.png") { template_engine32WTF(184, 17) }
+spriteset(spriteset_monohopper_2full_plantfibres, 			"gfx/monowagons_hopper.png") { template_engine32WTF(184, 19) }
+spriteset(spriteset_monohopper_2full_rubber, 				"gfx/monowagons_hopper.png") { template_engine32WTF(184, 21) }
+spriteset(spriteset_monohopper_2full_sand, 				"gfx/monowagons_hopper.png") { template_engine32WTF(184, 23) }
+spriteset(spriteset_monohopper_2full_scrapmetal, 			"gfx/monowagons_hopper.png") { template_engine32WTF(184, 25) }
+spriteset(spriteset_monohopper_2full_stone, 				"gfx/monowagons_hopper.png") { template_engine32WTF(184, 27) }
+spriteset(spriteset_monohopper_2full_sugar, 				"gfx/monowagons_hopper.png") { template_engine32WTF(184, 29) }
+spriteset(spriteset_monohopper_2full_toffee, 				"gfx/monowagons_hopper.png") { template_engine32WTF(184, 31) }
+spriteset(spriteset_monohopper_2full_wool, 				"gfx/monowagons_hopper.png") { template_engine32WTF(184, 33) }
+spriteset(spriteset_monohopper_2full_recyclables, 			"gfx/monowagons_hopper.png") { template_engine32WTF(184, 35) }
+
+// monorail hopper gen2 full
+spriteset(spriteset_monohopper_full_bauxite, 				"gfx/monowagons_hopper.png") { template_engine32WTF(184, 0) }
+spriteset(spriteset_monohopper_full_candyfloss, 			"gfx/monowagons_hopper.png") { template_engine32WTF(184, 2) }
+spriteset(spriteset_monohopper_full_clay, 					"gfx/monowagons_hopper.png") { template_engine32WTF(184, 4) }
+spriteset(spriteset_monohopper_full_coal, 					"gfx/monowagons_hopper.png") { template_engine32WTF(184, 6) }
+spriteset(spriteset_monohopper_full_copperore, 			"gfx/monowagons_hopper.png") { template_engine32WTF(184, 8) }
+spriteset(spriteset_monohopper_full_fertiliser, 			"gfx/monowagons_hopper.png") { template_engine32WTF(184, 10) }
+spriteset(spriteset_monohopper_full_grain, 				"gfx/monowagons_hopper.png") { template_engine32WTF(184, 12) }
+spriteset(spriteset_monohopper_full_ironore, 				"gfx/monowagons_hopper.png") { template_engine32WTF(184, 14) }
+spriteset(spriteset_monohopper_full_oilseeds,				"gfx/monowagons_hopper.png") { template_engine32WTF(184, 16) }
+spriteset(spriteset_monohopper_full_plantfibres, 			"gfx/monowagons_hopper.png") { template_engine32WTF(184, 18) }
+spriteset(spriteset_monohopper_full_rubber, 				"gfx/monowagons_hopper.png") { template_engine32WTF(184, 20) }
+spriteset(spriteset_monohopper_full_sand, 					"gfx/monowagons_hopper.png") { template_engine32WTF(184, 22) }
+spriteset(spriteset_monohopper_full_scrapmetal, 			"gfx/monowagons_hopper.png") { template_engine32WTF(184, 24) }
+spriteset(spriteset_monohopper_full_stone, 				"gfx/monowagons_hopper.png") { template_engine32WTF(184, 26) }
+spriteset(spriteset_monohopper_full_sugar, 				"gfx/monowagons_hopper.png") { template_engine32WTF(184, 28) }
+spriteset(spriteset_monohopper_full_toffee, 				"gfx/monowagons_hopper.png") { template_engine32WTF(184, 30) }
+spriteset(spriteset_monohopper_full_wool, 					"gfx/monowagons_hopper.png") { template_engine32WTF(184, 32) }
+spriteset(spriteset_monohopper_full_recyclables, 			"gfx/monowagons_hopper.png") { template_engine32WTF(184, 34) }
+
+
+spriteset(spriteset_monohopper_empty_uranium, 			"gfx/monowagons_hopper.png") { template_engine32WTF(0, 36) }
+spriteset(spriteset_monohopper_1full_uranium, 			"gfx/monowagons_hopper.png") { template_engine32WTF(0, 37) }
+spriteset(spriteset_monohopper_2full_uranium, 			"gfx/monowagons_hopper.png") { template_engine32WTF(184, 37) }
+spriteset(spriteset_monohopper_full_uranium, 			"gfx/monowagons_hopper.png") { template_engine32WTF(184, 36) }
+//SPRITEGROUPS
+spritegroup spritegroup_monohopper_bauxite {
+	loaded: [spriteset_monohopper_empty_bauxite, spriteset_monohopper_1full_bauxite, spriteset_monohopper_2full_bauxite, spriteset_monohopper_full_bauxite];
+	loading:  [spriteset_monohopper_empty_bauxite, spriteset_monohopper_1full_bauxite, spriteset_monohopper_2full_bauxite, spriteset_monohopper_full_bauxite];
+}
+spritegroup spritegroup_monohopper_candyfloss {
+	loaded: [spriteset_monohopper_empty_candyfloss,spriteset_monohopper_1full_candyfloss , spriteset_monohopper_2full_candyfloss, spriteset_monohopper_full_candyfloss];
+	loading:  [spriteset_monohopper_empty_candyfloss,spriteset_monohopper_1full_candyfloss , spriteset_monohopper_2full_candyfloss, spriteset_monohopper_full_candyfloss];
+}
+spritegroup spritegroup_monohopper_clay {
+	loaded: [spriteset_monohopper_empty_clay, spriteset_monohopper_1full_clay, spriteset_monohopper_2full_clay, spriteset_monohopper_full_clay];
+	loading:  [spriteset_monohopper_empty_clay, spriteset_monohopper_1full_clay, spriteset_monohopper_2full_clay, spriteset_monohopper_full_clay];
+}
+spritegroup spritegroup_monohopper_coal {
+	loaded: [spriteset_monohopper_empty_coal, spriteset_monohopper_1full_coal, spriteset_monohopper_2full_coal, spriteset_monohopper_full_coal];
+	loading:  [spriteset_monohopper_empty_coal, spriteset_monohopper_1full_coal, spriteset_monohopper_2full_coal, spriteset_monohopper_full_coal];
+}
+spritegroup spritegroup_monohopper_copperore {
+	loaded: [spriteset_monohopper_empty_copperore, spriteset_monohopper_1full_copperore, spriteset_monohopper_2full_copperore, spriteset_monohopper_full_copperore];
+	loading:  [spriteset_monohopper_empty_copperore, spriteset_monohopper_1full_copperore, spriteset_monohopper_2full_copperore, spriteset_monohopper_full_copperore];
+}
+spritegroup spritegroup_monohopper_fertiliser {
+	loaded: [spriteset_monohopper_empty_fertiliser, spriteset_monohopper_1full_fertiliser, spriteset_monohopper_2full_fertiliser, spriteset_monohopper_full_fertiliser];
+	loading:  [spriteset_monohopper_empty_fertiliser, spriteset_monohopper_1full_fertiliser, spriteset_monohopper_2full_fertiliser, spriteset_monohopper_full_fertiliser];
+}
+spritegroup spritegroup_monohopper_grain {
+	loaded: [spriteset_monohopper_empty_grain, spriteset_monohopper_1full_grain, spriteset_monohopper_2full_grain, spriteset_monohopper_full_grain];
+	loading:  [spriteset_monohopper_empty_grain, spriteset_monohopper_1full_grain, spriteset_monohopper_2full_grain, spriteset_monohopper_full_grain];
+}
+spritegroup spritegroup_monohopper_ironore {
+	loaded: [spriteset_monohopper_empty_ironore, spriteset_monohopper_1full_ironore, spriteset_monohopper_2full_ironore, spriteset_monohopper_full_ironore];
+	loading:  [spriteset_monohopper_empty_ironore, spriteset_monohopper_1full_ironore, spriteset_monohopper_2full_ironore, spriteset_monohopper_full_ironore];
+}
+spritegroup spritegroup_monohopper_oilseeds {
+	loaded: [spriteset_monohopper_empty_oilseeds, spriteset_monohopper_1full_oilseeds, spriteset_monohopper_2full_oilseeds, spriteset_monohopper_full_oilseeds];
+	loading:  [spriteset_monohopper_empty_oilseeds, spriteset_monohopper_1full_oilseeds, spriteset_monohopper_2full_oilseeds, spriteset_monohopper_full_oilseeds];
+}
+spritegroup spritegroup_monohopper_plantfibres {
+	loaded: [spriteset_monohopper_empty_plantfibres, spriteset_monohopper_1full_plantfibres, spriteset_monohopper_2full_plantfibres, spriteset_monohopper_full_plantfibres];
+	loading:  [spriteset_monohopper_empty_plantfibres, spriteset_monohopper_1full_plantfibres, spriteset_monohopper_2full_plantfibres, spriteset_monohopper_full_plantfibres];
+}
+spritegroup spritegroup_monohopper_rubber {
+	loaded: [spriteset_monohopper_empty_rubber, spriteset_monohopper_1full_rubber, spriteset_monohopper_2full_rubber, spriteset_monohopper_full_rubber];
+	loading:  [spriteset_monohopper_empty_rubber, spriteset_monohopper_1full_rubber, spriteset_monohopper_2full_rubber, spriteset_monohopper_full_rubber];
+}
+spritegroup spritegroup_monohopper_sand {
+	loaded: [spriteset_monohopper_empty_sand, spriteset_monohopper_1full_sand, spriteset_monohopper_2full_sand, spriteset_monohopper_full_sand];
+	loading:  [spriteset_monohopper_empty_sand, spriteset_monohopper_1full_sand, spriteset_monohopper_2full_sand, spriteset_monohopper_full_sand];
+}
+spritegroup spritegroup_monohopper_scrapmetal {
+	loaded: [spriteset_monohopper_empty_scrapmetal, spriteset_monohopper_1full_scrapmetal, spriteset_monohopper_2full_scrapmetal, spriteset_monohopper_full_scrapmetal];
+	loading:  [spriteset_monohopper_empty_scrapmetal, spriteset_monohopper_1full_scrapmetal, spriteset_monohopper_2full_scrapmetal, spriteset_monohopper_full_scrapmetal];
+}
+spritegroup spritegroup_monohopper_stone {
+	loaded: [spriteset_monohopper_empty_stone, spriteset_monohopper_1full_stone, spriteset_monohopper_2full_stone, spriteset_monohopper_full_stone];
+	loading:  [spriteset_monohopper_empty_stone, spriteset_monohopper_1full_stone, spriteset_monohopper_2full_stone, spriteset_monohopper_full_stone];
+
+}
+spritegroup spritegroup_monohopper_sugar {
+	loaded: [spriteset_monohopper_empty_sugar, spriteset_monohopper_1full_sugar, spriteset_monohopper_2full_sugar, spriteset_monohopper_full_sugar];
+	loading:  [spriteset_monohopper_empty_sugar, spriteset_monohopper_1full_sugar, spriteset_monohopper_2full_sugar, spriteset_monohopper_full_sugar];
+}
+spritegroup spritegroup_monohopper_toffee {
+	loaded: [spriteset_monohopper_empty_toffee, spriteset_monohopper_1full_toffee, spriteset_monohopper_2full_toffee, spriteset_monohopper_full_toffee];
+	loading:  [spriteset_monohopper_empty_toffee, spriteset_monohopper_1full_toffee, spriteset_monohopper_2full_toffee, spriteset_monohopper_full_toffee];
+}
+spritegroup spritegroup_monohopper_wool {
+	loaded: [spriteset_monohopper_empty_wool, spriteset_monohopper_1full_wool, spriteset_monohopper_2full_wool, spriteset_monohopper_full_wool];
+	loading:  [spriteset_monohopper_empty_wool, spriteset_monohopper_1full_wool, spriteset_monohopper_2full_wool, spriteset_monohopper_full_wool];
+}
+spritegroup spritegroup_monohopper_recyclables {
+	loaded: [spriteset_monohopper_empty_recyclables, spriteset_monohopper_1full_recyclables, spriteset_monohopper_2full_recyclables, spriteset_monohopper_full_recyclables];
+	loading:  [spriteset_monohopper_empty_recyclables, spriteset_monohopper_1full_recyclables, spriteset_monohopper_2full_recyclables, spriteset_monohopper_full_recyclables];
+}
+spritegroup spritegroup_monohopper_uranium {
+	loaded: [spriteset_monohopper_empty_uranium, spriteset_monohopper_1full_uranium, spriteset_monohopper_2full_uranium, spriteset_monohopper_full_uranium];
+	loading:  [spriteset_monohopper_empty_uranium, spriteset_monohopper_1full_uranium, spriteset_monohopper_2full_uranium, spriteset_monohopper_full_uranium];
+}
+
+//RANDOM SWITCHES
+//CARGO SWITCH
+switch (FEAT_TRAINS, SELF, monohopper_wagon_switch, cargo_type_in_veh) {
+	URAN: spritegroup_monohopper_uranium;
+	
+	DIAT: spritegroup_monohopper_sugar;
+
+	CMNT: spritegroup_monohopper_bauxite;
+	AORE: spritegroup_monohopper_bauxite;
+	LIME: spritegroup_monohopper_bauxite;
+	CTCD: spritegroup_monohopper_candyfloss;
+	CLAY: spritegroup_monohopper_clay;
+	POTA: spritegroup_monohopper_clay;
+	COAL: spritegroup_monohopper_coal;
+	CORE: spritegroup_monohopper_copperore;
+	FMSP: spritegroup_monohopper_fertiliser;
+	FERT: spritegroup_monohopper_fertiliser;
+	CERE: spritegroup_monohopper_grain;
+	GRAI: spritegroup_monohopper_grain;
+	WHEA: spritegroup_monohopper_grain;
+	MAIZ: spritegroup_monohopper_grain;
+	IORE: spritegroup_monohopper_ironore;
+	OLSD: spritegroup_monohopper_oilseeds;
+	FICR: spritegroup_monohopper_plantfibres;
+	RUBR: spritegroup_monohopper_rubber;
+	SCMT: spritegroup_monohopper_scrapmetal;
+	SAND: spritegroup_monohopper_sand;
+	GRVL: spritegroup_monohopper_stone;
+	SUGR: spritegroup_monohopper_sugar;
+	SGBT: spritegroup_monohopper_sugar;
+	SGCN: spritegroup_monohopper_sugar;
+	TOFF: spritegroup_monohopper_toffee;
+	WOOL: spritegroup_monohopper_wool;
+	RCYC: spritegroup_monohopper_recyclables;
+	spritegroup_monohopper_coal;
+}
+//ITEM
+
+
+
+
+
+
+//--------------   bauxite   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_hopper_bauxite_1_load0, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,0,0) }
+spriteset(spriteset_MEOW_hopper_bauxite_1_load1, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,1,0) }
+spriteset(spriteset_MEOW_hopper_bauxite_1_load2, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,2,0) }
+spriteset(spriteset_MEOW_hopper_bauxite_1_load3, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,3,0) }
+
+spritegroup random_MEOW_hopper_bauxite { //spritegroup_MEOW_hopper_bauxite_1 {
+	loading: [	spriteset_MEOW_hopper_bauxite_1_load0,
+				spriteset_MEOW_hopper_bauxite_1_load1,
+				spriteset_MEOW_hopper_bauxite_1_load2,
+				spriteset_MEOW_hopper_bauxite_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_hopper_bauxite_1_load0,
+				spriteset_MEOW_hopper_bauxite_1_load1,
+				spriteset_MEOW_hopper_bauxite_1_load2,
+				spriteset_MEOW_hopper_bauxite_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_hopper_bauxite, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_hopper_bauxite_1;
+}
+*/
+//--------------   candyfloss   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_hopper_candyfloss_1_load0, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,0,1) }
+spriteset(spriteset_MEOW_hopper_candyfloss_1_load1, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,1,1) }
+spriteset(spriteset_MEOW_hopper_candyfloss_1_load2, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,2,1) }
+spriteset(spriteset_MEOW_hopper_candyfloss_1_load3, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,3,1) }
+
+spritegroup random_MEOW_hopper_candyfloss { //spritegroup_MEOW_hopper_candyfloss_1 {
+	loading: [	spriteset_MEOW_hopper_candyfloss_1_load0,
+				spriteset_MEOW_hopper_candyfloss_1_load1,
+				spriteset_MEOW_hopper_candyfloss_1_load2,
+				spriteset_MEOW_hopper_candyfloss_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_hopper_candyfloss_1_load0,
+				spriteset_MEOW_hopper_candyfloss_1_load1,
+				spriteset_MEOW_hopper_candyfloss_1_load2,
+				spriteset_MEOW_hopper_candyfloss_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_hopper_candyfloss, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_hopper_candyfloss_1;
+}
+*/
+//--------------   clay   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_hopper_clay_1_load0, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,0,2) }
+spriteset(spriteset_MEOW_hopper_clay_1_load1, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,1,2) }
+spriteset(spriteset_MEOW_hopper_clay_1_load2, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,2,2) }
+spriteset(spriteset_MEOW_hopper_clay_1_load3, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,3,2) }
+
+spritegroup random_MEOW_hopper_clay { //spritegroup_MEOW_hopper_clay_1 {
+	loading: [	spriteset_MEOW_hopper_clay_1_load0,
+				spriteset_MEOW_hopper_clay_1_load1,
+				spriteset_MEOW_hopper_clay_1_load2,
+				spriteset_MEOW_hopper_clay_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_hopper_clay_1_load0,
+				spriteset_MEOW_hopper_clay_1_load1,
+				spriteset_MEOW_hopper_clay_1_load2,
+				spriteset_MEOW_hopper_clay_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_hopper_clay, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_hopper_clay_1;
+}
+*/
+//--------------   coal   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_hopper_coal_1_load0, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,0,3) }
+spriteset(spriteset_MEOW_hopper_coal_1_load1, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,1,3) }
+spriteset(spriteset_MEOW_hopper_coal_1_load2, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,2,3) }
+spriteset(spriteset_MEOW_hopper_coal_1_load3, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,3,3) }
+
+spritegroup random_MEOW_hopper_coal { //spritegroup_MEOW_hopper_coal_1 {
+	loading: [	spriteset_MEOW_hopper_coal_1_load0,
+				spriteset_MEOW_hopper_coal_1_load1,
+				spriteset_MEOW_hopper_coal_1_load2,
+				spriteset_MEOW_hopper_coal_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_hopper_coal_1_load0,
+				spriteset_MEOW_hopper_coal_1_load1,
+				spriteset_MEOW_hopper_coal_1_load2,
+				spriteset_MEOW_hopper_coal_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_hopper_coal, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_hopper_coal_1;
+}
+*/
+//--------------   copperore   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_hopper_copperore_1_load0, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,0,4) }
+spriteset(spriteset_MEOW_hopper_copperore_1_load1, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,1,4) }
+spriteset(spriteset_MEOW_hopper_copperore_1_load2, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,2,4) }
+spriteset(spriteset_MEOW_hopper_copperore_1_load3, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,3,4) }
+
+spritegroup random_MEOW_hopper_copperore { //spritegroup_MEOW_hopper_copperore_1 {
+	loading: [	spriteset_MEOW_hopper_copperore_1_load0,
+				spriteset_MEOW_hopper_copperore_1_load1,
+				spriteset_MEOW_hopper_copperore_1_load2,
+				spriteset_MEOW_hopper_copperore_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_hopper_copperore_1_load0,
+				spriteset_MEOW_hopper_copperore_1_load1,
+				spriteset_MEOW_hopper_copperore_1_load2,
+				spriteset_MEOW_hopper_copperore_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_hopper_copperore, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_hopper_copperore_1;
+}
+*/
+//--------------   fertilizer   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_hopper_fertilizer_1_load0, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,0,5) }
+spriteset(spriteset_MEOW_hopper_fertilizer_1_load1, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,1,5) }
+spriteset(spriteset_MEOW_hopper_fertilizer_1_load2, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,2,5) }
+spriteset(spriteset_MEOW_hopper_fertilizer_1_load3, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,3,5) }
+
+spritegroup random_MEOW_hopper_fertilizer { //spritegroup_MEOW_hopper_fertilizer_1 {
+	loading: [	spriteset_MEOW_hopper_fertilizer_1_load0,
+				spriteset_MEOW_hopper_fertilizer_1_load1,
+				spriteset_MEOW_hopper_fertilizer_1_load2,
+				spriteset_MEOW_hopper_fertilizer_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_hopper_fertilizer_1_load0,
+				spriteset_MEOW_hopper_fertilizer_1_load1,
+				spriteset_MEOW_hopper_fertilizer_1_load2,
+				spriteset_MEOW_hopper_fertilizer_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_hopper_fertilizer, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_hopper_fertilizer_1;
+}
+*/
+//--------------   grain   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_hopper_grain_1_load0, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,0,6) }
+spriteset(spriteset_MEOW_hopper_grain_1_load1, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,1,6) }
+spriteset(spriteset_MEOW_hopper_grain_1_load2, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,2,6) }
+spriteset(spriteset_MEOW_hopper_grain_1_load3, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,3,6) }
+
+spritegroup random_MEOW_hopper_grain { //spritegroup_MEOW_hopper_grain_1 {
+	loading: [	spriteset_MEOW_hopper_grain_1_load0,
+				spriteset_MEOW_hopper_grain_1_load1,
+				spriteset_MEOW_hopper_grain_1_load2,
+				spriteset_MEOW_hopper_grain_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_hopper_grain_1_load0,
+				spriteset_MEOW_hopper_grain_1_load1,
+				spriteset_MEOW_hopper_grain_1_load2,
+				spriteset_MEOW_hopper_grain_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_hopper_grain, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_hopper_grain_1;
+}
+*/
+//--------------   ironore   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_hopper_ironore_1_load0, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,0,7) }
+spriteset(spriteset_MEOW_hopper_ironore_1_load1, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,1,7) }
+spriteset(spriteset_MEOW_hopper_ironore_1_load2, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,2,7) }
+spriteset(spriteset_MEOW_hopper_ironore_1_load3, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,3,7) }
+
+spritegroup random_MEOW_hopper_ironore { //spritegroup_MEOW_hopper_ironore_1 {
+	loading: [	spriteset_MEOW_hopper_ironore_1_load0,
+				spriteset_MEOW_hopper_ironore_1_load1,
+				spriteset_MEOW_hopper_ironore_1_load2,
+				spriteset_MEOW_hopper_ironore_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_hopper_ironore_1_load0,
+				spriteset_MEOW_hopper_ironore_1_load1,
+				spriteset_MEOW_hopper_ironore_1_load2,
+				spriteset_MEOW_hopper_ironore_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_hopper_ironore, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_hopper_ironore_1;
+}
+*/
+//--------------   oilseeds   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_hopper_oilseeds_1_load0, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,0,8) }
+spriteset(spriteset_MEOW_hopper_oilseeds_1_load1, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,1,8) }
+spriteset(spriteset_MEOW_hopper_oilseeds_1_load2, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,2,8) }
+spriteset(spriteset_MEOW_hopper_oilseeds_1_load3, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,3,8) }
+
+spritegroup random_MEOW_hopper_oilseeds { //spritegroup_MEOW_hopper_oilseeds_1 {
+	loading: [	spriteset_MEOW_hopper_oilseeds_1_load0,
+				spriteset_MEOW_hopper_oilseeds_1_load1,
+				spriteset_MEOW_hopper_oilseeds_1_load2,
+				spriteset_MEOW_hopper_oilseeds_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_hopper_oilseeds_1_load0,
+				spriteset_MEOW_hopper_oilseeds_1_load1,
+				spriteset_MEOW_hopper_oilseeds_1_load2,
+				spriteset_MEOW_hopper_oilseeds_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_hopper_oilseeds, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_hopper_oilseeds_1;
+}
+*/
+//--------------   plantfibres   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_hopper_plantfibres_1_load0, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,0,9) }
+spriteset(spriteset_MEOW_hopper_plantfibres_1_load1, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,1,9) }
+spriteset(spriteset_MEOW_hopper_plantfibres_1_load2, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,2,9) }
+spriteset(spriteset_MEOW_hopper_plantfibres_1_load3, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,3,9) }
+
+spritegroup random_MEOW_hopper_plantfibres { //spritegroup_MEOW_hopper_plantfibres_1 {
+	loading: [	spriteset_MEOW_hopper_plantfibres_1_load0,
+				spriteset_MEOW_hopper_plantfibres_1_load1,
+				spriteset_MEOW_hopper_plantfibres_1_load2,
+				spriteset_MEOW_hopper_plantfibres_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_hopper_plantfibres_1_load0,
+				spriteset_MEOW_hopper_plantfibres_1_load1,
+				spriteset_MEOW_hopper_plantfibres_1_load2,
+				spriteset_MEOW_hopper_plantfibres_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_hopper_plantfibres, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_hopper_plantfibres_1;
+}
+*/
+//--------------   rubber   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_hopper_rubber_1_load0, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,0,10) }
+spriteset(spriteset_MEOW_hopper_rubber_1_load1, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,1,10) }
+spriteset(spriteset_MEOW_hopper_rubber_1_load2, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,2,10) }
+spriteset(spriteset_MEOW_hopper_rubber_1_load3, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,3,10) }
+
+spritegroup random_MEOW_hopper_rubber { //spritegroup_MEOW_hopper_rubber_1 {
+	loading: [	spriteset_MEOW_hopper_rubber_1_load0,
+				spriteset_MEOW_hopper_rubber_1_load1,
+				spriteset_MEOW_hopper_rubber_1_load2,
+				spriteset_MEOW_hopper_rubber_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_hopper_rubber_1_load0,
+				spriteset_MEOW_hopper_rubber_1_load1,
+				spriteset_MEOW_hopper_rubber_1_load2,
+				spriteset_MEOW_hopper_rubber_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_hopper_rubber, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_hopper_rubber_1;
+}
+*/
+//--------------   sand   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_hopper_sand_1_load0, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,0,11) }
+spriteset(spriteset_MEOW_hopper_sand_1_load1, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,1,11) }
+spriteset(spriteset_MEOW_hopper_sand_1_load2, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,2,11) }
+spriteset(spriteset_MEOW_hopper_sand_1_load3, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,3,11) }
+
+spritegroup random_MEOW_hopper_sand { //spritegroup_MEOW_hopper_sand_1 {
+	loading: [	spriteset_MEOW_hopper_sand_1_load0,
+				spriteset_MEOW_hopper_sand_1_load1,
+				spriteset_MEOW_hopper_sand_1_load2,
+				spriteset_MEOW_hopper_sand_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_hopper_sand_1_load0,
+				spriteset_MEOW_hopper_sand_1_load1,
+				spriteset_MEOW_hopper_sand_1_load2,
+				spriteset_MEOW_hopper_sand_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_hopper_sand, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_hopper_sand_1;
+}
+*/
+//--------------   scrapmetal   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_hopper_scrapmetal_1_load0, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,0,12) }
+spriteset(spriteset_MEOW_hopper_scrapmetal_1_load1, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,1,12) }
+spriteset(spriteset_MEOW_hopper_scrapmetal_1_load2, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,2,12) }
+spriteset(spriteset_MEOW_hopper_scrapmetal_1_load3, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,3,12) }
+
+spritegroup random_MEOW_hopper_scrapmetal { //spritegroup_MEOW_hopper_scrapmetal_1 {
+	loading: [	spriteset_MEOW_hopper_scrapmetal_1_load0,
+				spriteset_MEOW_hopper_scrapmetal_1_load1,
+				spriteset_MEOW_hopper_scrapmetal_1_load2,
+				spriteset_MEOW_hopper_scrapmetal_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_hopper_scrapmetal_1_load0,
+				spriteset_MEOW_hopper_scrapmetal_1_load1,
+				spriteset_MEOW_hopper_scrapmetal_1_load2,
+				spriteset_MEOW_hopper_scrapmetal_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_hopper_scrapmetal, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_hopper_scrapmetal_1;
+}
+*/
+//--------------   stone   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_hopper_stone_1_load0, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,0,13) }
+spriteset(spriteset_MEOW_hopper_stone_1_load1, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,1,13) }
+spriteset(spriteset_MEOW_hopper_stone_1_load2, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,2,13) }
+spriteset(spriteset_MEOW_hopper_stone_1_load3, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,3,13) }
+
+spritegroup random_MEOW_hopper_stone { //spritegroup_MEOW_hopper_stone_1 {
+	loading: [	spriteset_MEOW_hopper_stone_1_load0,
+				spriteset_MEOW_hopper_stone_1_load1,
+				spriteset_MEOW_hopper_stone_1_load2,
+				spriteset_MEOW_hopper_stone_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_hopper_stone_1_load0,
+				spriteset_MEOW_hopper_stone_1_load1,
+				spriteset_MEOW_hopper_stone_1_load2,
+				spriteset_MEOW_hopper_stone_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_hopper_stone, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_hopper_stone_1;
+}
+*/
+//--------------   sugar   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_hopper_sugar_1_load0, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,0,14) }
+spriteset(spriteset_MEOW_hopper_sugar_1_load1, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,1,14) }
+spriteset(spriteset_MEOW_hopper_sugar_1_load2, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,2,14) }
+spriteset(spriteset_MEOW_hopper_sugar_1_load3, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,3,14) }
+
+spritegroup random_MEOW_hopper_sugar { //spritegroup_MEOW_hopper_sugar_1 {
+	loading: [	spriteset_MEOW_hopper_sugar_1_load0,
+				spriteset_MEOW_hopper_sugar_1_load1,
+				spriteset_MEOW_hopper_sugar_1_load2,
+				spriteset_MEOW_hopper_sugar_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_hopper_sugar_1_load0,
+				spriteset_MEOW_hopper_sugar_1_load1,
+				spriteset_MEOW_hopper_sugar_1_load2,
+				spriteset_MEOW_hopper_sugar_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_hopper_sugar, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_hopper_sugar_1;
+}
+*/
+//--------------   toffee   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_hopper_toffee_1_load0, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,0,15) }
+spriteset(spriteset_MEOW_hopper_toffee_1_load1, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,1,15) }
+spriteset(spriteset_MEOW_hopper_toffee_1_load2, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,2,15) }
+spriteset(spriteset_MEOW_hopper_toffee_1_load3, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,3,15) }
+
+spritegroup random_MEOW_hopper_toffee { //spritegroup_MEOW_hopper_toffee_1 {
+	loading: [	spriteset_MEOW_hopper_toffee_1_load0,
+				spriteset_MEOW_hopper_toffee_1_load1,
+				spriteset_MEOW_hopper_toffee_1_load2,
+				spriteset_MEOW_hopper_toffee_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_hopper_toffee_1_load0,
+				spriteset_MEOW_hopper_toffee_1_load1,
+				spriteset_MEOW_hopper_toffee_1_load2,
+				spriteset_MEOW_hopper_toffee_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_hopper_toffee, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_hopper_toffee_1;
+}
+*/
+//--------------   wool   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_hopper_wool_1_load0, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,0,16) }
+spriteset(spriteset_MEOW_hopper_wool_1_load1, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,1,16) }
+spriteset(spriteset_MEOW_hopper_wool_1_load2, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,2,16) }
+spriteset(spriteset_MEOW_hopper_wool_1_load3, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,3,16) }
+
+spritegroup random_MEOW_hopper_wool { //spritegroup_MEOW_hopper_wool_1 {
+	loading: [	spriteset_MEOW_hopper_wool_1_load0,
+				spriteset_MEOW_hopper_wool_1_load1,
+				spriteset_MEOW_hopper_wool_1_load2,
+				spriteset_MEOW_hopper_wool_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_hopper_wool_1_load0,
+				spriteset_MEOW_hopper_wool_1_load1,
+				spriteset_MEOW_hopper_wool_1_load2,
+				spriteset_MEOW_hopper_wool_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_hopper_wool, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_hopper_wool_1;
+}
+*/
+//--------------   recyclables   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_hopper_recyclables_1_load0, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,0,17) }
+spriteset(spriteset_MEOW_hopper_recyclables_1_load1, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,1,17) }
+spriteset(spriteset_MEOW_hopper_recyclables_1_load2, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,2,17) }
+spriteset(spriteset_MEOW_hopper_recyclables_1_load3, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,3,17) }
+
+spritegroup random_MEOW_hopper_recyclables { //spritegroup_MEOW_hopper_recyclables_1 {
+	loading: [	spriteset_MEOW_hopper_recyclables_1_load0,
+				spriteset_MEOW_hopper_recyclables_1_load1,
+				spriteset_MEOW_hopper_recyclables_1_load2,
+				spriteset_MEOW_hopper_recyclables_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_hopper_recyclables_1_load0,
+				spriteset_MEOW_hopper_recyclables_1_load1,
+				spriteset_MEOW_hopper_recyclables_1_load2,
+				spriteset_MEOW_hopper_recyclables_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_hopper_recyclables, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_hopper_recyclables_1;
+}
+*/
+//--------------   uranium   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_hopper_uranium_1_load0, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,0,18) }
+spriteset(spriteset_MEOW_hopper_uranium_1_load1, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,1,18) }
+spriteset(spriteset_MEOW_hopper_uranium_1_load2, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,2,18) }
+spriteset(spriteset_MEOW_hopper_uranium_1_load3, 			"gfx/MEOW_Wagons_HOPPER.png") { template_MEOW(0,3,18) }
+
+spritegroup random_MEOW_hopper_uranium { //spritegroup_MEOW_hopper_uranium_1 {
+	loading: [	spriteset_MEOW_hopper_uranium_1_load0,
+				spriteset_MEOW_hopper_uranium_1_load1,
+				spriteset_MEOW_hopper_uranium_1_load2,
+				spriteset_MEOW_hopper_uranium_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_hopper_uranium_1_load0,
+				spriteset_MEOW_hopper_uranium_1_load1,
+				spriteset_MEOW_hopper_uranium_1_load2,
+				spriteset_MEOW_hopper_uranium_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_hopper_uranium, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_hopper_uranium_1;
+}
+*/
+
+
+switch (FEAT_TRAINS, SELF, MEOW_hopper_cargo_switch, cargo_type_in_veh) {
+	URAN: random_MEOW_hopper_uranium;
+	
+	DIAT: random_MEOW_hopper_sugar;
+	
+	CMNT: random_MEOW_hopper_bauxite;
+	AORE: random_MEOW_hopper_bauxite;
+	LIME: random_MEOW_hopper_bauxite;
+	CTCD: random_MEOW_hopper_candyfloss;
+	CLAY: random_MEOW_hopper_clay;
+	POTA: random_MEOW_hopper_clay;
+	COAL: random_MEOW_hopper_coal;
+	CORE: random_MEOW_hopper_copperore;
+	FMSP: random_MEOW_hopper_fertilizer;
+	FERT: random_MEOW_hopper_fertilizer;
+	CERE: random_MEOW_hopper_grain;
+	GRAI: random_MEOW_hopper_grain;
+	WHEA: random_MEOW_hopper_grain;
+	MAIZ: random_MEOW_hopper_grain;
+	IORE: random_MEOW_hopper_ironore;
+	OLSD: random_MEOW_hopper_oilseeds;
+	FICR: random_MEOW_hopper_plantfibres;
+	RUBR: random_MEOW_hopper_rubber;
+	SCMT: random_MEOW_hopper_scrapmetal;
+	SAND: random_MEOW_hopper_sand;
+	GRVL: random_MEOW_hopper_stone;
+	SUGR: random_MEOW_hopper_sugar;
+	SGBT: random_MEOW_hopper_sugar;
+	SGCN: random_MEOW_hopper_sugar;
+	TOFF: random_MEOW_hopper_toffee;
+	WOOL: random_MEOW_hopper_wool;
+	RCYC: random_MEOW_hopper_recyclables;
+	random_MEOW_hopper_coal;
+}
+
+
+switch(FEAT_TRAINS, PARENT, switch_monohopper_main, vehicle_type_id){
+item_MEOW_mono_01: MEOW_hopper_cargo_switch;
+item_MEOW_mono_02: MEOW_hopper_cargo_switch;
+item_MEOW_mono_03: MEOW_hopper_cargo_switch;
+item_MEOW_mono_04: MEOW_hopper_cargo_switch;
+item_MEOW_mono_05: MEOW_hopper_cargo_switch;
+item_MEOW_mono_06: MEOW_hopper_cargo_switch;
+item_MEOW_mono_b1: MEOW_hopper_cargo_switch;
+
+monohopper_wagon_switch;
+}

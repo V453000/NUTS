@@ -1,0 +1,136 @@
+
+//PURCHASE MENU
+spriteset(spriteset_purchaseMenu_monoWTF1, 			"gfx/PurchaseMenu.png"){template_purchaseMenu2(4,21)}
+spriteset(spriteset_purchaseMenu_monoWTF2, 			"gfx/PurchaseMenu.png"){template_purchaseMenu2(4,22)}
+spriteset(spriteset_purchaseMenu_monoWTF3, 			"gfx/PurchaseMenu.png"){template_purchaseMenu2(4,23)}
+spriteset(spriteset_purchaseMenu_monoWTF4, 			"gfx/PurchaseMenu.png"){template_purchaseMenu2(4,24)}
+//SPRITESETS
+spriteset(spriteset_train_monoWTF1_1, "gfx/monoWTF.png") { template_engine32WTF(0, 0) }
+spriteset(spriteset_train_monoWTF1_2, "gfx/monoWTF.png") { template_engine32WTF(0, 1) }
+spriteset(spriteset_train_monoWTF1_3, "gfx/monoWTF.png") { template_engine32WTF(0, 2) }
+spriteset(spriteset_train_monoWTF1_4, "gfx/monoWTF.png") { template_engine32WTF(0, 3) }
+spriteset(spriteset_train_monoWTF1_5, "gfx/monoWTF.png") { template_engine32WTF(0, 4) }
+
+spriteset(spriteset_train_monoWTF2_1, "gfx/monoWTF.png") { template_engine32WTF(0, 6) }
+spriteset(spriteset_train_monoWTF2_2, "gfx/monoWTF.png") { template_engine32WTF(0, 7) }
+spriteset(spriteset_train_monoWTF2_3, "gfx/monoWTF.png") { template_engine32WTF(0, 8) }
+spriteset(spriteset_train_monoWTF2_4, "gfx/monoWTF.png") { template_engine32WTF(0, 9) }
+spriteset(spriteset_train_monoWTF2_5, "gfx/monoWTF.png") { template_engine32WTF(0, 10) }
+
+spriteset(spriteset_train_monoWTF3_1, "gfx/monoWTF.png") { template_engine32WTF(0, 12) }
+spriteset(spriteset_train_monoWTF3_2, "gfx/monoWTF.png") { template_engine32WTF(0, 13) }
+spriteset(spriteset_train_monoWTF3_3, "gfx/monoWTF.png") { template_engine32WTF(0, 14) }
+spriteset(spriteset_train_monoWTF3_4, "gfx/monoWTF.png") { template_engine32WTF(0, 15) }
+spriteset(spriteset_train_monoWTF3_5, "gfx/monoWTF.png") { template_engine32WTF(0, 16) }
+
+spriteset(spriteset_train_monoWTF4_1, "gfx/monoWTF.png") { template_engine32WTF(0, 18) }
+spriteset(spriteset_train_monoWTF4_2, "gfx/monoWTF.png") { template_engine32WTF(0, 19) }
+spriteset(spriteset_train_monoWTF4_3, "gfx/monoWTF.png") { template_engine32WTF(0, 20) }
+spriteset(spriteset_train_monoWTF4_4, "gfx/monoWTF.png") { template_engine32WTF(0, 21) }
+spriteset(spriteset_train_monoWTF4_5, "gfx/monoWTF.png") { template_engine32WTF(0, 22) }
+//END
+spriteset(spriteset_train_monoWTF1_1_end, "gfx/monoWTF.png") { template_engine32WTF_end(0, 0) }
+spriteset(spriteset_train_monoWTF1_2_end, "gfx/monoWTF.png") { template_engine32WTF_end(0, 1) }
+spriteset(spriteset_train_monoWTF1_3_end, "gfx/monoWTF.png") { template_engine32WTF_end(0, 2) }
+spriteset(spriteset_train_monoWTF1_4_end, "gfx/monoWTF.png") { template_engine32WTF_end(0, 3) }
+spriteset(spriteset_train_monoWTF1_5_end, "gfx/monoWTF.png") { template_engine32WTF_end(0, 4) }
+
+spriteset(spriteset_train_monoWTF2_1_end, "gfx/monoWTF.png") { template_engine32WTF_end(0, 6) }
+spriteset(spriteset_train_monoWTF2_2_end, "gfx/monoWTF.png") { template_engine32WTF_end(0, 7) }
+spriteset(spriteset_train_monoWTF2_3_end, "gfx/monoWTF.png") { template_engine32WTF_end(0, 8) }
+spriteset(spriteset_train_monoWTF2_4_end, "gfx/monoWTF.png") { template_engine32WTF_end(0, 9) }
+spriteset(spriteset_train_monoWTF2_5_end, "gfx/monoWTF.png") { template_engine32WTF_end(0, 10) }
+
+spriteset(spriteset_train_monoWTF3_1_end, "gfx/monoWTF.png") { template_engine32WTF_end(0, 12) }
+spriteset(spriteset_train_monoWTF3_2_end, "gfx/monoWTF.png") { template_engine32WTF_end(0, 13) }
+spriteset(spriteset_train_monoWTF3_3_end, "gfx/monoWTF.png") { template_engine32WTF_end(0, 14) }
+spriteset(spriteset_train_monoWTF3_4_end, "gfx/monoWTF.png") { template_engine32WTF_end(0, 15) }
+spriteset(spriteset_train_monoWTF3_5_end, "gfx/monoWTF.png") { template_engine32WTF_end(0, 16) }
+
+spriteset(spriteset_train_monoWTF4_1_end, "gfx/monoWTF.png") { template_engine32WTF_end(0, 18) }
+spriteset(spriteset_train_monoWTF4_2_end, "gfx/monoWTF.png") { template_engine32WTF_end(0, 19) }
+spriteset(spriteset_train_monoWTF4_3_end, "gfx/monoWTF.png") { template_engine32WTF_end(0, 20) }
+spriteset(spriteset_train_monoWTF4_4_end, "gfx/monoWTF.png") { template_engine32WTF_end(0, 21) }
+spriteset(spriteset_train_monoWTF4_5_end, "gfx/monoWTF.png") { template_engine32WTF_end(0, 22) }
+
+//PURCHASE MENU
+spriteset(spriteset_purchaseMenu_monomedium1, 		"gfx/PurchaseMenu.png"){template_purchaseMenu2(1,10)}
+spriteset(spriteset_purchaseMenu_monomedium2, 		"gfx/PurchaseMenu.png"){template_purchaseMenu2(1,11)}
+spriteset(spriteset_purchaseMenu_monomedium3, 		"gfx/PurchaseMenu.png"){template_purchaseMenu2(1,12)}
+spriteset(spriteset_purchaseMenu_monomedium4, 		"gfx/PurchaseMenu.png"){template_purchaseMenu2(1,13)}
+//SPRITESETS
+spriteset(spriteset_train_monomedium1, "gfx/MonoMedium.png") {template_engine32WTF(0,0)}
+spriteset(spriteset_train_monomedium2, "gfx/MonoMedium.png") {template_engine32WTF(0,1)}
+spriteset(spriteset_train_monomedium3, "gfx/MonoMedium.png") {template_engine32WTF(0,2)}
+spriteset(spriteset_train_monomedium4, "gfx/MonoMedium.png") {template_engine32WTF(0,3)}
+spriteset(spriteset_train_monomedium4_2, "gfx/MonoMedium.png") {template_engine32WTF(0,4)}
+
+random_switch(FEAT_TRAINS, SELF, monomedium4_random){
+1: spriteset_train_monomedium4;
+1: spriteset_train_monomedium4_2;
+}
+
+//PURCHASE MENU
+spriteset(spriteset_purchaseMenu_monofast1, 		"gfx/PurchaseMenu.png"){template_purchaseMenu2(2,10)}
+spriteset(spriteset_purchaseMenu_monofast2, 		"gfx/PurchaseMenu.png"){template_purchaseMenu2(2,11)}
+spriteset(spriteset_purchaseMenu_monofast3, 		"gfx/PurchaseMenu.png"){template_purchaseMenu2(2,12)}
+spriteset(spriteset_purchaseMenu_monofast4, 		"gfx/PurchaseMenu.png"){template_purchaseMenu2(2,13)}
+//SPRITESETS
+spriteset(spriteset_train_monofast1, "gfx/MonoFast.png") {template_engine32WTF(0,0)}
+spriteset(spriteset_train_monofast2, "gfx/MonoFast.png") {template_engine32WTF(0,1)}
+spriteset(spriteset_train_monofast3, "gfx/MonoFast.png") {template_engine32WTF(0,2)}
+spriteset(spriteset_train_monofast4, "gfx/MonoFast.png") {template_engine32WTF(0,3)}
+
+
+
+
+
+spriteset(spriteset_purchaseMenu_MEOW_mono_01, 		"gfx/PurchaseMenu.png"){template_purchaseMenu2(7,0)}
+spriteset(spriteset_purchaseMenu_MEOW_mono_02, 		"gfx/PurchaseMenu.png"){template_purchaseMenu2(7,1)}
+spriteset(spriteset_purchaseMenu_MEOW_mono_03, 		"gfx/PurchaseMenu.png"){template_purchaseMenu2(7,2)}
+spriteset(spriteset_purchaseMenu_MEOW_mono_04, 		"gfx/PurchaseMenu.png"){template_purchaseMenu2(7,3)}
+spriteset(spriteset_purchaseMenu_MEOW_mono_05, 		"gfx/PurchaseMenu.png"){template_purchaseMenu2(7,4)}
+spriteset(spriteset_purchaseMenu_MEOW_mono_06, 		"gfx/PurchaseMenu.png"){template_purchaseMenu2(7,5)}
+spriteset(spriteset_purchaseMenu_MEOW_mono_b1, 		"gfx/PurchaseMenu.png"){template_purchaseMenu2(7,6)}
+
+spriteset(spriteset_train_MEOW_mono_01_base, 			"gfx/MEOW.png") 	{template_MEOW		(0,0,2)}
+spriteset(spriteset_train_MEOW_mono_01_yellow, 			"gfx/MEOW.png") 	{template_MEOW		(0,1,2)}
+spriteset(spriteset_train_MEOW_mono_01_red, 			"gfx/MEOW.png") 	{template_MEOW		(0,2,2)}
+spriteset(spriteset_train_MEOW_mono_01_blue, 			"gfx/MEOW.png") 	{template_MEOW		(0,3,2)}
+spriteset(spriteset_train_MEOW_mono_01_green, 			"gfx/MEOW.png") 	{template_MEOW		(0,4,2)}
+
+spriteset(spriteset_train_MEOW_mono_02_base, 			"gfx/MEOW.png") 	{template_MEOW		(1,0,2)}
+spriteset(spriteset_train_MEOW_mono_02_yellow, 			"gfx/MEOW.png") 	{template_MEOW		(1,1,2)}
+spriteset(spriteset_train_MEOW_mono_02_red, 			"gfx/MEOW.png") 	{template_MEOW		(1,2,2)}
+spriteset(spriteset_train_MEOW_mono_02_blue, 			"gfx/MEOW.png") 	{template_MEOW		(1,3,2)}
+spriteset(spriteset_train_MEOW_mono_02_green, 			"gfx/MEOW.png") 	{template_MEOW		(1,4,2)}
+
+spriteset(spriteset_train_MEOW_mono_03_base, 			"gfx/MEOW.png") 	{template_MEOW		(2,0,2)}
+spriteset(spriteset_train_MEOW_mono_03_yellow, 			"gfx/MEOW.png") 	{template_MEOW		(2,1,2)}
+spriteset(spriteset_train_MEOW_mono_03_red, 			"gfx/MEOW.png") 	{template_MEOW		(2,2,2)}
+spriteset(spriteset_train_MEOW_mono_03_blue, 			"gfx/MEOW.png") 	{template_MEOW		(2,3,2)}
+spriteset(spriteset_train_MEOW_mono_03_green, 			"gfx/MEOW.png") 	{template_MEOW		(2,4,2)}
+
+spriteset(spriteset_train_MEOW_mono_04_base, 			"gfx/MEOW.png") 	{template_MEOW		(3,0,2)}
+spriteset(spriteset_train_MEOW_mono_04_yellow, 			"gfx/MEOW.png") 	{template_MEOW		(3,1,2)}
+spriteset(spriteset_train_MEOW_mono_04_red, 			"gfx/MEOW.png") 	{template_MEOW		(3,2,2)}
+spriteset(spriteset_train_MEOW_mono_04_blue, 			"gfx/MEOW.png") 	{template_MEOW		(3,3,2)}
+spriteset(spriteset_train_MEOW_mono_04_green, 			"gfx/MEOW.png") 	{template_MEOW		(3,4,2)}
+
+spriteset(spriteset_train_MEOW_mono_05_base, 			"gfx/MEOW.png") 	{template_MEOW		(4,0,2)}
+spriteset(spriteset_train_MEOW_mono_05_yellow, 			"gfx/MEOW.png") 	{template_MEOW		(4,1,2)}
+spriteset(spriteset_train_MEOW_mono_05_red, 			"gfx/MEOW.png") 	{template_MEOW		(4,2,2)}
+spriteset(spriteset_train_MEOW_mono_05_blue, 			"gfx/MEOW.png") 	{template_MEOW		(4,3,2)}
+spriteset(spriteset_train_MEOW_mono_05_green, 			"gfx/MEOW.png") 	{template_MEOW		(4,4,2)}
+
+spriteset(spriteset_train_MEOW_mono_06_base, 			"gfx/MEOW.png") 	{template_MEOW		(5,0,2)}
+spriteset(spriteset_train_MEOW_mono_06_yellow, 			"gfx/MEOW.png") 	{template_MEOW		(5,1,2)}
+spriteset(spriteset_train_MEOW_mono_06_red, 			"gfx/MEOW.png") 	{template_MEOW		(5,2,2)}
+spriteset(spriteset_train_MEOW_mono_06_blue, 			"gfx/MEOW.png") 	{template_MEOW		(5,3,2)}
+spriteset(spriteset_train_MEOW_mono_06_green, 			"gfx/MEOW.png") 	{template_MEOW		(5,4,2)}
+
+spriteset(spriteset_train_MEOW_mono_b1_base, 			"gfx/MEOW.png") 	{template_MEOW		(6,0,2)}
+spriteset(spriteset_train_MEOW_mono_b1_yellow, 			"gfx/MEOW.png") 	{template_MEOW		(6,1,2)}
+spriteset(spriteset_train_MEOW_mono_b1_red, 			"gfx/MEOW.png") 	{template_MEOW		(6,2,2)}
+spriteset(spriteset_train_MEOW_mono_b1_blue, 			"gfx/MEOW.png") 	{template_MEOW		(6,3,2)}
+spriteset(spriteset_train_MEOW_mono_b1_green, 			"gfx/MEOW.png") 	{template_MEOW		(6,4,2)}

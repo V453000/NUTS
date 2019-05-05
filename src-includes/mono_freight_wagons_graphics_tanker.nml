@@ -1,0 +1,341 @@
+
+//MONORAIL TANKER
+//SPRITESETS
+spriteset(spriteset_purchaseMenu_monotanker, 		"gfx/PurchaseMenu.png"){template_purchaseMenu(1,22)}
+spriteset(spriteset_monotanker_empty_cola, 						"gfx/MonoWagons_Tanker.png") { template_engine32WTF(0, 0) }
+spriteset(spriteset_monotanker_empty_beer, 						"gfx/MonoWagons_Tanker.png") { template_engine32WTF(0, 2) }
+spriteset(spriteset_monotanker_empty_chemicals, 					"gfx/MonoWagons_Tanker.png") { template_engine32WTF(0, 4) }
+spriteset(spriteset_monotanker_empty_refinedproducts, 				"gfx/MonoWagons_Tanker.png") { template_engine32WTF(0, 6) }
+spriteset(spriteset_monotanker_empty_fish, 						"gfx/MonoWagons_Tanker.png") { template_engine32WTF(0, 8) }
+spriteset(spriteset_monotanker_empty_milk, 						"gfx/MonoWagons_Tanker.png") { template_engine32WTF(0, 10) }
+spriteset(spriteset_monotanker_empty_oil, 							"gfx/MonoWagons_Tanker.png") { template_engine32WTF(0, 12) }
+spriteset(spriteset_monotanker_empty_plastic, 						"gfx/MonoWagons_Tanker.png") { template_engine32WTF(0, 14) }
+spriteset(spriteset_monotanker_empty_water, 						"gfx/MonoWagons_Tanker.png") { template_engine32WTF(0, 16) }
+
+// rail tanker gen1 1/3 full
+spriteset(spriteset_monotanker_1full_cola, 						"gfx/MonoWagons_Tanker.png") { template_engine32WTF(0, 1) }
+spriteset(spriteset_monotanker_1full_beer, 						"gfx/MonoWagons_Tanker.png") { template_engine32WTF(0, 3) }
+spriteset(spriteset_monotanker_1full_chemicals, 					"gfx/MonoWagons_Tanker.png") { template_engine32WTF(0, 5) }
+spriteset(spriteset_monotanker_1full_refinedproducts, 				"gfx/MonoWagons_Tanker.png") { template_engine32WTF(0, 7) }
+spriteset(spriteset_monotanker_1full_fish, 						"gfx/MonoWagons_Tanker.png") { template_engine32WTF(0, 9) }
+spriteset(spriteset_monotanker_1full_milk, 						"gfx/MonoWagons_Tanker.png") { template_engine32WTF(0, 11) }
+spriteset(spriteset_monotanker_1full_oil, 							"gfx/MonoWagons_Tanker.png") { template_engine32WTF(0, 13) }
+spriteset(spriteset_monotanker_1full_plastic, 						"gfx/MonoWagons_Tanker.png") { template_engine32WTF(0, 15) }
+spriteset(spriteset_monotanker_1full_water,						"gfx/MonoWagons_Tanker.png") { template_engine32WTF(0, 17) }
+
+// rail tanker gen1 2/3 full
+spriteset(spriteset_monotanker_2full_cola, 						"gfx/MonoWagons_Tanker.png") { template_engine32WTF(184, 1) }
+spriteset(spriteset_monotanker_2full_beer, 						"gfx/MonoWagons_Tanker.png") { template_engine32WTF(184, 3) }
+spriteset(spriteset_monotanker_2full_chemicals, 					"gfx/MonoWagons_Tanker.png") { template_engine32WTF(184, 5) }
+spriteset(spriteset_monotanker_2full_refinedproducts, 				"gfx/MonoWagons_Tanker.png") { template_engine32WTF(184, 7) }
+spriteset(spriteset_monotanker_2full_fish, 						"gfx/MonoWagons_Tanker.png") { template_engine32WTF(184, 9) }
+spriteset(spriteset_monotanker_2full_milk, 						"gfx/MonoWagons_Tanker.png") { template_engine32WTF(184, 11) }
+spriteset(spriteset_monotanker_2full_oil, 							"gfx/MonoWagons_Tanker.png") { template_engine32WTF(184, 13) }
+spriteset(spriteset_monotanker_2full_plastic, 						"gfx/MonoWagons_Tanker.png") { template_engine32WTF(184, 15) }
+spriteset(spriteset_monotanker_2full_water,						"gfx/MonoWagons_Tanker.png") { template_engine32WTF(184, 17) }
+
+// rail tanker gen1 full
+spriteset(spriteset_monotanker_full_cola, 							"gfx/MonoWagons_Tanker.png") { template_engine32WTF(184, 0) }
+spriteset(spriteset_monotanker_full_beer, 							"gfx/MonoWagons_Tanker.png") { template_engine32WTF(184, 2) }
+spriteset(spriteset_monotanker_full_chemicals, 					"gfx/MonoWagons_Tanker.png") { template_engine32WTF(184, 4) }
+spriteset(spriteset_monotanker_full_refinedproducts, 				"gfx/MonoWagons_Tanker.png") { template_engine32WTF(184, 6) }
+spriteset(spriteset_monotanker_full_fish, 							"gfx/MonoWagons_Tanker.png") { template_engine32WTF(184, 8) }
+spriteset(spriteset_monotanker_full_milk, 							"gfx/MonoWagons_Tanker.png") { template_engine32WTF(184, 10) }
+spriteset(spriteset_monotanker_full_oil, 							"gfx/MonoWagons_Tanker.png") { template_engine32WTF(184, 12) }
+spriteset(spriteset_monotanker_full_plastic, 						"gfx/MonoWagons_Tanker.png") { template_engine32WTF(184, 14) }
+spriteset(spriteset_monotanker_full_water,							"gfx/MonoWagons_Tanker.png") { template_engine32WTF(184, 16) }
+
+//SPRITEGROUPS
+spritegroup spritegroup_monotanker_cola {
+	loaded: [spriteset_monotanker_empty_cola, spriteset_monotanker_1full_cola, spriteset_monotanker_2full_cola, spriteset_monotanker_full_cola];
+	loading:  [spriteset_monotanker_empty_cola, spriteset_monotanker_1full_cola, spriteset_monotanker_2full_cola, spriteset_monotanker_full_cola];
+}
+spritegroup spritegroup_monotanker_beer {
+	loaded: [spriteset_monotanker_empty_beer, spriteset_monotanker_1full_beer, spriteset_monotanker_2full_beer, spriteset_monotanker_full_beer];
+	loading:  [spriteset_monotanker_empty_beer, spriteset_monotanker_1full_beer, spriteset_monotanker_2full_beer, spriteset_monotanker_full_beer];
+}
+spritegroup spritegroup_monotanker_chemicals {
+	loaded: [spriteset_monotanker_empty_chemicals, spriteset_monotanker_1full_chemicals, spriteset_monotanker_2full_chemicals, spriteset_monotanker_full_chemicals];
+	loading:  [spriteset_monotanker_empty_chemicals, spriteset_monotanker_1full_chemicals, spriteset_monotanker_2full_chemicals, spriteset_monotanker_full_chemicals];
+}
+spritegroup spritegroup_monotanker_refinedproducts {
+	loaded: [spriteset_monotanker_empty_refinedproducts, spriteset_monotanker_1full_refinedproducts, spriteset_monotanker_2full_refinedproducts, spriteset_monotanker_full_refinedproducts];
+	loading:  [spriteset_monotanker_empty_refinedproducts, spriteset_monotanker_1full_refinedproducts, spriteset_monotanker_2full_refinedproducts, spriteset_monotanker_full_refinedproducts];
+}
+spritegroup spritegroup_monotanker_fish {
+	loaded: [spriteset_monotanker_empty_fish, spriteset_monotanker_1full_fish, spriteset_monotanker_2full_fish, spriteset_monotanker_full_fish];
+	loading:  [spriteset_monotanker_empty_fish, spriteset_monotanker_1full_fish, spriteset_monotanker_2full_fish, spriteset_monotanker_full_fish];
+}
+spritegroup spritegroup_monotanker_milk {
+	loaded: [spriteset_monotanker_empty_milk, spriteset_monotanker_1full_milk, spriteset_monotanker_2full_milk, spriteset_monotanker_full_milk];
+	loading:  [spriteset_monotanker_empty_milk, spriteset_monotanker_1full_milk, spriteset_monotanker_2full_milk, spriteset_monotanker_full_milk];
+}
+spritegroup spritegroup_monotanker_oil {
+	loaded: [spriteset_monotanker_empty_oil, spriteset_monotanker_1full_oil, spriteset_monotanker_2full_oil, spriteset_monotanker_full_oil];
+	loading:  [spriteset_monotanker_empty_oil, spriteset_monotanker_1full_oil, spriteset_monotanker_2full_oil, spriteset_monotanker_full_oil];
+}
+spritegroup spritegroup_monotanker_plastic {
+	loaded: [spriteset_monotanker_empty_plastic, spriteset_monotanker_1full_plastic, spriteset_monotanker_2full_plastic, spriteset_monotanker_full_plastic];
+	loading:  [spriteset_monotanker_empty_plastic, spriteset_monotanker_1full_plastic, spriteset_monotanker_2full_plastic, spriteset_monotanker_full_plastic];
+}
+spritegroup spritegroup_monotanker_water {
+	loaded: [spriteset_monotanker_empty_water, spriteset_monotanker_1full_water, spriteset_monotanker_2full_water, spriteset_monotanker_full_water];
+	loading:  [spriteset_monotanker_empty_water, spriteset_monotanker_1full_water, spriteset_monotanker_2full_water, spriteset_monotanker_full_water];
+}
+
+//RANDOM SWITCHES
+//CARGO SWITCH
+switch (FEAT_TRAINS, SELF, monotanker_wagon_switch, cargo_type_in_veh) {
+	CHEM: spritegroup_monotanker_chemicals;
+	HYCH: spritegroup_monotanker_cola;
+	DEUT: spritegroup_monotanker_water;
+	
+	COLA: spritegroup_monotanker_cola;
+	BEER: spritegroup_monotanker_beer;
+	FZDR: spritegroup_monotanker_beer;
+	RFPR: spritegroup_monotanker_chemicals;
+	LVST: spritegroup_monotanker_fish;
+	FISH: spritegroup_monotanker_fish;
+	MILK: spritegroup_monotanker_milk;
+	OIL_: spritegroup_monotanker_oil;
+	PETR: spritegroup_monotanker_refinedproducts;
+	PLAS: spritegroup_monotanker_plastic;
+	PLST: spritegroup_monotanker_plastic;
+	WATR: spritegroup_monotanker_water;
+	spritegroup_monotanker_oil;
+}
+
+
+//--------------   cola   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_tanker_cola_1_load0, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,0,0) }
+spriteset(spriteset_MEOW_tanker_cola_1_load1, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,1,0) }
+spriteset(spriteset_MEOW_tanker_cola_1_load2, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,2,0) }
+spriteset(spriteset_MEOW_tanker_cola_1_load3, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,3,0) }
+
+spritegroup random_MEOW_tanker_cola { //spritegroup_MEOW_tanker_cola_1 {
+	loading: [	spriteset_MEOW_tanker_cola_1_load0,
+				spriteset_MEOW_tanker_cola_1_load1,
+				spriteset_MEOW_tanker_cola_1_load2,
+				spriteset_MEOW_tanker_cola_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_tanker_cola_1_load0,
+				spriteset_MEOW_tanker_cola_1_load1,
+				spriteset_MEOW_tanker_cola_1_load2,
+				spriteset_MEOW_tanker_cola_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_tanker_cola, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_tanker_cola_1;
+}
+*/
+//--------------   beer   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_tanker_beer_1_load0, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,0,1) }
+spriteset(spriteset_MEOW_tanker_beer_1_load1, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,1,1) }
+spriteset(spriteset_MEOW_tanker_beer_1_load2, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,2,1) }
+spriteset(spriteset_MEOW_tanker_beer_1_load3, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,3,1) }
+
+spritegroup random_MEOW_tanker_beer { //spritegroup_MEOW_tanker_beer_1 {
+	loading: [	spriteset_MEOW_tanker_beer_1_load0,
+				spriteset_MEOW_tanker_beer_1_load1,
+				spriteset_MEOW_tanker_beer_1_load2,
+				spriteset_MEOW_tanker_beer_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_tanker_beer_1_load0,
+				spriteset_MEOW_tanker_beer_1_load1,
+				spriteset_MEOW_tanker_beer_1_load2,
+				spriteset_MEOW_tanker_beer_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_tanker_beer, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_tanker_beer_1;
+}
+*/
+//--------------   chemicals   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_tanker_chemicals_1_load0, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,0,2) }
+spriteset(spriteset_MEOW_tanker_chemicals_1_load1, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,1,2) }
+spriteset(spriteset_MEOW_tanker_chemicals_1_load2, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,2,2) }
+spriteset(spriteset_MEOW_tanker_chemicals_1_load3, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,3,2) }
+
+spritegroup random_MEOW_tanker_chemicals { //spritegroup_MEOW_tanker_chemicals_1 {
+	loading: [	spriteset_MEOW_tanker_chemicals_1_load0,
+				spriteset_MEOW_tanker_chemicals_1_load1,
+				spriteset_MEOW_tanker_chemicals_1_load2,
+				spriteset_MEOW_tanker_chemicals_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_tanker_chemicals_1_load0,
+				spriteset_MEOW_tanker_chemicals_1_load1,
+				spriteset_MEOW_tanker_chemicals_1_load2,
+				spriteset_MEOW_tanker_chemicals_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_tanker_chemicals, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_tanker_chemicals_1;
+}
+*/
+//--------------   refinedproducts   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_tanker_refinedproducts_1_load0, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,0,3) }
+spriteset(spriteset_MEOW_tanker_refinedproducts_1_load1, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,1,3) }
+spriteset(spriteset_MEOW_tanker_refinedproducts_1_load2, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,2,3) }
+spriteset(spriteset_MEOW_tanker_refinedproducts_1_load3, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,3,3) }
+
+spritegroup random_MEOW_tanker_refinedproducts { //spritegroup_MEOW_tanker_refinedproducts_1 {
+	loading: [	spriteset_MEOW_tanker_refinedproducts_1_load0,
+				spriteset_MEOW_tanker_refinedproducts_1_load1,
+				spriteset_MEOW_tanker_refinedproducts_1_load2,
+				spriteset_MEOW_tanker_refinedproducts_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_tanker_refinedproducts_1_load0,
+				spriteset_MEOW_tanker_refinedproducts_1_load1,
+				spriteset_MEOW_tanker_refinedproducts_1_load2,
+				spriteset_MEOW_tanker_refinedproducts_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_tanker_refinedproducts, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_tanker_refinedproducts_1;
+}
+*/
+//--------------   fish   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_tanker_fish_1_load0, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,0,4) }
+spriteset(spriteset_MEOW_tanker_fish_1_load1, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,1,4) }
+spriteset(spriteset_MEOW_tanker_fish_1_load2, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,2,4) }
+spriteset(spriteset_MEOW_tanker_fish_1_load3, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,3,4) }
+
+spritegroup random_MEOW_tanker_fish { //spritegroup_MEOW_tanker_fish_1 {
+	loading: [	spriteset_MEOW_tanker_fish_1_load0,
+				spriteset_MEOW_tanker_fish_1_load1,
+				spriteset_MEOW_tanker_fish_1_load2,
+				spriteset_MEOW_tanker_fish_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_tanker_fish_1_load0,
+				spriteset_MEOW_tanker_fish_1_load1,
+				spriteset_MEOW_tanker_fish_1_load2,
+				spriteset_MEOW_tanker_fish_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_tanker_fish, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_tanker_fish_1;
+}
+*/
+//--------------   milk   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_tanker_milk_1_load0, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,0,5) }
+spriteset(spriteset_MEOW_tanker_milk_1_load1, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,1,5) }
+spriteset(spriteset_MEOW_tanker_milk_1_load2, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,2,5) }
+spriteset(spriteset_MEOW_tanker_milk_1_load3, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,3,5) }
+
+spritegroup random_MEOW_tanker_milk { //spritegroup_MEOW_tanker_milk_1 {
+	loading: [	spriteset_MEOW_tanker_milk_1_load0,
+				spriteset_MEOW_tanker_milk_1_load1,
+				spriteset_MEOW_tanker_milk_1_load2,
+				spriteset_MEOW_tanker_milk_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_tanker_milk_1_load0,
+				spriteset_MEOW_tanker_milk_1_load1,
+				spriteset_MEOW_tanker_milk_1_load2,
+				spriteset_MEOW_tanker_milk_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_tanker_milk, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_tanker_milk_1;
+}
+*/
+//--------------   oil   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_tanker_oil_1_load0, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,0,6) }
+spriteset(spriteset_MEOW_tanker_oil_1_load1, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,1,6) }
+spriteset(spriteset_MEOW_tanker_oil_1_load2, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,2,6) }
+spriteset(spriteset_MEOW_tanker_oil_1_load3, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,3,6) }
+
+spritegroup random_MEOW_tanker_oil { //spritegroup_MEOW_tanker_oil_1 {
+	loading: [	spriteset_MEOW_tanker_oil_1_load0,
+				spriteset_MEOW_tanker_oil_1_load1,
+				spriteset_MEOW_tanker_oil_1_load2,
+				spriteset_MEOW_tanker_oil_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_tanker_oil_1_load0,
+				spriteset_MEOW_tanker_oil_1_load1,
+				spriteset_MEOW_tanker_oil_1_load2,
+				spriteset_MEOW_tanker_oil_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_tanker_oil, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_tanker_oil_1;
+}
+*/
+//--------------   plastic   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_tanker_plastic_1_load0, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,0,7) }
+spriteset(spriteset_MEOW_tanker_plastic_1_load1, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,1,7) }
+spriteset(spriteset_MEOW_tanker_plastic_1_load2, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,2,7) }
+spriteset(spriteset_MEOW_tanker_plastic_1_load3, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,3,7) }
+
+spritegroup random_MEOW_tanker_plastic { //spritegroup_MEOW_tanker_plastic_1 {
+	loading: [	spriteset_MEOW_tanker_plastic_1_load0,
+				spriteset_MEOW_tanker_plastic_1_load1,
+				spriteset_MEOW_tanker_plastic_1_load2,
+				spriteset_MEOW_tanker_plastic_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_tanker_plastic_1_load0,
+				spriteset_MEOW_tanker_plastic_1_load1,
+				spriteset_MEOW_tanker_plastic_1_load2,
+				spriteset_MEOW_tanker_plastic_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_tanker_plastic, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_tanker_plastic_1;
+}
+*/
+//--------------   water   ---------------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_MEOW_tanker_water_1_load0, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,0,8) }
+spriteset(spriteset_MEOW_tanker_water_1_load1, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,1,8) }
+spriteset(spriteset_MEOW_tanker_water_1_load2, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,2,8) }
+spriteset(spriteset_MEOW_tanker_water_1_load3, 			"gfx/MEOW_Wagons_TANKER.png") { template_MEOW(0,3,8) }
+
+spritegroup random_MEOW_tanker_water { //spritegroup_MEOW_tanker_water_1 {
+	loading: [	spriteset_MEOW_tanker_water_1_load0,
+				spriteset_MEOW_tanker_water_1_load1,
+				spriteset_MEOW_tanker_water_1_load2,
+				spriteset_MEOW_tanker_water_1_load3
+			];				
+	loaded:  [	spriteset_MEOW_tanker_water_1_load0,
+				spriteset_MEOW_tanker_water_1_load1,
+				spriteset_MEOW_tanker_water_1_load2,
+				spriteset_MEOW_tanker_water_1_load3
+			];}
+/*
+random_switch (FEAT_TRAINS, SELF, random_MEOW_tanker_water, bitmask(TRIGGER_VEHICLE_NEW_LOAD, TRIGGER_ALL_NEEDED)){
+1: spritegroup_MEOW_tanker_water_1;
+}
+*/
+
+
+switch (FEAT_TRAINS, SELF, MEOW_tanker_cargo_switch, cargo_type_in_veh) {
+	CHEM: random_MEOW_tanker_chemicals;
+	HYCH: random_MEOW_tanker_cola;
+	DEUT: random_MEOW_tanker_water;
+	
+	COLA: random_MEOW_tanker_cola;
+	BEER: random_MEOW_tanker_beer;
+	FZDR: random_MEOW_tanker_beer;
+	RFPR: random_MEOW_tanker_chemicals;
+	FISH: random_MEOW_tanker_fish;
+	LVST: random_MEOW_tanker_fish;
+	MILK: random_MEOW_tanker_milk;
+	OIL_: random_MEOW_tanker_oil;
+	PETR: random_MEOW_tanker_refinedproducts;
+	PLST: random_MEOW_tanker_plastic;
+	PLAS: random_MEOW_tanker_plastic;
+	WATR: random_MEOW_tanker_water;
+	random_MEOW_tanker_oil;
+}
+
+
+switch(FEAT_TRAINS, PARENT, switch_monotanker_main, vehicle_type_id){
+item_MEOW_mono_01: MEOW_tanker_cargo_switch;
+item_MEOW_mono_02: MEOW_tanker_cargo_switch;
+item_MEOW_mono_03: MEOW_tanker_cargo_switch;
+item_MEOW_mono_04: MEOW_tanker_cargo_switch;
+item_MEOW_mono_05: MEOW_tanker_cargo_switch;
+item_MEOW_mono_06: MEOW_tanker_cargo_switch;
+item_MEOW_mono_b1: MEOW_flatbed_cargo_switch;
+
+monotanker_wagon_switch;
+}
+

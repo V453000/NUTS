@@ -1,0 +1,241 @@
+
+//ITEM
+item(FEAT_TRAINS, item_railflatbed3, 412) { //ID412
+	property {
+		name:                         string(STR_NAME_RAILFLTBD3);
+        climates_available:           ALL_CLIMATES;
+        introduction_date:            date(1945, 1, 1);
+        model_life:                   VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                 255;
+        reliability_decay:            5;
+        non_refittable_cargo_classes: bitmask();
+
+		cargo_disallow_refit:		  [RUBR];
+		refittable_cargo_classes:     bitmask(CC_PIECE_GOODS, CC_EXPRESS, CC_REFRIGERATED, CC_OVERSIZED, CC_ARMOURED);
+        non_refittable_cargo_classes: bitmask();
+
+		cargo_disallow_refit:		  [BEER, FMSP, FERT, FISH, MILK, FICR, RCYC, WOOL];
+		default_cargo_type:			  GOOD;
+		loading_speed:                5;
+        cost_factor:                  50;
+        running_cost_factor:          0;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        speed:                        0;
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
+        refit_cost:                   0;
+        track_type:                   RAIL;
+        ai_special_flag:              AI_FLAG_CARGO;
+        power:                        0;
+        running_cost_base:            RUNNING_COST_NONE;
+        dual_headed:                  0;
+        cargo_capacity:               40;
+        weight:                       20 ton;
+        ai_engine_rank:               0;
+        extra_power_per_wagon:        0 kW;
+        tractive_effort_coefficient:  0;
+        air_drag_coefficient:         0;
+        length: 8;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
+        extra_weight_per_wagon:       0 ton;
+        bitmask_vehicle_info:         0;
+	}
+	graphics {
+		default: switch_rail_freight_graphics_decider;//railflatbed3_wagon_switch;
+		purchase: spriteset_purchaseMenu_railflatbed3;
+		cargo_capacity:   switch_capacity_railuniversal3;//switch_cargo_capacity_global;
+		additional_text: string(STR_RAILWAGON2);
+		purchase_cargo_capacity:   30;
+		loading_speed:		6;//switch_loadspeed_global;
+		cost_factor:		10;//switch_cost_global;
+		weight:				15;
+		}
+		}
+if (param_wagons == 0) {
+	item(FEAT_TRAINS, item_railflatbed3, 412) {
+		property {
+		climates_available: NO_CLIMATE;
+		}
+	}
+} else  {
+	item(FEAT_TRAINS, item_railflatbed3, 412) {
+		property {
+		climates_available: ALL_CLIMATES;
+		}
+	}
+}
+
+//ITEM
+item(FEAT_TRAINS, item_railhopper3, 422) { //ID422
+	property {
+		name:                         string(STR_NAME_RAILHOPPER3);
+        climates_available:           ALL_CLIMATES;
+        introduction_date:            date(1945, 1, 1);
+        model_life:                   VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                 255;
+        reliability_decay:            5;
+        refittable_cargo_classes:     bitmask(CC_BULK, CC_COVERED);
+        non_refittable_cargo_classes: bitmask(CC_REFRIGERATED);
+
+		cargo_allow_refit:			  [RUBR, FMSP];
+		cargo_disallow_refit:		  [WDPR, FRUT, BDMT, PLST, LUMB];
+		default_cargo_type:			  COAL;
+		loading_speed:                5;
+        cost_factor:                  10;
+        running_cost_factor:          0;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        speed:                        0;
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        refit_cost:                   0;
+        track_type:                   RAIL;
+        ai_special_flag:              AI_FLAG_CARGO;
+        power:                        0;
+        running_cost_base:            RUNNING_COST_NONE;
+        dual_headed:                  0;
+        cargo_capacity:               40;
+        weight:                       20 ton;
+        ai_engine_rank:               0;
+        extra_power_per_wagon:        0 kW;
+        tractive_effort_coefficient:  0;
+        air_drag_coefficient:         0;
+        length: 8;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
+        extra_weight_per_wagon:       0 ton;
+        bitmask_vehicle_info:         0;
+	}
+	graphics {
+		default: switch_rail_freight_graphics_decider;//railhopper3_wagon_switch;
+		purchase: spriteset_purchaseMenu_railhopper3;
+		cargo_capacity:   switch_capacity_railuniversal3;
+		additional_text: string(STR_RAILWAGON2);
+		purchase_cargo_capacity:   30;
+		loading_speed:		6;
+		cost_factor:		10;
+		weight:				15;
+	}
+}
+if (param_wagons == 0) {
+	item(FEAT_TRAINS, item_railhopper3, 422) {
+		property {
+		climates_available: NO_CLIMATE;
+		}
+	}
+} else  {
+	item(FEAT_TRAINS, item_railhopper3, 422) {
+		property {
+		climates_available: ALL_CLIMATES;
+		}
+	}
+}
+
+//ITEM
+item(FEAT_TRAINS, item_railtanker3, 432) { //ID433
+	property {
+		name:                         string(STR_NAME_RAILTANK3);
+        climates_available:           ALL_CLIMATES;
+        introduction_date:            date(1945, 1, 1);
+        model_life:                   VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                 255;
+        reliability_decay:            5;
+        refittable_cargo_classes:     bitmask(CC_LIQUID);
+        non_refittable_cargo_classes: bitmask(CC_BULK);
+
+		cargo_allow_refit:			  [LVST, FISH, FZDR, PLST];
+		cargo_disallow_refit:		  [RUBR];
+		default_cargo_type:			  OIL_;
+		loading_speed:                5;
+        cost_factor:                  50;
+        running_cost_factor:          0;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        speed:                        0;
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        refit_cost:                   0;
+        track_type:                   RAIL;
+        ai_special_flag:              AI_FLAG_CARGO;
+        power:                        0;
+        running_cost_base:            RUNNING_COST_NONE;
+        dual_headed:                  0;
+        cargo_capacity:               30;
+        weight:                       10 ton;
+        ai_engine_rank:               0;
+        extra_power_per_wagon:        0 kW;
+        tractive_effort_coefficient:  0;
+        air_drag_coefficient:         0;
+        length: 8;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
+        extra_weight_per_wagon:       0 ton;
+        bitmask_vehicle_info:         0;
+	}
+	graphics {
+		default: switch_rail_freight_graphics_decider;//railtanker3_wagon_switch;
+		purchase: spriteset_purchaseMenu_railtanker3;
+		cargo_capacity:   switch_capacity_railuniversal3;
+		additional_text: string(STR_RAILWAGON2);
+		purchase_cargo_capacity:   30;
+		loading_speed:		6;
+		cost_factor:		10;
+		weight:				15;
+			}
+}
+if (param_wagons == 0) {
+	item(FEAT_TRAINS, item_railtanker3, 432) {
+		property {
+		climates_available: NO_CLIMATE;
+		}
+	}
+} else  {
+	item(FEAT_TRAINS, item_railtanker3, 432) {
+		property {
+		climates_available: ALL_CLIMATES;
+		}
+	}
+}
+
+//ITEM
+item(FEAT_TRAINS, item_railuniversal3, 442) { //ID442
+	property {
+		name:                         string(STR_NAME_RAILUNIVERSAL3);
+        climates_available:           ALL_CLIMATES;
+        introduction_date:            date(1945, 1, 1);
+        model_life:                   VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                 255;
+        reliability_decay:            5;
+        refittable_cargo_classes:     ALL_NORMAL_CARGO_CLASSES;
+       //non_refittable_cargo_classes: bitmask(CC_PASSENGERS, CC_MAIL);
+
+		cargo_allow_refit:			  [FZDR];
+		default_cargo_type:			  GOOD;
+		cargo_disallow_refit:		  [];
+        loading_speed:                5;
+        cost_factor:                  50;
+        running_cost_factor:          0;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        speed:                        0;
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        refit_cost:                   0;
+        track_type:                   RAIL;
+        ai_special_flag:              AI_FLAG_CARGO;
+        power:                        0;
+        running_cost_base:            RUNNING_COST_NONE;
+        dual_headed:                  0;
+        cargo_capacity:               40;
+        weight:                       40 ton;
+        ai_engine_rank:               0;
+        extra_power_per_wagon:        0 kW;
+        tractive_effort_coefficient:  0;
+        air_drag_coefficient:         0;
+        length: 8;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
+        extra_weight_per_wagon:       0 ton;
+        bitmask_vehicle_info:         0;
+	}
+	graphics {
+		default: switch_rail_freight_graphics_decider;//railuniversal3_wagon_switch;
+		purchase: spriteset_purchaseMenu_railuniversal3;
+		cargo_capacity:   switch_capacity_railuniversal3;
+		additional_text: string(STR_RAILWAGON2);
+		purchase_cargo_capacity:   30;
+		loading_speed:		6;
+		cost_factor:		10;
+		weight:				15;
+	}
+}
