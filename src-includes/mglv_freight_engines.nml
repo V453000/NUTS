@@ -456,7 +456,7 @@ item(FEAT_TRAINS, item_magfast2, 253) { //253
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
         air_drag_coefficient:         0;
-        length: 8;
+        length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
         bitmask_vehicle_info:         0;
@@ -536,7 +536,7 @@ item(FEAT_TRAINS, item_magfast3, 255) { //ID255
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
         air_drag_coefficient:         0;
-        length: 8;
+        length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
         bitmask_vehicle_info:         0;
@@ -616,7 +616,7 @@ item(FEAT_TRAINS, item_magfast4, 257) { //ID257
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
         air_drag_coefficient:         0;
-        length: 8;
+        length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
         bitmask_vehicle_info:         0;
