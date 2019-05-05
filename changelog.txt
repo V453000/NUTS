@@ -1,3 +1,13 @@
+0.8.3
+	Improved drawing of wagon-only trains without leading engine, but with an engine inside the consist.
+
+	Monorail freight engines are no longer dual-headed and have an articulated wagon instead. Power halved to compensate.
+	MEOW class remains unchanged.
+	
+	Power gain per added unit for Monorail Fast class increased. Purchase menu says the base amount that is added to.
+
+	Fixed that express wagons were called Wagon.
+
 0.8.2
 	Slightly changed/simplified vehicle attaching rules:
 		- Engines can no longer attach to other engines in the same class. I do not see a valid use case for this, you always want the best.

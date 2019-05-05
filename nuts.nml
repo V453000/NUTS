@@ -16350,7 +16350,9 @@ item(FEAT_TRAINS, item_NYAN, 311) { //ID311
 //#include src-includes/mono_freight_wagons_graphics_flatbed.nml
 //#include src-includes/mono_freight_wagons_graphics_hopper.nml
 //#include src-includes/mono_freight_wagons_graphics_tanker.nml
+//#include src-includes/mono_freight_graphics.nml
 //#include src-includes/mono_freight_wagons_items.nml
+//#include src-includes/mono_freight_engines.nml
 
 
 //CHAMELEON WAGONS
@@ -40654,8 +40656,8 @@ item(FEAT_TRAINS, item_MEOWCHAMI_1, 130) { //ID130
 
 
 
-//#include src-includes/mono_freight_graphics.nml
-//#include src-includes/mono_freight_engines.nml
+
+
 
 
 

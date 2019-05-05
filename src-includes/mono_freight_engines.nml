@@ -1,41 +1,14 @@
-
-//WTF CLASS
-
-
-
-random_switch (FEAT_TRAINS, SELF, monowtf1_power, bitmask(TRIGGER_VEHICLE_SERVICE, TRIGGER_VEHICLE_ANY_LOAD, TRIGGER_VEHICLE_UNLOAD_ALL )){
-1: 10000;
-1: 12000;
-1: 14000;
+switch(FEAT_TRAINS, SELF, switch_mono_freight_engine_capacity, cargo_type_in_veh){
+  PASS: 30;
+  GOOD: 30;
+  30;
 }
-random_switch (FEAT_TRAINS, SELF, monowtf2_power, bitmask(TRIGGER_VEHICLE_SERVICE, TRIGGER_VEHICLE_ANY_LOAD, TRIGGER_VEHICLE_UNLOAD_ALL )){
-1: 12000;
-1: 15000;
-1: 18000;
-}
-random_switch (FEAT_TRAINS, SELF, monowtf3_power, bitmask(TRIGGER_VEHICLE_SERVICE, TRIGGER_VEHICLE_ANY_LOAD, TRIGGER_VEHICLE_UNLOAD_ALL )){
-1: 12000;
-1: 16000;
-1: 20000;
+switch(FEAT_TRAINS, SELF, switch_mono_freight_engine_loadspeed, cargo_type_in_veh){
+  PASS: 6;
+  GOOD: 6;
+  6;
 }
 
-
-random_switch (FEAT_TRAINS, SELF, monowtf1_sprite, bitmask(TRIGGER_VEHICLE_SERVICE, TRIGGER_VEHICLE_ANY_LOAD, TRIGGER_VEHICLE_UNLOAD_ALL )){
-dependent: monowtf1_power;// activate this and kill triggers ^
-1: spriteset_train_monoWTF1_2;
-1: spriteset_train_monoWTF1_4;
-1: spriteset_train_monoWTF1_5;
-}
-/*
-random_switch (FEAT_TRAINS, SELF, monowtf1_sprite_end, bitmask(TRIGGER_VEHICLE_SERVICE, TRIGGER_VEHICLE_ANY_LOAD, TRIGGER_VEHICLE_UNLOAD_ALL )){
-dependent: monowtf1_power;
-1: spriteset_train_monoWTF1_2_end;
-1: spriteset_train_monoWTF1_4_end;
-1: spriteset_train_monoWTF1_5_end;
-}
-*/
-
-//ITEMS
 switch (FEAT_TRAINS, SELF, switch_monoWTF1_attach, vehicle_type_id){
 	item_monoWTF1: CB_RESULT_ATTACH_ALLOW;
 	
@@ -46,6 +19,10 @@ switch (FEAT_TRAINS, SELF, switch_monoWTF1_attach, vehicle_type_id){
 	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
 	string(error_attach_mono_freight);
 }
+switch (FEAT_TRAINS, SELF, switch_monoWTF1_articulated, extra_callback_info1){
+	1: item_monoWTF1;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
 item(FEAT_TRAINS, item_monoWTF1, 111) { //ID111
 	property {
 		name:                         string(STR_NAME_MONOWTF1);
@@ -55,22 +32,23 @@ item(FEAT_TRAINS, item_monoWTF1, 111) { //ID111
         vehicle_life:                 255;
         reliability_decay:            0;
 		//Just an engine, no refit
-        refittable_cargo_classes:     bitmask(NO_CARGO_CLASS);
+        refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+        default_cargo_type:           GOOD;
 
-        loading_speed:                5;
+        loading_speed:                6;
         cost_factor:                  10;
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        180 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_TILT, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_TILT, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        7000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
-        dual_headed:                  1;
-        cargo_capacity:               0;
+        dual_headed:                  0;
+        cargo_capacity:               30;
         weight:                       110 ton;
         ai_engine_rank:               0;
         engine_class:                 ENGINE_CLASS_MONORAIL;
@@ -84,45 +62,23 @@ item(FEAT_TRAINS, item_monoWTF1, 111) { //ID111
 	}
 	graphics {
 		random_trigger: monowtf1_power;
-		default: monowtf1_sprite;
 		purchase: spriteset_purchaseMenu_monoWTF1;
 		can_attach_wagon: switch_monoWTF1_attach;
 		additional_text: string(info_mono_wtf_1);
 		speed: 							199; //maybe for wagons later, not now
 		power: 							monowtf1_power;
-		weight: 							80; //engine only
+		weight: 							80/2; //engine only
 		tractive_effort_coefficient:		202; //engine only
 		cost_factor:						24; //everything
 		running_cost_factor:				100; //only engines
-		purchase_power: 12000;
+		purchase_power: 12000/2;
+		default:          switch_mono_freight_graphics_decider;
+        articulated_part: switch_monoWTF1_articulated;
+        cargo_capacity:   switch_mono_freight_engine_capacity;
+        loading_speed:    switch_mono_freight_engine_loadspeed;
 	}
 }
 
-
-
-random_switch (FEAT_TRAINS, SELF, monowtf2_sprite, bitmask(TRIGGER_VEHICLE_SERVICE, TRIGGER_VEHICLE_ANY_LOAD, TRIGGER_VEHICLE_UNLOAD_ALL )){
-dependent: monowtf2_power;
-1: spriteset_train_monoWTF2_1;
-1: spriteset_train_monoWTF2_3;
-1: spriteset_train_monoWTF2_5;
-}
-/*
-random_switch (FEAT_TRAINS, SELF, monowtf2_sprite_end, bitmask(TRIGGER_VEHICLE_SERVICE, TRIGGER_VEHICLE_ANY_LOAD, TRIGGER_VEHICLE_UNLOAD_ALL )){
-dependent: monowtf2_power;
-1: spriteset_train_monoWTF2_1_end;
-1: spriteset_train_monoWTF2_3_end;
-1: spriteset_train_monoWTF2_5_end;
-}
-
-switch(FEAT_TRAINS, SELF, monoWTF2_endswitch, position_in_consist_from_end){
-0: monowtf2_sprite_end;
-monowtf2_sprite;
-}
-switch(FEAT_TRAINS, SELF, monoWTF2_visualswitch, position_in_consist){
-0: monowtf2_sprite;
-monoWTF2_endswitch;
-}
-*/
 switch (FEAT_TRAINS, SELF, switch_monoWTF2_attach, vehicle_type_id){
 	item_monoWTF2: CB_RESULT_ATTACH_ALLOW;
 	
@@ -133,6 +89,10 @@ switch (FEAT_TRAINS, SELF, switch_monoWTF2_attach, vehicle_type_id){
 	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
 	string(error_attach_mono_freight);
 }
+switch (FEAT_TRAINS, SELF, switch_monoWTF2_articulated, extra_callback_info1){
+	1: item_monoWTF2;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
 item(FEAT_TRAINS, item_monoWTF2, 113) { //ID113
 	property {
 		name:                         string(STR_NAME_MONOWTF2);
@@ -142,22 +102,23 @@ item(FEAT_TRAINS, item_monoWTF2, 113) { //ID113
         vehicle_life:                 255;
         reliability_decay:            0;
 		//Just an engine, no refit
-        refittable_cargo_classes:     bitmask(NO_CARGO_CLASS);
+        refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+        default_cargo_type:           GOOD;
 
-        loading_speed:                5;
+        loading_speed:                6;
         cost_factor:                  10;
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        200 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_TILT, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_TILT, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        9000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
-        dual_headed:                  1;
-        cargo_capacity:               0;
+        dual_headed:                  0;
+        cargo_capacity:               30;
         weight:                       110 ton;
         ai_engine_rank:               0;
         engine_class:                 ENGINE_CLASS_MONORAIL;
@@ -170,45 +131,23 @@ item(FEAT_TRAINS, item_monoWTF2, 113) { //ID113
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: monowtf2_sprite;
 		can_attach_wagon: switch_monoWTF2_attach;
 		purchase: spriteset_purchaseMenu_monoWTF2;
 		additional_text: string(info_mono_wtf_2);
 		speed: 							211; //maybe for wagons later, not now
 		power:							monowtf2_power;
-		weight: 							80; //engine only
+		weight: 							80/2; //engine only
 		tractive_effort_coefficient:		218; //engine only
 		cost_factor:						25; //everything
 		running_cost_factor:				100; //only engines
 		random_trigger: monowtf2_power;
-		purchase_power: 15000;
+		purchase_power: 15000/2;
+        articulated_part: switch_monoWTF2_articulated;
+        default:          switch_mono_freight_graphics_decider;
+        cargo_capacity:   switch_mono_freight_engine_capacity;
+        loading_speed:    switch_mono_freight_engine_loadspeed;
 	}
 }
-
-
-random_switch (FEAT_TRAINS, SELF, monowtf3_sprite,){
-dependent: monowtf3_power;
-1: spriteset_train_monoWTF3_1;
-1: spriteset_train_monoWTF3_3;
-1: spriteset_train_monoWTF3_5;
-}
-/*
-random_switch (FEAT_TRAINS, SELF, monowtf3_sprite_end,){
-dependent: monowtf3_power;
-1: spriteset_train_monoWTF3_1_end;
-1: spriteset_train_monoWTF3_3_end;
-1: spriteset_train_monoWTF3_5_end;
-}
-
-switch(FEAT_TRAINS, SELF, monoWTF3_endswitch, position_in_consist_from_end){
-0: monowtf3_sprite_end;
-monowtf3_sprite;
-}
-switch(FEAT_TRAINS, SELF, monoWTF3_visualswitch, position_in_consist){
-0: monowtf3_sprite;
-monoWTF3_endswitch;
-}
-*/
 
 switch (FEAT_TRAINS, SELF, switch_monoWTF3_attach, vehicle_type_id){
 	item_monoWTF3: CB_RESULT_ATTACH_ALLOW;
@@ -220,6 +159,10 @@ switch (FEAT_TRAINS, SELF, switch_monoWTF3_attach, vehicle_type_id){
 	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
 	string(error_attach_mono_freight);
 }
+switch (FEAT_TRAINS, SELF, switch_monoWTF3_articulated, extra_callback_info1){
+	1: item_monoWTF3;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
 item(FEAT_TRAINS, item_monoWTF3, 115) { //ID115
 	property {
 		name:                         string(STR_NAME_MONOWTF3);
@@ -229,22 +172,23 @@ item(FEAT_TRAINS, item_monoWTF3, 115) { //ID115
         vehicle_life:                 255;
         reliability_decay:            0;
 		//Just an engine, no refit
-        refittable_cargo_classes:     bitmask(NO_CARGO_CLASS);
+        refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+        default_cargo_type:           GOOD;
 
-        loading_speed:                5;
+        loading_speed:                6;
         cost_factor:                  10;
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        220 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_TILT, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_TILT, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        11000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
-        dual_headed:                  1;
-        cargo_capacity:               0;
+        dual_headed:                  0;
+        cargo_capacity:               30;
         weight:                       110 ton;
         ai_engine_rank:               0;
         engine_class:                 ENGINE_CLASS_MONORAIL;
@@ -257,50 +201,23 @@ item(FEAT_TRAINS, item_monoWTF3, 115) { //ID115
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: monowtf3_sprite;
 		can_attach_wagon: switch_monoWTF3_attach;
 		purchase: spriteset_purchaseMenu_monoWTF3;
 		additional_text: string(info_mono_wtf_3);
 		speed: 							222; //maybe for wagons later, not now
 		power: 							monowtf3_power;
-		weight: 							80; //engine only
+		weight: 							80/2; //engine only
 		tractive_effort_coefficient:		236; //engine only
 		cost_factor:						26; //everything
 		running_cost_factor:				100; //only engines
 		random_trigger: monowtf3_power;
-		purchase_power: 16000;
+		purchase_power: 16000/2;
+        articulated_part: switch_monoWTF3_articulated;
+        default:          switch_mono_freight_graphics_decider;
+        cargo_capacity:   switch_mono_freight_engine_capacity;
+        loading_speed:    switch_mono_freight_engine_loadspeed;
 	}
 }
-
-random_switch (FEAT_TRAINS, SELF, monowtf4_power, bitmask(TRIGGER_VEHICLE_SERVICE, TRIGGER_VEHICLE_ANY_LOAD, TRIGGER_VEHICLE_UNLOAD_ALL )){
-1: 14000;	//sad
-1: 20000;	//neutral
-1: 30000;	//happy
-}
-
-random_switch (FEAT_TRAINS, SELF, monowtf4_sprite){
-dependent: monowtf4_power;
-1: spriteset_train_monoWTF4_1;
-1: spriteset_train_monoWTF4_3;
-1: spriteset_train_monoWTF4_5;
-}
-/*
-random_switch (FEAT_TRAINS, SELF, monowtf4_sprite_end){
-dependent: monowtf4_power;
-1: spriteset_train_monoWTF4_1_end;
-1: spriteset_train_monoWTF4_3_end;
-1: spriteset_train_monoWTF4_5_end;
-}
-
-switch(FEAT_TRAINS, SELF, monoWTF4_endswitch, position_in_consist_from_end){
-0: monowtf4_sprite_end;
-monowtf4_sprite;
-}
-switch(FEAT_TRAINS, SELF, monoWTF4_visualswitch, position_in_consist){
-0: monowtf4_sprite;
-monoWTF4_endswitch;
-}
-*/
 
 switch (FEAT_TRAINS, SELF, switch_monoWTF4_attach, vehicle_type_id){
 	item_monoWTF4: CB_RESULT_ATTACH_ALLOW;
@@ -312,6 +229,10 @@ switch (FEAT_TRAINS, SELF, switch_monoWTF4_attach, vehicle_type_id){
 	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
 	string(error_attach_mono_freight);
 }
+switch (FEAT_TRAINS, SELF, switch_monoWTF4_articulated, extra_callback_info1){
+	1: item_monoWTF4;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
 item(FEAT_TRAINS, item_monoWTF4, 117) { //ID117
 	property {
 		name:                         string(STR_NAME_MONOWTF4);
@@ -321,23 +242,24 @@ item(FEAT_TRAINS, item_monoWTF4, 117) { //ID117
         vehicle_life:                 255;
         reliability_decay:            0;
 		//Just an engine, no refit
-        refittable_cargo_classes:     bitmask(NO_CARGO_CLASS);
+        refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+        default_cargo_type:           GOOD;
 
-        loading_speed:                5;
+        loading_speed:                6;
         cost_factor:                  10;
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        237 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_TILT, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_TILT, TRAIN_FLAG_2CC);
         refit_cost:                   0;
 
         track_type:                   MONO;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        13000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
-        dual_headed:                  1;
-        cargo_capacity:               0;
+        dual_headed:                  0;
+        cargo_capacity:               30;
         weight:                       110 ton;
         ai_engine_rank:               0;
         engine_class:                 ENGINE_CLASS_MONORAIL;
@@ -351,20 +273,20 @@ item(FEAT_TRAINS, item_monoWTF4, 117) { //ID117
 	}
 	graphics {
 		random_trigger: monowtf4_power;
-				
-		default: monowtf4_sprite;
 		can_attach_wagon: switch_monoWTF4_attach;
 		purchase: spriteset_purchaseMenu_monoWTF4;
 		additional_text: string(info_mono_wtf_4);
 		speed: 							236;
 		power: 							monowtf4_power;
-		weight: 							80;
+		weight: 							80/2;
 		tractive_effort_coefficient:		255;
 		cost_factor:						27;
 		running_cost_factor:				100;
-		
-		purchase_power: 20000;
-		
+		purchase_power: 20000/2;
+		articulated_part: switch_monoWTF2_articulated;
+        default:          switch_mono_freight_graphics_decider;
+        cargo_capacity:   switch_mono_freight_engine_capacity;
+        loading_speed:    switch_mono_freight_engine_loadspeed;
 	}
 }
 
@@ -464,6 +386,10 @@ switch (FEAT_TRAINS, SELF, switch_monomedium1_attach, vehicle_type_id){
 	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
 	string(error_attach_mono_freight);
 }
+switch (FEAT_TRAINS, SELF, switch_monomedium1_articulated, extra_callback_info1){
+	1: item_monomedium1;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
 item(FEAT_TRAINS, item_monomedium1, 131) { //ID131
 	property {
 		name:                         string(STR_NAME_MONOM1);
@@ -473,22 +399,23 @@ item(FEAT_TRAINS, item_monomedium1, 131) { //ID131
         vehicle_life:                 255;
         reliability_decay:            5;
 		//Just an engine, no refit
-        refittable_cargo_classes:     bitmask(NO_CARGO_CLASS);
+        refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+        default_cargo_type:           GOOD;
 
-        loading_speed:                5;
+        loading_speed:                6;
         cost_factor:                  10;
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        240 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
-        dual_headed:                  1;
-        cargo_capacity:               0;
+        dual_headed:                  0;
+        cargo_capacity:               30;
         weight:                       110 ton;
         ai_engine_rank:               0;
         engine_class:                 ENGINE_CLASS_MONORAIL;
@@ -501,18 +428,20 @@ item(FEAT_TRAINS, item_monomedium1, 131) { //ID131
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: spriteset_train_monomedium1;
 		can_attach_wagon: switch_monomedium1_attach;
 		purchase: spriteset_purchaseMenu_monomedium1;
 		additional_text: string(info_mono_medium_1);
 		speed: 							228; //maybe for wagons later, not now
-		power: 							10000; //engine only
-		weight: 						80; //engine only
+		power: 							10000/2; //engine only
+		weight: 						80/2; //engine only
 		tractive_effort_coefficient:	monomedium_wetrail_te_switch; //engine only
 		cost_factor:						20; //everything
 		running_cost_factor:				100; //only engines
-		
 		purchase_tractive_effort_coefficient: 255;
+        default:          switch_mono_freight_graphics_decider;
+        articulated_part: switch_monomedium1_articulated;
+        cargo_capacity:   switch_mono_freight_engine_capacity;
+        loading_speed:    switch_mono_freight_engine_loadspeed;
 
 	}
 }
@@ -536,6 +465,10 @@ switch (FEAT_TRAINS, SELF, switch_monomedium2_attach, vehicle_type_id){
 	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
 	string(error_attach_mono_freight);
 }
+switch (FEAT_TRAINS, SELF, switch_monomedium2_articulated, extra_callback_info1){
+	1: item_monomedium2;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
 item(FEAT_TRAINS, item_monomedium2, 133) { //ID133
 	property {
 		name:                         string(STR_NAME_MONOM2);
@@ -545,22 +478,23 @@ item(FEAT_TRAINS, item_monomedium2, 133) { //ID133
         vehicle_life:                 255;
         reliability_decay:            5;
 		//Just an engine, no refit
-        refittable_cargo_classes:     bitmask(NO_CARGO_CLASS);
+        refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+        default_cargo_type:           GOOD;
 
-        loading_speed:                5;
+        loading_speed:                6;
         cost_factor:                  10;
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        260 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        12000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
-        dual_headed:                  1;
-        cargo_capacity:               0;
+        dual_headed:                  0;
+        cargo_capacity:               30;
         weight:                       110 ton;
         ai_engine_rank:               0;
         engine_class:                 ENGINE_CLASS_MONORAIL;
@@ -573,18 +507,20 @@ item(FEAT_TRAINS, item_monomedium2, 133) { //ID133
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: spriteset_train_monomedium2;
 		can_attach_wagon: switch_monomedium2_attach;
 		purchase: spriteset_purchaseMenu_monomedium2;
 		additional_text: string(info_mono_medium_2);
 		speed: 							255; //maybe for wagons later, not now
-		power: 							12000; //engine only
-		weight: 						80; //engine only
+		power: 							12000/2; //engine only
+		weight: 						80/2; //engine only
 		tractive_effort_coefficient:	monomedium_wetrail_te_switch; //engine only
 		cost_factor:						21; //everything
 		running_cost_factor:				100; //only engines
-		
 		purchase_tractive_effort_coefficient: 255;
+        default:          switch_mono_freight_graphics_decider;
+        articulated_part: switch_monomedium2_articulated;
+        cargo_capacity:   switch_mono_freight_engine_capacity;
+        loading_speed:    switch_mono_freight_engine_loadspeed;
 	}
 }
 /*
@@ -607,6 +543,10 @@ switch (FEAT_TRAINS, SELF, switch_monomedium3_attach, vehicle_type_id){
 	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
 	string(error_attach_mono_freight);
 }
+switch (FEAT_TRAINS, SELF, switch_monomedium3_articulated, extra_callback_info1){
+	1: item_monomedium3;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
 item(FEAT_TRAINS, item_monomedium3, 135) { //ID135
 	property {
 		name:                         string(STR_NAME_MONOM3);
@@ -616,22 +556,23 @@ item(FEAT_TRAINS, item_monomedium3, 135) { //ID135
         vehicle_life:                 255;
         reliability_decay:            5;
 		//Just an engine, no refit
-        refittable_cargo_classes:     bitmask(NO_CARGO_CLASS);
+        refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+        default_cargo_type:           GOOD;
 
-        loading_speed:                5;
+        loading_speed:                6;
         cost_factor:                  10;
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        280 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        13000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
-        dual_headed:                  1;
-        cargo_capacity:               0;
+        dual_headed:                  0;
+        cargo_capacity:               30;
         weight:                       110 ton;
         ai_engine_rank:               0;
         engine_class:                 ENGINE_CLASS_MONORAIL;
@@ -644,18 +585,20 @@ item(FEAT_TRAINS, item_monomedium3, 135) { //ID135
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: spriteset_train_monomedium3;
 		can_attach_wagon: switch_monomedium3_attach;
 		purchase: spriteset_purchaseMenu_monomedium3;
 		additional_text: string(info_mono_medium_3);
 		speed: 							280; //maybe for wagons later, not now
-		power: 							15000; //engine only
-		weight: 						80; //engine only
+		power: 							15000/2; //engine only
+		weight: 						80/2; //engine only
 		tractive_effort_coefficient:	monomedium_wetrail_te_switch; //engine only
 		cost_factor:						22; //everything
 		running_cost_factor:				100; //only engines
-		
 		purchase_tractive_effort_coefficient: 255;
+        default:          switch_mono_freight_graphics_decider;
+        articulated_part: switch_monomedium3_articulated;
+        cargo_capacity:   switch_mono_freight_engine_capacity;
+        loading_speed:    switch_mono_freight_engine_loadspeed;
 	}
 }
 
@@ -682,6 +625,10 @@ switch (FEAT_TRAINS, SELF, switch_monomedium4_attach, vehicle_type_id){
 	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
 	string(error_attach_mono_freight);
 }
+switch (FEAT_TRAINS, SELF, switch_monomedium4_articulated, extra_callback_info1){
+	1: item_monomedium4;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
 item(FEAT_TRAINS, item_monomedium4, 137) { //ID137
 	property {
 		name:                         string(STR_NAME_MONOM4);
@@ -691,22 +638,23 @@ item(FEAT_TRAINS, item_monomedium4, 137) { //ID137
         vehicle_life:                 255;
         reliability_decay:            5;
 		//Just an engine, no refit
-        refittable_cargo_classes:     bitmask(NO_CARGO_CLASS);
+        refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+        default_cargo_type:           GOOD;
 
-        loading_speed:                5;
+        loading_speed:                6;
         cost_factor:                  10;
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        300 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
-        dual_headed:                  1;
-        cargo_capacity:               0;
+        dual_headed:                  0;
+        cargo_capacity:               30;
         weight:                       110 ton;
         ai_engine_rank:               0;
         engine_class:                 ENGINE_CLASS_MONORAIL;
@@ -719,18 +667,20 @@ item(FEAT_TRAINS, item_monomedium4, 137) { //ID137
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: monomedium4_random;
 		can_attach_wagon: switch_monomedium4_attach;
 		purchase: spriteset_purchaseMenu_monomedium4;
 		additional_text: string(info_mono_medium_4);
 		speed: 							301; //maybe for wagons later, not now
-		power: 							19000; //engine only
-		weight: 						80; //engine only
+		power: 							19000/2; //engine only
+		weight: 						80/2; //engine only
 		tractive_effort_coefficient:	monomedium_wetrail_te_switch; //engine only
 		cost_factor:						23; //everything
 		running_cost_factor:				100; //only engines
-
 		purchase_tractive_effort_coefficient: 255;
+        default:          switch_mono_freight_graphics_decider;
+        articulated_part: switch_monomedium4_articulated;
+        cargo_capacity:   switch_mono_freight_engine_capacity;
+        loading_speed:    switch_mono_freight_engine_loadspeed;
 	}
 }
 
@@ -761,97 +711,97 @@ spriteset(spriteset_train_monofast4_end, "gfx/MonoFast.png") {template_engine32W
 
 
 switch (FEAT_TRAINS, SELF, switch_monofast1_power, num_vehs_in_consist){
-1 : (4000);
-2 : (4000 + (1 *700));
-3 : (4000 + (2 *700));
-4 : (4000 + (3 *700));
-5 : (4000 + (4 *700));
-6 : (4000 + (5 *700));
-7 : (4000 + (6 *700));
-8 : (4000 + (7 *700));
-9 : (4000 + (8 *700));
-10: (4000 + (9 *700));
-11: (4000 + (10*700));
-12: (4000 + (11*700));
-13: (4000 + (12*700));
-14: (4000 + (13*700));
-15: (4000 + (14*700));
-16: (4000 + (15*700));
-17: (4000 + (16*700));
-18: (4000 + (17*700));
-19: (4000 + (18*700));
-20: (4000 + (19*700));
-(4000+(19*500));
+1 : (2000);
+2 : (2000 + (1 *350));
+3 : (2000 + (2 *350));
+4 : (2000 + (3 *350));
+5 : (2000 + (4 *350));
+6 : (2000 + (5 *350));
+7 : (2000 + (6 *350));
+8 : (2000 + (7 *350));
+9 : (2000 + (8 *350));
+10: (2000 + (9 *350));
+11: (2000 + (10*350));
+12: (2000 + (11*350));
+13: (2000 + (12*350));
+14: (2000 + (13*350));
+15: (2000 + (14*350));
+16: (2000 + (15*350));
+17: (2000 + (16*350));
+18: (2000 + (17*350));
+19: (2000 + (18*350));
+20: (2000 + (19*350));
+    (2000 + (19*350));
 }
 switch (FEAT_TRAINS, SELF, switch_monofast2_power, num_vehs_in_consist){
-1 : (4000);
-2 : (4000 + (1 *900));
-3 : (4000 + (2 *900));
-4 : (4000 + (3 *900));
-5 : (4000 + (4 *900));
-6 : (4000 + (5 *900));
-7 : (4000 + (6 *900));
-8 : (4000 + (7 *900));
-9 : (4000 + (8 *900));
-10: (4000 + (9 *900));
-11: (4000 + (10*900));
-12: (4000 + (11*900));
-13: (4000 + (12*900));
-14: (4000 + (13*900));
-15: (4000 + (14*900));
-16: (4000 + (15*900));
-17: (4000 + (16*900));
-18: (4000 + (17*900));
-19: (4000 + (18*900));
-20: (4000 + (19*900));
-(4000+(19*900));
+1 : (2000);
+2 : (2000 + (1 *500));
+3 : (2000 + (2 *500));
+4 : (2000 + (3 *500));
+5 : (2000 + (4 *500));
+6 : (2000 + (5 *500));
+7 : (2000 + (6 *500));
+8 : (2000 + (7 *500));
+9 : (2000 + (8 *500));
+10: (2000 + (9 *500));
+11: (2000 + (10*500));
+12: (2000 + (11*500));
+13: (2000 + (12*500));
+14: (2000 + (13*500));
+15: (2000 + (14*500));
+16: (2000 + (15*500));
+17: (2000 + (16*500));
+18: (2000 + (17*500));
+19: (2000 + (18*500));
+20: (2000 + (19*500));
+    (2000 + (19*500));
 }
 switch (FEAT_TRAINS, SELF, switch_monofast3_power, num_vehs_in_consist){
-1 : (4000);
-2 : (4000 + (1 *1100));
-3 : (4000 + (2 *1100));
-4 : (4000 + (3 *1100));
-5 : (4000 + (4 *1100));
-6 : (4000 + (5 *1100));
-7 : (4000 + (6 *1100));
-8 : (4000 + (7 *1100));
-9 : (4000 + (8 *1100));
-10: (4000 + (9 *1100));
-11: (4000 + (10*1100));
-12: (4000 + (11*1100));
-13: (4000 + (12*1100));
-14: (4000 + (13*1100));
-15: (4000 + (14*1100));
-16: (4000 + (15*1100));
-17: (4000 + (16*1100));
-18: (4000 + (17*1100));
-19: (4000 + (18*1100));
-20: (4000 + (19*1100));
-(4000+(19*1100));
+1 : (2000);
+2 : (2000 + (1 *750));
+3 : (2000 + (2 *750));
+4 : (2000 + (3 *750));
+5 : (2000 + (4 *750));
+6 : (2000 + (5 *750));
+7 : (2000 + (6 *750));
+8 : (2000 + (7 *750));
+9 : (2000 + (8 *750));
+10: (2000 + (9 *750));
+11: (2000 + (10*750));
+12: (2000 + (11*750));
+13: (2000 + (12*750));
+14: (2000 + (13*750));
+15: (2000 + (14*750));
+16: (2000 + (15*750));
+17: (2000 + (16*750));
+18: (2000 + (17*750));
+19: (2000 + (18*750));
+20: (2000 + (19*750));
+    (2000 + (19*750));
 }
 
 switch (FEAT_TRAINS, SELF, switch_monofast4_power, num_vehs_in_consist){
-1 : 4000;
-2 : 4000 + (1 *1500);
-3 : 4000 + (2 *1500);
-4 : 4000 + (3 *1500);
-5 : 4000 + (4 *1500);
-6 : 4000 + (5 *1500);
-7 : 4000 + (6 *1500);
-8 : 4000 + (7 *1500);
-9 : 4000 + (8 *1500);
-10: 4000 + (9 *1500);
-11: 4000 + (10*1500);
-12: 4000 + (11*1500);
-13: 4000 + (12*1500);
-14: 4000 + (13*1500);
-15: 4000 + (14*1500);
-16: 4000 + (15*1500);
-17: 4000 + (16*1500);
-18: 4000 + (17*1500);
-19: 4000 + (18*1500);
-20: 4000 + (19*1500);
-4000+(19*1500);
+1 : 2000;
+2 : 2000 + (1 *1000);
+3 : 2000 + (2 *1000);
+4 : 2000 + (3 *1000);
+5 : 2000 + (4 *1000);
+6 : 2000 + (5 *1000);
+7 : 2000 + (6 *1000);
+8 : 2000 + (7 *1000);
+9 : 2000 + (8 *1000);
+10: 2000 + (9 *1000);
+11: 2000 + (10*1000);
+12: 2000 + (11*1000);
+13: 2000 + (12*1000);
+14: 2000 + (13*1000);
+15: 2000 + (14*1000);
+16: 2000 + (15*1000);
+17: 2000 + (16*1000);
+18: 2000 + (17*1000);
+19: 2000 + (18*1000);
+20: 2000 + (19*1000);
+    2000 + (19*1000);
 }
 
 switch (FEAT_TRAINS, SELF, switch_monofast_TE, num_vehs_in_consist){
@@ -924,6 +874,10 @@ switch (FEAT_TRAINS, SELF, switch_monofast1_attach, vehicle_type_id){
 	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
 	string(error_attach_mono_freight);
 }
+switch (FEAT_TRAINS, SELF, switch_monofast1_articulated, extra_callback_info1){
+	1: item_monofast1;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
 item(FEAT_TRAINS, item_monofast1, 151) { //ID151
 	property {
 		name:                         string(STR_NAME_MONOF1);
@@ -933,22 +887,23 @@ item(FEAT_TRAINS, item_monofast1, 151) { //ID151
         vehicle_life:                 255;
         reliability_decay:            5;
 		//Just an engine, no refit
-        refittable_cargo_classes:     bitmask(NO_CARGO_CLASS);
+        refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+        default_cargo_type:           GOOD;
 
-        loading_speed:                5;
+        loading_speed:                6;
         cost_factor:                  10;
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        280 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        5000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
-        dual_headed:                  1;
-        cargo_capacity:               0;
+        dual_headed:                  0;
+        cargo_capacity:               30;
         weight:                       110 ton;
         ai_engine_rank:               0;
         engine_class:                 ENGINE_CLASS_MONORAIL;
@@ -961,19 +916,22 @@ item(FEAT_TRAINS, item_monofast1, 151) { //ID151
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: spriteset_train_monofast1;
 		can_attach_wagon: switch_monofast1_attach;
 		purchase: spriteset_purchaseMenu_monofast1;
 		additional_text: string(info_mono_fast_1);
 		speed: 							280;
 		power: 							switch_monofast1_power;//4500;
-		weight: 						80;
+		weight: 						80/2;
 		tractive_effort_coefficient:	switch_monofast_TE;//38;
 		cost_factor:						26;
 		running_cost_factor:				100;
-		
-		purchase_power: 17500;
+		purchase_power: 2350;
 		purchase_tractive_effort_coefficient: 255;
+
+        articulated_part: switch_monofast1_articulated;
+        default:          switch_mono_freight_graphics_decider;
+        cargo_capacity:   switch_mono_freight_engine_capacity;
+        loading_speed:    switch_mono_freight_engine_loadspeed;
 	}
 }
 /*
@@ -996,6 +954,10 @@ switch (FEAT_TRAINS, SELF, switch_monofast2_attach, vehicle_type_id){
 	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
 	string(error_attach_mono_freight);
 }
+switch (FEAT_TRAINS, SELF, switch_monofast2_articulated, extra_callback_info1){
+	1: item_monofast2;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
 item(FEAT_TRAINS, item_monofast2, 153) { //ID153
 	property {
 		name:                         string(STR_NAME_MONOF2);
@@ -1005,22 +967,23 @@ item(FEAT_TRAINS, item_monofast2, 153) { //ID153
         vehicle_life:                 255;
         reliability_decay:            5;
 		//Just an engine, no refit
-        refittable_cargo_classes:     bitmask(NO_CARGO_CLASS);
+        refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+        default_cargo_type:           GOOD;
 
-        loading_speed:                5;
+        loading_speed:                6;
         cost_factor:                  10;
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        300 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        6500 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
-        dual_headed:                  1;
-        cargo_capacity:               0;
+        dual_headed:                  0;
+        cargo_capacity:               30;
         weight:                       110 ton;
         ai_engine_rank:               0;
         engine_class:                 ENGINE_CLASS_MONORAIL;
@@ -1033,19 +996,23 @@ item(FEAT_TRAINS, item_monofast2, 153) { //ID153
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: spriteset_train_monofast2;
 		can_attach_wagon: switch_monofast2_attach;
 		purchase: spriteset_purchaseMenu_monofast2;
 		additional_text: string(info_mono_fast_2);
 		speed: 							301;
 		power: 							switch_monofast2_power;
-		weight: 						80;
+		weight: 						80/2;
 		tractive_effort_coefficient:	switch_monofast_TE;
 		cost_factor:						27;
 		running_cost_factor:				100;
 		
-		purchase_power: 21000;
+		purchase_power: 2500;
 		purchase_tractive_effort_coefficient: 255;
+
+        articulated_part: switch_monofast2_articulated;
+        default:          switch_mono_freight_graphics_decider;
+        cargo_capacity:   switch_mono_freight_engine_capacity;
+        loading_speed:    switch_mono_freight_engine_loadspeed;
 	}
 }
 /*
@@ -1063,10 +1030,14 @@ switch (FEAT_TRAINS, SELF, switch_monofast3_attach, vehicle_type_id){
 
 	item_monotanker:    CB_RESULT_ATTACH_ALLOW;
 	item_monoflatbed:   CB_RESULT_ATTACH_ALLOW;
-	item_monohopper:	  CB_RESULT_ATTACH_ALLOW;
-	item_monopax:			  CB_RESULT_ATTACH_ALLOW;
+	item_monohopper:	CB_RESULT_ATTACH_ALLOW;
+	item_monopax:		CB_RESULT_ATTACH_ALLOW;
 	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
 	string(error_attach_mono_freight);
+}
+switch (FEAT_TRAINS, SELF, switch_monofast3_articulated, extra_callback_info1){
+	1: item_monofast3;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 item(FEAT_TRAINS, item_monofast3, 155) { //ID155
 	property {
@@ -1077,22 +1048,23 @@ item(FEAT_TRAINS, item_monofast3, 155) { //ID155
         vehicle_life:                 255;
         reliability_decay:            5;
 		//Just an engine, no refit
-        refittable_cargo_classes:     bitmask(NO_CARGO_CLASS);
+        refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+        default_cargo_type:           GOOD;
 
-        loading_speed:                5;
+        loading_speed:                6;
         cost_factor:                  10;
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        330 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        8000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
-        dual_headed:                  1;
-        cargo_capacity:               0;
+        dual_headed:                  0;
+        cargo_capacity:               30;
         weight:                       110 ton;
         ai_engine_rank:               0;
         engine_class:                 ENGINE_CLASS_MONORAIL;
@@ -1105,19 +1077,23 @@ item(FEAT_TRAINS, item_monofast3, 155) { //ID155
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: spriteset_train_monofast3;
 		can_attach_wagon: switch_monofast3_attach;
 		purchase: spriteset_purchaseMenu_monofast3;
 		additional_text: string(info_mono_fast_3);
 		speed: 							340;
 		power: 							switch_monofast3_power;
-		weight: 						80;
+		weight: 						80/2;
 		tractive_effort_coefficient:	switch_monofast_TE;
 		cost_factor:						28;
 		running_cost_factor:				100;
 		
-		purchase_power: 25000;
+		purchase_power: 2750;
 		purchase_tractive_effort_coefficient: 255;
+
+        articulated_part: switch_monofast3_articulated;
+        default:          switch_mono_freight_graphics_decider;
+        cargo_capacity:   switch_mono_freight_engine_capacity;
+        loading_speed:    switch_mono_freight_engine_loadspeed;
 	}
 }
 /*
@@ -1140,6 +1116,10 @@ switch (FEAT_TRAINS, SELF, switch_monofast4_attach, vehicle_type_id){
 	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
 	string(error_attach_mono_freight);
 }
+switch (FEAT_TRAINS, SELF, switch_monofast4_articulated, extra_callback_info1){
+	1: item_monofast4;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
 item(FEAT_TRAINS, item_monofast4, 157) { //ID157
 	property {
 		name:                         string(STR_NAME_MONOF4);
@@ -1149,22 +1129,23 @@ item(FEAT_TRAINS, item_monofast4, 157) { //ID157
         vehicle_life:                 255;
         reliability_decay:            5;
 		//Just an engine, no refit
-        refittable_cargo_classes:     bitmask(NO_CARGO_CLASS);
+        refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+        default_cargo_type:           GOOD;
 
-        loading_speed:                5;
+        loading_speed:                6;
         cost_factor:                  10;
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        360 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
-        dual_headed:                  1;
-        cargo_capacity:               0;
+        dual_headed:                  0;
+        cargo_capacity:               30;
         weight:                       110 ton;
         ai_engine_rank:               0;
         engine_class:                 ENGINE_CLASS_MONORAIL;
@@ -1177,19 +1158,23 @@ item(FEAT_TRAINS, item_monofast4, 157) { //ID157
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: spriteset_train_monofast4;
 		can_attach_wagon: switch_monofast4_attach;
 		purchase: spriteset_purchaseMenu_monofast4;
 		additional_text: string(info_mono_fast_4);
 		speed: 							415; //maybe for wagons later, not now
 		power: 							switch_monofast4_power;//9000; //engine only
-		weight: 						80; //engine only
+		weight: 						80/2; //engine only
 		tractive_effort_coefficient:	switch_monofast_TE;//89; //engine only
 		cost_factor:						29; //everything
 		running_cost_factor:				100; //only engines
 		
-		purchase_power: 32500;
+		purchase_power: 3000;
 		purchase_tractive_effort_coefficient: 255;
+
+        articulated_part: switch_monofast4_articulated;
+        default:          switch_mono_freight_graphics_decider;
+        cargo_capacity:   switch_mono_freight_engine_capacity;
+        loading_speed:    switch_mono_freight_engine_loadspeed;
 	}
 }
 

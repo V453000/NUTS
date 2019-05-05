@@ -80,7 +80,7 @@ item(FEAT_TRAINS, item_monoflatbed, 511) { //ID511
         running_cost_factor:          0;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        0;
-        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
         ai_special_flag:              AI_FLAG_CARGO;
@@ -99,7 +99,7 @@ item(FEAT_TRAINS, item_monoflatbed, 511) { //ID511
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: switch_monoflatbed_meowornot;
+		default: switch_mono_freight_graphics_decider;
 		additional_text: string(STR_MONOWAGON);
 		purchase: spriteset_purchaseMenu_monoflatbed;
 		cargo_capacity:   switch_capacity_monouniversal;
@@ -143,7 +143,7 @@ item(FEAT_TRAINS, item_monohopper, 521) { //ID521
         running_cost_factor:          0;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        0;
-        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
         ai_special_flag:              AI_FLAG_CARGO;
@@ -162,7 +162,7 @@ item(FEAT_TRAINS, item_monohopper, 521) { //ID521
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: switch_monohopper_main;
+		default: switch_mono_freight_graphics_decider;
 		additional_text: string(STR_MONOWAGON);
 		purchase: spriteset_purchaseMenu_monohopper;
 		cargo_capacity:   switch_capacity_monouniversal;
@@ -210,7 +210,7 @@ item(FEAT_TRAINS, item_monotanker, 531) { //ID531
         running_cost_factor:          0;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        0;
-        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
         ai_special_flag:              AI_FLAG_CARGO;
@@ -229,7 +229,7 @@ item(FEAT_TRAINS, item_monotanker, 531) { //ID531
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: switch_monotanker_main;
+		default: switch_mono_freight_graphics_decider;
 		additional_text: string(STR_MONOWAGON);
 		purchase: spriteset_purchaseMenu_monotanker;
 		cargo_capacity:   switch_capacity_monouniversal;
@@ -260,178 +260,7 @@ if (param_wagons == 0) {
 
 //SPRITESETS
 spriteset(spriteset_purchaseMenu_monouniversal,		"gfx/PurchaseMenu.png"){template_purchaseMenu(5,17)}
-//CARGO SWITCH
-switch (FEAT_TRAINS, SELF, monouniversal_wagon_switch, cargo_type_in_veh) {
-	URAN: spritegroup_monohopper_uranium;
-	YETI: spritegroup_monoflatbed_YETI;
-	YETY: spritegroup_monoflatbed_YETY;
 
-	PASS: spritegroup_monoflatbed_livestock;
-	MAIL: spritegroup_monoflatbed_crates;
-	
-	LUMB: spritegroup_monoflatbed_lumber;
-	SUPP: monoflatbed_random_supp;
-	ALOY: spritegroup_monoflatbed_steel;
-
-	DIAT: spritegroup_monohopper_sugar;
-		
-	CHEM: spritegroup_monotanker_chemicals;
-	HYCH: spritegroup_monotanker_cola;
-	DEUT: spritegroup_monotanker_water;
-	
-	CMNT: spritegroup_monohopper_bauxite;
-	AORE: spritegroup_monohopper_bauxite;
-	BATT: spritegroup_monoflatbed_batteries;
-	BDMT: spritegroup_monoflatbed_bricks;
-	BEER: spritegroup_monotanker_beer;
-	BRCK: spritegroup_monoflatbed_bricks;
-	BUBL: spritegroup_monoflatbed_bubbles;
-	CLAY: spritegroup_monohopper_clay;
-	COAL: spritegroup_monohopper_coal;
-	COLA: spritegroup_monotanker_cola;
-	CORE: spritegroup_monohopper_copperore;
-	CTCD: spritegroup_monohopper_candyfloss;
-	ENSP: spritegroup_monoflatbed_cars; //will need change later
-	FERT: spritegroup_monohopper_fertiliser;
-	FICR: spritegroup_monohopper_plantfibres;
-	FISH: spritegroup_monotanker_fish;
-	FMSP: spritegroup_monohopper_fertiliser;
-	FOOD: spritegroup_monoflatbed_food;
-	FRUT: spritegroup_monoflatbed_fruit;
-	FRVG: spritegroup_monoflatbed_fruit;
-	FZDR: spritegroup_monoflatbed_fizzydrinks;
-	GLAS: spritegroup_monoflatbed_glass;
-	GOOD: spritegroup_monoflatbed_containers;
-	GRAI: spritegroup_monohopper_grain;
-	GRVL: spritegroup_monohopper_stone;
-	IORE: spritegroup_monohopper_ironore;
-	LIME: spritegroup_monohopper_bauxite;
-	LVST: spritegroup_monoflatbed_livestock;
-	CERE: spritegroup_monohopper_grain;
-	MAIZ: spritegroup_monohopper_grain;
-	MILK: spritegroup_monotanker_milk;
-	MNSP: spritegroup_monoflatbed_crates;
-	OIL_: spritegroup_monotanker_oil;
-	OLSD: spritegroup_monohopper_oilseeds;
-	PAPR: spritegroup_monoflatbed_paper;
-	PETR: spritegroup_monotanker_refinedproducts;
-	PLAS: spritegroup_monotanker_plastic;
-	PLST: spritegroup_monotanker_plastic;
-	POTA: spritegroup_monohopper_clay;
-	RCYC: spritegroup_monohopper_recyclables;
-	RFPR: spritegroup_monotanker_chemicals;
-	RUBR: spritegroup_monohopper_rubber;
-	SAND: spritegroup_monohopper_sand;
-	SCMT: spritegroup_monohopper_scrapmetal;
-	SGBT: spritegroup_monohopper_sugar;
-	SGCN: spritegroup_monohopper_sugar;
-	STEL: spritegroup_monoflatbed_steel;
-	SUGR: spritegroup_monohopper_sugar;
-	SWET: spritegroup_monoflatbed_sweets;
-	TOFF: spritegroup_monohopper_toffee;
-	TOYS: spritegroup_monoflatbed_toys;
-	VEHI: spritegroup_monoflatbed_cars;
-	WATR: spritegroup_monotanker_water;
-	WDPR: spritegroup_monoflatbed_lumber;
-	WHEA: spritegroup_monohopper_grain;
-	WOOD: spritegroup_monoflatbed_wood;
-	WOOL: spritegroup_monohopper_wool;
-	VALU: spritegroup_monoflatbed_valu;
-	DIAM: spritegroup_monoflatbed_diam;
-	GOLD: spritegroup_monoflatbed_gold;
-	spritegroup_monohopper_coal;
-}
-switch (FEAT_TRAINS, SELF, MEOW_universal_wagon_switch, cargo_type_in_veh) {
-	URAN: random_MEOW_hopper_uranium;
-	YETI: random_MEOW_flatbed_YETI;
-	YETY: random_MEOW_flatbed_YETY;
-
-	PASS: random_MEOW_flatbed_livestock;
-	MAIL: random_MEOW_flatbed_crates;
-
-	LUMB: random_MEOW_flatbed_lumber;
-	SUPP: random_MEOW_flatbed_supp;
-	ALOY: random_MEOW_flatbed_steel;
-
-	DIAT: random_MEOW_hopper_sugar;
-		
-	CHEM: random_MEOW_tanker_chemicals;
-	HYCH: random_MEOW_tanker_cola;
-	DEUT: random_MEOW_tanker_water;
-	
-	CMNT: random_MEOW_hopper_bauxite;
-	AORE: random_MEOW_hopper_bauxite;
-	BATT: random_MEOW_flatbed_batteries;
-	BDMT: random_MEOW_flatbed_bricks;
-	BEER: random_MEOW_tanker_beer;
-	BRCK: random_MEOW_flatbed_bricks;
-	BUBL: random_MEOW_flatbed_bubbles;
-	CLAY: random_MEOW_hopper_clay;
-	COAL: random_MEOW_hopper_coal;
-	COLA: random_MEOW_tanker_cola;
-	CORE: random_MEOW_hopper_copperore;
-	CTCD: random_MEOW_hopper_candyfloss;
-	ENSP: random_MEOW_flatbed_ES; //will need change later
-	FERT: random_MEOW_hopper_fertilizer;
-	FICR: random_MEOW_hopper_plantfibres;
-	FISH: random_MEOW_tanker_fish;
-	FMSP: random_MEOW_hopper_fertilizer;
-	FOOD: random_MEOW_flatbed_food;
-	FRUT: random_MEOW_flatbed_fruit;
-	FRVG: random_MEOW_flatbed_fruit;
-	FZDR: random_MEOW_flatbed_beer;
-	GLAS: random_MEOW_flatbed_glass;
-	GOOD: random_MEOW_flatbed_containers;
-	GRAI: random_MEOW_hopper_grain;
-	GRVL: random_MEOW_hopper_stone;
-	IORE: random_MEOW_hopper_ironore;
-	LIME: random_MEOW_hopper_bauxite;
-	LVST: random_MEOW_flatbed_livestock;
-	CERE: random_MEOW_hopper_grain;
-	MAIZ: random_MEOW_hopper_grain;
-	MILK: random_MEOW_tanker_milk;
-	MNSP: random_MEOW_flatbed_crates;
-	OIL_: random_MEOW_tanker_oil;
-	OLSD: random_MEOW_hopper_oilseeds;
-	PAPR: random_MEOW_flatbed_paper;
-	PETR: random_MEOW_tanker_refinedproducts;
-	PLAS: random_MEOW_tanker_plastic;
-	PLST: random_MEOW_tanker_plastic;
-	POTA: random_MEOW_hopper_clay;
-	RCYC: random_MEOW_hopper_recyclables;
-	RFPR: random_MEOW_tanker_chemicals;
-	RUBR: random_MEOW_hopper_rubber;
-	SAND: random_MEOW_hopper_sand;
-	SCMT: random_MEOW_hopper_scrapmetal;
-	SGBT: random_MEOW_hopper_sugar;
-	SGCN: random_MEOW_hopper_sugar;
-	STEL: random_MEOW_flatbed_steel;
-	SUGR: random_MEOW_hopper_sugar;
-	SWET: random_MEOW_flatbed_sweets;
-	TOFF: random_MEOW_hopper_toffee;
-	TOYS: random_MEOW_flatbed_toys;
-	VEHI: random_MEOW_flatbed_ES;
-	WATR: random_MEOW_tanker_water;
-	WDPR: random_MEOW_flatbed_lumber;
-	WHEA: random_MEOW_hopper_grain;
-	WOOD: random_MEOW_flatbed_wood;
-	WOOL: random_MEOW_hopper_wool;
-	VALU: random_MEOW_flatbed_valu;
-	DIAM: random_MEOW_flatbed_diam;
-	GOLD: random_MEOW_flatbed_gold;
-	random_MEOW_hopper_coal;
-}
-
-switch(FEAT_TRAINS, PARENT, switch_monoflatbed_main_meowornot, vehicle_type_id){
-item_MEOW_mono_01: MEOW_universal_wagon_switch;
-item_MEOW_mono_02: MEOW_universal_wagon_switch;
-item_MEOW_mono_03: MEOW_universal_wagon_switch;
-item_MEOW_mono_04: MEOW_universal_wagon_switch;
-item_MEOW_mono_05: MEOW_universal_wagon_switch;
-item_MEOW_mono_06: MEOW_universal_wagon_switch;
-item_MEOW_mono_b1: MEOW_universal_wagon_switch;
-monouniversal_wagon_switch;
-}
 
 
 //ITEM
@@ -452,7 +281,7 @@ item(FEAT_TRAINS, item_monouniversal, 541) { //ID541
         running_cost_factor:          0;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        0;
-        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
         ai_special_flag:              AI_FLAG_CARGO;
@@ -471,7 +300,7 @@ item(FEAT_TRAINS, item_monouniversal, 541) { //ID541
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: switch_monoflatbed_main_meowornot;
+		default: switch_mono_freight_graphics_decider;
 		additional_text: string(STR_MONOWAGON);
 		purchase: spriteset_purchaseMenu_monouniversal;
 		cargo_capacity:   switch_capacity_monouniversal;
