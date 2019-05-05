@@ -174,7 +174,7 @@ item(FEAT_TRAINS, item_maglevflatbed, 611) { //ID611
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: maglevflatbed_switch;//maglevflatbed_wagon_switch;
+		default: switch_mglv_freight_short_graphics_decider;//maglevflatbed_wagon_switch;
 		additional_text: string(STR_MAGLEVWAGON);
 		purchase: spriteset_purchaseMenu_magflatbed;
 		articulated_part: switch_maglevflatbed_articulated;
@@ -246,7 +246,7 @@ item(FEAT_TRAINS, item_maglevhopper, 621) { //ID621
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: maglevhopper_switch;
+		default: switch_mglv_freight_short_graphics_decider;
 		additional_text: string(STR_MAGLEVWAGON);
 		purchase: spriteset_purchaseMenu_maghopper;
 		articulated_part: switch_maglevhopper_articulated;
@@ -318,7 +318,7 @@ item(FEAT_TRAINS, item_maglevtanker, 631) { //ID631
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: maglevtanker_switch;//maglevtanker_wagon_switch;
+		default: switch_mglv_freight_short_graphics_decider;//maglevtanker_wagon_switch;
 		additional_text: string(STR_MAGLEVWAGON);
 		purchase: spriteset_purchaseMenu_magtanker;
 		articulated_part: switch_maglevtanker_articulated;
@@ -388,7 +388,7 @@ item(FEAT_TRAINS, item_maglevuniversal, 641) { //ID641
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: maglevuniversal_switch;//maglevuniversal_wagon_switch;
+		default: switch_mglv_freight_short_graphics_decider;//maglevuniversal_wagon_switch;
 		additional_text: string(STR_MAGLEVWAGON);
 		purchase: spriteset_purchaseMenu_maguniversal;
 		articulated_part: switch_maglevuniversal_articulated;

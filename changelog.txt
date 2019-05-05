@@ -6,6 +6,8 @@
 	
 	Power gain per added unit for Monorail Fast class increased. Purchase menu says the base amount that is added to.
 
+	Maglev freight engines are no longer dual-headed and have an articulated wagon instead. Power halved to compensate.
+
 	Fixed that express wagons were called Wagon.
 
 0.8.2
