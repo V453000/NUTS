@@ -1531,7 +1531,7 @@ switch(FEAT_TRAINS, SELF, railuniversal3_wagon_switch_1, cargo_type_in_veh){
 	GOLD: railuniversal3_wagon_switch_2;
 	YETI: railuniversal3_wagon_switch_2;
 	YETY: railuniversal3_wagon_switch_2;
-	railuniversal3_wagon_switch_2;
+	railuniversal3_wagon_switch_3;
 }
 switch(FEAT_TRAINS, SELF, railuniversal3_wagon_switch, vehicle_type_id){
 	412: railuniversal3_wagon_switch_3;
