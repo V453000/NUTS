@@ -1659,21 +1659,23 @@ switch(FEAT_TRAINS, PARENT, railuniversal1_wagon_switch_2, count_veh_id(451)){
 	railflatbed_express_hack;
 }
 switch(FEAT_TRAINS, SELF, railuniversal1_wagon_switch_1, cargo_type_in_veh){
-	PASS: railflatbed1_express_hack_pass;
-	MAIL: railflatbed1_express_hack_mail;
-	VALU: railflatbed1_express_hack_valu;
-	DIAM: railflatbed1_express_hack_valu;
-	GOLD: railflatbed1_express_hack_valu;
-	YETI: railflatbed1_express_hack_mail;
-	YETY: railflatbed1_express_hack_valu;
-	railuniversal1_wagon_switch_2;
+	PASS: railuniversal1_wagon_switch_2;
+	MAIL: railuniversal1_wagon_switch_2;
+	VALU: railuniversal1_wagon_switch_2;
+	DIAM: railuniversal1_wagon_switch_2;
+	GOLD: railuniversal1_wagon_switch_2;
+	YETI: railuniversal1_wagon_switch_2;
+	YETY: railuniversal1_wagon_switch_2;
+	railuniversal1_wagon_switch_3;
 }
-//ARTICULATION
-switch(FEAT_TRAINS, PARENT, railuniversal1_wagon_switch, vehicle_type_id){
+switch(FEAT_TRAINS, SELF, railuniversal1_wagon_switch, vehicle_type_id){
 	411: railuniversal1_wagon_switch_3;
 	441: railuniversal1_wagon_switch_3;
 	railuniversal1_wagon_switch_1;
 }
+
+
+
 switch (FEAT_TRAINS, SELF, switch_railuniversal1_articulated, extra_callback_info1){
 1: return item_railuniversal1;
 return CB_RESULT_NO_MORE_ARTICULATED_PARTS;

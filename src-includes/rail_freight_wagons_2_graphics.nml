@@ -1429,7 +1429,7 @@ switch (FEAT_TRAINS, SELF, railtanker3_wagon_switch, cargo_type_in_veh) {
 //PURCHASE MENU
 spriteset(spriteset_purchaseMenu_railuniversal3, 		"gfx/PurchaseMenu.png"){template_purchaseMenu(5,19)}
 //CARGO SWITCH
-switch (FEAT_TRAINS, SELF, railuniversal3_wagon_switch, cargo_type_in_veh) {
+switch (FEAT_TRAINS, SELF, railuniversal3_wagon_switch_3, cargo_type_in_veh) {
 	URAN: railhopper3_random_uranium;
 	YETI: spritegroup_railflatbed3_YETI;
 	YETY: spritegroup_railflatbed3_YETY;
@@ -1507,4 +1507,40 @@ switch (FEAT_TRAINS, SELF, railuniversal3_wagon_switch, cargo_type_in_veh) {
 	GOLD: spritegroup_railflatbed3_gold;
 
 	spritegroup_railflatbed3_crates;
+}
+
+switch(FEAT_TRAINS, SELF, railflatbed3_express_hack, cargo_type_in_veh){
+	PASS: switch_raildefault2_wagons_pass;
+	MAIL: switch_raildefault2_wagons_mail;
+	VALU: switch_raildefault2_wagons_gold;
+	DIAM: switch_raildefault2_wagons_gold;
+	GOLD: switch_raildefault2_wagons_gold;
+	YETI: switch_raildefault2_wagons_mail;
+	YETY: switch_raildefault2_wagons_gold;
+	switch_raildefault2_wagons_pass;
+}
+switch(FEAT_TRAINS, PARENT, railuniversal3_wagon_switch_2, count_veh_id(451)){
+	0: railuniversal3_wagon_switch_3;
+	railflatbed3_express_hack;
+}
+switch(FEAT_TRAINS, SELF, railuniversal3_wagon_switch_1, cargo_type_in_veh){
+	PASS: railuniversal3_wagon_switch_2;
+	MAIL: railuniversal3_wagon_switch_2;
+	VALU: railuniversal3_wagon_switch_2;
+	DIAM: railuniversal3_wagon_switch_2;
+	GOLD: railuniversal3_wagon_switch_2;
+	YETI: railuniversal3_wagon_switch_2;
+	YETY: railuniversal3_wagon_switch_2;
+	railuniversal3_wagon_switch_2;
+}
+switch(FEAT_TRAINS, SELF, railuniversal3_wagon_switch, vehicle_type_id){
+	412: railuniversal3_wagon_switch_3;
+	442: railuniversal3_wagon_switch_3;
+	railuniversal3_wagon_switch_1;
+}
+
+// ARTICULATION
+switch (FEAT_TRAINS, SELF, switch_railuniversal3_articulated, extra_callback_info1){
+1: return item_railuniversal3;
+return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
