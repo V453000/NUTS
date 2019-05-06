@@ -502,7 +502,7 @@ switch (FEAT_TRAINS, SELF, MEOW_universal_wagon_switch, cargo_type_in_veh) {
 	random_MEOW_hopper_coal;
 }
 
-switch(FEAT_TRAINS, PARENT, switch_monoflatbed_main_meowornot, vehicle_type_id){
+switch(FEAT_TRAINS, PARENT, switch_monoflatbed_main_meowornot_x, vehicle_type_id){
 item_MEOW_mono_01: MEOW_universal_wagon_switch;
 item_MEOW_mono_02: MEOW_universal_wagon_switch;
 item_MEOW_mono_03: MEOW_universal_wagon_switch;
@@ -513,3 +513,23 @@ item_MEOW_mono_b1: MEOW_universal_wagon_switch;
 monouniversal_wagon_switch;
 }
 
+
+switch(FEAT_TRAINS, PARENT, monouniversal_wagon_switch_2, count_veh_id(551)){
+	0: switch_monoflatbed_main_meowornot_x;
+	switch_monodefault1_wagons;
+}
+switch(FEAT_TRAINS, SELF, monouniversal_wagon_switch_1, cargo_type_in_veh){
+	PASS: monouniversal_wagon_switch_2;
+	MAIL: monouniversal_wagon_switch_2;
+	VALU: monouniversal_wagon_switch_2;
+	DIAM: monouniversal_wagon_switch_2;
+	GOLD: monouniversal_wagon_switch_2;
+	YETI: monouniversal_wagon_switch_2;
+	YETY: monouniversal_wagon_switch_2;
+	switch_monoflatbed_main_meowornot_x;
+}
+switch(FEAT_TRAINS, SELF, switch_monoflatbed_main_meowornot, vehicle_type_id){
+	412: switch_monoflatbed_main_meowornot_x;
+	442: switch_monoflatbed_main_meowornot_x;
+	monouniversal_wagon_switch_1;
+}
