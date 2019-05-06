@@ -2950,7 +2950,7 @@ switch (FEAT_TRAINS, SELF, SLUGuniversal_wagon_switch, cargo_type_in_veh) {
 }
 
 //ITEM
-switch (FEAT_TRAINS, PARENT, maglevuniversal_switch, vehicle_type_id) {
+switch (FEAT_TRAINS, PARENT, maglevuniversal_switch_x, vehicle_type_id) {
 item_SLUG: SLUGuniversal_wagon_switch;
 item_ANIMALEXPRESS: SLUGuniversal_wagon_switch;
 item_RAINBOWSLUG: SLUGuniversal_wagon_switch;
@@ -2965,3 +2965,26 @@ item_magfast4: maglevuniversal_wagon_switch;
 maglevuniversal_wagon_switch;
 }
 
+
+
+
+
+switch(FEAT_TRAINS, PARENT, mglvuniversal_wagon_switch_2, count_veh_id(651)){
+	0: maglevuniversal_switch_x;
+	switch_magdefault1_wagons;
+}
+switch(FEAT_TRAINS, SELF, mglvuniversal_wagon_switch_1, cargo_type_in_veh){
+	PASS: mglvuniversal_wagon_switch_2;
+	MAIL: mglvuniversal_wagon_switch_2;
+	VALU: mglvuniversal_wagon_switch_2;
+	DIAM: mglvuniversal_wagon_switch_2;
+	GOLD: mglvuniversal_wagon_switch_2;
+	YETI: mglvuniversal_wagon_switch_2;
+	YETY: mglvuniversal_wagon_switch_2;
+	maglevuniversal_switch_x;
+}
+switch(FEAT_TRAINS, SELF, maglevuniversal_switch, vehicle_type_id){
+	611: maglevuniversal_switch_x;
+	641: maglevuniversal_switch_x;
+	mglvuniversal_wagon_switch_1;
+}

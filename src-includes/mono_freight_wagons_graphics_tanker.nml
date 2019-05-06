@@ -529,7 +529,7 @@ switch(FEAT_TRAINS, SELF, monouniversal_wagon_switch_1, cargo_type_in_veh){
 	switch_monoflatbed_main_meowornot_x;
 }
 switch(FEAT_TRAINS, SELF, switch_monoflatbed_main_meowornot, vehicle_type_id){
-	412: switch_monoflatbed_main_meowornot_x;
-	442: switch_monoflatbed_main_meowornot_x;
+	511: switch_monoflatbed_main_meowornot_x;
+	541: switch_monoflatbed_main_meowornot_x;
 	monouniversal_wagon_switch_1;
 }
