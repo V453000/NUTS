@@ -4,7 +4,7 @@ grf {
 	desc: string(STR_GRF_DESC);
 	version: 83;
 	url  : string(STR_GRF_WEBSITE);
-	min_compatible_version: 82;
+	min_compatible_version: 83;
 
 	param 0 {
 	param_wagons {
