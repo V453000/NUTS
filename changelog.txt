@@ -10,6 +10,10 @@
 
 	Fixed that express wagons were called Wagon.
 
+	When there is at least a single Express wagon in a freight train, the articulated wagons look like Express wagons when refit to express cargoes.
+
+	Chameleon engine capacity and loadings speed increased by 50%. Wagons remain untouched.
+
 0.8.2
 	Slightly changed/simplified vehicle attaching rules:
 		- Engines can no longer attach to other engines in the same class. I do not see a valid use case for this, you always want the best.
