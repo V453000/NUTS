@@ -481,14 +481,25 @@ template template_MEOW_rail_tender(x,y) {
 
 template template_expresswagons(x, y) { //8/8 or 32px
 	//[left_x,  upper_y,    width,     height,     offset_x,     offset_y]
-	[  0+184*x, 29*y,  12, 28,  -5, -15]
-	[  13+184*x, 29*y, 22, 21, -13, -13]
+	[  0+184*x, 29*y, 12, 28,  -5, -15]
+	[ 13+184*x, 29*y, 22, 21, -13, -13]
 	[ 36+184*x, 29*y, 32, 16, -16, -11]
 	[ 69+184*x, 29*y, 22, 21,  -5, -12]
-	[ 92+184*x, 29*y,  12, 28,  -5, -15]
-	[ 105+184*x, 29*y, 22, 21, -13, -13]
+	[ 92+184*x, 29*y, 12, 28,  -5, -15]
+	[105+184*x, 29*y, 22, 21, -13, -13]
 	[128+184*x, 29*y, 32, 16, -16, -11]
 	[161+184*x, 29*y, 22, 21,  -5, -12]
+}
+template template_expresswagons_shifted(x, y, u) { //8/8 or 32px
+	//[left_x,  upper_y,    width,     height,     offset_x,     offset_y]
+	[  0+184*x, 29*y, 12, 28,  -5 +0*u, -15 -2*u]
+	[ 13+184*x, 29*y, 22, 21, -13 +2*u, -13 -1*u]
+	[ 36+184*x, 29*y, 32, 16, -16 +4*u, -11 +0*u]
+	[ 69+184*x, 29*y, 22, 21,  -5 +2*u, -12 +1*u]
+	[ 92+184*x, 29*y, 12, 28,  -5 +0*u, -15 +2*u]
+	[105+184*x, 29*y, 22, 21, -13 -2*u, -13 +1*u]
+	[128+184*x, 29*y, 32, 16, -16 -4*u, -11 +0*u]
+	[161+184*x, 29*y, 22, 21,  -5 -2*u, -12 -1*u]
 }
 
 template template_railflatbed1(x, y) { //rail flatbeds
@@ -10795,15 +10806,15 @@ spriteset (spriteset_railcom8_wagons_gold, 					"gfx/EXPRESS_wagons.png"){templa
 spriteset (spriteset_railcom9_wagons_gold, 					"gfx/EXPRESS_wagons.png"){template_expresswagons(6,16)}
 
 spriteset (spriteset_raildefault1_wagons_pass, 					"gfx/EXPRESS_wagons.png"){template_expresswagons(8,0)}
-spriteset (spriteset_raildefault1_wagons_pass_tail, 			"gfx/EXPRESS_wagons.png"){template_expresswagons(8,1)}
+spriteset (spriteset_raildefault1_wagons_pass_tail, 		"gfx/EXPRESS_wagons.png"){template_expresswagons(8,1)}
 spriteset (spriteset_raildefault2_wagons_pass, 					"gfx/EXPRESS_wagons.png"){template_expresswagons(8,2)}
-spriteset (spriteset_raildefault2_wagons_pass_tail, 			"gfx/EXPRESS_wagons.png"){template_expresswagons(8,3)}
+spriteset (spriteset_raildefault2_wagons_pass_tail, 		"gfx/EXPRESS_wagons.png"){template_expresswagons(8,3)}
 spriteset (spriteset_raildefault3_wagons_pass, 					"gfx/EXPRESS_wagons.png"){template_expresswagons(8,4)}
-spriteset (spriteset_raildefault3_wagons_pass_tail, 			"gfx/EXPRESS_wagons.png"){template_expresswagons(8,5)}
+spriteset (spriteset_raildefault3_wagons_pass_tail, 		"gfx/EXPRESS_wagons.png"){template_expresswagons(8,5)}
 spriteset (spriteset_monodefault1_wagons_pass, 					"gfx/EXPRESS_wagons.png"){template_expresswagons(8,8)}
-spriteset (spriteset_monodefault1_wagons_pass_tail, 			"gfx/EXPRESS_wagons.png"){template_expresswagons(8,9)}
+spriteset (spriteset_monodefault1_wagons_pass_tail, 		"gfx/EXPRESS_wagons.png"){template_expresswagons(8,9)}
 spriteset (spriteset_monodefault2_wagons_pass, 					"gfx/EXPRESS_wagons.png"){template_expresswagons(8,10)}
-spriteset (spriteset_monodefault2_wagons_pass_tail, 			"gfx/EXPRESS_wagons.png"){template_expresswagons(8,11)}
+spriteset (spriteset_monodefault2_wagons_pass_tail, 		"gfx/EXPRESS_wagons.png"){template_expresswagons(8,11)}
 
 spriteset (spriteset_raildefault1_wagons_mail, 					"gfx/EXPRESS_wagons.png"){template_expresswagons(9,0)}
 spriteset (spriteset_raildefault1_wagons_mail_tail, 			"gfx/EXPRESS_wagons.png"){template_expresswagons(9,1)}

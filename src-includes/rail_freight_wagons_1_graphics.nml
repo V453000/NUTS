@@ -64,6 +64,14 @@ switch(FEAT_TRAINS, SELF, switch_capacity_railuniversal1, cargo_type_in_veh){
 	return 12;
 }
 //RAIL FLATBED 1
+spriteset(spriteset_railflatbed1_express_2_pass,		"gfx/EXPRESS_wagons_short.png"){template_expresswagons_shifted(0,0,4)}
+spriteset(spriteset_railflatbed1_express_2_mail,		"gfx/EXPRESS_wagons_short.png"){template_expresswagons_shifted(0,2,4)}
+spriteset(spriteset_railflatbed1_express_2_valu,		"gfx/EXPRESS_wagons_short.png"){template_expresswagons_shifted(0,4,4)}
+
+spriteset(spriteset_railflatbed1_express_1_pass,		"gfx/EXPRESS_wagons_short.png"){template_expresswagons_shifted(0,1,0)}
+spriteset(spriteset_railflatbed1_express_1_mail,		"gfx/EXPRESS_wagons_short.png"){template_expresswagons_shifted(0,3,0)}
+spriteset(spriteset_railflatbed1_express_1_valu,		"gfx/EXPRESS_wagons_short.png"){template_expresswagons_shifted(0,5,0)}
+
 //SPRITESETS
 spriteset(spriteset_purchaseMenu_railflatbed1,		"gfx/PurchaseMenu.png"){template_purchaseMenu(0,20)}
 spriteset(spriteset_railflatbed1_empty_bricks, 			"gfx/RailWagons_1st_Flatbed.png") { template_railflatbed1(0, 0) }
@@ -1532,8 +1540,42 @@ return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 //RAIL UNIVERSAL 1
 
 
+
+// EXPRESS HACK
+switch(FEAT_TRAINS, SELF, railflatbed1_express_hack_pass, position_in_articulated_veh){
+	0: spriteset_railflatbed1_express_1_pass;
+	1: spriteset_railflatbed1_express_2_pass;
+	2: spriteset_railflatbed1_express_1_pass;
+	3: spriteset_railflatbed1_express_2_pass;
+	spriteset_railflatbed1_express_1_pass;
+}
+switch(FEAT_TRAINS, SELF, railflatbed1_express_hack_mail, position_in_articulated_veh){
+	0: spriteset_railflatbed1_express_1_mail;
+	1: spriteset_railflatbed1_express_2_mail;
+	2: spriteset_railflatbed1_express_1_mail;
+	3: spriteset_railflatbed1_express_2_mail;
+	spriteset_railflatbed1_express_1_mail;
+}
+switch(FEAT_TRAINS, SELF, railflatbed1_express_hack_valu, position_in_articulated_veh){
+	0: spriteset_railflatbed1_express_1_valu;
+	1: spriteset_railflatbed1_express_2_valu;
+	2: spriteset_railflatbed1_express_1_valu;
+	3: spriteset_railflatbed1_express_2_valu;
+	spriteset_railflatbed1_express_1_valu;
+}
+switch(FEAT_TRAINS, SELF, railflatbed_express_hack, cargo_type_in_veh){
+	PASS: railflatbed1_express_hack_pass;
+	MAIL: railflatbed1_express_hack_mail;
+	VALU: railflatbed1_express_hack_valu;
+	DIAM: railflatbed1_express_hack_valu;
+	GOLD: railflatbed1_express_hack_valu;
+	YETI: railflatbed1_express_hack_mail;
+	YETY: railflatbed1_express_hack_valu;
+	railflatbed1_express_hack_pass;
+}
+
 //CARGO_SWITCH
-switch (FEAT_TRAINS, SELF, railuniversal1_wagon_switch, cargo_type_in_veh) {
+switch (FEAT_TRAINS, SELF, railuniversal1_wagon_switch_3, cargo_type_in_veh) {
 	URAN: railhopper1_wagon_switch;
 	YETI: spritegroup_railflatbed1_YETI;
 	YETY: spritegroup_railflatbed1_YETY;
@@ -1612,7 +1654,26 @@ switch (FEAT_TRAINS, SELF, railuniversal1_wagon_switch, cargo_type_in_veh) {
 	DIAM: railflatbed1_wagon_switch;
 	spritegroup_railflatbed1_crates;
 }
+switch(FEAT_TRAINS, PARENT, railuniversal1_wagon_switch_2, count_veh_id(451)){
+	0: railuniversal1_wagon_switch_3;
+	railflatbed_express_hack;
+}
+switch(FEAT_TRAINS, SELF, railuniversal1_wagon_switch_1, cargo_type_in_veh){
+	PASS: railflatbed1_express_hack_pass;
+	MAIL: railflatbed1_express_hack_mail;
+	VALU: railflatbed1_express_hack_valu;
+	DIAM: railflatbed1_express_hack_valu;
+	GOLD: railflatbed1_express_hack_valu;
+	YETI: railflatbed1_express_hack_mail;
+	YETY: railflatbed1_express_hack_valu;
+	railuniversal1_wagon_switch_2;
+}
 //ARTICULATION
+switch(FEAT_TRAINS, PARENT, railuniversal1_wagon_switch, vehicle_type_id){
+	411: railuniversal1_wagon_switch_3;
+	441: railuniversal1_wagon_switch_3;
+	railuniversal1_wagon_switch_1;
+}
 switch (FEAT_TRAINS, SELF, switch_railuniversal1_articulated, extra_callback_info1){
 1: return item_railuniversal1;
 return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
