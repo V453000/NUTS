@@ -35337,6 +35337,47 @@ item_MEOWCHAMI_1: CB_RESULT_ATTACH_ALLOW;
 
 return string(error_attach_mono_chameleon);
 }
+
+
+switch(FEAT_TRAINS, SELF, switch_chameleon_engine_capacity_bigger, cargo_type_in_veh){
+	PASS: 14;
+	MAIL: 14;
+	GOOD: 14;
+	14;
+}
+switch(FEAT_TRAINS, SELF, switch_chameleon_engine_capacity_smaller, cargo_type_in_veh){
+	PASS: 7;
+	MAIL: 7;
+	GOOD: 7;
+	7;
+}
+switch(FEAT_TRAINS, SELF, switch_chameleon_engine_capacity, position_in_articulated_veh){
+	0: switch_chameleon_engine_capacity_smaller;
+	1: switch_chameleon_engine_capacity_bigger;
+	2: switch_chameleon_engine_capacity_bigger;
+	3: switch_chameleon_engine_capacity_smaller;
+	switch_chameleon_engine_capacity_smaller;
+}
+switch(FEAT_TRAINS, SELF, switch_chameleon_engine_loadspeed_bigger, cargo_type_in_veh){
+	PASS: 2;
+	MAIL: 2;
+	GOOD: 2;
+	2;
+}
+switch(FEAT_TRAINS, SELF, switch_chameleon_engine_loadspeed_smaller, cargo_type_in_veh){
+	PASS: 1;
+	MAIL: 1;
+	GOOD: 1;
+	1;
+}
+switch(FEAT_TRAINS, SELF, switch_chameleon_engine_loadspeed, position_in_articulated_veh){
+	0: switch_chameleon_engine_loadspeed_smaller;
+	1: switch_chameleon_engine_loadspeed_bigger;
+	2: switch_chameleon_engine_loadspeed_bigger;
+	3: switch_chameleon_engine_loadspeed_smaller;
+	switch_chameleon_engine_loadspeed_smaller;
+}
+
 //CHAMELEON
 item(FEAT_TRAINS, item_CHAMELEON1, 121) { //ID121
 	property {
@@ -35384,8 +35425,8 @@ item(FEAT_TRAINS, item_CHAMELEON1, 121) { //ID121
 		tractive_effort_coefficient:		switch_CHAMELEON1_wetrail_te_switch; //engine only
 		cost_factor:						20; //everything
 		running_cost_factor:				100; //only engines
-		cargo_capacity: 7;
-		loading_speed: 1;
+		cargo_capacity: switch_chameleon_engine_capacity;
+		loading_speed: switch_chameleon_engine_loadspeed;
 		purchase_speed: 160;
 		purchase_power: 5500;
 		purchase_tractive_effort_coefficient: 175;
@@ -35808,8 +35849,8 @@ item(FEAT_TRAINS, item_CHAMELEON2, 123) { //ID123
 		tractive_effort_coefficient:		switch_CHAMELEON2_wetrail_te_switch; //engine only
 		cost_factor:						23; //everything
 		running_cost_factor:				100; //only engines
-		cargo_capacity: 7;
-		loading_speed: 1;
+		cargo_capacity: switch_chameleon_engine_capacity;
+		loading_speed: switch_chameleon_engine_loadspeed;
 		purchase_speed: 190;
 		purchase_power: 6500;
 		purchase_tractive_effort_coefficient: 183;
@@ -36219,8 +36260,8 @@ item(FEAT_TRAINS, item_CHAMELEON3, 125) { //ID125
 		tractive_effort_coefficient:		switch_CHAMELEON3_wetrail_te_switch; //engine only
 		cost_factor:						26; //everything
 		running_cost_factor:				100; //only engines
-		cargo_capacity: 7;
-		loading_speed: 1;
+		cargo_capacity: switch_chameleon_engine_capacity;
+		loading_speed: switch_chameleon_engine_loadspeed;
 		purchase_speed: 220;
 		purchase_power: 8000;
 		purchase_tractive_effort_coefficient: 190;
@@ -36637,8 +36678,8 @@ item(FEAT_TRAINS, item_CHAMELEON4, 127) { //ID127
 		tractive_effort_coefficient:		switch_CHAMELEON4_wetrail_te_switch; //engine only
 		cost_factor:						29; //everything
 		running_cost_factor:				100; //only engines
-		cargo_capacity: 7;
-		loading_speed: 1;
+		cargo_capacity: switch_chameleon_engine_capacity;
+		loading_speed: switch_chameleon_engine_loadspeed;
 		purchase_speed: 255;
 		purchase_power: 10000;
 		purchase_tractive_effort_coefficient: 197;
@@ -37043,8 +37084,8 @@ item(FEAT_TRAINS, item_CHAMELEON5, 129) { //ID129
 		tractive_effort_coefficient:		switch_CHAMELEON5_wetrail_te_switch; //engine only
 		cost_factor:						33; //everything
 		running_cost_factor:				100; //only engines
-		cargo_capacity: 7;
-		loading_speed: 1;
+		cargo_capacity: switch_chameleon_engine_capacity;
+		loading_speed: switch_chameleon_engine_loadspeed;
 		purchase_speed: 300;
 		purchase_power: 12500;
 		purchase_tractive_effort_coefficient: 205;
@@ -37253,8 +37294,8 @@ item(FEAT_TRAINS, item_MEOWCHAMI_1, 130) { //ID130
 		tractive_effort_coefficient:			MEOWCHAMI_te_switch; //engine only
 		cost_factor:						25; //everything
 		running_cost_factor:				100; //only engines
-		cargo_capacity: 7;
-		loading_speed: 1;
+		cargo_capacity: switch_chameleon_engine_capacity;
+		loading_speed: switch_chameleon_engine_loadspeed;
 		purchase_speed: 212;
 		
 	}
