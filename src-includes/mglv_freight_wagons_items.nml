@@ -201,7 +201,40 @@ if (param_wagons == 0) {
 	}
 }
 
-
+/*
+switch (FEAT_TRAINS,SELF, switch_mglv_hopper_layers, [
+  STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 4 ? CB_FLAG_MORE_SPRITES  : 0) + PALETTE_USE_DEFAULT, 0x100),
+  getbits(extra_callback_info1, 8, 8)
+  ]){
+  0: spritegroup_maglevhopper_wagon_layer;
+  1: spritegroup_maglevhopper_cargo_layer;
+  //return spritegroup_maglevhopper_cargo_layer;
+}
+switch (FEAT_TRAINS,SELF, switch_mglv_hopper_layers_colouring, getbits(extra_callback_info1, 8, 8)){
+  0: base_sprite_2cc + 3 + 16 * company_colour2;//CC yellow
+	1: base_sprite_2cc + 4 + 16 * company_colour2;//CC red
+	3: base_sprite_2cc + 11 + 16 * company_colour2;//CC purple
+	4: base_sprite_2cc + 6 + 16 * company_colour2;//CC green
+}
+*/
+switch (FEAT_TRAINS,SELF, switch_mglv_hopper_layer0, [
+  STORE_TEMP(CB_FLAG_MORE_SPRITES + base_sprite_2cc + 3 + 16 * company_colour2, 0x100)
+]){
+  return spritegroup_maglevhopper_wagon_layer;
+}
+ 
+switch (FEAT_TRAINS,SELF, switch_mglv_hopper_layer1, [
+  STORE_TEMP(base_sprite_2cc + 4 + 16 * company_colour2, 0x100)
+]){
+  return spritegroup_maglevhopper_cargo_layer;
+}
+ 
+ 
+switch (FEAT_TRAINS,SELF, switch_mglv_hopper_layers, getbits(extra_callback_info1, 8, 8)){
+  0: switch_mglv_hopper_layer0;
+  1: switch_mglv_hopper_layer1;
+  //return spritegroup_maglevhopper_cargo_layer;
+}
 //ARTICULATION
 switch (FEAT_TRAINS, SELF, switch_maglevhopper_articulated, extra_callback_info1){
 1: return item_maglevhopper;
@@ -246,7 +279,7 @@ item(FEAT_TRAINS, item_maglevhopper, 621) { //ID621
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: switch_mglv_freight_short_graphics_decider;
+		default: switch_mglv_hopper_layers;//switch_mglv_freight_short_graphics_decider;
 		additional_text: string(STR_MAGLEVWAGON);
 		purchase: spriteset_purchaseMenu_maghopper;
 		articulated_part: switch_maglevhopper_articulated;
@@ -256,7 +289,7 @@ item(FEAT_TRAINS, item_maglevhopper, 621) { //ID621
 		cost_factor:		40;
 		//weight:				switch_weight_global;
 		weight:				40;
-		//colour_mapping: RAINBOWWAGONS_enginecheck;
+		//colour_mapping: switch_mglv_hopper_layers_colouring;//RAINBOWWAGONS_enginecheck;
 		purchase_colour_mapping: CB_FAILED;
 	}
 }
