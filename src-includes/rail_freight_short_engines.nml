@@ -1320,8 +1320,9 @@ item(FEAT_TRAINS, item_railmedium3, 35) { //ID35
         vehicle_life:                 255;
         reliability_decay:            5;
 		//Just an engine, no refit
-        refittable_cargo_classes:     bitmask(NO_CARGO_CLASS);
+        refittable_cargo_classes:     ALL_CARGO_CLASSES;
         non_refittable_cargo_classes: bitmask();
+				default_cargo_type:           GOOD;
 
         loading_speed:                5;
         cost_factor:                  10;
@@ -1335,7 +1336,7 @@ item(FEAT_TRAINS, item_railmedium3, 35) { //ID35
         power:                        1700 hp;
         running_cost_base:            RUNNING_COST_STEAM;
         dual_headed:                  0;
-        cargo_capacity:               0;
+        cargo_capacity:               12;
         weight:                       100 ton;
         ai_engine_rank:               0;
         engine_class:                 ENGINE_CLASS_STEAM;
