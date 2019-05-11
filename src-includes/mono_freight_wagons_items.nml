@@ -99,7 +99,7 @@ item(FEAT_TRAINS, item_monoflatbed, 511) { //ID511
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: switch_mono_freight_graphics_decider;
+		default: switch_monoflatbed_main_meowornot;
 		additional_text: string(STR_MONOWAGON);
 		purchase: spriteset_purchaseMenu_monoflatbed;
 		cargo_capacity:   switch_capacity_monouniversal;
@@ -162,7 +162,7 @@ item(FEAT_TRAINS, item_monohopper, 521) { //ID521
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: switch_mono_freight_graphics_decider;
+		default: switch_monoflatbed_main_meowornot;
 		additional_text: string(STR_MONOWAGON);
 		purchase: spriteset_purchaseMenu_monohopper;
 		cargo_capacity:   switch_capacity_monouniversal;
@@ -229,7 +229,7 @@ item(FEAT_TRAINS, item_monotanker, 531) { //ID531
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: switch_mono_freight_graphics_decider;
+		default: switch_monoflatbed_main_meowornot;
 		additional_text: string(STR_MONOWAGON);
 		purchase: spriteset_purchaseMenu_monotanker;
 		cargo_capacity:   switch_capacity_monouniversal;
@@ -300,7 +300,7 @@ item(FEAT_TRAINS, item_monouniversal, 541) { //ID541
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: switch_mono_freight_graphics_decider;
+		default: switch_monoflatbed_main_meowornot;
 		additional_text: string(STR_MONOWAGON);
 		purchase: spriteset_purchaseMenu_monouniversal;
 		cargo_capacity:   switch_capacity_monouniversal;

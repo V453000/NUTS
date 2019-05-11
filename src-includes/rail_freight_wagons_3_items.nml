@@ -40,7 +40,7 @@ item(FEAT_TRAINS, item_railflatbed2, 413) { //ID413
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: railflatbed2_MEOWorNOT;//railflatbed2_wagon_switch;
+		default: railuniversal2_wagon_switch;//railflatbed2_wagon_switch;
 		purchase: spriteset_purchaseMenu_railflatbed2;
 		cargo_capacity:   switch_capacity_railuniversal2;
 		additional_text: string(STR_RAILWAGON3);
@@ -102,7 +102,7 @@ item(FEAT_TRAINS, item_railhopper2, 423) { //ID423
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: railhopper2_wagon_switch;
+		default: railuniversal2_wagon_switch;
 		purchase: spriteset_purchaseMenu_railhopper2;
 		cargo_capacity:   switch_capacity_railuniversal2;
 		additional_text: string(STR_RAILWAGON3);
@@ -164,7 +164,7 @@ item(FEAT_TRAINS, item_railtanker2, 433) { //ID433
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: railtanker2_wagon_switch;
+		default: railuniversal2_wagon_switch;
 		purchase: spriteset_purchaseMenu_railtanker2;
 		cargo_capacity:   switch_capacity_railuniversal2;
 		additional_text: string(STR_RAILWAGON3);
@@ -227,7 +227,7 @@ item(FEAT_TRAINS, item_railuniversal2, 443) { //ID443
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: switch_rail_freight_graphics_decider;//railuniversal2_MEOWorNOT;//railuniversal2_wagon_switch;
+		default: railuniversal2_wagon_switch;//railuniversal2_MEOWorNOT;//railuniversal2_wagon_switch;
 		purchase: spriteset_purchaseMenu_railuniversal2;
 		cargo_capacity:   switch_capacity_railuniversal2;
 		additional_text: string(STR_RAILWAGON3);
