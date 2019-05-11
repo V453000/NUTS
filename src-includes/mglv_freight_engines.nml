@@ -77,7 +77,7 @@ item(FEAT_TRAINS, item_magstrong1, 211) { //ID211
 		running_cost_factor:				100; //only engines
 
     articulated_part: switch_magstrong1_articulated;
-    default:          switch_mglv_freight_short_graphics_decider;
+    default:          switch_mglv_freight_short_medium1_graphics_decider;//switch_mglv_freight_short_graphics_decider;
     cargo_capacity:   switch_mglv_freight_engine_capacity;
     loading_speed:    switch_mglv_freight_engine_loadspeed;
 	}

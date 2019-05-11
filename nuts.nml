@@ -16392,6 +16392,7 @@ item(FEAT_TRAINS, item_NYAN, 311) { //ID311
 //#include src-includes/mglv_freight_wagons_graphics.nml
 //#include src-includes/mglv_freight_graphics.nml
 //#include src-includes/mglv_freight_wagons_items.nml
+//#include src-includes/mglv_freight_medium1_graphics.nml
 //#include src-includes/mglv_freight_engines.nml
 
 //CHAMELEON WAGONS
