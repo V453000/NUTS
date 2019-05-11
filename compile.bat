@@ -1,3 +1,3 @@
-C:\NML\nmlc -c --default-lang=english.lng --grf=nuts.grf NUTS-x-combined.nml
+C:\NML\nmlc -c --default-lang=english.lng --grf=nuts.grf NUTS-x-combined.nml --verbosity=0
 copy /Y nuts.grf "C:\Users\V\Documents\OpenTTD\newgrf"
 pause
