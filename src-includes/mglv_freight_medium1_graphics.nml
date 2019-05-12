@@ -4593,14 +4593,14 @@ switch(FEAT_TRAINS, SELF, switch_mglv_freight_short_medium1_graphics_both_draw64
   switch_mglv_freight_short_medium1_graphics_both_draw64_end;
 }
 switch(FEAT_TRAINS, PARENT, switch_mglv_freight_short_medium1_graphics_both,
-  count_veh_id(211) + // magstrong1
+  count_veh_id(211)/* + // magstrong1
   count_veh_id(213) +
   count_veh_id(215) +
   count_veh_id(217) + // magstrong4
   count_veh_id(251) + // magfast1
   count_veh_id(253) +
   count_veh_id(255) +
-  count_veh_id(257)   // magfast4
+  count_veh_id(257)   // magfast4*/
   ){
   0: switch_mglv_freight_short_medium1_vehid_wagons_self;
   1..4: switch_mglv_freight_short_medium1_graphics_both_draw1;
@@ -9022,14 +9022,14 @@ switch(FEAT_TRAINS, SELF, switch_mglv_freight_short_medium1_graphics_front_draw6
   switch_mglv_freight_short_medium1_vehid_wagons_self;
 }
 switch(FEAT_TRAINS, PARENT, switch_mglv_freight_short_medium1_graphics_front,
-  count_veh_id(211) + // magstrong1
+  count_veh_id(211)/* + // magstrong1
   count_veh_id(213) +
   count_veh_id(215) +
   count_veh_id(217) + // magstrong4
   count_veh_id(251) + // magfast1
   count_veh_id(253) +
   count_veh_id(255) +
-  count_veh_id(257)   // magfast4
+  count_veh_id(257)   // magfast4*/
   ){
   0: switch_mglv_freight_short_medium1_vehid_wagons_self;
   1..4: switch_mglv_freight_short_medium1_graphics_front_draw1;
@@ -9101,7 +9101,7 @@ switch(FEAT_TRAINS, PARENT, switch_mglv_freight_short_medium1_graphics_front,
 
 
 
-switch(FEAT_TRAINS,PARENT, switch_mglv_freight_short_medium1_graphics_decider_2, [
+switch(FEAT_TRAINS,PARENT, switch_mglv_freight_short_medium1_graphics_decider, [
 STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
 ]){
 	211: switch_mglv_freight_short_medium1_graphics_both;//vehicle ID here
@@ -9113,17 +9113,4 @@ STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
 	255: switch_mglv_freight_short_medium1_graphics_both;//vehicle ID here
 	257: switch_mglv_freight_short_medium1_graphics_both;//vehicle ID here*/
 	switch_mglv_freight_short_medium1_graphics_front;
-}
-switch(FEAT_TRAINS,PARENT, switch_mglv_freight_short_medium1_graphics_decider, [
-STORE_TEMP(position_in_consist, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
-]){
-	211: switch_mglv_freight_short_medium1_graphics_decider_2;//vehicle ID here
-	/*213: switch_mglv_freight_short_medium1_graphics_decider_2;//vehicle ID here
-	215: switch_mglv_freight_short_medium1_graphics_decider_2;//vehicle ID here 
-	217: switch_mglv_freight_short_medium1_graphics_decider_2;//vehicle ID here 
-	251: switch_mglv_freight_short_medium1_graphics_decider_2;//vehicle ID here
-	253: switch_mglv_freight_short_medium1_graphics_decider_2;//vehicle ID here
-	255: switch_mglv_freight_short_medium1_graphics_decider_2;//vehicle ID here
-	257: switch_mglv_freight_short_medium1_graphics_decider_2;//vehicle ID here*/
-	switch_mglv_freight_short_medium1_vehid_wagons_self;
 }

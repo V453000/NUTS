@@ -1,4 +1,6 @@
+import sys
 import math
+import os
 
 def generate_above_switches(args):
   print('wtf')
@@ -9,33 +11,61 @@ def generate_draw_switches_short_alternating(args):
   outcome_front   = args[2]
   outcome_back    = args[3]
   outcome_wagon   = args[4]
+  outcome_overlay_active = 'sprite_attach_4_active'
+  outcome_overlay_inactive = 'sprite_attach_4_inactive'
+  outcome_invisible = 'sprite_INVISIBLE'
 
-  outcome_switch_front = veh_name + '_switch_outcome_switch_front'
-  outcome_switch_back  = veh_name + '_switch_outcome_switch_end'
-  outcome_switch_wagon = veh_name + '_switch_outcome_switch_wagon'
+  outcome_switch_front   = outcome_front #veh_name + '_switch_outcome_switch_front'
+  outcome_switch_back    = outcome_back #veh_name + '_switch_outcome_switch_end'
+  outcome_switch_wagon   = veh_name + '_switch_outcome_switch_wagon'
+  outcome_switch_overlay = veh_name + '_switch_outcome_switch_overlay'
 
-  output_file = '../src-includes/' + veh_name + '_graphics.nml'
-  with open(output_file, 'w') as output_nml:
-    # drawing results & layers
-    # front outcome switch
-    output_nml.write('// front')
-    output_nml.write('\nswitch (FEAT_TRAINS,SELF, ' + outcome_switch_front + '_layers' + ', [')
-    output_nml.write('\nSTORE_TEMP((getbits(extra_callback_info1, 8, 8) < 4 ? CB_FLAG_MORE_SPRITES  : 0) + PALETTE_USE_DEFAULT, 0x100),')
-    output_nml.write('\ngetbits(extra_callback_info1, 8, 8)')
-    output_nml.write('\n]){')
-    output_nml.write('\n0: ' + outcome_wagon + ';')
-    output_nml.write('\n1: ' + outcome_front + ';')
-    output_nml.write('\n2: ' + outcome_wagon + ';')
+  script_path = os.path.realpath(__file__)
+  script_folder = os.path.dirname(script_path)
+  output_folder = os.path.join(script_folder, '..', 'src-generated')
+  output_filename = veh_name + '_graphics.nml'
+  output_filepath = os.path.join(output_folder, output_filename)
+  output_folder_path = os.path.normpath(output_folder)
+  #print('SYS PATH', sys.path) check python version
+  if os.path.isdir(output_folder_path) == False:
+    os.makedirs(output_folder_path)
+
+  with open(output_filepath, 'w') as output_nml:
+    # switch for active/inactive overlay
+    output_nml.write('//' + '-'*128 + '\n')
+    output_nml.write('// active/inactive overlay')
+    output_nml.write('\nswitch (FEAT_TRAINS,SELF, ' + outcome_switch_overlay + ', position_in_articulated_veh){')
+    output_nml.write('\n  0: ' + outcome_overlay_active + ';')
+    output_nml.write('\n  ' + outcome_overlay_inactive + ';')
     output_nml.write('\n}')
-    output_nml.write('\nswitch(FEAT_TRAINS, PARENT, ' + outcome_switch_front + ', vehicle_is_stopped + vehicle_is_in_depot){')
-    output_nml.write('\n2: ' + outcome_switch_front + '_layers' + ';')
-    output_nml.write('\n'+ outcome_front + ';')
+    output_nml.write('\n')
+    
+    # drawing results & layers
+    # back outcome switch
+    output_nml.write('//' + '-'*128 + '\n')
+    output_nml.write('// wagon drawing')
+    output_nml.write('\nswitch (FEAT_TRAINS,SELF, ' + outcome_switch_wagon + '_layers' + ', [')
+    output_nml.write('\n  STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 4 ? CB_FLAG_MORE_SPRITES  : 0) + PALETTE_USE_DEFAULT, 0x100),')
+    output_nml.write('\n  getbits(extra_callback_info1, 8, 8)')
+    output_nml.write('\n  ]){')
+    output_nml.write('\n  0: ' + outcome_wagon + ';')
+    output_nml.write('\n  1: ' + outcome_switch_overlay + ';')
+    output_nml.write('\n}')
+    output_nml.write('\nswitch(FEAT_TRAINS, PARENT, ' + outcome_switch_wagon + ', vehicle_is_stopped + vehicle_is_in_depot){')
+    output_nml.write('\n  2: ' + outcome_switch_wagon + '_layers' + ';')
+    output_nml.write('\n  '+ outcome_wagon + ';')
     output_nml.write('\n}')
   
 
 
     # separator
     output_nml.write('\n')
+    output_nml.write('//' + '-'*128 + '\n')
+    output_nml.write('//' + '-'*128 + '\n')
+    output_nml.write('//' + '-'*128 + '\n')
+    output_nml.write('//' + '-'*128 + '\n')
+    output_nml.write('//' + '-'*128 + '\n')
+    output_nml.write('//' + '-'*128 + '\n')
     output_nml.write('//' + '-'*128 + '\n')
     output_nml.write('//' + '-'*128 + '\n')
     output_nml.write('//' + '-'*128 + '\n')
@@ -54,7 +84,7 @@ def generate_draw_switches_short_alternating(args):
       # ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
       if i>1:
         # write switch header
-        output_nml.write('switch(FEAT_TRAINS, SELF, switch_mglv_freight_short_graphics_both_draw' + str(i) + '_end, position_in_consist_from_end){\n')
+        output_nml.write('switch(FEAT_TRAINS, SELF, ' + veh_name + '_draw' + str(i) + '_both' + '_end, position_in_consist_from_end){\n')
         # do stuff with i
         i_half = float(i)/2
         i_test = math.floor(i_half)#floor for _end
@@ -70,13 +100,13 @@ def generate_draw_switches_short_alternating(args):
         
         for n in range(0, int(i_test*2)):
           if (n%4)==0:
-            spritesheet = 'sprite_INVISIBLE;\n'
+            spritesheet = outcome_invisible + ';\n'
           elif (n%4)==1:
             spritesheet = outcome_switch_back + ';\n'
           elif (n%4)==2:
             spritesheet = outcome_switch_front + ';\n'
           elif (n%4)==3:
-            spritesheet = 'sprite_INVISIBLE;\n'
+            spritesheet = outcome_invisible + ';\n'
           output_nml.write('  ' + str(n) + ': ' + spritesheet)
         output_nml.write(default_spritesheet)
         output_nml.write('}\n')
@@ -85,7 +115,7 @@ def generate_draw_switches_short_alternating(args):
       # write no _end version
       # ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
       # write switch header
-      output_nml.write('switch(FEAT_TRAINS, SELF, switch_mglv_freight_short_graphics_both_draw' + str(i) + ', position_in_consist){\n')
+      output_nml.write('switch(FEAT_TRAINS, SELF, ' + veh_name + '_draw' + str(i) + '_both' + ', position_in_consist){\n')
       # do stuff with i
       i_half = float(i)/2
       i_test = math.ceil(i_half)#floor for _end
@@ -96,19 +126,19 @@ def generate_draw_switches_short_alternating(args):
         i_text = ''
       
       spritesheet = outcome_switch_front + ';\n'
-      default_spritesheet = '  switch_mglv_freight_short_graphics_both_draw' + str(i) + '_end;\n'
+      default_spritesheet = '  ' + veh_name + '_draw' + str(i) + '_both' + '_end;\n'
       if i == 1:
-        default_spritesheet = outcome_switch_wagon +';\n'
+        default_spritesheet = '  ' + outcome_switch_wagon +';\n'
 
       for n in range(0, int(i_test*2)):
         if (n%4)==0:
-          spritesheet = 'sprite_INVISIBLE;\n'
+          spritesheet = outcome_invisible + ';\n'
         elif (n%4)==1:
           spritesheet = outcome_switch_front + ';\n'
         elif (n%4)==2:
           spritesheet = outcome_switch_back + ';\n'
         elif (n%4)==3:
-          spritesheet = 'sprite_INVISIBLE;\n'
+          spritesheet = outcome_invisible + ';\n'
         output_nml.write('  ' + str(n) + ': ' + spritesheet)
 
       output_nml.write(default_spritesheet)
@@ -116,24 +146,24 @@ def generate_draw_switches_short_alternating(args):
 
       # -----------------------------------------------------------------------------------------------------------------------------------------------
       # front drawing ---------------------------------------------------------------------------------------------------------------------------------
-      output_nml.write('switch(FEAT_TRAINS, SELF, switch_mglv_freight_short_graphics_front_draw' + str(i) + ', position_in_consist){\n')
+      output_nml.write('switch(FEAT_TRAINS, SELF, ' + veh_name + '_draw' + str(i) + '_front' + ', position_in_consist){\n')
       for n in range(0, i*2):
         default_spritesheet = '  ' + outcome_switch_wagon + ';\n'
         if (n%4)==0:
-          spritesheet = 'sprite_INVISIBLE;\n'
+          spritesheet = outcome_invisible + ';\n'
         elif (n%4)==1:
           spritesheet = outcome_switch_front + ';\n'
         elif (n%4)==2:
           spritesheet = outcome_switch_back + ';\n'
         elif (n%4)==3:
-          spritesheet = 'sprite_INVISIBLE;\n'
+          spritesheet = outcome_invisible + ';\n'
         output_nml.write('  ' + str(n) + ': ' + spritesheet)
       output_nml.write(default_spritesheet)
       output_nml.write('}\n')
 
       # -----------------------------------------------------------------------------------------------------------------------------------------------
       # draw method switch
-      output_nml.write('switch(FEAT_TRAINS, PARENT, switch_mglv_freight_short_graphics_draw' + str(i) + ', [')
+      output_nml.write('switch(FEAT_TRAINS, PARENT, ' + veh_name + '_draw' + str(i) + ', [')
       output_nml.write('\n  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]')
       output_nml.write('\n  ]){')
       output_nml.write('\n  ' + str(veh_id) + ': ' + 'switch_mglv_freight_short_graphics_both_draw' + str(i) + ';')
@@ -144,6 +174,19 @@ def generate_draw_switches_short_alternating(args):
       output_nml.write('//' + '-'*128 + '\n')
       output_nml.write('//' + '-'*128 + '\n')
       output_nml.write('//' + '-'*128 + '\n')
+
+    # count_veh_id decider
+    output_nml.write('switch(FEAT_TRAINS, PARENT, ' + veh_name + '_graphics' + ',')
+    output_nml.write('\n  count_veh_id(' + str(veh_id) + ') ' + '){')
+    for i in range(0,64):
+      start = i*4+1
+      end = i*4+4
+      if i == 0:
+        start = 0
+      output_nml.write('\n  ' + str(start) + '..' + str(end) + ': ' + veh_name + '_draw'  + str(i+1) + ';')
+    output_nml.write('\n  ' + veh_name + '_draw' + str(i+1) + ';')
+    output_nml.write('\n}')
+    
 
 
     

@@ -5,6 +5,9 @@ spriteset(sprite_attach_foreground_4_mglv_freight_short_wagon,   	       "gfx/at
 spriteset(sprite_attach_foreground_4_mglv_freight_short_engine,  	       "gfx/attach_highlights.png"){template_attach_overlay_4(1, 2+6)}
 spriteset(sprite_attach_foreground_4_mglv_freight_short_engine_inactive, "gfx/attach_highlights.png"){template_attach_overlay_4(1, 3+6)}
 
+spriteset(sprite_attach_4_active,  	"gfx/attach_highlights.png"){template_attach_overlay_4(1, 2+6)}
+spriteset(sprite_attach_4_inactive, "gfx/attach_highlights.png"){template_attach_overlay_4(1, 3+6)}
+
 //PURCHASE MENU
 spriteset(spriteset_purchaseMenu_magstrong1, 		"gfx/PurchaseMenu.png"){template_purchaseMenu(0,15)}
 spriteset(spriteset_purchaseMenu_magstrong2, 		"gfx/PurchaseMenu.png"){template_purchaseMenu(0,16)}
