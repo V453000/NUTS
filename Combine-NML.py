@@ -18,9 +18,10 @@ for line in main_nml:
         file_to_import = open(filename_to_import, 'r')
         for l in file_to_import:
           output_nml.write(l)
-        print(filename_to_import, 'included.')
+        print('Included', filename_to_import)
     else:
-      print(filename_to_import, 'not found!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+      print(filename_to_import, 'NOT FOUND!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+      #raise Exception(filename_to_import, 'NOT FOUND!!!')
   else:
     output_nml.write(line)
 
