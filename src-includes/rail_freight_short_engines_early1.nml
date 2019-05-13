@@ -125,7 +125,7 @@ item(FEAT_TRAINS, item_rail_EARLY_01, 7) { //ID7
 	graphics {
 		articulated_part: 							switch_rail_EARLY_01_articulated;
 		length: 												switch_rail_EARLY_01_length;               
-		visual_effect_and_powered:      switch_rail_freight_short_powered_decider;
+		visual_effect_and_powered:      rail_early1_powered;
 		cargo_capacity:                 switch_rail_EARLY_01_capacity;
 		loading_speed:                  switch_rail_EARLY_01_loadspeed;
 		default:                        rail_early1_graphics;

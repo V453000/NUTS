@@ -103,7 +103,7 @@ item(FEAT_TRAINS, item_rail_EARLY_03, 9) { //ID9
 	graphics {
 		articulated_part: 							switch_rail_EARLY_03_articulated;
 		length: 												switch_rail_EARLY_03_length;               
-		visual_effect_and_powered:      switch_rail_freight_short_powered_decider;
+		visual_effect_and_powered:      rail_early3_powered;
 		cargo_capacity:                 switch_rail_EARLY_03_capacity;
 		loading_speed:                  switch_rail_EARLY_03_loadspeed;
 		default:                        rail_early3_graphics;

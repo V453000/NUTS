@@ -104,7 +104,7 @@ item(FEAT_TRAINS, item_railstrong1, 11) { //ID11
 	graphics {
 		articulated_part: 							switch_railstrong1_articulated;
 		length: 												switch_railstrong1_length;               
-		visual_effect_and_powered:      switch_rail_freight_short_powered_decider;
+		visual_effect_and_powered:      rail_strong1_powered;
 		cargo_capacity:                 switch_railstrong1_capacity;
 		loading_speed:                  switch_railstrong1_loadspeed;
 		default:                        rail_strong1_graphics;

@@ -15187,35 +15187,46 @@ item(FEAT_TRAINS, item_NYAN, 311) { //ID311
 }
 
 //#include src-includes/rail_freight_wagons_1_graphics.nml
-//#include src-includes/rail_freight_short_other.nml
 
 //#include src-includes/rail_freight_short_engines.nml
 //#include src-generated/rail_early1_graphics.nml
+//#include src-generated/rail_early1_powered.nml
 //#include src-includes/rail_freight_short_engines_early1.nml
 //#include src-generated/rail_early2_graphics.nml
+//#include src-generated/rail_early2_powered.nml
 //#include src-includes/rail_freight_short_engines_early2.nml
 //#include src-generated/rail_early3_graphics.nml
+//#include src-generated/rail_early3_powered.nml
 //#include src-includes/rail_freight_short_engines_early3.nml
 
 //#include src-generated/rail_strong1_graphics.nml
+//#include src-generated/rail_strong1_powered.nml
 //#include src-includes/rail_freight_short_engines_strong1.nml
 //#include src-generated/rail_strong2_graphics.nml
+//#include src-generated/rail_strong2_powered.nml
 //#include src-includes/rail_freight_short_engines_strong2.nml
 //#include src-generated/rail_strong3_graphics.nml
+//#include src-generated/rail_strong3_powered.nml
 //#include src-includes/rail_freight_short_engines_strong3.nml
 
 //#include src-generated/rail_medium1_graphics.nml
+//#include src-generated/rail_medium1_powered.nml
 //#include src-includes/rail_freight_short_engines_medium1.nml
 //#include src-generated/rail_medium2_graphics.nml
+//#include src-generated/rail_medium2_powered.nml
 //#include src-includes/rail_freight_short_engines_medium2.nml
 //#include src-generated/rail_medium3_graphics.nml
+//#include src-generated/rail_medium3_powered.nml
 //#include src-includes/rail_freight_short_engines_medium3.nml
 
 //#include src-generated/rail_fast1_graphics.nml
+//#include src-generated/rail_fast1_powered.nml
 //#include src-includes/rail_freight_short_engines_fast1.nml
 //#include src-generated/rail_fast2_graphics.nml
+//#include src-generated/rail_fast2_powered.nml
 //#include src-includes/rail_freight_short_engines_fast2.nml
 //#include src-generated/rail_fast3_graphics.nml
+//#include src-generated/rail_fast3_powered.nml
 //#include src-includes/rail_freight_short_engines_fast3.nml
 
 //#include src-includes/rail_freight_wagons_1_items.nml

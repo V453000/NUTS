@@ -93,7 +93,7 @@ item(FEAT_TRAINS, item_railfast1, 51) {
     length:           switch_railfast1_length;
     cargo_capacity:   switch_railfast1_capacity;
     loading_speed:    switch_railfast1_loadspeed;
-		visual_effect_and_powered:      switch_rail_freight_short_powered_decider;
+		visual_effect_and_powered:      rail_fast1_powered;
 
 		purchase: spriteset_purchaseMenu_railfast1;
 		can_attach_wagon: switch_railfast1_attach;

@@ -103,7 +103,7 @@ item(FEAT_TRAINS, item_railmedium2, 33) { //ID33
 	graphics {
 		articulated_part: 							switch_railmedium2_articulated;
 		length: 												switch_railmedium2_length;               
-		visual_effect_and_powered:      switch_rail_freight_short_powered_decider;
+		visual_effect_and_powered:      rail_medium2_powered;
 		cargo_capacity:                 switch_railmedium2_capacity;
 		loading_speed:                  switch_railmedium2_loadspeed;
 		default:                        rail_medium2_graphics;

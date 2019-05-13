@@ -90,7 +90,7 @@ item(FEAT_TRAINS, item_railfast3, 55) { //ID55
     length:           switch_railfast3_length;
     cargo_capacity:   switch_railfast3_capacity;
     loading_speed:    switch_railfast3_loadspeed;
-		visual_effect_and_powered:      switch_rail_freight_short_powered_decider;
+		visual_effect_and_powered:      rail_fast3_powered;
 
 		purchase: spriteset_purchaseMenu_railfast3;
 		can_attach_wagon: switch_railfast3_attach;
