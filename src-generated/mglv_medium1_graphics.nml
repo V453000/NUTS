@@ -39,8 +39,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw1_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw1, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw1;
-  switch_mglv_freight_short_graphics_front_draw1;
+  211: mglv_medium1_draw1_both;
+  mglv_medium1_draw1_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -65,8 +65,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw2_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw2, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw2;
-  switch_mglv_freight_short_graphics_front_draw2;
+  211: mglv_medium1_draw2_both;
+  mglv_medium1_draw2_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -95,8 +95,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw3_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw3, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw3;
-  switch_mglv_freight_short_graphics_front_draw3;
+  211: mglv_medium1_draw3_both;
+  mglv_medium1_draw3_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -129,8 +129,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw4_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw4, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw4;
-  switch_mglv_freight_short_graphics_front_draw4;
+  211: mglv_medium1_draw4_both;
+  mglv_medium1_draw4_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -167,8 +167,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw5_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw5, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw5;
-  switch_mglv_freight_short_graphics_front_draw5;
+  211: mglv_medium1_draw5_both;
+  mglv_medium1_draw5_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -209,8 +209,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw6_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw6, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw6;
-  switch_mglv_freight_short_graphics_front_draw6;
+  211: mglv_medium1_draw6_both;
+  mglv_medium1_draw6_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -255,8 +255,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw7_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw7, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw7;
-  switch_mglv_freight_short_graphics_front_draw7;
+  211: mglv_medium1_draw7_both;
+  mglv_medium1_draw7_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -305,8 +305,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw8_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw8, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw8;
-  switch_mglv_freight_short_graphics_front_draw8;
+  211: mglv_medium1_draw8_both;
+  mglv_medium1_draw8_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -359,8 +359,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw9_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw9, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw9;
-  switch_mglv_freight_short_graphics_front_draw9;
+  211: mglv_medium1_draw9_both;
+  mglv_medium1_draw9_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -417,8 +417,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw10_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw10, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw10;
-  switch_mglv_freight_short_graphics_front_draw10;
+  211: mglv_medium1_draw10_both;
+  mglv_medium1_draw10_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -479,8 +479,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw11_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw11, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw11;
-  switch_mglv_freight_short_graphics_front_draw11;
+  211: mglv_medium1_draw11_both;
+  mglv_medium1_draw11_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -545,8 +545,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw12_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw12, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw12;
-  switch_mglv_freight_short_graphics_front_draw12;
+  211: mglv_medium1_draw12_both;
+  mglv_medium1_draw12_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -615,8 +615,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw13_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw13, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw13;
-  switch_mglv_freight_short_graphics_front_draw13;
+  211: mglv_medium1_draw13_both;
+  mglv_medium1_draw13_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -689,8 +689,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw14_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw14, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw14;
-  switch_mglv_freight_short_graphics_front_draw14;
+  211: mglv_medium1_draw14_both;
+  mglv_medium1_draw14_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -767,8 +767,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw15_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw15, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw15;
-  switch_mglv_freight_short_graphics_front_draw15;
+  211: mglv_medium1_draw15_both;
+  mglv_medium1_draw15_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -849,8 +849,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw16_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw16, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw16;
-  switch_mglv_freight_short_graphics_front_draw16;
+  211: mglv_medium1_draw16_both;
+  mglv_medium1_draw16_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -935,8 +935,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw17_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw17, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw17;
-  switch_mglv_freight_short_graphics_front_draw17;
+  211: mglv_medium1_draw17_both;
+  mglv_medium1_draw17_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -1025,8 +1025,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw18_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw18, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw18;
-  switch_mglv_freight_short_graphics_front_draw18;
+  211: mglv_medium1_draw18_both;
+  mglv_medium1_draw18_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -1119,8 +1119,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw19_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw19, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw19;
-  switch_mglv_freight_short_graphics_front_draw19;
+  211: mglv_medium1_draw19_both;
+  mglv_medium1_draw19_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -1217,8 +1217,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw20_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw20, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw20;
-  switch_mglv_freight_short_graphics_front_draw20;
+  211: mglv_medium1_draw20_both;
+  mglv_medium1_draw20_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -1319,8 +1319,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw21_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw21, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw21;
-  switch_mglv_freight_short_graphics_front_draw21;
+  211: mglv_medium1_draw21_both;
+  mglv_medium1_draw21_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -1425,8 +1425,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw22_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw22, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw22;
-  switch_mglv_freight_short_graphics_front_draw22;
+  211: mglv_medium1_draw22_both;
+  mglv_medium1_draw22_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -1535,8 +1535,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw23_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw23, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw23;
-  switch_mglv_freight_short_graphics_front_draw23;
+  211: mglv_medium1_draw23_both;
+  mglv_medium1_draw23_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -1649,8 +1649,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw24_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw24, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw24;
-  switch_mglv_freight_short_graphics_front_draw24;
+  211: mglv_medium1_draw24_both;
+  mglv_medium1_draw24_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -1767,8 +1767,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw25_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw25, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw25;
-  switch_mglv_freight_short_graphics_front_draw25;
+  211: mglv_medium1_draw25_both;
+  mglv_medium1_draw25_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -1889,8 +1889,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw26_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw26, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw26;
-  switch_mglv_freight_short_graphics_front_draw26;
+  211: mglv_medium1_draw26_both;
+  mglv_medium1_draw26_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -2015,8 +2015,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw27_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw27, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw27;
-  switch_mglv_freight_short_graphics_front_draw27;
+  211: mglv_medium1_draw27_both;
+  mglv_medium1_draw27_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -2145,8 +2145,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw28_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw28, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw28;
-  switch_mglv_freight_short_graphics_front_draw28;
+  211: mglv_medium1_draw28_both;
+  mglv_medium1_draw28_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -2279,8 +2279,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw29_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw29, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw29;
-  switch_mglv_freight_short_graphics_front_draw29;
+  211: mglv_medium1_draw29_both;
+  mglv_medium1_draw29_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -2417,8 +2417,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw30_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw30, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw30;
-  switch_mglv_freight_short_graphics_front_draw30;
+  211: mglv_medium1_draw30_both;
+  mglv_medium1_draw30_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -2559,8 +2559,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw31_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw31, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw31;
-  switch_mglv_freight_short_graphics_front_draw31;
+  211: mglv_medium1_draw31_both;
+  mglv_medium1_draw31_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -2705,8 +2705,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw32_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw32, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw32;
-  switch_mglv_freight_short_graphics_front_draw32;
+  211: mglv_medium1_draw32_both;
+  mglv_medium1_draw32_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -2855,8 +2855,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw33_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw33, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw33;
-  switch_mglv_freight_short_graphics_front_draw33;
+  211: mglv_medium1_draw33_both;
+  mglv_medium1_draw33_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -3009,8 +3009,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw34_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw34, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw34;
-  switch_mglv_freight_short_graphics_front_draw34;
+  211: mglv_medium1_draw34_both;
+  mglv_medium1_draw34_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -3167,8 +3167,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw35_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw35, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw35;
-  switch_mglv_freight_short_graphics_front_draw35;
+  211: mglv_medium1_draw35_both;
+  mglv_medium1_draw35_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -3329,8 +3329,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw36_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw36, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw36;
-  switch_mglv_freight_short_graphics_front_draw36;
+  211: mglv_medium1_draw36_both;
+  mglv_medium1_draw36_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -3495,8 +3495,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw37_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw37, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw37;
-  switch_mglv_freight_short_graphics_front_draw37;
+  211: mglv_medium1_draw37_both;
+  mglv_medium1_draw37_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -3665,8 +3665,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw38_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw38, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw38;
-  switch_mglv_freight_short_graphics_front_draw38;
+  211: mglv_medium1_draw38_both;
+  mglv_medium1_draw38_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -3839,8 +3839,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw39_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw39, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw39;
-  switch_mglv_freight_short_graphics_front_draw39;
+  211: mglv_medium1_draw39_both;
+  mglv_medium1_draw39_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -4017,8 +4017,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw40_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw40, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw40;
-  switch_mglv_freight_short_graphics_front_draw40;
+  211: mglv_medium1_draw40_both;
+  mglv_medium1_draw40_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -4199,8 +4199,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw41_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw41, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw41;
-  switch_mglv_freight_short_graphics_front_draw41;
+  211: mglv_medium1_draw41_both;
+  mglv_medium1_draw41_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -4385,8 +4385,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw42_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw42, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw42;
-  switch_mglv_freight_short_graphics_front_draw42;
+  211: mglv_medium1_draw42_both;
+  mglv_medium1_draw42_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -4575,8 +4575,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw43_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw43, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw43;
-  switch_mglv_freight_short_graphics_front_draw43;
+  211: mglv_medium1_draw43_both;
+  mglv_medium1_draw43_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -4769,8 +4769,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw44_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw44, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw44;
-  switch_mglv_freight_short_graphics_front_draw44;
+  211: mglv_medium1_draw44_both;
+  mglv_medium1_draw44_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -4967,8 +4967,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw45_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw45, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw45;
-  switch_mglv_freight_short_graphics_front_draw45;
+  211: mglv_medium1_draw45_both;
+  mglv_medium1_draw45_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -5169,8 +5169,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw46_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw46, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw46;
-  switch_mglv_freight_short_graphics_front_draw46;
+  211: mglv_medium1_draw46_both;
+  mglv_medium1_draw46_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -5375,8 +5375,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw47_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw47, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw47;
-  switch_mglv_freight_short_graphics_front_draw47;
+  211: mglv_medium1_draw47_both;
+  mglv_medium1_draw47_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -5585,8 +5585,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw48_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw48, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw48;
-  switch_mglv_freight_short_graphics_front_draw48;
+  211: mglv_medium1_draw48_both;
+  mglv_medium1_draw48_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -5799,8 +5799,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw49_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw49, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw49;
-  switch_mglv_freight_short_graphics_front_draw49;
+  211: mglv_medium1_draw49_both;
+  mglv_medium1_draw49_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -6017,8 +6017,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw50_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw50, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw50;
-  switch_mglv_freight_short_graphics_front_draw50;
+  211: mglv_medium1_draw50_both;
+  mglv_medium1_draw50_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -6239,8 +6239,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw51_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw51, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw51;
-  switch_mglv_freight_short_graphics_front_draw51;
+  211: mglv_medium1_draw51_both;
+  mglv_medium1_draw51_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -6465,8 +6465,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw52_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw52, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw52;
-  switch_mglv_freight_short_graphics_front_draw52;
+  211: mglv_medium1_draw52_both;
+  mglv_medium1_draw52_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -6695,8 +6695,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw53_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw53, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw53;
-  switch_mglv_freight_short_graphics_front_draw53;
+  211: mglv_medium1_draw53_both;
+  mglv_medium1_draw53_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -6929,8 +6929,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw54_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw54, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw54;
-  switch_mglv_freight_short_graphics_front_draw54;
+  211: mglv_medium1_draw54_both;
+  mglv_medium1_draw54_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -7167,8 +7167,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw55_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw55, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw55;
-  switch_mglv_freight_short_graphics_front_draw55;
+  211: mglv_medium1_draw55_both;
+  mglv_medium1_draw55_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -7409,8 +7409,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw56_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw56, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw56;
-  switch_mglv_freight_short_graphics_front_draw56;
+  211: mglv_medium1_draw56_both;
+  mglv_medium1_draw56_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -7655,8 +7655,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw57_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw57, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw57;
-  switch_mglv_freight_short_graphics_front_draw57;
+  211: mglv_medium1_draw57_both;
+  mglv_medium1_draw57_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -7905,8 +7905,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw58_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw58, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw58;
-  switch_mglv_freight_short_graphics_front_draw58;
+  211: mglv_medium1_draw58_both;
+  mglv_medium1_draw58_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -8159,8 +8159,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw59_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw59, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw59;
-  switch_mglv_freight_short_graphics_front_draw59;
+  211: mglv_medium1_draw59_both;
+  mglv_medium1_draw59_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -8417,8 +8417,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw60_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw60, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw60;
-  switch_mglv_freight_short_graphics_front_draw60;
+  211: mglv_medium1_draw60_both;
+  mglv_medium1_draw60_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -8679,8 +8679,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw61_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw61, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw61;
-  switch_mglv_freight_short_graphics_front_draw61;
+  211: mglv_medium1_draw61_both;
+  mglv_medium1_draw61_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -8945,8 +8945,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw62_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw62, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw62;
-  switch_mglv_freight_short_graphics_front_draw62;
+  211: mglv_medium1_draw62_both;
+  mglv_medium1_draw62_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -9215,8 +9215,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw63_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw63, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw63;
-  switch_mglv_freight_short_graphics_front_draw63;
+  211: mglv_medium1_draw63_both;
+  mglv_medium1_draw63_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -9489,8 +9489,8 @@ switch(FEAT_TRAINS, SELF, mglv_medium1_draw64_front, position_in_consist){
 switch(FEAT_TRAINS, PARENT, mglv_medium1_draw64, [
   STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
   ]){
-  211: switch_mglv_freight_short_graphics_both_draw64;
-  switch_mglv_freight_short_graphics_front_draw64;
+  211: mglv_medium1_draw64_both;
+  mglv_medium1_draw64_front;
   }
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------

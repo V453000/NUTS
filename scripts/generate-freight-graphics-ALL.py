@@ -166,8 +166,8 @@ def generate_draw_switches_short_alternating(args):
       output_nml.write('switch(FEAT_TRAINS, PARENT, ' + veh_name + '_draw' + str(i) + ', [')
       output_nml.write('\n  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]')
       output_nml.write('\n  ]){')
-      output_nml.write('\n  ' + str(veh_id) + ': ' + 'switch_mglv_freight_short_graphics_both_draw' + str(i) + ';')
-      output_nml.write('\n  ' + 'switch_mglv_freight_short_graphics_front_draw' + str(i) + ';')
+      output_nml.write('\n  ' + str(veh_id) + ': ' + veh_name + '_draw' + str(i) + '_both' + ';')
+      output_nml.write('\n  ' + veh_name + '_draw' + str(i) + '_front' + ';')
       output_nml.write('\n  }\n')
       
       # separator
@@ -215,15 +215,15 @@ freight_short_normal_list = [
 ]
 freight_short_alternating_list = [
   # veh_name      veh_id
-  ('mglv_medium1', 211, 'spriteset_train_magstrong1', 'spriteset_train_magstrong1_end', 'maglevuniversal_switch'),
-  ('mglv_medium2', 213, 'spriteset_train_magstrong2', 'spriteset_train_magstrong2_end', 'maglevuniversal_switch'),
-  ('mglv_medium3', 215, 'spriteset_train_magstrong3', 'spriteset_train_magstrong3_end', 'maglevuniversal_switch'),
-  ('mglv_medium4', 217, 'spriteset_train_magstrong4', 'spriteset_train_magstrong4_end', 'maglevuniversal_switch'),
+  ['mglv_medium1', 211, 'spriteset_train_magstrong1', 'spriteset_train_magstrong1_end', 'maglevuniversal_switch'],
+  ['mglv_medium2', 213, 'spriteset_train_magstrong2', 'spriteset_train_magstrong2_end', 'maglevuniversal_switch'],
+  ['mglv_medium3', 215, 'spriteset_train_magstrong3', 'spriteset_train_magstrong3_end', 'maglevuniversal_switch'],
+  ['mglv_medium4', 217, 'spriteset_train_magstrong4', 'spriteset_train_magstrong4_end', 'maglevuniversal_switch'],
 
-  ('mglv_fast1', 251, 'spriteset_train_magfast1', 'spriteset_train_magfast1_end', 'maglevuniversal_switch'),
-  ('mglv_fast2', 253, 'spriteset_train_magfast2', 'spriteset_train_magfast2_end', 'maglevuniversal_switch'),
-  ('mglv_fast3', 255, 'spriteset_train_magfast3', 'spriteset_train_magfast3_end', 'maglevuniversal_switch'),
-  ('mglv_fast4', 257, 'spriteset_train_magfast4', 'spriteset_train_magfast4_end', 'maglevuniversal_switch')
+  ['mglv_fast1', 251, 'spriteset_train_magfast1', 'spriteset_train_magfast1_end', 'maglevuniversal_switch'],
+  ['mglv_fast2', 253, 'spriteset_train_magfast2', 'spriteset_train_magfast2_end', 'maglevuniversal_switch'],
+  ['mglv_fast3', 255, 'spriteset_train_magfast3', 'spriteset_train_magfast3_end', 'maglevuniversal_switch'],
+  ['mglv_fast4', 257, 'spriteset_train_magfast4', 'spriteset_train_magfast4_end', 'maglevuniversal_switch']
 ]
 freight_long_normal_list = [
   'rail_strong4',
@@ -264,13 +264,8 @@ freight_long_alternating_list = [
   'mono_fast4',
 ]
 
-y = 0
-generate_draw_switches_short_alternating(
-    [
-      freight_short_alternating_list[y][0],
-      freight_short_alternating_list[y][1],
-      freight_short_alternating_list[y][2],
-      freight_short_alternating_list[y][3],
-      freight_short_alternating_list[y][4]
-    ]
-  )
+
+
+for engine_settings in freight_short_alternating_list:
+  generate_draw_switches_short_alternating(engine_settings)
+  print('Generated', engine_settings[0])

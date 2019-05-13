@@ -16390,13 +16390,26 @@ item(FEAT_TRAINS, item_NYAN, 311) { //ID311
 //#include src-includes/mono_freight_engines.nml
 
 //#include src-includes/mglv_freight_wagons_graphics.nml
-//#include src-includes/mglv_freight_graphics.nml
 //#include src-includes/mglv_freight_wagons_items.nml
-//#include src-includes/mglv_freight_medium1_graphics.nml
-//#include src-includes/mglv_freight_engines.nml
 
+//#include src-includes/mglv_freight_engines.nml
 //#include src-generated/mglv_medium1_graphics.nml
 //#include src-includes/mglv_freight_engines_medium1.nml
+//#include src-generated/mglv_medium2_graphics.nml
+//#include src-includes/mglv_freight_engines_medium2.nml
+//#include src-generated/mglv_medium3_graphics.nml
+//#include src-includes/mglv_freight_engines_medium3.nml
+//#include src-generated/mglv_medium4_graphics.nml
+//#include src-includes/mglv_freight_engines_medium4.nml
+
+//#include src-generated/mglv_fast1_graphics.nml
+//#include src-includes/mglv_freight_engines_fast1.nml
+//#include src-generated/mglv_fast2_graphics.nml
+//#include src-includes/mglv_freight_engines_fast2.nml
+//#include src-generated/mglv_fast3_graphics.nml
+//#include src-includes/mglv_freight_engines_fast3.nml
+//#include src-generated/mglv_fast4_graphics.nml
+//#include src-includes/mglv_freight_engines_fast4.nml
 
 //CHAMELEON WAGONS
 //UNIVERSAL CAPACITY SWITCH
