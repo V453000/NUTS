@@ -16397,7 +16397,6 @@ item(FEAT_TRAINS, item_NYAN, 311) { //ID311
 //#include src-generated/rail_fast3_graphics.nml
 //#include src-includes/rail_freight_short_engines_fast3.nml
 
-
 //#include src-includes/rail_freight_wagons_1_items.nml
 
 //#include src-includes/rail_freight_wagons_2_graphics.nml
@@ -16405,7 +16404,47 @@ item(FEAT_TRAINS, item_NYAN, 311) { //ID311
 
 //#include src-includes/rail_freight_graphics.nml
 //#include src-includes/rail_freight_other.nml
+
 //#include src-includes/rail_freight_engines.nml
+
+//#include src-generated/rail_strong4_graphics.nml
+//#include src-generated/rail_strong5_graphics.nml
+//#include src-generated/rail_strong6_graphics.nml
+//#include src-generated/rail_strong7_graphics.nml
+//#include src-generated/rail_strong8_graphics.nml
+//#include src-generated/rail_strong9_graphics.nml
+//#include src-includes/rail_freight_engines_strong4.nml
+//#include src-includes/rail_freight_engines_strong5.nml
+//#include src-includes/rail_freight_engines_strong6.nml
+//#include src-includes/rail_freight_engines_strong7.nml
+//#include src-includes/rail_freight_engines_strong8.nml
+//#include src-includes/rail_freight_engines_strong9.nml
+
+//#include src-generated/rail_medium4_graphics.nml
+//#include src-includes/rail_freight_engines_medium4.nml
+//#include src-generated/rail_medium5_graphics.nml
+//#include src-includes/rail_freight_engines_medium5.nml
+//#include src-generated/rail_medium6_graphics.nml
+//#include src-includes/rail_freight_engines_medium6.nml
+//#include src-generated/rail_medium7_graphics.nml
+//#include src-includes/rail_freight_engines_medium7.nml
+//#include src-generated/rail_medium8_graphics.nml
+//#include src-includes/rail_freight_engines_medium8.nml
+//#include src-generated/rail_medium9_graphics.nml
+//#include src-includes/rail_freight_engines_medium9.nml
+
+//#include src-generated/rail_fast4_graphics.nml
+//#include src-includes/rail_freight_engines_fast4.nml
+//#include src-generated/rail_fast5_graphics.nml
+//#include src-includes/rail_freight_engines_fast5.nml
+//#include src-generated/rail_fast6_graphics.nml
+//#include src-includes/rail_freight_engines_fast6.nml
+//#include src-generated/rail_fast7_graphics.nml
+//#include src-includes/rail_freight_engines_fast7.nml
+//#include src-generated/rail_fast8_graphics.nml
+//#include src-includes/rail_freight_engines_fast8.nml
+//#include src-generated/rail_fast9_graphics.nml
+//#include src-includes/rail_freight_engines_fast9.nml
 
 //#include src-includes/rail_freight_wagons_2_items.nml
 //#include src-includes/rail_freight_wagons_3_items.nml

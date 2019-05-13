@@ -1,0 +1,109 @@
+
+switch(FEAT_TRAINS, SELF, switch_railfast9_capacity_2, cargo_type_in_veh){
+	PASS: 30;
+	GOOD: 30;
+	30;
+}
+switch(FEAT_TRAINS, SELF, switch_railfast9_capacity_1, cargo_type_in_veh){
+	PASS: 5;
+	GOOD: 5;
+	5;
+}
+switch(FEAT_TRAINS, SELF, switch_railfast9_capacity, position_in_articulated_veh % 2){
+	0: switch_railfast9_capacity_1;
+	1: switch_railfast9_capacity_2;
+}
+//--------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, switch_railfast9_loadspeed_2, cargo_type_in_veh){
+	PASS: 6;
+	GOOD: 6;
+	6;
+}
+switch(FEAT_TRAINS, SELF, switch_railfast9_loadspeed_1, cargo_type_in_veh){
+	PASS: 1;
+	GOOD: 1;
+	1;
+}
+switch(FEAT_TRAINS, SELF, switch_railfast9_loadspeed, position_in_articulated_veh % 2){
+	0: switch_railfast9_loadspeed_1;
+	1: switch_railfast9_loadspeed_2;
+}
+switch (FEAT_TRAINS, SELF, switch_railfast9_articulated, extra_callback_info1){
+	1: item_railfast9;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+switch (FEAT_TRAINS, SELF, switch_railfast9_attach, vehicle_type_id){
+	item_railfast9: CB_RESULT_ATTACH_ALLOW;
+
+	item_CABOOSE_1:        CB_RESULT_ATTACH_ALLOW;
+	item_CABOOSE_2:        CB_RESULT_ATTACH_ALLOW;
+	item_railpax:          CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed1:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed2:     CB_RESULT_ATTACH_ALLOW;
+	item_railflatbed3:     CB_RESULT_ATTACH_ALLOW;
+	item_railhopper1:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper2:      CB_RESULT_ATTACH_ALLOW;
+	item_railhopper3:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker1:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker2:      CB_RESULT_ATTACH_ALLOW;
+	item_railtanker3:      CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal1:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal2:   CB_RESULT_ATTACH_ALLOW;
+	item_railuniversal3:   CB_RESULT_ATTACH_ALLOW;
+	return string(error_attach_rail_freight);
+}
+item(FEAT_TRAINS, item_railfast9, 67) { //ID67
+	property {
+		name:                         string(STR_NAME_RF9);
+        climates_available:           ALL_CLIMATES;
+        introduction_date:            date(2047, 1, 1);
+        model_life:                   VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                 255;
+        reliability_decay:            5;
+		//Just an engine, no refit
+        refittable_cargo_classes:     ALL_CARGO_CLASSES;
+        non_refittable_cargo_classes: bitmask();
+				default_cargo_type:           GOOD;
+
+        loading_speed:                5;
+        cost_factor:                  10;
+        running_cost_factor:          100;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        speed:                        241 km/h; // actually 140, but there are rounding errors
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        refit_cost:                   0;
+        track_type:                   RAIL;
+        ai_special_flag:              AI_FLAG_CARGO;
+        power:                        5000 hp;
+        running_cost_base:            RUNNING_COST_ELECTRIC;
+        dual_headed:                  0;
+        cargo_capacity:               35;
+        weight:                       70 ton;
+        ai_engine_rank:               0;
+        engine_class:                 ENGINE_CLASS_ELECTRIC;
+        extra_power_per_wagon:        0 kW;
+        tractive_effort_coefficient:  1;
+        air_drag_coefficient:         0;
+        length: 8;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+        extra_weight_per_wagon:       0 ton;
+        bitmask_vehicle_info:         0;
+	}
+	graphics {
+		default: rail_fast9_graphics;
+		articulated_part: switch_railfast9_articulated;
+		cargo_capacity:   switch_railfast9_capacity;
+		loading_speed:    switch_railfast9_loadspeed;
+		purchase: spriteset_purchaseMenu_railfast9;
+		can_attach_wagon: switch_railfast9_attach;
+		additional_text: string(info_rail_fast_9);
+		speed: 								255; //maybe for wagons later, not now
+		power: 								10000/2; //engine only
+		weight: 							80/2; //engine only
+		tractive_effort_coefficient:			142; //engine only
+		cost_factor:						17; //everything
+		running_cost_factor:				100; //only engines
+		visual_effect_and_powered: switch_rail_freight_powered_decider;
+	}
+}
