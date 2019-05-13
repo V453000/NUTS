@@ -1,0 +1,1177 @@
+
+
+//------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_monopax_1_CC_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 5, 0) }
+spriteset(spriteset_monopax_2_CC_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 6, 0) }
+spriteset(spriteset_monopax_3_CC_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 7, 0) }
+spriteset(spriteset_monopax_4_CC_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 8, 0) }
+spriteset(spriteset_monopax_5_CC_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 9, 0) }
+spriteset(spriteset_monopax_6_CC_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE(10, 0) }
+
+spriteset(spriteset_monopax_1_CC_MAIL, "gfx/MonoICE.png") { template_engine32WTF_monoICE(12, 0) }
+
+spriteset(spriteset_monopax_1_CC_VALU, "gfx/MonoICE.png") { template_engine32WTF_monoICE(14, 0) }
+
+random_switch (FEAT_TRAINS, SELF, switch_monopax_CC_PASS) {
+1: spriteset_monopax_1_CC_PASS;
+1: spriteset_monopax_2_CC_PASS;
+1: spriteset_monopax_3_CC_PASS;
+1: spriteset_monopax_4_CC_PASS;
+1: spriteset_monopax_5_CC_PASS;
+1: spriteset_monopax_6_CC_PASS;
+}
+
+switch (FEAT_TRAINS, SELF, switch_monopax_CC, cargo_type_in_veh){
+PASS: switch_monopax_CC_PASS;
+MAIL: spriteset_monopax_1_CC_MAIL;
+VALU: spriteset_monopax_1_CC_VALU;
+DIAM: spriteset_monopax_1_CC_VALU;
+GOLD: spriteset_monopax_1_CC_VALU;
+YETI: spriteset_monopax_1_CC_MAIL;
+YETY: spriteset_monopax_1_CC_VALU;
+spriteset_monopax_1_CC_VALU;
+}
+
+//------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_monopax_1_black_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 5, 1) }
+spriteset(spriteset_monopax_2_black_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 6, 1) }
+spriteset(spriteset_monopax_3_black_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 7, 1) }
+spriteset(spriteset_monopax_4_black_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 8, 1) }
+spriteset(spriteset_monopax_5_black_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 9, 1) }
+spriteset(spriteset_monopax_6_black_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE(10, 1) }
+
+spriteset(spriteset_monopax_1_black_MAIL, "gfx/MonoICE.png") { template_engine32WTF_monoICE(12, 1) }
+
+spriteset(spriteset_monopax_1_black_VALU, "gfx/MonoICE.png") { template_engine32WTF_monoICE(14, 1) }
+
+random_switch (FEAT_TRAINS, SELF, switch_monopax_black_PASS) {
+1: spriteset_monopax_1_black_PASS;
+1: spriteset_monopax_2_black_PASS;
+1: spriteset_monopax_3_black_PASS;
+1: spriteset_monopax_4_black_PASS;
+1: spriteset_monopax_5_black_PASS;
+1: spriteset_monopax_6_black_PASS;
+}
+
+switch (FEAT_TRAINS, SELF, switch_monopax_black, cargo_type_in_veh){
+PASS: switch_monopax_black_PASS;
+MAIL: spriteset_monopax_1_black_MAIL;
+VALU: spriteset_monopax_1_black_VALU;
+DIAM: spriteset_monopax_1_black_VALU;
+GOLD: spriteset_monopax_1_black_VALU;
+YETI: spriteset_monopax_1_black_MAIL;
+YETY: spriteset_monopax_1_black_VALU;
+spriteset_monopax_1_black_VALU;
+}
+
+//------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_monopax_1_gray_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 5, 2) }
+spriteset(spriteset_monopax_2_gray_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 6, 2) }
+spriteset(spriteset_monopax_3_gray_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 7, 2) }
+spriteset(spriteset_monopax_4_gray_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 8, 2) }
+spriteset(spriteset_monopax_5_gray_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 9, 2) }
+spriteset(spriteset_monopax_6_gray_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE(10, 2) }
+
+spriteset(spriteset_monopax_1_gray_MAIL, "gfx/MonoICE.png") { template_engine32WTF_monoICE(12, 2) }
+
+spriteset(spriteset_monopax_1_gray_VALU, "gfx/MonoICE.png") { template_engine32WTF_monoICE(14, 2) }
+
+random_switch (FEAT_TRAINS, SELF, switch_monopax_gray_PASS) {
+1: spriteset_monopax_1_gray_PASS;
+1: spriteset_monopax_2_gray_PASS;
+1: spriteset_monopax_3_gray_PASS;
+1: spriteset_monopax_4_gray_PASS;
+1: spriteset_monopax_5_gray_PASS;
+1: spriteset_monopax_6_gray_PASS;
+}
+
+switch (FEAT_TRAINS, SELF, switch_monopax_gray, cargo_type_in_veh){
+PASS: switch_monopax_gray_PASS;
+MAIL: spriteset_monopax_1_gray_MAIL;
+VALU: spriteset_monopax_1_gray_VALU;
+DIAM: spriteset_monopax_1_gray_VALU;
+GOLD: spriteset_monopax_1_gray_VALU;
+YETI: spriteset_monopax_1_gray_MAIL;
+YETY: spriteset_monopax_1_gray_VALU;
+spriteset_monopax_1_gray_VALU;
+}
+
+//------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_monopax_1_white_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 5, 3) }
+spriteset(spriteset_monopax_2_white_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 6, 3) }
+spriteset(spriteset_monopax_3_white_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 7, 3) }
+spriteset(spriteset_monopax_4_white_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 8, 3) }
+spriteset(spriteset_monopax_5_white_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 9, 3) }
+spriteset(spriteset_monopax_6_white_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE(10, 3) }
+
+spriteset(spriteset_monopax_1_white_MAIL, "gfx/MonoICE.png") { template_engine32WTF_monoICE(12, 3) }
+
+spriteset(spriteset_monopax_1_white_VALU, "gfx/MonoICE.png") { template_engine32WTF_monoICE(14, 3) }
+
+random_switch (FEAT_TRAINS, SELF, switch_monopax_white_PASS) {
+1: spriteset_monopax_1_white_PASS;
+1: spriteset_monopax_2_white_PASS;
+1: spriteset_monopax_3_white_PASS;
+1: spriteset_monopax_4_white_PASS;
+1: spriteset_monopax_5_white_PASS;
+1: spriteset_monopax_6_white_PASS;
+}
+
+switch (FEAT_TRAINS, SELF, switch_monopax_white, cargo_type_in_veh){
+PASS: switch_monopax_white_PASS;
+MAIL: spriteset_monopax_1_white_MAIL;
+VALU: spriteset_monopax_1_white_VALU;
+DIAM: spriteset_monopax_1_white_VALU;
+GOLD: spriteset_monopax_1_white_VALU;
+YETI: spriteset_monopax_1_white_MAIL;
+YETY: spriteset_monopax_1_white_VALU;
+spriteset_monopax_1_white_VALU;
+}
+
+//------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_monopax_1_ltblue_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 5, 4) }
+spriteset(spriteset_monopax_2_ltblue_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 6, 4) }
+spriteset(spriteset_monopax_3_ltblue_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 7, 4) }
+spriteset(spriteset_monopax_4_ltblue_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 8, 4) }
+spriteset(spriteset_monopax_5_ltblue_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 9, 4) }
+spriteset(spriteset_monopax_6_ltblue_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE(10, 4) }
+
+spriteset(spriteset_monopax_1_ltblue_MAIL, "gfx/MonoICE.png") { template_engine32WTF_monoICE(12, 4) }
+
+spriteset(spriteset_monopax_1_ltblue_VALU, "gfx/MonoICE.png") { template_engine32WTF_monoICE(14, 4) }
+
+random_switch (FEAT_TRAINS, SELF, switch_monopax_ltblue_PASS) {
+1: spriteset_monopax_1_ltblue_PASS;
+1: spriteset_monopax_2_ltblue_PASS;
+1: spriteset_monopax_3_ltblue_PASS;
+1: spriteset_monopax_4_ltblue_PASS;
+1: spriteset_monopax_5_ltblue_PASS;
+1: spriteset_monopax_6_ltblue_PASS;
+}
+
+switch (FEAT_TRAINS, SELF, switch_monopax_ltblue, cargo_type_in_veh){
+PASS: switch_monopax_ltblue_PASS;
+MAIL: spriteset_monopax_1_ltblue_MAIL;
+VALU: spriteset_monopax_1_ltblue_VALU;
+DIAM: spriteset_monopax_1_ltblue_VALU;
+GOLD: spriteset_monopax_1_ltblue_VALU;
+YETI: spriteset_monopax_1_ltblue_MAIL;
+YETY: spriteset_monopax_1_ltblue_VALU;
+spriteset_monopax_1_ltblue_VALU;
+}
+
+//------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_monopax_1_blue_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 5, 5) }
+spriteset(spriteset_monopax_2_blue_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 6, 5) }
+spriteset(spriteset_monopax_3_blue_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 7, 5) }
+spriteset(spriteset_monopax_4_blue_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 8, 5) }
+spriteset(spriteset_monopax_5_blue_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 9, 5) }
+spriteset(spriteset_monopax_6_blue_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE(10, 5) }
+
+spriteset(spriteset_monopax_1_blue_MAIL, "gfx/MonoICE.png") { template_engine32WTF_monoICE(12, 5) }
+
+spriteset(spriteset_monopax_1_blue_VALU, "gfx/MonoICE.png") { template_engine32WTF_monoICE(14, 5) }
+
+random_switch (FEAT_TRAINS, SELF, switch_monopax_blue_PASS) {
+1: spriteset_monopax_1_blue_PASS;
+1: spriteset_monopax_2_blue_PASS;
+1: spriteset_monopax_3_blue_PASS;
+1: spriteset_monopax_4_blue_PASS;
+1: spriteset_monopax_5_blue_PASS;
+1: spriteset_monopax_6_blue_PASS;
+}
+
+switch (FEAT_TRAINS, SELF, switch_monopax_blue, cargo_type_in_veh){
+PASS: switch_monopax_blue_PASS;
+MAIL: spriteset_monopax_1_blue_MAIL;
+VALU: spriteset_monopax_1_blue_VALU;
+DIAM: spriteset_monopax_1_blue_VALU;
+GOLD: spriteset_monopax_1_blue_VALU;
+YETI: spriteset_monopax_1_blue_MAIL;
+YETY: spriteset_monopax_1_blue_VALU;
+spriteset_monopax_1_blue_VALU;
+}
+
+//------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_monopax_1_dkblue_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 5, 6) }
+spriteset(spriteset_monopax_2_dkblue_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 6, 6) }
+spriteset(spriteset_monopax_3_dkblue_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 7, 6) }
+spriteset(spriteset_monopax_4_dkblue_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 8, 6) }
+spriteset(spriteset_monopax_5_dkblue_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 9, 6) }
+spriteset(spriteset_monopax_6_dkblue_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE(10, 6) }
+
+spriteset(spriteset_monopax_1_dkblue_MAIL, "gfx/MonoICE.png") { template_engine32WTF_monoICE(12, 6) }
+
+spriteset(spriteset_monopax_1_dkblue_VALU, "gfx/MonoICE.png") { template_engine32WTF_monoICE(14, 6) }
+
+random_switch (FEAT_TRAINS, SELF, switch_monopax_dkblue_PASS) {
+1: spriteset_monopax_1_dkblue_PASS;
+1: spriteset_monopax_2_dkblue_PASS;
+1: spriteset_monopax_3_dkblue_PASS;
+1: spriteset_monopax_4_dkblue_PASS;
+1: spriteset_monopax_5_dkblue_PASS;
+1: spriteset_monopax_6_dkblue_PASS;
+}
+
+switch (FEAT_TRAINS, SELF, switch_monopax_dkblue, cargo_type_in_veh){
+PASS: switch_monopax_dkblue_PASS;
+MAIL: spriteset_monopax_1_dkblue_MAIL;
+VALU: spriteset_monopax_1_dkblue_VALU;
+DIAM: spriteset_monopax_1_dkblue_VALU;
+GOLD: spriteset_monopax_1_dkblue_VALU;
+YETI: spriteset_monopax_1_dkblue_MAIL;
+YETY: spriteset_monopax_1_dkblue_VALU;
+spriteset_monopax_1_dkblue_VALU;
+}
+
+//------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_monopax_1_mauve_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 5, 7) }
+spriteset(spriteset_monopax_2_mauve_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 6, 7) }
+spriteset(spriteset_monopax_3_mauve_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 7, 7) }
+spriteset(spriteset_monopax_4_mauve_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 8, 7) }
+spriteset(spriteset_monopax_5_mauve_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 9, 7) }
+spriteset(spriteset_monopax_6_mauve_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE(10, 7) }
+
+spriteset(spriteset_monopax_1_mauve_MAIL, "gfx/MonoICE.png") { template_engine32WTF_monoICE(12, 7) }
+
+spriteset(spriteset_monopax_1_mauve_VALU, "gfx/MonoICE.png") { template_engine32WTF_monoICE(14, 7) }
+
+random_switch (FEAT_TRAINS, SELF, switch_monopax_mauve_PASS) {
+1: spriteset_monopax_1_mauve_PASS;
+1: spriteset_monopax_2_mauve_PASS;
+1: spriteset_monopax_3_mauve_PASS;
+1: spriteset_monopax_4_mauve_PASS;
+1: spriteset_monopax_5_mauve_PASS;
+1: spriteset_monopax_6_mauve_PASS;
+}
+
+switch (FEAT_TRAINS, SELF, switch_monopax_mauve, cargo_type_in_veh){
+PASS: switch_monopax_mauve_PASS;
+MAIL: spriteset_monopax_1_mauve_MAIL;
+VALU: spriteset_monopax_1_mauve_VALU;
+DIAM: spriteset_monopax_1_mauve_VALU;
+GOLD: spriteset_monopax_1_mauve_VALU;
+YETI: spriteset_monopax_1_mauve_MAIL;
+YETY: spriteset_monopax_1_mauve_VALU;
+spriteset_monopax_1_mauve_VALU;
+}
+
+//------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_monopax_1_purple_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 5, 8) }
+spriteset(spriteset_monopax_2_purple_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 6, 8) }
+spriteset(spriteset_monopax_3_purple_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 7, 8) }
+spriteset(spriteset_monopax_4_purple_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 8, 8) }
+spriteset(spriteset_monopax_5_purple_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 9, 8) }
+spriteset(spriteset_monopax_6_purple_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE(10, 8) }
+
+spriteset(spriteset_monopax_1_purple_MAIL, "gfx/MonoICE.png") { template_engine32WTF_monoICE(12, 8) }
+
+spriteset(spriteset_monopax_1_purple_VALU, "gfx/MonoICE.png") { template_engine32WTF_monoICE(14, 8) }
+
+random_switch (FEAT_TRAINS, SELF, switch_monopax_purple_PASS) {
+1: spriteset_monopax_1_purple_PASS;
+1: spriteset_monopax_2_purple_PASS;
+1: spriteset_monopax_3_purple_PASS;
+1: spriteset_monopax_4_purple_PASS;
+1: spriteset_monopax_5_purple_PASS;
+1: spriteset_monopax_6_purple_PASS;
+}
+
+switch (FEAT_TRAINS, SELF, switch_monopax_purple, cargo_type_in_veh){
+PASS: switch_monopax_purple_PASS;
+MAIL: spriteset_monopax_1_purple_MAIL;
+VALU: spriteset_monopax_1_purple_VALU;
+DIAM: spriteset_monopax_1_purple_VALU;
+GOLD: spriteset_monopax_1_purple_VALU;
+YETI: spriteset_monopax_1_purple_MAIL;
+YETY: spriteset_monopax_1_purple_VALU;
+spriteset_monopax_1_purple_VALU;
+}
+
+//------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_monopax_1_pink_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 5, 9) }
+spriteset(spriteset_monopax_2_pink_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 6, 9) }
+spriteset(spriteset_monopax_3_pink_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 7, 9) }
+spriteset(spriteset_monopax_4_pink_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 8, 9) }
+spriteset(spriteset_monopax_5_pink_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 9, 9) }
+spriteset(spriteset_monopax_6_pink_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE(10, 9) }
+
+spriteset(spriteset_monopax_1_pink_MAIL, "gfx/MonoICE.png") { template_engine32WTF_monoICE(12, 9) }
+
+spriteset(spriteset_monopax_1_pink_VALU, "gfx/MonoICE.png") { template_engine32WTF_monoICE(14, 9) }
+
+random_switch (FEAT_TRAINS, SELF, switch_monopax_pink_PASS) {
+1: spriteset_monopax_1_pink_PASS;
+1: spriteset_monopax_2_pink_PASS;
+1: spriteset_monopax_3_pink_PASS;
+1: spriteset_monopax_4_pink_PASS;
+1: spriteset_monopax_5_pink_PASS;
+1: spriteset_monopax_6_pink_PASS;
+}
+
+switch (FEAT_TRAINS, SELF, switch_monopax_pink, cargo_type_in_veh){
+PASS: switch_monopax_pink_PASS;
+MAIL: spriteset_monopax_1_pink_MAIL;
+VALU: spriteset_monopax_1_pink_VALU;
+DIAM: spriteset_monopax_1_pink_VALU;
+GOLD: spriteset_monopax_1_pink_VALU;
+YETI: spriteset_monopax_1_pink_MAIL;
+YETY: spriteset_monopax_1_pink_VALU;
+spriteset_monopax_1_pink_VALU;
+}
+
+//------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_monopax_1_brown_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 5, 10) }
+spriteset(spriteset_monopax_2_brown_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 6, 10) }
+spriteset(spriteset_monopax_3_brown_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 7, 10) }
+spriteset(spriteset_monopax_4_brown_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 8, 10) }
+spriteset(spriteset_monopax_5_brown_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 9, 10) }
+spriteset(spriteset_monopax_6_brown_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE(10, 10) }
+
+spriteset(spriteset_monopax_1_brown_MAIL, "gfx/MonoICE.png") { template_engine32WTF_monoICE(12, 10) }
+
+spriteset(spriteset_monopax_1_brown_VALU, "gfx/MonoICE.png") { template_engine32WTF_monoICE(14, 10) }
+
+random_switch (FEAT_TRAINS, SELF, switch_monopax_brown_PASS) {
+1: spriteset_monopax_1_brown_PASS;
+1: spriteset_monopax_2_brown_PASS;
+1: spriteset_monopax_3_brown_PASS;
+1: spriteset_monopax_4_brown_PASS;
+1: spriteset_monopax_5_brown_PASS;
+1: spriteset_monopax_6_brown_PASS;
+}
+
+switch (FEAT_TRAINS, SELF, switch_monopax_brown, cargo_type_in_veh){
+PASS: switch_monopax_brown_PASS;
+MAIL: spriteset_monopax_1_brown_MAIL;
+VALU: spriteset_monopax_1_brown_VALU;
+DIAM: spriteset_monopax_1_brown_VALU;
+GOLD: spriteset_monopax_1_brown_VALU;
+YETI: spriteset_monopax_1_brown_MAIL;
+YETY: spriteset_monopax_1_brown_VALU;
+spriteset_monopax_1_brown_VALU;
+}
+
+//------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_monopax_1_red_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 5, 11) }
+spriteset(spriteset_monopax_2_red_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 6, 11) }
+spriteset(spriteset_monopax_3_red_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 7, 11) }
+spriteset(spriteset_monopax_4_red_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 8, 11) }
+spriteset(spriteset_monopax_5_red_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 9, 11) }
+spriteset(spriteset_monopax_6_red_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE(10, 11) }
+
+spriteset(spriteset_monopax_1_red_MAIL, "gfx/MonoICE.png") { template_engine32WTF_monoICE(12, 11) }
+
+spriteset(spriteset_monopax_1_red_VALU, "gfx/MonoICE.png") { template_engine32WTF_monoICE(14, 11) }
+
+random_switch (FEAT_TRAINS, SELF, switch_monopax_red_PASS) {
+1: spriteset_monopax_1_red_PASS;
+1: spriteset_monopax_2_red_PASS;
+1: spriteset_monopax_3_red_PASS;
+1: spriteset_monopax_4_red_PASS;
+1: spriteset_monopax_5_red_PASS;
+1: spriteset_monopax_6_red_PASS;
+}
+
+switch (FEAT_TRAINS, SELF, switch_monopax_red, cargo_type_in_veh){
+PASS: switch_monopax_red_PASS;
+MAIL: spriteset_monopax_1_red_MAIL;
+VALU: spriteset_monopax_1_red_VALU;
+DIAM: spriteset_monopax_1_red_VALU;
+GOLD: spriteset_monopax_1_red_VALU;
+YETI: spriteset_monopax_1_red_MAIL;
+YETY: spriteset_monopax_1_red_VALU;
+spriteset_monopax_1_red_VALU;
+}
+
+//------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_monopax_1_orange_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 5, 12) }
+spriteset(spriteset_monopax_2_orange_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 6, 12) }
+spriteset(spriteset_monopax_3_orange_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 7, 12) }
+spriteset(spriteset_monopax_4_orange_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 8, 12) }
+spriteset(spriteset_monopax_5_orange_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 9, 12) }
+spriteset(spriteset_monopax_6_orange_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE(10, 12) }
+
+spriteset(spriteset_monopax_1_orange_MAIL, "gfx/MonoICE.png") { template_engine32WTF_monoICE(12, 12) }
+
+spriteset(spriteset_monopax_1_orange_VALU, "gfx/MonoICE.png") { template_engine32WTF_monoICE(14, 12) }
+
+random_switch (FEAT_TRAINS, SELF, switch_monopax_orange_PASS) {
+1: spriteset_monopax_1_orange_PASS;
+1: spriteset_monopax_2_orange_PASS;
+1: spriteset_monopax_3_orange_PASS;
+1: spriteset_monopax_4_orange_PASS;
+1: spriteset_monopax_5_orange_PASS;
+1: spriteset_monopax_6_orange_PASS;
+}
+
+switch (FEAT_TRAINS, SELF, switch_monopax_orange, cargo_type_in_veh){
+PASS: switch_monopax_orange_PASS;
+MAIL: spriteset_monopax_1_orange_MAIL;
+VALU: spriteset_monopax_1_orange_VALU;
+DIAM: spriteset_monopax_1_orange_VALU;
+GOLD: spriteset_monopax_1_orange_VALU;
+YETI: spriteset_monopax_1_orange_MAIL;
+YETY: spriteset_monopax_1_orange_VALU;
+spriteset_monopax_1_orange_VALU;
+}
+
+//------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_monopax_1_yellow_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 5, 13) }
+spriteset(spriteset_monopax_2_yellow_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 6, 13) }
+spriteset(spriteset_monopax_3_yellow_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 7, 13) }
+spriteset(spriteset_monopax_4_yellow_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 8, 13) }
+spriteset(spriteset_monopax_5_yellow_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 9, 13) }
+spriteset(spriteset_monopax_6_yellow_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE(10, 13) }
+
+spriteset(spriteset_monopax_1_yellow_MAIL, "gfx/MonoICE.png") { template_engine32WTF_monoICE(12, 13) }
+
+spriteset(spriteset_monopax_1_yellow_VALU, "gfx/MonoICE.png") { template_engine32WTF_monoICE(14, 13) }
+
+random_switch (FEAT_TRAINS, SELF, switch_monopax_yellow_PASS) {
+1: spriteset_monopax_1_yellow_PASS;
+1: spriteset_monopax_2_yellow_PASS;
+1: spriteset_monopax_3_yellow_PASS;
+1: spriteset_monopax_4_yellow_PASS;
+1: spriteset_monopax_5_yellow_PASS;
+1: spriteset_monopax_6_yellow_PASS;
+}
+
+switch (FEAT_TRAINS, SELF, switch_monopax_yellow, cargo_type_in_veh){
+PASS: switch_monopax_yellow_PASS;
+MAIL: spriteset_monopax_1_yellow_MAIL;
+VALU: spriteset_monopax_1_yellow_VALU;
+DIAM: spriteset_monopax_1_yellow_VALU;
+GOLD: spriteset_monopax_1_yellow_VALU;
+YETI: spriteset_monopax_1_yellow_MAIL;
+YETY: spriteset_monopax_1_yellow_VALU;
+spriteset_monopax_1_yellow_VALU;
+}
+
+//------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_monopax_1_green_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 5, 14) }
+spriteset(spriteset_monopax_2_green_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 6, 14) }
+spriteset(spriteset_monopax_3_green_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 7, 14) }
+spriteset(spriteset_monopax_4_green_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 8, 14) }
+spriteset(spriteset_monopax_5_green_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 9, 14) }
+spriteset(spriteset_monopax_6_green_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE(10, 14) }
+
+spriteset(spriteset_monopax_1_green_MAIL, "gfx/MonoICE.png") { template_engine32WTF_monoICE(12, 14) }
+
+spriteset(spriteset_monopax_1_green_VALU, "gfx/MonoICE.png") { template_engine32WTF_monoICE(14, 14) }
+
+random_switch (FEAT_TRAINS, SELF, switch_monopax_green_PASS) {
+1: spriteset_monopax_1_green_PASS;
+1: spriteset_monopax_2_green_PASS;
+1: spriteset_monopax_3_green_PASS;
+1: spriteset_monopax_4_green_PASS;
+1: spriteset_monopax_5_green_PASS;
+1: spriteset_monopax_6_green_PASS;
+}
+
+switch (FEAT_TRAINS, SELF, switch_monopax_green, cargo_type_in_veh){
+PASS: switch_monopax_green_PASS;
+MAIL: spriteset_monopax_1_green_MAIL;
+VALU: spriteset_monopax_1_green_VALU;
+DIAM: spriteset_monopax_1_green_VALU;
+GOLD: spriteset_monopax_1_green_VALU;
+YETI: spriteset_monopax_1_green_MAIL;
+YETY: spriteset_monopax_1_green_VALU;
+spriteset_monopax_1_green_VALU;
+}
+
+//------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_monopax_1_plgreen_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 5, 15) }
+spriteset(spriteset_monopax_2_plgreen_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 6, 15) }
+spriteset(spriteset_monopax_3_plgreen_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 7, 15) }
+spriteset(spriteset_monopax_4_plgreen_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 8, 15) }
+spriteset(spriteset_monopax_5_plgreen_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 9, 15) }
+spriteset(spriteset_monopax_6_plgreen_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE(10, 15) }
+
+spriteset(spriteset_monopax_1_plgreen_MAIL, "gfx/MonoICE.png") { template_engine32WTF_monoICE(12, 15) }
+
+spriteset(spriteset_monopax_1_plgreen_VALU, "gfx/MonoICE.png") { template_engine32WTF_monoICE(14, 15) }
+
+random_switch (FEAT_TRAINS, SELF, switch_monopax_plgreen_PASS) {
+1: spriteset_monopax_1_plgreen_PASS;
+1: spriteset_monopax_2_plgreen_PASS;
+1: spriteset_monopax_3_plgreen_PASS;
+1: spriteset_monopax_4_plgreen_PASS;
+1: spriteset_monopax_5_plgreen_PASS;
+1: spriteset_monopax_6_plgreen_PASS;
+}
+
+switch (FEAT_TRAINS, SELF, switch_monopax_plgreen, cargo_type_in_veh){
+PASS: switch_monopax_plgreen_PASS;
+MAIL: spriteset_monopax_1_plgreen_MAIL;
+VALU: spriteset_monopax_1_plgreen_VALU;
+DIAM: spriteset_monopax_1_plgreen_VALU;
+GOLD: spriteset_monopax_1_plgreen_VALU;
+YETI: spriteset_monopax_1_plgreen_MAIL;
+YETY: spriteset_monopax_1_plgreen_VALU;
+spriteset_monopax_1_plgreen_VALU;
+}
+
+//------------------------------------------------------------------------------------------------------------
+spriteset(spriteset_monopax_1_dkgreen_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 5, 16) }
+spriteset(spriteset_monopax_2_dkgreen_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 6, 16) }
+spriteset(spriteset_monopax_3_dkgreen_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 7, 16) }
+spriteset(spriteset_monopax_4_dkgreen_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 8, 16) }
+spriteset(spriteset_monopax_5_dkgreen_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE( 9, 16) }
+spriteset(spriteset_monopax_6_dkgreen_PASS, "gfx/MonoICE.png") { template_engine32WTF_monoICE(10, 16) }
+
+spriteset(spriteset_monopax_1_dkgreen_MAIL, "gfx/MonoICE.png") { template_engine32WTF_monoICE(12, 16) }
+
+spriteset(spriteset_monopax_1_dkgreen_VALU, "gfx/MonoICE.png") { template_engine32WTF_monoICE(14, 16) }
+
+random_switch (FEAT_TRAINS, SELF, switch_monopax_dkgreen_PASS) {
+1: spriteset_monopax_1_dkgreen_PASS;
+1: spriteset_monopax_2_dkgreen_PASS;
+1: spriteset_monopax_3_dkgreen_PASS;
+1: spriteset_monopax_4_dkgreen_PASS;
+1: spriteset_monopax_5_dkgreen_PASS;
+1: spriteset_monopax_6_dkgreen_PASS;
+}
+
+switch (FEAT_TRAINS, SELF, switch_monopax_dkgreen, cargo_type_in_veh){
+PASS: switch_monopax_dkgreen_PASS;
+MAIL: spriteset_monopax_1_dkgreen_MAIL;
+VALU: spriteset_monopax_1_dkgreen_VALU;
+DIAM: spriteset_monopax_1_dkgreen_VALU;
+GOLD: spriteset_monopax_1_dkgreen_VALU;
+YETI: spriteset_monopax_1_dkgreen_MAIL;
+YETY: spriteset_monopax_1_dkgreen_VALU;
+spriteset_monopax_1_dkgreen_VALU;
+}
+
+//--------------------------------------------------------------------------------------
+
+random_switch (FEAT_TRAINS, SELF, random_monopax_colours){
+1: return switch_monopax_CC;
+1: return switch_monopax_black;
+1: return switch_monopax_gray;
+1: return switch_monopax_white;
+1: return switch_monopax_ltblue;
+1: return switch_monopax_blue;
+1: return switch_monopax_dkblue;
+1: return switch_monopax_mauve;
+1: return switch_monopax_purple;
+1: return switch_monopax_pink;
+1: return switch_monopax_brown;
+1: return switch_monopax_red;
+1: return switch_monopax_orange;
+1: return switch_monopax_yellow;
+1: return switch_monopax_green;
+1: return switch_monopax_plgreen;
+1: return switch_monopax_dkgreen;
+}
+switch(FEAT_TRAINS, SELF, monopax_subtype_switch, cargo_subtype) {
+    0: return switch_monopax_CC;
+	1: return random_monopax_colours;
+	2: return switch_monopax_black;
+	3: return switch_monopax_gray;
+	4: return switch_monopax_white;
+	5: return switch_monopax_ltblue;
+	6: return switch_monopax_blue;
+	7: return switch_monopax_dkblue;
+	8: return switch_monopax_mauve;
+	9: return switch_monopax_purple;
+	10: return switch_monopax_pink;
+	11: return switch_monopax_brown;
+	12: return switch_monopax_red;
+	13: return switch_monopax_orange;
+	14: return switch_monopax_yellow;
+	15: return switch_monopax_green;
+	16: return switch_monopax_plgreen;
+	17: return switch_monopax_dkgreen;
+	return switch_monopax_CC;
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	switch (FEAT_TRAINS, PARENT, switch_pax_wagons_mono, vehicle_type_id){
+		item_monoWTF1:		switch_WTF_wagons;
+		item_monoWTF2:		switch_WTF_wagons;
+		item_monoWTF3:		switch_WTF_wagons;
+		item_monoWTF4:		switch_WTF_wagons;
+		item_NYAN:			switch_NYAN_wagons;
+		item_doombringer:			switch_WIDOW_wagons;
+		item_MEOW_rail_b1:	switch_WIDOW_wagons;
+		item_monoice1:		monopax_subtype_switch;
+		item_monoice2:		monopax_subtype_switch;
+		item_monoice3:		monopax_subtype_switch;
+		item_monoice4:		monopax_subtype_switch;
+		item_monolocal1:	switch_monocom1_wagons;
+		item_monolocal2:	switch_monocom2_wagons;
+		item_monolocal3:	switch_monocom3_wagons;
+		item_monolocal4:	switch_monocom4_wagons;
+		item_monomedium1:	switch_monodefault1_wagons;
+		item_monomedium2:	switch_monodefault1_wagons;
+		item_monomedium3:	switch_monodefault2_wagons;
+		item_monomedium4:	switch_monodefault2_wagons;
+		item_monofast1:		switch_monodefault1_wagons;
+		item_monofast2:		switch_monodefault1_wagons;
+		item_monofast3:		switch_monodefault2_wagons;
+		item_monofast4:		switch_monodefault2_wagons;
+		return switch_monodefault1_wagons;
+	}
+	switch (FEAT_TRAINS, PARENT, switch_pax_wagons_rail, vehicle_type_id){
+		item_doombringer:			switch_WIDOW_wagons;
+		item_railice1: 		switch_railice1_wagons;
+		item_railice2: 		switch_railice2_wagons;
+		item_railice3: 		switch_railice3_wagons;
+		item_railice4: 		switch_railice4_wagons;
+		item_railice5: 		switch_railice5_wagons;
+		item_railice6: 		switch_railice6_wagons;
+		item_railice7: 		switch_railice7_wagons;
+		item_railice8: 		switch_railice8_wagons;
+		item_railice9: 		switch_railice9_wagons;
+		item_railcom1: 		switch_railcom1_wagons;
+		item_railcom2:		switch_railcom2_wagons;
+		item_railcom3: 		switch_railcom3_wagons;
+		item_railcom4: 		switch_railcom4_wagons;
+		item_railcom5: 		switch_railcom5_wagons;
+		item_railcom6: 		switch_railcom6_wagons;
+		item_railcom7: 		switch_railcom7_wagons;
+		item_railcom8: 		switch_railcom8_wagons;
+		item_railcom9: 		switch_railcom9_wagons;
+		item_railstrong1:	switch_raildefault1_wagons; // rail 1-3 gets first gen, 4-6 gets 2nd, 7-9 gets 3rd
+		item_railstrong2:	switch_raildefault1_wagons; // mono 1-2 gets first gen, 3-4 gets 2nd
+		item_railstrong3:	switch_raildefault1_wagons; // mag 1-2 gets first gen, 3-4 gets 2nd
+		item_railstrong4:	switch_raildefault2_wagons;
+		item_railstrong5:	switch_raildefault2_wagons;
+		item_railstrong6:	switch_raildefault2_wagons;
+		item_railstrong7:	switch_raildefault3_wagons;
+		item_railstrong8:	switch_raildefault3_wagons;
+		item_railstrong9:	switch_raildefault3_wagons;
+		item_railmedium1:	switch_raildefault1_wagons;
+		item_railmedium2:	switch_raildefault1_wagons;
+		item_railmedium3:	switch_raildefault1_wagons;
+		item_railmedium4:	switch_raildefault2_wagons;
+		item_railmedium5:	switch_raildefault2_wagons;
+		item_railmedium6:	switch_raildefault2_wagons;
+		item_railmedium7:	switch_raildefault3_wagons;
+		item_railmedium8:	switch_raildefault3_wagons;
+		item_railmedium9:	switch_raildefault3_wagons;
+		item_railfast1:		switch_raildefault1_wagons;
+		item_railfast2:		switch_raildefault1_wagons;
+		item_railfast3:		switch_raildefault1_wagons;
+		item_railfast4:		switch_raildefault2_wagons;
+		item_railfast5:		switch_raildefault2_wagons;
+		item_railfast6:		switch_raildefault2_wagons;
+		item_railfast7:		switch_raildefault3_wagons;
+		item_railfast8:		switch_raildefault3_wagons;
+		item_railfast9:		switch_raildefault3_wagons;
+		item_CABOOSE_1:   switch_raildefault2_wagons;
+		item_CABOOSE_2:   switch_raildefault3_wagons;
+		return switch_raildefault1_wagons;
+	}
+
+	switch (FEAT_TRAINS, SELF, switch_monolocal_wagon_capacity, num_vehs_in_consist){
+1 : 120;//TL0.5 doesnt exist
+2 : 120;//TL 1
+3 : 115;
+4 : 115;//TL 2
+5 : 110;
+6 : 110;//TL 3
+7 : 105;
+8 : 105;//TL 4
+9 : 100;
+10: 100;//TL 5
+11: 95;
+12: 95;//TL 6
+13: 90;
+14: 90;//TL 7
+15: 85;
+16: 85;//TL 8
+17: 80;
+18: 80;//TL 9
+19: 75;
+20: 75;//TL 10
+75;
+}
+
+
+
+switch (FEAT_TRAINS, SELF, switch_monoICE_wagon_capacity_PASS, num_vehs_in_consist){
+2 : 33+(1*0);//TL 1
+3 : 33+(1*0);
+4 : 33+(1*1);//TL 2
+5 : 33+(1*2);
+6 : 33+(1*3);//TL 3
+7 : 33+(1*4);
+8 : 33+(1*5);//TL 4
+9 : 33+(1*6);
+10: 33+(1*7);//TL 5
+11: 33+(1*8);
+12: 33+(1*9);//TL 6
+13: 33+(1*10);
+14: 33+(1*11);//TL 7
+15: 33+(1*12);
+16: 33+(1*13);//TL 8
+17: 33+(1*14);
+18: 33+(1*15);//TL 9
+19: 33+(1*16);
+20: 33+(1*17);//TL 10
+33+(1*17);
+}
+switch (FEAT_TRAINS, SELF, switch_monoICE_wagon_capacity_MAIL, num_vehs_in_consist){
+2 : 16;//33+(1*0);//TL 1
+3 : 17;//33+(1*0);
+4 : 17;//33+(1*1);//TL 2
+5 : 17;//33+(1*2);
+6 : 18;//33+(1*3);//TL 3
+7 : 18;//33+(1*4);
+8 : 19;//33+(1*5);//TL 4
+9 : 19;//33+(1*6);
+10: 20;//33+(1*7);//TL 5
+11: 20;//33+(1*8);
+12: 21;//33+(1*9);//TL 6
+13: 21;//33+(1*10);
+14: 22;//33+(1*11);//TL 7
+15: 22;//33+(1*12);
+16: 23;//33+(1*13);//TL 8
+17: 23;//33+(1*14);
+18: 24;//33+(1*15);//TL 9
+19: 24;//33+(1*16);
+20: 25;//33+(1*17);//TL 10
+25;//33+(1*17);
+}
+switch (FEAT_TRAINS, SELF, switch_monoICE_wagon_capacity_VALU, num_vehs_in_consist){
+2 : 16;//33+(1*0);//TL 1
+3 : 17;//33+(1*0);
+4 : 17;//33+(1*1);//TL 2
+5 : 17;//33+(1*2);
+6 : 18;//33+(1*3);//TL 3
+7 : 18;//33+(1*4);
+8 : 19;//33+(1*5);//TL 4
+9 : 19;//33+(1*6);
+10: 20;//33+(1*7);//TL 5
+11: 20;//33+(1*8);
+12: 21;//33+(1*9);//TL 6
+13: 21;//33+(1*10);
+14: 22;//33+(1*11);//TL 7
+15: 22;//33+(1*12);
+16: 23;//33+(1*13);//TL 8
+17: 23;//33+(1*14);
+18: 24;//33+(1*15);//TL 9
+19: 24;//33+(1*16);
+20: 25;//33+(1*17);//TL 10
+25;//33+(1*17);
+}
+
+
+
+switch (FEAT_TRAINS, SELF, switch_monoICE_wagon_capacity, cargo_type_in_veh){
+PASS: switch_monoICE_wagon_capacity_PASS;
+MAIL: switch_monoICE_wagon_capacity_MAIL;
+VALU: switch_monoICE_wagon_capacity_VALU;
+DIAM: switch_monoICE_wagon_capacity_VALU;
+GOLD: switch_monoICE_wagon_capacity_VALU;
+switch_monoICE_wagon_capacity_VALU;
+}
+
+
+//PAX WAGON CAPACITY SWITCH
+switch (FEAT_TRAINS, PARENT, pax_global_capacity_switch, vehicle_type_id) {
+item_railcom1: railpax50_capacity_switch;
+item_railcom2: railpax50_capacity_switch;
+item_railcom3: railpax50_capacity_switch;
+item_railcom4: railpax50_capacity_switch;
+item_railcom5: railpax60_capacity_switch;
+item_railcom6: railpax50_capacity_switch;
+item_railcom7: railpax60_capacity_switch;
+item_railcom8: railpax70_capacity_switch;
+item_railcom9: railpax55_capacity_switch;
+
+item_railice1: railpax40_capacity_switch;
+item_railice2: railpax40_capacity_switch;
+item_railice3: railpax40_capacity_switch;
+item_railice4: railpax40_capacity_switch;
+item_railice5: railpax40_capacity_switch;
+item_railice6: railpax40_capacity_switch;
+item_railice7: railpax40_capacity_switch;
+item_railice8: railpax40_capacity_switch;
+item_railice9: railpax40_capacity_switch;
+
+item_monolocal1: switch_monolocal_wagon_capacity;//monopax45_capacity_switch;
+item_monolocal2: switch_monolocal_wagon_capacity;//monopax45_capacity_switch;
+item_monolocal3: switch_monolocal_wagon_capacity;//monopax45_capacity_switch;
+item_monolocal4: switch_monolocal_wagon_capacity;//monopax45_capacity_switch;
+
+item_monoice1: switch_monoICE_wagon_capacity;
+item_monoice2: switch_monoICE_wagon_capacity;
+item_monoice3: switch_monoICE_wagon_capacity;
+item_monoice4: switch_monoICE_wagon_capacity;
+
+item_magice1: magpax30_capacity_switch;
+item_magice2: magpax30_capacity_switch;
+item_magice3: magpax35_capacity_switch;
+item_magice4: magpax30_capacity_switch;
+
+item_doombringer: railpax40_capacity_switch;
+item_NYAN: monopax30_capacity_switch;
+item_SLUG: magpaxSLUGwagon_capacity_switch;
+item_ANIMALEXPRESS: magpaxSLUGwagon_capacity_switch;
+item_RAINBOWSLUG: magpaxSLUGwagon_capacity_switch;
+item_MagCom1: magpax_local1_wagon_capacity_switch;
+
+item_railsuperstrong1: railpax_cargo_capacity_switch;
+item_railsuperstrong2: railpax_cargo_capacity_switch;
+item_railsuperstrong3: railpax_cargo_capacity_switch;
+item_railsuperstrong4: railpax_cargo_capacity_switch;
+item_railsuperstrong5: railpax_cargo_capacity_switch;
+item_railsuperstrong6: railpax_cargo_capacity_switch;
+
+item_railstrong1: railpax_cargo_capacity_switch;
+item_railstrong2: railpax_cargo_capacity_switch;
+item_railstrong3: railpax_cargo_capacity_switch;
+item_railstrong4: railpax_cargo_capacity_switch;
+item_railstrong5: railpax_cargo_capacity_switch;
+item_railstrong6: railpax_cargo_capacity_switch;
+item_railstrong7: railpax_cargo_capacity_switch;
+item_railstrong8: railpax_cargo_capacity_switch;
+item_railstrong9: railpax_cargo_capacity_switch;
+
+item_railmedium1: railpax_cargo_capacity_switch;
+item_railmedium2: railpax_cargo_capacity_switch;
+item_railmedium3: railpax_cargo_capacity_switch;
+item_railmedium4: railpax_cargo_capacity_switch;
+item_railmedium5: railpax_cargo_capacity_switch;
+item_railmedium6: railpax_cargo_capacity_switch;
+item_railmedium7: railpax_cargo_capacity_switch;
+item_railmedium8: railpax_cargo_capacity_switch;
+item_railmedium9: railpax_cargo_capacity_switch;
+
+item_railfast1: railpax_cargo_capacity_switch;
+item_railfast2: railpax_cargo_capacity_switch;
+item_railfast3: railpax_cargo_capacity_switch;
+item_railfast4: railpax_cargo_capacity_switch;
+item_railfast5: railpax_cargo_capacity_switch;
+item_railfast6: railpax_cargo_capacity_switch;
+item_railfast7: railpax_cargo_capacity_switch;
+item_railfast8: railpax_cargo_capacity_switch;
+item_railfast9: railpax_cargo_capacity_switch;
+
+item_monomedium1: monopax_cargo_capacity_switch;
+item_monomedium2: monopax_cargo_capacity_switch;
+item_monomedium3: monopax_cargo_capacity_switch;
+item_monomedium4: monopax_cargo_capacity_switch;
+item_monofast1: monopax_cargo_capacity_switch;
+item_monofast2: monopax_cargo_capacity_switch;
+item_monofast3: monopax_cargo_capacity_switch;
+item_monofast4: monopax_cargo_capacity_switch;
+item_monoWTF1: monopax_cargo_capacity_switch;
+item_monoWTF2: monopax_cargo_capacity_switch;
+item_monoWTF3: monopax_cargo_capacity_switch;
+item_monoWTF4: monopax_cargo_capacity_switch;
+
+item_magstrong1: magpax_cargo_capacity_switch;
+item_magstrong2: magpax_cargo_capacity_switch;
+item_magstrong3: magpax_cargo_capacity_switch;
+item_magstrong4: magpax_cargo_capacity_switch;
+item_magfast1: magpax_cargo_capacity_switch;
+item_magfast2: magpax_cargo_capacity_switch;
+item_magfast3: magpax_cargo_capacity_switch;
+item_magfast4: magpax_cargo_capacity_switch;
+
+90;
+}
+
+//PURCHASE MENU SPRITES
+spriteset(spriteset_purchaseMenu_railpax,		"gfx/PurchaseMenu.png"){template_purchaseMenu(0,26)}
+spriteset(spriteset_purchaseMenu_monopax,		"gfx/PurchaseMenu.png"){template_purchaseMenu(1,26)}
+spriteset(spriteset_purchaseMenu_magpax,		"gfx/PurchaseMenu.png"){template_purchaseMenu(2,26)}
+//PAX WAGON ITEMS and loadspeed switches
+switch(FEAT_TRAINS, PARENT, switch_loadspeed_railpax, vehicle_type_id){
+		item_railsuperstrong1:	18;
+		item_railsuperstrong2:	18;
+		item_railsuperstrong3:	18;
+		item_railsuperstrong4:	18;
+		item_railsuperstrong5:	18;
+		item_railsuperstrong6:	18;
+		item_railstrong1:	18;
+		item_railstrong2:	18;
+		item_railstrong3:	18;
+		item_railstrong4:	18;
+		item_railstrong5:	18;
+		item_railstrong6:	18;
+		item_railstrong7:	18;
+		item_railstrong8:	18;
+		item_railstrong9:	18;
+		item_railmedium1:	18;
+		item_railmedium2:	18;
+		item_railmedium3:	18;
+		item_railmedium4:	18;
+		item_railmedium5:	18;
+		item_railmedium6:	18;
+		item_railmedium7:	18;
+		item_railmedium8:	18;
+		item_railmedium9:	18;
+		item_railfast1:		18;
+		item_railfast2:		18;
+		item_railfast3:		18;
+		item_railfast4:		18;
+		item_railfast5:		18;
+		item_railfast6:		18;
+		item_railfast7:		18;
+		item_railfast8:		18;
+		item_railfast9:		18;
+		item_railice1:		10;
+		item_railice2: 		10;
+		item_railice3:	 	10;
+		item_railice4: 		10;
+		item_railice5: 		10;
+		item_railice6: 		10;
+		item_railice7: 	  10;
+		item_railice8: 		10;
+		item_railice9: 		10;
+		item_railcom1: 		55;
+		item_railcom2: 		55;
+		item_railcom3: 		55;
+		item_railcom4: 		55;
+		item_railcom5: 		60;
+		item_railcom6: 		55;
+		item_railcom7: 		60;
+		item_railcom8: 		44;
+		item_railcom9: 		55;
+		item_doombringer:			20;
+		return 18;
+}
+item(FEAT_TRAINS, item_railpax, 451) { //ID451
+	property {
+		name:                         string(STR_NAME_RAILPAX);
+        climates_available:           ALL_CLIMATES;
+        introduction_date:            date(0, 1, 1);
+        model_life:                   VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                 255;
+        reliability_decay:            5;
+				cargo_capacity:               60;
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS, CC_MAIL, CC_ARMOURED);
+        non_refittable_cargo_classes: bitmask();
+				default_cargo_type:           PASS;
+				cargo_allow_refit:			      [YETI, YETY];
+				loading_speed:                5;
+        cost_factor:                  10;
+        running_cost_factor:          0;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        speed:                        0;
+        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
+        refit_cost:                   0;
+        track_type:                   RAIL;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        power:                        0;
+        running_cost_base:            RUNNING_COST_NONE;
+        dual_headed:                  0;
+        weight:                       10 ton;
+        ai_engine_rank:               0;
+        extra_power_per_wagon:        0 kW;
+        tractive_effort_coefficient:  0;
+        air_drag_coefficient:         0;
+        length: 8;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
+        extra_weight_per_wagon:       0 ton;
+        bitmask_vehicle_info:         0;
+	}
+	graphics {
+		default: switch_pax_wagons_rail;
+		cargo_subtype_text: railcom1_subtype_text;
+		purchase: spriteset_purchaseMenu_railpax;
+		additional_text: string(STR_EXPRESSWAGON);
+		//purchase_cargo_capacity: 77;
+		cargo_capacity:   pax_global_capacity_switch;
+		purchase_cargo_capacity:   40;
+		weight:			20;
+		loading_speed:		switch_loadspeed_railpax;
+		cost_factor:		20;
+		//weight:				switch_weight_global;
+
+	}
+}
+
+
+
+
+
+
+switch (FEAT_TRAINS, SELF, switch_monolocal_wagon_loadspeed, num_vehs_in_consist){
+1 : 24;//TL0.5 doesnt exist
+2 : 24;//TL 1
+3 : 23;
+4 : 23;//TL 2
+5 : 28;
+6 : 28;//TL 3
+7 : 27;
+8 : 27;//TL 4
+9 : 34;
+10: 34;//TL 5
+11: 33;
+12: 33;//TL 6
+13: 45;
+14: 45;//TL 7
+15: 43;
+16: 43;//TL 8
+17: 80;
+18: 80;//TL 9
+19: 75;
+20: 75;//TL 10
+75;
+}
+
+switch (FEAT_TRAINS, SELF, switch_monoice_wagon_loadspeed_PASS, num_vehs_in_consist){
+1 : 2;//TL0.5 doesnt exist
+2 : 2;//TL 1  doesnt exist
+3 : 2;
+4 : 2;//TL 2
+5 : 2;
+6 : 2;//TL 3
+7 : 2;
+8 : 2;//TL 4
+9 : 2;
+10: 2;//TL 5
+11: 2;
+12: 2;//TL 6
+13: 2;
+14: 2;//TL 7
+15: 2;
+16: 2;//TL 8
+17: 2;
+18: 2;//TL 9
+19: 2;
+20: 2;//TL 10
+2;
+}
+switch (FEAT_TRAINS, SELF, switch_monoice_wagon_loadspeed_MAIL, num_vehs_in_consist){
+1 : 1;//TL0.5 doesnt exist
+2 : 1;//TL 1  doesnt exist
+3 : 1;
+4 : 1;//TL 2
+5 : 1;
+6 : 1;//TL 3
+7 : 1;
+8 : 1;//TL 4
+9 : 1;
+10: 1;//TL 5
+11: 1;
+12: 1;//TL 6
+13: 1;
+14: 1;//TL 7
+15: 1;
+16: 1;//TL 8
+17: 1;
+18: 1;//TL 9
+19: 1;
+20: 1;//TL 10
+1;
+}
+
+switch (FEAT_TRAINS,SELF,switch_monoice_wagon_loadspeed, cargo_type_in_veh){
+PASS: switch_monoice_wagon_loadspeed_PASS;
+switch_monoice_wagon_loadspeed_MAIL;
+}
+
+
+switch(FEAT_TRAINS, PARENT, switch_loadspeed_monopax, vehicle_type_id){
+		item_monoWTF1:		12;
+		item_monoWTF2:		12;
+		item_monoWTF3:		12;
+		item_monoWTF4:		12;
+		item_monomedium1:	12;
+		item_monomedium2:	12;
+		item_monomedium3:	12;
+		item_monomedium4:	12;
+		item_monofast1:		12;
+		item_monofast2:		12;
+		item_monofast3:		12;
+		item_monofast4:		12;
+		item_monoice1:		switch_monoice_wagon_loadspeed;
+		item_monoice2: 		switch_monoice_wagon_loadspeed;
+		item_monoice3:	 	switch_monoice_wagon_loadspeed;
+		item_monoice4: 		switch_monoice_wagon_loadspeed;
+		item_monolocal1: 	switch_monolocal_wagon_loadspeed;//30;
+		item_monolocal2: 	switch_monolocal_wagon_loadspeed;//30;
+		item_monolocal3: 	switch_monolocal_wagon_loadspeed;//30;
+		item_monolocal4: 	switch_monolocal_wagon_loadspeed;//30;
+		item_NYAN:			1;
+		return 6;
+}
+
+
+
+switch(FEAT_TRAINS, SELF, MonoICE_subtype_text, cargo_subtype) {
+    0: return string(STR_subtype_CC);
+	1: return string(STR_subtype_RANDOM);
+	2: return string(STR_subtype_BLACK);
+	3: return string(STR_subtype_GRAY);
+	4: return string(STR_subtype_WHITE);
+	5: return string(STR_subtype_LTBLUE);
+	6: return string(STR_subtype_BLUE);
+	7: return string(STR_subtype_DKBLUE);
+	8: return string(STR_subtype_MAUVE);
+	9: return string(STR_subtype_PURPLE);
+	10: return string(STR_subtype_PINK);
+	11: return string(STR_subtype_BROWN);
+	12: return string(STR_subtype_RED);
+	13: return string(STR_subtype_ORANGE);
+	14: return string(STR_subtype_YELLOW);
+	15: return string(STR_subtype_GREEN);
+	16: return string(STR_subtype_PALEGREEN);
+	17: return string(STR_subtype_DKGREEN);
+	return CB_RESULT_NO_TEXT;
+}
+
+
+item(FEAT_TRAINS, item_monopax, 551) { //ID551
+	property {
+		name:                         string(STR_NAME_MONOPAX);
+        climates_available:           ALL_CLIMATES;
+        introduction_date:            date(1937, 1, 1);
+        model_life:                   VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                 255;
+        reliability_decay:            5;
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS, CC_MAIL, CC_ARMOURED);
+        non_refittable_cargo_classes: bitmask();
+				default_cargo_type: 					PASS;
+				cargo_allow_refit:			  		[YETI, YETY];
+				loading_speed:                5;
+        cost_factor:                  10;
+        running_cost_factor:          0;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        speed:                        0;
+        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
+        refit_cost:                   0;
+        track_type:                   MONO;
+        ai_special_flag:              AI_FLAG_PASSENGER;
+        power:                        0;
+        running_cost_base:            RUNNING_COST_NONE;
+        dual_headed:                  0;
+        cargo_capacity:               48; //APPLIES FOR POWERED WAGONS OF ALL MONORAIL INTERCITY TRAINS !!!!! capacity switch does nothing in this case
+        weight:                       10 ton;
+        ai_engine_rank:               0;
+        extra_power_per_wagon:        0 kW;
+        tractive_effort_coefficient:  0;
+        air_drag_coefficient:         0;
+        length: 8;
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
+        extra_weight_per_wagon:       0 ton;
+        bitmask_vehicle_info:         0;
+	}
+	graphics {
+		default: switch_pax_wagons_mono;
+		cargo_subtype_text: MonoICE_subtype_text;
+		cargo_capacity:   pax_global_capacity_switch;
+		additional_text: string(STR_EXPRESSWAGON);
+		purchase_cargo_capacity:   40;
+		purchase: spriteset_purchaseMenu_monopax;
+		loading_speed:		switch_loadspeed_monopax;
+		cost_factor:		40;
+		weight:				5;
+
+	}
+}

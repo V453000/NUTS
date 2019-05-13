@@ -1,0 +1,71 @@
+
+switch (FEAT_TRAINS, SELF, switch_monofast1_attach, vehicle_type_id){
+	item_monofast1:   CB_RESULT_ATTACH_ALLOW;
+
+	item_monotanker:    CB_RESULT_ATTACH_ALLOW;
+	item_monoflatbed:   CB_RESULT_ATTACH_ALLOW;
+	item_monohopper:	  CB_RESULT_ATTACH_ALLOW;
+	item_monopax:			  CB_RESULT_ATTACH_ALLOW;
+	item_monouniversal: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mono_freight);
+}
+switch (FEAT_TRAINS, SELF, switch_monofast1_articulated, extra_callback_info1){
+	1: item_monofast1;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+item(FEAT_TRAINS, item_monofast1, 151) { //ID151
+	property {
+		name:                         string(STR_NAME_MONOF1);
+        climates_available:           ALL_CLIMATES;
+        introduction_date:            date(2002, 1, 1);
+        model_life:                   30;
+        vehicle_life:                 255;
+        reliability_decay:            5;
+		//Just an engine, no refit
+        refittable_cargo_classes:     ALL_CARGO_CLASSES;
+        non_refittable_cargo_classes: bitmask();
+        default_cargo_type:           GOOD;
+
+        loading_speed:                6;
+        cost_factor:                  10;
+        running_cost_factor:          100;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        speed:                        280 km/h;
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        refit_cost:                   0;
+        track_type:                   MONO;
+        ai_special_flag:              AI_FLAG_CARGO;
+        power:                        5000 hp;
+        running_cost_base:            RUNNING_COST_ELECTRIC;
+        dual_headed:                  0;
+        cargo_capacity:               30;
+        weight:                       110 ton;
+        ai_engine_rank:               0;
+        engine_class:                 ENGINE_CLASS_MONORAIL;
+        extra_power_per_wagon:        0 kW;
+        tractive_effort_coefficient:  0.5;
+        air_drag_coefficient:         0;
+        length: 8;
+        visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
+        extra_weight_per_wagon:       0 ton;
+        bitmask_vehicle_info:         0;
+	}
+	graphics {
+		can_attach_wagon: switch_monofast1_attach;
+		purchase: spriteset_purchaseMenu_monofast1;
+		additional_text: string(info_mono_fast_1);
+		speed: 							280;
+		power: 							switch_monofast1_power;//4500;
+		weight: 						80/2;
+		tractive_effort_coefficient:	switch_monofast_TE;//38;
+		cost_factor:						26;
+		running_cost_factor:				100;
+		purchase_power: 2350;
+		purchase_tractive_effort_coefficient: 255;
+
+        articulated_part: switch_monofast1_articulated;
+        default:          mono_fast1_graphics;
+        cargo_capacity:   switch_mono_freight_engine_capacity;
+        loading_speed:    switch_mono_freight_engine_loadspeed;
+	}
+}
