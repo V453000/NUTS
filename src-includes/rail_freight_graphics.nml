@@ -25,7 +25,7 @@ spriteset(spriteset_train_railstrong5, "gfx/railstrong_modern_extra.png") { temp
 spriteset(spriteset_train_railstrong6, "gfx/railstrong_modern.png") { template_engine32(0, 2) }
 spriteset(spriteset_train_railstrong7, "gfx/railstrong_modern.png") { template_engine32(0, 3) }
 spriteset(spriteset_train_railstrong8, "gfx/railstrong_modern.png") { template_engine32(0, 4) }
-spriteset(spriteset_train_dukenukem, "gfx/dukenukem.png") { template_dukenukem(0) }
+spriteset(spriteset_train_railstrong9, "gfx/dukenukem.png") { template_dukenukem(0) }
 
 
 //spriteset(spriteset_train_railstrong4_end, "gfx/railstrong_modern_extra.png") { template_engine32_4plus_end(0, 0)}
@@ -33,7 +33,7 @@ spriteset(spriteset_train_railstrong5_end, "gfx/railstrong_modern_extra.png") { 
 spriteset(spriteset_train_railstrong6_end, "gfx/railstrong_modern.png") { template_engine32_end(0, 2) }
 //spriteset(spriteset_train_railstrong7_end, "gfx/railstrong_modern.png") { template_engine32_end(0, 3) }
 //spriteset(spriteset_train_railstrong8_end, "gfx/railstrong_modern.png") { template_engine32_end(0, 4) }
-spriteset(spriteset_train_dukenukem_end, "gfx/dukenukem.png") { template_dukenukem_end(0) }
+spriteset(spriteset_train_railstrong9_end, "gfx/dukenukem.png") { template_dukenukem_end(0) }
 
 //REVERSED SPRITESETS
 spriteset(spriteset_train_railstrong4_reversed, "gfx/railstrong_modern_extra.png") { template_engine32_4plus(176, 0)}
@@ -122,7 +122,7 @@ switch(FEAT_TRAINS, PARENT, switch_rail_freight_vehid_front_drawing_engine, vehi
   item_railstrong6: spriteset_train_railstrong6;
   item_railstrong7: spriteset_train_railstrong7;
   item_railstrong8: spriteset_train_railstrong8;
-  item_railstrong9: spriteset_train_dukenukem;
+  item_railstrong9: spriteset_train_railstrong9;
   
   item_railmedium4: spriteset_train_railmedium4;
   item_railmedium5: spriteset_train_railmedium5;
@@ -173,7 +173,7 @@ switch(FEAT_TRAINS, PARENT, switch_rail_freight_vehid_back_drawing_engine, vehic
   item_railstrong6: spriteset_train_railstrong6_end;
   item_railstrong7: spriteset_train_railstrong7;
   item_railstrong8: spriteset_train_railstrong8;
-  item_railstrong9: spriteset_train_dukenukem_end;
+  item_railstrong9: spriteset_train_railstrong9_end;
 
   item_railmedium4: spriteset_train_railmedium4;
   item_railmedium5: spriteset_train_railmedium5;
