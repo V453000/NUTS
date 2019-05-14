@@ -1,3 +1,12 @@
+0.8.4
+	Greatly optimized the calculation of freight engine drawing.
+	Freight wagons can no longer look like an engine.
+
+	Monorail freight engines now draw as alternating front and rear facing engines.
+
+	Monorail freight engine capacity was accidentally double.
+	Maglev freight engine capacity was accidentally double.
+
 0.8.3
 	Improved drawing of wagon-only trains without leading engine, but with an engine inside the consist.
 
