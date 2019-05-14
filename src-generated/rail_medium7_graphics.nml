@@ -49,7 +49,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw2_both_end, position_in_consist_from_
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw2_both, position_in_consist){
   0: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw2_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw2_front, position_in_consist){
   0..1: spriteset_train_railmedium7;
@@ -70,7 +70,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw3_both_end, position_in_consist_from_
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw3_both, position_in_consist){
   0..1: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw3_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw3_front, position_in_consist){
   0..2: spriteset_train_railmedium7;
@@ -91,7 +91,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw4_both_end, position_in_consist_from_
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw4_both, position_in_consist){
   0..1: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw4_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw4_front, position_in_consist){
   0..3: spriteset_train_railmedium7;
@@ -112,7 +112,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw5_both_end, position_in_consist_from_
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw5_both, position_in_consist){
   0..2: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw5_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw5_front, position_in_consist){
   0..4: spriteset_train_railmedium7;
@@ -133,7 +133,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw6_both_end, position_in_consist_from_
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw6_both, position_in_consist){
   0..2: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw6_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw6_front, position_in_consist){
   0..5: spriteset_train_railmedium7;
@@ -154,7 +154,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw7_both_end, position_in_consist_from_
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw7_both, position_in_consist){
   0..3: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw7_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw7_front, position_in_consist){
   0..6: spriteset_train_railmedium7;
@@ -175,7 +175,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw8_both_end, position_in_consist_from_
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw8_both, position_in_consist){
   0..3: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw8_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw8_front, position_in_consist){
   0..7: spriteset_train_railmedium7;
@@ -196,7 +196,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw9_both_end, position_in_consist_from_
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw9_both, position_in_consist){
   0..4: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw9_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw9_front, position_in_consist){
   0..8: spriteset_train_railmedium7;
@@ -217,7 +217,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw10_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw10_both, position_in_consist){
   0..4: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw10_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw10_front, position_in_consist){
   0..9: spriteset_train_railmedium7;
@@ -238,7 +238,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw11_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw11_both, position_in_consist){
   0..5: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw11_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw11_front, position_in_consist){
   0..10: spriteset_train_railmedium7;
@@ -259,7 +259,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw12_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw12_both, position_in_consist){
   0..5: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw12_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw12_front, position_in_consist){
   0..11: spriteset_train_railmedium7;
@@ -280,7 +280,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw13_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw13_both, position_in_consist){
   0..6: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw13_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw13_front, position_in_consist){
   0..12: spriteset_train_railmedium7;
@@ -301,7 +301,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw14_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw14_both, position_in_consist){
   0..6: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw14_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw14_front, position_in_consist){
   0..13: spriteset_train_railmedium7;
@@ -322,7 +322,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw15_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw15_both, position_in_consist){
   0..7: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw15_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw15_front, position_in_consist){
   0..14: spriteset_train_railmedium7;
@@ -343,7 +343,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw16_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw16_both, position_in_consist){
   0..7: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw16_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw16_front, position_in_consist){
   0..15: spriteset_train_railmedium7;
@@ -364,7 +364,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw17_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw17_both, position_in_consist){
   0..8: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw17_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw17_front, position_in_consist){
   0..16: spriteset_train_railmedium7;
@@ -385,7 +385,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw18_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw18_both, position_in_consist){
   0..8: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw18_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw18_front, position_in_consist){
   0..17: spriteset_train_railmedium7;
@@ -406,7 +406,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw19_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw19_both, position_in_consist){
   0..9: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw19_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw19_front, position_in_consist){
   0..18: spriteset_train_railmedium7;
@@ -427,7 +427,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw20_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw20_both, position_in_consist){
   0..9: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw20_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw20_front, position_in_consist){
   0..19: spriteset_train_railmedium7;
@@ -448,7 +448,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw21_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw21_both, position_in_consist){
   0..10: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw21_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw21_front, position_in_consist){
   0..20: spriteset_train_railmedium7;
@@ -469,7 +469,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw22_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw22_both, position_in_consist){
   0..10: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw22_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw22_front, position_in_consist){
   0..21: spriteset_train_railmedium7;
@@ -490,7 +490,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw23_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw23_both, position_in_consist){
   0..11: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw23_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw23_front, position_in_consist){
   0..22: spriteset_train_railmedium7;
@@ -511,7 +511,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw24_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw24_both, position_in_consist){
   0..11: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw24_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw24_front, position_in_consist){
   0..23: spriteset_train_railmedium7;
@@ -532,7 +532,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw25_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw25_both, position_in_consist){
   0..12: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw25_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw25_front, position_in_consist){
   0..24: spriteset_train_railmedium7;
@@ -553,7 +553,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw26_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw26_both, position_in_consist){
   0..12: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw26_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw26_front, position_in_consist){
   0..25: spriteset_train_railmedium7;
@@ -574,7 +574,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw27_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw27_both, position_in_consist){
   0..13: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw27_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw27_front, position_in_consist){
   0..26: spriteset_train_railmedium7;
@@ -595,7 +595,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw28_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw28_both, position_in_consist){
   0..13: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw28_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw28_front, position_in_consist){
   0..27: spriteset_train_railmedium7;
@@ -616,7 +616,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw29_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw29_both, position_in_consist){
   0..14: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw29_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw29_front, position_in_consist){
   0..28: spriteset_train_railmedium7;
@@ -637,7 +637,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw30_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw30_both, position_in_consist){
   0..14: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw30_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw30_front, position_in_consist){
   0..29: spriteset_train_railmedium7;
@@ -658,7 +658,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw31_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw31_both, position_in_consist){
   0..15: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw31_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw31_front, position_in_consist){
   0..30: spriteset_train_railmedium7;
@@ -679,7 +679,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw32_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw32_both, position_in_consist){
   0..15: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw32_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw32_front, position_in_consist){
   0..31: spriteset_train_railmedium7;
@@ -700,7 +700,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw33_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw33_both, position_in_consist){
   0..16: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw33_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw33_front, position_in_consist){
   0..32: spriteset_train_railmedium7;
@@ -721,7 +721,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw34_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw34_both, position_in_consist){
   0..16: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw34_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw34_front, position_in_consist){
   0..33: spriteset_train_railmedium7;
@@ -742,7 +742,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw35_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw35_both, position_in_consist){
   0..17: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw35_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw35_front, position_in_consist){
   0..34: spriteset_train_railmedium7;
@@ -763,7 +763,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw36_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw36_both, position_in_consist){
   0..17: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw36_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw36_front, position_in_consist){
   0..35: spriteset_train_railmedium7;
@@ -784,7 +784,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw37_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw37_both, position_in_consist){
   0..18: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw37_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw37_front, position_in_consist){
   0..36: spriteset_train_railmedium7;
@@ -805,7 +805,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw38_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw38_both, position_in_consist){
   0..18: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw38_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw38_front, position_in_consist){
   0..37: spriteset_train_railmedium7;
@@ -826,7 +826,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw39_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw39_both, position_in_consist){
   0..19: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw39_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw39_front, position_in_consist){
   0..38: spriteset_train_railmedium7;
@@ -847,7 +847,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw40_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw40_both, position_in_consist){
   0..19: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw40_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw40_front, position_in_consist){
   0..39: spriteset_train_railmedium7;
@@ -868,7 +868,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw41_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw41_both, position_in_consist){
   0..20: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw41_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw41_front, position_in_consist){
   0..40: spriteset_train_railmedium7;
@@ -889,7 +889,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw42_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw42_both, position_in_consist){
   0..20: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw42_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw42_front, position_in_consist){
   0..41: spriteset_train_railmedium7;
@@ -910,7 +910,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw43_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw43_both, position_in_consist){
   0..21: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw43_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw43_front, position_in_consist){
   0..42: spriteset_train_railmedium7;
@@ -931,7 +931,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw44_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw44_both, position_in_consist){
   0..21: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw44_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw44_front, position_in_consist){
   0..43: spriteset_train_railmedium7;
@@ -952,7 +952,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw45_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw45_both, position_in_consist){
   0..22: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw45_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw45_front, position_in_consist){
   0..44: spriteset_train_railmedium7;
@@ -973,7 +973,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw46_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw46_both, position_in_consist){
   0..22: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw46_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw46_front, position_in_consist){
   0..45: spriteset_train_railmedium7;
@@ -994,7 +994,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw47_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw47_both, position_in_consist){
   0..23: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw47_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw47_front, position_in_consist){
   0..46: spriteset_train_railmedium7;
@@ -1015,7 +1015,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw48_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw48_both, position_in_consist){
   0..23: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw48_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw48_front, position_in_consist){
   0..47: spriteset_train_railmedium7;
@@ -1036,7 +1036,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw49_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw49_both, position_in_consist){
   0..24: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw49_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw49_front, position_in_consist){
   0..48: spriteset_train_railmedium7;
@@ -1057,7 +1057,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw50_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw50_both, position_in_consist){
   0..24: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw50_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw50_front, position_in_consist){
   0..49: spriteset_train_railmedium7;
@@ -1078,7 +1078,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw51_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw51_both, position_in_consist){
   0..25: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw51_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw51_front, position_in_consist){
   0..50: spriteset_train_railmedium7;
@@ -1099,7 +1099,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw52_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw52_both, position_in_consist){
   0..25: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw52_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw52_front, position_in_consist){
   0..51: spriteset_train_railmedium7;
@@ -1120,7 +1120,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw53_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw53_both, position_in_consist){
   0..26: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw53_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw53_front, position_in_consist){
   0..52: spriteset_train_railmedium7;
@@ -1141,7 +1141,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw54_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw54_both, position_in_consist){
   0..26: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw54_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw54_front, position_in_consist){
   0..53: spriteset_train_railmedium7;
@@ -1162,7 +1162,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw55_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw55_both, position_in_consist){
   0..27: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw55_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw55_front, position_in_consist){
   0..54: spriteset_train_railmedium7;
@@ -1183,7 +1183,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw56_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw56_both, position_in_consist){
   0..27: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw56_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw56_front, position_in_consist){
   0..55: spriteset_train_railmedium7;
@@ -1204,7 +1204,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw57_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw57_both, position_in_consist){
   0..28: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw57_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw57_front, position_in_consist){
   0..56: spriteset_train_railmedium7;
@@ -1225,7 +1225,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw58_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw58_both, position_in_consist){
   0..28: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw58_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw58_front, position_in_consist){
   0..57: spriteset_train_railmedium7;
@@ -1246,7 +1246,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw59_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw59_both, position_in_consist){
   0..29: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw59_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw59_front, position_in_consist){
   0..58: spriteset_train_railmedium7;
@@ -1267,7 +1267,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw60_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw60_both, position_in_consist){
   0..29: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw60_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw60_front, position_in_consist){
   0..59: spriteset_train_railmedium7;
@@ -1288,7 +1288,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw61_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw61_both, position_in_consist){
   0..30: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw61_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw61_front, position_in_consist){
   0..60: spriteset_train_railmedium7;
@@ -1309,7 +1309,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw62_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw62_both, position_in_consist){
   0..30: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw62_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw62_front, position_in_consist){
   0..61: spriteset_train_railmedium7;
@@ -1330,7 +1330,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw63_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw63_both, position_in_consist){
   0..31: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw63_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw63_front, position_in_consist){
   0..62: spriteset_train_railmedium7;
@@ -1351,7 +1351,7 @@ switch(FEAT_TRAINS, SELF, rail_medium7_draw64_both_end, position_in_consist_from
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw64_both, position_in_consist){
   0..31: spriteset_train_railmedium7;
-  rail_medium7_switch_outcome_switch_wagon;
+  rail_medium7_draw64_both_end;
 }
 switch(FEAT_TRAINS, SELF, rail_medium7_draw64_front, position_in_consist){
   0..63: spriteset_train_railmedium7;

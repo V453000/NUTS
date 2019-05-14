@@ -91,7 +91,7 @@ item(FEAT_TRAINS, item_railmedium9, 47) { //ID47
         tractive_effort_coefficient:  1;
         air_drag_coefficient:         0;
         length: 8;
-        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
         bitmask_vehicle_info:         0;
 	}
@@ -110,6 +110,6 @@ item(FEAT_TRAINS, item_railmedium9, 47) { //ID47
 		tractive_effort_coefficient:		178; //engine only
 		cost_factor:						15; //everything
 		running_cost_factor:				100; //only engines
-		visual_effect_and_powered: switch_rail_freight_powered_decider;
+		//visual_effect_and_powered: rail_medium9_powered;
 		}
 }

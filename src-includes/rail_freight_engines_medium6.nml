@@ -107,6 +107,6 @@ item(FEAT_TRAINS, item_railmedium6, 41) { //ID41
 		running_cost_factor:				100; //only engines
 		cargo_capacity: switch_railmedium6_capacity;
 		loading_speed: switch_railmedium6_loadspeed;
-		visual_effect_and_powered: switch_rail_freight_powered_decider;
+		visual_effect_and_powered: rail_medium6_powered;
 	}
 }

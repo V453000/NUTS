@@ -32,7 +32,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw1_both, position_in_consist){
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw1_front, position_in_consist){
   0: monowtf4_sprite;
-  1: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw1, [
@@ -50,7 +49,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw2_both_end, position_in_consist_from_end
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw2_both, position_in_consist){
   0: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw2_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw2_front, position_in_consist){
   0: monowtf4_sprite;
@@ -73,13 +72,12 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw3_both_end, position_in_consist_from_end
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw3_both, position_in_consist){
   0: monowtf4_sprite;
   1: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw3_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw3_front, position_in_consist){
   0: monowtf4_sprite;
   1: monowtf4_sprite_end;
   2: monowtf4_sprite;
-  3: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw3, [
@@ -99,7 +97,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw4_both_end, position_in_consist_from_end
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw4_both, position_in_consist){
   0: monowtf4_sprite;
   1: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw4_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw4_front, position_in_consist){
   0: monowtf4_sprite;
@@ -126,7 +124,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw5_both, position_in_consist){
   0: monowtf4_sprite;
   1: monowtf4_sprite_end;
   2: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw5_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw5_front, position_in_consist){
   0: monowtf4_sprite;
@@ -134,7 +132,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw5_front, position_in_consist){
   2: monowtf4_sprite;
   3: monowtf4_sprite_end;
   4: monowtf4_sprite;
-  5: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw5, [
@@ -156,7 +153,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw6_both, position_in_consist){
   0: monowtf4_sprite;
   1: monowtf4_sprite_end;
   2: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw6_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw6_front, position_in_consist){
   0: monowtf4_sprite;
@@ -187,7 +184,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw7_both, position_in_consist){
   1: monowtf4_sprite_end;
   2: monowtf4_sprite;
   3: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw7_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw7_front, position_in_consist){
   0: monowtf4_sprite;
@@ -197,7 +194,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw7_front, position_in_consist){
   4: monowtf4_sprite;
   5: monowtf4_sprite_end;
   6: monowtf4_sprite;
-  7: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw7, [
@@ -221,7 +217,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw8_both, position_in_consist){
   1: monowtf4_sprite_end;
   2: monowtf4_sprite;
   3: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw8_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw8_front, position_in_consist){
   0: monowtf4_sprite;
@@ -256,7 +252,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw9_both, position_in_consist){
   2: monowtf4_sprite;
   3: monowtf4_sprite_end;
   4: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw9_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw9_front, position_in_consist){
   0: monowtf4_sprite;
@@ -268,7 +264,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw9_front, position_in_consist){
   6: monowtf4_sprite;
   7: monowtf4_sprite_end;
   8: monowtf4_sprite;
-  9: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw9, [
@@ -294,7 +289,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw10_both, position_in_consist){
   2: monowtf4_sprite;
   3: monowtf4_sprite_end;
   4: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw10_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw10_front, position_in_consist){
   0: monowtf4_sprite;
@@ -333,7 +328,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw11_both, position_in_consist){
   3: monowtf4_sprite_end;
   4: monowtf4_sprite;
   5: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw11_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw11_front, position_in_consist){
   0: monowtf4_sprite;
@@ -347,7 +342,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw11_front, position_in_consist){
   8: monowtf4_sprite;
   9: monowtf4_sprite_end;
   10: monowtf4_sprite;
-  11: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw11, [
@@ -375,7 +369,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw12_both, position_in_consist){
   3: monowtf4_sprite_end;
   4: monowtf4_sprite;
   5: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw12_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw12_front, position_in_consist){
   0: monowtf4_sprite;
@@ -418,7 +412,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw13_both, position_in_consist){
   4: monowtf4_sprite;
   5: monowtf4_sprite_end;
   6: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw13_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw13_front, position_in_consist){
   0: monowtf4_sprite;
@@ -434,7 +428,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw13_front, position_in_consist){
   10: monowtf4_sprite;
   11: monowtf4_sprite_end;
   12: monowtf4_sprite;
-  13: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw13, [
@@ -464,7 +457,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw14_both, position_in_consist){
   4: monowtf4_sprite;
   5: monowtf4_sprite_end;
   6: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw14_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw14_front, position_in_consist){
   0: monowtf4_sprite;
@@ -511,7 +504,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw15_both, position_in_consist){
   5: monowtf4_sprite_end;
   6: monowtf4_sprite;
   7: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw15_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw15_front, position_in_consist){
   0: monowtf4_sprite;
@@ -529,7 +522,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw15_front, position_in_consist){
   12: monowtf4_sprite;
   13: monowtf4_sprite_end;
   14: monowtf4_sprite;
-  15: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw15, [
@@ -561,7 +553,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw16_both, position_in_consist){
   5: monowtf4_sprite_end;
   6: monowtf4_sprite;
   7: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw16_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw16_front, position_in_consist){
   0: monowtf4_sprite;
@@ -612,7 +604,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw17_both, position_in_consist){
   6: monowtf4_sprite;
   7: monowtf4_sprite_end;
   8: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw17_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw17_front, position_in_consist){
   0: monowtf4_sprite;
@@ -632,7 +624,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw17_front, position_in_consist){
   14: monowtf4_sprite;
   15: monowtf4_sprite_end;
   16: monowtf4_sprite;
-  17: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw17, [
@@ -666,7 +657,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw18_both, position_in_consist){
   6: monowtf4_sprite;
   7: monowtf4_sprite_end;
   8: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw18_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw18_front, position_in_consist){
   0: monowtf4_sprite;
@@ -721,7 +712,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw19_both, position_in_consist){
   7: monowtf4_sprite_end;
   8: monowtf4_sprite;
   9: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw19_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw19_front, position_in_consist){
   0: monowtf4_sprite;
@@ -743,7 +734,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw19_front, position_in_consist){
   16: monowtf4_sprite;
   17: monowtf4_sprite_end;
   18: monowtf4_sprite;
-  19: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw19, [
@@ -779,7 +769,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw20_both, position_in_consist){
   7: monowtf4_sprite_end;
   8: monowtf4_sprite;
   9: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw20_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw20_front, position_in_consist){
   0: monowtf4_sprite;
@@ -838,7 +828,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw21_both, position_in_consist){
   8: monowtf4_sprite;
   9: monowtf4_sprite_end;
   10: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw21_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw21_front, position_in_consist){
   0: monowtf4_sprite;
@@ -862,7 +852,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw21_front, position_in_consist){
   18: monowtf4_sprite;
   19: monowtf4_sprite_end;
   20: monowtf4_sprite;
-  21: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw21, [
@@ -900,7 +889,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw22_both, position_in_consist){
   8: monowtf4_sprite;
   9: monowtf4_sprite_end;
   10: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw22_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw22_front, position_in_consist){
   0: monowtf4_sprite;
@@ -963,7 +952,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw23_both, position_in_consist){
   9: monowtf4_sprite_end;
   10: monowtf4_sprite;
   11: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw23_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw23_front, position_in_consist){
   0: monowtf4_sprite;
@@ -989,7 +978,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw23_front, position_in_consist){
   20: monowtf4_sprite;
   21: monowtf4_sprite_end;
   22: monowtf4_sprite;
-  23: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw23, [
@@ -1029,7 +1017,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw24_both, position_in_consist){
   9: monowtf4_sprite_end;
   10: monowtf4_sprite;
   11: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw24_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw24_front, position_in_consist){
   0: monowtf4_sprite;
@@ -1096,7 +1084,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw25_both, position_in_consist){
   10: monowtf4_sprite;
   11: monowtf4_sprite_end;
   12: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw25_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw25_front, position_in_consist){
   0: monowtf4_sprite;
@@ -1124,7 +1112,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw25_front, position_in_consist){
   22: monowtf4_sprite;
   23: monowtf4_sprite_end;
   24: monowtf4_sprite;
-  25: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw25, [
@@ -1166,7 +1153,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw26_both, position_in_consist){
   10: monowtf4_sprite;
   11: monowtf4_sprite_end;
   12: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw26_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw26_front, position_in_consist){
   0: monowtf4_sprite;
@@ -1237,7 +1224,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw27_both, position_in_consist){
   11: monowtf4_sprite_end;
   12: monowtf4_sprite;
   13: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw27_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw27_front, position_in_consist){
   0: monowtf4_sprite;
@@ -1267,7 +1254,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw27_front, position_in_consist){
   24: monowtf4_sprite;
   25: monowtf4_sprite_end;
   26: monowtf4_sprite;
-  27: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw27, [
@@ -1311,7 +1297,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw28_both, position_in_consist){
   11: monowtf4_sprite_end;
   12: monowtf4_sprite;
   13: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw28_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw28_front, position_in_consist){
   0: monowtf4_sprite;
@@ -1386,7 +1372,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw29_both, position_in_consist){
   12: monowtf4_sprite;
   13: monowtf4_sprite_end;
   14: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw29_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw29_front, position_in_consist){
   0: monowtf4_sprite;
@@ -1418,7 +1404,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw29_front, position_in_consist){
   26: monowtf4_sprite;
   27: monowtf4_sprite_end;
   28: monowtf4_sprite;
-  29: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw29, [
@@ -1464,7 +1449,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw30_both, position_in_consist){
   12: monowtf4_sprite;
   13: monowtf4_sprite_end;
   14: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw30_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw30_front, position_in_consist){
   0: monowtf4_sprite;
@@ -1543,7 +1528,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw31_both, position_in_consist){
   13: monowtf4_sprite_end;
   14: monowtf4_sprite;
   15: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw31_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw31_front, position_in_consist){
   0: monowtf4_sprite;
@@ -1577,7 +1562,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw31_front, position_in_consist){
   28: monowtf4_sprite;
   29: monowtf4_sprite_end;
   30: monowtf4_sprite;
-  31: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw31, [
@@ -1625,7 +1609,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw32_both, position_in_consist){
   13: monowtf4_sprite_end;
   14: monowtf4_sprite;
   15: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw32_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw32_front, position_in_consist){
   0: monowtf4_sprite;
@@ -1708,7 +1692,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw33_both, position_in_consist){
   14: monowtf4_sprite;
   15: monowtf4_sprite_end;
   16: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw33_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw33_front, position_in_consist){
   0: monowtf4_sprite;
@@ -1744,7 +1728,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw33_front, position_in_consist){
   30: monowtf4_sprite;
   31: monowtf4_sprite_end;
   32: monowtf4_sprite;
-  33: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw33, [
@@ -1794,7 +1777,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw34_both, position_in_consist){
   14: monowtf4_sprite;
   15: monowtf4_sprite_end;
   16: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw34_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw34_front, position_in_consist){
   0: monowtf4_sprite;
@@ -1881,7 +1864,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw35_both, position_in_consist){
   15: monowtf4_sprite_end;
   16: monowtf4_sprite;
   17: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw35_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw35_front, position_in_consist){
   0: monowtf4_sprite;
@@ -1919,7 +1902,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw35_front, position_in_consist){
   32: monowtf4_sprite;
   33: monowtf4_sprite_end;
   34: monowtf4_sprite;
-  35: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw35, [
@@ -1971,7 +1953,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw36_both, position_in_consist){
   15: monowtf4_sprite_end;
   16: monowtf4_sprite;
   17: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw36_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw36_front, position_in_consist){
   0: monowtf4_sprite;
@@ -2062,7 +2044,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw37_both, position_in_consist){
   16: monowtf4_sprite;
   17: monowtf4_sprite_end;
   18: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw37_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw37_front, position_in_consist){
   0: monowtf4_sprite;
@@ -2102,7 +2084,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw37_front, position_in_consist){
   34: monowtf4_sprite;
   35: monowtf4_sprite_end;
   36: monowtf4_sprite;
-  37: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw37, [
@@ -2156,7 +2137,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw38_both, position_in_consist){
   16: monowtf4_sprite;
   17: monowtf4_sprite_end;
   18: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw38_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw38_front, position_in_consist){
   0: monowtf4_sprite;
@@ -2251,7 +2232,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw39_both, position_in_consist){
   17: monowtf4_sprite_end;
   18: monowtf4_sprite;
   19: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw39_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw39_front, position_in_consist){
   0: monowtf4_sprite;
@@ -2293,7 +2274,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw39_front, position_in_consist){
   36: monowtf4_sprite;
   37: monowtf4_sprite_end;
   38: monowtf4_sprite;
-  39: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw39, [
@@ -2349,7 +2329,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw40_both, position_in_consist){
   17: monowtf4_sprite_end;
   18: monowtf4_sprite;
   19: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw40_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw40_front, position_in_consist){
   0: monowtf4_sprite;
@@ -2448,7 +2428,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw41_both, position_in_consist){
   18: monowtf4_sprite;
   19: monowtf4_sprite_end;
   20: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw41_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw41_front, position_in_consist){
   0: monowtf4_sprite;
@@ -2492,7 +2472,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw41_front, position_in_consist){
   38: monowtf4_sprite;
   39: monowtf4_sprite_end;
   40: monowtf4_sprite;
-  41: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw41, [
@@ -2550,7 +2529,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw42_both, position_in_consist){
   18: monowtf4_sprite;
   19: monowtf4_sprite_end;
   20: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw42_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw42_front, position_in_consist){
   0: monowtf4_sprite;
@@ -2653,7 +2632,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw43_both, position_in_consist){
   19: monowtf4_sprite_end;
   20: monowtf4_sprite;
   21: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw43_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw43_front, position_in_consist){
   0: monowtf4_sprite;
@@ -2699,7 +2678,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw43_front, position_in_consist){
   40: monowtf4_sprite;
   41: monowtf4_sprite_end;
   42: monowtf4_sprite;
-  43: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw43, [
@@ -2759,7 +2737,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw44_both, position_in_consist){
   19: monowtf4_sprite_end;
   20: monowtf4_sprite;
   21: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw44_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw44_front, position_in_consist){
   0: monowtf4_sprite;
@@ -2866,7 +2844,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw45_both, position_in_consist){
   20: monowtf4_sprite;
   21: monowtf4_sprite_end;
   22: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw45_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw45_front, position_in_consist){
   0: monowtf4_sprite;
@@ -2914,7 +2892,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw45_front, position_in_consist){
   42: monowtf4_sprite;
   43: monowtf4_sprite_end;
   44: monowtf4_sprite;
-  45: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw45, [
@@ -2976,7 +2953,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw46_both, position_in_consist){
   20: monowtf4_sprite;
   21: monowtf4_sprite_end;
   22: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw46_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw46_front, position_in_consist){
   0: monowtf4_sprite;
@@ -3087,7 +3064,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw47_both, position_in_consist){
   21: monowtf4_sprite_end;
   22: monowtf4_sprite;
   23: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw47_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw47_front, position_in_consist){
   0: monowtf4_sprite;
@@ -3137,7 +3114,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw47_front, position_in_consist){
   44: monowtf4_sprite;
   45: monowtf4_sprite_end;
   46: monowtf4_sprite;
-  47: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw47, [
@@ -3201,7 +3177,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw48_both, position_in_consist){
   21: monowtf4_sprite_end;
   22: monowtf4_sprite;
   23: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw48_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw48_front, position_in_consist){
   0: monowtf4_sprite;
@@ -3316,7 +3292,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw49_both, position_in_consist){
   22: monowtf4_sprite;
   23: monowtf4_sprite_end;
   24: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw49_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw49_front, position_in_consist){
   0: monowtf4_sprite;
@@ -3368,7 +3344,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw49_front, position_in_consist){
   46: monowtf4_sprite;
   47: monowtf4_sprite_end;
   48: monowtf4_sprite;
-  49: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw49, [
@@ -3434,7 +3409,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw50_both, position_in_consist){
   22: monowtf4_sprite;
   23: monowtf4_sprite_end;
   24: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw50_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw50_front, position_in_consist){
   0: monowtf4_sprite;
@@ -3553,7 +3528,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw51_both, position_in_consist){
   23: monowtf4_sprite_end;
   24: monowtf4_sprite;
   25: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw51_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw51_front, position_in_consist){
   0: monowtf4_sprite;
@@ -3607,7 +3582,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw51_front, position_in_consist){
   48: monowtf4_sprite;
   49: monowtf4_sprite_end;
   50: monowtf4_sprite;
-  51: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw51, [
@@ -3675,7 +3649,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw52_both, position_in_consist){
   23: monowtf4_sprite_end;
   24: monowtf4_sprite;
   25: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw52_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw52_front, position_in_consist){
   0: monowtf4_sprite;
@@ -3798,7 +3772,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw53_both, position_in_consist){
   24: monowtf4_sprite;
   25: monowtf4_sprite_end;
   26: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw53_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw53_front, position_in_consist){
   0: monowtf4_sprite;
@@ -3854,7 +3828,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw53_front, position_in_consist){
   50: monowtf4_sprite;
   51: monowtf4_sprite_end;
   52: monowtf4_sprite;
-  53: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw53, [
@@ -3924,7 +3897,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw54_both, position_in_consist){
   24: monowtf4_sprite;
   25: monowtf4_sprite_end;
   26: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw54_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw54_front, position_in_consist){
   0: monowtf4_sprite;
@@ -4051,7 +4024,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw55_both, position_in_consist){
   25: monowtf4_sprite_end;
   26: monowtf4_sprite;
   27: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw55_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw55_front, position_in_consist){
   0: monowtf4_sprite;
@@ -4109,7 +4082,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw55_front, position_in_consist){
   52: monowtf4_sprite;
   53: monowtf4_sprite_end;
   54: monowtf4_sprite;
-  55: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw55, [
@@ -4181,7 +4153,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw56_both, position_in_consist){
   25: monowtf4_sprite_end;
   26: monowtf4_sprite;
   27: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw56_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw56_front, position_in_consist){
   0: monowtf4_sprite;
@@ -4312,7 +4284,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw57_both, position_in_consist){
   26: monowtf4_sprite;
   27: monowtf4_sprite_end;
   28: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw57_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw57_front, position_in_consist){
   0: monowtf4_sprite;
@@ -4372,7 +4344,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw57_front, position_in_consist){
   54: monowtf4_sprite;
   55: monowtf4_sprite_end;
   56: monowtf4_sprite;
-  57: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw57, [
@@ -4446,7 +4417,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw58_both, position_in_consist){
   26: monowtf4_sprite;
   27: monowtf4_sprite_end;
   28: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw58_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw58_front, position_in_consist){
   0: monowtf4_sprite;
@@ -4581,7 +4552,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw59_both, position_in_consist){
   27: monowtf4_sprite_end;
   28: monowtf4_sprite;
   29: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw59_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw59_front, position_in_consist){
   0: monowtf4_sprite;
@@ -4643,7 +4614,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw59_front, position_in_consist){
   56: monowtf4_sprite;
   57: monowtf4_sprite_end;
   58: monowtf4_sprite;
-  59: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw59, [
@@ -4719,7 +4689,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw60_both, position_in_consist){
   27: monowtf4_sprite_end;
   28: monowtf4_sprite;
   29: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw60_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw60_front, position_in_consist){
   0: monowtf4_sprite;
@@ -4858,7 +4828,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw61_both, position_in_consist){
   28: monowtf4_sprite;
   29: monowtf4_sprite_end;
   30: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw61_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw61_front, position_in_consist){
   0: monowtf4_sprite;
@@ -4922,7 +4892,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw61_front, position_in_consist){
   58: monowtf4_sprite;
   59: monowtf4_sprite_end;
   60: monowtf4_sprite;
-  61: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw61, [
@@ -5000,7 +4969,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw62_both, position_in_consist){
   28: monowtf4_sprite;
   29: monowtf4_sprite_end;
   30: monowtf4_sprite;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw62_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw62_front, position_in_consist){
   0: monowtf4_sprite;
@@ -5143,7 +5112,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw63_both, position_in_consist){
   29: monowtf4_sprite_end;
   30: monowtf4_sprite;
   31: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw63_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw63_front, position_in_consist){
   0: monowtf4_sprite;
@@ -5209,7 +5178,6 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw63_front, position_in_consist){
   60: monowtf4_sprite;
   61: monowtf4_sprite_end;
   62: monowtf4_sprite;
-  63: monowtf4_sprite_end;
   mono_wtf4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_wtf4_draw63, [
@@ -5289,7 +5257,7 @@ switch(FEAT_TRAINS, SELF, mono_wtf4_draw64_both, position_in_consist){
   29: monowtf4_sprite_end;
   30: monowtf4_sprite;
   31: monowtf4_sprite_end;
-  mono_wtf4_switch_outcome_switch_wagon;
+  mono_wtf4_draw64_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_wtf4_draw64_front, position_in_consist){
   0: monowtf4_sprite;

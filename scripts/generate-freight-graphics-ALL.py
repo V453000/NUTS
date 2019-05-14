@@ -608,7 +608,9 @@ def generate_draw_switches_long_alternating(args):
           spritesheet = outcome_switch_back + ';\n'
         output_nml.write('  ' + str(n) + ': ' + spritesheet)
 
-      default_spritesheet = '  ' + outcome_switch_wagon + ';\n'
+      default_spritesheet = '  ' + veh_name + '_draw' + str(i) + '_both' + '_end' + ';\n'
+      if i == 1:
+        default_spritesheet = '  ' + outcome_switch_wagon + ';\n'
       output_nml.write(default_spritesheet)
       output_nml.write('}\n')
 
@@ -619,7 +621,7 @@ def generate_draw_switches_long_alternating(args):
       if i == 1:
         i_text = '0'
 
-      for n in range(0, int(i_test*2)):
+      for n in range(0, int(i)):
         if (n%2)==0:
           spritesheet = outcome_switch_front + ';\n'
         elif (n%2)==1:
@@ -773,7 +775,9 @@ def generate_draw_switches_long_normal(args):
         
       # define which spritesheet is to be used
       spritesheet = outcome_switch_front + ';\n'
-      default_spritesheet = '  ' + outcome_switch_wagon + ';\n'
+      default_spritesheet = '  ' + veh_name + '_draw' + str(i) + '_both' + '_end' + ';\n'
+      if i == 1:
+        default_spritesheet = '  ' + outcome_switch_wagon + ';\n'
       output_nml.write('  ' + i_text + ': ' + spritesheet)
 
       output_nml.write(default_spritesheet)
@@ -810,6 +814,131 @@ def generate_draw_switches_long_normal(args):
 
     # count_veh_id decider
     output_nml.write('switch(FEAT_TRAINS, PARENT, ' + veh_name + '_graphics' + ',')
+    output_nml.write('\n  count_veh_id(' + str(veh_id) + ') ' + '){')
+    for i in range(0,64):
+      start = i*2+1
+      end = i*2+2
+      if i == 0:
+        start = 0
+      output_nml.write('\n  ' + str(start) + '..' + str(end) + ': ' + veh_name + '_draw'  + str(i+1) + ';')
+    output_nml.write('\n  ' + veh_name + '_draw' + str(i+1) + ';')
+    output_nml.write('\n}')
+    
+def generate_draw_switches_long_normal_powered(args):
+  veh_name = args[0]
+  veh_id   = args[1]
+  outcome_front   = args[2]
+  outcome_back    = args[3]
+  outcome_wagon   = args[4]
+  outcome_overlay_active = 'sprite_attach_8_active'
+  outcome_overlay_inactive = 'sprite_attach_8_inactive'
+  outcome_invisible = outcome_wagon
+
+  outcome_switch_front   = outcome_front #veh_name + '_switch_outcome_switch_front'
+  outcome_switch_back    = outcome_back #veh_name + '_switch_outcome_switch_end'
+  outcome_switch_wagon   = outcome_wagon
+  outcome_switch_overlay = outcome_wagon
+
+  script_path = os.path.realpath(__file__)
+  script_folder = os.path.dirname(script_path)
+  output_folder = os.path.join(script_folder, '..', 'src-generated')
+  output_filename = veh_name + '.nml'
+  output_filepath = os.path.join(output_folder, output_filename)
+  output_folder_path = os.path.normpath(output_folder)
+  #print('SYS PATH', sys.path) check python version
+  if os.path.isdir(output_folder_path) == False:
+    os.makedirs(output_folder_path)
+
+  with open(output_filepath, 'w') as output_nml:
+    # ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    # the many drawing switches ---------------------------------------------------------------------------------------------------------------------------
+    # ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    for i in range(1, 65):
+
+      # ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      # dual headed drawing ---------------------------------------------------------------------------------------------------------------------------
+      # ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      # write _end version
+      # ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      if i>1:
+        # write switch header
+        output_nml.write('switch(FEAT_TRAINS, SELF, ' + veh_name + '_draw' + str(i) + '_both' + '_end, position_in_consist_from_end){\n')
+        # do stuff with i
+        i_half = float(i)/2
+        i_test = math.floor(i_half)#floor for _end
+        i_range = int(i_test-1)
+        # define i_text, change it if i == 0
+        i_text = '0..' + str(i_range)
+        if i_range == 0:
+          i_text = '0'
+        
+        # define which spritesheet is to be used
+        spritesheet = outcome_switch_back + ';\n'
+        default_spritesheet = '  ' + outcome_switch_wagon + ';\n'
+        
+        #for n in range(0, int(i_test*1)):
+        #  spritesheet = outcome_switch_back + ';\n'
+        #  output_nml.write('  ' + str(n) + ': ' + spritesheet)
+        output_nml.write('  ' + i_text + ': ' + spritesheet)
+        
+        output_nml.write(default_spritesheet)
+        output_nml.write('}\n')
+        
+      # ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      # write no _end version
+      # ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      # write switch header
+      output_nml.write('switch(FEAT_TRAINS, SELF, ' + veh_name + '_draw' + str(i) + '_both' + ', position_in_consist){\n')
+      # do stuff with i
+      i_half = float(i)/2
+      i_test = math.ceil(i_half)#floor for _end
+      i_range = int(i_test-1)
+      # define i_text, change it if i == 0
+      i_text = '0..' + str(i_range)
+      if i_range == 0:
+          i_text = '0'
+        
+      # define which spritesheet is to be used
+      spritesheet = outcome_switch_front + ';\n'
+      default_spritesheet = '  ' + veh_name + '_draw' + str(i) + '_both' + '_end' + ';\n'
+      if i == 1:
+        default_spritesheet = '  ' + outcome_switch_wagon + ';\n'
+      output_nml.write('  ' + i_text + ': ' + spritesheet)
+
+      output_nml.write(default_spritesheet)
+      output_nml.write('}\n')
+
+      # -----------------------------------------------------------------------------------------------------------------------------------------------
+      # front drawing ---------------------------------------------------------------------------------------------------------------------------------
+      output_nml.write('switch(FEAT_TRAINS, SELF, ' + veh_name + '_draw' + str(i) + '_front' + ', position_in_consist){\n')
+      i_text = '0..' + str(i-1)
+      if i == 1:
+        i_text = '0'
+
+      # define which spritesheet is to be used
+      spritesheet = outcome_switch_front + ';\n'
+      default_spritesheet = '  ' + outcome_switch_wagon + ';\n'
+      output_nml.write('  ' + i_text + ': ' + spritesheet)
+
+      output_nml.write(default_spritesheet)
+      output_nml.write('}\n')
+
+      # -----------------------------------------------------------------------------------------------------------------------------------------------
+      # draw method switch
+      output_nml.write('switch(FEAT_TRAINS, PARENT, ' + veh_name + '_draw' + str(i) + ', [')
+      output_nml.write('\n  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]')
+      output_nml.write('\n  ]){')
+      output_nml.write('\n  ' + str(veh_id) + ': ' + veh_name + '_draw' + str(i) + '_both' + ';')
+      output_nml.write('\n  ' + veh_name + '_draw' + str(i) + '_front' + ';')
+      output_nml.write('\n  }\n')
+      
+      # separator
+      output_nml.write('//' + '-'*128 + '\n')
+      output_nml.write('//' + '-'*128 + '\n')
+      output_nml.write('//' + '-'*128 + '\n')
+
+    # count_veh_id decider
+    output_nml.write('switch(FEAT_TRAINS, PARENT, ' + veh_name +  ',')
     output_nml.write('\n  count_veh_id(' + str(veh_id) + ') ' + '){')
     for i in range(0,64):
       start = i*2+1
@@ -898,6 +1027,28 @@ freight_long_normal_list = [
   ['rail_fast8', 65, 'spriteset_train_railfast8', 'spriteset_train_railfast8_end', 'railuniversal2_wagon_switch'],
   ['rail_fast9', 67, 'spriteset_train_railfast9', 'spriteset_train_railfast9_end', 'railuniversal2_wagon_switch'],
 ]
+freight_long_normal_powered_list = [
+  ['rail_strong4_powered', 17, 'visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER)', 'VISUAL_EFFECT_DISABLE', 'VISUAL_EFFECT_DISABLE'],
+  ['rail_strong5_powered', 19, 'visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER)', 'VISUAL_EFFECT_DISABLE', 'VISUAL_EFFECT_DISABLE'],
+  ['rail_strong6_powered', 21, 'visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER)', 'VISUAL_EFFECT_DISABLE', 'VISUAL_EFFECT_DISABLE'],
+  ['rail_strong7_powered', 23, 'visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER)', 'VISUAL_EFFECT_DISABLE', 'VISUAL_EFFECT_DISABLE'],
+  ['rail_strong8_powered', 25, 'visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER)', 'VISUAL_EFFECT_DISABLE', 'VISUAL_EFFECT_DISABLE'],
+  #['rail_strong9_powered', 27, 'visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER)', 'VISUAL_EFFECT_DISABLE', 'VISUAL_EFFECT_DISABLE'],
+
+  ['rail_medium4_powered', 37, 'visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER)', 'VISUAL_EFFECT_DISABLE', 'VISUAL_EFFECT_DISABLE'],
+  ['rail_medium5_powered', 39, 'visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER)', 'VISUAL_EFFECT_DISABLE', 'VISUAL_EFFECT_DISABLE'],
+  ['rail_medium6_powered', 41, 'visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER)', 'VISUAL_EFFECT_DISABLE', 'VISUAL_EFFECT_DISABLE'],
+  ['rail_medium7_powered', 43, 'visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER)', 'VISUAL_EFFECT_DISABLE', 'VISUAL_EFFECT_DISABLE'],
+  ['rail_medium8_powered', 45, 'visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER)', 'VISUAL_EFFECT_DISABLE', 'VISUAL_EFFECT_DISABLE'],
+  #['rail_medium9_powered', 47, 'visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER)', 'VISUAL_EFFECT_DISABLE', 'VISUAL_EFFECT_DISABLE'],
+
+  ['rail_fast4_powered', 57, 'visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER)', 'VISUAL_EFFECT_DISABLE', 'VISUAL_EFFECT_DISABLE'],
+  ['rail_fast5_powered', 59, 'visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER)', 'VISUAL_EFFECT_DISABLE', 'VISUAL_EFFECT_DISABLE'],
+  ['rail_fast6_powered', 61, 'visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER)', 'VISUAL_EFFECT_DISABLE', 'VISUAL_EFFECT_DISABLE'],
+  ['rail_fast7_powered', 63, 'visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER)', 'VISUAL_EFFECT_DISABLE', 'VISUAL_EFFECT_DISABLE'],
+  ['rail_fast8_powered', 65, 'visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER)', 'VISUAL_EFFECT_DISABLE', 'VISUAL_EFFECT_DISABLE'],
+  #['rail_fast9_powered', 67, 'visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER)', 'VISUAL_EFFECT_DISABLE', 'VISUAL_EFFECT_DISABLE'],
+]
 freight_long_alternating_list = [
   ['mono_wtf1', 111, 'monowtf1_sprite', 'monowtf1_sprite_end', 'switch_monoflatbed_main_meowornot'],
   ['mono_wtf2', 113, 'monowtf2_sprite', 'monowtf2_sprite_end', 'switch_monoflatbed_main_meowornot'],
@@ -926,6 +1077,9 @@ for engine_settings in freight_short_normal_powered_list:
 
 for engine_settings in freight_long_normal_list:
   generate_draw_switches_long_normal(engine_settings)
+  print('Generated', engine_settings[0])
+for engine_settings in freight_long_normal_powered_list:
+  generate_draw_switches_long_normal_powered(engine_settings)
   print('Generated', engine_settings[0])
 
 for engine_settings in freight_long_alternating_list:

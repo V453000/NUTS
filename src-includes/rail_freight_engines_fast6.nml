@@ -104,6 +104,6 @@ item(FEAT_TRAINS, item_railfast6, 61) { //ID61
 		tractive_effort_coefficient:			84; //engine only
 		cost_factor:						14; //everything
 		running_cost_factor:				100; //only engines
-		visual_effect_and_powered: switch_rail_freight_powered_decider;
+		visual_effect_and_powered: rail_fast6_powered;
 	}
 }

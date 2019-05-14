@@ -32,7 +32,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw1_both, position_in_consist){
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw1_front, position_in_consist){
   0: monomedium4_random;
-  1: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw1, [
@@ -50,7 +49,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw2_both_end, position_in_consist_from_
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw2_both, position_in_consist){
   0: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw2_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw2_front, position_in_consist){
   0: monomedium4_random;
@@ -73,13 +72,12 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw3_both_end, position_in_consist_from_
 switch(FEAT_TRAINS, SELF, mono_medium4_draw3_both, position_in_consist){
   0: monomedium4_random;
   1: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw3_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw3_front, position_in_consist){
   0: monomedium4_random;
   1: monomedium4_random_end;
   2: monomedium4_random;
-  3: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw3, [
@@ -99,7 +97,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw4_both_end, position_in_consist_from_
 switch(FEAT_TRAINS, SELF, mono_medium4_draw4_both, position_in_consist){
   0: monomedium4_random;
   1: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw4_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw4_front, position_in_consist){
   0: monomedium4_random;
@@ -126,7 +124,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw5_both, position_in_consist){
   0: monomedium4_random;
   1: monomedium4_random_end;
   2: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw5_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw5_front, position_in_consist){
   0: monomedium4_random;
@@ -134,7 +132,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw5_front, position_in_consist){
   2: monomedium4_random;
   3: monomedium4_random_end;
   4: monomedium4_random;
-  5: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw5, [
@@ -156,7 +153,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw6_both, position_in_consist){
   0: monomedium4_random;
   1: monomedium4_random_end;
   2: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw6_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw6_front, position_in_consist){
   0: monomedium4_random;
@@ -187,7 +184,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw7_both, position_in_consist){
   1: monomedium4_random_end;
   2: monomedium4_random;
   3: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw7_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw7_front, position_in_consist){
   0: monomedium4_random;
@@ -197,7 +194,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw7_front, position_in_consist){
   4: monomedium4_random;
   5: monomedium4_random_end;
   6: monomedium4_random;
-  7: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw7, [
@@ -221,7 +217,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw8_both, position_in_consist){
   1: monomedium4_random_end;
   2: monomedium4_random;
   3: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw8_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw8_front, position_in_consist){
   0: monomedium4_random;
@@ -256,7 +252,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw9_both, position_in_consist){
   2: monomedium4_random;
   3: monomedium4_random_end;
   4: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw9_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw9_front, position_in_consist){
   0: monomedium4_random;
@@ -268,7 +264,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw9_front, position_in_consist){
   6: monomedium4_random;
   7: monomedium4_random_end;
   8: monomedium4_random;
-  9: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw9, [
@@ -294,7 +289,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw10_both, position_in_consist){
   2: monomedium4_random;
   3: monomedium4_random_end;
   4: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw10_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw10_front, position_in_consist){
   0: monomedium4_random;
@@ -333,7 +328,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw11_both, position_in_consist){
   3: monomedium4_random_end;
   4: monomedium4_random;
   5: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw11_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw11_front, position_in_consist){
   0: monomedium4_random;
@@ -347,7 +342,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw11_front, position_in_consist){
   8: monomedium4_random;
   9: monomedium4_random_end;
   10: monomedium4_random;
-  11: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw11, [
@@ -375,7 +369,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw12_both, position_in_consist){
   3: monomedium4_random_end;
   4: monomedium4_random;
   5: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw12_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw12_front, position_in_consist){
   0: monomedium4_random;
@@ -418,7 +412,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw13_both, position_in_consist){
   4: monomedium4_random;
   5: monomedium4_random_end;
   6: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw13_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw13_front, position_in_consist){
   0: monomedium4_random;
@@ -434,7 +428,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw13_front, position_in_consist){
   10: monomedium4_random;
   11: monomedium4_random_end;
   12: monomedium4_random;
-  13: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw13, [
@@ -464,7 +457,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw14_both, position_in_consist){
   4: monomedium4_random;
   5: monomedium4_random_end;
   6: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw14_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw14_front, position_in_consist){
   0: monomedium4_random;
@@ -511,7 +504,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw15_both, position_in_consist){
   5: monomedium4_random_end;
   6: monomedium4_random;
   7: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw15_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw15_front, position_in_consist){
   0: monomedium4_random;
@@ -529,7 +522,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw15_front, position_in_consist){
   12: monomedium4_random;
   13: monomedium4_random_end;
   14: monomedium4_random;
-  15: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw15, [
@@ -561,7 +553,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw16_both, position_in_consist){
   5: monomedium4_random_end;
   6: monomedium4_random;
   7: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw16_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw16_front, position_in_consist){
   0: monomedium4_random;
@@ -612,7 +604,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw17_both, position_in_consist){
   6: monomedium4_random;
   7: monomedium4_random_end;
   8: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw17_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw17_front, position_in_consist){
   0: monomedium4_random;
@@ -632,7 +624,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw17_front, position_in_consist){
   14: monomedium4_random;
   15: monomedium4_random_end;
   16: monomedium4_random;
-  17: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw17, [
@@ -666,7 +657,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw18_both, position_in_consist){
   6: monomedium4_random;
   7: monomedium4_random_end;
   8: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw18_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw18_front, position_in_consist){
   0: monomedium4_random;
@@ -721,7 +712,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw19_both, position_in_consist){
   7: monomedium4_random_end;
   8: monomedium4_random;
   9: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw19_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw19_front, position_in_consist){
   0: monomedium4_random;
@@ -743,7 +734,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw19_front, position_in_consist){
   16: monomedium4_random;
   17: monomedium4_random_end;
   18: monomedium4_random;
-  19: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw19, [
@@ -779,7 +769,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw20_both, position_in_consist){
   7: monomedium4_random_end;
   8: monomedium4_random;
   9: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw20_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw20_front, position_in_consist){
   0: monomedium4_random;
@@ -838,7 +828,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw21_both, position_in_consist){
   8: monomedium4_random;
   9: monomedium4_random_end;
   10: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw21_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw21_front, position_in_consist){
   0: monomedium4_random;
@@ -862,7 +852,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw21_front, position_in_consist){
   18: monomedium4_random;
   19: monomedium4_random_end;
   20: monomedium4_random;
-  21: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw21, [
@@ -900,7 +889,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw22_both, position_in_consist){
   8: monomedium4_random;
   9: monomedium4_random_end;
   10: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw22_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw22_front, position_in_consist){
   0: monomedium4_random;
@@ -963,7 +952,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw23_both, position_in_consist){
   9: monomedium4_random_end;
   10: monomedium4_random;
   11: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw23_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw23_front, position_in_consist){
   0: monomedium4_random;
@@ -989,7 +978,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw23_front, position_in_consist){
   20: monomedium4_random;
   21: monomedium4_random_end;
   22: monomedium4_random;
-  23: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw23, [
@@ -1029,7 +1017,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw24_both, position_in_consist){
   9: monomedium4_random_end;
   10: monomedium4_random;
   11: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw24_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw24_front, position_in_consist){
   0: monomedium4_random;
@@ -1096,7 +1084,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw25_both, position_in_consist){
   10: monomedium4_random;
   11: monomedium4_random_end;
   12: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw25_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw25_front, position_in_consist){
   0: monomedium4_random;
@@ -1124,7 +1112,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw25_front, position_in_consist){
   22: monomedium4_random;
   23: monomedium4_random_end;
   24: monomedium4_random;
-  25: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw25, [
@@ -1166,7 +1153,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw26_both, position_in_consist){
   10: monomedium4_random;
   11: monomedium4_random_end;
   12: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw26_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw26_front, position_in_consist){
   0: monomedium4_random;
@@ -1237,7 +1224,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw27_both, position_in_consist){
   11: monomedium4_random_end;
   12: monomedium4_random;
   13: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw27_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw27_front, position_in_consist){
   0: monomedium4_random;
@@ -1267,7 +1254,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw27_front, position_in_consist){
   24: monomedium4_random;
   25: monomedium4_random_end;
   26: monomedium4_random;
-  27: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw27, [
@@ -1311,7 +1297,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw28_both, position_in_consist){
   11: monomedium4_random_end;
   12: monomedium4_random;
   13: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw28_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw28_front, position_in_consist){
   0: monomedium4_random;
@@ -1386,7 +1372,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw29_both, position_in_consist){
   12: monomedium4_random;
   13: monomedium4_random_end;
   14: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw29_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw29_front, position_in_consist){
   0: monomedium4_random;
@@ -1418,7 +1404,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw29_front, position_in_consist){
   26: monomedium4_random;
   27: monomedium4_random_end;
   28: monomedium4_random;
-  29: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw29, [
@@ -1464,7 +1449,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw30_both, position_in_consist){
   12: monomedium4_random;
   13: monomedium4_random_end;
   14: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw30_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw30_front, position_in_consist){
   0: monomedium4_random;
@@ -1543,7 +1528,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw31_both, position_in_consist){
   13: monomedium4_random_end;
   14: monomedium4_random;
   15: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw31_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw31_front, position_in_consist){
   0: monomedium4_random;
@@ -1577,7 +1562,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw31_front, position_in_consist){
   28: monomedium4_random;
   29: monomedium4_random_end;
   30: monomedium4_random;
-  31: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw31, [
@@ -1625,7 +1609,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw32_both, position_in_consist){
   13: monomedium4_random_end;
   14: monomedium4_random;
   15: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw32_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw32_front, position_in_consist){
   0: monomedium4_random;
@@ -1708,7 +1692,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw33_both, position_in_consist){
   14: monomedium4_random;
   15: monomedium4_random_end;
   16: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw33_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw33_front, position_in_consist){
   0: monomedium4_random;
@@ -1744,7 +1728,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw33_front, position_in_consist){
   30: monomedium4_random;
   31: monomedium4_random_end;
   32: monomedium4_random;
-  33: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw33, [
@@ -1794,7 +1777,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw34_both, position_in_consist){
   14: monomedium4_random;
   15: monomedium4_random_end;
   16: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw34_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw34_front, position_in_consist){
   0: monomedium4_random;
@@ -1881,7 +1864,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw35_both, position_in_consist){
   15: monomedium4_random_end;
   16: monomedium4_random;
   17: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw35_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw35_front, position_in_consist){
   0: monomedium4_random;
@@ -1919,7 +1902,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw35_front, position_in_consist){
   32: monomedium4_random;
   33: monomedium4_random_end;
   34: monomedium4_random;
-  35: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw35, [
@@ -1971,7 +1953,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw36_both, position_in_consist){
   15: monomedium4_random_end;
   16: monomedium4_random;
   17: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw36_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw36_front, position_in_consist){
   0: monomedium4_random;
@@ -2062,7 +2044,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw37_both, position_in_consist){
   16: monomedium4_random;
   17: monomedium4_random_end;
   18: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw37_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw37_front, position_in_consist){
   0: monomedium4_random;
@@ -2102,7 +2084,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw37_front, position_in_consist){
   34: monomedium4_random;
   35: monomedium4_random_end;
   36: monomedium4_random;
-  37: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw37, [
@@ -2156,7 +2137,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw38_both, position_in_consist){
   16: monomedium4_random;
   17: monomedium4_random_end;
   18: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw38_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw38_front, position_in_consist){
   0: monomedium4_random;
@@ -2251,7 +2232,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw39_both, position_in_consist){
   17: monomedium4_random_end;
   18: monomedium4_random;
   19: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw39_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw39_front, position_in_consist){
   0: monomedium4_random;
@@ -2293,7 +2274,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw39_front, position_in_consist){
   36: monomedium4_random;
   37: monomedium4_random_end;
   38: monomedium4_random;
-  39: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw39, [
@@ -2349,7 +2329,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw40_both, position_in_consist){
   17: monomedium4_random_end;
   18: monomedium4_random;
   19: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw40_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw40_front, position_in_consist){
   0: monomedium4_random;
@@ -2448,7 +2428,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw41_both, position_in_consist){
   18: monomedium4_random;
   19: monomedium4_random_end;
   20: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw41_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw41_front, position_in_consist){
   0: monomedium4_random;
@@ -2492,7 +2472,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw41_front, position_in_consist){
   38: monomedium4_random;
   39: monomedium4_random_end;
   40: monomedium4_random;
-  41: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw41, [
@@ -2550,7 +2529,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw42_both, position_in_consist){
   18: monomedium4_random;
   19: monomedium4_random_end;
   20: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw42_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw42_front, position_in_consist){
   0: monomedium4_random;
@@ -2653,7 +2632,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw43_both, position_in_consist){
   19: monomedium4_random_end;
   20: monomedium4_random;
   21: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw43_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw43_front, position_in_consist){
   0: monomedium4_random;
@@ -2699,7 +2678,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw43_front, position_in_consist){
   40: monomedium4_random;
   41: monomedium4_random_end;
   42: monomedium4_random;
-  43: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw43, [
@@ -2759,7 +2737,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw44_both, position_in_consist){
   19: monomedium4_random_end;
   20: monomedium4_random;
   21: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw44_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw44_front, position_in_consist){
   0: monomedium4_random;
@@ -2866,7 +2844,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw45_both, position_in_consist){
   20: monomedium4_random;
   21: monomedium4_random_end;
   22: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw45_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw45_front, position_in_consist){
   0: monomedium4_random;
@@ -2914,7 +2892,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw45_front, position_in_consist){
   42: monomedium4_random;
   43: monomedium4_random_end;
   44: monomedium4_random;
-  45: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw45, [
@@ -2976,7 +2953,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw46_both, position_in_consist){
   20: monomedium4_random;
   21: monomedium4_random_end;
   22: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw46_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw46_front, position_in_consist){
   0: monomedium4_random;
@@ -3087,7 +3064,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw47_both, position_in_consist){
   21: monomedium4_random_end;
   22: monomedium4_random;
   23: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw47_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw47_front, position_in_consist){
   0: monomedium4_random;
@@ -3137,7 +3114,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw47_front, position_in_consist){
   44: monomedium4_random;
   45: monomedium4_random_end;
   46: monomedium4_random;
-  47: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw47, [
@@ -3201,7 +3177,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw48_both, position_in_consist){
   21: monomedium4_random_end;
   22: monomedium4_random;
   23: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw48_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw48_front, position_in_consist){
   0: monomedium4_random;
@@ -3316,7 +3292,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw49_both, position_in_consist){
   22: monomedium4_random;
   23: monomedium4_random_end;
   24: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw49_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw49_front, position_in_consist){
   0: monomedium4_random;
@@ -3368,7 +3344,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw49_front, position_in_consist){
   46: monomedium4_random;
   47: monomedium4_random_end;
   48: monomedium4_random;
-  49: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw49, [
@@ -3434,7 +3409,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw50_both, position_in_consist){
   22: monomedium4_random;
   23: monomedium4_random_end;
   24: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw50_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw50_front, position_in_consist){
   0: monomedium4_random;
@@ -3553,7 +3528,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw51_both, position_in_consist){
   23: monomedium4_random_end;
   24: monomedium4_random;
   25: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw51_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw51_front, position_in_consist){
   0: monomedium4_random;
@@ -3607,7 +3582,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw51_front, position_in_consist){
   48: monomedium4_random;
   49: monomedium4_random_end;
   50: monomedium4_random;
-  51: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw51, [
@@ -3675,7 +3649,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw52_both, position_in_consist){
   23: monomedium4_random_end;
   24: monomedium4_random;
   25: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw52_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw52_front, position_in_consist){
   0: monomedium4_random;
@@ -3798,7 +3772,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw53_both, position_in_consist){
   24: monomedium4_random;
   25: monomedium4_random_end;
   26: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw53_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw53_front, position_in_consist){
   0: monomedium4_random;
@@ -3854,7 +3828,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw53_front, position_in_consist){
   50: monomedium4_random;
   51: monomedium4_random_end;
   52: monomedium4_random;
-  53: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw53, [
@@ -3924,7 +3897,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw54_both, position_in_consist){
   24: monomedium4_random;
   25: monomedium4_random_end;
   26: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw54_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw54_front, position_in_consist){
   0: monomedium4_random;
@@ -4051,7 +4024,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw55_both, position_in_consist){
   25: monomedium4_random_end;
   26: monomedium4_random;
   27: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw55_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw55_front, position_in_consist){
   0: monomedium4_random;
@@ -4109,7 +4082,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw55_front, position_in_consist){
   52: monomedium4_random;
   53: monomedium4_random_end;
   54: monomedium4_random;
-  55: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw55, [
@@ -4181,7 +4153,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw56_both, position_in_consist){
   25: monomedium4_random_end;
   26: monomedium4_random;
   27: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw56_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw56_front, position_in_consist){
   0: monomedium4_random;
@@ -4312,7 +4284,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw57_both, position_in_consist){
   26: monomedium4_random;
   27: monomedium4_random_end;
   28: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw57_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw57_front, position_in_consist){
   0: monomedium4_random;
@@ -4372,7 +4344,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw57_front, position_in_consist){
   54: monomedium4_random;
   55: monomedium4_random_end;
   56: monomedium4_random;
-  57: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw57, [
@@ -4446,7 +4417,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw58_both, position_in_consist){
   26: monomedium4_random;
   27: monomedium4_random_end;
   28: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw58_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw58_front, position_in_consist){
   0: monomedium4_random;
@@ -4581,7 +4552,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw59_both, position_in_consist){
   27: monomedium4_random_end;
   28: monomedium4_random;
   29: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw59_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw59_front, position_in_consist){
   0: monomedium4_random;
@@ -4643,7 +4614,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw59_front, position_in_consist){
   56: monomedium4_random;
   57: monomedium4_random_end;
   58: monomedium4_random;
-  59: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw59, [
@@ -4719,7 +4689,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw60_both, position_in_consist){
   27: monomedium4_random_end;
   28: monomedium4_random;
   29: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw60_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw60_front, position_in_consist){
   0: monomedium4_random;
@@ -4858,7 +4828,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw61_both, position_in_consist){
   28: monomedium4_random;
   29: monomedium4_random_end;
   30: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw61_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw61_front, position_in_consist){
   0: monomedium4_random;
@@ -4922,7 +4892,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw61_front, position_in_consist){
   58: monomedium4_random;
   59: monomedium4_random_end;
   60: monomedium4_random;
-  61: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw61, [
@@ -5000,7 +4969,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw62_both, position_in_consist){
   28: monomedium4_random;
   29: monomedium4_random_end;
   30: monomedium4_random;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw62_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw62_front, position_in_consist){
   0: monomedium4_random;
@@ -5143,7 +5112,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw63_both, position_in_consist){
   29: monomedium4_random_end;
   30: monomedium4_random;
   31: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw63_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw63_front, position_in_consist){
   0: monomedium4_random;
@@ -5209,7 +5178,6 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw63_front, position_in_consist){
   60: monomedium4_random;
   61: monomedium4_random_end;
   62: monomedium4_random;
-  63: monomedium4_random_end;
   mono_medium4_switch_outcome_switch_wagon;
 }
 switch(FEAT_TRAINS, PARENT, mono_medium4_draw63, [
@@ -5289,7 +5257,7 @@ switch(FEAT_TRAINS, SELF, mono_medium4_draw64_both, position_in_consist){
   29: monomedium4_random_end;
   30: monomedium4_random;
   31: monomedium4_random_end;
-  mono_medium4_switch_outcome_switch_wagon;
+  mono_medium4_draw64_both_end;
 }
 switch(FEAT_TRAINS, SELF, mono_medium4_draw64_front, position_in_consist){
   0: monomedium4_random;

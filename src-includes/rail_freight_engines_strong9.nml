@@ -109,6 +109,6 @@ item(FEAT_TRAINS, item_railstrong9, 27) { //ID27
 		running_cost_factor:				100; //only engines
 		cargo_capacity: switch_railstrong9_capacity;
 		loading_speed: switch_railstrong9_loadspeed;
-		visual_effect_and_powered: switch_rail_freight_powered_decider;
+		//visual_effect_and_powered: rail_strong9_powered;
 	}
 }

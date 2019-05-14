@@ -1,0 +1,1408 @@
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw1_both, position_in_consist){
+  0: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw1_front, position_in_consist){
+  0: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw1, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw1_both;
+  rail_fast8_powered_draw1_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw2_both_end, position_in_consist_from_end){
+  0: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw2_both, position_in_consist){
+  0: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw2_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw2_front, position_in_consist){
+  0..1: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw2, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw2_both;
+  rail_fast8_powered_draw2_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw3_both_end, position_in_consist_from_end){
+  0: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw3_both, position_in_consist){
+  0..1: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw3_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw3_front, position_in_consist){
+  0..2: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw3, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw3_both;
+  rail_fast8_powered_draw3_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw4_both_end, position_in_consist_from_end){
+  0..1: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw4_both, position_in_consist){
+  0..1: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw4_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw4_front, position_in_consist){
+  0..3: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw4, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw4_both;
+  rail_fast8_powered_draw4_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw5_both_end, position_in_consist_from_end){
+  0..1: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw5_both, position_in_consist){
+  0..2: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw5_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw5_front, position_in_consist){
+  0..4: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw5, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw5_both;
+  rail_fast8_powered_draw5_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw6_both_end, position_in_consist_from_end){
+  0..2: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw6_both, position_in_consist){
+  0..2: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw6_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw6_front, position_in_consist){
+  0..5: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw6, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw6_both;
+  rail_fast8_powered_draw6_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw7_both_end, position_in_consist_from_end){
+  0..2: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw7_both, position_in_consist){
+  0..3: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw7_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw7_front, position_in_consist){
+  0..6: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw7, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw7_both;
+  rail_fast8_powered_draw7_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw8_both_end, position_in_consist_from_end){
+  0..3: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw8_both, position_in_consist){
+  0..3: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw8_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw8_front, position_in_consist){
+  0..7: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw8, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw8_both;
+  rail_fast8_powered_draw8_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw9_both_end, position_in_consist_from_end){
+  0..3: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw9_both, position_in_consist){
+  0..4: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw9_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw9_front, position_in_consist){
+  0..8: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw9, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw9_both;
+  rail_fast8_powered_draw9_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw10_both_end, position_in_consist_from_end){
+  0..4: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw10_both, position_in_consist){
+  0..4: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw10_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw10_front, position_in_consist){
+  0..9: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw10, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw10_both;
+  rail_fast8_powered_draw10_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw11_both_end, position_in_consist_from_end){
+  0..4: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw11_both, position_in_consist){
+  0..5: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw11_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw11_front, position_in_consist){
+  0..10: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw11, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw11_both;
+  rail_fast8_powered_draw11_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw12_both_end, position_in_consist_from_end){
+  0..5: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw12_both, position_in_consist){
+  0..5: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw12_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw12_front, position_in_consist){
+  0..11: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw12, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw12_both;
+  rail_fast8_powered_draw12_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw13_both_end, position_in_consist_from_end){
+  0..5: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw13_both, position_in_consist){
+  0..6: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw13_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw13_front, position_in_consist){
+  0..12: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw13, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw13_both;
+  rail_fast8_powered_draw13_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw14_both_end, position_in_consist_from_end){
+  0..6: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw14_both, position_in_consist){
+  0..6: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw14_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw14_front, position_in_consist){
+  0..13: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw14, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw14_both;
+  rail_fast8_powered_draw14_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw15_both_end, position_in_consist_from_end){
+  0..6: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw15_both, position_in_consist){
+  0..7: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw15_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw15_front, position_in_consist){
+  0..14: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw15, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw15_both;
+  rail_fast8_powered_draw15_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw16_both_end, position_in_consist_from_end){
+  0..7: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw16_both, position_in_consist){
+  0..7: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw16_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw16_front, position_in_consist){
+  0..15: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw16, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw16_both;
+  rail_fast8_powered_draw16_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw17_both_end, position_in_consist_from_end){
+  0..7: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw17_both, position_in_consist){
+  0..8: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw17_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw17_front, position_in_consist){
+  0..16: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw17, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw17_both;
+  rail_fast8_powered_draw17_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw18_both_end, position_in_consist_from_end){
+  0..8: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw18_both, position_in_consist){
+  0..8: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw18_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw18_front, position_in_consist){
+  0..17: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw18, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw18_both;
+  rail_fast8_powered_draw18_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw19_both_end, position_in_consist_from_end){
+  0..8: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw19_both, position_in_consist){
+  0..9: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw19_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw19_front, position_in_consist){
+  0..18: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw19, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw19_both;
+  rail_fast8_powered_draw19_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw20_both_end, position_in_consist_from_end){
+  0..9: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw20_both, position_in_consist){
+  0..9: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw20_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw20_front, position_in_consist){
+  0..19: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw20, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw20_both;
+  rail_fast8_powered_draw20_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw21_both_end, position_in_consist_from_end){
+  0..9: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw21_both, position_in_consist){
+  0..10: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw21_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw21_front, position_in_consist){
+  0..20: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw21, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw21_both;
+  rail_fast8_powered_draw21_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw22_both_end, position_in_consist_from_end){
+  0..10: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw22_both, position_in_consist){
+  0..10: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw22_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw22_front, position_in_consist){
+  0..21: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw22, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw22_both;
+  rail_fast8_powered_draw22_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw23_both_end, position_in_consist_from_end){
+  0..10: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw23_both, position_in_consist){
+  0..11: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw23_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw23_front, position_in_consist){
+  0..22: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw23, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw23_both;
+  rail_fast8_powered_draw23_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw24_both_end, position_in_consist_from_end){
+  0..11: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw24_both, position_in_consist){
+  0..11: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw24_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw24_front, position_in_consist){
+  0..23: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw24, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw24_both;
+  rail_fast8_powered_draw24_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw25_both_end, position_in_consist_from_end){
+  0..11: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw25_both, position_in_consist){
+  0..12: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw25_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw25_front, position_in_consist){
+  0..24: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw25, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw25_both;
+  rail_fast8_powered_draw25_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw26_both_end, position_in_consist_from_end){
+  0..12: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw26_both, position_in_consist){
+  0..12: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw26_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw26_front, position_in_consist){
+  0..25: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw26, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw26_both;
+  rail_fast8_powered_draw26_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw27_both_end, position_in_consist_from_end){
+  0..12: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw27_both, position_in_consist){
+  0..13: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw27_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw27_front, position_in_consist){
+  0..26: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw27, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw27_both;
+  rail_fast8_powered_draw27_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw28_both_end, position_in_consist_from_end){
+  0..13: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw28_both, position_in_consist){
+  0..13: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw28_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw28_front, position_in_consist){
+  0..27: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw28, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw28_both;
+  rail_fast8_powered_draw28_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw29_both_end, position_in_consist_from_end){
+  0..13: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw29_both, position_in_consist){
+  0..14: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw29_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw29_front, position_in_consist){
+  0..28: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw29, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw29_both;
+  rail_fast8_powered_draw29_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw30_both_end, position_in_consist_from_end){
+  0..14: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw30_both, position_in_consist){
+  0..14: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw30_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw30_front, position_in_consist){
+  0..29: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw30, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw30_both;
+  rail_fast8_powered_draw30_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw31_both_end, position_in_consist_from_end){
+  0..14: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw31_both, position_in_consist){
+  0..15: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw31_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw31_front, position_in_consist){
+  0..30: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw31, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw31_both;
+  rail_fast8_powered_draw31_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw32_both_end, position_in_consist_from_end){
+  0..15: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw32_both, position_in_consist){
+  0..15: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw32_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw32_front, position_in_consist){
+  0..31: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw32, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw32_both;
+  rail_fast8_powered_draw32_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw33_both_end, position_in_consist_from_end){
+  0..15: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw33_both, position_in_consist){
+  0..16: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw33_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw33_front, position_in_consist){
+  0..32: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw33, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw33_both;
+  rail_fast8_powered_draw33_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw34_both_end, position_in_consist_from_end){
+  0..16: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw34_both, position_in_consist){
+  0..16: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw34_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw34_front, position_in_consist){
+  0..33: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw34, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw34_both;
+  rail_fast8_powered_draw34_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw35_both_end, position_in_consist_from_end){
+  0..16: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw35_both, position_in_consist){
+  0..17: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw35_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw35_front, position_in_consist){
+  0..34: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw35, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw35_both;
+  rail_fast8_powered_draw35_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw36_both_end, position_in_consist_from_end){
+  0..17: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw36_both, position_in_consist){
+  0..17: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw36_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw36_front, position_in_consist){
+  0..35: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw36, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw36_both;
+  rail_fast8_powered_draw36_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw37_both_end, position_in_consist_from_end){
+  0..17: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw37_both, position_in_consist){
+  0..18: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw37_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw37_front, position_in_consist){
+  0..36: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw37, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw37_both;
+  rail_fast8_powered_draw37_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw38_both_end, position_in_consist_from_end){
+  0..18: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw38_both, position_in_consist){
+  0..18: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw38_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw38_front, position_in_consist){
+  0..37: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw38, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw38_both;
+  rail_fast8_powered_draw38_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw39_both_end, position_in_consist_from_end){
+  0..18: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw39_both, position_in_consist){
+  0..19: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw39_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw39_front, position_in_consist){
+  0..38: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw39, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw39_both;
+  rail_fast8_powered_draw39_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw40_both_end, position_in_consist_from_end){
+  0..19: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw40_both, position_in_consist){
+  0..19: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw40_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw40_front, position_in_consist){
+  0..39: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw40, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw40_both;
+  rail_fast8_powered_draw40_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw41_both_end, position_in_consist_from_end){
+  0..19: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw41_both, position_in_consist){
+  0..20: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw41_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw41_front, position_in_consist){
+  0..40: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw41, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw41_both;
+  rail_fast8_powered_draw41_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw42_both_end, position_in_consist_from_end){
+  0..20: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw42_both, position_in_consist){
+  0..20: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw42_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw42_front, position_in_consist){
+  0..41: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw42, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw42_both;
+  rail_fast8_powered_draw42_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw43_both_end, position_in_consist_from_end){
+  0..20: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw43_both, position_in_consist){
+  0..21: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw43_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw43_front, position_in_consist){
+  0..42: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw43, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw43_both;
+  rail_fast8_powered_draw43_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw44_both_end, position_in_consist_from_end){
+  0..21: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw44_both, position_in_consist){
+  0..21: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw44_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw44_front, position_in_consist){
+  0..43: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw44, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw44_both;
+  rail_fast8_powered_draw44_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw45_both_end, position_in_consist_from_end){
+  0..21: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw45_both, position_in_consist){
+  0..22: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw45_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw45_front, position_in_consist){
+  0..44: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw45, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw45_both;
+  rail_fast8_powered_draw45_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw46_both_end, position_in_consist_from_end){
+  0..22: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw46_both, position_in_consist){
+  0..22: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw46_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw46_front, position_in_consist){
+  0..45: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw46, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw46_both;
+  rail_fast8_powered_draw46_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw47_both_end, position_in_consist_from_end){
+  0..22: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw47_both, position_in_consist){
+  0..23: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw47_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw47_front, position_in_consist){
+  0..46: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw47, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw47_both;
+  rail_fast8_powered_draw47_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw48_both_end, position_in_consist_from_end){
+  0..23: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw48_both, position_in_consist){
+  0..23: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw48_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw48_front, position_in_consist){
+  0..47: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw48, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw48_both;
+  rail_fast8_powered_draw48_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw49_both_end, position_in_consist_from_end){
+  0..23: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw49_both, position_in_consist){
+  0..24: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw49_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw49_front, position_in_consist){
+  0..48: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw49, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw49_both;
+  rail_fast8_powered_draw49_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw50_both_end, position_in_consist_from_end){
+  0..24: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw50_both, position_in_consist){
+  0..24: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw50_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw50_front, position_in_consist){
+  0..49: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw50, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw50_both;
+  rail_fast8_powered_draw50_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw51_both_end, position_in_consist_from_end){
+  0..24: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw51_both, position_in_consist){
+  0..25: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw51_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw51_front, position_in_consist){
+  0..50: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw51, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw51_both;
+  rail_fast8_powered_draw51_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw52_both_end, position_in_consist_from_end){
+  0..25: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw52_both, position_in_consist){
+  0..25: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw52_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw52_front, position_in_consist){
+  0..51: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw52, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw52_both;
+  rail_fast8_powered_draw52_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw53_both_end, position_in_consist_from_end){
+  0..25: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw53_both, position_in_consist){
+  0..26: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw53_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw53_front, position_in_consist){
+  0..52: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw53, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw53_both;
+  rail_fast8_powered_draw53_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw54_both_end, position_in_consist_from_end){
+  0..26: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw54_both, position_in_consist){
+  0..26: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw54_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw54_front, position_in_consist){
+  0..53: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw54, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw54_both;
+  rail_fast8_powered_draw54_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw55_both_end, position_in_consist_from_end){
+  0..26: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw55_both, position_in_consist){
+  0..27: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw55_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw55_front, position_in_consist){
+  0..54: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw55, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw55_both;
+  rail_fast8_powered_draw55_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw56_both_end, position_in_consist_from_end){
+  0..27: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw56_both, position_in_consist){
+  0..27: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw56_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw56_front, position_in_consist){
+  0..55: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw56, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw56_both;
+  rail_fast8_powered_draw56_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw57_both_end, position_in_consist_from_end){
+  0..27: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw57_both, position_in_consist){
+  0..28: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw57_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw57_front, position_in_consist){
+  0..56: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw57, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw57_both;
+  rail_fast8_powered_draw57_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw58_both_end, position_in_consist_from_end){
+  0..28: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw58_both, position_in_consist){
+  0..28: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw58_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw58_front, position_in_consist){
+  0..57: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw58, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw58_both;
+  rail_fast8_powered_draw58_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw59_both_end, position_in_consist_from_end){
+  0..28: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw59_both, position_in_consist){
+  0..29: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw59_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw59_front, position_in_consist){
+  0..58: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw59, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw59_both;
+  rail_fast8_powered_draw59_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw60_both_end, position_in_consist_from_end){
+  0..29: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw60_both, position_in_consist){
+  0..29: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw60_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw60_front, position_in_consist){
+  0..59: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw60, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw60_both;
+  rail_fast8_powered_draw60_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw61_both_end, position_in_consist_from_end){
+  0..29: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw61_both, position_in_consist){
+  0..30: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw61_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw61_front, position_in_consist){
+  0..60: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw61, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw61_both;
+  rail_fast8_powered_draw61_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw62_both_end, position_in_consist_from_end){
+  0..30: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw62_both, position_in_consist){
+  0..30: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw62_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw62_front, position_in_consist){
+  0..61: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw62, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw62_both;
+  rail_fast8_powered_draw62_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw63_both_end, position_in_consist_from_end){
+  0..30: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw63_both, position_in_consist){
+  0..31: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw63_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw63_front, position_in_consist){
+  0..62: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw63, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw63_both;
+  rail_fast8_powered_draw63_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw64_both_end, position_in_consist_from_end){
+  0..31: VISUAL_EFFECT_DISABLE;
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw64_both, position_in_consist){
+  0..31: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  rail_fast8_powered_draw64_both_end;
+}
+switch(FEAT_TRAINS, SELF, rail_fast8_powered_draw64_front, position_in_consist){
+  0..63: visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
+  VISUAL_EFFECT_DISABLE;
+}
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered_draw64, [
+  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]
+  ]){
+  65: rail_fast8_powered_draw64_both;
+  rail_fast8_powered_draw64_front;
+  }
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+switch(FEAT_TRAINS, PARENT, rail_fast8_powered,
+  count_veh_id(65) ){
+  0..2: rail_fast8_powered_draw1;
+  3..4: rail_fast8_powered_draw2;
+  5..6: rail_fast8_powered_draw3;
+  7..8: rail_fast8_powered_draw4;
+  9..10: rail_fast8_powered_draw5;
+  11..12: rail_fast8_powered_draw6;
+  13..14: rail_fast8_powered_draw7;
+  15..16: rail_fast8_powered_draw8;
+  17..18: rail_fast8_powered_draw9;
+  19..20: rail_fast8_powered_draw10;
+  21..22: rail_fast8_powered_draw11;
+  23..24: rail_fast8_powered_draw12;
+  25..26: rail_fast8_powered_draw13;
+  27..28: rail_fast8_powered_draw14;
+  29..30: rail_fast8_powered_draw15;
+  31..32: rail_fast8_powered_draw16;
+  33..34: rail_fast8_powered_draw17;
+  35..36: rail_fast8_powered_draw18;
+  37..38: rail_fast8_powered_draw19;
+  39..40: rail_fast8_powered_draw20;
+  41..42: rail_fast8_powered_draw21;
+  43..44: rail_fast8_powered_draw22;
+  45..46: rail_fast8_powered_draw23;
+  47..48: rail_fast8_powered_draw24;
+  49..50: rail_fast8_powered_draw25;
+  51..52: rail_fast8_powered_draw26;
+  53..54: rail_fast8_powered_draw27;
+  55..56: rail_fast8_powered_draw28;
+  57..58: rail_fast8_powered_draw29;
+  59..60: rail_fast8_powered_draw30;
+  61..62: rail_fast8_powered_draw31;
+  63..64: rail_fast8_powered_draw32;
+  65..66: rail_fast8_powered_draw33;
+  67..68: rail_fast8_powered_draw34;
+  69..70: rail_fast8_powered_draw35;
+  71..72: rail_fast8_powered_draw36;
+  73..74: rail_fast8_powered_draw37;
+  75..76: rail_fast8_powered_draw38;
+  77..78: rail_fast8_powered_draw39;
+  79..80: rail_fast8_powered_draw40;
+  81..82: rail_fast8_powered_draw41;
+  83..84: rail_fast8_powered_draw42;
+  85..86: rail_fast8_powered_draw43;
+  87..88: rail_fast8_powered_draw44;
+  89..90: rail_fast8_powered_draw45;
+  91..92: rail_fast8_powered_draw46;
+  93..94: rail_fast8_powered_draw47;
+  95..96: rail_fast8_powered_draw48;
+  97..98: rail_fast8_powered_draw49;
+  99..100: rail_fast8_powered_draw50;
+  101..102: rail_fast8_powered_draw51;
+  103..104: rail_fast8_powered_draw52;
+  105..106: rail_fast8_powered_draw53;
+  107..108: rail_fast8_powered_draw54;
+  109..110: rail_fast8_powered_draw55;
+  111..112: rail_fast8_powered_draw56;
+  113..114: rail_fast8_powered_draw57;
+  115..116: rail_fast8_powered_draw58;
+  117..118: rail_fast8_powered_draw59;
+  119..120: rail_fast8_powered_draw60;
+  121..122: rail_fast8_powered_draw61;
+  123..124: rail_fast8_powered_draw62;
+  125..126: rail_fast8_powered_draw63;
+  127..128: rail_fast8_powered_draw64;
+  rail_fast8_powered_draw64;
+}
