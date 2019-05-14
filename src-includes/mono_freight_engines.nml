@@ -215,14 +215,14 @@ dependent: monowtf4_power;
 }
 
 switch(FEAT_TRAINS, SELF, switch_mono_freight_engine_capacity, cargo_type_in_veh){
-  PASS: 30;
-  GOOD: 30;
-  30;
+  PASS: 15;
+  GOOD: 15;
+  15;
 }
 switch(FEAT_TRAINS, SELF, switch_mono_freight_engine_loadspeed, cargo_type_in_veh){
-  PASS: 6;
-  GOOD: 6;
-  6;
+  PASS: 3;
+  GOOD: 3;
+  3;
 }
 
 

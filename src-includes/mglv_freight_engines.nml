@@ -42,13 +42,22 @@ spriteset(spriteset_train_magfast2_end, "gfx/MagFast.png") {	template_engine32WT
 spriteset(spriteset_train_magfast3_end, "gfx/MagFast.png") {	template_engine32WTF_mag_end_articulated_hack(0, 2, 0) }
 spriteset(spriteset_train_magfast4_end, "gfx/MagFast.png") {	template_engine32WTF_mag_end_articulated_hack(0, 3, 0) }
 
-switch(FEAT_TRAINS, SELF, switch_mglv_freight_engine_capacity, cargo_type_in_veh){
-  PASS: 11;
-  GOOD: 11;
-  11;
+switch(FEAT_TRAINS, SELF, switch_mglv_freight_engine_capacity_0, cargo_type_in_veh){
+  PASS: 6;
+  GOOD: 6;
+  6;
+}
+switch(FEAT_TRAINS, SELF, switch_mglv_freight_engine_capacity_1, cargo_type_in_veh){
+  PASS: 5;
+  GOOD: 5;
+  5;
+}
+switch(FEAT_TRAINS, SELF, switch_mglv_freight_engine_capacity, position_in_articulated_veh){
+  0..1: switch_mglv_freight_engine_capacity_0;
+  switch_mglv_freight_engine_capacity_1;
 }
 switch(FEAT_TRAINS, SELF, switch_mglv_freight_engine_loadspeed, cargo_type_in_veh){
-  PASS: 4;
-  GOOD: 4;
-  4;
+  PASS: 2;
+  GOOD: 2;
+  2;
 }
