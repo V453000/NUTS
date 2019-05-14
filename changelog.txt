@@ -2,6 +2,7 @@
 	Greatly optimized the calculation of freight engine drawing.
 	Freight wagons can no longer look like an engine.
 
+	Early rail steamers clamp up to avoid drawing gaps between them.
 	Monorail freight engines now draw as alternating front and rear facing engines.
 
 	Monorail freight engine capacity was accidentally double.
