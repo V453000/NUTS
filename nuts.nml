@@ -2,9 +2,9 @@ grf {
 	grfid: "HA\01\01";
 	name: string(STR_GRF_NAME);
 	desc: string(STR_GRF_DESC);
-	version: 84;
+	version: 85;
 	url  : string(STR_GRF_WEBSITE);
-	min_compatible_version: 83;
+	min_compatible_version: 85;
 
 	param 0 {
 	param_wagons {
