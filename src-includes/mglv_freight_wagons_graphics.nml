@@ -1525,26 +1525,26 @@ spriteset(spriteset_maglevhopper_uranium0, "gfx/maglevhopper.png") { template_wa
 spriteset(spriteset_maglevhopper_uranium1, "gfx/maglevhopper.png") { template_wagon16(0,91) }
 spriteset(spriteset_maglevhopper_uranium2, "gfx/maglevhopper.png") { template_wagon16(0,92) }
 spriteset(spriteset_maglevhopper_uranium3, "gfx/maglevhopper.png") { template_wagon16(0,93) }
-spriteset(spriteset_maglevhopper_nitrates0, "gfx/maglevhopper.png") { template_wagon16(0,94) }
-spriteset(spriteset_maglevhopper_nitrates1, "gfx/maglevhopper.png") { template_wagon16(0,95) }
-spriteset(spriteset_maglevhopper_nitrates2, "gfx/maglevhopper.png") { template_wagon16(0,96) }
-spriteset(spriteset_maglevhopper_nitrates3, "gfx/maglevhopper.png") { template_wagon16(0,97) }
-spriteset(spriteset_maglevhopper_phosphates0, "gfx/maglevhopper.png") { template_wagon16(0,99) }
-spriteset(spriteset_maglevhopper_phosphates1, "gfx/maglevhopper.png") { template_wagon16(0,100) }
-spriteset(spriteset_maglevhopper_phosphates2, "gfx/maglevhopper.png") { template_wagon16(0,101) }
-spriteset(spriteset_maglevhopper_phosphates3, "gfx/maglevhopper.png") { template_wagon16(0,102) }
-spriteset(spriteset_maglevhopper_pyrite0, "gfx/maglevhopper.png") { template_wagon16(0,104) }
-spriteset(spriteset_maglevhopper_pyrite1, "gfx/maglevhopper.png") { template_wagon16(0,105) }
-spriteset(spriteset_maglevhopper_pyrite2, "gfx/maglevhopper.png") { template_wagon16(0,106) }
-spriteset(spriteset_maglevhopper_pyrite3, "gfx/maglevhopper.png") { template_wagon16(0,107) }
-spriteset(spriteset_maglevhopper_cassava0, "gfx/maglevhopper.png") { template_wagon16(0,109) }
-spriteset(spriteset_maglevhopper_cassava1, "gfx/maglevhopper.png") { template_wagon16(0,110) }
-spriteset(spriteset_maglevhopper_cassava2, "gfx/maglevhopper.png") { template_wagon16(0,111) }
-spriteset(spriteset_maglevhopper_cassava3, "gfx/maglevhopper.png") { template_wagon16(0,112) }
-spriteset(spriteset_maglevhopper_manganese0, "gfx/maglevhopper.png") { template_wagon16(0,114) }
-spriteset(spriteset_maglevhopper_manganese1, "gfx/maglevhopper.png") { template_wagon16(0,115) }
-spriteset(spriteset_maglevhopper_manganese2, "gfx/maglevhopper.png") { template_wagon16(0,116) }
-spriteset(spriteset_maglevhopper_manganese3, "gfx/maglevhopper.png") { template_wagon16(0,117) }
+spriteset(spriteset_maglevhopper_nitrates0, "gfx/maglevhopper.png") { template_wagon16(0,95) }
+spriteset(spriteset_maglevhopper_nitrates1, "gfx/maglevhopper.png") { template_wagon16(0,96) }
+spriteset(spriteset_maglevhopper_nitrates2, "gfx/maglevhopper.png") { template_wagon16(0,97) }
+spriteset(spriteset_maglevhopper_nitrates3, "gfx/maglevhopper.png") { template_wagon16(0,98) }
+spriteset(spriteset_maglevhopper_phosphates0, "gfx/maglevhopper.png") { template_wagon16(0,100) }
+spriteset(spriteset_maglevhopper_phosphates1, "gfx/maglevhopper.png") { template_wagon16(0,101) }
+spriteset(spriteset_maglevhopper_phosphates2, "gfx/maglevhopper.png") { template_wagon16(0,102) }
+spriteset(spriteset_maglevhopper_phosphates3, "gfx/maglevhopper.png") { template_wagon16(0,103) }
+spriteset(spriteset_maglevhopper_pyrite0, "gfx/maglevhopper.png") { template_wagon16(0,105) }
+spriteset(spriteset_maglevhopper_pyrite1, "gfx/maglevhopper.png") { template_wagon16(0,106) }
+spriteset(spriteset_maglevhopper_pyrite2, "gfx/maglevhopper.png") { template_wagon16(0,107) }
+spriteset(spriteset_maglevhopper_pyrite3, "gfx/maglevhopper.png") { template_wagon16(0,108) }
+spriteset(spriteset_maglevhopper_cassava0, "gfx/maglevhopper.png") { template_wagon16(0,110) }
+spriteset(spriteset_maglevhopper_cassava1, "gfx/maglevhopper.png") { template_wagon16(0,111) }
+spriteset(spriteset_maglevhopper_cassava2, "gfx/maglevhopper.png") { template_wagon16(0,112) }
+spriteset(spriteset_maglevhopper_cassava3, "gfx/maglevhopper.png") { template_wagon16(0,113) }
+spriteset(spriteset_maglevhopper_manganese0, "gfx/maglevhopper.png") { template_wagon16(0,115) }
+spriteset(spriteset_maglevhopper_manganese1, "gfx/maglevhopper.png") { template_wagon16(0,116) }
+spriteset(spriteset_maglevhopper_manganese2, "gfx/maglevhopper.png") { template_wagon16(0,117) }
+spriteset(spriteset_maglevhopper_manganese3, "gfx/maglevhopper.png") { template_wagon16(0,118) }
 
 //SPRITEGROUPS
 
