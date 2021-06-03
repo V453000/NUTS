@@ -39,7 +39,7 @@ STR_ELRL			: Electrified Railway
 STR_MONO			: Monorail
 STR_MGLV			: Maglev
 STR_MAGL			: Alternate Maglev
-STR_WETR			: {LTBLUE}WETRails{BLACK}
+STR_WETR			: {PUSH_COLOUR}{LTBLUE}WETRails{POP_COLOUR}
 
 STR_UNI1			: CLEAN purr
 STR_UNI2			: {GOLD}YELLOW purr
