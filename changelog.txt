@@ -1,3 +1,10 @@
+0.8.5
+	Due to a change in OpenTTD, Monorail and Maglev vehicles would no longer have their curve speed bonus on PURR tracks.
+	Separated PURR tracks into Rail, Monorail and Maglev.
+	Added Universal rail for autoreplacing between railtypes. Universal rail has the same curve speeds as normal Rail.
+
+	Fixed drawing of some FIRS cargoes in maglev hoppers.
+
 0.8.4
 	Greatly optimized the calculation of freight engine drawing.
 	Freight wagons can no longer look like an engine.
