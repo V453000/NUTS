@@ -61,7 +61,7 @@ STR_PURR_MGLV_3			:Maglev - {RED}RED purr
 STR_PURR_MGLV_4			:Maglev - {BLUE}BLUE purr
 STR_PURR_MGLV_5			:Maglev - {GREEN}GREEN purr
 
-STR_PURR_UNIV           :Universal Rail
+STR_PURR_UNIV           :{PUSH_COLOUR}{PURPLE}Universal{POP_COLOUR} Rail
 
 
 
