@@ -1,15 +1,7 @@
 import os
 from subprocess import Popen
 
-main_nml = open('NUTS.nml', 'r')
-
-output_nml = open('NUTS-x-combined.nml', 'w')
-output_nml.close() # clear the content of the file
-output_nml = open('NUTS-x-combined.nml', 'w')
-
-prefix = '//#include '
-prefix_length = len(prefix)
-for line in main_nml:
+def process_line(line, prefix, output_nml):
   if prefix in line:
     output_nml.write(line)
     filename_to_import = line[prefix_length:][:-1]
@@ -17,13 +9,25 @@ for line in main_nml:
       with open(filename_to_import,'r') as file_to_import:
         file_to_import = open(filename_to_import, 'r')
         for l in file_to_import:
-          output_nml.write(l)
+          process_line(l, prefix, output_nml)
+          #output_nml.write(l)
         print('Included', filename_to_import)
     else:
       print(filename_to_import, 'NOT FOUND!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
       #raise Exception(filename_to_import, 'NOT FOUND!!!')
   else:
     output_nml.write(line)
+
+main_nml = open('NUTS.nml', 'r')
+output_nml = open('NUTS-x-combined.nml', 'w')
+output_nml.close() # clear the content of the file
+output_nml = open('NUTS-x-combined.nml', 'w')
+
+prefix = '//#include '
+prefix_length = len(prefix)
+
+for line in main_nml:
+  process_line(line, prefix, output_nml)
 
 main_nml.close()
 output_nml.close()
