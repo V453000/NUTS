@@ -18,7 +18,7 @@ STR_PARAM_32BPP_ON: Enabled
 STR_PARAM_SIGNALS: Signals
 STR_PARAM_SIGNALS_DESC: Select which railtypes should use NUTS signals.
 STR_PARAM_SIGNALS_OFF: OFF. NUTS will not change any signals.
-STR_PARAM_SIGNALS_WETRAIL: NUTS will change signals to WETRail only.
+STR_PARAM_SIGNALS_WETRAIL: NUTS will change signals to WETRail and Universal rail only.
 STR_PARAM_SIGNALS_PURR: NUTS will change signals of WETRail and PURR.
 STR_PARAM_SIGNALS_ALL_NUTS: NUTS will change WETRail, PURR, Rail, Electrified Rail, Monorail and Maglev.
 STR_PARAM_SIGNALS_REPLACE: NUTS will replace vanilla signals for any railtype even outside of NUTS (if that railtype does not define its own signals).
@@ -33,39 +33,32 @@ STR_PARAM_SIGNALS_SLOT_LIGHT_IN_SEMAPHORE: Semaphore row of signals will be repl
 STR_PARAM_SIGNALS_SLOT_BOTH_INVERTED: Both semaphore and light signal types will be replaced, semaphore in light row and light in semaphore row.
 
 
-STR_UNIV			: Universal Rail
-STR_RAIL			: Railway
-STR_ELRL			: Electrified Railway
-STR_MONO			: Monorail
-STR_MGLV			: Maglev
-STR_MAGL			: Alternate Maglev
-STR_WETR			: {PUSH_COLOUR}{LTBLUE}WETRails{POP_COLOUR}
-
-STR_UNI1			: CLEAN purr
-STR_UNI2			: {GOLD}YELLOW purr
-STR_UNI3			: {RED}RED purr
-STR_UNI4			: {BLUE}BLUE purr
-STR_UNI5			: {GREEN}GREEN purr
-STR_UNI6			: {GOLD}PINK purr
-STR_UNI7			: {RED}RED purr
-STR_UNI8			: {BROWN}BROWN purr
+STR_RAIL			:Railway
+STR_ELRL			:Electrified Railway
+STR_MONO			:Monorail
+STR_MGLV			:Maglev
+STR_WETR			:{PUSH_COLOUR}{LTBLUE}WETRails{POP_COLOUR}
 
 
-STR_UNIX			: X purr
-STR_UNIA			: {GOLD}A purr
-STR_UNIB			: {RED}B purr
-STR_UNIC			: {BLUE}C purr
-STR_UNID			: {GREEN}D purr
-STR_UNIE			: {GOLD}E purr
-STR_UNIF			: {RED}F purr
-STR_UNIG			: {BROWN}G purr
-STR_UNIH			: {BROWN}H purr
-STR_UNII			: {BROWN}I purr
-STR_UNIJ			: {BROWN}J purr
+STR_PURR_RAIL_1			:Rail - CLEAN purr
+STR_PURR_RAIL_2			:Rail - {GOLD}YELLOW purr
+STR_PURR_RAIL_3			:Rail - {RED}RED purr
+STR_PURR_RAIL_4			:Rail - {BLUE}BLUE purr
+STR_PURR_RAIL_5			:Rail - {GREEN}GREEN purr
 
+STR_PURR_MONO_1			:Monorail - CLEAN purr
+STR_PURR_MONO_2			:Monorail - {GOLD}YELLOW purr
+STR_PURR_MONO_3			:Monorail - {RED}RED purr
+STR_PURR_MONO_4			:Monorail - {BLUE}BLUE purr
+STR_PURR_MONO_5			:Monorail - {GREEN}GREEN purr
 
+STR_PURR_MGLV_1			:Maglev - CLEAN purr
+STR_PURR_MGLV_2			:Maglev - {GOLD}YELLOW purr
+STR_PURR_MGLV_3			:Maglev - {RED}RED purr
+STR_PURR_MGLV_4			:Maglev - {BLUE}BLUE purr
+STR_PURR_MGLV_5			:Maglev - {GREEN}GREEN purr
 
-
+STR_PURR_UNIV           :Universal Rail
 
 
 

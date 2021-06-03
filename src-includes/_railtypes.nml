@@ -247,8 +247,8 @@ item (FEAT_RAILTYPES, rail, 1){
   build_window_caption:			string(STR_RAIL);
   autoreplace_text:				string(STR_RAIL);
   new_engine_text:				string(STR_RAIL);
-  compatible_railtype_list:		["UNIV", "RAIL", "ELRL","UNI1", "UNI2","UNI3","UNI4","UNI5","UNI6","UNI7","UNI8"];
-  powered_railtype_list: 			["UNIV","UNI1", "UNI2","UNI3","UNI4","UNI5","UNI6","UNI7","UNI8"];
+  compatible_railtype_list:		["UNIV", "RAIL", "ELRL","PRL1", "PRL2","PRL3","PRL4","PRL5"];
+  powered_railtype_list: 		["UNIV","PRL1", "PRL2","PRL3","PRL4","PRL5"];
   /*curve_speed_multiplier:			1;
   station_graphics:				RAILTYPE_STATION_NORMAL;
   speed_limit:					0km/h;
@@ -267,8 +267,8 @@ item (FEAT_RAILTYPES, elrl, 2){
   build_window_caption:			string(STR_ELRL);
   autoreplace_text:				string(STR_ELRL);
   new_engine_text:				string(STR_ELRL);
-  compatible_railtype_list:		["UNIV", "RAIL", "ELRL","UNI1", "UNI2","UNI3","UNI4","UNI5","UNI6","UNI7","UNI8"];
-  powered_railtype_list: 			["UNIV", "ELRL","UNI1", "UNI2","UNI3","UNI4","UNI5","UNI6","UNI7","UNI8"];
+  compatible_railtype_list:		["UNIV", "RAIL", "ELRL","PRL1", "PRL2","PRL3","PRL4","PRL5"];
+  powered_railtype_list: 		["UNIV", "ELRL","PRL1", "PRL2","PRL3","PRL4","PRL5"];
   /*curve_speed_multiplier:			1;
   station_graphics:				RAILTYPE_STATION_NORMAL;
   speed_limit:					0km/h;
@@ -289,8 +289,8 @@ item (FEAT_RAILTYPES, mono, 3){
   build_window_caption:			string(STR_MONO);
   autoreplace_text:				string(STR_MONO);
   new_engine_text:				string(STR_MONO);
-  compatible_railtype_list:		["UNIV", "MONO","UNI1", "UNI2","UNI3","UNI4","UNI5","UNI6","UNI7","UNI8"];
-  powered_railtype_list: 			["UNIV", "MONO","UNI1", "UNI2","UNI3","UNI4","UNI5","UNI6","UNI7","UNI8"];
+  compatible_railtype_list:		["UNIV", "MONO","PMO1", "PMO2","PMO3","PMO4","PMO5"];
+  powered_railtype_list: 		["UNIV", "MONO","PMO1", "PMO2","PMO3","PMO4","PMO5"];
   /*station_graphics:				RAILTYPE_STATION_MONORAIL;
   speed_limit:					0km/h;
   acceleration_model:				ACC_MODEL_RAIL;*/
@@ -309,8 +309,8 @@ item (FEAT_RAILTYPES, mglv, 4){
   build_window_caption:			string(STR_MGLV);
   autoreplace_text:				string(STR_MGLV);
   new_engine_text:				string(STR_MGLV);
-  compatible_railtype_list:		["UNIV", "MGLV","UNI1", "UNI2","UNI3","UNI4","UNI5","UNI6","UNI7","UNI8"];
-  powered_railtype_list: 			["UNIV", "MGLV", "UNI1", "UNI2","UNI3","UNI4","UNI5","UNI6","UNI7","UNI8"];
+  compatible_railtype_list:		["UNIV", "MGLV", "PML1", "PML2","PML3","PML4","PML5"];
+  powered_railtype_list: 		["UNIV", "MGLV", "PML1", "PML2","PML3","PML4","PML5"];
   sort_order: 37;
   }
 }
@@ -327,8 +327,8 @@ menu_text:						string(STR_UNIV);
 build_window_caption:			string(STR_UNIV);
 autoreplace_text:				string(STR_UNIV);
 new_engine_text:				string(STR_UNIV);
-compatible_railtype_list:		["UNIV", "RAIL", "ELRL", "MONO", "MGLV", "WETR","UNI1", "UNI2","UNI3","UNI4","UNI5","UNI6","UNI7","UNI8"];
-powered_railtype_list: 			["UNIV", "RAIL", "ELRL", "MONO", "MGLV", "WETR","UNI1", "UNI2","UNI3","UNI4","UNI5","UNI6","UNI7","UNI8"];
+compatible_railtype_list:		["UNIV", "RAIL", "ELRL", "MONO", "MGLV", "WETR","PRL1", "PRL2","PRL3","PRL4","PRL5"];
+powered_railtype_list: 			["UNIV", "RAIL", "ELRL", "MONO", "MGLV", "WETR","PRL1", "PRL2","PRL3","PRL4","PRL5"];
 curve_speed_multiplier:			0;
 sort_order: 255;
 construction_cost: 200;
@@ -336,7 +336,7 @@ construction_cost: 200;
 }
 */
 
-item (FEAT_RAILTYPES, wetrails, 12){
+item (FEAT_RAILTYPES, wetrails, 6){
 property{
 label: 							"WETR";
 introduction_date:				date(1950,01,01);
@@ -346,8 +346,8 @@ menu_text:						string(STR_WETR);
 build_window_caption:			string(STR_WETR);
 autoreplace_text:				string(STR_WETR);
 new_engine_text:				string(STR_WETR);
-compatible_railtype_list:		["WETR", "UNIV", "UNI1", "UNI2","UNI3","UNI4","UNI5","UNI6","UNI7","UNI8"];
-powered_railtype_list: 			["WETR", "UNIV", "UNI1", "UNI2","UNI3","UNI4","UNI5","UNI6","UNI7","UNI8"];
+compatible_railtype_list:		["WETR", "UNIV", "PRL1", "PRL2","PRL3","PRL4","PRL5"];
+powered_railtype_list: 			["WETR", "UNIV", "PRL1", "PRL2","PRL3","PRL4","PRL5"];
 sort_order: 47;
 speed_limit: 121 km/h;
 }
@@ -366,14 +366,14 @@ level_crossings: canalrails_road_crossing;
 //
 //------------------------------------------------------------------------------------------------------------------------------------------------
 
-spriteset(univrail1_overlays, "gfx/_univrail1.png") {overlay()}	
-spriteset(univrail1_underlays, "gfx/_univrail1.png") {underlay()}	
-spriteset(univrail1_tunnels, "gfx/_univrail1.png") {tunnels(0)}	
-spriteset(univrail1_tunnels_bk, "gfx/_univrail1.png") {tunnels(1)}	
-spriteset(univrail1_road_crossing, "gfx/_univrail1.png") {road_crossing()}
+spriteset(PURR_RAIL_1_overlays, "gfx/_PURR_RAIL_1.png") {overlay()}	
+spriteset(PURR_RAIL_1_underlays, "gfx/_PURR_RAIL_1.png") {underlay()}	
+spriteset(PURR_RAIL_1_tunnels, "gfx/_PURR_RAIL_1.png") {tunnels(0)}	
+spriteset(PURR_RAIL_1_tunnels_bk, "gfx/_PURR_RAIL_1.png") {tunnels(1)}	
+spriteset(PURR_RAIL_1_road_crossing, "gfx/_PURR_RAIL_1.png") {road_crossing()}
 
-spriteset(univrail1_bridge_surfaces_original, "gfx/_univrail1.png") {bridge_surfaces(0)}	
-spriteset(univrail1_bridge_surfaces_newbridges, "gfx/_univrail1.png") {bridge_surfaces(400)}	
+spriteset(PURR_RAIL_1_bridge_surfaces_original, "gfx/_PURR_RAIL_1.png") {bridge_surfaces(0)}	
+spriteset(PURR_RAIL_1_bridge_surfaces_newbridges, "gfx/_PURR_RAIL_1.png") {bridge_surfaces(400)}	
 
 
 bridge_overlay_stuff1 = 0;
@@ -390,28 +390,28 @@ if (grf_future_status("\42\4B\54\62")) {
 	tunnel_stuff1 = 1;
 }	
 
-switch(FEAT_RAILTYPES, SELF, univrail1_bridge_overlay_switch, bridge_overlay_stuff1) {
-  1: univrail1_bridge_surfaces_newbridges;
-  univrail1_bridge_surfaces_original;
+switch(FEAT_RAILTYPES, SELF, PURR_RAIL_1_bridge_overlay_switch, bridge_overlay_stuff1) {
+  1: PURR_RAIL_1_bridge_surfaces_newbridges;
+  PURR_RAIL_1_bridge_surfaces_original;
 }
 
-switch(FEAT_RAILTYPES, SELF, univrail1_tunnels_switch, tunnel_stuff1) {
-  1: univrail1_tunnels_bk;
-  univrail1_tunnels;
+switch(FEAT_RAILTYPES, SELF, PURR_RAIL_1_tunnels_switch, tunnel_stuff1) {
+  1: PURR_RAIL_1_tunnels_bk;
+  PURR_RAIL_1_tunnels;
 }
 	
 //------------------------------------------------------------------------------------------------------------------------------------------------
 //
 //------------------------------------------------------------------------------------------------------------------------------------------------
 
-spriteset(univrail2_overlays, "gfx/_univrail2.png") {overlay()}	
-spriteset(univrail2_underlays, "gfx/_univrail2.png") {underlay()}	
-spriteset(univrail2_tunnels, "gfx/_univrail2.png") {tunnels(0)}	
-spriteset(univrail2_tunnels_bk, "gfx/_univrail2.png") {tunnels(1)}	
-spriteset(univrail2_road_crossing, "gfx/_univrail2.png") {road_crossing()}
+spriteset(PURR_RAIL_2_overlays, "gfx/_PURR_RAIL_2.png") {overlay()}	
+spriteset(PURR_RAIL_2_underlays, "gfx/_PURR_RAIL_2.png") {underlay()}	
+spriteset(PURR_RAIL_2_tunnels, "gfx/_PURR_RAIL_2.png") {tunnels(0)}	
+spriteset(PURR_RAIL_2_tunnels_bk, "gfx/_PURR_RAIL_2.png") {tunnels(1)}	
+spriteset(PURR_RAIL_2_road_crossing, "gfx/_PURR_RAIL_2.png") {road_crossing()}
 
-spriteset(univrail2_bridge_surfaces_original, "gfx/_univrail2.png") {bridge_surfaces(0)}	
-spriteset(univrail2_bridge_surfaces_newbridges, "gfx/_univrail2.png") {bridge_surfaces(400)}	
+spriteset(PURR_RAIL_2_bridge_surfaces_original, "gfx/_PURR_RAIL_2.png") {bridge_surfaces(0)}	
+spriteset(PURR_RAIL_2_bridge_surfaces_newbridges, "gfx/_PURR_RAIL_2.png") {bridge_surfaces(400)}	
 
 bridge_overlay_stuff2 = 0;
 
@@ -427,28 +427,28 @@ if (grf_future_status("\42\4B\54\62")) {
 	tunnel_stuff2 = 1;
 }	
 
-switch(FEAT_RAILTYPES, SELF, univrail2_bridge_overlay_switch, bridge_overlay_stuff2) {
-  1: univrail2_bridge_surfaces_newbridges;
-  univrail2_bridge_surfaces_original;
+switch(FEAT_RAILTYPES, SELF, PURR_RAIL_2_bridge_overlay_switch, bridge_overlay_stuff2) {
+  1: PURR_RAIL_2_bridge_surfaces_newbridges;
+  PURR_RAIL_2_bridge_surfaces_original;
 }
 
-switch(FEAT_RAILTYPES, SELF, univrail2_tunnels_switch, tunnel_stuff2) {
-  1: univrail2_tunnels_bk;
-  univrail2_tunnels;
+switch(FEAT_RAILTYPES, SELF, PURR_RAIL_2_tunnels_switch, tunnel_stuff2) {
+  1: PURR_RAIL_2_tunnels_bk;
+  PURR_RAIL_2_tunnels;
 }	
 	
 //------------------------------------------------------------------------------------------------------------------------------------------------
 //
 //------------------------------------------------------------------------------------------------------------------------------------------------
 
-spriteset(univrail3_overlays, "gfx/_univrail3.png") {overlay()}	
-spriteset(univrail3_underlays, "gfx/_univrail3.png") {underlay()}	
-spriteset(univrail3_tunnels, "gfx/_univrail3.png") {tunnels(0)}	
-spriteset(univrail3_tunnels_bk, "gfx/_univrail3.png") {tunnels(1)}	
-spriteset(univrail3_road_crossing, "gfx/_univrail3.png") {road_crossing()}
+spriteset(PURR_RAIL_3_overlays, "gfx/_PURR_RAIL_3.png") {overlay()}	
+spriteset(PURR_RAIL_3_underlays, "gfx/_PURR_RAIL_3.png") {underlay()}	
+spriteset(PURR_RAIL_3_tunnels, "gfx/_PURR_RAIL_3.png") {tunnels(0)}	
+spriteset(PURR_RAIL_3_tunnels_bk, "gfx/_PURR_RAIL_3.png") {tunnels(1)}	
+spriteset(PURR_RAIL_3_road_crossing, "gfx/_PURR_RAIL_3.png") {road_crossing()}
 
-spriteset(univrail3_bridge_surfaces_original, "gfx/_univrail3.png") {bridge_surfaces(0)}	
-spriteset(univrail3_bridge_surfaces_newbridges, "gfx/_univrail3.png") {bridge_surfaces(400)}	
+spriteset(PURR_RAIL_3_bridge_surfaces_original, "gfx/_PURR_RAIL_3.png") {bridge_surfaces(0)}	
+spriteset(PURR_RAIL_3_bridge_surfaces_newbridges, "gfx/_PURR_RAIL_3.png") {bridge_surfaces(400)}	
 
 bridge_overlay_stuff3 = 0;
 
@@ -464,28 +464,28 @@ if (grf_future_status("\42\4B\54\62")) {
 	tunnel_stuff3 = 1;
 }	
 
-switch(FEAT_RAILTYPES, SELF, univrail3_bridge_overlay_switch, bridge_overlay_stuff3) {
-  1: univrail3_bridge_surfaces_newbridges;
-  univrail3_bridge_surfaces_original;
+switch(FEAT_RAILTYPES, SELF, PURR_RAIL_3_bridge_overlay_switch, bridge_overlay_stuff3) {
+  1: PURR_RAIL_3_bridge_surfaces_newbridges;
+  PURR_RAIL_3_bridge_surfaces_original;
 }
 
-switch(FEAT_RAILTYPES, SELF, univrail3_tunnels_switch, tunnel_stuff3) {
-  1: univrail3_tunnels_bk;
-  univrail3_tunnels;
+switch(FEAT_RAILTYPES, SELF, PURR_RAIL_3_tunnels_switch, tunnel_stuff3) {
+  1: PURR_RAIL_3_tunnels_bk;
+  PURR_RAIL_3_tunnels;
 }
 
 //------------------------------------------------------------------------------------------------------------------------------------------------
 //
 //------------------------------------------------------------------------------------------------------------------------------------------------
 
-spriteset(univrail4_overlays, "gfx/_univrail4.png") {overlay()}	
-spriteset(univrail4_underlays, "gfx/_univrail4.png") {underlay()}	
-spriteset(univrail4_tunnels, "gfx/_univrail4.png") {tunnels(0)}	
-spriteset(univrail4_tunnels_bk, "gfx/_univrail4.png") {tunnels(1)}	
-spriteset(univrail4_road_crossing, "gfx/_univrail4.png") {road_crossing()}
+spriteset(PURR_RAIL_4_overlays, "gfx/_PURR_RAIL_4.png") {overlay()}	
+spriteset(PURR_RAIL_4_underlays, "gfx/_PURR_RAIL_4.png") {underlay()}	
+spriteset(PURR_RAIL_4_tunnels, "gfx/_PURR_RAIL_4.png") {tunnels(0)}	
+spriteset(PURR_RAIL_4_tunnels_bk, "gfx/_PURR_RAIL_4.png") {tunnels(1)}	
+spriteset(PURR_RAIL_4_road_crossing, "gfx/_PURR_RAIL_4.png") {road_crossing()}
 
-spriteset(univrail4_bridge_surfaces_original, "gfx/_univrail4.png") {bridge_surfaces(0)}	
-spriteset(univrail4_bridge_surfaces_newbridges, "gfx/_univrail4.png") {bridge_surfaces(400)}	
+spriteset(PURR_RAIL_4_bridge_surfaces_original, "gfx/_PURR_RAIL_4.png") {bridge_surfaces(0)}	
+spriteset(PURR_RAIL_4_bridge_surfaces_newbridges, "gfx/_PURR_RAIL_4.png") {bridge_surfaces(400)}	
 
 bridge_overlay_stuff4 = 0;
 
@@ -501,28 +501,28 @@ if (grf_future_status("\42\4B\54\62")) {
 	tunnel_stuff4 = 1;
 }	
 
-switch(FEAT_RAILTYPES, SELF, univrail4_bridge_overlay_switch, bridge_overlay_stuff4) {
-  1: univrail4_bridge_surfaces_newbridges;
-  univrail4_bridge_surfaces_original;
+switch(FEAT_RAILTYPES, SELF, PURR_RAIL_4_bridge_overlay_switch, bridge_overlay_stuff4) {
+  1: PURR_RAIL_4_bridge_surfaces_newbridges;
+  PURR_RAIL_4_bridge_surfaces_original;
 }
 
-switch(FEAT_RAILTYPES, SELF, univrail4_tunnels_switch, tunnel_stuff4) {
-  1: univrail4_tunnels_bk;
-  univrail4_tunnels;
+switch(FEAT_RAILTYPES, SELF, PURR_RAIL_4_tunnels_switch, tunnel_stuff4) {
+  1: PURR_RAIL_4_tunnels_bk;
+  PURR_RAIL_4_tunnels;
 }
 
 //------------------------------------------------------------------------------------------------------------------------------------------------
 //
 //------------------------------------------------------------------------------------------------------------------------------------------------
 
-spriteset(univrail5_overlays, "gfx/_univrail5.png") {overlay()}	
-spriteset(univrail5_underlays, "gfx/_univrail5.png") {underlay()}	
-spriteset(univrail5_tunnels, "gfx/_univrail5.png") {tunnels(0)}	
-spriteset(univrail5_tunnels_bk, "gfx/_univrail5.png") {tunnels(1)}	
-spriteset(univrail5_road_crossing, "gfx/_univrail5.png") {road_crossing()}
+spriteset(PURR_RAIL_5_overlays, "gfx/_PURR_RAIL_5.png") {overlay()}	
+spriteset(PURR_RAIL_5_underlays, "gfx/_PURR_RAIL_5.png") {underlay()}	
+spriteset(PURR_RAIL_5_tunnels, "gfx/_PURR_RAIL_5.png") {tunnels(0)}	
+spriteset(PURR_RAIL_5_tunnels_bk, "gfx/_PURR_RAIL_5.png") {tunnels(1)}	
+spriteset(PURR_RAIL_5_road_crossing, "gfx/_PURR_RAIL_5.png") {road_crossing()}
 
-spriteset(univrail5_bridge_surfaces_original, "gfx/_univrail5.png") {bridge_surfaces(0)}	
-spriteset(univrail5_bridge_surfaces_newbridges, "gfx/_univrail5.png") {bridge_surfaces(400)}	
+spriteset(PURR_RAIL_5_bridge_surfaces_original, "gfx/_PURR_RAIL_5.png") {bridge_surfaces(0)}	
+spriteset(PURR_RAIL_5_bridge_surfaces_newbridges, "gfx/_PURR_RAIL_5.png") {bridge_surfaces(400)}	
 
 
 bridge_overlay_stuff5 = 0;
@@ -539,14 +539,428 @@ if (grf_future_status("\42\4B\54\62")) {
 	tunnel_stuff5 = 1;
 }	
 
-switch(FEAT_RAILTYPES, SELF, univrail5_bridge_overlay_switch, bridge_overlay_stuff5) {
-  1: univrail5_bridge_surfaces_newbridges;
-  univrail5_bridge_surfaces_original;
+switch(FEAT_RAILTYPES, SELF, PURR_RAIL_5_bridge_overlay_switch, bridge_overlay_stuff5) {
+  1: PURR_RAIL_5_bridge_surfaces_newbridges;
+  PURR_RAIL_5_bridge_surfaces_original;
 }
 
-switch(FEAT_RAILTYPES, SELF, univrail5_tunnels_switch, tunnel_stuff5) {
-  1: univrail5_tunnels_bk;
-  univrail5_tunnels;
+switch(FEAT_RAILTYPES, SELF, PURR_RAIL_5_tunnels_switch, tunnel_stuff5) {
+  1: PURR_RAIL_5_tunnels_bk;
+  PURR_RAIL_5_tunnels;
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------------
+//
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+spriteset(PURR_MONO_1_overlays, "gfx/_PURR_MONO_1.png") {overlay()}	
+spriteset(PURR_MONO_1_underlays, "gfx/_PURR_MONO_1.png") {underlay()}	
+spriteset(PURR_MONO_1_tunnels, "gfx/_PURR_MONO_1.png") {tunnels(0)}	
+spriteset(PURR_MONO_1_tunnels_bk, "gfx/_PURR_MONO_1.png") {tunnels(1)}	
+spriteset(PURR_MONO_1_road_crossing, "gfx/_PURR_MONO_1.png") {road_crossing()}
+
+spriteset(PURR_MONO_1_bridge_surfaces_original, "gfx/_PURR_MONO_1.png") {bridge_surfaces(0)}	
+spriteset(PURR_MONO_1_bridge_surfaces_newbridges, "gfx/_PURR_MONO_1.png") {bridge_surfaces(400)}	
+
+
+bridge_overlay_stuff1 = 0;
+
+if (grf_future_status("\53\5A\05\01")) {
+	bridge_overlay_stuff1 = 1;
+}
+if (grf_future_status("\74\67\74\62")) {
+	bridge_overlay_stuff1 = 1;
+}
+
+tunnel_stuff1 = 0;
+if (grf_future_status("\42\4B\54\62")) {
+	tunnel_stuff1 = 1;
+}	
+
+switch(FEAT_RAILTYPES, SELF, PURR_MONO_1_bridge_overlay_switch, bridge_overlay_stuff1) {
+  1: PURR_MONO_1_bridge_surfaces_newbridges;
+  PURR_MONO_1_bridge_surfaces_original;
+}
+
+switch(FEAT_RAILTYPES, SELF, PURR_MONO_1_tunnels_switch, tunnel_stuff1) {
+  1: PURR_MONO_1_tunnels_bk;
+  PURR_MONO_1_tunnels;
+}
+	
+//------------------------------------------------------------------------------------------------------------------------------------------------
+//
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+spriteset(PURR_MONO_2_overlays, "gfx/_PURR_MONO_2.png") {overlay()}	
+spriteset(PURR_MONO_2_underlays, "gfx/_PURR_MONO_2.png") {underlay()}	
+spriteset(PURR_MONO_2_tunnels, "gfx/_PURR_MONO_2.png") {tunnels(0)}	
+spriteset(PURR_MONO_2_tunnels_bk, "gfx/_PURR_MONO_2.png") {tunnels(1)}	
+spriteset(PURR_MONO_2_road_crossing, "gfx/_PURR_MONO_2.png") {road_crossing()}
+
+spriteset(PURR_MONO_2_bridge_surfaces_original, "gfx/_PURR_MONO_2.png") {bridge_surfaces(0)}	
+spriteset(PURR_MONO_2_bridge_surfaces_newbridges, "gfx/_PURR_MONO_2.png") {bridge_surfaces(400)}	
+
+bridge_overlay_stuff2 = 0;
+
+if (grf_future_status("\53\5A\05\01")) {
+	bridge_overlay_stuff2 = 1;
+}
+if (grf_future_status("\74\67\74\62")) {
+	bridge_overlay_stuff2 = 1;
+}
+
+tunnel_stuff2 = 0;
+if (grf_future_status("\42\4B\54\62")) {
+	tunnel_stuff2 = 1;
+}	
+
+switch(FEAT_RAILTYPES, SELF, PURR_MONO_2_bridge_overlay_switch, bridge_overlay_stuff2) {
+  1: PURR_MONO_2_bridge_surfaces_newbridges;
+  PURR_MONO_2_bridge_surfaces_original;
+}
+
+switch(FEAT_RAILTYPES, SELF, PURR_MONO_2_tunnels_switch, tunnel_stuff2) {
+  1: PURR_MONO_2_tunnels_bk;
+  PURR_MONO_2_tunnels;
+}	
+	
+//------------------------------------------------------------------------------------------------------------------------------------------------
+//
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+spriteset(PURR_MONO_3_overlays, "gfx/_PURR_MONO_3.png") {overlay()}	
+spriteset(PURR_MONO_3_underlays, "gfx/_PURR_MONO_3.png") {underlay()}	
+spriteset(PURR_MONO_3_tunnels, "gfx/_PURR_MONO_3.png") {tunnels(0)}	
+spriteset(PURR_MONO_3_tunnels_bk, "gfx/_PURR_MONO_3.png") {tunnels(1)}	
+spriteset(PURR_MONO_3_road_crossing, "gfx/_PURR_MONO_3.png") {road_crossing()}
+
+spriteset(PURR_MONO_3_bridge_surfaces_original, "gfx/_PURR_MONO_3.png") {bridge_surfaces(0)}	
+spriteset(PURR_MONO_3_bridge_surfaces_newbridges, "gfx/_PURR_MONO_3.png") {bridge_surfaces(400)}	
+
+bridge_overlay_stuff3 = 0;
+
+if (grf_future_status("\53\5A\05\01")) {
+	bridge_overlay_stuff3 = 1;
+}
+if (grf_future_status("\74\67\74\62")) {
+	bridge_overlay_stuff3 = 1;
+}
+
+tunnel_stuff3 = 0;
+if (grf_future_status("\42\4B\54\62")) {
+	tunnel_stuff3 = 1;
+}	
+
+switch(FEAT_RAILTYPES, SELF, PURR_MONO_3_bridge_overlay_switch, bridge_overlay_stuff3) {
+  1: PURR_MONO_3_bridge_surfaces_newbridges;
+  PURR_MONO_3_bridge_surfaces_original;
+}
+
+switch(FEAT_RAILTYPES, SELF, PURR_MONO_3_tunnels_switch, tunnel_stuff3) {
+  1: PURR_MONO_3_tunnels_bk;
+  PURR_MONO_3_tunnels;
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------------
+//
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+spriteset(PURR_MONO_4_overlays, "gfx/_PURR_MONO_4.png") {overlay()}	
+spriteset(PURR_MONO_4_underlays, "gfx/_PURR_MONO_4.png") {underlay()}	
+spriteset(PURR_MONO_4_tunnels, "gfx/_PURR_MONO_4.png") {tunnels(0)}	
+spriteset(PURR_MONO_4_tunnels_bk, "gfx/_PURR_MONO_4.png") {tunnels(1)}	
+spriteset(PURR_MONO_4_road_crossing, "gfx/_PURR_MONO_4.png") {road_crossing()}
+
+spriteset(PURR_MONO_4_bridge_surfaces_original, "gfx/_PURR_MONO_4.png") {bridge_surfaces(0)}	
+spriteset(PURR_MONO_4_bridge_surfaces_newbridges, "gfx/_PURR_MONO_4.png") {bridge_surfaces(400)}	
+
+bridge_overlay_stuff4 = 0;
+
+if (grf_future_status("\53\5A\05\01")) {
+	bridge_overlay_stuff4 = 1;
+}
+if (grf_future_status("\74\67\74\62")) {
+	bridge_overlay_stuff4 = 1;
+}
+
+tunnel_stuff4 = 0;
+if (grf_future_status("\42\4B\54\62")) {
+	tunnel_stuff4 = 1;
+}	
+
+switch(FEAT_RAILTYPES, SELF, PURR_MONO_4_bridge_overlay_switch, bridge_overlay_stuff4) {
+  1: PURR_MONO_4_bridge_surfaces_newbridges;
+  PURR_MONO_4_bridge_surfaces_original;
+}
+
+switch(FEAT_RAILTYPES, SELF, PURR_MONO_4_tunnels_switch, tunnel_stuff4) {
+  1: PURR_MONO_4_tunnels_bk;
+  PURR_MONO_4_tunnels;
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------------
+//
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+spriteset(PURR_MONO_5_overlays, "gfx/_PURR_MONO_5.png") {overlay()}	
+spriteset(PURR_MONO_5_underlays, "gfx/_PURR_MONO_5.png") {underlay()}	
+spriteset(PURR_MONO_5_tunnels, "gfx/_PURR_MONO_5.png") {tunnels(0)}	
+spriteset(PURR_MONO_5_tunnels_bk, "gfx/_PURR_MONO_5.png") {tunnels(1)}	
+spriteset(PURR_MONO_5_road_crossing, "gfx/_PURR_MONO_5.png") {road_crossing()}
+
+spriteset(PURR_MONO_5_bridge_surfaces_original, "gfx/_PURR_MONO_5.png") {bridge_surfaces(0)}	
+spriteset(PURR_MONO_5_bridge_surfaces_newbridges, "gfx/_PURR_MONO_5.png") {bridge_surfaces(400)}	
+
+
+bridge_overlay_stuff5 = 0;
+
+if (grf_future_status("\53\5A\05\01")) {
+	bridge_overlay_stuff5 = 1;
+}
+if (grf_future_status("\74\67\74\62")) {
+	bridge_overlay_stuff5= 1;
+}
+
+tunnel_stuff5 = 0;
+if (grf_future_status("\42\4B\54\62")) {
+	tunnel_stuff5 = 1;
+}	
+
+switch(FEAT_RAILTYPES, SELF, PURR_MONO_5_bridge_overlay_switch, bridge_overlay_stuff5) {
+  1: PURR_MONO_5_bridge_surfaces_newbridges;
+  PURR_MONO_5_bridge_surfaces_original;
+}
+
+switch(FEAT_RAILTYPES, SELF, PURR_MONO_5_tunnels_switch, tunnel_stuff5) {
+  1: PURR_MONO_5_tunnels_bk;
+  PURR_MONO_5_tunnels;
+}
+
+
+
+//------------------------------------------------------------------------------------------------------------------------------------------------
+//
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+spriteset(PURR_MGLV_1_overlays, "gfx/_PURR_MGLV_1.png") {overlay()}	
+spriteset(PURR_MGLV_1_underlays, "gfx/_PURR_MGLV_1.png") {underlay()}	
+spriteset(PURR_MGLV_1_tunnels, "gfx/_PURR_MGLV_1.png") {tunnels(0)}	
+spriteset(PURR_MGLV_1_tunnels_bk, "gfx/_PURR_MGLV_1.png") {tunnels(1)}	
+spriteset(PURR_MGLV_1_road_crossing, "gfx/_PURR_MGLV_1.png") {road_crossing()}
+
+spriteset(PURR_MGLV_1_bridge_surfaces_original, "gfx/_PURR_MGLV_1.png") {bridge_surfaces(0)}	
+spriteset(PURR_MGLV_1_bridge_surfaces_newbridges, "gfx/_PURR_MGLV_1.png") {bridge_surfaces(400)}	
+
+
+bridge_overlay_stuff1 = 0;
+
+if (grf_future_status("\53\5A\05\01")) {
+	bridge_overlay_stuff1 = 1;
+}
+if (grf_future_status("\74\67\74\62")) {
+	bridge_overlay_stuff1 = 1;
+}
+
+tunnel_stuff1 = 0;
+if (grf_future_status("\42\4B\54\62")) {
+	tunnel_stuff1 = 1;
+}	
+
+switch(FEAT_RAILTYPES, SELF, PURR_MGLV_1_bridge_overlay_switch, bridge_overlay_stuff1) {
+  1: PURR_MGLV_1_bridge_surfaces_newbridges;
+  PURR_MGLV_1_bridge_surfaces_original;
+}
+
+switch(FEAT_RAILTYPES, SELF, PURR_MGLV_1_tunnels_switch, tunnel_stuff1) {
+  1: PURR_MGLV_1_tunnels_bk;
+  PURR_MGLV_1_tunnels;
+}
+	
+//------------------------------------------------------------------------------------------------------------------------------------------------
+//
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+spriteset(PURR_MGLV_2_overlays, "gfx/_PURR_MGLV_2.png") {overlay()}	
+spriteset(PURR_MGLV_2_underlays, "gfx/_PURR_MGLV_2.png") {underlay()}	
+spriteset(PURR_MGLV_2_tunnels, "gfx/_PURR_MGLV_2.png") {tunnels(0)}	
+spriteset(PURR_MGLV_2_tunnels_bk, "gfx/_PURR_MGLV_2.png") {tunnels(1)}	
+spriteset(PURR_MGLV_2_road_crossing, "gfx/_PURR_MGLV_2.png") {road_crossing()}
+
+spriteset(PURR_MGLV_2_bridge_surfaces_original, "gfx/_PURR_MGLV_2.png") {bridge_surfaces(0)}	
+spriteset(PURR_MGLV_2_bridge_surfaces_newbridges, "gfx/_PURR_MGLV_2.png") {bridge_surfaces(400)}	
+
+bridge_overlay_stuff2 = 0;
+
+if (grf_future_status("\53\5A\05\01")) {
+	bridge_overlay_stuff2 = 1;
+}
+if (grf_future_status("\74\67\74\62")) {
+	bridge_overlay_stuff2 = 1;
+}
+
+tunnel_stuff2 = 0;
+if (grf_future_status("\42\4B\54\62")) {
+	tunnel_stuff2 = 1;
+}	
+
+switch(FEAT_RAILTYPES, SELF, PURR_MGLV_2_bridge_overlay_switch, bridge_overlay_stuff2) {
+  1: PURR_MGLV_2_bridge_surfaces_newbridges;
+  PURR_MGLV_2_bridge_surfaces_original;
+}
+
+switch(FEAT_RAILTYPES, SELF, PURR_MGLV_2_tunnels_switch, tunnel_stuff2) {
+  1: PURR_MGLV_2_tunnels_bk;
+  PURR_MGLV_2_tunnels;
+}	
+	
+//------------------------------------------------------------------------------------------------------------------------------------------------
+//
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+spriteset(PURR_MGLV_3_overlays, "gfx/_PURR_MGLV_3.png") {overlay()}	
+spriteset(PURR_MGLV_3_underlays, "gfx/_PURR_MGLV_3.png") {underlay()}	
+spriteset(PURR_MGLV_3_tunnels, "gfx/_PURR_MGLV_3.png") {tunnels(0)}	
+spriteset(PURR_MGLV_3_tunnels_bk, "gfx/_PURR_MGLV_3.png") {tunnels(1)}	
+spriteset(PURR_MGLV_3_road_crossing, "gfx/_PURR_MGLV_3.png") {road_crossing()}
+
+spriteset(PURR_MGLV_3_bridge_surfaces_original, "gfx/_PURR_MGLV_3.png") {bridge_surfaces(0)}	
+spriteset(PURR_MGLV_3_bridge_surfaces_newbridges, "gfx/_PURR_MGLV_3.png") {bridge_surfaces(400)}	
+
+bridge_overlay_stuff3 = 0;
+
+if (grf_future_status("\53\5A\05\01")) {
+	bridge_overlay_stuff3 = 1;
+}
+if (grf_future_status("\74\67\74\62")) {
+	bridge_overlay_stuff3 = 1;
+}
+
+tunnel_stuff3 = 0;
+if (grf_future_status("\42\4B\54\62")) {
+	tunnel_stuff3 = 1;
+}	
+
+switch(FEAT_RAILTYPES, SELF, PURR_MGLV_3_bridge_overlay_switch, bridge_overlay_stuff3) {
+  1: PURR_MGLV_3_bridge_surfaces_newbridges;
+  PURR_MGLV_3_bridge_surfaces_original;
+}
+
+switch(FEAT_RAILTYPES, SELF, PURR_MGLV_3_tunnels_switch, tunnel_stuff3) {
+  1: PURR_MGLV_3_tunnels_bk;
+  PURR_MGLV_3_tunnels;
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------------
+//
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+spriteset(PURR_MGLV_4_overlays, "gfx/_PURR_MGLV_4.png") {overlay()}	
+spriteset(PURR_MGLV_4_underlays, "gfx/_PURR_MGLV_4.png") {underlay()}	
+spriteset(PURR_MGLV_4_tunnels, "gfx/_PURR_MGLV_4.png") {tunnels(0)}	
+spriteset(PURR_MGLV_4_tunnels_bk, "gfx/_PURR_MGLV_4.png") {tunnels(1)}	
+spriteset(PURR_MGLV_4_road_crossing, "gfx/_PURR_MGLV_4.png") {road_crossing()}
+
+spriteset(PURR_MGLV_4_bridge_surfaces_original, "gfx/_PURR_MGLV_4.png") {bridge_surfaces(0)}	
+spriteset(PURR_MGLV_4_bridge_surfaces_newbridges, "gfx/_PURR_MGLV_4.png") {bridge_surfaces(400)}	
+
+bridge_overlay_stuff4 = 0;
+
+if (grf_future_status("\53\5A\05\01")) {
+	bridge_overlay_stuff4 = 1;
+}
+if (grf_future_status("\74\67\74\62")) {
+	bridge_overlay_stuff4 = 1;
+}
+
+tunnel_stuff4 = 0;
+if (grf_future_status("\42\4B\54\62")) {
+	tunnel_stuff4 = 1;
+}	
+
+switch(FEAT_RAILTYPES, SELF, PURR_MGLV_4_bridge_overlay_switch, bridge_overlay_stuff4) {
+  1: PURR_MGLV_4_bridge_surfaces_newbridges;
+  PURR_MGLV_4_bridge_surfaces_original;
+}
+
+switch(FEAT_RAILTYPES, SELF, PURR_MGLV_4_tunnels_switch, tunnel_stuff4) {
+  1: PURR_MGLV_4_tunnels_bk;
+  PURR_MGLV_4_tunnels;
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------------
+//
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+spriteset(PURR_MGLV_5_overlays, "gfx/_PURR_MGLV_5.png") {overlay()}	
+spriteset(PURR_MGLV_5_underlays, "gfx/_PURR_MGLV_5.png") {underlay()}	
+spriteset(PURR_MGLV_5_tunnels, "gfx/_PURR_MGLV_5.png") {tunnels(0)}	
+spriteset(PURR_MGLV_5_tunnels_bk, "gfx/_PURR_MGLV_5.png") {tunnels(1)}	
+spriteset(PURR_MGLV_5_road_crossing, "gfx/_PURR_MGLV_5.png") {road_crossing()}
+
+spriteset(PURR_MGLV_5_bridge_surfaces_original, "gfx/_PURR_MGLV_5.png") {bridge_surfaces(0)}	
+spriteset(PURR_MGLV_5_bridge_surfaces_newbridges, "gfx/_PURR_MGLV_5.png") {bridge_surfaces(400)}	
+
+
+bridge_overlay_stuff5 = 0;
+
+if (grf_future_status("\53\5A\05\01")) {
+	bridge_overlay_stuff5 = 1;
+}
+if (grf_future_status("\74\67\74\62")) {
+	bridge_overlay_stuff5= 1;
+}
+
+tunnel_stuff5 = 0;
+if (grf_future_status("\42\4B\54\62")) {
+	tunnel_stuff5 = 1;
+}	
+
+switch(FEAT_RAILTYPES, SELF, PURR_MGLV_5_bridge_overlay_switch, bridge_overlay_stuff5) {
+  1: PURR_MGLV_5_bridge_surfaces_newbridges;
+  PURR_MGLV_5_bridge_surfaces_original;
+}
+
+switch(FEAT_RAILTYPES, SELF, PURR_MGLV_5_tunnels_switch, tunnel_stuff5) {
+  1: PURR_MGLV_5_tunnels_bk;
+  PURR_MGLV_5_tunnels;
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------------
+//
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+spriteset(PURR_UNIV_overlays, "gfx/_PURR_UNIV.png") {overlay()}	
+spriteset(PURR_UNIV_underlays, "gfx/_PURR_UNIV.png") {underlay()}	
+spriteset(PURR_UNIV_tunnels, "gfx/_PURR_UNIV.png") {tunnels(0)}	
+spriteset(PURR_UNIV_tunnels_bk, "gfx/_PURR_UNIV.png") {tunnels(1)}	
+spriteset(PURR_UNIV_road_crossing, "gfx/_PURR_UNIV.png") {road_crossing()}
+
+spriteset(PURR_UNIV_bridge_surfaces_original, "gfx/_PURR_UNIV.png") {bridge_surfaces(0)}	
+spriteset(PURR_UNIV_bridge_surfaces_newbridges, "gfx/_PURR_UNIV.png") {bridge_surfaces(400)}	
+
+
+bridge_overlay_stuff5 = 0;
+
+if (grf_future_status("\53\5A\05\01")) {
+	bridge_overlay_stuff5 = 1;
+}
+if (grf_future_status("\74\67\74\62")) {
+	bridge_overlay_stuff5= 1;
+}
+
+tunnel_stuff5 = 0;
+if (grf_future_status("\42\4B\54\62")) {
+	tunnel_stuff5 = 1;
+}	
+
+switch(FEAT_RAILTYPES, SELF, PURR_UNIV_bridge_overlay_switch, bridge_overlay_stuff5) {
+  1: PURR_UNIV_bridge_surfaces_newbridges;
+  PURR_UNIV_bridge_surfaces_original;
+}
+
+switch(FEAT_RAILTYPES, SELF, PURR_UNIV_tunnels_switch, tunnel_stuff5) {
+  1: PURR_UNIV_tunnels_bk;
+  PURR_UNIV_tunnels;
 }
 
 
@@ -559,141 +973,473 @@ switch(FEAT_RAILTYPES, SELF, univrail5_tunnels_switch, tunnel_stuff5) {
 //------------------------------------------------------------------------------------------------------------------------------------------------
 
 //CLEAN
-item (FEAT_RAILTYPES, univrail1, 6){
+item (FEAT_RAILTYPES, PURR_RAIL_1, 11){
 property{
-label: 							"UNI1";
+label: 							"PRL1";
 introduction_date:				date(0,01,01);
-name: 							string(STR_UNI1);
-toolbar_caption:				string(STR_UNI1);
-menu_text:						string(STR_UNI1);
-build_window_caption:			string(STR_UNI1);
-autoreplace_text:				string(STR_UNI1);
-new_engine_text:				string(STR_UNI1);
-compatible_railtype_list:		["UNIV", "RAIL", "ELRL", "MONO", "MGLV", "WETR", "UNI1", "UNI2","UNI3","UNI4","UNI5","UNI6","UNI7","UNI8"];
-powered_railtype_list: 			["UNIV", "RAIL", "ELRL", "MONO", "MGLV", "WETR", "UNI1", "UNI2","UNI3","UNI4","UNI5","UNI6","UNI7","UNI8"];
+name: 							string(STR_PURR_RAIL_1);
+toolbar_caption:				string(STR_PURR_RAIL_1);
+menu_text:						string(STR_PURR_RAIL_1);
+build_window_caption:			string(STR_PURR_RAIL_1);
+autoreplace_text:				string(STR_PURR_RAIL_1);
+new_engine_text:				string(STR_PURR_RAIL_1);
+compatible_railtype_list:		["UNIV", "RAIL", "ELRL", "PRL1", "PRL2","PRL3","PRL4","PRL5"];
+powered_railtype_list: 			["UNIV", "RAIL", "ELRL", "PRL1", "PRL2","PRL3","PRL4","PRL5"];
 curve_speed_multiplier:			0;
 sort_order: 200;
 construction_cost: 20;
 station_graphics:	 RAILTYPE_STATION_NORMAL;
+acceleration_model:				ACC_MODEL_RAIL;
 }
 graphics{
-track_overlay: univrail1_overlays;
-underlay: univrail1_underlays;
-tunnels: univrail1_tunnels_switch;
-bridge_surfaces: univrail1_bridge_overlay_switch;
-level_crossings: univrail1_road_crossing;
+track_overlay: PURR_RAIL_1_overlays;
+underlay: PURR_RAIL_1_underlays;
+tunnels: PURR_RAIL_1_tunnels_switch;
+bridge_surfaces: PURR_RAIL_1_bridge_overlay_switch;
+level_crossings: PURR_RAIL_1_road_crossing;
 }
 }
 
 
 //YELLOW
-item (FEAT_RAILTYPES, univrail2, 7){
+item (FEAT_RAILTYPES, PURR_RAIL_2, 12){
 property{
-label: 							"UNI2";
+label: 							"PRL2";
 introduction_date:				date(0,01,01);
-name: 							string(STR_UNI2);
-toolbar_caption:				string(STR_UNI2);
-menu_text:						string(STR_UNI2);
-build_window_caption:			string(STR_UNI2);
-autoreplace_text:				string(STR_UNI2);
-new_engine_text:				string(STR_UNI2);
-compatible_railtype_list:		["UNIV", "RAIL", "ELRL", "MONO", "MGLV", "WETR", "UNI1", "UNI2","UNI3","UNI4","UNI5","UNI6","UNI7","UNI8"];
-powered_railtype_list: 			["UNIV", "RAIL", "ELRL", "MONO", "MGLV", "WETR", "UNI1", "UNI2","UNI3","UNI4","UNI5","UNI6","UNI7","UNI8"];
+name: 							string(STR_PURR_RAIL_2);
+toolbar_caption:				string(STR_PURR_RAIL_2);
+menu_text:						string(STR_PURR_RAIL_2);
+build_window_caption:			string(STR_PURR_RAIL_2);
+autoreplace_text:				string(STR_PURR_RAIL_2);
+new_engine_text:				string(STR_PURR_RAIL_2);
+compatible_railtype_list:		["UNIV", "RAIL", "ELRL", "PRL1", "PRL2","PRL3","PRL4","PRL5"];
+powered_railtype_list: 			["UNIV", "RAIL", "ELRL", "PRL1", "PRL2","PRL3","PRL4","PRL5"];
 curve_speed_multiplier:			0;
 sort_order: 201;
 construction_cost: 35;
 station_graphics:	 RAILTYPE_STATION_NORMAL;
+acceleration_model:				ACC_MODEL_RAIL;
 }
 graphics{
-track_overlay: univrail2_overlays;
-underlay: univrail2_underlays;
-tunnels: univrail2_tunnels_switch;
-bridge_surfaces: univrail2_bridge_overlay_switch;
-level_crossings: univrail2_road_crossing;
+track_overlay: PURR_RAIL_2_overlays;
+underlay: PURR_RAIL_2_underlays;
+tunnels: PURR_RAIL_2_tunnels_switch;
+bridge_surfaces: PURR_RAIL_2_bridge_overlay_switch;
+level_crossings: PURR_RAIL_2_road_crossing;
 }
 }
 
 
 //RED
-item (FEAT_RAILTYPES, univrail3, 8){
+item (FEAT_RAILTYPES, PURR_RAIL_3, 13){
 property{
-label: 							"UNI3";
+label: 							"PRL3";
 introduction_date:				date(0,01,01);
-name: 							string(STR_UNI3);
-toolbar_caption:				string(STR_UNI3);
-menu_text:						string(STR_UNI3);
-build_window_caption:			string(STR_UNI3);
-autoreplace_text:				string(STR_UNI3);
-new_engine_text:				string(STR_UNI3);
-compatible_railtype_list:		["UNIV", "RAIL", "ELRL", "MONO", "MGLV", "WETR", "UNI1", "UNI2","UNI3","UNI4","UNI5","UNI6","UNI7","UNI8"];
-powered_railtype_list: 			["UNIV", "RAIL", "ELRL", "MONO", "MGLV", "WETR", "UNI1", "UNI2","UNI3","UNI4","UNI5","UNI6","UNI7","UNI8"];
+name: 							string(STR_PURR_RAIL_3);
+toolbar_caption:				string(STR_PURR_RAIL_3);
+menu_text:						string(STR_PURR_RAIL_3);
+build_window_caption:			string(STR_PURR_RAIL_3);
+autoreplace_text:				string(STR_PURR_RAIL_3);
+new_engine_text:				string(STR_PURR_RAIL_3);
+compatible_railtype_list:		["UNIV", "RAIL", "ELRL", "PRL1", "PRL2","PRL3","PRL4","PRL5"];
+powered_railtype_list: 			["UNIV", "RAIL", "ELRL", "PRL1", "PRL2","PRL3","PRL4","PRL5"];
 curve_speed_multiplier:			0;
 sort_order: 202;
 construction_cost: 35;
 station_graphics:	 RAILTYPE_STATION_NORMAL;
+acceleration_model:				ACC_MODEL_RAIL;
 }
 graphics{
-track_overlay: univrail3_overlays;
-underlay: univrail3_underlays;
-tunnels: univrail3_tunnels_switch;
-bridge_surfaces: univrail3_bridge_overlay_switch;
-level_crossings: univrail3_road_crossing;
+track_overlay: PURR_RAIL_3_overlays;
+underlay: PURR_RAIL_3_underlays;
+tunnels: PURR_RAIL_3_tunnels_switch;
+bridge_surfaces: PURR_RAIL_3_bridge_overlay_switch;
+level_crossings: PURR_RAIL_3_road_crossing;
 }
 }
 
 
 //BLUE
-item (FEAT_RAILTYPES, univrail4, 9){
+item (FEAT_RAILTYPES, PURR_RAIL_4, 14){
 property{
-label: 							"UNI4";
+label: 							"PRL4";
 introduction_date:				date(0,01,01);
-name: 							string(STR_UNI4);
-toolbar_caption:				string(STR_UNI4);
-menu_text:						string(STR_UNI4);
-build_window_caption:			string(STR_UNI4);
-autoreplace_text:				string(STR_UNI4);
-new_engine_text:				string(STR_UNI4);
-compatible_railtype_list:		["UNIV", "RAIL", "ELRL", "MONO", "MGLV", "WETR", "UNI1", "UNI2","UNI3","UNI4","UNI5","UNI6","UNI7","UNI8"];
-powered_railtype_list: 			["UNIV", "RAIL", "ELRL", "MONO", "MGLV", "WETR", "UNI1", "UNI2","UNI3","UNI4","UNI5","UNI6","UNI7","UNI8"];
+name: 							string(STR_PURR_RAIL_4);
+toolbar_caption:				string(STR_PURR_RAIL_4);
+menu_text:						string(STR_PURR_RAIL_4);
+build_window_caption:			string(STR_PURR_RAIL_4);
+autoreplace_text:				string(STR_PURR_RAIL_4);
+new_engine_text:				string(STR_PURR_RAIL_4);
+compatible_railtype_list:		["UNIV", "RAIL", "ELRL", "PRL1", "PRL2","PRL3","PRL4","PRL5"];
+powered_railtype_list: 			["UNIV", "RAIL", "ELRL", "PRL1", "PRL2","PRL3","PRL4","PRL5"];
 curve_speed_multiplier:			0;
 sort_order: 203;
 construction_cost: 35;
 station_graphics:	 RAILTYPE_STATION_NORMAL;
+acceleration_model:				ACC_MODEL_RAIL;
 }
 graphics{
-track_overlay: univrail4_overlays;
-underlay: univrail4_underlays;
-tunnels: univrail4_tunnels_switch;
-bridge_surfaces: univrail4_bridge_overlay_switch;
-level_crossings: univrail4_road_crossing;
+track_overlay: PURR_RAIL_4_overlays;
+underlay: PURR_RAIL_4_underlays;
+tunnels: PURR_RAIL_4_tunnels_switch;
+bridge_surfaces: PURR_RAIL_4_bridge_overlay_switch;
+level_crossings: PURR_RAIL_4_road_crossing;
 }
 }
 
 
 //GREEN
-item (FEAT_RAILTYPES, univrail5, 10){
+item (FEAT_RAILTYPES, PURR_RAIL_5, 15){
 property{
-label: 							"UNI5";
+label: 							"PRL5";
 introduction_date:				date(0,01,01);
-name: 							string(STR_UNI5);
-toolbar_caption:				string(STR_UNI5);
-menu_text:						string(STR_UNI5);
-build_window_caption:			string(STR_UNI5);
-autoreplace_text:				string(STR_UNI5);
-new_engine_text:				string(STR_UNI5);
-compatible_railtype_list:		["UNIV", "RAIL", "ELRL", "MONO", "MGLV", "WETR", "UNI1", "UNI2","UNI3","UNI4","UNI5","UNI6","UNI7","UNI8"];
-powered_railtype_list: 			["UNIV", "RAIL", "ELRL", "MONO", "MGLV", "WETR", "UNI1", "UNI2","UNI3","UNI4","UNI5","UNI6","UNI7","UNI8"];
+name: 							string(STR_PURR_RAIL_5);
+toolbar_caption:				string(STR_PURR_RAIL_5);
+menu_text:						string(STR_PURR_RAIL_5);
+build_window_caption:			string(STR_PURR_RAIL_5);
+autoreplace_text:				string(STR_PURR_RAIL_5);
+new_engine_text:				string(STR_PURR_RAIL_5);
+compatible_railtype_list:		["UNIV", "RAIL", "ELRL", "PRL1", "PRL2","PRL3","PRL4","PRL5"];
+powered_railtype_list: 			["UNIV", "RAIL", "ELRL", "PRL1", "PRL2","PRL3","PRL4","PRL5"];
 curve_speed_multiplier:			0;
 sort_order: 204;
 construction_cost: 35;
 station_graphics:	 RAILTYPE_STATION_NORMAL;
+acceleration_model:				ACC_MODEL_RAIL;
 }
 graphics{
-track_overlay: univrail5_overlays;
-underlay: univrail5_underlays;
-tunnels: univrail5_tunnels_switch;
-bridge_surfaces: univrail5_bridge_overlay_switch;
-level_crossings: univrail5_road_crossing;
+track_overlay: PURR_RAIL_5_overlays;
+underlay: PURR_RAIL_5_underlays;
+tunnels: PURR_RAIL_5_tunnels_switch;
+bridge_surfaces: PURR_RAIL_5_bridge_overlay_switch;
+level_crossings: PURR_RAIL_5_road_crossing;
+}
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------------
+//
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+//CLEAN
+item (FEAT_RAILTYPES, PURR_MONO_1, 21){
+property{
+label: 							"PMO1";
+introduction_date:				date(0,01,01);
+name: 							string(STR_PURR_MONO_1);
+toolbar_caption:				string(STR_PURR_MONO_1);
+menu_text:						string(STR_PURR_MONO_1);
+build_window_caption:			string(STR_PURR_MONO_1);
+autoreplace_text:				string(STR_PURR_MONO_1);
+new_engine_text:				string(STR_PURR_MONO_1);
+compatible_railtype_list:		["UNIV", "MONO", "PMO1", "PMO2","PMO3","PMO4","PMO5"];
+powered_railtype_list: 			["UNIV", "MONO", "PMO1", "PMO2","PMO3","PMO4","PMO5"];
+curve_speed_multiplier:			1;
+sort_order: 205;
+construction_cost: 20;
+station_graphics:	 RAILTYPE_STATION_NORMAL;
+acceleration_model:				ACC_MODEL_MONORAIL;
+}
+graphics{
+track_overlay: PURR_MONO_1_overlays;
+underlay: PURR_MONO_1_underlays;
+tunnels: PURR_MONO_1_tunnels_switch;
+bridge_surfaces: PURR_MONO_1_bridge_overlay_switch;
+level_crossings: PURR_MONO_1_road_crossing;
+}
+}
+
+
+//YELLOW
+item (FEAT_RAILTYPES, PURR_MONO_2, 22){
+property{
+label: 							"PMO2";
+introduction_date:				date(0,01,01);
+name: 							string(STR_PURR_MONO_2);
+toolbar_caption:				string(STR_PURR_MONO_2);
+menu_text:						string(STR_PURR_MONO_2);
+build_window_caption:			string(STR_PURR_MONO_2);
+autoreplace_text:				string(STR_PURR_MONO_2);
+new_engine_text:				string(STR_PURR_MONO_2);
+compatible_railtype_list:		["UNIV", "MONO", "PMO1", "PMO2","PMO3","PMO4","PMO5"];
+powered_railtype_list: 			["UNIV", "MONO", "PMO1", "PMO2","PMO3","PMO4","PMO5"];
+curve_speed_multiplier:			1;
+sort_order: 206;
+construction_cost: 35;
+station_graphics:	 RAILTYPE_STATION_MONORAIL;
+acceleration_model:				ACC_MODEL_MONORAIL;
+}
+graphics{
+track_overlay: PURR_MONO_2_overlays;
+underlay: PURR_MONO_2_underlays;
+tunnels: PURR_MONO_2_tunnels_switch;
+bridge_surfaces: PURR_MONO_2_bridge_overlay_switch;
+level_crossings: PURR_MONO_2_road_crossing;
+}
+}
+
+
+//RED
+item (FEAT_RAILTYPES, PURR_MONO_3, 23){
+property{
+label: 							"PMO3";
+introduction_date:				date(0,01,01);
+name: 							string(STR_PURR_MONO_3);
+toolbar_caption:				string(STR_PURR_MONO_3);
+menu_text:						string(STR_PURR_MONO_3);
+build_window_caption:			string(STR_PURR_MONO_3);
+autoreplace_text:				string(STR_PURR_MONO_3);
+new_engine_text:				string(STR_PURR_MONO_3);
+compatible_railtype_list:		["UNIV", "MONO", "PMO1", "PMO2","PMO3","PMO4","PMO5"];
+powered_railtype_list: 			["UNIV", "MONO", "PMO1", "PMO2","PMO3","PMO4","PMO5"];
+curve_speed_multiplier:			1;
+sort_order: 207;
+construction_cost: 35;
+station_graphics:	 RAILTYPE_STATION_MONORAIL;
+acceleration_model:				ACC_MODEL_MONORAIL;
+}
+graphics{
+track_overlay: PURR_MONO_3_overlays;
+underlay: PURR_MONO_3_underlays;
+tunnels: PURR_MONO_3_tunnels_switch;
+bridge_surfaces: PURR_MONO_3_bridge_overlay_switch;
+level_crossings: PURR_MONO_3_road_crossing;
+}
+}
+
+
+//BLUE
+item (FEAT_RAILTYPES, PURR_MONO_4, 24){
+property{
+label: 							"PMO4";
+introduction_date:				date(0,01,01);
+name: 							string(STR_PURR_MONO_4);
+toolbar_caption:				string(STR_PURR_MONO_4);
+menu_text:						string(STR_PURR_MONO_4);
+build_window_caption:			string(STR_PURR_MONO_4);
+autoreplace_text:				string(STR_PURR_MONO_4);
+new_engine_text:				string(STR_PURR_MONO_4);
+compatible_railtype_list:		["UNIV", "MONO", "PMO1", "PMO2","PMO3","PMO4","PMO5"];
+powered_railtype_list: 			["UNIV", "MONO", "PMO1", "PMO2","PMO3","PMO4","PMO5"];
+curve_speed_multiplier:			1;
+sort_order: 208;
+construction_cost: 35;
+station_graphics:	 RAILTYPE_STATION_MONORAIL;
+acceleration_model:				ACC_MODEL_MONORAIL;
+}
+graphics{
+track_overlay: PURR_MONO_4_overlays;
+underlay: PURR_MONO_4_underlays;
+tunnels: PURR_MONO_4_tunnels_switch;
+bridge_surfaces: PURR_MONO_4_bridge_overlay_switch;
+level_crossings: PURR_MONO_4_road_crossing;
+}
+}
+
+
+//GREEN
+item (FEAT_RAILTYPES, PURR_MONO_5, 25){
+property{
+label: 							"PMO5";
+introduction_date:				date(0,01,01);
+name: 							string(STR_PURR_MONO_5);
+toolbar_caption:				string(STR_PURR_MONO_5);
+menu_text:						string(STR_PURR_MONO_5);
+build_window_caption:			string(STR_PURR_MONO_5);
+autoreplace_text:				string(STR_PURR_MONO_5);
+new_engine_text:				string(STR_PURR_MONO_5);
+compatible_railtype_list:		["UNIV", "MONO", "PMO1", "PMO2","PMO3","PMO4","PMO5"];
+powered_railtype_list: 			["UNIV", "MONO", "PMO1", "PMO2","PMO3","PMO4","PMO5"];
+curve_speed_multiplier:			1;
+sort_order: 209;
+construction_cost: 35;
+station_graphics:	 RAILTYPE_STATION_MONORAIL;
+acceleration_model:				ACC_MODEL_MONORAIL;
+}
+graphics{
+track_overlay: PURR_MONO_5_overlays;
+underlay: PURR_MONO_5_underlays;
+tunnels: PURR_MONO_5_tunnels_switch;
+bridge_surfaces: PURR_MONO_5_bridge_overlay_switch;
+level_crossings: PURR_MONO_5_road_crossing;
+}
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------------
+//
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+//CLEAN
+item (FEAT_RAILTYPES, PURR_MGLV_1, 31){
+property{
+label: 							"PML1";
+introduction_date:				date(0,01,01);
+name: 							string(STR_PURR_MGLV_1);
+toolbar_caption:				string(STR_PURR_MGLV_1);
+menu_text:						string(STR_PURR_MGLV_1);
+build_window_caption:			string(STR_PURR_MGLV_1);
+autoreplace_text:				string(STR_PURR_MGLV_1);
+new_engine_text:				string(STR_PURR_MGLV_1);
+compatible_railtype_list:		["UNIV", "MGLV", "PML1", "PML2","PML3","PML4","PML5"];
+powered_railtype_list: 			["UNIV", "MGLV", "PML1", "PML2","PML3","PML4","PML5"];
+curve_speed_multiplier:			2;
+sort_order: 210;
+construction_cost: 20;
+station_graphics:	 RAILTYPE_STATION_MAGLEV;
+acceleration_model:				ACC_MODEL_MAGLEV;
+}
+graphics{
+track_overlay: PURR_MGLV_1_overlays;
+underlay: PURR_MGLV_1_underlays;
+tunnels: PURR_MGLV_1_tunnels_switch;
+bridge_surfaces: PURR_MGLV_1_bridge_overlay_switch;
+level_crossings: PURR_MGLV_1_road_crossing;
+}
+}
+
+
+//YELLOW
+item (FEAT_RAILTYPES, PURR_MGLV_2, 32){
+property{
+label: 							"PML2";
+introduction_date:				date(0,01,01);
+name: 							string(STR_PURR_MGLV_2);
+toolbar_caption:				string(STR_PURR_MGLV_2);
+menu_text:						string(STR_PURR_MGLV_2);
+build_window_caption:			string(STR_PURR_MGLV_2);
+autoreplace_text:				string(STR_PURR_MGLV_2);
+new_engine_text:				string(STR_PURR_MGLV_2);
+compatible_railtype_list:		["UNIV", "MGLV", "PML1", "PML2","PML3","PML4","PML5"];
+powered_railtype_list: 			["UNIV", "MGLV", "PML1", "PML2","PML3","PML4","PML5"];
+curve_speed_multiplier:			2;
+sort_order: 211;
+construction_cost: 35;
+station_graphics:	 RAILTYPE_STATION_MAGLEV;
+acceleration_model:				ACC_MODEL_MAGLEV;
+}
+graphics{
+track_overlay: PURR_MGLV_2_overlays;
+underlay: PURR_MGLV_2_underlays;
+tunnels: PURR_MGLV_2_tunnels_switch;
+bridge_surfaces: PURR_MGLV_2_bridge_overlay_switch;
+level_crossings: PURR_MGLV_2_road_crossing;
+}
+}
+
+
+//RED
+item (FEAT_RAILTYPES, PURR_MGLV_3, 33){
+property{
+label: 							"PML3";
+introduction_date:				date(0,01,01);
+name: 							string(STR_PURR_MGLV_3);
+toolbar_caption:				string(STR_PURR_MGLV_3);
+menu_text:						string(STR_PURR_MGLV_3);
+build_window_caption:			string(STR_PURR_MGLV_3);
+autoreplace_text:				string(STR_PURR_MGLV_3);
+new_engine_text:				string(STR_PURR_MGLV_3);
+compatible_railtype_list:		["UNIV", "MGLV", "PML1", "PML2","PML3","PML4","PML5"];
+powered_railtype_list: 			["UNIV", "MGLV", "PML1", "PML2","PML3","PML4","PML5"];
+curve_speed_multiplier:			2;
+sort_order: 212;
+construction_cost: 35;
+station_graphics:	 RAILTYPE_STATION_MAGLEV;
+acceleration_model:				ACC_MODEL_MAGLEV;
+}
+graphics{
+track_overlay: PURR_MGLV_3_overlays;
+underlay: PURR_MGLV_3_underlays;
+tunnels: PURR_MGLV_3_tunnels_switch;
+bridge_surfaces: PURR_MGLV_3_bridge_overlay_switch;
+level_crossings: PURR_MGLV_3_road_crossing;
+}
+}
+
+
+//BLUE
+item (FEAT_RAILTYPES, PURR_MGLV_4, 34){
+property{
+label: 							"PML4";
+introduction_date:				date(0,01,01);
+name: 							string(STR_PURR_MGLV_4);
+toolbar_caption:				string(STR_PURR_MGLV_4);
+menu_text:						string(STR_PURR_MGLV_4);
+build_window_caption:			string(STR_PURR_MGLV_4);
+autoreplace_text:				string(STR_PURR_MGLV_4);
+new_engine_text:				string(STR_PURR_MGLV_4);
+compatible_railtype_list:		["UNIV", "MGLV", "PML1", "PML2","PML3","PML4","PML5"];
+powered_railtype_list: 			["UNIV", "MGLV", "PML1", "PML2","PML3","PML4","PML5"];
+curve_speed_multiplier:			2;
+sort_order: 213;
+construction_cost: 35;
+station_graphics:	 RAILTYPE_STATION_MAGLEV;
+acceleration_model:				ACC_MODEL_MAGLEV;
+}
+graphics{
+track_overlay: PURR_MGLV_4_overlays;
+underlay: PURR_MGLV_4_underlays;
+tunnels: PURR_MGLV_4_tunnels_switch;
+bridge_surfaces: PURR_MGLV_4_bridge_overlay_switch;
+level_crossings: PURR_MGLV_4_road_crossing;
+}
+}
+
+
+//GREEN
+item (FEAT_RAILTYPES, PURR_MGLV_5, 35){
+property{
+label: 							"PML5";
+introduction_date:				date(0,01,01);
+name: 							string(STR_PURR_MGLV_5);
+toolbar_caption:				string(STR_PURR_MGLV_5);
+menu_text:						string(STR_PURR_MGLV_5);
+build_window_caption:			string(STR_PURR_MGLV_5);
+autoreplace_text:				string(STR_PURR_MGLV_5);
+new_engine_text:				string(STR_PURR_MGLV_5);
+compatible_railtype_list:		["UNIV", "MGLV", "PML1", "PML2","PML3","PML4","PML5"];
+powered_railtype_list: 			["UNIV", "MGLV", "PML1", "PML2","PML3","PML4","PML5"];
+curve_speed_multiplier:			2;
+sort_order: 214;
+construction_cost: 35;
+station_graphics:	 RAILTYPE_STATION_MAGLEV;
+acceleration_model:				ACC_MODEL_MAGLEV;
+}
+graphics{
+track_overlay: PURR_MGLV_5_overlays;
+underlay: PURR_MGLV_5_underlays;
+tunnels: PURR_MGLV_5_tunnels_switch;
+bridge_surfaces: PURR_MGLV_5_bridge_overlay_switch;
+level_crossings: PURR_MGLV_5_road_crossing;
+}
+}
+
+
+//---------------------------------------------------------------------------------------------------------------------
+//----------- UNIV ----------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------
+item (FEAT_RAILTYPES, PURR_UNIV, 40){
+property{
+label: 							"UNIV";
+introduction_date:				date(0,01,01);
+name: 							string(STR_PURR_UNIV);
+toolbar_caption:				string(STR_PURR_UNIV);
+menu_text:						string(STR_PURR_UNIV);
+build_window_caption:			string(STR_PURR_UNIV);
+autoreplace_text:				string(STR_PURR_UNIV);
+new_engine_text:				string(STR_PURR_UNIV);
+compatible_railtype_list:		["UNIV", "RAIL", "ELRL", "MONO", "MGLV", "WETR", "PRL1", "PRL2", "PRL3", "PRL4", "PRL5", "PMO1", "PMO2", "PMO3", "PMO4", "PMO5", "PML1", "PML2","PML3","PML4","PML5"];
+powered_railtype_list: 			["UNIV", "RAIL", "ELRL", "MONO", "MGLV", "WETR", "PRL1", "PRL2", "PRL3", "PRL4", "PRL5", "PMO1", "PMO2", "PMO3", "PMO4", "PMO5", "PML1", "PML2","PML3","PML4","PML5"];
+curve_speed_multiplier:			0;
+sort_order: 215;
+construction_cost: 35;
+station_graphics:	 RAILTYPE_STATION_NORMAL;
+acceleration_model:				ACC_MODEL_RAIL;
+}
+graphics{
+track_overlay: PURR_UNIV_overlays;
+underlay: PURR_UNIV_underlays;
+tunnels: PURR_UNIV_tunnels_switch;
+bridge_surfaces: PURR_UNIV_bridge_overlay_switch;
+level_crossings: PURR_UNIV_road_crossing;
 }
 }
 
@@ -704,42 +1450,84 @@ level_crossings: univrail5_road_crossing;
 //---------------------------------------------------------------------------------------------------------------------
 if (param_signals >= 1){ // WETRAIL SIGNALS ONLY
 	if (param_signals_slot == 0){ //signals in both slots
-		item(FEAT_RAILTYPES, wetrails, 12){
+		item(FEAT_RAILTYPES, wetrails, 6){
 			graphics{
 				signals: BRIX_signals_both_slots;
 			}
 		}
 	}
 	if (param_signals_slot == 1){ //only in semaphore slot
-		item(FEAT_RAILTYPES, wetrails, 12){
+		item(FEAT_RAILTYPES, wetrails, 6){
 			graphics{
 				signals: BRIX_signals_semaphore_slot;
 			}
 		}
 	}
 	if (param_signals_slot == 2){ //only in light slot
-		item(FEAT_RAILTYPES, wetrails, 12){
+		item(FEAT_RAILTYPES, wetrails, 6){
 			graphics{
 				signals: BRIX_signals_light_slot;
 			}
 		}	
 	}
 	if (param_signals_slot == 3){ //semaphore in light slot
-		item(FEAT_RAILTYPES, wetrails, 12){
+		item(FEAT_RAILTYPES, wetrails, 6){
 			graphics{
 				signals: BRIX_signals_semaphore_in_light_slot;
 			}
 		}	
 	}
 	if (param_signals_slot == 4){ //light in semaphore slot
-		item(FEAT_RAILTYPES, wetrails, 12){
+		item(FEAT_RAILTYPES, wetrails, 6){
 			graphics{
 				signals: BRIX_signals_light_in_semaphore_slot;
 			}
 		}	
 	}
 	if (param_signals_slot == 5){ //signals in both slots, inverted
-		item(FEAT_RAILTYPES, wetrails, 12){
+		item(FEAT_RAILTYPES, wetrails, 6){
+			graphics{
+				signals: BRIX_signals_both_slots_inverted;
+			}
+		}	
+	}
+	if (param_signals_slot == 0){ //signals in both slots
+		item(FEAT_RAILTYPES, PURR_UNIV, 40){
+			graphics{
+				signals: BRIX_signals_both_slots;
+			}
+		}
+	}
+	if (param_signals_slot == 1){ //only in semaphore slot
+		item(FEAT_RAILTYPES, PURR_UNIV, 40){
+			graphics{
+				signals: BRIX_signals_semaphore_slot;
+			}
+		}
+	}
+	if (param_signals_slot == 2){ //only in light slot
+		item(FEAT_RAILTYPES, PURR_UNIV, 40){
+			graphics{
+				signals: BRIX_signals_light_slot;
+			}
+		}	
+	}
+	if (param_signals_slot == 3){ //semaphore in light slot
+		item(FEAT_RAILTYPES, PURR_UNIV, 40){
+			graphics{
+				signals: BRIX_signals_semaphore_in_light_slot;
+			}
+		}	
+	}
+	if (param_signals_slot == 4){ //light in semaphore slot
+		item(FEAT_RAILTYPES, PURR_UNIV, 40){
+			graphics{
+				signals: BRIX_signals_light_in_semaphore_slot;
+			}
+		}	
+	}
+	if (param_signals_slot == 5){ //signals in both slots, inverted
+		item(FEAT_RAILTYPES, PURR_UNIV, 40){
 			graphics{
 				signals: BRIX_signals_both_slots_inverted;
 			}
@@ -749,166 +1537,496 @@ if (param_signals >= 1){ // WETRAIL SIGNALS ONLY
 //---------------------------------------------------------------------------------------------------------------------
 if (param_signals >= 2){ // WETRAIL AND PURR SIGNALS
 	if (param_signals_slot == 0){ //signals in both slots
-		item(FEAT_RAILTYPES, univrail1, 6){
+		item(FEAT_RAILTYPES, PURR_RAIL_1, 11){
 			graphics{
 				signals: BRIX_signals_both_slots;
 			}
 		}
-		item(FEAT_RAILTYPES, univrail2, 7){
+		item(FEAT_RAILTYPES, PURR_RAIL_2, 12){
 			graphics{
 				signals: BRIX_signals_both_slots;
 			}
 		}
-		item(FEAT_RAILTYPES, univrail3, 8){
+		item(FEAT_RAILTYPES, PURR_RAIL_3, 13){
 			graphics{
 				signals: BRIX_signals_both_slots;
 			}
 		}
-		item(FEAT_RAILTYPES, univrail4, 9){
+		item(FEAT_RAILTYPES, PURR_RAIL_4, 14){
 			graphics{
 				signals: BRIX_signals_both_slots;
 			}
 		}
-		item(FEAT_RAILTYPES, univrail5, 10){
+		item(FEAT_RAILTYPES, PURR_RAIL_5, 15){
+			graphics{
+				signals: BRIX_signals_both_slots;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_1, 21){
+			graphics{
+				signals: BRIX_signals_both_slots;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_2, 22){
+			graphics{
+				signals: BRIX_signals_both_slots;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_3, 23){
+			graphics{
+				signals: BRIX_signals_both_slots;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_4, 24){
+			graphics{
+				signals: BRIX_signals_both_slots;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_5, 25){
+			graphics{
+				signals: BRIX_signals_both_slots;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_1, 31){
+			graphics{
+				signals: BRIX_signals_both_slots;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_2, 32){
+			graphics{
+				signals: BRIX_signals_both_slots;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_3, 33){
+			graphics{
+				signals: BRIX_signals_both_slots;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_4, 34){
+			graphics{
+				signals: BRIX_signals_both_slots;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_5, 35){
+			graphics{
+				signals: BRIX_signals_both_slots;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_UNIV, 40){
 			graphics{
 				signals: BRIX_signals_both_slots;
 			}
 		}
 	}
 	if (param_signals_slot == 1){ //only in semaphore slot
-		item(FEAT_RAILTYPES, univrail1, 6){
+		item(FEAT_RAILTYPES, PURR_RAIL_1, 11){
 			graphics{
 				signals: BRIX_signals_semaphore_slot;
 			}
 		}
-		item(FEAT_RAILTYPES, univrail2, 7){
+		item(FEAT_RAILTYPES, PURR_RAIL_2, 12){
 			graphics{
 				signals: BRIX_signals_semaphore_slot;
 			}
 		}
-		item(FEAT_RAILTYPES, univrail3, 8){
+		item(FEAT_RAILTYPES, PURR_RAIL_3, 13){
 			graphics{
 				signals: BRIX_signals_semaphore_slot;
 			}
 		}
-		item(FEAT_RAILTYPES, univrail4, 9){
+		item(FEAT_RAILTYPES, PURR_RAIL_4, 14){
 			graphics{
 				signals: BRIX_signals_semaphore_slot;
 			}
 		}
-		item(FEAT_RAILTYPES, univrail5, 10){
+		item(FEAT_RAILTYPES, PURR_RAIL_5, 15){
+			graphics{
+				signals: BRIX_signals_semaphore_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_1, 21){
+			graphics{
+				signals: BRIX_signals_semaphore_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_2, 22){
+			graphics{
+				signals: BRIX_signals_semaphore_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_3, 23){
+			graphics{
+				signals: BRIX_signals_semaphore_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_4, 24){
+			graphics{
+				signals: BRIX_signals_semaphore_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_5, 25){
+			graphics{
+				signals: BRIX_signals_semaphore_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_1, 31){
+			graphics{
+				signals: BRIX_signals_semaphore_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_2, 32){
+			graphics{
+				signals: BRIX_signals_semaphore_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_3, 33){
+			graphics{
+				signals: BRIX_signals_semaphore_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_4, 34){
+			graphics{
+				signals: BRIX_signals_semaphore_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_5, 35){
+			graphics{
+				signals: BRIX_signals_semaphore_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_UNIV, 40){
 			graphics{
 				signals: BRIX_signals_semaphore_slot;
 			}
 		}
 	}
 	if (param_signals_slot == 2){ //only in light slot
-		item(FEAT_RAILTYPES, univrail1, 6){
+		item(FEAT_RAILTYPES, PURR_RAIL_1, 11){
 			graphics{
 				signals: BRIX_signals_light_slot;
 			}
-		}	
-		item(FEAT_RAILTYPES, univrail2, 7){
+		}
+		item(FEAT_RAILTYPES, PURR_RAIL_2, 12){
 			graphics{
 				signals: BRIX_signals_light_slot;
 			}
-		}	
-		item(FEAT_RAILTYPES, univrail3, 8){
+		}
+		item(FEAT_RAILTYPES, PURR_RAIL_3, 13){
 			graphics{
 				signals: BRIX_signals_light_slot;
 			}
-		}	
-		item(FEAT_RAILTYPES, univrail4, 9){
+		}
+		item(FEAT_RAILTYPES, PURR_RAIL_4, 14){
 			graphics{
 				signals: BRIX_signals_light_slot;
 			}
-		}	
-		item(FEAT_RAILTYPES, univrail5, 10){
+		}
+		item(FEAT_RAILTYPES, PURR_RAIL_5, 15){
 			graphics{
 				signals: BRIX_signals_light_slot;
 			}
-		}	
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_1, 21){
+			graphics{
+				signals: BRIX_signals_light_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_2, 22){
+			graphics{
+				signals: BRIX_signals_light_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_3, 23){
+			graphics{
+				signals: BRIX_signals_light_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_4, 24){
+			graphics{
+				signals: BRIX_signals_light_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_5, 25){
+			graphics{
+				signals: BRIX_signals_light_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_1, 31){
+			graphics{
+				signals: BRIX_signals_light_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_2, 32){
+			graphics{
+				signals: BRIX_signals_light_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_3, 33){
+			graphics{
+				signals: BRIX_signals_light_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_4, 34){
+			graphics{
+				signals: BRIX_signals_light_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_5, 35){
+			graphics{
+				signals: BRIX_signals_light_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_UNIV, 40){
+			graphics{
+				signals: BRIX_signals_light_slot;
+			}
+		}
 	}
 	if (param_signals_slot == 3){ //semaphore in light slot
-		item(FEAT_RAILTYPES, univrail1, 6){
+        item(FEAT_RAILTYPES, PURR_RAIL_1, 11){
 			graphics{
 				signals: BRIX_signals_semaphore_in_light_slot;
 			}
-		}	
-		item(FEAT_RAILTYPES, univrail2, 7){
+		}
+		item(FEAT_RAILTYPES, PURR_RAIL_2, 12){
 			graphics{
 				signals: BRIX_signals_semaphore_in_light_slot;
 			}
-		}	
-		item(FEAT_RAILTYPES, univrail3, 8){
+		}
+		item(FEAT_RAILTYPES, PURR_RAIL_3, 13){
 			graphics{
 				signals: BRIX_signals_semaphore_in_light_slot;
 			}
-		}	
-		item(FEAT_RAILTYPES, univrail4, 9){
+		}
+		item(FEAT_RAILTYPES, PURR_RAIL_4, 14){
 			graphics{
 				signals: BRIX_signals_semaphore_in_light_slot;
 			}
-		}	
-		item(FEAT_RAILTYPES, univrail5, 10){
+		}
+		item(FEAT_RAILTYPES, PURR_RAIL_5, 15){
 			graphics{
 				signals: BRIX_signals_semaphore_in_light_slot;
 			}
-		}	
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_1, 21){
+			graphics{
+				signals: BRIX_signals_semaphore_in_light_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_2, 22){
+			graphics{
+				signals: BRIX_signals_semaphore_in_light_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_3, 23){
+			graphics{
+				signals: BRIX_signals_semaphore_in_light_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_4, 24){
+			graphics{
+				signals: BRIX_signals_semaphore_in_light_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_5, 25){
+			graphics{
+				signals: BRIX_signals_semaphore_in_light_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_1, 31){
+			graphics{
+				signals: BRIX_signals_semaphore_in_light_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_2, 32){
+			graphics{
+				signals: BRIX_signals_semaphore_in_light_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_3, 33){
+			graphics{
+				signals: BRIX_signals_semaphore_in_light_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_4, 34){
+			graphics{
+				signals: BRIX_signals_semaphore_in_light_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_5, 35){
+			graphics{
+				signals: BRIX_signals_semaphore_in_light_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_UNIV, 40){
+			graphics{
+				signals: BRIX_signals_semaphore_in_light_slot;
+			}
+		}
 	}
 	if (param_signals_slot == 4){ //light in semaphore slot
-		item(FEAT_RAILTYPES, univrail1, 6){
+        item(FEAT_RAILTYPES, PURR_RAIL_1, 11){
 			graphics{
 				signals: BRIX_signals_light_in_semaphore_slot;
 			}
-		}	
-		item(FEAT_RAILTYPES, univrail2, 7){
+		}
+		item(FEAT_RAILTYPES, PURR_RAIL_2, 12){
 			graphics{
 				signals: BRIX_signals_light_in_semaphore_slot;
 			}
-		}	
-		item(FEAT_RAILTYPES, univrail3, 8){
+		}
+		item(FEAT_RAILTYPES, PURR_RAIL_3, 13){
 			graphics{
 				signals: BRIX_signals_light_in_semaphore_slot;
 			}
-		}	
-		item(FEAT_RAILTYPES, univrail4, 9){
+		}
+		item(FEAT_RAILTYPES, PURR_RAIL_4, 14){
 			graphics{
 				signals: BRIX_signals_light_in_semaphore_slot;
 			}
-		}	
-		item(FEAT_RAILTYPES, univrail5, 10){
+		}
+		item(FEAT_RAILTYPES, PURR_RAIL_5, 15){
 			graphics{
 				signals: BRIX_signals_light_in_semaphore_slot;
 			}
-		}	
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_1, 21){
+			graphics{
+				signals: BRIX_signals_light_in_semaphore_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_2, 22){
+			graphics{
+				signals: BRIX_signals_light_in_semaphore_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_3, 23){
+			graphics{
+				signals: BRIX_signals_light_in_semaphore_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_4, 24){
+			graphics{
+				signals: BRIX_signals_light_in_semaphore_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_5, 25){
+			graphics{
+				signals: BRIX_signals_light_in_semaphore_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_1, 31){
+			graphics{
+				signals: BRIX_signals_light_in_semaphore_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_2, 32){
+			graphics{
+				signals: BRIX_signals_light_in_semaphore_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_3, 33){
+			graphics{
+				signals: BRIX_signals_light_in_semaphore_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_4, 34){
+			graphics{
+				signals: BRIX_signals_light_in_semaphore_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_5, 35){
+			graphics{
+				signals: BRIX_signals_light_in_semaphore_slot;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_UNIV, 40){
+			graphics{
+				signals: BRIX_signals_light_in_semaphore_slot;
+			}
+		}
 	}
 	if (param_signals_slot == 5){ //signals in both slots, inverted
-		item(FEAT_RAILTYPES, univrail1, 6){
+		item(FEAT_RAILTYPES, PURR_RAIL_1, 11){
 			graphics{
 				signals: BRIX_signals_both_slots_inverted;
 			}
-		}	
-		item(FEAT_RAILTYPES, univrail2, 7){
+		}
+		item(FEAT_RAILTYPES, PURR_RAIL_2, 12){
 			graphics{
 				signals: BRIX_signals_both_slots_inverted;
 			}
-		}	
-		item(FEAT_RAILTYPES, univrail3, 8){
+		}
+		item(FEAT_RAILTYPES, PURR_RAIL_3, 13){
 			graphics{
 				signals: BRIX_signals_both_slots_inverted;
 			}
-		}	
-		item(FEAT_RAILTYPES, univrail4, 9){
+		}
+		item(FEAT_RAILTYPES, PURR_RAIL_4, 14){
 			graphics{
 				signals: BRIX_signals_both_slots_inverted;
 			}
-		}	
-		item(FEAT_RAILTYPES, univrail5, 10){
+		}
+		item(FEAT_RAILTYPES, PURR_RAIL_5, 15){
 			graphics{
 				signals: BRIX_signals_both_slots_inverted;
 			}
-		}	
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_1, 21){
+			graphics{
+				signals: BRIX_signals_both_slots_inverted;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_2, 22){
+			graphics{
+				signals: BRIX_signals_both_slots_inverted;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_3, 23){
+			graphics{
+				signals: BRIX_signals_both_slots_inverted;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_4, 24){
+			graphics{
+				signals: BRIX_signals_both_slots_inverted;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MONO_5, 25){
+			graphics{
+				signals: BRIX_signals_both_slots_inverted;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_1, 31){
+			graphics{
+				signals: BRIX_signals_both_slots_inverted;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_2, 32){
+			graphics{
+				signals: BRIX_signals_both_slots_inverted;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_3, 33){
+			graphics{
+				signals: BRIX_signals_both_slots_inverted;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_4, 34){
+			graphics{
+				signals: BRIX_signals_both_slots_inverted;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_MGLV_5, 35){
+			graphics{
+				signals: BRIX_signals_both_slots_inverted;
+			}
+		}
+		item(FEAT_RAILTYPES, PURR_UNIV, 40){
+			graphics{
+				signals: BRIX_signals_both_slots_inverted;
+			}
+		}
 	}
 }
 //---------------------------------------------------------------------------------------------------------------------
