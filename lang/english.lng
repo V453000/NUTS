@@ -32,6 +32,9 @@ STR_PARAM_SIGNALS_SLOT_SEMAPHORE_IN_LIGHT: Light row of signals will be replaced
 STR_PARAM_SIGNALS_SLOT_LIGHT_IN_SEMAPHORE: Semaphore row of signals will be replaced with BRIX light signals.
 STR_PARAM_SIGNALS_SLOT_BOTH_INVERTED: Both semaphore and light signal types will be replaced, semaphore in light row and light in semaphore row.
 
+STR_PARAM_LOGIC_MGLV_SPEED: Logic engine speed
+STR_PARAM_LOGIC_MGLV_SPEED_DESC: Choose the maximum speed of the Maglev Logic engine.
+
 
 STR_RAIL			:Railway
 STR_ELRL			:Electrified Railway

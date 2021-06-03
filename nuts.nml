@@ -69,6 +69,16 @@ grf {
 				};
 			}
 		}
+  param 4 {
+	param_logic_maglev_speed {
+		type: int;
+		name: string(STR_PARAM_LOGIC_MGLV_SPEED);
+		desc: string(STR_PARAM_LOGIC_MGLV_SPEED_DESC);
+		min_value: 0;
+		max_value: 65535;
+		def_value: 2222;
+		}
+    }
 	
 }
 

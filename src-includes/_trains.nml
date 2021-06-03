@@ -36955,7 +36955,7 @@ item(FEAT_TRAINS, item_logicMaglev, 371) { //ID371
         cost_factor:                  10;
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
-        speed:                        2221 km/h; // actually 140, but there are rounding errors
+        speed:                        param_logic_maglev_speed km/h;
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MGLV;
