@@ -187,7 +187,7 @@ item(FEAT_TRAINS, item_railice1, 71) { //ID71
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, -2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -246,7 +246,7 @@ item(FEAT_TRAINS, item_railice1_tender, 291) { //ID291
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -310,7 +310,7 @@ item(FEAT_TRAINS, item_railice2, 73) { //ID73
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, -1, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -371,7 +371,7 @@ item(FEAT_TRAINS, item_railice2_tender, 293) { //ID293
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -435,7 +435,7 @@ item(FEAT_TRAINS, item_railice3, 75) { //ID75
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, -2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -493,7 +493,7 @@ item(FEAT_TRAINS, item_railice3_tender, 295) { //ID295
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -558,7 +558,7 @@ item(FEAT_TRAINS, item_railice4, 77) { //ID77
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, -2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -615,7 +615,7 @@ item(FEAT_TRAINS, item_railice4_tender, 297) { //ID297
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -687,7 +687,7 @@ item(FEAT_TRAINS, item_railice5, 79) { //ID79
         engine_class:                 ENGINE_CLASS_DIESEL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -776,7 +776,7 @@ item(FEAT_TRAINS, item_railice6, 81) { //ID81
         engine_class:                 ENGINE_CLASS_ELECTRIC;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -864,7 +864,7 @@ item(FEAT_TRAINS, item_railice7, 83) { //ID83
         engine_class:                 ENGINE_CLASS_ELECTRIC;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -949,7 +949,7 @@ item(FEAT_TRAINS, item_railice8, 85) { //ID85
         engine_class:                 ENGINE_CLASS_ELECTRIC;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.7;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -1037,7 +1037,7 @@ item(FEAT_TRAINS, item_railice9, 87) { //ID87
         engine_class:                 ENGINE_CLASS_ELECTRIC;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.8;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -1163,7 +1163,7 @@ item(FEAT_TRAINS, item_doombringer, 301) { //ID301
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.5;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(1, -2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -1217,7 +1217,7 @@ item(FEAT_TRAINS, item_doombringer_tender, 302) { //ID301
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -2587,7 +2587,7 @@ item(FEAT_TRAINS, item_railcom1, 91) { //ID91
         engine_class:                 ENGINE_CLASS_ELECTRIC;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.2;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -2970,7 +2970,7 @@ item(FEAT_TRAINS, item_railcom2, 93) { //ID93
         engine_class:                 ENGINE_CLASS_ELECTRIC;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.2;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -3350,7 +3350,7 @@ item(FEAT_TRAINS, item_railcom3, 95) { //ID95
         engine_class:                 ENGINE_CLASS_ELECTRIC;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.2;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -3731,7 +3731,7 @@ item(FEAT_TRAINS, item_railcom4, 97) { //ID97
         engine_class:                 ENGINE_CLASS_ELECTRIC;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.2;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -4113,7 +4113,7 @@ item(FEAT_TRAINS, item_railcom5, 99) { //ID99
         engine_class:                 ENGINE_CLASS_ELECTRIC;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.2;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -4494,7 +4494,7 @@ item(FEAT_TRAINS, item_railcom6, 101) { //ID101
         engine_class:                 ENGINE_CLASS_ELECTRIC;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.2;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -4877,7 +4877,7 @@ item(FEAT_TRAINS, item_railcom7, 103) { //ID103
         engine_class:                 ENGINE_CLASS_ELECTRIC;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.2;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -5258,7 +5258,7 @@ item(FEAT_TRAINS, item_railcom8, 105) { //ID105
         engine_class:                 ENGINE_CLASS_ELECTRIC;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.2;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -5639,7 +5639,7 @@ item(FEAT_TRAINS, item_railcom9, 107) { //ID107
         engine_class:                 ENGINE_CLASS_ELECTRIC;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.2;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -5963,7 +5963,7 @@ item(FEAT_TRAINS, item_monolocal1, 191) { //ID191
         engine_class:                 ENGINE_CLASS_MONORAIL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -6036,7 +6036,7 @@ item(FEAT_TRAINS, item_monolocal2, 193) { //ID193
         engine_class:                 ENGINE_CLASS_MONORAIL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -6110,7 +6110,7 @@ item(FEAT_TRAINS, item_monolocal3, 195) { //ID195
         engine_class:                 ENGINE_CLASS_MONORAIL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -6185,7 +6185,7 @@ item(FEAT_TRAINS, item_monolocal4, 197) { //ID197
         engine_class:                 ENGINE_CLASS_MONORAIL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -6378,7 +6378,7 @@ item(FEAT_TRAINS, item_magice1, 271) { //ID271
         engine_class:                 ENGINE_CLASS_MAGLEV;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -6459,7 +6459,7 @@ item(FEAT_TRAINS, item_magice2, 273) { //ID273
         engine_class:                 ENGINE_CLASS_MAGLEV;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -6540,7 +6540,7 @@ item(FEAT_TRAINS, item_magice3, 275) { //ID275
         engine_class:                 ENGINE_CLASS_MAGLEV;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -6620,7 +6620,7 @@ item(FEAT_TRAINS, item_magice4, 277) { //ID277
         engine_class:                 ENGINE_CLASS_MAGLEV;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -7114,7 +7114,7 @@ item(FEAT_TRAINS, item_MagCom1, 300) { //ID300
         engine_class:                 ENGINE_CLASS_MAGLEV;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.2;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -7209,7 +7209,7 @@ item(FEAT_TRAINS, item_SLUG, 321) { //ID321
         engine_class:                 ENGINE_CLASS_MAGLEV;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -7341,7 +7341,7 @@ item(FEAT_TRAINS, item_ANIMALEXPRESS, 319) { //ID323
         engine_class:                 ENGINE_CLASS_MAGLEV;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -7830,7 +7830,7 @@ item(FEAT_TRAINS, item_RAINBOWSLUG, 323) { //ID323
         engine_class:                 ENGINE_CLASS_MAGLEV;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -10659,7 +10659,7 @@ item(FEAT_TRAINS, item_magpax, 651) { //ID651
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -11012,7 +11012,7 @@ item(FEAT_TRAINS, item_CHAMELEONpax, 510) { //ID510
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -12034,7 +12034,7 @@ item(FEAT_TRAINS, item_monoice1, 171) { //ID171
         engine_class:                 ENGINE_CLASS_MONORAIL;
         //extra_power_per_wagon:        500;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 1, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       1 ton;
@@ -12101,7 +12101,7 @@ item(FEAT_TRAINS, item_monoice2, 173) { //ID173
         engine_class:                 ENGINE_CLASS_MONORAIL;
         //extra_power_per_wagon:        800;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 1, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -12168,7 +12168,7 @@ item(FEAT_TRAINS, item_monoice3, 175) { //ID175
         engine_class:                 ENGINE_CLASS_MONORAIL;
         //extra_power_per_wagon:        1100;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT,1, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -12235,7 +12235,7 @@ item(FEAT_TRAINS, item_monoice4, 177) { //ID177
         engine_class:                 ENGINE_CLASS_MONORAIL;
         //extra_power_per_wagon:        1500;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 1, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -12308,7 +12308,7 @@ item(FEAT_TRAINS, item_NYAN, 311) { //ID311
         engine_class:                 ENGINE_CLASS_MONORAIL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -13302,7 +13302,7 @@ item(FEAT_TRAINS, item_CHAMELEONflatbed, 506) { //ID506
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -14371,7 +14371,7 @@ item(FEAT_TRAINS, item_CHAMELEONhopper, 507) { //ID507
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -14654,7 +14654,7 @@ item(FEAT_TRAINS, item_CHAMELEONtanker, 508) { //ID508
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -14813,7 +14813,7 @@ item(FEAT_TRAINS, item_CHAMELEONuniversal, 509) { //ID509
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -24116,7 +24116,7 @@ item(FEAT_TRAINS, item_SHIflatbed, 751) { //ID751
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -26702,7 +26702,7 @@ item(FEAT_TRAINS, item_SHIhopper, 753) { //ID753
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -28028,7 +28028,7 @@ item(FEAT_TRAINS, item_SHItanker, 755) { //ID755
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -29310,7 +29310,7 @@ item(FEAT_TRAINS, item_SHIuniversal, 757) { //ID757
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -29365,7 +29365,7 @@ item(FEAT_TRAINS, item_SHIexpress, 767) { //ID767
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -29525,7 +29525,7 @@ item(FEAT_TRAINS, item_ULTIMATE_wagon, 666) { //ID666
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 1;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -29579,7 +29579,7 @@ item(FEAT_TRAINS, item_ULTIMATE_wagon_EDGE, 667) { //ID667
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 2;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -29629,7 +29629,7 @@ item(FEAT_TRAINS, item_ULTIMATE_wagon_CENTER, 669) { //ID668
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 2;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -29680,7 +29680,7 @@ item(FEAT_TRAINS, item_ULTIMATE_wagon_END, 668) { //ID669
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 1;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -29837,7 +29837,7 @@ item(FEAT_TRAINS, item_railsuperstrong1, 1) { //ID1
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, -1, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -29893,7 +29893,7 @@ item(FEAT_TRAINS, item_railsuperstrong1_rear, 380) { //ID380
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -29975,7 +29975,7 @@ item(FEAT_TRAINS, item_railsuperstrong2, 2) { //ID2
         engine_class:                 ENGINE_CLASS_ELECTRIC;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, -3, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -30030,7 +30030,7 @@ item(FEAT_TRAINS, item_railsuperstrong2_rear, 381) { //ID381
         engine_class:                 ENGINE_CLASS_ELECTRIC;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -30111,7 +30111,7 @@ item(FEAT_TRAINS, item_railsuperstrong3, 3) { //ID3
         engine_class:                 ENGINE_CLASS_DIESEL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, -3, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -30166,7 +30166,7 @@ item(FEAT_TRAINS, item_railsuperstrong3_rear, 382) { //ID382
         engine_class:                 ENGINE_CLASS_DIESEL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -30246,7 +30246,7 @@ item(FEAT_TRAINS, item_railsuperstrong4, 4) { //ID4
         engine_class:                 ENGINE_CLASS_DIESEL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, -3, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -30301,7 +30301,7 @@ item(FEAT_TRAINS, item_railsuperstrong4_rear, 383) { //ID383
         engine_class:                 ENGINE_CLASS_DIESEL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -30383,7 +30383,7 @@ item(FEAT_TRAINS, item_railsuperstrong5, 5) { //ID5
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, -3, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -30439,7 +30439,7 @@ item(FEAT_TRAINS, item_railsuperstrong5_rear, 384) { //ID384
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 4, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -30525,7 +30525,7 @@ item(FEAT_TRAINS, item_railsuperstrong6, 6) { //ID6
         engine_class:                 ENGINE_CLASS_DIESEL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.5;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -30582,7 +30582,7 @@ item(FEAT_TRAINS, item_railsuperstrong6_rear, 385) { //ID385
         engine_class:                 ENGINE_CLASS_DIESEL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -30799,7 +30799,7 @@ item(FEAT_TRAINS, item_CABOOSE_1, 28) { //ID28
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -31050,7 +31050,7 @@ item(FEAT_TRAINS, item_CABOOSE_2, 29) { //ID29
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -31517,7 +31517,7 @@ item(FEAT_TRAINS, item_CHAMELEON1, 121) { //ID121
         engine_class:                 ENGINE_CLASS_MONORAIL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_STEAM, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -31941,7 +31941,7 @@ item(FEAT_TRAINS, item_CHAMELEON2, 123) { //ID123
         engine_class:                 ENGINE_CLASS_MONORAIL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -32352,7 +32352,7 @@ item(FEAT_TRAINS, item_CHAMELEON3, 125) { //ID125
         engine_class:                 ENGINE_CLASS_MONORAIL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_ELECTRIC, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -32770,7 +32770,7 @@ item(FEAT_TRAINS, item_CHAMELEON4, 127) { //ID127
         engine_class:                 ENGINE_CLASS_MONORAIL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -33176,7 +33176,7 @@ item(FEAT_TRAINS, item_CHAMELEON5, 129) { //ID129
         engine_class:                 ENGINE_CLASS_MONORAIL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -33386,7 +33386,7 @@ item(FEAT_TRAINS, item_MEOWCHAMI_1, 130) { //ID130
         engine_class:                 ENGINE_CLASS_MONORAIL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -35300,7 +35300,7 @@ item(FEAT_TRAINS, item_MEOW_rail_01_tender, 781) { //ID291
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -35340,7 +35340,7 @@ item(FEAT_TRAINS, item_MEOW_rail_02_tender, 782) { //ID291
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -35380,7 +35380,7 @@ item(FEAT_TRAINS, item_MEOW_rail_03_tender, 783) { //ID291
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -35420,7 +35420,7 @@ item(FEAT_TRAINS, item_MEOW_rail_04_tender, 784) { //ID291
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -35460,7 +35460,7 @@ item(FEAT_TRAINS, item_MEOW_rail_05_tender, 785) { //ID291
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -35500,7 +35500,7 @@ item(FEAT_TRAINS, item_MEOW_rail_06_tender, 786) { //ID291
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -35540,7 +35540,7 @@ item(FEAT_TRAINS, item_MEOW_rail_07_tender, 787) { //ID291
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -35580,7 +35580,7 @@ item(FEAT_TRAINS, item_MEOW_rail_08_tender, 788) { //ID291
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -35620,7 +35620,7 @@ item(FEAT_TRAINS, item_MEOW_rail_09_tender, 789) { //ID291
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -35660,7 +35660,7 @@ item(FEAT_TRAINS, item_MEOW_rail_b1_tender, 790) { //ID291
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -35725,7 +35725,7 @@ item(FEAT_TRAINS, item_MEOW_rail_01, 801) {
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.5;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -35798,7 +35798,7 @@ item(FEAT_TRAINS, item_MEOW_rail_02, 802) {
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.5;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -35871,7 +35871,7 @@ item(FEAT_TRAINS, item_MEOW_rail_03, 803) {
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.5;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -35944,7 +35944,7 @@ item(FEAT_TRAINS, item_MEOW_rail_04, 804) {
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.5;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -36017,7 +36017,7 @@ item(FEAT_TRAINS, item_MEOW_rail_05, 805) {
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.5;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -36090,7 +36090,7 @@ item(FEAT_TRAINS, item_MEOW_rail_06, 806) {
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.5;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -36162,7 +36162,7 @@ item(FEAT_TRAINS, item_MEOW_rail_07, 807) {
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.5;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -36234,7 +36234,7 @@ item(FEAT_TRAINS, item_MEOW_rail_08, 808) {
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.5;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -36306,7 +36306,7 @@ item(FEAT_TRAINS, item_MEOW_rail_09, 809) {
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.5;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -36378,7 +36378,7 @@ item(FEAT_TRAINS, item_MEOW_rail_b1, 820) {
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.5;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -36441,7 +36441,7 @@ item(FEAT_TRAINS, item_MEOW_mono_01, 831) {
         engine_class:                 ENGINE_CLASS_MONORAIL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.5;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -36501,7 +36501,7 @@ item(FEAT_TRAINS, item_MEOW_mono_02, 832) {
         engine_class:                 ENGINE_CLASS_MONORAIL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.5;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -36561,7 +36561,7 @@ item(FEAT_TRAINS, item_MEOW_mono_03, 833) {
         engine_class:                 ENGINE_CLASS_MONORAIL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.5;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -36621,7 +36621,7 @@ item(FEAT_TRAINS, item_MEOW_mono_04, 834) {
         engine_class:                 ENGINE_CLASS_MONORAIL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.5;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -36681,7 +36681,7 @@ item(FEAT_TRAINS, item_MEOW_mono_05, 835) {
         engine_class:                 ENGINE_CLASS_MONORAIL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.5;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -36741,7 +36741,7 @@ item(FEAT_TRAINS, item_MEOW_mono_06, 836) {
         engine_class:                 ENGINE_CLASS_MONORAIL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.5;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -36801,7 +36801,7 @@ item(FEAT_TRAINS, item_MEOW_mono_b1, 850) {
         engine_class:                 ENGINE_CLASS_MONORAIL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.5;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -36880,7 +36880,7 @@ item(FEAT_TRAINS, item_logicRail, 351) { //ID351
         engine_class:                 ENGINE_CLASS_ELECTRIC;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -36924,7 +36924,7 @@ item(FEAT_TRAINS, item_logicMonorail, 361) { //ID361
         engine_class:                 ENGINE_CLASS_MONORAIL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -36969,7 +36969,7 @@ item(FEAT_TRAINS, item_logicMaglev, 371) { //ID371
         engine_class:                 ENGINE_CLASS_MAGLEV;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -37210,7 +37210,7 @@ item(FEAT_TRAINS, item_SHIarticulator, 670) { //ID670
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -37315,7 +37315,7 @@ item(FEAT_TRAINS, item_SHIP_SMALL01, 680) { //ID680
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_STEAM, 5, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -37372,7 +37372,7 @@ item(FEAT_TRAINS, item_SHIP_SMALL02, 684) { //ID684
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_STEAM, 5, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -37429,7 +37429,7 @@ item(FEAT_TRAINS, item_SHIP_SMALL03, 686) { //ID686
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_STEAM, 5, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -37550,7 +37550,7 @@ item(FEAT_TRAINS, item_SHIP_LARGE01, 690) { //ID690
         engine_class:                 ENGINE_CLASS_DIESEL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 5, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -37618,7 +37618,7 @@ item(FEAT_TRAINS, item_SHIP_LARGE02, 692) { //ID692
         engine_class:                 ENGINE_CLASS_DIESEL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 5, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -37687,7 +37687,7 @@ item(FEAT_TRAINS, item_SHIP_LARGE03, 694) { //ID694
         engine_class:                 ENGINE_CLASS_DIESEL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DIESEL, 5, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -37789,7 +37789,7 @@ default_cargo_type: GOOD;
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 5, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -37891,7 +37891,7 @@ item(FEAT_TRAINS, item_SHIP_DUCK, 722) { //ID722
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 5, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -38007,7 +38007,7 @@ item(FEAT_TRAINS, item_SHIP_SLUG, 724) { //ID724
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 5, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -38123,7 +38123,7 @@ item(FEAT_TRAINS, item_SHI01, 700) { //ID700 ...shipMEDIUM2
         engine_class:                 ENGINE_CLASS_DIESEL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -38192,7 +38192,7 @@ item(FEAT_TRAINS, item_SHI02, 702) { //ID700 ...shipMEDIUM2
         engine_class:                 ENGINE_CLASS_DIESEL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -38281,7 +38281,7 @@ item(FEAT_TRAINS, item_C4T01, 730) { //ID700
         engine_class:                 ENGINE_CLASS_DIESEL;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;

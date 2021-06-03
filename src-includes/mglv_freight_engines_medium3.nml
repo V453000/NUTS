@@ -46,7 +46,7 @@ item(FEAT_TRAINS, item_magstrong3, 215) { //ID215
         engine_class:                 ENGINE_CLASS_MAGLEV;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;

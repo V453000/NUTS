@@ -93,7 +93,7 @@ item(FEAT_TRAINS, item_rail_EARLY_02, 8) { //ID8
         engine_class:                 ENGINE_CLASS_STEAM;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 8;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 0, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;

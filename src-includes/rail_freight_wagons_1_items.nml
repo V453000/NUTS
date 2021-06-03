@@ -30,7 +30,7 @@ item(FEAT_TRAINS, item_railflatbed1, 411) { //ID411
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -95,7 +95,7 @@ item(FEAT_TRAINS, item_railhopper1, 421) { //ID421
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -159,7 +159,7 @@ item(FEAT_TRAINS, item_railtanker1, 431) { //ID431
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -222,7 +222,7 @@ item(FEAT_TRAINS, item_railuniversal1, 441) { //ID441
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;

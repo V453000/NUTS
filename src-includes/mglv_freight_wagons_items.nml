@@ -167,7 +167,7 @@ item(FEAT_TRAINS, item_maglevflatbed, 611) { //ID611
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -272,7 +272,7 @@ item(FEAT_TRAINS, item_maglevhopper, 621) { //ID621
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -344,7 +344,7 @@ item(FEAT_TRAINS, item_maglevtanker, 631) { //ID631
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
@@ -414,7 +414,7 @@ item(FEAT_TRAINS, item_maglevuniversal, 641) { //ID641
         ai_engine_rank:               0;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0;
+        air_drag_coefficient:         0.004;
         length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
