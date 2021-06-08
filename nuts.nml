@@ -7,78 +7,98 @@ grf {
 	min_compatible_version: 85;
 
 	param 0 {
-	param_wagons {
-		type: int;
-		name: string(STR_PARAM_WAGONS);
-		desc: string(STR_PARAM_PARAM_WAGONS_DESC);
-		min_value: 0;
-		max_value: 1;
-		def_value: 0;
-			names: {
- 				0: string(STR_PARAM_WAGONS_REDUCED);
- 				1: string(STR_PARAM_WAGONS_ALL);
-				};
+		param_wagons {
+			type: int;
+			name: string(STR_PARAM_WAGONS);
+			desc: string(STR_PARAM_PARAM_WAGONS_DESC);
+			min_value: 0;
+			max_value: 1;
+			def_value: 0;
+				names: {
+					0: string(STR_PARAM_WAGONS_REDUCED);
+					1: string(STR_PARAM_WAGONS_ALL);
+					};
+				}
+			}
+  	param 1 {
+		param_32bpp {
+			type: int;
+			name: string(STR_PARAM_32BPP);
+			desc: string(STR_PARAM_32BPP_DESC);
+			min_value: 0;
+			max_value: 1;
+			def_value: 1;
+				names: {
+					0: string(STR_PARAM_32BPP_OFF);
+					1: string(STR_PARAM_32BPP_ON);
+					};
+				}
+			}
+  	param 2 {
+		param_signals {
+			type: int;
+			name: string(STR_PARAM_SIGNALS);
+			desc: string(STR_PARAM_SIGNALS_DESC);
+			min_value: 0;
+			max_value: 3;
+			def_value: 2;
+				names: {
+					0: string(STR_PARAM_SIGNALS_OFF);
+					1: string(STR_PARAM_SIGNALS_WETRAIL);
+					2: string(STR_PARAM_SIGNALS_PURR);
+					3: string(STR_PARAM_SIGNALS_ALL_NUTS);
+					//4: string(STR_PARAM_SIGNALS_REPLACE);
+					};
+				}
+			}  
+  	param 3 {
+		param_signals_slot {
+			type: int;
+			name: string(STR_PARAM_SIGNALS_SLOT);
+			desc: string(STR_PARAM_SIGNALS_SLOT_DESC);
+			min_value: 0;
+			max_value: 5;
+			def_value: 0;
+				names: {
+					0: string(STR_PARAM_SIGNALS_SLOT_BOTH);
+					1: string(STR_PARAM_SIGNALS_SLOT_SEMAPHORE);
+					2: string(STR_PARAM_SIGNALS_SLOT_LIGHT);
+					3: string(STR_PARAM_SIGNALS_SLOT_SEMAPHORE_IN_LIGHT);
+					4: string(STR_PARAM_SIGNALS_SLOT_LIGHT_IN_SEMAPHORE);
+					5: string(STR_PARAM_SIGNALS_SLOT_BOTH_INVERTED);
+					};
+				}
+			}
+    param 4 {
+		param_logic_maglev_speed {
+			type: int;
+			name: string(STR_PARAM_LOGIC_MGLV_SPEED);
+			desc: string(STR_PARAM_LOGIC_MGLV_SPEED_DESC);
+			min_value: 0;
+			max_value: 65535;
+			def_value: 2222;
 			}
 		}
-  param 1 {
-	param_32bpp {
-		type: int;
-		name: string(STR_PARAM_32BPP);
-		desc: string(STR_PARAM_32BPP_DESC);
-		min_value: 0;
-		max_value: 1;
-		def_value: 1;
-			names: {
- 				0: string(STR_PARAM_32BPP_OFF);
- 				1: string(STR_PARAM_32BPP_ON);
-				};
+	param 5 {
+		param_date_start {
+			type: int;
+			name: string(STR_PARAM_DATE_START);
+			desc: string(STR_PARAM_DATE_START_DESC);
+			min_value: 0;
+			max_value: 4999999;
+			def_value: 1900;
 			}
 		}
-  param 2 {
-	param_signals {
-		type: int;
-		name: string(STR_PARAM_SIGNALS);
-		desc: string(STR_PARAM_SIGNALS_DESC);
-		min_value: 0;
-		max_value: 3;
-		def_value: 2;
-			names: {
-				0: string(STR_PARAM_SIGNALS_OFF);
- 				1: string(STR_PARAM_SIGNALS_WETRAIL);
- 				2: string(STR_PARAM_SIGNALS_PURR);
- 				3: string(STR_PARAM_SIGNALS_ALL_NUTS);
-				//4: string(STR_PARAM_SIGNALS_REPLACE);
-				};
-			}
-		}  
-  param 3 {
-	param_signals_slot {
-		type: int;
-		name: string(STR_PARAM_SIGNALS_SLOT);
-		desc: string(STR_PARAM_SIGNALS_SLOT_DESC);
-		min_value: 0;
-		max_value: 5;
-		def_value: 0;
-			names: {
- 				0: string(STR_PARAM_SIGNALS_SLOT_BOTH);
- 				1: string(STR_PARAM_SIGNALS_SLOT_SEMAPHORE);
- 				2: string(STR_PARAM_SIGNALS_SLOT_LIGHT);
- 				3: string(STR_PARAM_SIGNALS_SLOT_SEMAPHORE_IN_LIGHT);
- 				4: string(STR_PARAM_SIGNALS_SLOT_LIGHT_IN_SEMAPHORE);
- 				5: string(STR_PARAM_SIGNALS_SLOT_BOTH_INVERTED);
-				};
+	param 6 {
+		param_date_end {
+			type: int;
+			name: string(STR_PARAM_DATE_END);
+			desc: string(STR_PARAM_DATE_END_DESC);
+			min_value: 1;
+			max_value: 5000000;
+			def_value: 2099;
 			}
 		}
-  param 4 {
-	param_logic_maglev_speed {
-		type: int;
-		name: string(STR_PARAM_LOGIC_MGLV_SPEED);
-		desc: string(STR_PARAM_LOGIC_MGLV_SPEED_DESC);
-		min_value: 0;
-		max_value: 65535;
-		def_value: 2222;
-		}
-    }
 	
 }
 

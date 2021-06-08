@@ -35,6 +35,11 @@ STR_PARAM_SIGNALS_SLOT_BOTH_INVERTED: Both semaphore and light signal types will
 STR_PARAM_LOGIC_MGLV_SPEED: Logic engine speed
 STR_PARAM_LOGIC_MGLV_SPEED_DESC: Choose the maximum speed of the Maglev Logic engine.
 
+STR_PARAM_DATE_START: Progression Start
+STR_PARAM_DATE_START_DESC: Choose the date when the first engine should be introduced.
+STR_PARAM_DATE_END: Progression End
+STR_PARAM_DATE_END_DESC: Choose the date when the last engine should be introduced.
+
 
 STR_RAIL			:Railway
 STR_ELRL			:Electrified Railway
