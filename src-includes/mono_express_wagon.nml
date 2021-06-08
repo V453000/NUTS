@@ -1147,6 +1147,7 @@ item(FEAT_TRAINS, item_monopax, 551) { //ID551
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_PASSENGER;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;

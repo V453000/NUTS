@@ -5954,6 +5954,7 @@ item(FEAT_TRAINS, item_monolocal1, 191) { //ID191
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        2000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -6027,6 +6028,7 @@ item(FEAT_TRAINS, item_monolocal2, 193) { //ID193
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        2200 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -6101,6 +6103,7 @@ item(FEAT_TRAINS, item_monolocal3, 195) { //ID195
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        4000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -6176,6 +6179,7 @@ item(FEAT_TRAINS, item_monolocal4, 197) { //ID197
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        6000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -6368,6 +6372,7 @@ item(FEAT_TRAINS, item_magice1, 271) { //ID271
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MGLV;
+		curve_speed_mod:              1;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        20000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -6449,6 +6454,7 @@ item(FEAT_TRAINS, item_magice2, 273) { //ID273
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MGLV;
+		curve_speed_mod:              1;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        25000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -6530,6 +6536,7 @@ item(FEAT_TRAINS, item_magice3, 275) { //ID275
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MGLV;
+		curve_speed_mod:              1;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        30000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -6610,6 +6617,7 @@ item(FEAT_TRAINS, item_magice4, 277) { //ID277
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MGLV;
+		curve_speed_mod:              1;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        35000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -7105,6 +7113,7 @@ item(FEAT_TRAINS, item_MagCom1, 300) { //ID300
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MGLV;
+		curve_speed_mod:              1;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        3500 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -7199,6 +7208,7 @@ item(FEAT_TRAINS, item_SLUG, 321) { //ID321
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MGLV;
+		curve_speed_mod:              1;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        20000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -7331,6 +7341,7 @@ item(FEAT_TRAINS, item_ANIMALEXPRESS, 319) { //ID323
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_TILT, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MGLV;
+		curve_speed_mod:              1;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        20000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -7820,6 +7831,7 @@ item(FEAT_TRAINS, item_RAINBOWSLUG, 323) { //ID323
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MGLV;
+		curve_speed_mod:              1;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        20000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -10650,6 +10662,7 @@ item(FEAT_TRAINS, item_magpax, 651) { //ID651
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost:                   0;
         track_type:                   MGLV;
+		curve_speed_mod:              1;
         ai_special_flag:              AI_FLAG_PASSENGER;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;
@@ -11003,6 +11016,7 @@ item(FEAT_TRAINS, item_CHAMELEONpax, 510) { //ID510
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_PASSENGER;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;
@@ -12025,6 +12039,7 @@ item(FEAT_TRAINS, item_monoice1, 171) { //ID171
         misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        41000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -12092,6 +12107,7 @@ item(FEAT_TRAINS, item_monoice2, 173) { //ID173
         misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        50000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -12159,6 +12175,7 @@ item(FEAT_TRAINS, item_monoice3, 175) { //ID175
         misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        58000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -12226,6 +12243,7 @@ item(FEAT_TRAINS, item_monoice4, 177) { //ID177
         misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        65000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -12298,6 +12316,7 @@ item(FEAT_TRAINS, item_NYAN, 311) { //ID311
         misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        8000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -13293,6 +13312,7 @@ item(FEAT_TRAINS, item_CHAMELEONflatbed, 506) { //ID506
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;
@@ -14362,6 +14382,7 @@ item(FEAT_TRAINS, item_CHAMELEONhopper, 507) { //ID507
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;
@@ -14645,6 +14666,7 @@ item(FEAT_TRAINS, item_CHAMELEONtanker, 508) { //ID508
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;
@@ -14804,6 +14826,7 @@ item(FEAT_TRAINS, item_CHAMELEONuniversal, 509) { //ID509
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;
@@ -31507,6 +31530,7 @@ item(FEAT_TRAINS, item_CHAMELEON1, 121) { //ID121
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        18000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -31931,6 +31955,7 @@ item(FEAT_TRAINS, item_CHAMELEON2, 123) { //ID123
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        18000 hp;
         running_cost_base:            RUNNING_COST_DIESEL;
@@ -32342,6 +32367,7 @@ item(FEAT_TRAINS, item_CHAMELEON3, 125) { //ID125
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        18000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -32760,6 +32786,7 @@ item(FEAT_TRAINS, item_CHAMELEON4, 127) { //ID127
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        18000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -33166,6 +33193,7 @@ item(FEAT_TRAINS, item_CHAMELEON5, 129) { //ID129
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        18000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -33376,6 +33404,7 @@ item(FEAT_TRAINS, item_MEOWCHAMI_1, 130) { //ID130
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        18000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -36431,6 +36460,7 @@ item(FEAT_TRAINS, item_MEOW_mono_01, 831) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -36491,6 +36521,7 @@ item(FEAT_TRAINS, item_MEOW_mono_02, 832) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -36551,6 +36582,7 @@ item(FEAT_TRAINS, item_MEOW_mono_03, 833) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -36611,6 +36643,7 @@ item(FEAT_TRAINS, item_MEOW_mono_04, 834) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -36671,6 +36704,7 @@ item(FEAT_TRAINS, item_MEOW_mono_05, 835) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -36731,6 +36765,7 @@ item(FEAT_TRAINS, item_MEOW_mono_06, 836) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -36791,6 +36826,7 @@ item(FEAT_TRAINS, item_MEOW_mono_b1, 850) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -36914,6 +36950,7 @@ item(FEAT_TRAINS, item_logicMonorail, 361) { //ID361
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        65000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -36959,6 +36996,7 @@ item(FEAT_TRAINS, item_logicMaglev, 371) { //ID371
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MGLV;
+		curve_speed_mod:              1;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        65000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;

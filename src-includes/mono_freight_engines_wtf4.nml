@@ -35,6 +35,7 @@ item(FEAT_TRAINS, item_monoWTF4, 117) { //ID117
         refit_cost:                   0;
 
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        13000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
