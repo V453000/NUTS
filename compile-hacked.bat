@@ -6,7 +6,7 @@ for /F "tokens=1-4 delims=:.," %%a in ("%time%") do (
 
 rem Any process here...
 @echo on
-C:\NML\curve_speed_mod\nmlc.exe -c --default-lang=english.lng --grf=nuts-curve_speed_mod.grf NUTS-x-combined.nml --verbosity=2
+C:\NML\curve_speed_mod\nmlc.exe -c --default-lang=english.lng --grf=nuts-curve_speed_mod.grf NUTS-x-combined.nml --verbosity=0
 copy /Y nuts-curve_speed_mod.grf "C:\Users\V\Documents\OpenTTD\newgrf"
 @echo off
 
