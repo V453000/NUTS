@@ -48,28 +48,11 @@ STR_MGLV			:Maglev
 STR_WETR			:{PUSH_COLOUR}{LTBLUE}WETRails{POP_COLOUR}
 
 
-STR_PURR_RAIL_1			:Rail - CLEAN purr
-STR_PURR_RAIL_2			:Rail - {GOLD}YELLOW purr
-STR_PURR_RAIL_3			:Rail - {RED}RED purr
-STR_PURR_RAIL_4			:Rail - {BLUE}BLUE purr
-STR_PURR_RAIL_5			:Rail - {GREEN}GREEN purr
-
-STR_PURR_MONO_1			:Monorail - CLEAN purr
-STR_PURR_MONO_2			:Monorail - {GOLD}YELLOW purr
-STR_PURR_MONO_3			:Monorail - {RED}RED purr
-STR_PURR_MONO_4			:Monorail - {BLUE}BLUE purr
-STR_PURR_MONO_5			:Monorail - {GREEN}GREEN purr
-
-STR_PURR_MGLV_1			:Maglev - CLEAN purr
-STR_PURR_MGLV_2			:Maglev - {GOLD}YELLOW purr
-STR_PURR_MGLV_3			:Maglev - {RED}RED purr
-STR_PURR_MGLV_4			:Maglev - {BLUE}BLUE purr
-STR_PURR_MGLV_5			:Maglev - {GREEN}GREEN purr
-
-STR_PURR_UNIV           :{PUSH_COLOUR}{PURPLE}Universal{POP_COLOUR} Rail
-
-
-
+STR_PURR_1			:CLEAN purr
+STR_PURR_2			:{GOLD}YELLOW purr
+STR_PURR_3			:{RED}RED purr
+STR_PURR_4			:{BLUE}BLUE purr
+STR_PURR_5			:{GREEN}GREEN purr
 
 
 STR_RAILWAGON1		:Designed: {SILVER}0{}{BLACK}Loading stages: {SILVER}6
