@@ -87,6 +87,7 @@ item(FEAT_TRAINS, item_railmedium1, 31) { //ID31
         misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        700 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -115,7 +116,7 @@ item(FEAT_TRAINS, item_railmedium1, 31) { //ID31
 		can_attach_wagon: switch_railmedium1_attach;
 		additional_text: string(info_rail_medium_1);
 		speed: 								100; //maybe for wagons later, not now
-		power: 								900; //engine only
+		power: 								900*9/9; //engine only
 		weight: 							80; //engine only
 		tractive_effort_coefficient:		89; //engine only
 		cost_factor:						7; //everything
