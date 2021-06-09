@@ -36911,6 +36911,7 @@ item(FEAT_TRAINS, item_logicRail, 351) { //ID351
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              63;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        65000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -36955,7 +36956,7 @@ item(FEAT_TRAINS, item_logicMonorail, 361) { //ID361
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
-		curve_speed_mod:              0.5;
+		curve_speed_mod:              63;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        65000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -37001,7 +37002,7 @@ item(FEAT_TRAINS, item_logicMaglev, 371) { //ID371
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MGLV;
-		curve_speed_mod:              1;
+		curve_speed_mod:              63;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        65000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;

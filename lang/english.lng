@@ -503,7 +503,7 @@ info_wetr_DUCK  		:{BLACK}Vehicle class:{GREEN}MEDIUM {BLACK}appetite{}{SILVER}E
 info_wetr_SLUG  		:{BLACK}Vehicle class:{RED}FAT{}{SILVER}EATS cargo during transport.{}Increased cargo aging rate by 20%.{}When fed, +300% power.{}{RED}Higher speed (265km/h) for higher station ratings.{}Only 120km/h max travel speed.{}{BLACK}Express wagon capacity: {GOLD}80{}{BLACK}Express wagon loading stages: {GOLD}2{}{BLACK}Fullspeed curve length: {LTBLUE}2{}{BLACK}Designed for: {SILVER}Slow "trains" with exceptional capacity and loading speed. Extremely efficient when carrying any load.
 info_wetr_c4t       :{BLACK}Vehicle class:{GOLD}CAT{}{GOLD}OMFG{BLACK}IT{GOLD}IS{BLACK}A{GOLD}CAT{BLACK}ERPILLAR{}{BLACK}Fullspeed curve length: {LTBLUE}1.5{}{BLACK}Designed for: {SILVER}Slow "trains" with unrivaled capacity but poor loading speed.
 
-info_logic			:{BLACK}Vehicle class:{DKGREEN} LOGIC ENGINE{}{BLACK}Cannot haul any other wagons or engines.{}{BLACK}Fullspeed curve length: {LTBLUE}As long as train{}{BLACK}Designed for: {SILVER}Special non-transportation tasks.
+info_logic			:{BLACK}Vehicle class:{DKGREEN} LOGIC ENGINE{}{BLACK}Cannot haul any other wagons or engines.{}{BLACK}Fullspeed curve length: {LTBLUE}Does not slow down.{}{BLACK}Designed for: {SILVER}Special non-transportation tasks.
 
 
 STR_NAME_NYAN_text		:{RED}N{ORANGE}Y{YELLOW}A{GREEN}N{GREEN}Y{LTBLUE}A{RED}N{ORANGE}Y{YELLOW}A{GREEN}N{GREEN}Y{LTBLUE}A{RED}N{ORANGE}Y{YELLOW}A{GREEN}N{GREEN}Y{LTBLUE}A{RED}N{ORANGE}Y{YELLOW}A{GREEN}N{GREEN}Y{LTBLUE}A{RED}N{ORANGE}Y{YELLOW}A{GREEN}N{GREEN}Y{LTBLUE}A{}{BLACK}Express wagon capacity: {RED}30
