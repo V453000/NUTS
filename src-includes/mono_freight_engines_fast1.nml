@@ -34,7 +34,7 @@ item(FEAT_TRAINS, item_monofast1, 151) { //ID151
         misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
-		curve_speed_mod:              0.5;
+		curve_speed_mod:              -0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        5000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -61,7 +61,7 @@ item(FEAT_TRAINS, item_monofast1, 151) { //ID151
 		tractive_effort_coefficient:	switch_monofast_TE;//38;
 		cost_factor:						26;
 		running_cost_factor:				100;
-		purchase_power: 2350;
+		purchase_power: 2500;
 		purchase_tractive_effort_coefficient: 255;
 
         articulated_part: switch_monofast1_articulated;
