@@ -24,6 +24,7 @@ item(FEAT_TRAINS, item_railflatbed2, 413) { //ID413
         misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+        curve_speed_mod:              32;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;
@@ -86,6 +87,7 @@ item(FEAT_TRAINS, item_railhopper2, 423) { //ID423
         misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+        curve_speed_mod:              32;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;
@@ -148,6 +150,7 @@ item(FEAT_TRAINS, item_railtanker2, 433) { //ID433
         misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+        curve_speed_mod:              32;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;
@@ -211,6 +214,7 @@ item(FEAT_TRAINS, item_railuniversal2, 443) { //ID443
         misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+        curve_speed_mod:              32;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;
