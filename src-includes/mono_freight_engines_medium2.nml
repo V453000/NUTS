@@ -30,10 +30,10 @@ item(FEAT_TRAINS, item_monomedium2, 133) { //ID133
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        260 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
-		curve_speed_mod:              0.5;
+		curve_speed_mod:              0.8;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        12000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
