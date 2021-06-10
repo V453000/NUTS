@@ -177,6 +177,7 @@ item(FEAT_TRAINS, item_railice1, 71) { //ID71
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        2000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -236,6 +237,7 @@ item(FEAT_TRAINS, item_railice1_tender, 291) { //ID291
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -300,6 +302,7 @@ item(FEAT_TRAINS, item_railice2, 73) { //ID73
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        3000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -361,6 +364,7 @@ item(FEAT_TRAINS, item_railice2_tender, 293) { //ID293
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -425,6 +429,7 @@ item(FEAT_TRAINS, item_railice3, 75) { //ID75
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        4000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -483,6 +488,7 @@ item(FEAT_TRAINS, item_railice3_tender, 295) { //ID295
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -548,6 +554,7 @@ item(FEAT_TRAINS, item_railice4, 77) { //ID77
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        5000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -605,6 +612,7 @@ item(FEAT_TRAINS, item_railice4_tender, 297) { //ID297
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -677,6 +685,7 @@ item(FEAT_TRAINS, item_railice5, 79) { //ID79
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        6000 hp;
         running_cost_base:            RUNNING_COST_DIESEL;
@@ -766,6 +775,7 @@ item(FEAT_TRAINS, item_railice6, 81) { //ID81
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        9000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -854,6 +864,7 @@ item(FEAT_TRAINS, item_railice7, 83) { //ID83
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        12000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -939,6 +950,7 @@ item(FEAT_TRAINS, item_railice8, 85) { //ID85
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        16000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -1027,6 +1039,7 @@ item(FEAT_TRAINS, item_railice9, 87) { //ID87
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        20000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -1153,6 +1166,7 @@ item(FEAT_TRAINS, item_doombringer, 301) { //ID301
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        20000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -1207,6 +1221,7 @@ item(FEAT_TRAINS, item_doombringer_tender, 302) { //ID301
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        20000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -2578,6 +2593,7 @@ item(FEAT_TRAINS, item_railcom1, 91) { //ID91
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        500 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -2961,6 +2977,7 @@ item(FEAT_TRAINS, item_railcom2, 93) { //ID93
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        900 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -3341,6 +3358,7 @@ item(FEAT_TRAINS, item_railcom3, 95) { //ID95
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1500 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -3722,6 +3740,7 @@ item(FEAT_TRAINS, item_railcom4, 97) { //ID97
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        2000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -4104,6 +4123,7 @@ item(FEAT_TRAINS, item_railcom5, 99) { //ID99
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        2300 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -4485,6 +4505,7 @@ item(FEAT_TRAINS, item_railcom6, 101) { //ID101
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        2700 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -4868,6 +4889,7 @@ item(FEAT_TRAINS, item_railcom7, 103) { //ID103
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        3000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -5249,6 +5271,7 @@ item(FEAT_TRAINS, item_railcom8, 105) { //ID105
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        3500 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -5630,6 +5653,7 @@ item(FEAT_TRAINS, item_railcom9, 107) { //ID107
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        4000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -29855,6 +29879,7 @@ item(FEAT_TRAINS, item_railsuperstrong1, 1) { //ID1
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -29911,6 +29936,7 @@ item(FEAT_TRAINS, item_railsuperstrong1_rear, 380) { //ID380
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -29993,6 +30019,7 @@ item(FEAT_TRAINS, item_railsuperstrong2, 2) { //ID2
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -30048,6 +30075,7 @@ item(FEAT_TRAINS, item_railsuperstrong2_rear, 381) { //ID381
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -30129,6 +30157,7 @@ item(FEAT_TRAINS, item_railsuperstrong3, 3) { //ID3
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1000 hp;
         running_cost_base:            RUNNING_COST_DIESEL;
@@ -30184,6 +30213,7 @@ item(FEAT_TRAINS, item_railsuperstrong3_rear, 382) { //ID382
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1000 hp;
         running_cost_base:            RUNNING_COST_DIESEL;
@@ -30264,6 +30294,7 @@ item(FEAT_TRAINS, item_railsuperstrong4, 4) { //ID4
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1000 hp;
         running_cost_base:            RUNNING_COST_DIESEL;
@@ -30319,6 +30350,7 @@ item(FEAT_TRAINS, item_railsuperstrong4_rear, 383) { //ID383
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1000 hp;
         running_cost_base:            RUNNING_COST_DIESEL;
@@ -30401,6 +30433,7 @@ item(FEAT_TRAINS, item_railsuperstrong5, 5) { //ID5
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -30457,6 +30490,7 @@ item(FEAT_TRAINS, item_railsuperstrong5_rear, 384) { //ID384
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -30543,6 +30577,7 @@ item(FEAT_TRAINS, item_railsuperstrong6, 6) { //ID6
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_DIESEL;
@@ -30600,6 +30635,7 @@ item(FEAT_TRAINS, item_railsuperstrong6_rear, 385) { //ID385
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1000 hp;
         running_cost_base:            RUNNING_COST_DIESEL;
@@ -30817,6 +30853,7 @@ item(FEAT_TRAINS, item_CABOOSE_1, 28) { //ID28
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        20000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -31068,6 +31105,7 @@ item(FEAT_TRAINS, item_CABOOSE_2, 29) { //ID29
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        20000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35324,6 +35362,7 @@ item(FEAT_TRAINS, item_MEOW_rail_01_tender, 781) { //ID291
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35364,6 +35403,7 @@ item(FEAT_TRAINS, item_MEOW_rail_02_tender, 782) { //ID291
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35404,6 +35444,7 @@ item(FEAT_TRAINS, item_MEOW_rail_03_tender, 783) { //ID291
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35444,6 +35485,7 @@ item(FEAT_TRAINS, item_MEOW_rail_04_tender, 784) { //ID291
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35484,6 +35526,7 @@ item(FEAT_TRAINS, item_MEOW_rail_05_tender, 785) { //ID291
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35524,6 +35567,7 @@ item(FEAT_TRAINS, item_MEOW_rail_06_tender, 786) { //ID291
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35564,6 +35608,7 @@ item(FEAT_TRAINS, item_MEOW_rail_07_tender, 787) { //ID291
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35604,6 +35649,7 @@ item(FEAT_TRAINS, item_MEOW_rail_08_tender, 788) { //ID291
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35644,6 +35690,7 @@ item(FEAT_TRAINS, item_MEOW_rail_09_tender, 789) { //ID291
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35684,6 +35731,7 @@ item(FEAT_TRAINS, item_MEOW_rail_b1_tender, 790) { //ID291
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35749,6 +35797,7 @@ item(FEAT_TRAINS, item_MEOW_rail_01, 801) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35822,6 +35871,7 @@ item(FEAT_TRAINS, item_MEOW_rail_02, 802) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35895,6 +35945,7 @@ item(FEAT_TRAINS, item_MEOW_rail_03, 803) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35968,6 +36019,7 @@ item(FEAT_TRAINS, item_MEOW_rail_04, 804) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -36041,6 +36093,7 @@ item(FEAT_TRAINS, item_MEOW_rail_05, 805) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -36114,6 +36167,7 @@ item(FEAT_TRAINS, item_MEOW_rail_06, 806) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -36186,6 +36240,7 @@ item(FEAT_TRAINS, item_MEOW_rail_07, 807) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -36258,6 +36313,7 @@ item(FEAT_TRAINS, item_MEOW_rail_08, 808) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -36330,6 +36386,7 @@ item(FEAT_TRAINS, item_MEOW_rail_09, 809) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -36402,6 +36459,7 @@ item(FEAT_TRAINS, item_MEOW_rail_b1, 820) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
