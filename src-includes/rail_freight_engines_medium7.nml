@@ -77,7 +77,7 @@ item(FEAT_TRAINS, item_railmedium7, 43) { //ID43
         misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
-		curve_speed_mod:              -0.25;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        4000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
