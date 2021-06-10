@@ -84,19 +84,19 @@ grf {
 			type: int;
 			name: string(STR_PARAM_DATE_START);
 			desc: string(STR_PARAM_DATE_START_DESC);
-			min_value: 0;
+			min_value: 1661;
 			max_value: 4999999;
 			def_value: 1900;
 			}
 		}
 	param 6 {
-		param_date_end {
+		param_date_multiplier {
 			type: int;
 			name: string(STR_PARAM_DATE_END);
 			desc: string(STR_PARAM_DATE_END_DESC);
-			min_value: 1;
-			max_value: 5000000;
-			def_value: 2099;
+			min_value: 0;
+			max_value: 666666;
+			def_value: 100;
 			}
 		}
 	
@@ -128,7 +128,4 @@ cargotable {
 //Railtypes	
 //#include src-includes/_railtypes.nml
 
-// trains start --------------------------------------------------------------------------------------------------------
-
 //#include src-includes/_trains.nml
-

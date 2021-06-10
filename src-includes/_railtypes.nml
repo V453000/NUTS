@@ -240,7 +240,7 @@ switch(FEAT_RAILTYPES, SELF, BRIX_signals_both_slots_inverted, (extra_callback_i
 item (FEAT_RAILTYPES, rail, 1){
   property{
   label: 							"RAIL";
-  introduction_date:				date(1920,01,01);
+  introduction_date:				date(1900, 1, 1);
   name: 							string(STR_RAIL);
   toolbar_caption:				string(STR_RAIL);
   menu_text:						string(STR_RAIL);
@@ -261,7 +261,7 @@ item (FEAT_RAILTYPES, rail, 1){
 item (FEAT_RAILTYPES, elrl, 2){
   property{
   label: 							"ELRL";
-  introduction_date:				date(1920,01,01);
+  introduction_date:				date(1900, 1, 1);
   name: 							string(STR_ELRL);
   toolbar_caption:				string(STR_ELRL);
   menu_text:						string(STR_ELRL);
@@ -284,7 +284,7 @@ item (FEAT_RAILTYPES, elrl, 2){
 item (FEAT_RAILTYPES, mono, 3){
   property{
   label: 							"MONO";
-  introduction_date:				date(1987,01,01);
+  introduction_date:				date(1987, 1, 1);
   name: 							string(STR_MONO);
   toolbar_caption:				string(STR_MONO);
   menu_text:						string(STR_MONO);
@@ -305,7 +305,7 @@ item (FEAT_RAILTYPES, mono, 3){
 item (FEAT_RAILTYPES, mglv, 4){
   property{
   label: 							"MGLV";
-  introduction_date:				date(1997,01,01);
+  introduction_date:				date(1997, 1, 1);
   name: 							string(STR_MGLV);
   toolbar_caption:				string(STR_MGLV);
   menu_text:						string(STR_MGLV);
@@ -324,7 +324,7 @@ item (FEAT_RAILTYPES, mglv, 4){
 item (FEAT_RAILTYPES, universalrail, 15){
 property{
 label: 							"UNIV";
-introduction_date:				date(1950,01,01);
+introduction_date:				date(1950, 1, 1);
 name: 							string(STR_UNIV);
 toolbar_caption:				string(STR_UNIV);
 menu_text:						string(STR_UNIV);
@@ -343,7 +343,7 @@ construction_cost: 200;
 item (FEAT_RAILTYPES, wetrails, 12){
 property{
 label: 							"WETR";
-introduction_date:				date(1950,01,01);
+introduction_date:				date(1950, 1, 1);
 name: 							string(STR_WETR);
 toolbar_caption:				string(STR_WETR);
 menu_text:						string(STR_WETR);
@@ -563,7 +563,7 @@ switch(FEAT_RAILTYPES, SELF, PURR_5_tunnels_switch, tunnel_stuff5) {
 item (FEAT_RAILTYPES, univrail1, 6){
 property{
 label: 							"UNI1";
-introduction_date:				date(0,01,01);
+introduction_date:				date(0, 1, 1);//fixed_date
 name: 							string(STR_PURR_1);
 toolbar_caption:				string(STR_PURR_1);
 menu_text:						string(STR_PURR_1);
@@ -592,7 +592,7 @@ level_crossings: PURR_1_road_crossing;
 item (FEAT_RAILTYPES, univrail2, 7){
 property{
 label: 							"UNI2";
-introduction_date:				date(0,01,01);
+introduction_date:				date(0, 1, 1);//fixed_date
 name: 							string(STR_PURR_2);
 toolbar_caption:				string(STR_PURR_2);
 menu_text:						string(STR_PURR_2);
@@ -621,7 +621,7 @@ level_crossings: PURR_2_road_crossing;
 item (FEAT_RAILTYPES, univrail3, 8){
 property{
 label: 							"UNI3";
-introduction_date:				date(0,01,01);
+introduction_date:				date(0, 1, 1);//fixed_date
 name: 							string(STR_PURR_3);
 toolbar_caption:				string(STR_PURR_3);
 menu_text:						string(STR_PURR_3);
@@ -650,7 +650,7 @@ level_crossings: PURR_3_road_crossing;
 item (FEAT_RAILTYPES, univrail4, 9){
 property{
 label: 							"UNI4";
-introduction_date:				date(0,01,01);
+introduction_date:				date(0, 1, 1);//fixed_date
 name: 							string(STR_PURR_4);
 toolbar_caption:				string(STR_PURR_4);
 menu_text:						string(STR_PURR_4);
@@ -679,7 +679,7 @@ level_crossings: PURR_4_road_crossing;
 item (FEAT_RAILTYPES, univrail5, 10){
 property{
 label: 							"UNI5";
-introduction_date:				date(0,01,01);
+introduction_date:				date(0, 1, 1);//fixed_date
 name: 							string(STR_PURR_5);
 toolbar_caption:				string(STR_PURR_5);
 menu_text:						string(STR_PURR_5);
