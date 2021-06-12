@@ -101,7 +101,7 @@ item(FEAT_TRAINS, item_railfast9, 67) { //ID67
 		additional_text: string(info_rail_fast_9);
 		speed: 								255; //maybe for wagons later, not now
 		power: 								10000/2*3/2; //engine only
-		weight: 							80/2; //engine only
+		weight: 							80; //engine only
 		tractive_effort_coefficient:			142; //engine only
 		cost_factor:						17; //everything
 		running_cost_factor:				100; //only engines

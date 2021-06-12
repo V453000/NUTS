@@ -102,7 +102,7 @@ item(FEAT_TRAINS, item_railfast4, 57) { //ID57
 		additional_text: string(info_rail_fast_4);
 		speed: 								170;
 		power: 								3200/2*3/2; //engine only
-		weight: 							80/2; //engine only
+		weight: 							80; //engine only
 		tractive_effort_coefficient:			56; //engine only
 		cost_factor:						12; //everything
 		running_cost_factor:				100; //only engines
