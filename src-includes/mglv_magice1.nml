@@ -29,6 +29,10 @@ YETY: spriteset_train_MagICE1gold_end;
 spriteset_train_MagICE1gold_end;
 }
 
+
+//#include src-generated/magice1_graphics.nml
+
+
 switch(FEAT_TRAINS, SELF, magice1_wetrail_power_switch, current_railtype){
 WETR: 15000*7/10;
 15000;
@@ -45,8 +49,6 @@ switch (FEAT_TRAINS, SELF, switch_magice1_articulated, extra_callback_info1){
 	3: item_magice1;
 	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
-
-//#//include src-generated/magice1_graphics.nml
 
 switch(FEAT_TRAINS, SELF, switch_magice1_curve_speed, num_vehs_in_consist) {
     1..4:   439; //TL1
@@ -93,7 +95,7 @@ item(FEAT_TRAINS, item_magice1, 271) { //ID271
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: magice1_cargosprite;
+		default: magice1_graphics;
 		purchase: spriteset_purchaseMenu_magice1;
 		can_attach_wagon: switch_magice1_attach;
 		cargo_capacity: magice_capacity_switch;
