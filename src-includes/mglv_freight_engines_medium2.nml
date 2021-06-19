@@ -1,3 +1,9 @@
+switch(FEAT_TRAINS, SELF, switch_mglv_strong2_curve_speed, num_vehs_in_consist) {
+    1..4:   473; //TL1
+    5..6:   280;
+    7..8:   256; //TL2
+    256;
+}
 switch (FEAT_TRAINS, SELF, switch_mglv_strong2_attach, vehicle_type_id){
 	item_magstrong2:      CB_RESULT_ATTACH_ALLOW;
 	
@@ -57,6 +63,7 @@ item(FEAT_TRAINS, item_magstrong2, 213) { //ID213
 		can_attach_wagon: switch_mglv_strong2_attach;
 		additional_text: string(info_mglv_medium_2);
 		speed: 							316; //maybe for wagons later, not now
+        curve_speed_mod: switch_mglv_strong2_curve_speed;
 		
 		weight: 							50; //engine only
 		tractive_effort_coefficient:		255; //engine only
