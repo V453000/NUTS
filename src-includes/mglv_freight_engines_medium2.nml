@@ -1,8 +1,8 @@
 switch(FEAT_TRAINS, SELF, switch_mglv_strong2_curve_speed, num_vehs_in_consist) {
     1..4:   473; //TL1
-    5..6:   280;
-    7..8:   256; //TL2
-    256;
+    5..6:   387;
+    7..8:   359; //TL2
+    359;
 }
 switch (FEAT_TRAINS, SELF, switch_mglv_strong2_attach, vehicle_type_id){
 	item_magstrong2:      CB_RESULT_ATTACH_ALLOW;
