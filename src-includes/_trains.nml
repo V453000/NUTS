@@ -12430,8 +12430,6 @@ item(FEAT_TRAINS, item_NYAN, 311) { //ID311
 //#include src-includes/rail_freight_wagons_2_graphics.nml
 //#include src-includes/rail_freight_wagons_3_graphics.nml
 
-//#include src-includes/rail_freight_graphics.nml
-
 //#include src-includes/rail_freight_engines.nml
 
 //#include src-generated/rail_strong4_graphics.nml
