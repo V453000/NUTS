@@ -1,0 +1,491 @@
+
+//==============================================================================================================================
+//==============================================================================================================================
+//================================  R A I N B O W   S L U G ====================================================================
+//==============================================================================================================================
+//==============================================================================================================================
+
+// Random bits in Rainbow Slug:
+//  First vehicle in consist
+//    5 bits: random_RAINBOWSLUG_HEAD
+//    3 bits: RAINBOWSLUG_reverse_random
+//  Last vehicle in consist:
+//    5 bits: SLUG_colour_mapping_random
+//    3 bits: still available
+
+param[01] = reserve_sprites(17);
+
+ replace(param[01]) {
+ 	recolour_sprite { //CCdark blue
+	/*	0xC6:	0xC6;
+		0xC7:	0xC7;
+		0xC8:	0xC8;
+		0xC9:	0xC9;
+		0xCA:	0xCA;
+		0xCB:	0xCB;
+		0xCC:	0xCC;
+		0xCD:	0xCD;*/
+	} //CCdark blue
+ 
+ 	recolour_sprite { //CCpale green
+		0xC6:	0x60;
+		0xC7:	0x61;
+		0xC8:	0x62;
+		0xC9:	0x63;
+		0xCA:	0x64;
+		0xCB:	0x65;
+		0xCC:	0x66;
+		0xCD:	0x67;
+	} //CCpale green
+
+ 	recolour_sprite { //CCpink
+		0xC6:	0x2A;
+		0xC7:	0x2B;
+		0xC8:	0x2C;
+		0xC9:	0x2D;
+		0xCA:	0x2E;
+		0xCB:	0x2F;
+		0xCC:	0x30;
+		0xCD:	0x31;
+	} //CCpink
+ 
+ 	recolour_sprite { //CCyellow
+		0xC6:	0x3E;
+		0xC7:	0x3F;
+		0xC8:	0x40;
+		0xC9:	0x41;
+		0xCA:	0x42;
+		0xCB:	0x43;
+		0xCC:	0x44;
+		0xCD:	0x45;
+	} //CCyellow
+
+ 	recolour_sprite { //CCred
+		0xC6:	0xB3;
+		0xC7:	0xB4;
+		0xC8:	0xB5;
+		0xC9:	0xB6;
+		0xCA:	0xB7;
+		0xCB:	0xA4;
+		0xCC:	0xA5;
+		0xCD:	0xA6;
+	} //CCred
+ 
+ 	recolour_sprite { //CClight blue
+		0xC6:	0x9A;
+		0xC7:	0x9B;
+		0xC8:	0x9C;
+		0xC9:	0x9D;
+		0xCA:	0x9E;
+		0xCB:	0x9F;
+		0xCC:	0xA0;
+		0xCD:	0xA1;
+	} //CClight blue
+
+ 	recolour_sprite { //CCgreen
+		0xC6:	0x52;
+		0xC7:	0x53;
+		0xC8:	0x54;
+		0xC9:	0x55;
+		0xCA:	0xCE;
+		0xCB:	0xCF;
+		0xCC:	0xD0;
+		0xCD:	0xD1;
+	} //CCgreen
+ 
+ 	recolour_sprite { //CCdark green
+		0xC6:	0x58;
+		0xC7:	0x59;
+		0xC8:	0x5A;
+		0xC9:	0x5B;
+		0xCA:	0x5C;
+		0xCB:	0x5D;
+		0xCC:	0x5E;
+		0xCD:	0x5F;
+	} //CCdark green
+
+ 	recolour_sprite { //CCblue
+		0xC6:	0x92;
+		0xC7:	0x93;
+		0xC8:	0x94;
+		0xC9:	0x95;
+		0xCA:	0x96;
+		0xCB:	0x97;
+		0xCC:	0x98;
+		0xCD:	0x99;
+	} //CCblue
+
+ 	recolour_sprite { //CCcream
+		0xC6:	0x72;
+		0xC7:	0x73;
+		0xC8:	0x74;
+		0xC9:	0x75;
+		0xCA:	0x76;
+		0xCB:	0x77;
+		0xCC:	0x78;
+		0xCD:	0x79;
+	} //CCcream
+
+ 	recolour_sprite { //CCmauve
+		0xC6:	0x80;
+		0xC7:	0x81;
+		0xC8:	0x82;
+		0xC9:	0x83;
+		0xCA:	0x84;
+		0xCB:	0x85;
+		0xCC:	0x86;
+		0xCD:	0x87;
+	} //CCmauve
+
+ 	recolour_sprite { //CCpurple
+		0xC6:	0x88;
+		0xC7:	0x89;
+		0xC8:	0x8A;
+		0xC9:	0x8B;
+		0xCA:	0x8C;
+		0xCB:	0x8D;
+		0xCC:	0x8E;
+		0xCD:	0x8F;
+	} //CCpurple
+
+ 	recolour_sprite { //CCorange
+		0xC6:	0x40;
+		0xC7:	0xC0;
+		0xC8:	0xC1;
+		0xC9:	0xC2;
+		0xCA:	0xC3;
+		0xCB:	0xC4;
+		0xCC:	0xC5;
+		0xCD:	0x27;
+	} //CCorange
+
+ 	recolour_sprite { //CCbrown
+		0xC6:	0x20;
+		0xC7:	0x21;
+		0xC8:	0x22;
+		0xC9:	0x23;
+		0xCA:	0x24;
+		0xCB:	0x25;
+		0xCC:	0x26;
+		0xCD:	0x27;
+	} //CCbrown
+
+ 	recolour_sprite { //CCgray
+		0xC6:	0x04;
+		0xC7:	0x05;
+		0xC8:	0x06;
+		0xC9:	0x07;
+		0xCA:	0x08;
+		0xCB:	0x09;
+		0xCC:	0x0A;
+		0xCD:	0x0B;
+	} //CCgray
+
+ 	recolour_sprite { //CCwhite
+		0xC6:	0x08;
+		0xC7:	0x09;
+		0xC8:	0x0A;
+		0xC9:	0x0B;
+		0xCA:	0x0C;
+		0xCB:	0x0D;
+		0xCC:	0x0E;
+		0xCD:	0x0F;
+	} //CCwhite
+
+ 	recolour_sprite { // BLACK
+		0xC6:	0x01;
+		0xC7:	0x02;
+		0xC8:	0x03;
+		0xC9:	0x04;
+		0xCA:	0x05;
+		0xCB:	0x06;
+		0xCC:	0x07;
+		0xCD:	0x08;
+		
+		0x50:	0x08;
+		0x51:	0x09;
+		0x52:	0x0A;
+		0x53:	0x0B;
+		0x54:	0x0C;
+		0x55:	0x0D;
+		0x56:	0x0E;
+		0x57:	0x0F;
+		
+	} // BLACK
+}
+
+
+//==============================================================================================================================
+//SPRITES
+spriteset(spriteset_purchaseMenu_RAINBOWSLUG, 	"gfx/PurchaseMenu.png")	{template_purchaseMenu2		(5,24)}
+spriteset(spriteset_train_RAINBOWSLUGfront, 	"gfx/SLUGwtf2.png") 	{template_engine32WTF_SLUG2	(1,0)}
+spriteset(spriteset_train_RAINBOWSLUGfront_cat, 	"gfx/SLUGwtf2.png") 	{template_engine32WTF_SLUG2	(2,0)}
+spriteset(spriteset_train_RAINBOWSLUGfront_unicorn, 	"gfx/SLUGwtf2.png") 	{template_engine32WTF_SLUG2	(2,1)}
+spriteset(spriteset_train_RAINBOWSLUGfront_eye, 	"gfx/SLUGwtf2.png") 	{template_engine32WTF_SLUG2	(2,2)}
+spriteset(spriteset_train_RAINBOWSLUGfront_hat, 	"gfx/SLUGwtf2.png") 	{template_engine32WTF_SLUG2	(2,3)}
+
+spriteset(spriteset_train_RAINBOWSLUGrear, 		"gfx/SLUGwtf2.png") 	{template_engine32WTF_SLUG2	(1,1)}
+spriteset(spriteset_train_RAINBOWSLUGmiddle, 	"gfx/SLUGwtf2.png") 	{template_engine32WTF_SLUG2	(1,2)}
+
+alternative_sprites (spriteset_train_RAINBOWSLUGfront, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle8_MASK(0x20,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_RAINBOWSLUGfront_cat, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle8_MASK(0x21,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_RAINBOWSLUGfront_unicorn, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle8_MASK(0x22,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_RAINBOWSLUGfront_eye, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle8_MASK(0x23,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_RAINBOWSLUGfront_hat, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle8_MASK(0x24,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+
+alternative_sprites (spriteset_train_RAINBOWSLUGrear, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle8_MASK(0x01,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_RAINBOWSLUGmiddle, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x02,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+
+
+alternative_sprites (spriteset_train_RAINBOWSLUGfront, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) 	{template_32bpp_x1_vehicle8_MASK(0x20,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_RAINBOWSLUGfront_cat, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) 	{template_32bpp_x1_vehicle8_MASK(0x21,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_RAINBOWSLUGfront_unicorn, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) 	{template_32bpp_x1_vehicle8_MASK(0x22,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_RAINBOWSLUGfront_eye, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) 	{template_32bpp_x1_vehicle8_MASK(0x23,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_RAINBOWSLUGfront_hat, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) 	{template_32bpp_x1_vehicle8_MASK(0x24,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+
+alternative_sprites (spriteset_train_RAINBOWSLUGrear, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) 	{template_32bpp_x1_vehicle8_MASK(0x01,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_RAINBOWSLUGmiddle, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x02,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+
+
+//==============================================================================================================================
+//CUSTOM HEADS
+switch(FEAT_TRAINS,PARENT, random_RAINBOWSLUG_HEAD, random_bits & 0x1F){
+0..9: spriteset_train_RAINBOWSLUGfront;
+10: spriteset_train_RAINBOWSLUGfront_cat;
+11..17: spriteset_train_RAINBOWSLUGfront_unicorn;
+18..27: spriteset_train_RAINBOWSLUGfront_eye;
+28..31: spriteset_train_RAINBOWSLUGfront_hat;
+}
+
+//FORWARD MODE
+switch (FEAT_TRAINS, SELF, switch_RAINBOWSLUG_front_head_consist_rear, position_in_consist_from_end){
+0: spriteset_train_RAINBOWSLUGrear;
+return spriteset_train_RAINBOWSLUGmiddle;
+}
+switch (FEAT_TRAINS, SELF, switch_RAINBOWSLUG_front_head, position_in_consist){
+0: random_RAINBOWSLUG_HEAD;
+return switch_RAINBOWSLUG_front_head_consist_rear;
+}
+
+//REVERSED mode
+switch (FEAT_TRAINS, SELF, switch_RAINBOWSLUG_rear_head_consist_rear, position_in_consist_from_end){
+0: random_RAINBOWSLUG_HEAD;
+return spriteset_train_RAINBOWSLUGmiddle;
+}
+switch (FEAT_TRAINS, SELF, switch_RAINBOWSLUG_rear_head, position_in_consist){
+0: spriteset_train_RAINBOWSLUGrear;
+return switch_RAINBOWSLUG_rear_head_consist_rear;
+}
+
+//Switches for BACKWARDS MODE chance
+switch(FEAT_TRAINS,PARENT, RAINBOWSLUG_reverse_random, (random_bits >> 5) & 0x07){
+0: switch_RAINBOWSLUG_rear_head;
+1..7: switch_RAINBOWSLUG_front_head;
+}
+
+//==============================================================================================================================
+// RAINBOW ZEBRAS
+//==============================================================================================================================
+
+	//RANDOM ZEBRA SECONDARY COLOUR
+	switch(FEAT_TRAINS,SELF,RAINBOWZEBRA_rainbowcolours,position_in_consist % 10){
+	0: base_sprite_2cc + 8 + 16 * company_colour2;//CC blue
+	1: base_sprite_2cc + 8 + 16 * company_colour2;//CC blue
+	2: base_sprite_2cc + 6 + 16 * company_colour2;//CC green
+	3: base_sprite_2cc + 6 + 16 * company_colour2;//CC green
+	4: base_sprite_2cc + 3 + 16 * company_colour2;//CC yellow
+	5: base_sprite_2cc + 3 + 16 * company_colour2;//CC yellow
+	6: base_sprite_2cc + 4 + 16 * company_colour2;//CC red
+	7: base_sprite_2cc + 4 + 16 * company_colour2;//CC red
+	8: base_sprite_2cc + 11 + 16 * company_colour2;//CC purple
+	9: base_sprite_2cc + 11 + 16 * company_colour2;//CC purple
+	}
+	
+	
+	//BLACK AND WHITE ZEBRAS + a secondary colour
+	switch(FEAT_TRAINS,SELF,RAINBOWSLUG_BLACKRAINBOWZEBRA,position_in_consist % 2){
+	1: RAINBOWZEBRA_rainbowcolours;
+	0: param[01]+16;
+	}
+	switch(FEAT_TRAINS,SELF,RAINBOWSLUG_WHITERAINBOWZEBRA,position_in_consist % 2){
+	1: RAINBOWZEBRA_rainbowcolours;
+	0: base_sprite_2cc + 15 + 16 * company_colour2;//CC white
+	}
+	
+//==============================================================================================================================
+// SOLID COLOUR ZEBRAS
+//==============================================================================================================================
+	
+	//ZEBRA COLOUR OPTIONS
+	switch(FEAT_TRAINS,SELF,RAINBOWSLUG_ZEBRA_PINK,position_in_consist % 2){
+	1: base_sprite_2cc + 2 + 16 * company_colour2;//CC pink
+	0: param[01]+16;
+	}
+	switch(FEAT_TRAINS,SELF,RAINBOWSLUG_ZEBRA_YELLOW,position_in_consist % 2){
+	1: base_sprite_2cc + 3 + 16 * company_colour2;//CC yellow
+	0: param[01]+16;
+	}
+	switch(FEAT_TRAINS,SELF,RAINBOWSLUG_ZEBRA_RED,position_in_consist % 2){
+	1: base_sprite_2cc + 4 + 16 * company_colour2;//CC red
+	0: param[01]+16;
+	}
+	switch(FEAT_TRAINS,SELF,RAINBOWSLUG_ZEBRA_GREEN,position_in_consist % 2){
+	1: base_sprite_2cc + 6 + 16 * company_colour2;//CC green
+	0: param[01]+16;
+	}
+	switch(FEAT_TRAINS,SELF,RAINBOWSLUG_ZEBRA_BLUE,position_in_consist % 2){
+	1: base_sprite_2cc + 8 + 16 * company_colour2;//CC blue
+	0: param[01]+16;
+	}
+	switch(FEAT_TRAINS,SELF,RAINBOWSLUG_ZEBRA_WHITE,position_in_consist % 2){
+	1: base_sprite_2cc + 15 + 16 * company_colour2;//CC white
+	0: param[01]+16;
+	}
+	switch(FEAT_TRAINS,SELF,RAINBOWSLUG_ZEBRA_ORANGE,position_in_consist % 2){
+	1: base_sprite_2cc + 12 + 16 * company_colour2;//CC orange
+	0: param[01]+16;
+	}
+	switch(FEAT_TRAINS,SELF,RAINBOWSLUG_ZEBRA_PURPLE,position_in_consist % 2){
+	1: base_sprite_2cc + 11 + 16 * company_colour2;//CC purple
+	0: param[01]+16;
+	}
+	
+//==============================================================================================================================
+// RAINBOW SLUGS
+//==============================================================================================================================
+	
+	//SUB-RANDOMIZER - RAINBOW SLUG colour scheme
+	switch(FEAT_TRAINS,SELF,RAINBOWSLUG_CAT,position_in_consist % 5){
+	0: base_sprite_2cc + 8 + 16 * company_colour2;//CC blue
+	1: base_sprite_2cc + 6 + 16 * company_colour2;//CC green
+	2: base_sprite_2cc + 3 + 16 * company_colour2;//CC yellow
+	3: base_sprite_2cc + 4 + 16 * company_colour2;//CC red
+	4: base_sprite_2cc + 11 + 16 * company_colour2;//CC purple
+	}
+	
+
+//==============================================================================================================================
+//MAIN RANDOMIZER
+//==============================================================================================================================
+
+switch(FEAT_TRAINS,PARENT,RAINBOWSLUG_colour_mapping_random, [
+	STORE_TEMP(position_in_consist_from_end, 0x10F),
+	var[0x61, 8, 0x1F, 0x5F] // access random bits from last vehicle in consist
+]){
+	0: base_sprite_2cc + 0 + 16 * company_colour2;//CC dark blue
+	1: base_sprite_2cc + 1 + 16 * company_colour2;//CC pale green
+	2: base_sprite_2cc + 2 + 16 * company_colour2;//CC pink
+	3: base_sprite_2cc + 3 + 16 * company_colour2;//CC yellow
+	4: base_sprite_2cc + 4 + 16 * company_colour2;//CC red
+	5: base_sprite_2cc + 5 + 16 * company_colour2;//CC light blue
+	6: base_sprite_2cc + 6 + 16 * company_colour2;//CC green
+	7: base_sprite_2cc + 7 + 16 * company_colour2;//CC dark green
+	8: base_sprite_2cc + 8 + 16 * company_colour2;//CC blue
+	9: base_sprite_2cc + 9 + 16 * company_colour2;//CC cream
+	10: base_sprite_2cc + 10 + 16 * company_colour2;//CC mauve
+	11: base_sprite_2cc + 11 + 16 * company_colour2;//CC purple
+	12: base_sprite_2cc + 12 + 16 * company_colour2;//CC orange
+	13: base_sprite_2cc + 13 + 16 * company_colour2;//CC brown
+	14: base_sprite_2cc + 14 + 16 * company_colour2;//CC gray
+	15: base_sprite_2cc + 15 + 16 * company_colour2;//CC white
+	16: RAINBOWSLUG_ZEBRA_PINK;//CC dark blue
+	17: RAINBOWSLUG_ZEBRA_YELLOW;//CC pale green
+	18: RAINBOWSLUG_ZEBRA_RED;//CC pink
+	19: RAINBOWSLUG_ZEBRA_GREEN;//CC yellow
+	20: RAINBOWSLUG_ZEBRA_BLUE;//CC red
+	21..22: RAINBOWSLUG_ZEBRA_WHITE;//CC light blue
+	23: RAINBOWSLUG_ZEBRA_ORANGE;//CC green
+	24: RAINBOWSLUG_ZEBRA_PURPLE;//CC dark green
+	25..26: RAINBOWSLUG_CAT;
+	27: param[01]+16; //BLACK
+	28..29: RAINBOWSLUG_BLACKRAINBOWZEBRA;
+	30..31: RAINBOWSLUG_WHITERAINBOWZEBRA;
+}
+	
+	
+//==============================================================================================================================	
+//CHECK FOR WETRAIL	
+	
+switch(FEAT_TRAINS, SELF, RAINBOWSLUG_wetrail_power_switch, current_railtype){
+WETR: 32500*7/10;
+32500;
+}	
+	
+	
+//==============================================================================================================================	
+
+//CHECK FOR WAGONS so they do not recolour with other engines
+switch(FEAT_TRAINS,PARENT,RAINBOWWAGONS_enginecheck,vehicle_type_id){
+item_RAINBOWSLUG: RAINBOWSLUG_colour_mapping_random;
+CB_FAILED;
+}	
+
+//==============================================================================================================================
+// ITEM
+//==============================================================================================================================
+switch (FEAT_TRAINS, SELF, switch_RAINBOWSLUG_attach, vehicle_type_id){
+	item_magpax: CB_RESULT_ATTACH_ALLOW;
+	item_maglevhopper: CB_RESULT_ATTACH_ALLOW;
+	item_maglevflatbed: CB_RESULT_ATTACH_ALLOW;
+	item_maglevtanker: CB_RESULT_ATTACH_ALLOW;
+	item_maglevuniversal: CB_RESULT_ATTACH_ALLOW;
+	item_RAINBOWSLUG: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mglv_freight);
+}
+item(FEAT_TRAINS, item_RAINBOWSLUG, 323) { //ID323
+	property {
+		name:                         string(STR_NAME_RAINBOWSLUG);
+        climates_available:           ALL_CLIMATES;
+        introduction_date:            date(2099, 1, 1);
+        model_life:                   VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                 255;
+        reliability_decay:            5;
+		//Just an engine, no refit
+        refittable_cargo_classes:     bitmask();
+        non_refittable_cargo_classes: bitmask();
+
+        loading_speed:                5;
+        cost_factor:                  10;
+        running_cost_factor:          100;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        speed:                        350 km/h;
+        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
+        refit_cost:                   0;
+        track_type:                   MGLV;
+		curve_speed_mod:              1;
+        ai_special_flag:              AI_FLAG_CARGO;
+        power:                        20000 hp;
+        running_cost_base:            RUNNING_COST_ELECTRIC;
+        dual_headed:                  1;
+        cargo_capacity:               0;
+        weight:                       30 ton;
+        ai_engine_rank:               0;
+        engine_class:                 ENGINE_CLASS_MAGLEV;
+        extra_power_per_wagon:        0 kW;
+        tractive_effort_coefficient:  1;
+        air_drag_coefficient:         0.004;
+        length: 8;
+        visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
+        extra_weight_per_wagon:       0 ton;
+        bitmask_vehicle_info:         0;
+	}
+	graphics {
+		default: RAINBOWSLUG_reverse_random;//SLUGreverseswitch;
+		can_attach_wagon: switch_RAINBOWSLUG_attach;
+		additional_text: string(info_mglv_RAINBOW_SLUG);
+		purchase: spriteset_purchaseMenu_RAINBOWSLUG;
+		speed: 							264; //maybe for wagons later, not now
+		power: 							RAINBOWSLUG_wetrail_power_switch; //engine only
+		weight: 							100; //engine only
+		tractive_effort_coefficient:		255; //engine only
+		loading_speed:					switch_pax_loadspeed; //express engines AND all wagons
+		//cargo_capacity:					magpaxSLUG_capacity_switch; //express engines AND all wagons
+		//purchase_cargo_capacity:		magpax_capacity_switch; //express engines A
+		purchase_power: 32500;
+		cost_factor:						40; //everything
+		running_cost_factor:				100; //only engines
+		colour_mapping: RAINBOWSLUG_colour_mapping_random;
+		purchase_colour_mapping: CB_FAILED;
+				}
+
+}
