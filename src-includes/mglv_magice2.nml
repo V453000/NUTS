@@ -1,9 +1,12 @@
 
 //MAGLEV ICE 2
-spriteset(spriteset_purchaseMenu_magice2, 			"gfx/PurchaseMenu.png"){template_purchaseMenu2(4,16)}
-spriteset(spriteset_train_MagICE2pass, "gfx/MagICE.png") { template_engine32WTF_mag(0, 1) }
-spriteset(spriteset_train_MagICE2mail, "gfx/MagICE.png") { template_engine32WTF_mag(184, 1) }
-spriteset(spriteset_train_MagICE2gold, "gfx/MagICE.png") { template_engine32WTF_mag(368, 1) }
+spriteset(spriteset_purchaseMenu_magice2, 			"gfx/PurchaseMenu.png"){template_purchaseMenu(4,16)}
+spriteset(spriteset_train_MagICE2pass, "gfx/MagICE.png") { template_engine32WTF_mag_articulated_hack(  0, 1, 4) }
+spriteset(spriteset_train_MagICE2mail, "gfx/MagICE.png") { template_engine32WTF_mag_articulated_hack(184, 1, 4) }
+spriteset(spriteset_train_MagICE2gold, "gfx/MagICE.png") { template_engine32WTF_mag_articulated_hack(368, 1, 4) }
+spriteset(spriteset_train_MagICE2pass_end, "gfx/MagICE.png") { template_engine32WTF_mag_end_articulated_hack(  0, 1, 0) }
+spriteset(spriteset_train_MagICE2mail_end, "gfx/MagICE.png") { template_engine32WTF_mag_end_articulated_hack(184, 1, 0) }
+spriteset(spriteset_train_MagICE2gold_end, "gfx/MagICE.png") { template_engine32WTF_mag_end_articulated_hack(368, 1, 0) }
 
 switch (FEAT_TRAINS, SELF, magice2_cargosprite, cargo_type_in_veh){
 PASS: spriteset_train_MagICE2pass;
@@ -15,6 +18,25 @@ YETI: spriteset_train_MagICE2mail;
 YETY: spriteset_train_MagICE2gold;
 spriteset_train_MagICE2gold;
 }
+switch (FEAT_TRAINS, SELF, magice2_cargosprite_end, cargo_type_in_veh){
+PASS: spriteset_train_MagICE2pass_end;
+MAIL: spriteset_train_MagICE2mail_end;
+GOLD: spriteset_train_MagICE2gold_end;
+DIAM: spriteset_train_MagICE2gold_end;
+VALU: spriteset_train_MagICE2gold_end;
+YETI: spriteset_train_MagICE2mail_end;
+YETY: spriteset_train_MagICE2gold_end;
+spriteset_train_MagICE2gold_end;
+}
+
+//#include src-generated/magice2_graphics.nml
+
+switch(FEAT_TRAINS, SELF, switch_magice2_curve_speed, num_vehs_in_consist) {
+    1..4:   529; //TL1
+    5..6:   321;
+    7..8:   256; //TL2
+    256;
+}
 switch(FEAT_TRAINS, SELF, magice2_wetrail_power_switch, current_railtype){
 WETR: 18000*7/10;
 18000;
@@ -24,6 +46,13 @@ switch(FEAT_TRAINS, SELF, switch_magice2_attach, vehicle_type_id){
 	item_magice2:            CB_RESULT_ATTACH_ALLOW;
 	item_magpax: CB_RESULT_ATTACH_ALLOW;
 	string(error_attach_mglv_express);
+}
+
+switch (FEAT_TRAINS, SELF, switch_magice2_articulated, extra_callback_info1){
+	1: item_magice2;
+	2: item_magice2;
+	3: item_magice2;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 }
 
 item(FEAT_TRAINS, item_magice2, 273) { //ID273
@@ -51,7 +80,7 @@ item(FEAT_TRAINS, item_magice2, 273) { //ID273
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        25000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
-        dual_headed:                  1;
+        dual_headed:                  0;
 
         weight:                       110 ton;
         ai_engine_rank:               0;
@@ -65,19 +94,20 @@ item(FEAT_TRAINS, item_magice2, 273) { //ID273
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-		default: magice2_cargosprite;
+		default: magice2_graphics;
 		purchase: spriteset_purchaseMenu_magice2;
 		can_attach_wagon: switch_magice2_attach;
 		cargo_capacity: magice_capacity_switch;
 		//purchase_cargo_capacity: 10;
 		additional_text: string(info_mglv_intercity_2);
 		speed: 							340; //maybe for wagons later, not now
+    curve_speed_mod: switch_magice2_curve_speed;
 		power: 							magice2_wetrail_power_switch; //engine only
 		weight: 							100; //engine only
 		tractive_effort_coefficient:		255; //engine only
 		loading_speed:					switch_pax_loadspeed; //express engines AND all wagons
 		cost_factor:						34; //everything
 		running_cost_factor:				100; //only engines
-		purchase_power: 18000;
+    articulated_part: switch_magice2_articulated;
 		}
 }

@@ -57,20 +57,20 @@ DIAM: 16;
 }
 */
 switch (FEAT_TRAINS, SELF, magice_capacity_switch, cargo_type_in_veh) {
-PASS: 30;
-MAIL: 15;
-VALU: 10;
-GOLD: 10;
-DIAM: 10;
+PASS: 15;
+MAIL: 8;
+VALU: 5;
+GOLD: 5;
+DIAM: 5;
 15;
 }
 switch (FEAT_TRAINS, SELF, magice_35capacity_switch, cargo_type_in_veh) {
-PASS: 35;
-MAIL: 20;
-VALU: 15;
-GOLD: 15;
-DIAM: 15;
-20;
+PASS: 18;
+MAIL: 10;
+VALU: 8;
+GOLD: 8;
+DIAM: 8;
+10;
 }
 
 switch (FEAT_TRAINS, SELF, magpax30_capacity_switch, cargo_type_in_veh) {

@@ -1,20 +1,20 @@
 //--------------------------------------------------------------------------------------------------------------------------------
 // active/inactive overlay
-switch (FEAT_TRAINS,SELF, magice1_switch_outcome_switch_overlay, position_in_articulated_veh){
+switch (FEAT_TRAINS,SELF, magice3_switch_outcome_switch_overlay, position_in_articulated_veh){
   0: sprite_attach_4_active;
   sprite_attach_4_inactive;
 }
 //--------------------------------------------------------------------------------------------------------------------------------
 // wagon drawing
-switch (FEAT_TRAINS,SELF, magice1_switch_outcome_switch_wagon_layers, [
+switch (FEAT_TRAINS,SELF, magice3_switch_outcome_switch_wagon_layers, [
   STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 4 ? CB_FLAG_MORE_SPRITES  : 0) + PALETTE_USE_DEFAULT, 0x100),
   getbits(extra_callback_info1, 8, 8)
   ]){
-  0: magice1_switch_outcome_switch_overlay;
+  0: magice3_switch_outcome_switch_overlay;
   1: switch_pax_wagons_maglev;
 }
-switch(FEAT_TRAINS, PARENT, magice1_switch_outcome_switch_wagon, vehicle_is_stopped + vehicle_is_in_depot){
-  2: magice1_switch_outcome_switch_wagon_layers;
+switch(FEAT_TRAINS, PARENT, magice3_switch_outcome_switch_wagon, vehicle_is_stopped + vehicle_is_in_depot){
+  2: magice3_switch_outcome_switch_wagon_layers;
   switch_pax_wagons_maglev;
 }
 //--------------------------------------------------------------------------------------------------------------------------------
@@ -26,13 +26,13 @@ switch(FEAT_TRAINS, PARENT, magice1_switch_outcome_switch_wagon, vehicle_is_stop
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------------------------------------------------
-switch(FEAT_TRAINS, SELF, magice1_draw2_both_end, position_in_consist_from_end){
+switch(FEAT_TRAINS, SELF, magice3_draw2_both_end, position_in_consist_from_end){
   0: sprite_INVISIBLE;
-  1: magice1_cargosprite_end;
-  magice1_switch_outcome_switch_wagon;
+  1: magice3_cargosprite_end;
+  magice3_switch_outcome_switch_wagon;
 }
-switch(FEAT_TRAINS, SELF, magice1_graphics, position_in_consist){
+switch(FEAT_TRAINS, SELF, magice3_graphics, position_in_consist){
   0: sprite_INVISIBLE;
-  1: magice1_cargosprite;
-  magice1_draw2_both_end;
+  1: magice3_cargosprite;
+  magice3_draw2_both_end;
 }

@@ -1445,6 +1445,9 @@ freight_short_normal_list = [
 intercity_short_list = [
   # veh_name      veh_id     output      output_end       wagon output
   ['magice1', 271, 'magice1_cargosprite', 'magice1_cargosprite_end', 'switch_pax_wagons_maglev'],
+  ['magice2', 273, 'magice2_cargosprite', 'magice2_cargosprite_end', 'switch_pax_wagons_maglev'],
+  ['magice3', 275, 'magice3_cargosprite', 'magice3_cargosprite_end', 'switch_pax_wagons_maglev'],
+  ['magice4', 277, 'magice4_cargosprite', 'magice4_cargosprite_end', 'switch_pax_wagons_maglev'],
 ]
 freight_very_short_normal_powered_list = [
   # veh_name      veh_id     output      output_end       wagon output

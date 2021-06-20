@@ -110,6 +110,5 @@ item(FEAT_TRAINS, item_magice1, 271) { //ID271
 		cost_factor:						33; //everything
 		running_cost_factor:				100; //only engines
 		articulated_part: switch_magice1_articulated;
-		purchase_power: 15000;
 	}
 }
