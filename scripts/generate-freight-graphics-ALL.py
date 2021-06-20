@@ -586,7 +586,7 @@ def generate_draw_switches_short_intercity(args):
     # ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     # the many drawing switches ---------------------------------------------------------------------------------------------------------------------------
     # ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-    for i in range(1, 65):
+    for i in range(2, 3):
 
       # ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
       # dual headed drawing ---------------------------------------------------------------------------------------------------------------------------
@@ -609,10 +609,10 @@ def generate_draw_switches_short_intercity(args):
         spritesheet = outcome_switch_back + ';\n'
         default_spritesheet = '  ' + outcome_switch_wagon + ';\n'
         
-        #for n in range(0, int(i_test*1)):
-        #  spritesheet = outcome_switch_back + ';\n'
-        #  output_nml.write('  ' + str(n) + ': ' + spritesheet)
-        output_nml.write('  ' + i_text + ': ' + spritesheet)
+        for n in range(0, int(i_test*1)):
+          spritesheet = outcome_switch_back + ';\n'
+          output_nml.write('  ' + str(n) + ': ' + outcome_invisible + ';\n')
+        output_nml.write('  ' + str(n+1) + ': ' + spritesheet)
         
         output_nml.write(default_spritesheet)
         output_nml.write('}\n')
@@ -621,7 +621,8 @@ def generate_draw_switches_short_intercity(args):
       # write no _end version
       # ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
       # write switch header
-      output_nml.write('switch(FEAT_TRAINS, SELF, ' + veh_name + '_draw' + str(i) + '_both' + ', position_in_consist){\n')
+      #output_nml.write('switch(FEAT_TRAINS, SELF, ' + veh_name + '_draw' + str(i) + '_both' + ', position_in_consist){\n')
+      output_nml.write('switch(FEAT_TRAINS, SELF, ' + veh_name + '_graphics' + ', position_in_consist){\n')#custom
       # do stuff with i
       i_half = float(i)/2
       i_test = math.ceil(i_half)#floor for _end
@@ -632,6 +633,7 @@ def generate_draw_switches_short_intercity(args):
         i_text = ''
       
       spritesheet = outcome_switch_front + ';\n'
+      #default_spritesheet = '  ' + veh_name + '_draw' + str(i) + '_both' + '_end;\n'
       default_spritesheet = '  ' + veh_name + '_draw' + str(i) + '_both' + '_end;\n'
       if i == 1:
         default_spritesheet = '  ' + outcome_switch_wagon +';\n'
@@ -648,6 +650,7 @@ def generate_draw_switches_short_intercity(args):
 
       # -----------------------------------------------------------------------------------------------------------------------------------------------
       # front drawing ---------------------------------------------------------------------------------------------------------------------------------
+      '''
       output_nml.write('switch(FEAT_TRAINS, SELF, ' + veh_name + '_draw' + str(i) + '_front' + ', position_in_consist){\n')
       for n in range(0, i*2):
         default_spritesheet = '  ' + outcome_switch_wagon + ';\n'
@@ -658,22 +661,28 @@ def generate_draw_switches_short_intercity(args):
         output_nml.write('  ' + str(n) + ': ' + spritesheet)
       output_nml.write(default_spritesheet)
       output_nml.write('}\n')
-
+      '''
       # -----------------------------------------------------------------------------------------------------------------------------------------------
       # draw method switch
+      '''
       output_nml.write('switch(FEAT_TRAINS, PARENT, ' + veh_name + '_draw' + str(i) + ', [')
       output_nml.write('\n  STORE_TEMP(position_in_consist_from_end, 0x10F), var[0x61, 0, 0xFFFF, 0xC6]')
       output_nml.write('\n  ]){')
       output_nml.write('\n  ' + str(veh_id) + ': ' + veh_name + '_draw' + str(i) + '_both' + ';')
       output_nml.write('\n  ' + veh_name + '_draw' + str(i) + '_front' + ';')
       output_nml.write('\n  }\n')
-      
-      # separator
-      output_nml.write('//' + '-'*128 + '\n')
-      output_nml.write('//' + '-'*128 + '\n')
-      output_nml.write('//' + '-'*128 + '\n')
+      '''
 
+      # separator
+      '''
+      output_nml.write('//' + '-'*128 + '\n')
+      output_nml.write('//' + '-'*128 + '\n')
+      output_nml.write('//' + '-'*128 + '\n')
+      '''
+
+    
     # count_veh_id decider
+    '''
     output_nml.write('switch(FEAT_TRAINS, PARENT, ' + veh_name + '_graphics' + ',')
     output_nml.write('\n  count_veh_id(' + str(veh_id) + ') ' + '){')
     for i in range(0,64):
@@ -681,9 +690,11 @@ def generate_draw_switches_short_intercity(args):
       end = i*4+4
       if i == 0:
         start = 0
-      output_nml.write('\n  ' + str(start) + '..' + str(end) + ': ' + veh_name + '_draw'  + str(i+1) + ';')
-    output_nml.write('\n  ' + veh_name + '_draw' + str(i+1) + ';')
+      #output_nml.write('\n  ' + str(start) + '..' + str(end) + ': ' + veh_name + '_draw'  + str(i+1) + ';')
+    #output_nml.write('\n  ' + veh_name + '_draw' + str(i+1) + ';')
+    output_nml.write('\n  ' + veh_name + '_draw2_both' + ';')#special for only draw2
     output_nml.write('\n}')
+    '''
 
 def generate_draw_switches_very_short_normal_powered(args):
   veh_name = args[0]

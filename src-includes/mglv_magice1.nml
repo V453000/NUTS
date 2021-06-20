@@ -4,9 +4,9 @@ spriteset(spriteset_purchaseMenu_magice1, 			"gfx/PurchaseMenu.png"){template_pu
 spriteset(spriteset_train_MagICE1pass, "gfx/MagICE.png") { template_engine32WTF_mag_articulated_hack(  0, 0, 4) }
 spriteset(spriteset_train_MagICE1mail, "gfx/MagICE.png") { template_engine32WTF_mag_articulated_hack(184, 0, 4) }
 spriteset(spriteset_train_MagICE1gold, "gfx/MagICE.png") { template_engine32WTF_mag_articulated_hack(368, 0, 4) }
-spriteset(spriteset_train_MagICE1pass_end, "gfx/MagICE.png") { template_engine32WTF_mag_end_articulated_hack(  0, 0, 4) }
-spriteset(spriteset_train_MagICE1mail_end, "gfx/MagICE.png") { template_engine32WTF_mag_end_articulated_hack(184, 0, 4) }
-spriteset(spriteset_train_MagICE1gold_end, "gfx/MagICE.png") { template_engine32WTF_mag_end_articulated_hack(368, 0, 4) }
+spriteset(spriteset_train_MagICE1pass_end, "gfx/MagICE.png") { template_engine32WTF_mag_end_articulated_hack(  0, 0, 0) }
+spriteset(spriteset_train_MagICE1mail_end, "gfx/MagICE.png") { template_engine32WTF_mag_end_articulated_hack(184, 0, 0) }
+spriteset(spriteset_train_MagICE1gold_end, "gfx/MagICE.png") { template_engine32WTF_mag_end_articulated_hack(368, 0, 0) }
 
 switch (FEAT_TRAINS, SELF, magice1_cargosprite, cargo_type_in_veh){
 PASS: spriteset_train_MagICE1pass;
