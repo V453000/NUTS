@@ -158,59 +158,59 @@ switch (FEAT_TRAINS, PARENT, pax_mglv_capacity_switch, vehicle_type_id) {
 
 
 //colours magcom1
-spriteset(spriteset_magcom1_wagons_CC_pass, "gfx/magCommuter1wagons.png") 		 {template_wagon16(0,0)}
-spriteset(spriteset_magcom1_wagons_black_pass, "gfx/magCommuter1wagons.png")	 {template_wagon16(0,1)}
-spriteset(spriteset_magcom1_wagons_gray_pass, "gfx/magCommuter1wagons.png")	 {template_wagon16(0,2)}
-spriteset(spriteset_magcom1_wagons_white_pass, "gfx/magCommuter1wagons.png")	 {template_wagon16(0,3)}
-spriteset(spriteset_magcom1_wagons_ltblue_pass, "gfx/magCommuter1wagons.png")	 {template_wagon16(0,4)}
-spriteset(spriteset_magcom1_wagons_blue_pass, "gfx/magCommuter1wagons.png") 	 {template_wagon16(0,5)}
-spriteset(spriteset_magcom1_wagons_darkblue_pass, "gfx/magCommuter1wagons.png") {template_wagon16(0,6)}
-spriteset(spriteset_magcom1_wagons_mauve_pass, "gfx/magCommuter1wagons.png") 	 {template_wagon16(0,7)}
-spriteset(spriteset_magcom1_wagons_purple_pass, "gfx/magCommuter1wagons.png")   {template_wagon16(0,8)}
-spriteset(spriteset_magcom1_wagons_pink_pass, "gfx/magCommuter1wagons.png")  	 {template_wagon16(0,9)}
-spriteset(spriteset_magcom1_wagons_brown_pass, "gfx/magCommuter1wagons.png") 	 {template_wagon16(0,10)}
-spriteset(spriteset_magcom1_wagons_red_pass, "gfx/magCommuter1wagons.png") 	 {template_wagon16(0,11)}
-spriteset(spriteset_magcom1_wagons_orange_pass, "gfx/magCommuter1wagons.png") 	 {template_wagon16(0,12)}
-spriteset(spriteset_magcom1_wagons_yellow_pass, "gfx/magCommuter1wagons.png") 	 {template_wagon16(0,13)}
-spriteset(spriteset_magcom1_wagons_green_pass, "gfx/magCommuter1wagons.png") 	 {template_wagon16(0,14)}
-spriteset(spriteset_magcom1_wagons_palegreen_pass, "gfx/magCommuter1wagons.png"){template_wagon16(0,15)}
-spriteset(spriteset_magcom1_wagons_darkgreen_pass, "gfx/magCommuter1wagons.png") 	 {template_wagon16(0,16)}
+spriteset(spriteset_magcom1_wagons_CC_pass, "gfx/magCommuter1wagons.png") 		 {template_wagon16( 0,  0 )}
+spriteset(spriteset_magcom1_wagons_black_pass, "gfx/magCommuter1wagons.png")	 {template_wagon16( 0,  1 )}
+spriteset(spriteset_magcom1_wagons_gray_pass, "gfx/magCommuter1wagons.png")	     {template_wagon16( 0,  2 )}
+spriteset(spriteset_magcom1_wagons_white_pass, "gfx/magCommuter1wagons.png")	 {template_wagon16( 0,  3 )}
+spriteset(spriteset_magcom1_wagons_ltblue_pass, "gfx/magCommuter1wagons.png")	 {template_wagon16( 0,  4 )}
+spriteset(spriteset_magcom1_wagons_blue_pass, "gfx/magCommuter1wagons.png") 	 {template_wagon16( 0,  5 )}
+spriteset(spriteset_magcom1_wagons_darkblue_pass, "gfx/magCommuter1wagons.png")  {template_wagon16( 0,  6 )}
+spriteset(spriteset_magcom1_wagons_mauve_pass, "gfx/magCommuter1wagons.png") 	 {template_wagon16( 0,  7 )}
+spriteset(spriteset_magcom1_wagons_purple_pass, "gfx/magCommuter1wagons.png")    {template_wagon16( 0,  8 )}
+spriteset(spriteset_magcom1_wagons_pink_pass, "gfx/magCommuter1wagons.png")  	 {template_wagon16( 0,  9 )}
+spriteset(spriteset_magcom1_wagons_brown_pass, "gfx/magCommuter1wagons.png") 	 {template_wagon16( 0, 10 )}
+spriteset(spriteset_magcom1_wagons_red_pass, "gfx/magCommuter1wagons.png") 	     {template_wagon16( 0, 11 )}
+spriteset(spriteset_magcom1_wagons_orange_pass, "gfx/magCommuter1wagons.png") 	 {template_wagon16( 0, 12 )}
+spriteset(spriteset_magcom1_wagons_yellow_pass, "gfx/magCommuter1wagons.png") 	 {template_wagon16( 0, 13 )}
+spriteset(spriteset_magcom1_wagons_green_pass, "gfx/magCommuter1wagons.png") 	 {template_wagon16( 0, 14 )}
+spriteset(spriteset_magcom1_wagons_palegreen_pass, "gfx/magCommuter1wagons.png") {template_wagon16( 0, 15 )}
+spriteset(spriteset_magcom1_wagons_darkgreen_pass, "gfx/magCommuter1wagons.png") {template_wagon16( 0, 16 )}
 
-spriteset(spriteset_magcom1_wagons_CC_mail, "gfx/magCommuter1wagons.png") 		 {template_wagon16(1,0)}
-spriteset(spriteset_magcom1_wagons_black_mail, "gfx/magCommuter1wagons.png")	 {template_wagon16(1,1)}
-spriteset(spriteset_magcom1_wagons_gray_mail, "gfx/magCommuter1wagons.png")	 {template_wagon16(1,2)}
-spriteset(spriteset_magcom1_wagons_white_mail, "gfx/magCommuter1wagons.png")	 {template_wagon16(1,3)}
-spriteset(spriteset_magcom1_wagons_ltblue_mail, "gfx/magCommuter1wagons.png")	 {template_wagon16(1,4)}
-spriteset(spriteset_magcom1_wagons_blue_mail, "gfx/magCommuter1wagons.png") 	 {template_wagon16(1,5)}
-spriteset(spriteset_magcom1_wagons_darkblue_mail, "gfx/magCommuter1wagons.png") {template_wagon16(1,6)}
-spriteset(spriteset_magcom1_wagons_mauve_mail, "gfx/magCommuter1wagons.png") 	 {template_wagon16(1,7)}
-spriteset(spriteset_magcom1_wagons_purple_mail, "gfx/magCommuter1wagons.png")   {template_wagon16(1,8)}
-spriteset(spriteset_magcom1_wagons_pink_mail, "gfx/magCommuter1wagons.png")  	 {template_wagon16(1,9)}
-spriteset(spriteset_magcom1_wagons_brown_mail, "gfx/magCommuter1wagons.png") 	 {template_wagon16(1,10)}
-spriteset(spriteset_magcom1_wagons_red_mail, "gfx/magCommuter1wagons.png") 	 {template_wagon16(1,11)}
-spriteset(spriteset_magcom1_wagons_orange_mail, "gfx/magCommuter1wagons.png") 	 {template_wagon16(1,12)}
-spriteset(spriteset_magcom1_wagons_yellow_mail, "gfx/magCommuter1wagons.png") 	 {template_wagon16(1,13)}
-spriteset(spriteset_magcom1_wagons_green_mail, "gfx/magCommuter1wagons.png") 	 {template_wagon16(1,14)}
-spriteset(spriteset_magcom1_wagons_palegreen_mail, "gfx/magCommuter1wagons.png"){template_wagon16(1,15)}
-spriteset(spriteset_magcom1_wagons_darkgreen_mail, "gfx/magCommuter1wagons.png") 	 {template_wagon16(1,16)}
+spriteset(spriteset_magcom1_wagons_CC_mail, "gfx/magCommuter1wagons.png") 		 {template_wagon16( 1,  0 )}
+spriteset(spriteset_magcom1_wagons_black_mail, "gfx/magCommuter1wagons.png")	 {template_wagon16( 1,  1 )}
+spriteset(spriteset_magcom1_wagons_gray_mail, "gfx/magCommuter1wagons.png")	     {template_wagon16( 1,  2 )}
+spriteset(spriteset_magcom1_wagons_white_mail, "gfx/magCommuter1wagons.png")	 {template_wagon16( 1,  3 )}
+spriteset(spriteset_magcom1_wagons_ltblue_mail, "gfx/magCommuter1wagons.png")	 {template_wagon16( 1,  4 )}
+spriteset(spriteset_magcom1_wagons_blue_mail, "gfx/magCommuter1wagons.png") 	 {template_wagon16( 1,  5 )}
+spriteset(spriteset_magcom1_wagons_darkblue_mail, "gfx/magCommuter1wagons.png")  {template_wagon16( 1,  6 )}
+spriteset(spriteset_magcom1_wagons_mauve_mail, "gfx/magCommuter1wagons.png") 	 {template_wagon16( 1,  7 )}
+spriteset(spriteset_magcom1_wagons_purple_mail, "gfx/magCommuter1wagons.png")    {template_wagon16( 1,  8 )}
+spriteset(spriteset_magcom1_wagons_pink_mail, "gfx/magCommuter1wagons.png")  	 {template_wagon16( 1,  9 )}
+spriteset(spriteset_magcom1_wagons_brown_mail, "gfx/magCommuter1wagons.png") 	 {template_wagon16( 1, 10 )}
+spriteset(spriteset_magcom1_wagons_red_mail, "gfx/magCommuter1wagons.png") 	     {template_wagon16( 1, 11 )}
+spriteset(spriteset_magcom1_wagons_orange_mail, "gfx/magCommuter1wagons.png") 	 {template_wagon16( 1, 12 )}
+spriteset(spriteset_magcom1_wagons_yellow_mail, "gfx/magCommuter1wagons.png") 	 {template_wagon16( 1, 13 )}
+spriteset(spriteset_magcom1_wagons_green_mail, "gfx/magCommuter1wagons.png") 	 {template_wagon16( 1, 14 )}
+spriteset(spriteset_magcom1_wagons_palegreen_mail, "gfx/magCommuter1wagons.png") {template_wagon16( 1, 15 )}
+spriteset(spriteset_magcom1_wagons_darkgreen_mail, "gfx/magCommuter1wagons.png") {template_wagon16( 1, 16 )}
 
-spriteset(spriteset_magcom1_wagons_CC_gold, "gfx/magCommuter1wagons.png") 		 {template_wagon16(2,0)}
-spriteset(spriteset_magcom1_wagons_black_gold, "gfx/magCommuter1wagons.png")	 {template_wagon16(2,1)}
-spriteset(spriteset_magcom1_wagons_gray_gold, "gfx/magCommuter1wagons.png")	 {template_wagon16(2,2)}
-spriteset(spriteset_magcom1_wagons_white_gold, "gfx/magCommuter1wagons.png")	 {template_wagon16(2,3)}
-spriteset(spriteset_magcom1_wagons_ltblue_gold, "gfx/magCommuter1wagons.png")	 {template_wagon16(2,4)}
-spriteset(spriteset_magcom1_wagons_blue_gold, "gfx/magCommuter1wagons.png") 	 {template_wagon16(2,5)}
-spriteset(spriteset_magcom1_wagons_darkblue_gold, "gfx/magCommuter1wagons.png") {template_wagon16(2,6)}
-spriteset(spriteset_magcom1_wagons_mauve_gold, "gfx/magCommuter1wagons.png") 	 {template_wagon16(2,7)}
-spriteset(spriteset_magcom1_wagons_purple_gold, "gfx/magCommuter1wagons.png")   {template_wagon16(2,8)}
-spriteset(spriteset_magcom1_wagons_pink_gold, "gfx/magCommuter1wagons.png")  	 {template_wagon16(2,9)}
-spriteset(spriteset_magcom1_wagons_brown_gold, "gfx/magCommuter1wagons.png") 	 {template_wagon16(2,10)}
-spriteset(spriteset_magcom1_wagons_red_gold, "gfx/magCommuter1wagons.png") 	 {template_wagon16(2,11)}
-spriteset(spriteset_magcom1_wagons_orange_gold, "gfx/magCommuter1wagons.png") 	 {template_wagon16(2,12)}
-spriteset(spriteset_magcom1_wagons_yellow_gold, "gfx/magCommuter1wagons.png") 	 {template_wagon16(2,13)}
-spriteset(spriteset_magcom1_wagons_green_gold, "gfx/magCommuter1wagons.png") 	 {template_wagon16(2,14)}
-spriteset(spriteset_magcom1_wagons_palegreen_gold, "gfx/magCommuter1wagons.png"){template_wagon16(2,15)}
-spriteset(spriteset_magcom1_wagons_darkgreen_gold, "gfx/magCommuter1wagons.png") 	 {template_wagon16(2,16)}
+spriteset(spriteset_magcom1_wagons_CC_gold, "gfx/magCommuter1wagons.png") 		 {template_wagon16( 2,  0 )}
+spriteset(spriteset_magcom1_wagons_black_gold, "gfx/magCommuter1wagons.png")	 {template_wagon16( 2,  1 )}
+spriteset(spriteset_magcom1_wagons_gray_gold, "gfx/magCommuter1wagons.png")	     {template_wagon16( 2,  2 )}
+spriteset(spriteset_magcom1_wagons_white_gold, "gfx/magCommuter1wagons.png")	 {template_wagon16( 2,  3 )}
+spriteset(spriteset_magcom1_wagons_ltblue_gold, "gfx/magCommuter1wagons.png")	 {template_wagon16( 2,  4 )}
+spriteset(spriteset_magcom1_wagons_blue_gold, "gfx/magCommuter1wagons.png") 	 {template_wagon16( 2,  5 )}
+spriteset(spriteset_magcom1_wagons_darkblue_gold, "gfx/magCommuter1wagons.png")  {template_wagon16( 2,  6 )}
+spriteset(spriteset_magcom1_wagons_mauve_gold, "gfx/magCommuter1wagons.png") 	 {template_wagon16( 2,  7 )}
+spriteset(spriteset_magcom1_wagons_purple_gold, "gfx/magCommuter1wagons.png")    {template_wagon16( 2,  8 )}
+spriteset(spriteset_magcom1_wagons_pink_gold, "gfx/magCommuter1wagons.png")  	 {template_wagon16( 2,  9 )}
+spriteset(spriteset_magcom1_wagons_brown_gold, "gfx/magCommuter1wagons.png") 	 {template_wagon16( 2, 10 )}
+spriteset(spriteset_magcom1_wagons_red_gold, "gfx/magCommuter1wagons.png") 	     {template_wagon16( 2, 11 )}
+spriteset(spriteset_magcom1_wagons_orange_gold, "gfx/magCommuter1wagons.png") 	 {template_wagon16( 2, 12 )}
+spriteset(spriteset_magcom1_wagons_yellow_gold, "gfx/magCommuter1wagons.png") 	 {template_wagon16( 2, 13 )}
+spriteset(spriteset_magcom1_wagons_green_gold, "gfx/magCommuter1wagons.png") 	 {template_wagon16( 2, 14 )}
+spriteset(spriteset_magcom1_wagons_palegreen_gold, "gfx/magCommuter1wagons.png") {template_wagon16( 2, 15 )}
+spriteset(spriteset_magcom1_wagons_darkgreen_gold, "gfx/magCommuter1wagons.png") {template_wagon16( 2, 16 )}
 
 
 
@@ -219,116 +219,171 @@ spriteset(spriteset_magcom1_wagons_darkgreen_gold, "gfx/magCommuter1wagons.png")
 
 
 //COLOURED SPRITES
-spriteset(spriteset_magcom1_CC_pass, "gfx/magCommuter1.png") 		 {template_engine32WTF_MagCom1(0,0)}
-spriteset(spriteset_magcom1_black_pass, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(0,1)}
-spriteset(spriteset_magcom1_gray_pass, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(0,2)}
-spriteset(spriteset_magcom1_white_pass, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(0,3)}
-spriteset(spriteset_magcom1_ltblue_pass, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(0,4)}
-spriteset(spriteset_magcom1_blue_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(0,5)}
-spriteset(spriteset_magcom1_darkblue_pass, "gfx/magCommuter1.png") {template_engine32WTF_MagCom1(0,6)}
-spriteset(spriteset_magcom1_mauve_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(0,7)}
-spriteset(spriteset_magcom1_purple_pass, "gfx/magCommuter1.png")   {template_engine32WTF_MagCom1(0,8)}
-spriteset(spriteset_magcom1_pink_pass, "gfx/magCommuter1.png")  	 {template_engine32WTF_MagCom1(0,9)}
-spriteset(spriteset_magcom1_brown_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(0,10)}
-spriteset(spriteset_magcom1_red_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(0,11)}
-spriteset(spriteset_magcom1_orange_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(0,12)}
-spriteset(spriteset_magcom1_yellow_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(0,13)}
-spriteset(spriteset_magcom1_green_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(0,14)}
-spriteset(spriteset_magcom1_palegreen_pass, "gfx/magCommuter1.png"){template_engine32WTF_MagCom1(0,15)}
-spriteset(spriteset_magcom1_darkgreen_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(0,16)}
+spriteset(spriteset_magcom1_CC_pass, "gfx/magCommuter1.png") 		 {template_engine32WTF_mag_articulated_hack( 0,  0, 4 )}
+spriteset(spriteset_magcom1_black_pass, "gfx/magCommuter1.png")	     {template_engine32WTF_mag_articulated_hack( 0,  1, 4 )}
+spriteset(spriteset_magcom1_gray_pass, "gfx/magCommuter1.png")	     {template_engine32WTF_mag_articulated_hack( 0,  2, 4 )}
+spriteset(spriteset_magcom1_white_pass, "gfx/magCommuter1.png")	     {template_engine32WTF_mag_articulated_hack( 0,  3, 4 )}
+spriteset(spriteset_magcom1_ltblue_pass, "gfx/magCommuter1.png")	 {template_engine32WTF_mag_articulated_hack( 0,  4, 4 )}
+spriteset(spriteset_magcom1_blue_pass, "gfx/magCommuter1.png") 	     {template_engine32WTF_mag_articulated_hack( 0,  5, 4 )}
+spriteset(spriteset_magcom1_darkblue_pass, "gfx/magCommuter1.png")   {template_engine32WTF_mag_articulated_hack( 0,  6, 4 )}
+spriteset(spriteset_magcom1_mauve_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_articulated_hack( 0,  7, 4 )}
+spriteset(spriteset_magcom1_purple_pass, "gfx/magCommuter1.png")     {template_engine32WTF_mag_articulated_hack( 0,  8, 4 )}
+spriteset(spriteset_magcom1_pink_pass, "gfx/magCommuter1.png")  	 {template_engine32WTF_mag_articulated_hack( 0,  9, 4 )}
+spriteset(spriteset_magcom1_brown_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_articulated_hack( 0, 10, 4 )}
+spriteset(spriteset_magcom1_red_pass, "gfx/magCommuter1.png") 	     {template_engine32WTF_mag_articulated_hack( 0, 11, 4 )}
+spriteset(spriteset_magcom1_orange_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_articulated_hack( 0, 12, 4 )}
+spriteset(spriteset_magcom1_yellow_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_articulated_hack( 0, 13, 4 )}
+spriteset(spriteset_magcom1_green_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_articulated_hack( 0, 14, 4 )}
+spriteset(spriteset_magcom1_palegreen_pass, "gfx/magCommuter1.png")  {template_engine32WTF_mag_articulated_hack( 0, 15, 4 )}
+spriteset(spriteset_magcom1_darkgreen_pass, "gfx/magCommuter1.png")  {template_engine32WTF_mag_articulated_hack( 0, 16, 4 )}
 
-spriteset(spriteset_magcom1_CC_mail, "gfx/magCommuter1.png") 		 {template_engine32WTF_MagCom1(184,0)}
-spriteset(spriteset_magcom1_black_mail, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(184,1)}
-spriteset(spriteset_magcom1_gray_mail, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(184,2)}
-spriteset(spriteset_magcom1_white_mail, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(184,3)}
-spriteset(spriteset_magcom1_ltblue_mail, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(184,4)}
-spriteset(spriteset_magcom1_blue_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(184,5)}
-spriteset(spriteset_magcom1_darkblue_mail, "gfx/magCommuter1.png") {template_engine32WTF_MagCom1(184,6)}
-spriteset(spriteset_magcom1_mauve_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(184,7)}
-spriteset(spriteset_magcom1_purple_mail, "gfx/magCommuter1.png")   {template_engine32WTF_MagCom1(184,8)}
-spriteset(spriteset_magcom1_pink_mail, "gfx/magCommuter1.png")  	 {template_engine32WTF_MagCom1(184,9)}
-spriteset(spriteset_magcom1_brown_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(184,10)}
-spriteset(spriteset_magcom1_red_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(184,11)}
-spriteset(spriteset_magcom1_orange_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(184,12)}
-spriteset(spriteset_magcom1_yellow_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(184,13)}
-spriteset(spriteset_magcom1_green_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(184,14)}
-spriteset(spriteset_magcom1_palegreen_mail, "gfx/magCommuter1.png"){template_engine32WTF_MagCom1(184,15)}
-spriteset(spriteset_magcom1_darkgreen_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(184,16)}
+spriteset(spriteset_magcom1_CC_mail, "gfx/magCommuter1.png") 		 {template_engine32WTF_mag_articulated_hack( 184,  0, 4 )}
+spriteset(spriteset_magcom1_black_mail, "gfx/magCommuter1.png")	     {template_engine32WTF_mag_articulated_hack( 184,  1, 4 )}
+spriteset(spriteset_magcom1_gray_mail, "gfx/magCommuter1.png")	     {template_engine32WTF_mag_articulated_hack( 184,  2, 4 )}
+spriteset(spriteset_magcom1_white_mail, "gfx/magCommuter1.png")	     {template_engine32WTF_mag_articulated_hack( 184,  3, 4 )}
+spriteset(spriteset_magcom1_ltblue_mail, "gfx/magCommuter1.png")	 {template_engine32WTF_mag_articulated_hack( 184,  4, 4 )}
+spriteset(spriteset_magcom1_blue_mail, "gfx/magCommuter1.png") 	     {template_engine32WTF_mag_articulated_hack( 184,  5, 4 )}
+spriteset(spriteset_magcom1_darkblue_mail, "gfx/magCommuter1.png")   {template_engine32WTF_mag_articulated_hack( 184,  6, 4 )}
+spriteset(spriteset_magcom1_mauve_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_articulated_hack( 184,  7, 4 )}
+spriteset(spriteset_magcom1_purple_mail, "gfx/magCommuter1.png")     {template_engine32WTF_mag_articulated_hack( 184,  8, 4 )}
+spriteset(spriteset_magcom1_pink_mail, "gfx/magCommuter1.png")  	 {template_engine32WTF_mag_articulated_hack( 184,  9, 4 )}
+spriteset(spriteset_magcom1_brown_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_articulated_hack( 184, 10, 4 )}
+spriteset(spriteset_magcom1_red_mail, "gfx/magCommuter1.png")    	 {template_engine32WTF_mag_articulated_hack( 184, 11, 4 )}
+spriteset(spriteset_magcom1_orange_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_articulated_hack( 184, 12, 4 )}
+spriteset(spriteset_magcom1_yellow_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_articulated_hack( 184, 13, 4 )}
+spriteset(spriteset_magcom1_green_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_articulated_hack( 184, 14, 4 )}
+spriteset(spriteset_magcom1_palegreen_mail, "gfx/magCommuter1.png")  {template_engine32WTF_mag_articulated_hack( 184, 15, 4 )}
+spriteset(spriteset_magcom1_darkgreen_mail, "gfx/magCommuter1.png")  {template_engine32WTF_mag_articulated_hack( 184, 16, 4 )}
 
-spriteset(spriteset_magcom1_CC_gold, "gfx/magCommuter1.png") 		 {template_engine32WTF_MagCom1(368,0)}
-spriteset(spriteset_magcom1_black_gold, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(368,1)}
-spriteset(spriteset_magcom1_gray_gold, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(368,2)}
-spriteset(spriteset_magcom1_white_gold, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(368,3)}
-spriteset(spriteset_magcom1_ltblue_gold, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(368,4)}
-spriteset(spriteset_magcom1_blue_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(368,5)}
-spriteset(spriteset_magcom1_darkblue_gold, "gfx/magCommuter1.png") {template_engine32WTF_MagCom1(368,6)}
-spriteset(spriteset_magcom1_mauve_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(368,7)}
-spriteset(spriteset_magcom1_purple_gold, "gfx/magCommuter1.png")   {template_engine32WTF_MagCom1(368,8)}
-spriteset(spriteset_magcom1_pink_gold, "gfx/magCommuter1.png")  	 {template_engine32WTF_MagCom1(368,9)}
-spriteset(spriteset_magcom1_brown_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(368,10)}
-spriteset(spriteset_magcom1_red_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(368,11)}
-spriteset(spriteset_magcom1_orange_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(368,12)}
-spriteset(spriteset_magcom1_yellow_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(368,13)}
-spriteset(spriteset_magcom1_green_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(368,14)}
-spriteset(spriteset_magcom1_palegreen_gold, "gfx/magCommuter1.png"){template_engine32WTF_MagCom1(368,15)}
-spriteset(spriteset_magcom1_darkgreen_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(368,16)}
+spriteset(spriteset_magcom1_CC_gold, "gfx/magCommuter1.png") 		 {template_engine32WTF_mag_articulated_hack( 368,  0, 4 )}
+spriteset(spriteset_magcom1_black_gold, "gfx/magCommuter1.png")	     {template_engine32WTF_mag_articulated_hack( 368,  1, 4 )}
+spriteset(spriteset_magcom1_gray_gold, "gfx/magCommuter1.png")	     {template_engine32WTF_mag_articulated_hack( 368,  2, 4 )}
+spriteset(spriteset_magcom1_white_gold, "gfx/magCommuter1.png")	     {template_engine32WTF_mag_articulated_hack( 368,  3, 4 )}
+spriteset(spriteset_magcom1_ltblue_gold, "gfx/magCommuter1.png")	 {template_engine32WTF_mag_articulated_hack( 368,  4, 4 )}
+spriteset(spriteset_magcom1_blue_gold, "gfx/magCommuter1.png") 	     {template_engine32WTF_mag_articulated_hack( 368,  5, 4 )}
+spriteset(spriteset_magcom1_darkblue_gold, "gfx/magCommuter1.png")   {template_engine32WTF_mag_articulated_hack( 368,  6, 4 )}
+spriteset(spriteset_magcom1_mauve_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_articulated_hack( 368,  7, 4 )}
+spriteset(spriteset_magcom1_purple_gold, "gfx/magCommuter1.png")     {template_engine32WTF_mag_articulated_hack( 368,  8, 4 )}
+spriteset(spriteset_magcom1_pink_gold, "gfx/magCommuter1.png")  	 {template_engine32WTF_mag_articulated_hack( 368,  9, 4 )}
+spriteset(spriteset_magcom1_brown_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_articulated_hack( 368, 10, 4 )}
+spriteset(spriteset_magcom1_red_gold, "gfx/magCommuter1.png") 	     {template_engine32WTF_mag_articulated_hack( 368, 11, 4 )}
+spriteset(spriteset_magcom1_orange_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_articulated_hack( 368, 12, 4 )}
+spriteset(spriteset_magcom1_yellow_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_articulated_hack( 368, 13, 4 )}
+spriteset(spriteset_magcom1_green_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_articulated_hack( 368, 14, 4 )}
+spriteset(spriteset_magcom1_palegreen_gold, "gfx/magCommuter1.png")  {template_engine32WTF_mag_articulated_hack( 368, 15, 4 )}
+spriteset(spriteset_magcom1_darkgreen_gold, "gfx/magCommuter1.png")  {template_engine32WTF_mag_articulated_hack( 368, 16, 4 )}
 
-spriteset(spriteset_magcom1_inner_CC_pass, "gfx/magCommuter1.png") 		 {template_engine32WTF_MagCom1(1472,0)}
-spriteset(spriteset_magcom1_inner_black_pass, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1472,1)}
-spriteset(spriteset_magcom1_inner_gray_pass, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1472,2)}
-spriteset(spriteset_magcom1_inner_white_pass, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1472,3)}
-spriteset(spriteset_magcom1_inner_ltblue_pass, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1472,4)}
-spriteset(spriteset_magcom1_inner_blue_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1472,5)}
-spriteset(spriteset_magcom1_inner_darkblue_pass, "gfx/magCommuter1.png") {template_engine32WTF_MagCom1(1472,6)}
-spriteset(spriteset_magcom1_inner_mauve_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1472,7)}
-spriteset(spriteset_magcom1_inner_purple_pass, "gfx/magCommuter1.png")   {template_engine32WTF_MagCom1(1472,8)}
-spriteset(spriteset_magcom1_inner_pink_pass, "gfx/magCommuter1.png")  	 {template_engine32WTF_MagCom1(1472,9)}
-spriteset(spriteset_magcom1_inner_brown_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1472,10)}
-spriteset(spriteset_magcom1_inner_red_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1472,11)}
-spriteset(spriteset_magcom1_inner_orange_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1472,12)}
-spriteset(spriteset_magcom1_inner_yellow_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1472,13)}
-spriteset(spriteset_magcom1_inner_green_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1472,14)}
-spriteset(spriteset_magcom1_inner_palegreen_pass, "gfx/magCommuter1.png"){template_engine32WTF_MagCom1(1472,15)}
-spriteset(spriteset_magcom1_inner_darkgreen_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1472,16)}
+spriteset(spriteset_magcom1_end_CC_pass, "gfx/magCommuter1.png") 		 {template_engine32WTF_mag_end_articulated_hack( 0,  0, 0 )}
+spriteset(spriteset_magcom1_end_black_pass, "gfx/magCommuter1.png")	     {template_engine32WTF_mag_end_articulated_hack( 0,  1, 0 )}
+spriteset(spriteset_magcom1_end_gray_pass, "gfx/magCommuter1.png")	     {template_engine32WTF_mag_end_articulated_hack( 0,  2, 0 )}
+spriteset(spriteset_magcom1_end_white_pass, "gfx/magCommuter1.png")	     {template_engine32WTF_mag_end_articulated_hack( 0,  3, 0 )}
+spriteset(spriteset_magcom1_end_ltblue_pass, "gfx/magCommuter1.png")	 {template_engine32WTF_mag_end_articulated_hack( 0,  4, 0 )}
+spriteset(spriteset_magcom1_end_blue_pass, "gfx/magCommuter1.png") 	     {template_engine32WTF_mag_end_articulated_hack( 0,  5, 0 )}
+spriteset(spriteset_magcom1_end_darkblue_pass, "gfx/magCommuter1.png")   {template_engine32WTF_mag_end_articulated_hack( 0,  6, 0 )}
+spriteset(spriteset_magcom1_end_mauve_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_end_articulated_hack( 0,  7, 0 )}
+spriteset(spriteset_magcom1_end_purple_pass, "gfx/magCommuter1.png")     {template_engine32WTF_mag_end_articulated_hack( 0,  8, 0 )}
+spriteset(spriteset_magcom1_end_pink_pass, "gfx/magCommuter1.png")  	 {template_engine32WTF_mag_end_articulated_hack( 0,  9, 0 )}
+spriteset(spriteset_magcom1_end_brown_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_end_articulated_hack( 0, 10, 0 )}
+spriteset(spriteset_magcom1_end_red_pass, "gfx/magCommuter1.png") 	     {template_engine32WTF_mag_end_articulated_hack( 0, 11, 0 )}
+spriteset(spriteset_magcom1_end_orange_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_end_articulated_hack( 0, 12, 0 )}
+spriteset(spriteset_magcom1_end_yellow_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_end_articulated_hack( 0, 13, 0 )}
+spriteset(spriteset_magcom1_end_green_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_end_articulated_hack( 0, 14, 0 )}
+spriteset(spriteset_magcom1_end_palegreen_pass, "gfx/magCommuter1.png")  {template_engine32WTF_mag_end_articulated_hack( 0, 15, 0 )}
+spriteset(spriteset_magcom1_end_darkgreen_pass, "gfx/magCommuter1.png")  {template_engine32WTF_mag_end_articulated_hack( 0, 16, 0 )}
 
-spriteset(spriteset_magcom1_inner_CC_mail, "gfx/magCommuter1.png") 		 {template_engine32WTF_MagCom1(1656,0)}
-spriteset(spriteset_magcom1_inner_black_mail, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1656,1)}
-spriteset(spriteset_magcom1_inner_gray_mail, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1656,2)}
-spriteset(spriteset_magcom1_inner_white_mail, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1656,3)}
-spriteset(spriteset_magcom1_inner_ltblue_mail, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1656,4)}
-spriteset(spriteset_magcom1_inner_blue_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1656,5)}
-spriteset(spriteset_magcom1_inner_darkblue_mail, "gfx/magCommuter1.png") {template_engine32WTF_MagCom1(1656,6)}
-spriteset(spriteset_magcom1_inner_mauve_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1656,7)}
-spriteset(spriteset_magcom1_inner_purple_mail, "gfx/magCommuter1.png")   {template_engine32WTF_MagCom1(1656,8)}
-spriteset(spriteset_magcom1_inner_pink_mail, "gfx/magCommuter1.png")  	 {template_engine32WTF_MagCom1(1656,9)}
-spriteset(spriteset_magcom1_inner_brown_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1656,10)}
-spriteset(spriteset_magcom1_inner_red_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1656,11)}
-spriteset(spriteset_magcom1_inner_orange_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1656,12)}
-spriteset(spriteset_magcom1_inner_yellow_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1656,13)}
-spriteset(spriteset_magcom1_inner_green_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1656,14)}
-spriteset(spriteset_magcom1_inner_palegreen_mail, "gfx/magCommuter1.png"){template_engine32WTF_MagCom1(1656,15)}
-spriteset(spriteset_magcom1_inner_darkgreen_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1656,16)}
+spriteset(spriteset_magcom1_end_CC_mail, "gfx/magCommuter1.png") 		 {template_engine32WTF_mag_end_articulated_hack( 184,  0, 0 )}
+spriteset(spriteset_magcom1_end_black_mail, "gfx/magCommuter1.png")	     {template_engine32WTF_mag_end_articulated_hack( 184,  1, 0 )}
+spriteset(spriteset_magcom1_end_gray_mail, "gfx/magCommuter1.png")	     {template_engine32WTF_mag_end_articulated_hack( 184,  2, 0 )}
+spriteset(spriteset_magcom1_end_white_mail, "gfx/magCommuter1.png")	     {template_engine32WTF_mag_end_articulated_hack( 184,  3, 0 )}
+spriteset(spriteset_magcom1_end_ltblue_mail, "gfx/magCommuter1.png")	 {template_engine32WTF_mag_end_articulated_hack( 184,  4, 0 )}
+spriteset(spriteset_magcom1_end_blue_mail, "gfx/magCommuter1.png") 	     {template_engine32WTF_mag_end_articulated_hack( 184,  5, 0 )}
+spriteset(spriteset_magcom1_end_darkblue_mail, "gfx/magCommuter1.png")   {template_engine32WTF_mag_end_articulated_hack( 184,  6, 0 )}
+spriteset(spriteset_magcom1_end_mauve_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_end_articulated_hack( 184,  7, 0 )}
+spriteset(spriteset_magcom1_end_purple_mail, "gfx/magCommuter1.png")     {template_engine32WTF_mag_end_articulated_hack( 184,  8, 0 )}
+spriteset(spriteset_magcom1_end_pink_mail, "gfx/magCommuter1.png")  	 {template_engine32WTF_mag_end_articulated_hack( 184,  9, 0 )}
+spriteset(spriteset_magcom1_end_brown_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_end_articulated_hack( 184, 10, 0 )}
+spriteset(spriteset_magcom1_end_red_mail, "gfx/magCommuter1.png")    	 {template_engine32WTF_mag_end_articulated_hack( 184, 11, 0 )}
+spriteset(spriteset_magcom1_end_orange_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_end_articulated_hack( 184, 12, 0 )}
+spriteset(spriteset_magcom1_end_yellow_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_end_articulated_hack( 184, 13, 0 )}
+spriteset(spriteset_magcom1_end_green_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_end_articulated_hack( 184, 14, 0 )}
+spriteset(spriteset_magcom1_end_palegreen_mail, "gfx/magCommuter1.png")  {template_engine32WTF_mag_end_articulated_hack( 184, 15, 0 )}
+spriteset(spriteset_magcom1_end_darkgreen_mail, "gfx/magCommuter1.png")  {template_engine32WTF_mag_end_articulated_hack( 184, 16, 0 )}
 
-spriteset(spriteset_magcom1_inner_CC_gold, "gfx/magCommuter1.png") 		 {template_engine32WTF_MagCom1(1840,0)}
-spriteset(spriteset_magcom1_inner_black_gold, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1840,1)}
-spriteset(spriteset_magcom1_inner_gray_gold, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1840,2)}
-spriteset(spriteset_magcom1_inner_white_gold, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1840,3)}
-spriteset(spriteset_magcom1_inner_ltblue_gold, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1840,4)}
-spriteset(spriteset_magcom1_inner_blue_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1840,5)}
-spriteset(spriteset_magcom1_inner_darkblue_gold, "gfx/magCommuter1.png") {template_engine32WTF_MagCom1(1840,6)}
-spriteset(spriteset_magcom1_inner_mauve_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1840,7)}
-spriteset(spriteset_magcom1_inner_purple_gold, "gfx/magCommuter1.png")   {template_engine32WTF_MagCom1(1840,8)}
-spriteset(spriteset_magcom1_inner_pink_gold, "gfx/magCommuter1.png")  	 {template_engine32WTF_MagCom1(1840,9)}
-spriteset(spriteset_magcom1_inner_brown_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1840,10)}
-spriteset(spriteset_magcom1_inner_red_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1840,11)}
-spriteset(spriteset_magcom1_inner_orange_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1840,12)}
-spriteset(spriteset_magcom1_inner_yellow_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1840,13)}
-spriteset(spriteset_magcom1_inner_green_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1840,14)}
-spriteset(spriteset_magcom1_inner_palegreen_gold, "gfx/magCommuter1.png"){template_engine32WTF_MagCom1(1840,15)}
-spriteset(spriteset_magcom1_inner_darkgreen_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1840,16)}
+spriteset(spriteset_magcom1_end_CC_gold, "gfx/magCommuter1.png") 		 {template_engine32WTF_mag_end_articulated_hack( 368,  0, 0 )}
+spriteset(spriteset_magcom1_end_black_gold, "gfx/magCommuter1.png")	     {template_engine32WTF_mag_end_articulated_hack( 368,  1, 0 )}
+spriteset(spriteset_magcom1_end_gray_gold, "gfx/magCommuter1.png")	     {template_engine32WTF_mag_end_articulated_hack( 368,  2, 0 )}
+spriteset(spriteset_magcom1_end_white_gold, "gfx/magCommuter1.png")	     {template_engine32WTF_mag_end_articulated_hack( 368,  3, 0 )}
+spriteset(spriteset_magcom1_end_ltblue_gold, "gfx/magCommuter1.png")	 {template_engine32WTF_mag_end_articulated_hack( 368,  4, 0 )}
+spriteset(spriteset_magcom1_end_blue_gold, "gfx/magCommuter1.png") 	     {template_engine32WTF_mag_end_articulated_hack( 368,  5, 0 )}
+spriteset(spriteset_magcom1_end_darkblue_gold, "gfx/magCommuter1.png")   {template_engine32WTF_mag_end_articulated_hack( 368,  6, 0 )}
+spriteset(spriteset_magcom1_end_mauve_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_end_articulated_hack( 368,  7, 0 )}
+spriteset(spriteset_magcom1_end_purple_gold, "gfx/magCommuter1.png")     {template_engine32WTF_mag_end_articulated_hack( 368,  8, 0 )}
+spriteset(spriteset_magcom1_end_pink_gold, "gfx/magCommuter1.png")  	 {template_engine32WTF_mag_end_articulated_hack( 368,  9, 0 )}
+spriteset(spriteset_magcom1_end_brown_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_end_articulated_hack( 368, 10, 0 )}
+spriteset(spriteset_magcom1_end_red_gold, "gfx/magCommuter1.png") 	     {template_engine32WTF_mag_end_articulated_hack( 368, 11, 0 )}
+spriteset(spriteset_magcom1_end_orange_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_end_articulated_hack( 368, 12, 0 )}
+spriteset(spriteset_magcom1_end_yellow_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_end_articulated_hack( 368, 13, 0 )}
+spriteset(spriteset_magcom1_end_green_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_mag_end_articulated_hack( 368, 14, 0 )}
+spriteset(spriteset_magcom1_end_palegreen_gold, "gfx/magCommuter1.png")  {template_engine32WTF_mag_end_articulated_hack( 368, 15, 0 )}
+spriteset(spriteset_magcom1_end_darkgreen_gold, "gfx/magCommuter1.png")  {template_engine32WTF_mag_end_articulated_hack( 368, 16, 0 )}
 
+/*
+spriteset(spriteset_magcom1_inner_CC_pass, "gfx/magCommuter1.png") 		  {template_engine32WTF_MagCom1( 1472,  0 )}
+spriteset(spriteset_magcom1_inner_black_pass, "gfx/magCommuter1.png")	  {template_engine32WTF_MagCom1( 1472,  1 )}
+spriteset(spriteset_magcom1_inner_gray_pass, "gfx/magCommuter1.png")	  {template_engine32WTF_MagCom1( 1472,  2 )}
+spriteset(spriteset_magcom1_inner_white_pass, "gfx/magCommuter1.png")	  {template_engine32WTF_MagCom1( 1472,  3 )}
+spriteset(spriteset_magcom1_inner_ltblue_pass, "gfx/magCommuter1.png")	  {template_engine32WTF_MagCom1( 1472,  4 )}
+spriteset(spriteset_magcom1_inner_blue_pass, "gfx/magCommuter1.png") 	  {template_engine32WTF_MagCom1( 1472,  5 )}
+spriteset(spriteset_magcom1_inner_darkblue_pass, "gfx/magCommuter1.png")  {template_engine32WTF_MagCom1( 1472,  6 )}
+spriteset(spriteset_magcom1_inner_mauve_pass, "gfx/magCommuter1.png") 	  {template_engine32WTF_MagCom1( 1472,  7 )}
+spriteset(spriteset_magcom1_inner_purple_pass, "gfx/magCommuter1.png")    {template_engine32WTF_MagCom1( 1472,  8 )}
+spriteset(spriteset_magcom1_inner_pink_pass, "gfx/magCommuter1.png")  	  {template_engine32WTF_MagCom1( 1472,  9 )}
+spriteset(spriteset_magcom1_inner_brown_pass, "gfx/magCommuter1.png") 	  {template_engine32WTF_MagCom1( 1472, 10 )}
+spriteset(spriteset_magcom1_inner_red_pass, "gfx/magCommuter1.png") 	  {template_engine32WTF_MagCom1( 1472, 11 )}
+spriteset(spriteset_magcom1_inner_orange_pass, "gfx/magCommuter1.png") 	  {template_engine32WTF_MagCom1( 1472, 12 )}
+spriteset(spriteset_magcom1_inner_yellow_pass, "gfx/magCommuter1.png") 	  {template_engine32WTF_MagCom1( 1472, 13 )}
+spriteset(spriteset_magcom1_inner_green_pass, "gfx/magCommuter1.png") 	  {template_engine32WTF_MagCom1( 1472, 14 )}
+spriteset(spriteset_magcom1_inner_palegreen_pass, "gfx/magCommuter1.png") {template_engine32WTF_MagCom1( 1472, 15 )}
+spriteset(spriteset_magcom1_inner_darkgreen_pass, "gfx/magCommuter1.png") {template_engine32WTF_MagCom1( 1472, 16 )}
 
-spriteset(spriteset_purchaseMenu_maglocal1, 		"gfx/PurchaseMenu.png"){template_purchaseMenu2(3,14)}
+spriteset(spriteset_magcom1_inner_CC_mail, "gfx/magCommuter1.png") 		  {template_engine32WTF_MagCom1( 1656,  0 )}
+spriteset(spriteset_magcom1_inner_black_mail, "gfx/magCommuter1.png")	  {template_engine32WTF_MagCom1( 1656,  1 )}
+spriteset(spriteset_magcom1_inner_gray_mail, "gfx/magCommuter1.png")	  {template_engine32WTF_MagCom1( 1656,  2 )}
+spriteset(spriteset_magcom1_inner_white_mail, "gfx/magCommuter1.png")	  {template_engine32WTF_MagCom1( 1656,  3 )}
+spriteset(spriteset_magcom1_inner_ltblue_mail, "gfx/magCommuter1.png")	  {template_engine32WTF_MagCom1( 1656,  4 )}
+spriteset(spriteset_magcom1_inner_blue_mail, "gfx/magCommuter1.png") 	  {template_engine32WTF_MagCom1( 1656,  5 )}
+spriteset(spriteset_magcom1_inner_darkblue_mail, "gfx/magCommuter1.png")  {template_engine32WTF_MagCom1( 1656,  6 )}
+spriteset(spriteset_magcom1_inner_mauve_mail, "gfx/magCommuter1.png") 	  {template_engine32WTF_MagCom1( 1656,  7 )}
+spriteset(spriteset_magcom1_inner_purple_mail, "gfx/magCommuter1.png")    {template_engine32WTF_MagCom1( 1656,  8 )}
+spriteset(spriteset_magcom1_inner_pink_mail, "gfx/magCommuter1.png")  	  {template_engine32WTF_MagCom1( 1656,  9 )}
+spriteset(spriteset_magcom1_inner_brown_mail, "gfx/magCommuter1.png") 	  {template_engine32WTF_MagCom1( 1656, 10 )}
+spriteset(spriteset_magcom1_inner_red_mail, "gfx/magCommuter1.png") 	  {template_engine32WTF_MagCom1( 1656, 11 )}
+spriteset(spriteset_magcom1_inner_orange_mail, "gfx/magCommuter1.png") 	  {template_engine32WTF_MagCom1( 1656, 12 )}
+spriteset(spriteset_magcom1_inner_yellow_mail, "gfx/magCommuter1.png") 	  {template_engine32WTF_MagCom1( 1656, 13 )}
+spriteset(spriteset_magcom1_inner_green_mail, "gfx/magCommuter1.png") 	  {template_engine32WTF_MagCom1( 1656, 14 )}
+spriteset(spriteset_magcom1_inner_palegreen_mail, "gfx/magCommuter1.png") {template_engine32WTF_MagCom1( 1656, 15 )}
+spriteset(spriteset_magcom1_inner_darkgreen_mail, "gfx/magCommuter1.png") {template_engine32WTF_MagCom1( 1656, 16 )}
+
+spriteset(spriteset_magcom1_inner_CC_gold, "gfx/magCommuter1.png") 		  {template_engine32WTF_MagCom1( 1840,  0 )}
+spriteset(spriteset_magcom1_inner_black_gold, "gfx/magCommuter1.png")	  {template_engine32WTF_MagCom1( 1840,  1 )}
+spriteset(spriteset_magcom1_inner_gray_gold, "gfx/magCommuter1.png")	  {template_engine32WTF_MagCom1( 1840,  2 )}
+spriteset(spriteset_magcom1_inner_white_gold, "gfx/magCommuter1.png")	  {template_engine32WTF_MagCom1( 1840,  3 )}
+spriteset(spriteset_magcom1_inner_ltblue_gold, "gfx/magCommuter1.png")	  {template_engine32WTF_MagCom1( 1840,  4 )}
+spriteset(spriteset_magcom1_inner_blue_gold, "gfx/magCommuter1.png") 	  {template_engine32WTF_MagCom1( 1840,  5 )}
+spriteset(spriteset_magcom1_inner_darkblue_gold, "gfx/magCommuter1.png")  {template_engine32WTF_MagCom1( 1840,  6 )}
+spriteset(spriteset_magcom1_inner_mauve_gold, "gfx/magCommuter1.png") 	  {template_engine32WTF_MagCom1( 1840,  7 )}
+spriteset(spriteset_magcom1_inner_purple_gold, "gfx/magCommuter1.png")    {template_engine32WTF_MagCom1( 1840,  8 )}
+spriteset(spriteset_magcom1_inner_pink_gold, "gfx/magCommuter1.png")  	  {template_engine32WTF_MagCom1( 1840,  9 )}
+spriteset(spriteset_magcom1_inner_brown_gold, "gfx/magCommuter1.png") 	  {template_engine32WTF_MagCom1( 1840, 10 )}
+spriteset(spriteset_magcom1_inner_red_gold, "gfx/magCommuter1.png") 	  {template_engine32WTF_MagCom1( 1840, 11 )}
+spriteset(spriteset_magcom1_inner_orange_gold, "gfx/magCommuter1.png") 	  {template_engine32WTF_MagCom1( 1840, 12 )}
+spriteset(spriteset_magcom1_inner_yellow_gold, "gfx/magCommuter1.png") 	  {template_engine32WTF_MagCom1( 1840, 13 )}
+spriteset(spriteset_magcom1_inner_green_gold, "gfx/magCommuter1.png") 	  {template_engine32WTF_MagCom1( 1840, 14 )}
+spriteset(spriteset_magcom1_inner_palegreen_gold, "gfx/magCommuter1.png") {template_engine32WTF_MagCom1( 1840, 15 )}
+spriteset(spriteset_magcom1_inner_darkgreen_gold, "gfx/magCommuter1.png") {template_engine32WTF_MagCom1( 1840, 16 )}
+*/
+
+spriteset(spriteset_purchaseMenu_maglocal1, 		"gfx/PurchaseMenu.png"){template_purchaseMenu(3,14)}
 spriteset(spriteset_train_magcommuter1, "gfx/magCommuter.png") { template_engine32(0, 7) }
 spriteset(spriteset_train_magcommuter1mail, "gfx/magCommuter.png") { template_engine32(176, 7) }
 spriteset(spriteset_train_magcommuter1gold, "gfx/magCommuter.png") { template_engine32(352, 7) }
@@ -527,7 +582,7 @@ switch(FEAT_TRAINS, SELF, magcom1_subtype_text, cargo_subtype) {
 	17: return string(STR_subtype_DKGREEN);
 	return CB_RESULT_NO_TEXT;
 }
-
+/*
 random_switch (FEAT_TRAINS, SELF, random_magcom1_inner_pass){
 1: return spriteset_magcom1_inner_black_pass;
 1: return spriteset_magcom1_inner_gray_pass;
@@ -582,7 +637,7 @@ random_switch (FEAT_TRAINS, SELF, random_magcom1_inner_gold){
 1: return spriteset_magcom1_inner_palegreen_gold;
 1: return spriteset_magcom1_inner_darkgreen_gold;
 }
-
+*/
 random_switch (FEAT_TRAINS, SELF, random_magcom1_pass){
 1: return spriteset_magcom1_black_pass;
 1: return spriteset_magcom1_gray_pass;
@@ -709,7 +764,7 @@ switch(FEAT_TRAINS, SELF, switch_subtypes_magcom1_gold, cargo_subtype){
 return spriteset_magcom1_CC_gold;
 }
 
-switch(FEAT_TRAINS, SELF, switch_magcom1_x, cargo_type_in_veh){
+switch(FEAT_TRAINS, SELF, switch_magcom1_cargotype, cargo_type_in_veh){
 PASS: switch_subtypes_magcom1_pass;
 MAIL: switch_subtypes_magcom1_mail;
 GOLD: switch_subtypes_magcom1_gold;
@@ -718,6 +773,7 @@ DIAM: switch_subtypes_magcom1_gold;
 return switch_subtypes_magcom1_pass;
 }
 
+/*
 switch(FEAT_TRAINS, SELF, switch_subtypes_magcom1_inner_pass, cargo_subtype){
 0: return spriteset_magcom1_inner_CC_pass;
 1: return random_magcom1_inner_pass; //randomswitch later
@@ -792,18 +848,167 @@ VALU: switch_subtypes_magcom1_inner_gold;
 DIAM: switch_subtypes_magcom1_inner_gold;
 return switch_subtypes_magcom1_inner_pass;
 }
-switch(FEAT_TRAINS, SELF, switch_magcom1_rear, position_in_consist_from_end){
-0: switch_magcom1_x;
-return switch_subtypes_magcom1_inner_x;
+*/
+
+random_switch (FEAT_TRAINS, SELF, random_magcom1_end_pass){
+1: return spriteset_magcom1_end_black_pass;
+1: return spriteset_magcom1_end_gray_pass;
+1: return spriteset_magcom1_end_white_pass;
+1: return spriteset_magcom1_end_ltblue_pass;
+1: return spriteset_magcom1_end_blue_pass;
+1: return spriteset_magcom1_end_darkblue_pass;
+1: return spriteset_magcom1_end_mauve_pass;
+1: return spriteset_magcom1_end_purple_pass;
+1: return spriteset_magcom1_end_pink_pass;
+1: return spriteset_magcom1_end_brown_pass;
+1: return spriteset_magcom1_end_red_pass;
+1: return spriteset_magcom1_end_orange_pass;
+1: return spriteset_magcom1_end_yellow_pass;
+1: return spriteset_magcom1_end_green_pass;
+1: return spriteset_magcom1_end_palegreen_pass;
+1: return spriteset_magcom1_end_darkgreen_pass;
 }
-switch(FEAT_TRAINS, SELF, switch_magcom1_front, position_in_consist){
-0: switch_magcom1_x;
-return switch_magcom1_rear;
+random_switch (FEAT_TRAINS, SELF, random_magcom1_end_mail){
+1: return spriteset_magcom1_end_black_mail;
+1: return spriteset_magcom1_end_gray_mail;
+1: return spriteset_magcom1_end_white_mail;
+1: return spriteset_magcom1_end_ltblue_mail;
+1: return spriteset_magcom1_end_blue_mail;
+1: return spriteset_magcom1_end_darkblue_mail;
+1: return spriteset_magcom1_end_mauve_mail;
+1: return spriteset_magcom1_end_purple_mail;
+1: return spriteset_magcom1_end_pink_mail;
+1: return spriteset_magcom1_end_brown_mail;
+1: return spriteset_magcom1_end_red_mail;
+1: return spriteset_magcom1_end_orange_mail;
+1: return spriteset_magcom1_end_yellow_mail;
+1: return spriteset_magcom1_end_green_mail;
+1: return spriteset_magcom1_end_palegreen_mail;
+1: return spriteset_magcom1_end_darkgreen_mail;
+}
+random_switch (FEAT_TRAINS, SELF, random_magcom1_end_gold){
+1: return spriteset_magcom1_end_black_gold;
+1: return spriteset_magcom1_end_gray_gold;
+1: return spriteset_magcom1_end_white_gold;
+1: return spriteset_magcom1_end_ltblue_gold;
+1: return spriteset_magcom1_end_blue_gold;
+1: return spriteset_magcom1_end_darkblue_gold;
+1: return spriteset_magcom1_end_mauve_gold;
+1: return spriteset_magcom1_end_purple_gold;
+1: return spriteset_magcom1_end_pink_gold;
+1: return spriteset_magcom1_end_brown_gold;
+1: return spriteset_magcom1_end_red_gold;
+1: return spriteset_magcom1_end_orange_gold;
+1: return spriteset_magcom1_end_yellow_gold;
+1: return spriteset_magcom1_end_green_gold;
+1: return spriteset_magcom1_end_palegreen_gold;
+1: return spriteset_magcom1_end_darkgreen_gold;
 }
 
+
+
+
+
+
+switch(FEAT_TRAINS, SELF, switch_subtypes_magcom1_end_pass, cargo_subtype){
+0: return spriteset_magcom1_end_CC_pass;
+1: return random_magcom1_end_pass; //randomswitch later
+2: return spriteset_magcom1_end_black_pass;
+3: return spriteset_magcom1_end_gray_pass;
+4: return spriteset_magcom1_end_white_pass;
+5: return spriteset_magcom1_end_ltblue_pass;
+6: return spriteset_magcom1_end_blue_pass;
+7: return spriteset_magcom1_end_darkblue_pass;
+8: return spriteset_magcom1_end_mauve_pass;
+9: return spriteset_magcom1_end_purple_pass;
+10: return spriteset_magcom1_end_pink_pass;
+11: return spriteset_magcom1_end_brown_pass;
+12: return spriteset_magcom1_end_red_pass;
+13: return spriteset_magcom1_end_orange_pass;
+14: return spriteset_magcom1_end_yellow_pass;
+15: return spriteset_magcom1_end_green_pass;
+16: return spriteset_magcom1_end_palegreen_pass;
+17: return spriteset_magcom1_end_darkgreen_pass;
+return spriteset_magcom1_end_CC_pass;
+}
+
+switch(FEAT_TRAINS, SELF, switch_subtypes_magcom1_end_mail, cargo_subtype){
+0: return spriteset_magcom1_end_CC_mail;
+1: return random_magcom1_end_mail;
+2: return spriteset_magcom1_end_black_mail;
+3: return spriteset_magcom1_end_gray_mail;
+4: return spriteset_magcom1_end_white_mail;
+5: return spriteset_magcom1_end_ltblue_mail;
+6: return spriteset_magcom1_end_blue_mail;
+7: return spriteset_magcom1_end_darkblue_mail;
+8: return spriteset_magcom1_end_mauve_mail;
+9: return spriteset_magcom1_end_purple_mail;
+10: return spriteset_magcom1_end_pink_mail;
+11: return spriteset_magcom1_end_brown_mail;
+12: return spriteset_magcom1_end_red_mail;
+13: return spriteset_magcom1_end_orange_mail;
+14: return spriteset_magcom1_end_yellow_mail;
+15: return spriteset_magcom1_end_green_mail;
+16: return spriteset_magcom1_end_palegreen_mail;
+17: return spriteset_magcom1_end_darkgreen_mail;
+return spriteset_magcom1_end_CC_mail;
+}
+
+switch(FEAT_TRAINS, SELF, switch_subtypes_magcom1_end_gold, cargo_subtype){
+0: return spriteset_magcom1_end_CC_gold;
+1: random_magcom1_end_gold;
+2: return spriteset_magcom1_end_black_gold;
+3: return spriteset_magcom1_end_gray_gold;
+4: return spriteset_magcom1_end_white_gold;
+5: return spriteset_magcom1_end_ltblue_gold;
+6: return spriteset_magcom1_end_blue_gold;
+7: return spriteset_magcom1_end_darkblue_gold;
+8: return spriteset_magcom1_end_mauve_gold;
+9: return spriteset_magcom1_end_purple_gold;
+10: return spriteset_magcom1_end_pink_gold;
+11: return spriteset_magcom1_end_brown_gold;
+12: return spriteset_magcom1_end_red_gold;
+13: return spriteset_magcom1_end_orange_gold;
+14: return spriteset_magcom1_end_yellow_gold;
+15: return spriteset_magcom1_end_green_gold;
+16: return spriteset_magcom1_end_palegreen_gold;
+17: return spriteset_magcom1_end_darkgreen_gold;
+return spriteset_magcom1_end_CC_gold;
+}
+
+switch(FEAT_TRAINS, SELF, switch_magcom1_end_cargotype, cargo_type_in_veh){
+PASS: switch_subtypes_magcom1_end_pass;
+MAIL: switch_subtypes_magcom1_end_mail;
+GOLD: switch_subtypes_magcom1_end_gold;
+VALU: switch_subtypes_magcom1_end_gold;
+DIAM: switch_subtypes_magcom1_end_gold;
+return switch_subtypes_magcom1_end_pass;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+switch(FEAT_TRAINS, SELF, switch_magcom1_rear, position_in_consist_from_end){
+0: switch_magcom1_end_cargotype;
+return switch_magcom1_wagons;//switch_subtypes_magcom1_inner_x;
+}
+switch(FEAT_TRAINS, SELF, switch_magcom1_front, position_in_consist){
+0: switch_magcom1_cargotype;
+return switch_magcom1_rear;
+}
+*/
 switch(FEAT_TRAINS, SELF, maglocal1_wetrail_power_switch, current_railtype){
-WETR: 15000*7/10;
-15000;
+WETR: 30000*7/10;
+30000;
 }
 
 switch(FEAT_TRAINS, SELF, switch_magcom1_attach, vehicle_type_id){
@@ -813,13 +1018,30 @@ switch(FEAT_TRAINS, SELF, switch_magcom1_attach, vehicle_type_id){
 }
 
 switch (FEAT_TRAINS, SELF, magpax_local1_capacity_switch, cargo_type_in_veh) {
-PASS: 45;
-MAIL: 24;
-VALU: 15;
-GOLD: 15;
-DIAM: 15;
-15;
+PASS: 18;
+MAIL: 9;
+VALU: 6;
+GOLD: 6;
+DIAM: 6;
+18;
 }
+switch (FEAT_TRAINS, SELF, magpax_local1_loadspeed_switch, cargo_type_in_veh) {
+PASS: 6;
+MAIL: 3;
+VALU: 2;
+GOLD: 2;
+DIAM: 2;
+6;
+}
+
+switch (FEAT_TRAINS, SELF, switch_magcom1_articulated, extra_callback_info1){
+	1: item_MagCom1;
+	2: item_MagCom1;
+	3: item_MagCom1;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+//#include src-generated/MagCom1_graphics.nml
 
 
 item(FEAT_TRAINS, item_MagCom1, 300) { //ID300
@@ -840,27 +1062,27 @@ item(FEAT_TRAINS, item_MagCom1, 300) { //ID300
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        140 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MGLV;
-		curve_speed_mod:              1.4;
+		curve_speed_mod:              8;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        3500 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
-        dual_headed:                  1;
+        dual_headed:                  0;
         weight:                       80 ton;
         ai_engine_rank:               0;
         engine_class:                 ENGINE_CLASS_MAGLEV;
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0.2;
         air_drag_coefficient:         0.004;
-        length: 8;
+        length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
         bitmask_vehicle_info:         0;
 	}
 	graphics {
-				default: switch_magcom1_front;
+				default: MagCom1_graphics;
 		cargo_subtype_text: magcom1_subtype_text;
 		purchase: spriteset_purchaseMenu_maglocal1;
 		can_attach_wagon: switch_magcom1_attach;
@@ -869,11 +1091,11 @@ item(FEAT_TRAINS, item_MagCom1, 300) { //ID300
 		power: 							maglocal1_wetrail_power_switch; //engine only
 		weight: 						80; //engine only
 		tractive_effort_coefficient:	255; //engine only
-		loading_speed:					switch_pax_loadspeed; //express engines AND all wagons
+		loading_speed:					magpax_local1_loadspeed_switch; //express engines AND all wagons
 		cargo_capacity:					magpax_local1_capacity_switch; //express engines AND all wagons
 		cost_factor:						32; //everything
 		running_cost_factor:				100; //only engines
-		purchase_power: 15000;
+		articulated_part: switch_magcom1_articulated;
 	}
 
 }
