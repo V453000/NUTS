@@ -1302,15 +1302,42 @@ switch (FEAT_TRAINS, SELF, switch_SLUG_wagons, cargo_type_in_veh){
 				return	spriteset_SLUG_wagons_gold;
 				}
 
+
+switch (FEAT_TRAINS, PARENT, switch_pax_wagons_magice_engine_id, vehicle_type_id){
+	item_magice1:		switch_magice1_wagons;
+	item_magice2:		switch_magice2_wagons;
+	item_magice3:		switch_magice3_wagons;
+	item_magice4:		switch_magice4_wagons;
+	item_MagCom1:		switch_magcom1_wagons;
+}
+
+//#include src-includes/mglv_magice_engine_graphics.nml
+
+switch (FEAT_TRAINS, PARENT, switch_pax_wagons_magice_engine_end_self, vehicle_type_id){
+	item_magice1:		magice1_cargosprite_end;
+	item_magice2:		magice2_cargosprite_end;
+	item_magice3:		magice3_cargosprite_end;
+	item_magice4:		magice4_cargosprite_end;
+	item_MagCom1:		switch_magcom1_end_cargotype;
+}
+switch (FEAT_TRAINS, SELF, switch_pax_wagons_magice_end, position_in_consist_from_end){
+	0: sprite_INVISIBLE;
+	1: switch_pax_wagons_magice_engine_end_self;
+	switch_pax_wagons_magice_engine_id;
+}
+
+
+
+
 switch (FEAT_TRAINS, PARENT, switch_pax_wagons_maglev, vehicle_type_id){
 		item_SLUG:			switch_SLUG_wagons;
 		item_ANIMALEXPRESS:			switch_SLUG_wagons;
 		item_RAINBOWSLUG:	switch_SLUG_wagons;
-		item_magice1:		switch_magice1_wagons;
-		item_magice2:		switch_magice2_wagons;
-		item_magice3:		switch_magice3_wagons;
-		item_magice4:		switch_magice4_wagons;
-		item_MagCom1:		switch_magcom1_wagons;
+		item_magice1:		switch_pax_wagons_magice_end;
+		item_magice2:		switch_pax_wagons_magice_end;
+		item_magice3:		switch_pax_wagons_magice_end;
+		item_magice4:		switch_pax_wagons_magice_end;
+		item_MagCom1:		switch_pax_wagons_magice_end;
 		item_magstrong1:	switch_magdefault1_wagons;
 		item_magstrong2:	switch_magdefault1_wagons;
 		item_magstrong3:	switch_magdefault2_wagons;
