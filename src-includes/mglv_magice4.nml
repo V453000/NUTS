@@ -1,9 +1,9 @@
 
 //MAGLEV ICE 4
 spriteset(spriteset_purchaseMenu_magice4, 			"gfx/PurchaseMenu.png"){template_purchaseMenu(4,18)}
-spriteset(spriteset_train_MagICE4pass, "gfx/MagICE.png") { template_engine32WTF_mag_articulated_hack(  0, 3, 0) }
-spriteset(spriteset_train_MagICE4mail, "gfx/MagICE.png") { template_engine32WTF_mag_articulated_hack(184, 3, 0) }
-spriteset(spriteset_train_MagICE4gold, "gfx/MagICE.png") { template_engine32WTF_mag_articulated_hack(368, 3, 0) }
+spriteset(spriteset_train_MagICE4pass, "gfx/MagICE.png") { template_engine32WTF_mag_articulated_hack(  0, 3, 4) }
+spriteset(spriteset_train_MagICE4mail, "gfx/MagICE.png") { template_engine32WTF_mag_articulated_hack(184, 3, 4) }
+spriteset(spriteset_train_MagICE4gold, "gfx/MagICE.png") { template_engine32WTF_mag_articulated_hack(368, 3, 4) }
 spriteset(spriteset_train_MagICE4pass_end, "gfx/MagICE.png") { template_engine32WTF_mag_end_articulated_hack(  0, 3, 0) }
 spriteset(spriteset_train_MagICE4mail_end, "gfx/MagICE.png") { template_engine32WTF_mag_end_articulated_hack(184, 3, 0) }
 spriteset(spriteset_train_MagICE4gold_end, "gfx/MagICE.png") { template_engine32WTF_mag_end_articulated_hack(368, 3, 0) }
@@ -74,7 +74,7 @@ item(FEAT_TRAINS, item_magice4, 277) { //ID277
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        666 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MGLV;
 		curve_speed_mod:              1;
@@ -89,7 +89,7 @@ item(FEAT_TRAINS, item_magice4, 277) { //ID277
         extra_power_per_wagon:        0 kW;
         tractive_effort_coefficient:  0;
         air_drag_coefficient:         0.004;
-        length: 8;
+        length: 4;
         visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
         extra_weight_per_wagon:       0 ton;
         bitmask_vehicle_info:         0;

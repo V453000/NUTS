@@ -10,8 +10,8 @@ switch (FEAT_TRAINS,SELF, magice3_switch_outcome_switch_wagon_layers, [
   STORE_TEMP((getbits(extra_callback_info1, 8, 8) < 4 ? CB_FLAG_MORE_SPRITES  : 0) + PALETTE_USE_DEFAULT, 0x100),
   getbits(extra_callback_info1, 8, 8)
   ]){
-  0: magice3_switch_outcome_switch_overlay;
-  1: switch_pax_wagons_maglev;
+  0: switch_pax_wagons_maglev;
+  1: magice3_switch_outcome_switch_overlay;
 }
 switch(FEAT_TRAINS, PARENT, magice3_switch_outcome_switch_wagon, vehicle_is_stopped + vehicle_is_in_depot){
   2: magice3_switch_outcome_switch_wagon_layers;

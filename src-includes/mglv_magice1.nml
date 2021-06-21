@@ -74,7 +74,7 @@ item(FEAT_TRAINS, item_magice1, 271) { //ID271
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        399 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MGLV;
 		curve_speed_mod:              1;
