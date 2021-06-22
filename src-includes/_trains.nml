@@ -29483,6 +29483,12 @@ switch(FEAT_TRAINS, SELF, switch_chameleon_engine_loadspeed, position_in_articul
 	switch_chameleon_engine_loadspeed_smaller;
 }
 
+switch(FEAT_TRAINS, SELF, switch_chameleon_curve_speed_mod, num_vehs_in_consist){
+	1..4: 432;
+	128;
+}
+
+
 //CHAMELEON
 item(FEAT_TRAINS, item_CHAMELEON1, 121) { //ID121
 	property {
@@ -29526,6 +29532,7 @@ item(FEAT_TRAINS, item_CHAMELEON1, 121) { //ID121
 		additional_text: string(info_mono_chameleon_1);
 		articulated_part: switch_CHAMELEON1_articulated;
 		speed: 							switch_CHAMELEON1_speed;
+		curve_speed_mod: switch_chameleon_curve_speed_mod;
 		power: 							switch_CHAMELEON1_wetrail_power_switch;
 		weight: 							100; //engine only
 		tractive_effort_coefficient:		switch_CHAMELEON1_wetrail_te_switch; //engine only
@@ -29951,6 +29958,7 @@ item(FEAT_TRAINS, item_CHAMELEON2, 123) { //ID123
 		additional_text: string(info_mono_chameleon_2);
 		articulated_part: switch_CHAMELEON2_articulated;
 		speed: 							switch_CHAMELEON2_speed;
+		curve_speed_mod: switch_chameleon_curve_speed_mod;
 		power: 							switch_CHAMELEON2_wetrail_power_switch;
 		weight: 							100; //engine only
 		tractive_effort_coefficient:		switch_CHAMELEON2_wetrail_te_switch; //engine only
@@ -30363,6 +30371,7 @@ item(FEAT_TRAINS, item_CHAMELEON3, 125) { //ID125
 		additional_text: string(info_mono_chameleon_3);
 		articulated_part: switch_CHAMELEON3_articulated;
 		speed: 							switch_CHAMELEON3_speed;
+		curve_speed_mod: switch_chameleon_curve_speed_mod;
 		power: 							switch_CHAMELEON3_wetrail_power_switch;
 		weight: 							100; //engine only
 		tractive_effort_coefficient:		switch_CHAMELEON3_wetrail_te_switch; //engine only
@@ -30782,6 +30791,7 @@ item(FEAT_TRAINS, item_CHAMELEON4, 127) { //ID127
 		additional_text: string(info_mono_chameleon_4);
 		articulated_part: switch_CHAMELEON4_articulated;
 		speed: 							switch_CHAMELEON4_speed;
+		curve_speed_mod: switch_chameleon_curve_speed_mod;
 		power: 							switch_CHAMELEON4_wetrail_power_switch;
 		weight: 							100; //engine only
 		tractive_effort_coefficient:		switch_CHAMELEON4_wetrail_te_switch; //engine only
@@ -31189,6 +31199,7 @@ item(FEAT_TRAINS, item_CHAMELEON5, 129) { //ID129
 		additional_text: string(info_mono_chameleon_5);
 		articulated_part: switch_CHAMELEON5_articulated;
 		speed: 							switch_CHAMELEON5_speed;
+		curve_speed_mod: switch_chameleon_curve_speed_mod;
 		power: 							switch_CHAMELEON5_wetrail_power_switch;
 		weight: 							100; //engine only
 		tractive_effort_coefficient:		switch_CHAMELEON5_wetrail_te_switch; //engine only
@@ -31400,6 +31411,7 @@ item(FEAT_TRAINS, item_MEOWCHAMI_1, 130) { //ID130
 		additional_text: string(info_mono_MEOWCHAMI_1);
 		articulated_part: switch_MEOWCHAMI_1_articulated;
 		speed: 							MEOWCHAMI_speed_switch;
+		curve_speed_mod: switch_chameleon_curve_speed_mod;
 		power: 							MEOWCHAMI_power_switch;
 		weight: 							80; //engine only
 		tractive_effort_coefficient:			MEOWCHAMI_te_switch; //engine only

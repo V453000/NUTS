@@ -14,6 +14,9 @@ def curve_speed_mod(max_speed, wagon_count, has_tilt):
     result_speed_modifier =  math.ceil((speed_multiplier - 1) * 256)
     return result_speed_modifier
 
+print('-'*32, 'Chameleon')
+for x in range(2,4,2):
+    print( x, curve_speed_mod(298, x, False) )
 print('-'*32, 'Maglev Medium 1')
 for x in range(2,14,2):
     print( x, curve_speed_mod(301, x, False) )
