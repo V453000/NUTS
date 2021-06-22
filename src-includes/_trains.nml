@@ -28763,7 +28763,7 @@ item(FEAT_TRAINS, item_CABOOSE_1, 28) { //ID28
 	property {
 		name:                         string(STR_NAME_CABOOSE_1);
         climates_available:           ALL_CLIMATES;
-        introduction_date:            date(1950, 1, 1);
+        introduction_date:            date(1953, 1, 1);
         model_life:                   VEHICLE_NEVER_EXPIRES;
         vehicle_life:                 255;
         reliability_decay:            5;
