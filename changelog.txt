@@ -1,7 +1,22 @@
 0.8.5
-	Due to a change in OpenTTD, Monorail and Maglev vehicles would no longer have their curve speed bonus on PURR tracks.
-	Separated PURR tracks into Rail, Monorail and Maglev.
-	Added Universal rail for autoreplacing between railtypes. Universal rail has the same curve speeds as normal Rail.
+	### Started making use of curve_speed_mod property for vehicles ###
+	
+	Some vehicles now have bonuses for speed in curve, some have their curve speed reduced.
+	Replaced tilt with the curve_speed_mod.
+
+	Freight Fast classes have curve speed penalties, but much better acceleration than before.
+	Maglev Fast is the only class that will require curves to be 0.5 tiles longer than the train, but it's also very powerful.
+
+	Inconsistencies and unexpected slowdowns in curves for short vehicles (maglev, chameleon) have been fixed by the curve_speed_mod.
+
+	### Added parameters to allow rescaling introduction dates ###
+	
+	Added a parameter for "progression start year", and a parameter for "progression length percentage".
+	This parameter obviously does not influence other NewGRFs, only NUTS.
+
+	### Other ###
+
+	Added a parameter for maglev Logic Engine speed.
 
 	Fixed drawing of some FIRS cargoes in maglev hoppers.
 
