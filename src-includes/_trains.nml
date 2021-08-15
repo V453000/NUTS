@@ -177,6 +177,7 @@ item(FEAT_TRAINS, item_railice1, 71) { //ID71
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        2000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -236,6 +237,7 @@ item(FEAT_TRAINS, item_railice1_tender, 291) { //ID291
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -300,6 +302,7 @@ item(FEAT_TRAINS, item_railice2, 73) { //ID73
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        3000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -361,6 +364,7 @@ item(FEAT_TRAINS, item_railice2_tender, 293) { //ID293
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -425,6 +429,7 @@ item(FEAT_TRAINS, item_railice3, 75) { //ID75
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        4000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -483,6 +488,7 @@ item(FEAT_TRAINS, item_railice3_tender, 295) { //ID295
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -548,6 +554,7 @@ item(FEAT_TRAINS, item_railice4, 77) { //ID77
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        5000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -605,6 +612,7 @@ item(FEAT_TRAINS, item_railice4_tender, 297) { //ID297
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -677,6 +685,7 @@ item(FEAT_TRAINS, item_railice5, 79) { //ID79
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        6000 hp;
         running_cost_base:            RUNNING_COST_DIESEL;
@@ -766,6 +775,7 @@ item(FEAT_TRAINS, item_railice6, 81) { //ID81
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        9000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -854,6 +864,7 @@ item(FEAT_TRAINS, item_railice7, 83) { //ID83
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        12000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -939,6 +950,7 @@ item(FEAT_TRAINS, item_railice8, 85) { //ID85
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        16000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -1027,6 +1039,7 @@ item(FEAT_TRAINS, item_railice9, 87) { //ID87
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        20000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -1153,6 +1166,7 @@ item(FEAT_TRAINS, item_doombringer, 301) { //ID301
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        20000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -1207,6 +1221,7 @@ item(FEAT_TRAINS, item_doombringer_tender, 302) { //ID301
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.25;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        20000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -2578,6 +2593,7 @@ item(FEAT_TRAINS, item_railcom1, 91) { //ID91
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        500 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -2961,6 +2977,7 @@ item(FEAT_TRAINS, item_railcom2, 93) { //ID93
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        900 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -3341,6 +3358,7 @@ item(FEAT_TRAINS, item_railcom3, 95) { //ID95
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1500 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -3722,6 +3740,7 @@ item(FEAT_TRAINS, item_railcom4, 97) { //ID97
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        2000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -4104,6 +4123,7 @@ item(FEAT_TRAINS, item_railcom5, 99) { //ID99
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        2300 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -4485,6 +4505,7 @@ item(FEAT_TRAINS, item_railcom6, 101) { //ID101
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        2700 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -4868,6 +4889,7 @@ item(FEAT_TRAINS, item_railcom7, 103) { //ID103
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        3000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -5249,6 +5271,7 @@ item(FEAT_TRAINS, item_railcom8, 105) { //ID105
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        3500 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -5630,6 +5653,7 @@ item(FEAT_TRAINS, item_railcom9, 107) { //ID107
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        4000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -5951,9 +5975,10 @@ item(FEAT_TRAINS, item_monolocal1, 191) { //ID191
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        140 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.8;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        2000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -6024,9 +6049,10 @@ item(FEAT_TRAINS, item_monolocal2, 193) { //ID193
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        160 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.8;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        2200 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -6098,9 +6124,10 @@ item(FEAT_TRAINS, item_monolocal3, 195) { //ID195
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        180 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.8;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        4000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -6173,9 +6200,10 @@ item(FEAT_TRAINS, item_monolocal4, 197) { //ID197
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        200 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.8;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        6000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -6212,1672 +6240,21 @@ item(FEAT_TRAINS, item_monolocal4, 197) { //ID197
 
 }
 
+
+
+//#include src-includes/SLUG.nml
+//#include src-includes/RAINBOW_SLUG.nml
+
 //MAGLEV PAX TRAINS
-//CAPACITY SWITCHES
-/*
-switch (FEAT_TRAINS, SELF, magpax_capacity_switch, cargo_type_in_veh) {
-PASS: 48;
-MAIL: 24;
-VALU: 12;
-GOLD: 12;
-DIAM: 12;
-12;
-}
-*/
-switch (FEAT_TRAINS, SELF, magpax_cargo_capacity_switch, cargo_type_in_veh) {
-PASS: 22;
-MAIL: 11;
-VALU: 8;
-GOLD: 8;
-DIAM: 8;
-8;
-}
-/*
-switch (FEAT_TRAINS, SELF, magpaxSLUG_capacity_switch, cargo_type_in_veh) {
-PASS: 20;
-MAIL: 10;
-VALU: 7;
-GOLD: 7;
-DIAM: 7;
-7;
-}
- CAPACITY SWITCH FOR OLD SLUG ENGINE */
-switch (FEAT_TRAINS, SELF, magpaxSLUGwagon_capacity_switch, cargo_type_in_veh) {
-PASS: 25;
-MAIL: 14;
-VALU: 12;
-GOLD: 12;
-DIAM: 12;
-12;
-}
-switch (FEAT_TRAINS, SELF, magpax_local1_capacity_switch, cargo_type_in_veh) {
-PASS: 45;
-MAIL: 24;
-VALU: 15;
-GOLD: 15;
-DIAM: 15;
-15;
-}
-switch (FEAT_TRAINS, SELF, magpax_local1_wagon_capacity_switch, cargo_type_in_veh) {
-PASS: 36;
-MAIL: 18;
-VALU: 12;
-GOLD: 12;
-DIAM: 12;
-12;
-}
-/*
-switch (FEAT_TRAINS, SELF, magpax20_capacity_switch, cargo_type_in_veh) {
-PASS: 48;
-MAIL: 24;
-VALU: 12;
-GOLD: 12;
-DIAM: 12;
-12;
-}
-*/
-switch (FEAT_TRAINS, SELF, magpax30_capacity_switch, cargo_type_in_veh) {
-PASS: 30;
-MAIL: 15;
-VALU: 10;
-GOLD: 10;
-DIAM: 10;
-15;
-}
-switch (FEAT_TRAINS, SELF, magpax35_capacity_switch, cargo_type_in_veh) {
-PASS: 35;
-MAIL: 20;
-VALU: 15;
-GOLD: 15;
-DIAM: 15;
-17;
-}
-/*
-switch (FEAT_TRAINS, SELF, magpax25_capacity_switch, cargo_type_in_veh) {
-PASS: 64;
-MAIL: 32;
-VALU: 16;
-GOLD: 16;
-DIAM: 16;
-16;
-}
-*/
-switch (FEAT_TRAINS, SELF, magice_capacity_switch, cargo_type_in_veh) {
-PASS: 30;
-MAIL: 15;
-VALU: 10;
-GOLD: 10;
-DIAM: 10;
-15;
-}
-switch (FEAT_TRAINS, SELF, magice_35capacity_switch, cargo_type_in_veh) {
-PASS: 35;
-MAIL: 20;
-VALU: 15;
-GOLD: 15;
-DIAM: 15;
-20;
-}
+
+//#include src-includes/mglv_express_wagon_graphics_switches.nml
+
 //MAGLEV ICE
-//MAGLEV ICE 1
-spriteset(spriteset_purchaseMenu_magice1, 			"gfx/PurchaseMenu.png"){template_purchaseMenu2(4,15)}
-spriteset(spriteset_train_MagICE1pass, "gfx/MagICE.png") { template_engine32WTF_mag(0, 0) }
-spriteset(spriteset_train_MagICE1mail, "gfx/MagICE.png") { template_engine32WTF_mag(184, 0) }
-spriteset(spriteset_train_MagICE1gold, "gfx/MagICE.png") { template_engine32WTF_mag(368, 0) }
 
-switch (FEAT_TRAINS, SELF, magice1_cargosprite, cargo_type_in_veh){
-PASS: spriteset_train_MagICE1pass;
-MAIL: spriteset_train_MagICE1mail;
-GOLD: spriteset_train_MagICE1gold;
-DIAM: spriteset_train_MagICE1gold;
-VALU: spriteset_train_MagICE1gold;
-YETI: spriteset_train_MagICE1mail;
-YETY: spriteset_train_MagICE1gold;
-spriteset_train_MagICE1gold;
-}
-
-switch(FEAT_TRAINS, SELF, magice1_wetrail_power_switch, current_railtype){
-WETR: 15000*7/10;
-15000;
-}
-
-switch(FEAT_TRAINS, SELF, switch_magice1_attach, vehicle_type_id){
-	item_magice1:            CB_RESULT_ATTACH_ALLOW;
-	item_magpax: CB_RESULT_ATTACH_ALLOW;
-	string(error_attach_mglv_express);
-}
-
-item(FEAT_TRAINS, item_magice1, 271) { //ID271
-	property {
-		name:                         string(STR_NAME_MagICE1);
-        climates_available:           ALL_CLIMATES;
-        introduction_date:            date(2007, 1, 1);
-        model_life:                   27;
-        vehicle_life:                 255;
-        reliability_decay:            5;
-				cargo_capacity:               30;
-        refittable_cargo_classes:     bitmask(CC_PASSENGERS, CC_MAIL, CC_ARMOURED);
-        non_refittable_cargo_classes: bitmask();
-        default_cargo_type:			      PASS;
-				cargo_allow_refit:		        [YETI, YETY];
-        loading_speed:                5;
-        cost_factor:                  10;
-        running_cost_factor:          100;
-        sprite_id:                    SPRITE_ID_NEW_TRAIN;
-        speed:                        399 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
-        refit_cost:                   0;
-        track_type:                   MGLV;
-        ai_special_flag:              AI_FLAG_CARGO;
-        power:                        20000 hp;
-        running_cost_base:            RUNNING_COST_ELECTRIC;
-        dual_headed:                  1;
-
-        weight:                       110 ton;
-        ai_engine_rank:               0;
-        engine_class:                 ENGINE_CLASS_MAGLEV;
-        extra_power_per_wagon:        0 kW;
-        tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0.004;
-        length: 8;
-        visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
-        extra_weight_per_wagon:       0 ton;
-        bitmask_vehicle_info:         0;
-	}
-	graphics {
-		default: magice1_cargosprite;
-		purchase: spriteset_purchaseMenu_magice1;
-		can_attach_wagon: switch_magice1_attach;
-		cargo_capacity: magice_capacity_switch;
-		//purchase_cargo_capacity: 10;
-		additional_text: string(info_mglv_intercity_1);
-		speed: 							301; //maybe for wagons later, not now
-		power: 							magice1_wetrail_power_switch; //engine only
-		weight: 							100; //engine only
-		tractive_effort_coefficient:		255; //engine only
-		loading_speed:				switch_pax_loadspeed; //express engines AND all wagons
-		cost_factor:						33; //everything
-		running_cost_factor:				100; //only engines
-		purchase_power: 15000;
-	}
-}
-//MAGLEV ICE 2
-spriteset(spriteset_purchaseMenu_magice2, 			"gfx/PurchaseMenu.png"){template_purchaseMenu2(4,16)}
-spriteset(spriteset_train_MagICE2pass, "gfx/MagICE.png") { template_engine32WTF_mag(0, 1) }
-spriteset(spriteset_train_MagICE2mail, "gfx/MagICE.png") { template_engine32WTF_mag(184, 1) }
-spriteset(spriteset_train_MagICE2gold, "gfx/MagICE.png") { template_engine32WTF_mag(368, 1) }
-
-switch (FEAT_TRAINS, SELF, magice2_cargosprite, cargo_type_in_veh){
-PASS: spriteset_train_MagICE2pass;
-MAIL: spriteset_train_MagICE2mail;
-GOLD: spriteset_train_MagICE2gold;
-DIAM: spriteset_train_MagICE2gold;
-VALU: spriteset_train_MagICE2gold;
-YETI: spriteset_train_MagICE2mail;
-YETY: spriteset_train_MagICE2gold;
-spriteset_train_MagICE2gold;
-}
-switch(FEAT_TRAINS, SELF, magice2_wetrail_power_switch, current_railtype){
-WETR: 18000*7/10;
-18000;
-}
-
-switch(FEAT_TRAINS, SELF, switch_magice2_attach, vehicle_type_id){
-	item_magice2:            CB_RESULT_ATTACH_ALLOW;
-	item_magpax: CB_RESULT_ATTACH_ALLOW;
-	string(error_attach_mglv_express);
-}
-
-item(FEAT_TRAINS, item_magice2, 273) { //ID273
-	property {
-		name:                         string(STR_NAME_MagICE2);
-        climates_available:           ALL_CLIMATES;
-        introduction_date:            date(2025, 1, 1);
-        model_life:                   26;
-        vehicle_life:                 255;
-        reliability_decay:            5;
-        cargo_capacity:               30;
-        refittable_cargo_classes:     bitmask(CC_PASSENGERS, CC_MAIL, CC_ARMOURED);
-        non_refittable_cargo_classes: bitmask();
-        default_cargo_type:			      PASS;
-				cargo_allow_refit:		        [YETI, YETY];
-        loading_speed:                5;
-        cost_factor:                  10;
-        running_cost_factor:          100;
-        sprite_id:                    SPRITE_ID_NEW_TRAIN;
-        speed:                        499 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
-        refit_cost:                   0;
-        track_type:                   MGLV;
-        ai_special_flag:              AI_FLAG_CARGO;
-        power:                        25000 hp;
-        running_cost_base:            RUNNING_COST_ELECTRIC;
-        dual_headed:                  1;
-
-        weight:                       110 ton;
-        ai_engine_rank:               0;
-        engine_class:                 ENGINE_CLASS_MAGLEV;
-        extra_power_per_wagon:        0 kW;
-        tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0.004;
-        length: 8;
-        visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
-        extra_weight_per_wagon:       0 ton;
-        bitmask_vehicle_info:         0;
-	}
-	graphics {
-		default: magice2_cargosprite;
-		purchase: spriteset_purchaseMenu_magice2;
-		can_attach_wagon: switch_magice2_attach;
-		cargo_capacity: magice_capacity_switch;
-		//purchase_cargo_capacity: 10;
-		additional_text: string(info_mglv_intercity_2);
-		speed: 							340; //maybe for wagons later, not now
-		power: 							magice2_wetrail_power_switch; //engine only
-		weight: 							100; //engine only
-		tractive_effort_coefficient:		255; //engine only
-		loading_speed:					switch_pax_loadspeed; //express engines AND all wagons
-		cost_factor:						34; //everything
-		running_cost_factor:				100; //only engines
-		purchase_power: 18000;
-		}
-}
-//MAGLEV ICE 3
-spriteset(spriteset_purchaseMenu_magice3, 			"gfx/PurchaseMenu.png"){template_purchaseMenu2(4,17)}
-spriteset(spriteset_train_MagICE3pass, "gfx/MagICE.png") { template_engine32WTF_mag(0, 2) }
-spriteset(spriteset_train_MagICE3mail, "gfx/MagICE.png") { template_engine32WTF_mag(184, 2) }
-spriteset(spriteset_train_MagICE3gold, "gfx/MagICE.png") { template_engine32WTF_mag(368, 2) }
-
-switch (FEAT_TRAINS, SELF, magice3_cargosprite, cargo_type_in_veh){
-PASS: spriteset_train_MagICE3pass;
-MAIL: spriteset_train_MagICE3mail;
-GOLD: spriteset_train_MagICE3gold;
-DIAM: spriteset_train_MagICE3gold;
-VALU: spriteset_train_MagICE3gold;
-YETI: spriteset_train_MagICE3mail;
-YETY: spriteset_train_MagICE3gold;
-spriteset_train_MagICE3gold;
-}
-switch(FEAT_TRAINS, SELF, magice3_wetrail_power_switch, current_railtype){
-WETR: 17000*7/10;
-17000;
-}
-
-switch(FEAT_TRAINS, SELF, switch_magice3_attach, vehicle_type_id){
-	item_magice3:            CB_RESULT_ATTACH_ALLOW;
-	item_magpax: CB_RESULT_ATTACH_ALLOW;
-	string(error_attach_mglv_express);
-}
-
-item(FEAT_TRAINS, item_magice3, 275) { //ID275
-	property {
-		name:                         string(STR_NAME_MagICE3);
-        climates_available:           ALL_CLIMATES;
-        introduction_date:            date(2043, 1, 1);
-        model_life:                   VEHICLE_NEVER_EXPIRES;
-        vehicle_life:                 255;
-        reliability_decay:            5;
-        cargo_capacity:               35;
-        refittable_cargo_classes:     bitmask(CC_PASSENGERS, CC_MAIL, CC_ARMOURED);
-        non_refittable_cargo_classes: bitmask();
-        default_cargo_type:			      PASS;
-				cargo_allow_refit:		        [YETI, YETY];
-        loading_speed:                5;
-        cost_factor:                  10;
-        running_cost_factor:          100;
-        sprite_id:                    SPRITE_ID_NEW_TRAIN;
-        speed:                        599 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
-        refit_cost:                   0;
-        track_type:                   MGLV;
-        ai_special_flag:              AI_FLAG_CARGO;
-        power:                        30000 hp;
-        running_cost_base:            RUNNING_COST_ELECTRIC;
-        dual_headed:                  1;
-
-        weight:                       110 ton;
-        ai_engine_rank:               0;
-        engine_class:                 ENGINE_CLASS_MAGLEV;
-        extra_power_per_wagon:        0 kW;
-        tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0.004;
-        length: 8;
-        visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
-        extra_weight_per_wagon:       0 ton;
-        bitmask_vehicle_info:         0;
-	}
-	graphics {
-		default: magice3_cargosprite;
-		purchase: spriteset_purchaseMenu_magice3;
-		can_attach_wagon: switch_magice3_attach;
-		cargo_capacity: magice_35capacity_switch;
-		//purchase_cargo_capacity: 10;
-		additional_text: string(info_mglv_intercity_3);
-		speed: 							316; //maybe for wagons later, not now
-		power: 							magice3_wetrail_power_switch; //engine only
-		weight: 							100; //engine only
-		tractive_effort_coefficient:		255; //engine only
-		loading_speed:					switch_pax_loadspeed; //express engines AND all wagons
-		cost_factor:						35; //everything
-		running_cost_factor:				100; //only engines
-		purchase_power: 17000;
-		}
-}
-//MAGLEV ICE 4
-spriteset(spriteset_train_MagICE4pass, "gfx/MagICE.png") { template_engine32WTF_mag(0, 3) }
-spriteset(spriteset_train_MagICE4mail, "gfx/MagICE.png") { template_engine32WTF_mag(184, 3) }
-spriteset(spriteset_train_MagICE4gold, "gfx/MagICE.png") { template_engine32WTF_mag(368, 3) }
-spriteset(spriteset_purchaseMenu_magice4, 			"gfx/PurchaseMenu.png"){template_purchaseMenu2(4,18)}
-switch (FEAT_TRAINS, SELF, magice4_cargosprite, cargo_type_in_veh){
-PASS: spriteset_train_MagICE4pass;
-MAIL: spriteset_train_MagICE4mail;
-GOLD: spriteset_train_MagICE4gold;
-DIAM: spriteset_train_MagICE4gold;
-VALU: spriteset_train_MagICE4gold;
-YETI: spriteset_train_MagICE4mail;
-YETY: spriteset_train_MagICE4gold;
-spriteset_train_MagICE4gold;
-}
-switch(FEAT_TRAINS, SELF, magice4_wetrail_power_switch, current_railtype){
-WETR: 25000*7/10;
-25000;
-}
-
-switch(FEAT_TRAINS, SELF, switch_magice4_attach, vehicle_type_id){
-	item_magice4:            CB_RESULT_ATTACH_ALLOW;
-	item_magpax: CB_RESULT_ATTACH_ALLOW;
-	string(error_attach_mglv_express);
-}
-
-item(FEAT_TRAINS, item_magice4, 277) { //ID277
-	property {
-		name:                         string(STR_NAME_MagICE4);
-        climates_available:           ALL_CLIMATES;
-        introduction_date:            date(2059, 1, 1);
-        model_life:                   VEHICLE_NEVER_EXPIRES;
-        vehicle_life:                 255;
-        reliability_decay:            5;
-				cargo_capacity:               30;
-        refittable_cargo_classes:     bitmask(CC_PASSENGERS, CC_MAIL, CC_ARMOURED);
-        non_refittable_cargo_classes: bitmask();
-        default_cargo_type:			  		PASS;
-				cargo_allow_refit:		     		[YETI, YETY];
-        loading_speed:                5;
-        cost_factor:                  10;
-        running_cost_factor:          100;
-        sprite_id:                    SPRITE_ID_NEW_TRAIN;
-        speed:                        666 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
-        refit_cost:                   0;
-        track_type:                   MGLV;
-        ai_special_flag:              AI_FLAG_CARGO;
-        power:                        35000 hp;
-        running_cost_base:            RUNNING_COST_ELECTRIC;
-        dual_headed:                  1;
-
-        weight:                       110 ton;
-        ai_engine_rank:               0;
-        engine_class:                 ENGINE_CLASS_MAGLEV;
-        extra_power_per_wagon:        0 kW;
-        tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0.004;
-        length: 8;
-        visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
-        extra_weight_per_wagon:       0 ton;
-        bitmask_vehicle_info:         0;
-	}
-	graphics {
-		default: magice4_cargosprite;
-		purchase: spriteset_purchaseMenu_magice4;
-		can_attach_wagon: switch_magice4_attach;
-		cargo_capacity: magice_capacity_switch;
-		//purchase_cargo_capacity: 10;
-		additional_text: string(info_mglv_intercity_4);
-		speed: 							400; //maybe for wagons later, not now
-		power: 							magice4_wetrail_power_switch; //engine only
-		weight: 							100; //engine only
-		tractive_effort_coefficient:		255; //engine only
-		loading_speed:					switch_pax_loadspeed; //express engines AND all wagons
-		cost_factor:						36; //everything
-		running_cost_factor:				100; //only engines
-		purchase_power: 25000;
-		}
-}
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////MAGLEVLOCAL
-
-
-//COLOURED SPRITES
-spriteset(spriteset_magcom1_CC_pass, "gfx/magCommuter1.png") 		 {template_engine32WTF_MagCom1(0,0)}
-spriteset(spriteset_magcom1_black_pass, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(0,1)}
-spriteset(spriteset_magcom1_gray_pass, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(0,2)}
-spriteset(spriteset_magcom1_white_pass, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(0,3)}
-spriteset(spriteset_magcom1_ltblue_pass, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(0,4)}
-spriteset(spriteset_magcom1_blue_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(0,5)}
-spriteset(spriteset_magcom1_darkblue_pass, "gfx/magCommuter1.png") {template_engine32WTF_MagCom1(0,6)}
-spriteset(spriteset_magcom1_mauve_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(0,7)}
-spriteset(spriteset_magcom1_purple_pass, "gfx/magCommuter1.png")   {template_engine32WTF_MagCom1(0,8)}
-spriteset(spriteset_magcom1_pink_pass, "gfx/magCommuter1.png")  	 {template_engine32WTF_MagCom1(0,9)}
-spriteset(spriteset_magcom1_brown_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(0,10)}
-spriteset(spriteset_magcom1_red_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(0,11)}
-spriteset(spriteset_magcom1_orange_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(0,12)}
-spriteset(spriteset_magcom1_yellow_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(0,13)}
-spriteset(spriteset_magcom1_green_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(0,14)}
-spriteset(spriteset_magcom1_palegreen_pass, "gfx/magCommuter1.png"){template_engine32WTF_MagCom1(0,15)}
-spriteset(spriteset_magcom1_darkgreen_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(0,16)}
-
-spriteset(spriteset_magcom1_CC_mail, "gfx/magCommuter1.png") 		 {template_engine32WTF_MagCom1(184,0)}
-spriteset(spriteset_magcom1_black_mail, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(184,1)}
-spriteset(spriteset_magcom1_gray_mail, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(184,2)}
-spriteset(spriteset_magcom1_white_mail, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(184,3)}
-spriteset(spriteset_magcom1_ltblue_mail, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(184,4)}
-spriteset(spriteset_magcom1_blue_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(184,5)}
-spriteset(spriteset_magcom1_darkblue_mail, "gfx/magCommuter1.png") {template_engine32WTF_MagCom1(184,6)}
-spriteset(spriteset_magcom1_mauve_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(184,7)}
-spriteset(spriteset_magcom1_purple_mail, "gfx/magCommuter1.png")   {template_engine32WTF_MagCom1(184,8)}
-spriteset(spriteset_magcom1_pink_mail, "gfx/magCommuter1.png")  	 {template_engine32WTF_MagCom1(184,9)}
-spriteset(spriteset_magcom1_brown_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(184,10)}
-spriteset(spriteset_magcom1_red_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(184,11)}
-spriteset(spriteset_magcom1_orange_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(184,12)}
-spriteset(spriteset_magcom1_yellow_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(184,13)}
-spriteset(spriteset_magcom1_green_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(184,14)}
-spriteset(spriteset_magcom1_palegreen_mail, "gfx/magCommuter1.png"){template_engine32WTF_MagCom1(184,15)}
-spriteset(spriteset_magcom1_darkgreen_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(184,16)}
-
-spriteset(spriteset_magcom1_CC_gold, "gfx/magCommuter1.png") 		 {template_engine32WTF_MagCom1(368,0)}
-spriteset(spriteset_magcom1_black_gold, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(368,1)}
-spriteset(spriteset_magcom1_gray_gold, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(368,2)}
-spriteset(spriteset_magcom1_white_gold, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(368,3)}
-spriteset(spriteset_magcom1_ltblue_gold, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(368,4)}
-spriteset(spriteset_magcom1_blue_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(368,5)}
-spriteset(spriteset_magcom1_darkblue_gold, "gfx/magCommuter1.png") {template_engine32WTF_MagCom1(368,6)}
-spriteset(spriteset_magcom1_mauve_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(368,7)}
-spriteset(spriteset_magcom1_purple_gold, "gfx/magCommuter1.png")   {template_engine32WTF_MagCom1(368,8)}
-spriteset(spriteset_magcom1_pink_gold, "gfx/magCommuter1.png")  	 {template_engine32WTF_MagCom1(368,9)}
-spriteset(spriteset_magcom1_brown_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(368,10)}
-spriteset(spriteset_magcom1_red_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(368,11)}
-spriteset(spriteset_magcom1_orange_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(368,12)}
-spriteset(spriteset_magcom1_yellow_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(368,13)}
-spriteset(spriteset_magcom1_green_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(368,14)}
-spriteset(spriteset_magcom1_palegreen_gold, "gfx/magCommuter1.png"){template_engine32WTF_MagCom1(368,15)}
-spriteset(spriteset_magcom1_darkgreen_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(368,16)}
-
-spriteset(spriteset_magcom1_inner_CC_pass, "gfx/magCommuter1.png") 		 {template_engine32WTF_MagCom1(1472,0)}
-spriteset(spriteset_magcom1_inner_black_pass, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1472,1)}
-spriteset(spriteset_magcom1_inner_gray_pass, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1472,2)}
-spriteset(spriteset_magcom1_inner_white_pass, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1472,3)}
-spriteset(spriteset_magcom1_inner_ltblue_pass, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1472,4)}
-spriteset(spriteset_magcom1_inner_blue_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1472,5)}
-spriteset(spriteset_magcom1_inner_darkblue_pass, "gfx/magCommuter1.png") {template_engine32WTF_MagCom1(1472,6)}
-spriteset(spriteset_magcom1_inner_mauve_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1472,7)}
-spriteset(spriteset_magcom1_inner_purple_pass, "gfx/magCommuter1.png")   {template_engine32WTF_MagCom1(1472,8)}
-spriteset(spriteset_magcom1_inner_pink_pass, "gfx/magCommuter1.png")  	 {template_engine32WTF_MagCom1(1472,9)}
-spriteset(spriteset_magcom1_inner_brown_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1472,10)}
-spriteset(spriteset_magcom1_inner_red_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1472,11)}
-spriteset(spriteset_magcom1_inner_orange_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1472,12)}
-spriteset(spriteset_magcom1_inner_yellow_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1472,13)}
-spriteset(spriteset_magcom1_inner_green_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1472,14)}
-spriteset(spriteset_magcom1_inner_palegreen_pass, "gfx/magCommuter1.png"){template_engine32WTF_MagCom1(1472,15)}
-spriteset(spriteset_magcom1_inner_darkgreen_pass, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1472,16)}
-
-spriteset(spriteset_magcom1_inner_CC_mail, "gfx/magCommuter1.png") 		 {template_engine32WTF_MagCom1(1656,0)}
-spriteset(spriteset_magcom1_inner_black_mail, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1656,1)}
-spriteset(spriteset_magcom1_inner_gray_mail, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1656,2)}
-spriteset(spriteset_magcom1_inner_white_mail, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1656,3)}
-spriteset(spriteset_magcom1_inner_ltblue_mail, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1656,4)}
-spriteset(spriteset_magcom1_inner_blue_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1656,5)}
-spriteset(spriteset_magcom1_inner_darkblue_mail, "gfx/magCommuter1.png") {template_engine32WTF_MagCom1(1656,6)}
-spriteset(spriteset_magcom1_inner_mauve_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1656,7)}
-spriteset(spriteset_magcom1_inner_purple_mail, "gfx/magCommuter1.png")   {template_engine32WTF_MagCom1(1656,8)}
-spriteset(spriteset_magcom1_inner_pink_mail, "gfx/magCommuter1.png")  	 {template_engine32WTF_MagCom1(1656,9)}
-spriteset(spriteset_magcom1_inner_brown_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1656,10)}
-spriteset(spriteset_magcom1_inner_red_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1656,11)}
-spriteset(spriteset_magcom1_inner_orange_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1656,12)}
-spriteset(spriteset_magcom1_inner_yellow_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1656,13)}
-spriteset(spriteset_magcom1_inner_green_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1656,14)}
-spriteset(spriteset_magcom1_inner_palegreen_mail, "gfx/magCommuter1.png"){template_engine32WTF_MagCom1(1656,15)}
-spriteset(spriteset_magcom1_inner_darkgreen_mail, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1656,16)}
-
-spriteset(spriteset_magcom1_inner_CC_gold, "gfx/magCommuter1.png") 		 {template_engine32WTF_MagCom1(1840,0)}
-spriteset(spriteset_magcom1_inner_black_gold, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1840,1)}
-spriteset(spriteset_magcom1_inner_gray_gold, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1840,2)}
-spriteset(spriteset_magcom1_inner_white_gold, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1840,3)}
-spriteset(spriteset_magcom1_inner_ltblue_gold, "gfx/magCommuter1.png")	 {template_engine32WTF_MagCom1(1840,4)}
-spriteset(spriteset_magcom1_inner_blue_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1840,5)}
-spriteset(spriteset_magcom1_inner_darkblue_gold, "gfx/magCommuter1.png") {template_engine32WTF_MagCom1(1840,6)}
-spriteset(spriteset_magcom1_inner_mauve_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1840,7)}
-spriteset(spriteset_magcom1_inner_purple_gold, "gfx/magCommuter1.png")   {template_engine32WTF_MagCom1(1840,8)}
-spriteset(spriteset_magcom1_inner_pink_gold, "gfx/magCommuter1.png")  	 {template_engine32WTF_MagCom1(1840,9)}
-spriteset(spriteset_magcom1_inner_brown_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1840,10)}
-spriteset(spriteset_magcom1_inner_red_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1840,11)}
-spriteset(spriteset_magcom1_inner_orange_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1840,12)}
-spriteset(spriteset_magcom1_inner_yellow_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1840,13)}
-spriteset(spriteset_magcom1_inner_green_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1840,14)}
-spriteset(spriteset_magcom1_inner_palegreen_gold, "gfx/magCommuter1.png"){template_engine32WTF_MagCom1(1840,15)}
-spriteset(spriteset_magcom1_inner_darkgreen_gold, "gfx/magCommuter1.png") 	 {template_engine32WTF_MagCom1(1840,16)}
-
-
-
-spriteset(spriteset_purchaseMenu_maglocal1, 		"gfx/PurchaseMenu.png"){template_purchaseMenu2(3,14)}
-spriteset(spriteset_train_magcommuter1, "gfx/magCommuter.png") { template_engine32(0, 7) }
-spriteset(spriteset_train_magcommuter1mail, "gfx/magCommuter.png") { template_engine32(176, 7) }
-spriteset(spriteset_train_magcommuter1gold, "gfx/magCommuter.png") { template_engine32(352, 7) }
-/*
-switch(FEAT_TRAINS, SELF, switch_magcom1, cargo_type_in_veh){
-PASS: spriteset_train_magcommuter1;
-MAIL: spriteset_train_magcommuter1mail;
-GOLD: spriteset_train_magcommuter1gold;
-VALU: spriteset_train_magcommuter1gold;
-DIAM: spriteset_train_magcommuter1gold;
-return spriteset_train_magcommuter1;
-}
-*/
-
-
-
-
-
-switch(FEAT_TRAINS, SELF, magcom1_subtype_text, cargo_subtype) {
-    0: return string(STR_subtype_CC);
-	1: return string(STR_subtype_RANDOM);
-	2: return string(STR_subtype_BLACK);
-	3: return string(STR_subtype_GRAY);
-	4: return string(STR_subtype_WHITE);
-	5: return string(STR_subtype_LTBLUE);
-	6: return string(STR_subtype_BLUE);
-	7: return string(STR_subtype_DKBLUE);
-	8: return string(STR_subtype_MAUVE);
-	9: return string(STR_subtype_PURPLE);
-	10: return string(STR_subtype_PINK);
-	11: return string(STR_subtype_BROWN);
-	12: return string(STR_subtype_RED);
-	13: return string(STR_subtype_ORANGE);
-	14: return string(STR_subtype_YELLOW);
-	15: return string(STR_subtype_GREEN);
-	16: return string(STR_subtype_PALEGREEN);
-	17: return string(STR_subtype_DKGREEN);
-	return CB_RESULT_NO_TEXT;
-}
-
-random_switch (FEAT_TRAINS, SELF, random_magcom1_inner_pass){
-1: return spriteset_magcom1_inner_black_pass;
-1: return spriteset_magcom1_inner_gray_pass;
-1: return spriteset_magcom1_inner_white_pass;
-1: return spriteset_magcom1_inner_ltblue_pass;
-1: return spriteset_magcom1_inner_blue_pass;
-1: return spriteset_magcom1_inner_darkblue_pass;
-1: return spriteset_magcom1_inner_mauve_pass;
-1: return spriteset_magcom1_inner_purple_pass;
-1: return spriteset_magcom1_inner_pink_pass;
-1: return spriteset_magcom1_inner_brown_pass;
-1: return spriteset_magcom1_inner_red_pass;
-1: return spriteset_magcom1_inner_orange_pass;
-1: return spriteset_magcom1_inner_yellow_pass;
-1: return spriteset_magcom1_inner_green_pass;
-1: return spriteset_magcom1_inner_palegreen_pass;
-1: return spriteset_magcom1_inner_darkgreen_pass;
-}
-random_switch (FEAT_TRAINS, SELF, random_magcom1_inner_mail){
-1: return spriteset_magcom1_inner_black_mail;
-1: return spriteset_magcom1_inner_gray_mail;
-1: return spriteset_magcom1_inner_white_mail;
-1: return spriteset_magcom1_inner_ltblue_mail;
-1: return spriteset_magcom1_inner_blue_mail;
-1: return spriteset_magcom1_inner_darkblue_mail;
-1: return spriteset_magcom1_inner_mauve_mail;
-1: return spriteset_magcom1_inner_purple_mail;
-1: return spriteset_magcom1_inner_pink_mail;
-1: return spriteset_magcom1_inner_brown_mail;
-1: return spriteset_magcom1_inner_red_mail;
-1: return spriteset_magcom1_inner_orange_mail;
-1: return spriteset_magcom1_inner_yellow_mail;
-1: return spriteset_magcom1_inner_green_mail;
-1: return spriteset_magcom1_inner_palegreen_mail;
-1: return spriteset_magcom1_inner_darkgreen_mail;
-}
-random_switch (FEAT_TRAINS, SELF, random_magcom1_inner_gold){
-1: return spriteset_magcom1_inner_black_gold;
-1: return spriteset_magcom1_inner_gray_gold;
-1: return spriteset_magcom1_inner_white_gold;
-1: return spriteset_magcom1_inner_ltblue_gold;
-1: return spriteset_magcom1_inner_blue_gold;
-1: return spriteset_magcom1_inner_darkblue_gold;
-1: return spriteset_magcom1_inner_mauve_gold;
-1: return spriteset_magcom1_inner_purple_gold;
-1: return spriteset_magcom1_inner_pink_gold;
-1: return spriteset_magcom1_inner_brown_gold;
-1: return spriteset_magcom1_inner_red_gold;
-1: return spriteset_magcom1_inner_orange_gold;
-1: return spriteset_magcom1_inner_yellow_gold;
-1: return spriteset_magcom1_inner_green_gold;
-1: return spriteset_magcom1_inner_palegreen_gold;
-1: return spriteset_magcom1_inner_darkgreen_gold;
-}
-
-random_switch (FEAT_TRAINS, SELF, random_magcom1_pass){
-1: return spriteset_magcom1_black_pass;
-1: return spriteset_magcom1_gray_pass;
-1: return spriteset_magcom1_white_pass;
-1: return spriteset_magcom1_ltblue_pass;
-1: return spriteset_magcom1_blue_pass;
-1: return spriteset_magcom1_darkblue_pass;
-1: return spriteset_magcom1_mauve_pass;
-1: return spriteset_magcom1_purple_pass;
-1: return spriteset_magcom1_pink_pass;
-1: return spriteset_magcom1_brown_pass;
-1: return spriteset_magcom1_red_pass;
-1: return spriteset_magcom1_orange_pass;
-1: return spriteset_magcom1_yellow_pass;
-1: return spriteset_magcom1_green_pass;
-1: return spriteset_magcom1_palegreen_pass;
-1: return spriteset_magcom1_darkgreen_pass;
-}
-random_switch (FEAT_TRAINS, SELF, random_magcom1_mail){
-1: return spriteset_magcom1_black_mail;
-1: return spriteset_magcom1_gray_mail;
-1: return spriteset_magcom1_white_mail;
-1: return spriteset_magcom1_ltblue_mail;
-1: return spriteset_magcom1_blue_mail;
-1: return spriteset_magcom1_darkblue_mail;
-1: return spriteset_magcom1_mauve_mail;
-1: return spriteset_magcom1_purple_mail;
-1: return spriteset_magcom1_pink_mail;
-1: return spriteset_magcom1_brown_mail;
-1: return spriteset_magcom1_red_mail;
-1: return spriteset_magcom1_orange_mail;
-1: return spriteset_magcom1_yellow_mail;
-1: return spriteset_magcom1_green_mail;
-1: return spriteset_magcom1_palegreen_mail;
-1: return spriteset_magcom1_darkgreen_mail;
-}
-random_switch (FEAT_TRAINS, SELF, random_magcom1_gold){
-1: return spriteset_magcom1_black_gold;
-1: return spriteset_magcom1_gray_gold;
-1: return spriteset_magcom1_white_gold;
-1: return spriteset_magcom1_ltblue_gold;
-1: return spriteset_magcom1_blue_gold;
-1: return spriteset_magcom1_darkblue_gold;
-1: return spriteset_magcom1_mauve_gold;
-1: return spriteset_magcom1_purple_gold;
-1: return spriteset_magcom1_pink_gold;
-1: return spriteset_magcom1_brown_gold;
-1: return spriteset_magcom1_red_gold;
-1: return spriteset_magcom1_orange_gold;
-1: return spriteset_magcom1_yellow_gold;
-1: return spriteset_magcom1_green_gold;
-1: return spriteset_magcom1_palegreen_gold;
-1: return spriteset_magcom1_darkgreen_gold;
-}
-
-
-
-
-
-
-switch(FEAT_TRAINS, SELF, switch_subtypes_magcom1_pass, cargo_subtype){
-0: return spriteset_magcom1_CC_pass;
-1: return random_magcom1_pass; //randomswitch later
-2: return spriteset_magcom1_black_pass;
-3: return spriteset_magcom1_gray_pass;
-4: return spriteset_magcom1_white_pass;
-5: return spriteset_magcom1_ltblue_pass;
-6: return spriteset_magcom1_blue_pass;
-7: return spriteset_magcom1_darkblue_pass;
-8: return spriteset_magcom1_mauve_pass;
-9: return spriteset_magcom1_purple_pass;
-10: return spriteset_magcom1_pink_pass;
-11: return spriteset_magcom1_brown_pass;
-12: return spriteset_magcom1_red_pass;
-13: return spriteset_magcom1_orange_pass;
-14: return spriteset_magcom1_yellow_pass;
-15: return spriteset_magcom1_green_pass;
-16: return spriteset_magcom1_palegreen_pass;
-17: return spriteset_magcom1_darkgreen_pass;
-return spriteset_magcom1_CC_pass;
-}
-
-switch(FEAT_TRAINS, SELF, switch_subtypes_magcom1_mail, cargo_subtype){
-0: return spriteset_magcom1_CC_mail;
-1: return random_magcom1_mail;
-2: return spriteset_magcom1_black_mail;
-3: return spriteset_magcom1_gray_mail;
-4: return spriteset_magcom1_white_mail;
-5: return spriteset_magcom1_ltblue_mail;
-6: return spriteset_magcom1_blue_mail;
-7: return spriteset_magcom1_darkblue_mail;
-8: return spriteset_magcom1_mauve_mail;
-9: return spriteset_magcom1_purple_mail;
-10: return spriteset_magcom1_pink_mail;
-11: return spriteset_magcom1_brown_mail;
-12: return spriteset_magcom1_red_mail;
-13: return spriteset_magcom1_orange_mail;
-14: return spriteset_magcom1_yellow_mail;
-15: return spriteset_magcom1_green_mail;
-16: return spriteset_magcom1_palegreen_mail;
-17: return spriteset_magcom1_darkgreen_mail;
-return spriteset_magcom1_CC_mail;
-}
-
-switch(FEAT_TRAINS, SELF, switch_subtypes_magcom1_gold, cargo_subtype){
-0: return spriteset_magcom1_CC_gold;
-1: random_magcom1_gold;
-2: return spriteset_magcom1_black_gold;
-3: return spriteset_magcom1_gray_gold;
-4: return spriteset_magcom1_white_gold;
-5: return spriteset_magcom1_ltblue_gold;
-6: return spriteset_magcom1_blue_gold;
-7: return spriteset_magcom1_darkblue_gold;
-8: return spriteset_magcom1_mauve_gold;
-9: return spriteset_magcom1_purple_gold;
-10: return spriteset_magcom1_pink_gold;
-11: return spriteset_magcom1_brown_gold;
-12: return spriteset_magcom1_red_gold;
-13: return spriteset_magcom1_orange_gold;
-14: return spriteset_magcom1_yellow_gold;
-15: return spriteset_magcom1_green_gold;
-16: return spriteset_magcom1_palegreen_gold;
-17: return spriteset_magcom1_darkgreen_gold;
-return spriteset_magcom1_CC_gold;
-}
-
-switch(FEAT_TRAINS, SELF, switch_magcom1_x, cargo_type_in_veh){
-PASS: switch_subtypes_magcom1_pass;
-MAIL: switch_subtypes_magcom1_mail;
-GOLD: switch_subtypes_magcom1_gold;
-VALU: switch_subtypes_magcom1_gold;
-DIAM: switch_subtypes_magcom1_gold;
-return switch_subtypes_magcom1_pass;
-}
-
-switch(FEAT_TRAINS, SELF, switch_subtypes_magcom1_inner_pass, cargo_subtype){
-0: return spriteset_magcom1_inner_CC_pass;
-1: return random_magcom1_inner_pass; //randomswitch later
-2: return spriteset_magcom1_inner_black_pass;
-3: return spriteset_magcom1_inner_gray_pass;
-4: return spriteset_magcom1_inner_white_pass;
-5: return spriteset_magcom1_inner_ltblue_pass;
-6: return spriteset_magcom1_inner_blue_pass;
-7: return spriteset_magcom1_inner_darkblue_pass;
-8: return spriteset_magcom1_inner_mauve_pass;
-9: return spriteset_magcom1_inner_purple_pass;
-10: return spriteset_magcom1_inner_pink_pass;
-11: return spriteset_magcom1_inner_brown_pass;
-12: return spriteset_magcom1_inner_red_pass;
-13: return spriteset_magcom1_inner_orange_pass;
-14: return spriteset_magcom1_inner_yellow_pass;
-15: return spriteset_magcom1_inner_green_pass;
-16: return spriteset_magcom1_inner_palegreen_pass;
-17: return spriteset_magcom1_inner_darkgreen_pass;
-return spriteset_magcom1_inner_CC_pass;
-}
-
-switch(FEAT_TRAINS, SELF, switch_subtypes_magcom1_inner_mail, cargo_subtype){
-0: return spriteset_magcom1_inner_CC_mail;
-1: return random_magcom1_inner_mail;
-2: return spriteset_magcom1_inner_black_mail;
-3: return spriteset_magcom1_inner_gray_mail;
-4: return spriteset_magcom1_inner_white_mail;
-5: return spriteset_magcom1_inner_ltblue_mail;
-6: return spriteset_magcom1_inner_blue_mail;
-7: return spriteset_magcom1_inner_darkblue_mail;
-8: return spriteset_magcom1_inner_mauve_mail;
-9: return spriteset_magcom1_inner_purple_mail;
-10: return spriteset_magcom1_inner_pink_mail;
-11: return spriteset_magcom1_inner_brown_mail;
-12: return spriteset_magcom1_inner_red_mail;
-13: return spriteset_magcom1_inner_orange_mail;
-14: return spriteset_magcom1_inner_yellow_mail;
-15: return spriteset_magcom1_inner_green_mail;
-16: return spriteset_magcom1_inner_palegreen_mail;
-17: return spriteset_magcom1_inner_darkgreen_mail;
-return spriteset_magcom1_inner_CC_mail;
-}
-
-switch(FEAT_TRAINS, SELF, switch_subtypes_magcom1_inner_gold, cargo_subtype){
-0: return spriteset_magcom1_inner_CC_gold;
-1: random_magcom1_inner_gold;
-2: return spriteset_magcom1_inner_black_gold;
-3: return spriteset_magcom1_inner_gray_gold;
-4: return spriteset_magcom1_inner_white_gold;
-5: return spriteset_magcom1_inner_ltblue_gold;
-6: return spriteset_magcom1_inner_blue_gold;
-7: return spriteset_magcom1_inner_darkblue_gold;
-8: return spriteset_magcom1_inner_mauve_gold;
-9: return spriteset_magcom1_inner_purple_gold;
-10: return spriteset_magcom1_inner_pink_gold;
-11: return spriteset_magcom1_inner_brown_gold;
-12: return spriteset_magcom1_inner_red_gold;
-13: return spriteset_magcom1_inner_orange_gold;
-14: return spriteset_magcom1_inner_yellow_gold;
-15: return spriteset_magcom1_inner_green_gold;
-16: return spriteset_magcom1_inner_palegreen_gold;
-17: return spriteset_magcom1_inner_darkgreen_gold;
-return spriteset_magcom1_inner_CC_gold;
-}
-
-switch(FEAT_TRAINS, SELF, switch_subtypes_magcom1_inner_x, cargo_type_in_veh){
-PASS: switch_subtypes_magcom1_inner_pass;
-MAIL: switch_subtypes_magcom1_inner_mail;
-GOLD: switch_subtypes_magcom1_inner_gold;
-VALU: switch_subtypes_magcom1_inner_gold;
-DIAM: switch_subtypes_magcom1_inner_gold;
-return switch_subtypes_magcom1_inner_pass;
-}
-switch(FEAT_TRAINS, SELF, switch_magcom1_rear, position_in_consist_from_end){
-0: switch_magcom1_x;
-return switch_subtypes_magcom1_inner_x;
-}
-switch(FEAT_TRAINS, SELF, switch_magcom1_front, position_in_consist){
-0: switch_magcom1_x;
-return switch_magcom1_rear;
-}
-
-switch(FEAT_TRAINS, SELF, maglocal1_wetrail_power_switch, current_railtype){
-WETR: 15000*7/10;
-15000;
-}
-
-switch(FEAT_TRAINS, SELF, switch_magcom1_attach, vehicle_type_id){
-	item_MagCom1:            CB_RESULT_ATTACH_ALLOW;
-	item_magpax: CB_RESULT_ATTACH_ALLOW;
-	string(error_attach_mglv_express);
-}
-
-item(FEAT_TRAINS, item_MagCom1, 300) { //ID300
-	property {
-		name:                         string(STR_NAME_ML1);
-        climates_available:           ALL_CLIMATES;
-        introduction_date:            date(2043, 1, 1);
-        model_life:                   VEHICLE_NEVER_EXPIRES;
-        vehicle_life:                 255;
-        reliability_decay:            5;
-				cargo_capacity:				  			50;
-        refittable_cargo_classes:     bitmask(CC_PASSENGERS, CC_MAIL, CC_ARMOURED);
-        non_refittable_cargo_classes: bitmask();
-				cargo_allow_refit:		 			  [YETI, YETY];
-        default_cargo_type:			      PASS;
-        loading_speed:                5;
-        cost_factor:                  10;
-        running_cost_factor:          100;
-        sprite_id:                    SPRITE_ID_NEW_TRAIN;
-        speed:                        140 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
-        refit_cost:                   0;
-        track_type:                   MGLV;
-        ai_special_flag:              AI_FLAG_CARGO;
-        power:                        3500 hp;
-        running_cost_base:            RUNNING_COST_ELECTRIC;
-        dual_headed:                  1;
-        weight:                       80 ton;
-        ai_engine_rank:               0;
-        engine_class:                 ENGINE_CLASS_MAGLEV;
-        extra_power_per_wagon:        0 kW;
-        tractive_effort_coefficient:  0.2;
-        air_drag_coefficient:         0.004;
-        length: 8;
-        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DEFAULT, 2, DISABLE_WAGON_POWER);
-        extra_weight_per_wagon:       0 ton;
-        bitmask_vehicle_info:         0;
-	}
-	graphics {
-				default: switch_magcom1_front;
-		cargo_subtype_text: magcom1_subtype_text;
-		purchase: spriteset_purchaseMenu_maglocal1;
-		can_attach_wagon: switch_magcom1_attach;
-		additional_text: string(info_meat_grinder);
-		speed: 							211; //maybe for wagons later, not now
-		power: 							maglocal1_wetrail_power_switch; //engine only
-		weight: 						80; //engine only
-		tractive_effort_coefficient:	255; //engine only
-		loading_speed:					switch_pax_loadspeed; //express engines AND all wagons
-		cargo_capacity:					magpax_local1_capacity_switch; //express engines AND all wagons
-		cost_factor:						32; //everything
-		running_cost_factor:				100; //only engines
-		purchase_power: 15000;
-	}
-
-}
-
-
-////////////////////////////////////////////////////////////////////////////////////
-
-
-
-//SLUGS
-
-spriteset(spriteset_purchaseMenu_SLUG, 				"gfx/PurchaseMenu.png"){template_purchaseMenu2(4,25)}
-spriteset(spriteset_train_SLUGfront, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,0)}
-spriteset(spriteset_train_SLUGrear, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,1)}
-spriteset(spriteset_train_SLUGmiddle, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,2)}
-
-alternative_sprites (spriteset_train_SLUGfront, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) 	{template_32bpp_x1_vehicle8_MASK(0x00,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUGrear, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) 	{template_32bpp_x1_vehicle8_MASK(0x01,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUGmiddle, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x02,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-
-alternative_sprites (spriteset_train_SLUGfront, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle8_MASK(0x00,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUGrear, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle8_MASK(0x01,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUGmiddle, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x02,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-
-
-switch (FEAT_TRAINS, SELF, switch_SLUG_consist_rear, position_in_consist_from_end){
-0: spriteset_train_SLUGrear;
-return spriteset_train_SLUGmiddle;
-}
-switch (FEAT_TRAINS, SELF, switch_SLUG_consist_front, position_in_consist){
-0: spriteset_train_SLUGfront;
-return switch_SLUG_consist_rear;
-}
-
-switch (FEAT_TRAINS, SELF, switch_SLUG_attach, vehicle_type_id){
-	item_magpax: CB_RESULT_ATTACH_ALLOW;
-	item_maglevhopper: CB_RESULT_ATTACH_ALLOW;
-	item_maglevflatbed: CB_RESULT_ATTACH_ALLOW;
-	item_maglevtanker: CB_RESULT_ATTACH_ALLOW;
-	item_maglevuniversal: CB_RESULT_ATTACH_ALLOW;
-	item_SLUG: CB_RESULT_ATTACH_ALLOW;
-	string(error_attach_mglv_freight);
-}
-
-item(FEAT_TRAINS, item_SLUG, 321) { //ID321
-	property {
-		name:                         string(STR_NAME_SLUG);
-        climates_available:           ALL_CLIMATES;
-        introduction_date:            date(2069, 1, 1);
-        model_life:                   VEHICLE_NEVER_EXPIRES;
-        vehicle_life:                 255;
-        reliability_decay:            5;
-		//Just an engine, no refit
-        refittable_cargo_classes:     bitmask();
-        non_refittable_cargo_classes: bitmask();
-
-        loading_speed:                5;
-        cost_factor:                  10;
-        running_cost_factor:          100;
-        sprite_id:                    SPRITE_ID_NEW_TRAIN;
-        speed:                        350 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
-        refit_cost:                   0;
-        track_type:                   MGLV;
-        ai_special_flag:              AI_FLAG_CARGO;
-        power:                        20000 hp;
-        running_cost_base:            RUNNING_COST_ELECTRIC;
-        dual_headed:                  1;
-        cargo_capacity:               0;
-        weight:                       30 ton;
-        ai_engine_rank:               0;
-        engine_class:                 ENGINE_CLASS_MAGLEV;
-        extra_power_per_wagon:        0 kW;
-        tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0.004;
-        length: 8;
-        visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
-        extra_weight_per_wagon:       0 ton;
-        bitmask_vehicle_info:         0;
-	}
-	graphics {
-		default: switch_SLUG_consist_front;//SLUGreverseswitch;
-		can_attach_wagon: switch_SLUG_attach;
-		additional_text: string(info_mglv_SLUG);
-		purchase: spriteset_purchaseMenu_SLUG;
-		speed: 							264; //maybe for wagons later, not now
-		power: 							32500; //engine only
-		weight: 							100; //engine only
-		tractive_effort_coefficient:		255; //engine only
-		loading_speed:					switch_pax_loadspeed; //express engines AND all wagons
-		//cargo_capacity:					magpaxSLUG_capacity_switch; //express engines AND all wagons
-		//purchase_cargo_capacity:		magpax_capacity_switch; //express engines A
-		cost_factor:						40; //everything
-		running_cost_factor:				100; //only engines
-		purchase_power: 32500;
-		}
-
-}
-
-
-spriteset(spriteset_purchaseMenu_SLUG2, 				"gfx/PurchaseMenu.png"){template_purchaseMenu2(5,25)}
-spriteset(spriteset_train_SLUG2rear, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,5)}
-spriteset(spriteset_train_SLUG2front1, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,6)}
-spriteset(spriteset_train_SLUG2front2, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,7)}
-spriteset(spriteset_train_SLUG2front3, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,8)}
-spriteset(spriteset_train_SLUG2front4, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,9)}
-spriteset(spriteset_train_SLUG2front5, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,10)}
-spriteset(spriteset_train_SLUG2front6, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,11)}
-spriteset(spriteset_train_SLUG2front7, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,12)}
-spriteset(spriteset_train_SLUG2front8, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,13)}
-spriteset(spriteset_train_SLUG2front9, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,14)}
-spriteset(spriteset_train_SLUG2front10, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,15)}
-
-
-alternative_sprites (spriteset_train_SLUG2rear, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle8_MASK(0x01,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUG2front1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x10,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUG2front2, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x11,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUG2front3, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x12,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUG2front4, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x13,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUG2front5, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x14,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUG2front6, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x15,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUG2front7, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x16,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUG2front8, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x17,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUG2front9, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x18,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUG2front10, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x19,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-
-alternative_sprites (spriteset_train_SLUG2rear, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) 	{template_32bpp_x1_vehicle8_MASK(0x01,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUG2front1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x10,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUG2front2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x11,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUG2front3, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x12,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUG2front4, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x13,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUG2front5, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x14,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUG2front6, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x15,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUG2front7, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x16,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUG2front8, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x17,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUG2front9, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x18,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_SLUG2front10, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x19,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-
-
-random_switch(FEAT_TRAINS,SELF,SLUG2frontrandom){
-3: spriteset_train_SLUG2front1;
-3: spriteset_train_SLUG2front2;
-3: spriteset_train_SLUG2front3;
-3: spriteset_train_SLUG2front4;
-1: spriteset_train_SLUG2front5;
-3: spriteset_train_SLUG2front6;
-3: spriteset_train_SLUG2front7;
-3: spriteset_train_SLUG2front8;
-3: spriteset_train_SLUG2front9;
-1: spriteset_train_SLUG2front10;
-}
-
-switch (FEAT_TRAINS, SELF, switch_SLUG2_consist_rear, position_in_consist_from_end){
-0: spriteset_train_SLUG2rear;
-return spriteset_train_SLUGmiddle;
-}
-switch (FEAT_TRAINS, SELF, switch_SLUG2_consist_front, position_in_consist){
-0: SLUG2frontrandom;
-return switch_SLUG2_consist_rear;
-}
-switch(FEAT_TRAINS, SELF, SLUG2_wetrail_power_switch, current_railtype){
-WETR: 28000*7/10;
-28000;
-}
-
-switch (FEAT_TRAINS, SELF, switch_ANIMALEXPRESS_attach, vehicle_type_id){
-	item_magpax: CB_RESULT_ATTACH_ALLOW;
-	item_maglevhopper: CB_RESULT_ATTACH_ALLOW;
-	item_maglevflatbed: CB_RESULT_ATTACH_ALLOW;
-	item_maglevtanker: CB_RESULT_ATTACH_ALLOW;
-	item_maglevuniversal: CB_RESULT_ATTACH_ALLOW;
-	item_ANIMALEXPRESS: CB_RESULT_ATTACH_ALLOW;
-	string(error_attach_mglv_freight);
-}
-
-
-item(FEAT_TRAINS, item_ANIMALEXPRESS, 319) { //ID323
-	property {
-		name:                         string(STR_NAME_SLUG2);
-        climates_available:           ALL_CLIMATES;
-        introduction_date:            date(2016, 1, 1);
-        model_life:                   VEHICLE_NEVER_EXPIRES;
-        vehicle_life:                 255;
-        reliability_decay:            5;
-		//Just an engine, no refit
-        refittable_cargo_classes:     bitmask();
-        non_refittable_cargo_classes: bitmask();
-
-        loading_speed:                5;
-        cost_factor:                  10;
-        running_cost_factor:          100;
-        sprite_id:                    SPRITE_ID_NEW_TRAIN;
-        speed:                        350 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_TILT, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
-        refit_cost:                   0;
-        track_type:                   MGLV;
-        ai_special_flag:              AI_FLAG_CARGO;
-        power:                        20000 hp;
-        running_cost_base:            RUNNING_COST_ELECTRIC;
-        dual_headed:                  1;
-        cargo_capacity:               0;
-        weight:                       30 ton;
-        ai_engine_rank:               0;
-        engine_class:                 ENGINE_CLASS_MAGLEV;
-        extra_power_per_wagon:        0 kW;
-        tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0.004;
-        length: 8;
-        visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
-        extra_weight_per_wagon:       0 ton;
-        bitmask_vehicle_info:         0;
-	}
-	graphics {
-		default: switch_SLUG2_consist_front;
-		can_attach_wagon: switch_ANIMALEXPRESS_attach;
-		additional_text: string(ingo_mglv_animal_express);
-		purchase: spriteset_purchaseMenu_SLUG2;
-		speed: 							211; //maybe for wagons later, not now
-		power: 							SLUG2_wetrail_power_switch; //engine only
-		weight: 							100; //engine only
-		tractive_effort_coefficient:		255; //engine only
-		loading_speed:					switch_pax_loadspeed; //express engines AND all wagons
-		//cargo_capacity:					magpaxSLUG_capacity_switch; //express engines AND all wagons
-		//purchase_cargo_capacity:		magpax_capacity_switch; //express engines A
-		cost_factor:						34; //everything
-		running_cost_factor:				100; //only engines
-		purchase_power: 28000;
-		}
-
-}
-
-
-//==============================================================================================================================
-//==============================================================================================================================
-//================================  R A I N B O W   S L U G ====================================================================
-//==============================================================================================================================
-//==============================================================================================================================
-
-// Random bits in Rainbow Slug:
-//  First vehicle in consist
-//    5 bits: random_RAINBOWSLUG_HEAD
-//    3 bits: RAINBOWSLUG_reverse_random
-//  Last vehicle in consist:
-//    5 bits: SLUG_colour_mapping_random
-//    3 bits: still available
-
-param[01] = reserve_sprites(17);
-
- replace(param[01]) {
- 	recolour_sprite { //CCdark blue
-	/*	0xC6:	0xC6;
-		0xC7:	0xC7;
-		0xC8:	0xC8;
-		0xC9:	0xC9;
-		0xCA:	0xCA;
-		0xCB:	0xCB;
-		0xCC:	0xCC;
-		0xCD:	0xCD;*/
-	} //CCdark blue
- 
- 	recolour_sprite { //CCpale green
-		0xC6:	0x60;
-		0xC7:	0x61;
-		0xC8:	0x62;
-		0xC9:	0x63;
-		0xCA:	0x64;
-		0xCB:	0x65;
-		0xCC:	0x66;
-		0xCD:	0x67;
-	} //CCpale green
-
- 	recolour_sprite { //CCpink
-		0xC6:	0x2A;
-		0xC7:	0x2B;
-		0xC8:	0x2C;
-		0xC9:	0x2D;
-		0xCA:	0x2E;
-		0xCB:	0x2F;
-		0xCC:	0x30;
-		0xCD:	0x31;
-	} //CCpink
- 
- 	recolour_sprite { //CCyellow
-		0xC6:	0x3E;
-		0xC7:	0x3F;
-		0xC8:	0x40;
-		0xC9:	0x41;
-		0xCA:	0x42;
-		0xCB:	0x43;
-		0xCC:	0x44;
-		0xCD:	0x45;
-	} //CCyellow
-
- 	recolour_sprite { //CCred
-		0xC6:	0xB3;
-		0xC7:	0xB4;
-		0xC8:	0xB5;
-		0xC9:	0xB6;
-		0xCA:	0xB7;
-		0xCB:	0xA4;
-		0xCC:	0xA5;
-		0xCD:	0xA6;
-	} //CCred
- 
- 	recolour_sprite { //CClight blue
-		0xC6:	0x9A;
-		0xC7:	0x9B;
-		0xC8:	0x9C;
-		0xC9:	0x9D;
-		0xCA:	0x9E;
-		0xCB:	0x9F;
-		0xCC:	0xA0;
-		0xCD:	0xA1;
-	} //CClight blue
-
- 	recolour_sprite { //CCgreen
-		0xC6:	0x52;
-		0xC7:	0x53;
-		0xC8:	0x54;
-		0xC9:	0x55;
-		0xCA:	0xCE;
-		0xCB:	0xCF;
-		0xCC:	0xD0;
-		0xCD:	0xD1;
-	} //CCgreen
- 
- 	recolour_sprite { //CCdark green
-		0xC6:	0x58;
-		0xC7:	0x59;
-		0xC8:	0x5A;
-		0xC9:	0x5B;
-		0xCA:	0x5C;
-		0xCB:	0x5D;
-		0xCC:	0x5E;
-		0xCD:	0x5F;
-	} //CCdark green
-
- 	recolour_sprite { //CCblue
-		0xC6:	0x92;
-		0xC7:	0x93;
-		0xC8:	0x94;
-		0xC9:	0x95;
-		0xCA:	0x96;
-		0xCB:	0x97;
-		0xCC:	0x98;
-		0xCD:	0x99;
-	} //CCblue
-
- 	recolour_sprite { //CCcream
-		0xC6:	0x72;
-		0xC7:	0x73;
-		0xC8:	0x74;
-		0xC9:	0x75;
-		0xCA:	0x76;
-		0xCB:	0x77;
-		0xCC:	0x78;
-		0xCD:	0x79;
-	} //CCcream
-
- 	recolour_sprite { //CCmauve
-		0xC6:	0x80;
-		0xC7:	0x81;
-		0xC8:	0x82;
-		0xC9:	0x83;
-		0xCA:	0x84;
-		0xCB:	0x85;
-		0xCC:	0x86;
-		0xCD:	0x87;
-	} //CCmauve
-
- 	recolour_sprite { //CCpurple
-		0xC6:	0x88;
-		0xC7:	0x89;
-		0xC8:	0x8A;
-		0xC9:	0x8B;
-		0xCA:	0x8C;
-		0xCB:	0x8D;
-		0xCC:	0x8E;
-		0xCD:	0x8F;
-	} //CCpurple
-
- 	recolour_sprite { //CCorange
-		0xC6:	0x40;
-		0xC7:	0xC0;
-		0xC8:	0xC1;
-		0xC9:	0xC2;
-		0xCA:	0xC3;
-		0xCB:	0xC4;
-		0xCC:	0xC5;
-		0xCD:	0x27;
-	} //CCorange
-
- 	recolour_sprite { //CCbrown
-		0xC6:	0x20;
-		0xC7:	0x21;
-		0xC8:	0x22;
-		0xC9:	0x23;
-		0xCA:	0x24;
-		0xCB:	0x25;
-		0xCC:	0x26;
-		0xCD:	0x27;
-	} //CCbrown
-
- 	recolour_sprite { //CCgray
-		0xC6:	0x04;
-		0xC7:	0x05;
-		0xC8:	0x06;
-		0xC9:	0x07;
-		0xCA:	0x08;
-		0xCB:	0x09;
-		0xCC:	0x0A;
-		0xCD:	0x0B;
-	} //CCgray
-
- 	recolour_sprite { //CCwhite
-		0xC6:	0x08;
-		0xC7:	0x09;
-		0xC8:	0x0A;
-		0xC9:	0x0B;
-		0xCA:	0x0C;
-		0xCB:	0x0D;
-		0xCC:	0x0E;
-		0xCD:	0x0F;
-	} //CCwhite
-
- 	recolour_sprite { // BLACK
-		0xC6:	0x01;
-		0xC7:	0x02;
-		0xC8:	0x03;
-		0xC9:	0x04;
-		0xCA:	0x05;
-		0xCB:	0x06;
-		0xCC:	0x07;
-		0xCD:	0x08;
-		
-		0x50:	0x08;
-		0x51:	0x09;
-		0x52:	0x0A;
-		0x53:	0x0B;
-		0x54:	0x0C;
-		0x55:	0x0D;
-		0x56:	0x0E;
-		0x57:	0x0F;
-		
-	} // BLACK
-}
-
-
-//==============================================================================================================================
-//SPRITES
-spriteset(spriteset_purchaseMenu_RAINBOWSLUG, 	"gfx/PurchaseMenu.png")	{template_purchaseMenu2		(5,24)}
-spriteset(spriteset_train_RAINBOWSLUGfront, 	"gfx/SLUGwtf2.png") 	{template_engine32WTF_SLUG2	(1,0)}
-spriteset(spriteset_train_RAINBOWSLUGfront_cat, 	"gfx/SLUGwtf2.png") 	{template_engine32WTF_SLUG2	(2,0)}
-spriteset(spriteset_train_RAINBOWSLUGfront_unicorn, 	"gfx/SLUGwtf2.png") 	{template_engine32WTF_SLUG2	(2,1)}
-spriteset(spriteset_train_RAINBOWSLUGfront_eye, 	"gfx/SLUGwtf2.png") 	{template_engine32WTF_SLUG2	(2,2)}
-spriteset(spriteset_train_RAINBOWSLUGfront_hat, 	"gfx/SLUGwtf2.png") 	{template_engine32WTF_SLUG2	(2,3)}
-
-spriteset(spriteset_train_RAINBOWSLUGrear, 		"gfx/SLUGwtf2.png") 	{template_engine32WTF_SLUG2	(1,1)}
-spriteset(spriteset_train_RAINBOWSLUGmiddle, 	"gfx/SLUGwtf2.png") 	{template_engine32WTF_SLUG2	(1,2)}
-
-alternative_sprites (spriteset_train_RAINBOWSLUGfront, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle8_MASK(0x20,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_RAINBOWSLUGfront_cat, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle8_MASK(0x21,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_RAINBOWSLUGfront_unicorn, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle8_MASK(0x22,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_RAINBOWSLUGfront_eye, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle8_MASK(0x23,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_RAINBOWSLUGfront_hat, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle8_MASK(0x24,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-
-alternative_sprites (spriteset_train_RAINBOWSLUGrear, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle8_MASK(0x01,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_RAINBOWSLUGmiddle, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x02,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-
-
-alternative_sprites (spriteset_train_RAINBOWSLUGfront, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) 	{template_32bpp_x1_vehicle8_MASK(0x20,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_RAINBOWSLUGfront_cat, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) 	{template_32bpp_x1_vehicle8_MASK(0x21,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_RAINBOWSLUGfront_unicorn, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) 	{template_32bpp_x1_vehicle8_MASK(0x22,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_RAINBOWSLUGfront_eye, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) 	{template_32bpp_x1_vehicle8_MASK(0x23,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_RAINBOWSLUGfront_hat, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) 	{template_32bpp_x1_vehicle8_MASK(0x24,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-
-alternative_sprites (spriteset_train_RAINBOWSLUGrear, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) 	{template_32bpp_x1_vehicle8_MASK(0x01,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_train_RAINBOWSLUGmiddle, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x02,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-
-
-//==============================================================================================================================
-//CUSTOM HEADS
-switch(FEAT_TRAINS,PARENT, random_RAINBOWSLUG_HEAD, random_bits & 0x1F){
-0..9: spriteset_train_RAINBOWSLUGfront;
-10: spriteset_train_RAINBOWSLUGfront_cat;
-11..17: spriteset_train_RAINBOWSLUGfront_unicorn;
-18..27: spriteset_train_RAINBOWSLUGfront_eye;
-28..31: spriteset_train_RAINBOWSLUGfront_hat;
-}
-
-//FORWARD MODE
-switch (FEAT_TRAINS, SELF, switch_RAINBOWSLUG_front_head_consist_rear, position_in_consist_from_end){
-0: spriteset_train_RAINBOWSLUGrear;
-return spriteset_train_RAINBOWSLUGmiddle;
-}
-switch (FEAT_TRAINS, SELF, switch_RAINBOWSLUG_front_head, position_in_consist){
-0: random_RAINBOWSLUG_HEAD;
-return switch_RAINBOWSLUG_front_head_consist_rear;
-}
-
-//REVERSED mode
-switch (FEAT_TRAINS, SELF, switch_RAINBOWSLUG_rear_head_consist_rear, position_in_consist_from_end){
-0: random_RAINBOWSLUG_HEAD;
-return spriteset_train_RAINBOWSLUGmiddle;
-}
-switch (FEAT_TRAINS, SELF, switch_RAINBOWSLUG_rear_head, position_in_consist){
-0: spriteset_train_RAINBOWSLUGrear;
-return switch_RAINBOWSLUG_rear_head_consist_rear;
-}
-
-//Switches for BACKWARDS MODE chance
-switch(FEAT_TRAINS,PARENT, RAINBOWSLUG_reverse_random, (random_bits >> 5) & 0x07){
-0: switch_RAINBOWSLUG_rear_head;
-1..7: switch_RAINBOWSLUG_front_head;
-}
-
-//==============================================================================================================================
-// RAINBOW ZEBRAS
-//==============================================================================================================================
-
-	//RANDOM ZEBRA SECONDARY COLOUR
-	switch(FEAT_TRAINS,SELF,RAINBOWZEBRA_rainbowcolours,position_in_consist % 10){
-	0: base_sprite_2cc + 8 + 16 * company_colour2;//CC blue
-	1: base_sprite_2cc + 8 + 16 * company_colour2;//CC blue
-	2: base_sprite_2cc + 6 + 16 * company_colour2;//CC green
-	3: base_sprite_2cc + 6 + 16 * company_colour2;//CC green
-	4: base_sprite_2cc + 3 + 16 * company_colour2;//CC yellow
-	5: base_sprite_2cc + 3 + 16 * company_colour2;//CC yellow
-	6: base_sprite_2cc + 4 + 16 * company_colour2;//CC red
-	7: base_sprite_2cc + 4 + 16 * company_colour2;//CC red
-	8: base_sprite_2cc + 11 + 16 * company_colour2;//CC purple
-	9: base_sprite_2cc + 11 + 16 * company_colour2;//CC purple
-	}
-	
-	
-	//BLACK AND WHITE ZEBRAS + a secondary colour
-	switch(FEAT_TRAINS,SELF,RAINBOWSLUG_BLACKRAINBOWZEBRA,position_in_consist % 2){
-	1: RAINBOWZEBRA_rainbowcolours;
-	0: param[01]+16;
-	}
-	switch(FEAT_TRAINS,SELF,RAINBOWSLUG_WHITERAINBOWZEBRA,position_in_consist % 2){
-	1: RAINBOWZEBRA_rainbowcolours;
-	0: base_sprite_2cc + 15 + 16 * company_colour2;//CC white
-	}
-	
-//==============================================================================================================================
-// SOLID COLOUR ZEBRAS
-//==============================================================================================================================
-	
-	//ZEBRA COLOUR OPTIONS
-	switch(FEAT_TRAINS,SELF,RAINBOWSLUG_ZEBRA_PINK,position_in_consist % 2){
-	1: base_sprite_2cc + 2 + 16 * company_colour2;//CC pink
-	0: param[01]+16;
-	}
-	switch(FEAT_TRAINS,SELF,RAINBOWSLUG_ZEBRA_YELLOW,position_in_consist % 2){
-	1: base_sprite_2cc + 3 + 16 * company_colour2;//CC yellow
-	0: param[01]+16;
-	}
-	switch(FEAT_TRAINS,SELF,RAINBOWSLUG_ZEBRA_RED,position_in_consist % 2){
-	1: base_sprite_2cc + 4 + 16 * company_colour2;//CC red
-	0: param[01]+16;
-	}
-	switch(FEAT_TRAINS,SELF,RAINBOWSLUG_ZEBRA_GREEN,position_in_consist % 2){
-	1: base_sprite_2cc + 6 + 16 * company_colour2;//CC green
-	0: param[01]+16;
-	}
-	switch(FEAT_TRAINS,SELF,RAINBOWSLUG_ZEBRA_BLUE,position_in_consist % 2){
-	1: base_sprite_2cc + 8 + 16 * company_colour2;//CC blue
-	0: param[01]+16;
-	}
-	switch(FEAT_TRAINS,SELF,RAINBOWSLUG_ZEBRA_WHITE,position_in_consist % 2){
-	1: base_sprite_2cc + 15 + 16 * company_colour2;//CC white
-	0: param[01]+16;
-	}
-	switch(FEAT_TRAINS,SELF,RAINBOWSLUG_ZEBRA_ORANGE,position_in_consist % 2){
-	1: base_sprite_2cc + 12 + 16 * company_colour2;//CC orange
-	0: param[01]+16;
-	}
-	switch(FEAT_TRAINS,SELF,RAINBOWSLUG_ZEBRA_PURPLE,position_in_consist % 2){
-	1: base_sprite_2cc + 11 + 16 * company_colour2;//CC purple
-	0: param[01]+16;
-	}
-	
-//==============================================================================================================================
-// RAINBOW SLUGS
-//==============================================================================================================================
-	
-	//SUB-RANDOMIZER - RAINBOW SLUG colour scheme
-	switch(FEAT_TRAINS,SELF,RAINBOWSLUG_CAT,position_in_consist % 5){
-	0: base_sprite_2cc + 8 + 16 * company_colour2;//CC blue
-	1: base_sprite_2cc + 6 + 16 * company_colour2;//CC green
-	2: base_sprite_2cc + 3 + 16 * company_colour2;//CC yellow
-	3: base_sprite_2cc + 4 + 16 * company_colour2;//CC red
-	4: base_sprite_2cc + 11 + 16 * company_colour2;//CC purple
-	}
-	
-
-//==============================================================================================================================
-//MAIN RANDOMIZER
-//==============================================================================================================================
-
-switch(FEAT_TRAINS,PARENT,RAINBOWSLUG_colour_mapping_random, [
-	STORE_TEMP(position_in_consist_from_end, 0x10F),
-	var[0x61, 8, 0x1F, 0x5F] // access random bits from last vehicle in consist
-]){
-	0: base_sprite_2cc + 0 + 16 * company_colour2;//CC dark blue
-	1: base_sprite_2cc + 1 + 16 * company_colour2;//CC pale green
-	2: base_sprite_2cc + 2 + 16 * company_colour2;//CC pink
-	3: base_sprite_2cc + 3 + 16 * company_colour2;//CC yellow
-	4: base_sprite_2cc + 4 + 16 * company_colour2;//CC red
-	5: base_sprite_2cc + 5 + 16 * company_colour2;//CC light blue
-	6: base_sprite_2cc + 6 + 16 * company_colour2;//CC green
-	7: base_sprite_2cc + 7 + 16 * company_colour2;//CC dark green
-	8: base_sprite_2cc + 8 + 16 * company_colour2;//CC blue
-	9: base_sprite_2cc + 9 + 16 * company_colour2;//CC cream
-	10: base_sprite_2cc + 10 + 16 * company_colour2;//CC mauve
-	11: base_sprite_2cc + 11 + 16 * company_colour2;//CC purple
-	12: base_sprite_2cc + 12 + 16 * company_colour2;//CC orange
-	13: base_sprite_2cc + 13 + 16 * company_colour2;//CC brown
-	14: base_sprite_2cc + 14 + 16 * company_colour2;//CC gray
-	15: base_sprite_2cc + 15 + 16 * company_colour2;//CC white
-	16: RAINBOWSLUG_ZEBRA_PINK;//CC dark blue
-	17: RAINBOWSLUG_ZEBRA_YELLOW;//CC pale green
-	18: RAINBOWSLUG_ZEBRA_RED;//CC pink
-	19: RAINBOWSLUG_ZEBRA_GREEN;//CC yellow
-	20: RAINBOWSLUG_ZEBRA_BLUE;//CC red
-	21..22: RAINBOWSLUG_ZEBRA_WHITE;//CC light blue
-	23: RAINBOWSLUG_ZEBRA_ORANGE;//CC green
-	24: RAINBOWSLUG_ZEBRA_PURPLE;//CC dark green
-	25..26: RAINBOWSLUG_CAT;
-	27: param[01]+16; //BLACK
-	28..29: RAINBOWSLUG_BLACKRAINBOWZEBRA;
-	30..31: RAINBOWSLUG_WHITERAINBOWZEBRA;
-}
-	
-	
-//==============================================================================================================================	
-//CHECK FOR WETRAIL	
-	
-switch(FEAT_TRAINS, SELF, RAINBOWSLUG_wetrail_power_switch, current_railtype){
-WETR: 32500*7/10;
-32500;
-}	
-	
-	
-//==============================================================================================================================	
-
-//CHECK FOR WAGONS so they do not recolour with other engines
-switch(FEAT_TRAINS,PARENT,RAINBOWWAGONS_enginecheck,vehicle_type_id){
-item_RAINBOWSLUG: RAINBOWSLUG_colour_mapping_random;
-CB_FAILED;
-}	
-
-//==============================================================================================================================
-// ITEM
-//==============================================================================================================================
-switch (FEAT_TRAINS, SELF, switch_RAINBOWSLUG_attach, vehicle_type_id){
-	item_magpax: CB_RESULT_ATTACH_ALLOW;
-	item_maglevhopper: CB_RESULT_ATTACH_ALLOW;
-	item_maglevflatbed: CB_RESULT_ATTACH_ALLOW;
-	item_maglevtanker: CB_RESULT_ATTACH_ALLOW;
-	item_maglevuniversal: CB_RESULT_ATTACH_ALLOW;
-	item_RAINBOWSLUG: CB_RESULT_ATTACH_ALLOW;
-	string(error_attach_mglv_freight);
-}
-item(FEAT_TRAINS, item_RAINBOWSLUG, 323) { //ID323
-	property {
-		name:                         string(STR_NAME_RAINBOWSLUG);
-        climates_available:           ALL_CLIMATES;
-        introduction_date:            date(2099, 1, 1);
-        model_life:                   VEHICLE_NEVER_EXPIRES;
-        vehicle_life:                 255;
-        reliability_decay:            5;
-		//Just an engine, no refit
-        refittable_cargo_classes:     bitmask();
-        non_refittable_cargo_classes: bitmask();
-
-        loading_speed:                5;
-        cost_factor:                  10;
-        running_cost_factor:          100;
-        sprite_id:                    SPRITE_ID_NEW_TRAIN;
-        speed:                        350 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
-        refit_cost:                   0;
-        track_type:                   MGLV;
-        ai_special_flag:              AI_FLAG_CARGO;
-        power:                        20000 hp;
-        running_cost_base:            RUNNING_COST_ELECTRIC;
-        dual_headed:                  1;
-        cargo_capacity:               0;
-        weight:                       30 ton;
-        ai_engine_rank:               0;
-        engine_class:                 ENGINE_CLASS_MAGLEV;
-        extra_power_per_wagon:        0 kW;
-        tractive_effort_coefficient:  1;
-        air_drag_coefficient:         0.004;
-        length: 8;
-        visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
-        extra_weight_per_wagon:       0 ton;
-        bitmask_vehicle_info:         0;
-	}
-	graphics {
-		default: RAINBOWSLUG_reverse_random;//SLUGreverseswitch;
-		can_attach_wagon: switch_RAINBOWSLUG_attach;
-		additional_text: string(info_mglv_RAINBOW_SLUG);
-		purchase: spriteset_purchaseMenu_RAINBOWSLUG;
-		speed: 							264; //maybe for wagons later, not now
-		power: 							RAINBOWSLUG_wetrail_power_switch; //engine only
-		weight: 							100; //engine only
-		tractive_effort_coefficient:		255; //engine only
-		loading_speed:					switch_pax_loadspeed; //express engines AND all wagons
-		//cargo_capacity:					magpaxSLUG_capacity_switch; //express engines AND all wagons
-		//purchase_cargo_capacity:		magpax_capacity_switch; //express engines A
-		purchase_power: 32500;
-		cost_factor:						40; //everything
-		running_cost_factor:				100; //only engines
-		colour_mapping: RAINBOWSLUG_colour_mapping_random;
-		purchase_colour_mapping: CB_FAILED;
-				}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//#include src-includes/mglv_magice1.nml
+//#include src-includes/mglv_magice2.nml
+//#include src-includes/mglv_magice3.nml
+//#include src-includes/mglv_magice4.nml
 
 
 //==============================================================================================================================
@@ -7995,37 +6372,8 @@ spriteset (spriteset_monodefault2_wagons_gold_tail, 			"gfx/EXPRESS_wagons.png")
 
 
 
-spriteset (spriteset_magdefault1_wagons_pass, 					"gfx/magpax.png"){template_wagon16(0,7)}
-spriteset (spriteset_magdefault1_wagons_pass_tail,	 			"gfx/magpax.png"){template_wagon16(0,8)}
-spriteset (spriteset_magdefault2_wagons_pass,		 			"gfx/magpax.png"){template_wagon16(0,10)}
-spriteset (spriteset_magdefault2_wagons_pass_tail,	 			"gfx/magpax.png"){template_wagon16(0,11)}
 
-spriteset (spriteset_magdefault1_wagons_mail, 					"gfx/magpax.png"){template_wagon16(1,7)}
-spriteset (spriteset_magdefault1_wagons_mail_tail,	 			"gfx/magpax.png"){template_wagon16(1,8)}
-spriteset (spriteset_magdefault2_wagons_mail,		 			"gfx/magpax.png"){template_wagon16(1,10)}
-spriteset (spriteset_magdefault2_wagons_mail_tail,	 			"gfx/magpax.png"){template_wagon16(1,11)}
 
-spriteset (spriteset_magdefault1_wagons_gold, 					"gfx/magpax.png"){template_wagon16(2,7)}
-spriteset (spriteset_magdefault1_wagons_gold_tail,	 			"gfx/magpax.png"){template_wagon16(2,8)}
-spriteset (spriteset_magdefault2_wagons_gold,		 			"gfx/magpax.png"){template_wagon16(2,10)}
-spriteset (spriteset_magdefault2_wagons_gold_tail,	 			"gfx/magpax.png"){template_wagon16(2,11)}
-
-/*
-alternative_sprites (spriteset_magdefault1_wagons_pass, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 			{template_32bpp_vehicle4_MASK(0x00,0,"gfx_32bpp/MAG_EXPRESS_0000.png","gfx_32bpp/MAG_EXPRESS_mask_8bpp.png")}
-alternative_sprites (spriteset_magdefault1_wagons_pass_tail, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle4_MASK(0x00,0,"gfx_32bpp/MAG_EXPRESS_0000.png","gfx_32bpp/MAG_EXPRESS_mask_8bpp.png")}
-alternative_sprites (spriteset_magdefault2_wagons_pass, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 			{template_32bpp_vehicle4_MASK(0x00,0,"gfx_32bpp/MAG_EXPRESS_0000.png","gfx_32bpp/MAG_EXPRESS_mask_8bpp.png")}
-alternative_sprites (spriteset_magdefault2_wagons_pass_tail, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle4_MASK(0x00,0,"gfx_32bpp/MAG_EXPRESS_0000.png","gfx_32bpp/MAG_EXPRESS_mask_8bpp.png")}
-
-alternative_sprites (spriteset_magdefault1_wagons_mail, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 			{template_32bpp_vehicle4_MASK(0x01,0,"gfx_32bpp/MAG_EXPRESS_0000.png","gfx_32bpp/MAG_EXPRESS_mask_8bpp.png")}
-alternative_sprites (spriteset_magdefault1_wagons_mail_tail, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle4_MASK(0x01,0,"gfx_32bpp/MAG_EXPRESS_0000.png","gfx_32bpp/MAG_EXPRESS_mask_8bpp.png")}
-alternative_sprites (spriteset_magdefault2_wagons_mail, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 			{template_32bpp_vehicle4_MASK(0x01,0,"gfx_32bpp/MAG_EXPRESS_0000.png","gfx_32bpp/MAG_EXPRESS_mask_8bpp.png")}
-alternative_sprites (spriteset_magdefault2_wagons_mail_tail, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle4_MASK(0x01,0,"gfx_32bpp/MAG_EXPRESS_0000.png","gfx_32bpp/MAG_EXPRESS_mask_8bpp.png")}
-
-alternative_sprites (spriteset_magdefault1_wagons_gold, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 			{template_32bpp_vehicle4_MASK(0x02,0,"gfx_32bpp/MAG_EXPRESS_0000.png","gfx_32bpp/MAG_EXPRESS_mask_8bpp.png")}
-alternative_sprites (spriteset_magdefault1_wagons_gold_tail, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle4_MASK(0x02,0,"gfx_32bpp/MAG_EXPRESS_0000.png","gfx_32bpp/MAG_EXPRESS_mask_8bpp.png")}
-alternative_sprites (spriteset_magdefault2_wagons_gold, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 			{template_32bpp_vehicle4_MASK(0x02,0,"gfx_32bpp/MAG_EXPRESS_0000.png","gfx_32bpp/MAG_EXPRESS_mask_8bpp.png")}
-alternative_sprites (spriteset_magdefault2_wagons_gold_tail, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle4_MASK(0x02,0,"gfx_32bpp/MAG_EXPRESS_0000.png","gfx_32bpp/MAG_EXPRESS_mask_8bpp.png")}
-*/
 
 
 
@@ -8046,18 +6394,7 @@ spriteset (spriteset_monoice2_wagons_gold, 					"gfx/EXPRESS_wagons.png"){templa
 spriteset (spriteset_monoice3_wagons_gold, 					"gfx/EXPRESS_wagons.png"){template_expresswagons(14,4)}
 spriteset (spriteset_monoice4_wagons_gold, 					"gfx/EXPRESS_wagons.png"){template_expresswagons(14,6)}
 
-spriteset (spriteset_magice1_wagons_pass, 					"gfx/magpax.png"){template_wagon16(0,0)}
-spriteset (spriteset_magice2_wagons_pass, 					"gfx/magpax.png"){template_wagon16(0,1)}
-spriteset (spriteset_magice3_wagons_pass, 					"gfx/magpax.png"){template_wagon16(0,2)}
-spriteset (spriteset_magice4_wagons_pass, 					"gfx/magpax.png"){template_wagon16(0,3)}
-spriteset (spriteset_magice1_wagons_mail, 					"gfx/magpax.png"){template_wagon16(1,0)}
-spriteset (spriteset_magice2_wagons_mail, 					"gfx/magpax.png"){template_wagon16(1,1)}
-spriteset (spriteset_magice3_wagons_mail, 					"gfx/magpax.png"){template_wagon16(1,2)}
-spriteset (spriteset_magice4_wagons_mail, 					"gfx/magpax.png"){template_wagon16(1,3)}
-spriteset (spriteset_magice1_wagons_gold, 					"gfx/magpax.png"){template_wagon16(2,0)}
-spriteset (spriteset_magice2_wagons_gold, 					"gfx/magpax.png"){template_wagon16(2,1)}
-spriteset (spriteset_magice3_wagons_gold, 					"gfx/magpax.png"){template_wagon16(2,2)}
-spriteset (spriteset_magice4_wagons_gold, 					"gfx/magpax.png"){template_wagon16(2,3)}
+
 
 spriteset (spriteset_monocom1_wagons_pass, 					"gfx/EXPRESS_wagons.png"){template_expresswagons(16,0)}
 spriteset (spriteset_monocom2_wagons_pass, 					"gfx/EXPRESS_wagons.png"){template_expresswagons(16,2)}
@@ -8081,24 +6418,10 @@ spriteset (spriteset_WTF_wagons_mail_tail,				"gfx/EXPRESS_wagons.png"){template
 spriteset (spriteset_WTF_wagons_gold, 					"gfx/EXPRESS_wagons.png"){template_expresswagons(18,10)}
 spriteset (spriteset_WTF_wagons_gold_tail,				"gfx/EXPRESS_wagons.png"){template_expresswagons(18,11)}
 
-//spriteset (spriteset_SLUG_wagons_pass, 					"gfx/EXPRESS_wagons.png"){template_expresswagons(16,14)}
-//spriteset (spriteset_SLUG_wagons_mail, 					"gfx/EXPRESS_wagons.png"){template_expresswagons(17,14)}
-//spriteset (spriteset_SLUG_wagons_gold, 					"gfx/EXPRESS_wagons.png"){template_expresswagons(18,14)}
-
-spriteset (spriteset_SLUG_wagons_pass, 					"gfx/magpax.png"){template_wagon16(0,5)}
-spriteset (spriteset_SLUG_wagons_mail, 					"gfx/magpax.png"){template_wagon16(1,5)}
-spriteset (spriteset_SLUG_wagons_gold, 					"gfx/magpax.png"){template_wagon16(2,5)}
 
 
-if (param_32bpp == 1) {
-alternative_sprites (spriteset_SLUG_wagons_pass, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle4_MASK(0x03,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_SLUG_wagons_mail, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle4_MASK(0x04,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_SLUG_wagons_gold, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle4_MASK(0x05,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
 
-alternative_sprites (spriteset_SLUG_wagons_pass, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) 	{template_32bpp_x1_vehicle4_MASK(0x03,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_SLUG_wagons_mail, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) 	{template_32bpp_x1_vehicle4_MASK(0x04,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-alternative_sprites (spriteset_SLUG_wagons_gold, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) 	{template_32bpp_x1_vehicle4_MASK(0x05,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
-}//end of param_32bpp
+
 
 spriteset (spriteset_NYAN_wagons_pass, 					"gfx/EXPRESS_wagons.png"){template_expresswagons(16,12)}
 spriteset (spriteset_NYAN_wagons_mail, 					"gfx/EXPRESS_wagons.png"){template_expresswagons(17,12)}
@@ -8111,60 +6434,6 @@ spriteset (spriteset_WIDOW_wagons_gold, 				"gfx/EXPRESS_wagons.png"){template_e
 spriteset (spriteset_WIDOW_wagons_pass_tail,			"gfx/EXPRESS_wagons.png"){template_expresswagons(16,17)}
 spriteset (spriteset_WIDOW_wagons_mail_tail,			"gfx/EXPRESS_wagons.png"){template_expresswagons(17,17)}
 spriteset (spriteset_WIDOW_wagons_gold_tail,			"gfx/EXPRESS_wagons.png"){template_expresswagons(18,17)}
-//colours magcom1
-spriteset(spriteset_magcom1_wagons_CC_pass, "gfx/magCommuter1wagons.png") 		 {template_wagon16(0,0)}
-spriteset(spriteset_magcom1_wagons_black_pass, "gfx/magCommuter1wagons.png")	 {template_wagon16(0,1)}
-spriteset(spriteset_magcom1_wagons_gray_pass, "gfx/magCommuter1wagons.png")	 {template_wagon16(0,2)}
-spriteset(spriteset_magcom1_wagons_white_pass, "gfx/magCommuter1wagons.png")	 {template_wagon16(0,3)}
-spriteset(spriteset_magcom1_wagons_ltblue_pass, "gfx/magCommuter1wagons.png")	 {template_wagon16(0,4)}
-spriteset(spriteset_magcom1_wagons_blue_pass, "gfx/magCommuter1wagons.png") 	 {template_wagon16(0,5)}
-spriteset(spriteset_magcom1_wagons_darkblue_pass, "gfx/magCommuter1wagons.png") {template_wagon16(0,6)}
-spriteset(spriteset_magcom1_wagons_mauve_pass, "gfx/magCommuter1wagons.png") 	 {template_wagon16(0,7)}
-spriteset(spriteset_magcom1_wagons_purple_pass, "gfx/magCommuter1wagons.png")   {template_wagon16(0,8)}
-spriteset(spriteset_magcom1_wagons_pink_pass, "gfx/magCommuter1wagons.png")  	 {template_wagon16(0,9)}
-spriteset(spriteset_magcom1_wagons_brown_pass, "gfx/magCommuter1wagons.png") 	 {template_wagon16(0,10)}
-spriteset(spriteset_magcom1_wagons_red_pass, "gfx/magCommuter1wagons.png") 	 {template_wagon16(0,11)}
-spriteset(spriteset_magcom1_wagons_orange_pass, "gfx/magCommuter1wagons.png") 	 {template_wagon16(0,12)}
-spriteset(spriteset_magcom1_wagons_yellow_pass, "gfx/magCommuter1wagons.png") 	 {template_wagon16(0,13)}
-spriteset(spriteset_magcom1_wagons_green_pass, "gfx/magCommuter1wagons.png") 	 {template_wagon16(0,14)}
-spriteset(spriteset_magcom1_wagons_palegreen_pass, "gfx/magCommuter1wagons.png"){template_wagon16(0,15)}
-spriteset(spriteset_magcom1_wagons_darkgreen_pass, "gfx/magCommuter1wagons.png") 	 {template_wagon16(0,16)}
-
-spriteset(spriteset_magcom1_wagons_CC_mail, "gfx/magCommuter1wagons.png") 		 {template_wagon16(1,0)}
-spriteset(spriteset_magcom1_wagons_black_mail, "gfx/magCommuter1wagons.png")	 {template_wagon16(1,1)}
-spriteset(spriteset_magcom1_wagons_gray_mail, "gfx/magCommuter1wagons.png")	 {template_wagon16(1,2)}
-spriteset(spriteset_magcom1_wagons_white_mail, "gfx/magCommuter1wagons.png")	 {template_wagon16(1,3)}
-spriteset(spriteset_magcom1_wagons_ltblue_mail, "gfx/magCommuter1wagons.png")	 {template_wagon16(1,4)}
-spriteset(spriteset_magcom1_wagons_blue_mail, "gfx/magCommuter1wagons.png") 	 {template_wagon16(1,5)}
-spriteset(spriteset_magcom1_wagons_darkblue_mail, "gfx/magCommuter1wagons.png") {template_wagon16(1,6)}
-spriteset(spriteset_magcom1_wagons_mauve_mail, "gfx/magCommuter1wagons.png") 	 {template_wagon16(1,7)}
-spriteset(spriteset_magcom1_wagons_purple_mail, "gfx/magCommuter1wagons.png")   {template_wagon16(1,8)}
-spriteset(spriteset_magcom1_wagons_pink_mail, "gfx/magCommuter1wagons.png")  	 {template_wagon16(1,9)}
-spriteset(spriteset_magcom1_wagons_brown_mail, "gfx/magCommuter1wagons.png") 	 {template_wagon16(1,10)}
-spriteset(spriteset_magcom1_wagons_red_mail, "gfx/magCommuter1wagons.png") 	 {template_wagon16(1,11)}
-spriteset(spriteset_magcom1_wagons_orange_mail, "gfx/magCommuter1wagons.png") 	 {template_wagon16(1,12)}
-spriteset(spriteset_magcom1_wagons_yellow_mail, "gfx/magCommuter1wagons.png") 	 {template_wagon16(1,13)}
-spriteset(spriteset_magcom1_wagons_green_mail, "gfx/magCommuter1wagons.png") 	 {template_wagon16(1,14)}
-spriteset(spriteset_magcom1_wagons_palegreen_mail, "gfx/magCommuter1wagons.png"){template_wagon16(1,15)}
-spriteset(spriteset_magcom1_wagons_darkgreen_mail, "gfx/magCommuter1wagons.png") 	 {template_wagon16(1,16)}
-
-spriteset(spriteset_magcom1_wagons_CC_gold, "gfx/magCommuter1wagons.png") 		 {template_wagon16(2,0)}
-spriteset(spriteset_magcom1_wagons_black_gold, "gfx/magCommuter1wagons.png")	 {template_wagon16(2,1)}
-spriteset(spriteset_magcom1_wagons_gray_gold, "gfx/magCommuter1wagons.png")	 {template_wagon16(2,2)}
-spriteset(spriteset_magcom1_wagons_white_gold, "gfx/magCommuter1wagons.png")	 {template_wagon16(2,3)}
-spriteset(spriteset_magcom1_wagons_ltblue_gold, "gfx/magCommuter1wagons.png")	 {template_wagon16(2,4)}
-spriteset(spriteset_magcom1_wagons_blue_gold, "gfx/magCommuter1wagons.png") 	 {template_wagon16(2,5)}
-spriteset(spriteset_magcom1_wagons_darkblue_gold, "gfx/magCommuter1wagons.png") {template_wagon16(2,6)}
-spriteset(spriteset_magcom1_wagons_mauve_gold, "gfx/magCommuter1wagons.png") 	 {template_wagon16(2,7)}
-spriteset(spriteset_magcom1_wagons_purple_gold, "gfx/magCommuter1wagons.png")   {template_wagon16(2,8)}
-spriteset(spriteset_magcom1_wagons_pink_gold, "gfx/magCommuter1wagons.png")  	 {template_wagon16(2,9)}
-spriteset(spriteset_magcom1_wagons_brown_gold, "gfx/magCommuter1wagons.png") 	 {template_wagon16(2,10)}
-spriteset(spriteset_magcom1_wagons_red_gold, "gfx/magCommuter1wagons.png") 	 {template_wagon16(2,11)}
-spriteset(spriteset_magcom1_wagons_orange_gold, "gfx/magCommuter1wagons.png") 	 {template_wagon16(2,12)}
-spriteset(spriteset_magcom1_wagons_yellow_gold, "gfx/magCommuter1wagons.png") 	 {template_wagon16(2,13)}
-spriteset(spriteset_magcom1_wagons_green_gold, "gfx/magCommuter1wagons.png") 	 {template_wagon16(2,14)}
-spriteset(spriteset_magcom1_wagons_palegreen_gold, "gfx/magCommuter1wagons.png"){template_wagon16(2,15)}
-spriteset(spriteset_magcom1_wagons_darkgreen_gold, "gfx/magCommuter1wagons.png") 	 {template_wagon16(2,16)}
 
 //colours railcom1
 spriteset(spriteset_railcom1_wagons_CC_pass, "gfx/RailCommuter1.png") 		 {template_engine32WTF(736,0)}
@@ -8819,50 +7088,7 @@ switch (FEAT_TRAINS, SELF, switch_raildefault1_wagons_pass, position_in_consist_
 					YETY: switch_monodefault2_wagons_gold;
 					return switch_monodefault2_wagons_gold;
 				}
-										switch (FEAT_TRAINS, SELF, switch_magdefault1_wagons_pass, position_in_consist_from_end) {
-										0: spriteset_magdefault1_wagons_pass_tail;
-										return spriteset_magdefault1_wagons_pass;
-										}
-										switch (FEAT_TRAINS, SELF, switch_magdefault1_wagons_mail, position_in_consist_from_end) {
-										0: spriteset_magdefault1_wagons_mail_tail;
-										return spriteset_magdefault1_wagons_mail;
-										}
-										switch (FEAT_TRAINS, SELF, switch_magdefault1_wagons_gold, position_in_consist_from_end) {
-										0: spriteset_magdefault1_wagons_gold_tail;
-										return spriteset_magdefault1_wagons_gold;
-										}
-				switch (FEAT_TRAINS, SELF, switch_magdefault1_wagons, cargo_type_in_veh){
-					PASS: switch_magdefault1_wagons_pass;
-					MAIL: switch_magdefault1_wagons_mail;
-					VALU: switch_magdefault1_wagons_gold; //gold, valuable and diamond wagons are the same
-					GOLD: switch_magdefault1_wagons_gold;
-					DIAM: switch_magdefault1_wagons_gold;
-					YETI: switch_magdefault1_wagons_mail;
-					YETY: switch_magdefault1_wagons_gold;
-					return switch_magdefault1_wagons_gold;
-				}
-										switch (FEAT_TRAINS, SELF, switch_magdefault2_wagons_pass, position_in_consist_from_end) {
-										0: spriteset_magdefault2_wagons_pass_tail;
-										return spriteset_magdefault2_wagons_pass;
-										}
-										switch (FEAT_TRAINS, SELF, switch_magdefault2_wagons_mail, position_in_consist_from_end) {
-										0: spriteset_magdefault2_wagons_mail_tail;
-										return spriteset_magdefault2_wagons_mail;
-										}
-										switch (FEAT_TRAINS, SELF, switch_magdefault2_wagons_gold, position_in_consist_from_end) {
-										0: spriteset_magdefault2_wagons_gold_tail;
-										return spriteset_magdefault2_wagons_gold;
-										}
-				switch (FEAT_TRAINS, SELF, switch_magdefault2_wagons, cargo_type_in_veh){
-					PASS: switch_magdefault2_wagons_pass;
-					MAIL: switch_magdefault2_wagons_mail;
-					VALU: switch_magdefault2_wagons_gold; //gold, valuable and diamond wagons are the same
-					GOLD: switch_magdefault2_wagons_gold;
-					DIAM: switch_magdefault2_wagons_gold;
-					YETI: switch_magdefault2_wagons_mail;
-					YETY: switch_magdefault2_wagons_gold;
-					return switch_magdefault2_wagons_gold;
-				}
+										
 
 							switch (FEAT_TRAINS, SELF, switch_railice1_wagons_pass, position_in_consist_from_end){
 										0: spriteset_railice1_wagons_pass_tail;
@@ -9006,132 +7232,6 @@ switch (FEAT_TRAINS, SELF, switch_raildefault1_wagons_pass, position_in_consist_
 				}
 
 
-random_switch (FEAT_TRAINS, SELF, random_magcom1_wagons_pass){
-1: return spriteset_magcom1_wagons_black_pass;
-1: return spriteset_magcom1_wagons_gray_pass;
-1: return spriteset_magcom1_wagons_white_pass;
-1: return spriteset_magcom1_wagons_ltblue_pass;
-1: return spriteset_magcom1_wagons_blue_pass;
-1: return spriteset_magcom1_wagons_darkblue_pass;
-1: return spriteset_magcom1_wagons_mauve_pass;
-1: return spriteset_magcom1_wagons_purple_pass;
-1: return spriteset_magcom1_wagons_pink_pass;
-1: return spriteset_magcom1_wagons_brown_pass;
-1: return spriteset_magcom1_wagons_red_pass;
-1: return spriteset_magcom1_wagons_orange_pass;
-1: return spriteset_magcom1_wagons_yellow_pass;
-1: return spriteset_magcom1_wagons_green_pass;
-1: return spriteset_magcom1_wagons_palegreen_pass;
-1: return spriteset_magcom1_wagons_darkgreen_pass;
-}
-random_switch (FEAT_TRAINS, SELF, random_magcom1_wagons_mail){
-1: return spriteset_magcom1_wagons_black_mail;
-1: return spriteset_magcom1_wagons_gray_mail;
-1: return spriteset_magcom1_wagons_white_mail;
-1: return spriteset_magcom1_wagons_ltblue_mail;
-1: return spriteset_magcom1_wagons_blue_mail;
-1: return spriteset_magcom1_wagons_darkblue_mail;
-1: return spriteset_magcom1_wagons_mauve_mail;
-1: return spriteset_magcom1_wagons_purple_mail;
-1: return spriteset_magcom1_wagons_pink_mail;
-1: return spriteset_magcom1_wagons_brown_mail;
-1: return spriteset_magcom1_wagons_red_mail;
-1: return spriteset_magcom1_wagons_orange_mail;
-1: return spriteset_magcom1_wagons_yellow_mail;
-1: return spriteset_magcom1_wagons_green_mail;
-1: return spriteset_magcom1_wagons_palegreen_mail;
-1: return spriteset_magcom1_wagons_darkgreen_mail;
-}
-random_switch (FEAT_TRAINS, SELF, random_magcom1_wagons_gold){
-1: return spriteset_magcom1_wagons_black_gold;
-1: return spriteset_magcom1_wagons_gray_gold;
-1: return spriteset_magcom1_wagons_white_gold;
-1: return spriteset_magcom1_wagons_ltblue_gold;
-1: return spriteset_magcom1_wagons_blue_gold;
-1: return spriteset_magcom1_wagons_darkblue_gold;
-1: return spriteset_magcom1_wagons_mauve_gold;
-1: return spriteset_magcom1_wagons_purple_gold;
-1: return spriteset_magcom1_wagons_pink_gold;
-1: return spriteset_magcom1_wagons_brown_gold;
-1: return spriteset_magcom1_wagons_red_gold;
-1: return spriteset_magcom1_wagons_orange_gold;
-1: return spriteset_magcom1_wagons_yellow_gold;
-1: return spriteset_magcom1_wagons_green_gold;
-1: return spriteset_magcom1_wagons_palegreen_gold;
-1: return spriteset_magcom1_wagons_darkgreen_gold;
-}
-
-				switch(FEAT_TRAINS, SELF, switch_subtypes_magcom1_wagons_pass, cargo_subtype){
-					0: return spriteset_magcom1_wagons_CC_pass;
-					1: return random_magcom1_wagons_pass;
-					2: return spriteset_magcom1_wagons_black_pass;
-					3: return spriteset_magcom1_wagons_gray_pass;
-					4: return spriteset_magcom1_wagons_white_pass;
-					5: return spriteset_magcom1_wagons_ltblue_pass;
-					6: return spriteset_magcom1_wagons_blue_pass;
-					7: return spriteset_magcom1_wagons_darkblue_pass;
-					8: return spriteset_magcom1_wagons_mauve_pass;
-					9: return spriteset_magcom1_wagons_purple_pass;
-					10: return spriteset_magcom1_wagons_pink_pass;
-					11: return spriteset_magcom1_wagons_brown_pass;
-					12: return spriteset_magcom1_wagons_red_pass;
-					13: return spriteset_magcom1_wagons_orange_pass;
-					14: return spriteset_magcom1_wagons_yellow_pass;
-					15: return spriteset_magcom1_wagons_green_pass;
-					16: return spriteset_magcom1_wagons_palegreen_pass;
-					17: return spriteset_magcom1_wagons_darkgreen_pass;
-					return spriteset_magcom1_wagons_CC_pass;
-					}
-				switch(FEAT_TRAINS, SELF, switch_subtypes_magcom1_wagons_mail, cargo_subtype){
-					0: return spriteset_magcom1_wagons_CC_mail;
-					1: return random_magcom1_wagons_mail;
-					2: return spriteset_magcom1_wagons_black_mail;
-					3: return spriteset_magcom1_wagons_gray_mail;
-					4: return spriteset_magcom1_wagons_white_mail;
-					5: return spriteset_magcom1_wagons_ltblue_mail;
-					6: return spriteset_magcom1_wagons_blue_mail;
-					7: return spriteset_magcom1_wagons_darkblue_mail;
-					8: return spriteset_magcom1_wagons_mauve_mail;
-					9: return spriteset_magcom1_wagons_purple_mail;
-					10: return spriteset_magcom1_wagons_pink_mail;
-					11: return spriteset_magcom1_wagons_brown_mail;
-					12: return spriteset_magcom1_wagons_red_mail;
-					13: return spriteset_magcom1_wagons_orange_mail;
-					14: return spriteset_magcom1_wagons_yellow_mail;
-					15: return spriteset_magcom1_wagons_green_mail;
-					16: return spriteset_magcom1_wagons_palegreen_mail;
-					17: return spriteset_magcom1_wagons_darkgreen_mail;
-					return spriteset_magcom1_wagons_CC_mail;
-					}
-				switch(FEAT_TRAINS, SELF, switch_subtypes_magcom1_wagons_gold, cargo_subtype){
-					0: return spriteset_magcom1_wagons_CC_gold;
-					1: return random_magcom1_wagons_gold;
-					2: return spriteset_magcom1_wagons_black_gold;
-					3: return spriteset_magcom1_wagons_gray_gold;
-					4: return spriteset_magcom1_wagons_white_gold;
-					5: return spriteset_magcom1_wagons_ltblue_gold;
-					6: return spriteset_magcom1_wagons_blue_gold;
-					7: return spriteset_magcom1_wagons_darkblue_gold;
-					8: return spriteset_magcom1_wagons_mauve_gold;
-					9: return spriteset_magcom1_wagons_purple_gold;
-					10: return spriteset_magcom1_wagons_pink_gold;
-					11: return spriteset_magcom1_wagons_brown_gold;
-					12: return spriteset_magcom1_wagons_red_gold;
-					13: return spriteset_magcom1_wagons_orange_gold;
-					14: return spriteset_magcom1_wagons_yellow_gold;
-					15: return spriteset_magcom1_wagons_green_gold;
-					16: return spriteset_magcom1_wagons_palegreen_gold;
-					17: return spriteset_magcom1_wagons_darkgreen_gold;
-					return spriteset_magcom1_wagons_CC_gold;
-					}
-				switch (FEAT_TRAINS, SELF, switch_magcom1_wagons, cargo_type_in_veh){
-					PASS: switch_subtypes_magcom1_wagons_pass;
-					MAIL: switch_subtypes_magcom1_wagons_mail;
-					VALU: switch_subtypes_magcom1_wagons_gold;
-					GOLD: switch_subtypes_magcom1_wagons_gold; //gold, valuable and diamond wagons are the same
-					DIAM: switch_subtypes_magcom1_wagons_gold;
-					return switch_subtypes_magcom1_wagons_gold;
-				}
 
 
 				random_switch (FEAT_TRAINS, SELF, random_railcom1_wagons_pass){
@@ -10472,46 +8572,7 @@ random_switch (FEAT_TRAINS, SELF, random_railcom9_wagons_gold){
 					return switch_monolocal_wagonsprite;//spriteset_monocom4_wagons_gold;
 				}
 
-				switch (FEAT_TRAINS, SELF, switch_magice1_wagons, cargo_type_in_veh){
-					PASS: spriteset_magice1_wagons_pass;
-					MAIL: spriteset_magice1_wagons_mail;
-					VALU: spriteset_magice1_wagons_gold;
-					GOLD: spriteset_magice1_wagons_gold; //gold, valuable and diamond wagons are the same
-					DIAM: spriteset_magice1_wagons_gold;
-					YETI: spriteset_magice1_wagons_mail;
-					YETY: spriteset_magice1_wagons_gold;
-					return spriteset_magice1_wagons_gold;
-				}
-				switch (FEAT_TRAINS, SELF, switch_magice2_wagons, cargo_type_in_veh){
-					PASS: spriteset_magice2_wagons_pass;
-					MAIL: spriteset_magice2_wagons_mail;
-					VALU: spriteset_magice2_wagons_gold;
-					GOLD: spriteset_magice2_wagons_gold; //gold, valuable and diamond wagons are the same
-					DIAM: spriteset_magice2_wagons_gold;
-					YETI: spriteset_magice2_wagons_mail;
-					YETY: spriteset_magice2_wagons_gold;
-					return spriteset_magice2_wagons_gold;
-				}
-				switch (FEAT_TRAINS, SELF, switch_magice3_wagons, cargo_type_in_veh){
-					PASS: spriteset_magice3_wagons_pass;
-					MAIL: spriteset_magice3_wagons_mail;
-					VALU: spriteset_magice3_wagons_gold;
-					GOLD: spriteset_magice3_wagons_gold; //gold, valuable and diamond wagons are the same
-					DIAM: spriteset_magice3_wagons_gold;
-					YETI: spriteset_magice3_wagons_mail;
-					YETY: spriteset_magice3_wagons_gold;
-					return spriteset_magice3_wagons_gold;
-				}
-				switch (FEAT_TRAINS, SELF, switch_magice4_wagons, cargo_type_in_veh){
-					PASS: spriteset_magice4_wagons_pass;
-					MAIL: spriteset_magice4_wagons_mail;
-					VALU: spriteset_magice4_wagons_gold;
-					GOLD: spriteset_magice4_wagons_gold; //gold, valuable and diamond wagons are the same
-					DIAM: spriteset_magice4_wagons_gold;
-					YETI: spriteset_magice4_wagons_mail;
-					YETY: spriteset_magice4_wagons_gold;
-					return spriteset_magice4_wagons_gold;
-				}
+				
 							switch (FEAT_TRAINS, SELF, switch_WTF_wagons_pass, position_in_consist_from_end) {
 										0: spriteset_WTF_wagons_pass_tail;
 										return spriteset_WTF_wagons_pass;
@@ -10545,16 +8606,7 @@ random_switch (FEAT_TRAINS, SELF, random_railcom9_wagons_gold){
 				YETY: spriteset_NYAN_wagons_gold;
 				return	spriteset_NYAN_wagons_gold;
 				}
-				switch (FEAT_TRAINS, SELF, switch_SLUG_wagons, cargo_type_in_veh){
-				PASS: spriteset_SLUG_wagons_pass;
-				MAIL: spriteset_SLUG_wagons_mail;
-				VALU: spriteset_SLUG_wagons_gold;
-				GOLD: spriteset_SLUG_wagons_gold;
-				DIAM: spriteset_SLUG_wagons_gold;
-				YETI: spriteset_SLUG_wagons_mail;
-				YETY: spriteset_SLUG_wagons_gold;
-				return	spriteset_SLUG_wagons_gold;
-				}
+				
 
 							switch (FEAT_TRAINS, SELF, switch_WIDOW_wagons_pass, position_in_consist_from_end) {
 										0: spriteset_WIDOW_wagons_pass_tail;
@@ -10581,25 +8633,7 @@ random_switch (FEAT_TRAINS, SELF, random_railcom9_wagons_gold){
 				return	switch_WIDOW_wagons_gold;
 				}
 
-switch (FEAT_TRAINS, PARENT, switch_pax_wagons_maglev, vehicle_type_id){
-		item_SLUG:			switch_SLUG_wagons;
-		item_ANIMALEXPRESS:			switch_SLUG_wagons;
-		item_RAINBOWSLUG:	switch_SLUG_wagons;
-		item_magice1:		switch_magice1_wagons;
-		item_magice2:		switch_magice2_wagons;
-		item_magice3:		switch_magice3_wagons;
-		item_magice4:		switch_magice4_wagons;
-		item_MagCom1:		switch_magcom1_wagons;
-		item_magstrong1:	switch_magdefault1_wagons;
-		item_magstrong2:	switch_magdefault1_wagons;
-		item_magstrong3:	switch_magdefault2_wagons;
-		item_magstrong4:	switch_magdefault2_wagons;
-		item_magfast1:		switch_magdefault1_wagons;
-		item_magfast2:		switch_magdefault1_wagons;
-		item_magfast3:		switch_magdefault2_wagons;
-		item_magfast4:		switch_magdefault2_wagons;
-		return switch_magdefault1_wagons;
-	}
+
 	
 	
 	
@@ -10614,72 +8648,6 @@ switch (FEAT_TRAINS, PARENT, switch_pax_wagons_maglev, vehicle_type_id){
 
 
 //#include src-includes/mono_express_wagon.nml
-
-switch (FEAT_TRAINS, PARENT, magpax_loadspeed_switch, vehicle_type_id) {
-item_magice1: return 3;
-item_magice2: return 3;
-item_magice3: return 5;
-item_magice4: return 3;
-item_MagCom1: return 24;
-item_SLUG: return 5;
-item_ANIMALEXPRESS: return 5;
-item_RAINBOWSLUG: return 5;
-5;
-}
-switch (FEAT_TRAINS, SELF, switch_magpax_articulated, extra_callback_info1){
-1: return item_magpax;
-return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
-}
-item(FEAT_TRAINS, item_magpax, 651) { //ID651
-	property {
-		name:                         string(STR_NAME_MAGPAX);
-        climates_available:           ALL_CLIMATES;
-        introduction_date:            date(1997, 1, 1);
-        model_life:                   VEHICLE_NEVER_EXPIRES;
-        vehicle_life:                 255;
-        reliability_decay:            5;
-        refittable_cargo_classes:     bitmask(CC_PASSENGERS, CC_MAIL, CC_ARMOURED);
-        non_refittable_cargo_classes: bitmask();
-				default_cargo_type: 					PASS;
-				cargo_allow_refit:			  		[YETI, YETY];
-				loading_speed:                5;
-        cost_factor:                  10;
-        running_cost_factor:          0;
-        sprite_id:                    SPRITE_ID_NEW_TRAIN;
-        speed:                        0;
-        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
-        refit_cost:                   0;
-        track_type:                   MGLV;
-        ai_special_flag:              AI_FLAG_PASSENGER;
-        power:                        0;
-        running_cost_base:            RUNNING_COST_NONE;
-        dual_headed:                  0;
-        cargo_capacity:               30;
-        weight:                       10 ton;
-        ai_engine_rank:               0;
-        extra_power_per_wagon:        0 kW;
-        tractive_effort_coefficient:  0;
-        air_drag_coefficient:         0.004;
-        length: 4;
-        visual_effect_and_powered:    visual_effect_and_powered(VISUAL_EFFECT_DISABLE, 2, DISABLE_WAGON_POWER);
-        extra_weight_per_wagon:       0 ton;
-        bitmask_vehicle_info:         0;
-	}
-	graphics {
-		default: switch_pax_wagons_maglev;
-		articulated_part: switch_magpax_articulated;
-		cargo_subtype_text: magcom1_subtype_text;
-		cargo_capacity:   pax_global_capacity_switch;
-		additional_text: string(STR_EXPRESSWAGON);
-		purchase_cargo_capacity:   30;
-		purchase: spriteset_purchaseMenu_magpax;
-		loading_speed:		magpax_loadspeed_switch;
-		cost_factor:		60;
-		weight:				40;
-		colour_mapping: RAINBOWWAGONS_enginecheck;
-		purchase_colour_mapping: CB_FAILED;
-	}
-}
 
 
 spriteset(spriteset_purchaseMenu_CHAMELEONpax,		"gfx/PurchaseMenu.png"){template_purchaseMenu(3,26)}
@@ -11003,6 +8971,7 @@ item(FEAT_TRAINS, item_CHAMELEONpax, 510) { //ID510
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_PASSENGER;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;
@@ -12025,6 +9994,7 @@ item(FEAT_TRAINS, item_monoice1, 171) { //ID171
         misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        41000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -12092,6 +10062,7 @@ item(FEAT_TRAINS, item_monoice2, 173) { //ID173
         misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        50000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -12159,6 +10130,7 @@ item(FEAT_TRAINS, item_monoice3, 175) { //ID175
         misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        58000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -12226,6 +10198,7 @@ item(FEAT_TRAINS, item_monoice4, 177) { //ID177
         misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        65000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -12298,6 +10271,7 @@ item(FEAT_TRAINS, item_NYAN, 311) { //ID311
         misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        8000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -12386,8 +10360,6 @@ item(FEAT_TRAINS, item_NYAN, 311) { //ID311
 
 //#include src-includes/rail_freight_wagons_2_graphics.nml
 //#include src-includes/rail_freight_wagons_3_graphics.nml
-
-//#include src-includes/rail_freight_graphics.nml
 
 //#include src-includes/rail_freight_engines.nml
 
@@ -13293,6 +11265,7 @@ item(FEAT_TRAINS, item_CHAMELEONflatbed, 506) { //ID506
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              32;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;
@@ -14362,6 +12335,7 @@ item(FEAT_TRAINS, item_CHAMELEONhopper, 507) { //ID507
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              32;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;
@@ -14645,6 +12619,7 @@ item(FEAT_TRAINS, item_CHAMELEONtanker, 508) { //ID508
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              32;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;
@@ -14804,6 +12779,7 @@ item(FEAT_TRAINS, item_CHAMELEONuniversal, 509) { //ID509
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              32;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;
@@ -24107,6 +22083,7 @@ item(FEAT_TRAINS, item_SHIflatbed, 751) { //ID751
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   WETR;
+		curve_speed_mod:              32;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;
@@ -26693,6 +24670,7 @@ item(FEAT_TRAINS, item_SHIhopper, 753) { //ID753
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   WETR;
+		curve_speed_mod:              32;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;
@@ -28019,6 +25997,7 @@ item(FEAT_TRAINS, item_SHItanker, 755) { //ID755
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   WETR;
+		curve_speed_mod:              32;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;
@@ -29301,6 +27280,7 @@ item(FEAT_TRAINS, item_SHIuniversal, 757) { //ID757
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   WETR;
+		curve_speed_mod:              32;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;
@@ -29356,6 +27336,7 @@ item(FEAT_TRAINS, item_SHIexpress, 767) { //ID767
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   WETR;
+		curve_speed_mod:              32;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;
@@ -29827,6 +27808,7 @@ item(FEAT_TRAINS, item_railsuperstrong1, 1) { //ID1
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -29883,6 +27865,7 @@ item(FEAT_TRAINS, item_railsuperstrong1_rear, 380) { //ID380
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -29965,6 +27948,7 @@ item(FEAT_TRAINS, item_railsuperstrong2, 2) { //ID2
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -30020,6 +28004,7 @@ item(FEAT_TRAINS, item_railsuperstrong2_rear, 381) { //ID381
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -30101,6 +28086,7 @@ item(FEAT_TRAINS, item_railsuperstrong3, 3) { //ID3
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1000 hp;
         running_cost_base:            RUNNING_COST_DIESEL;
@@ -30156,6 +28142,7 @@ item(FEAT_TRAINS, item_railsuperstrong3_rear, 382) { //ID382
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1000 hp;
         running_cost_base:            RUNNING_COST_DIESEL;
@@ -30236,6 +28223,7 @@ item(FEAT_TRAINS, item_railsuperstrong4, 4) { //ID4
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1000 hp;
         running_cost_base:            RUNNING_COST_DIESEL;
@@ -30291,6 +28279,7 @@ item(FEAT_TRAINS, item_railsuperstrong4_rear, 383) { //ID383
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1000 hp;
         running_cost_base:            RUNNING_COST_DIESEL;
@@ -30370,9 +28359,10 @@ item(FEAT_TRAINS, item_railsuperstrong5, 5) { //ID5
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        90 km/h; // actually 140, but there are rounding errors
-        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0.2;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -30426,9 +28416,10 @@ item(FEAT_TRAINS, item_railsuperstrong5_rear, 384) { //ID384
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        90 km/h; // actually 140, but there are rounding errors
-        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0.2;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -30512,9 +28503,10 @@ item(FEAT_TRAINS, item_railsuperstrong6, 6) { //ID6
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        360 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0.2;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_DIESEL;
@@ -30569,9 +28561,10 @@ item(FEAT_TRAINS, item_railsuperstrong6_rear, 385) { //ID385
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        90 km/h; // actually 140, but there are rounding errors
-        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0.2;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1000 hp;
         running_cost_base:            RUNNING_COST_DIESEL;
@@ -30770,7 +28763,7 @@ item(FEAT_TRAINS, item_CABOOSE_1, 28) { //ID28
 	property {
 		name:                         string(STR_NAME_CABOOSE_1);
         climates_available:           ALL_CLIMATES;
-        introduction_date:            date(1950, 1, 1);
+        introduction_date:            date(1953, 1, 1);
         model_life:                   VEHICLE_NEVER_EXPIRES;
         vehicle_life:                 255;
         reliability_decay:            5;
@@ -30786,9 +28779,10 @@ item(FEAT_TRAINS, item_CABOOSE_1, 28) { //ID28
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        350 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0.2;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        20000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -31037,9 +29031,10 @@ item(FEAT_TRAINS, item_CABOOSE_2, 29) { //ID29
         running_cost_factor:          100;
         sprite_id:                    SPRITE_ID_NEW_TRAIN;
         speed:                        350 km/h;
-        misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
+        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0.2;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        20000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -31488,6 +29483,12 @@ switch(FEAT_TRAINS, SELF, switch_chameleon_engine_loadspeed, position_in_articul
 	switch_chameleon_engine_loadspeed_smaller;
 }
 
+switch(FEAT_TRAINS, SELF, switch_chameleon_curve_speed_mod, num_vehs_in_consist){
+	1..4: 432;
+	128;
+}
+
+
 //CHAMELEON
 item(FEAT_TRAINS, item_CHAMELEON1, 121) { //ID121
 	property {
@@ -31507,6 +29508,7 @@ item(FEAT_TRAINS, item_CHAMELEON1, 121) { //ID121
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        18000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -31530,6 +29532,7 @@ item(FEAT_TRAINS, item_CHAMELEON1, 121) { //ID121
 		additional_text: string(info_mono_chameleon_1);
 		articulated_part: switch_CHAMELEON1_articulated;
 		speed: 							switch_CHAMELEON1_speed;
+		curve_speed_mod: switch_chameleon_curve_speed_mod;
 		power: 							switch_CHAMELEON1_wetrail_power_switch;
 		weight: 							100; //engine only
 		tractive_effort_coefficient:		switch_CHAMELEON1_wetrail_te_switch; //engine only
@@ -31931,6 +29934,7 @@ item(FEAT_TRAINS, item_CHAMELEON2, 123) { //ID123
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        18000 hp;
         running_cost_base:            RUNNING_COST_DIESEL;
@@ -31954,6 +29958,7 @@ item(FEAT_TRAINS, item_CHAMELEON2, 123) { //ID123
 		additional_text: string(info_mono_chameleon_2);
 		articulated_part: switch_CHAMELEON2_articulated;
 		speed: 							switch_CHAMELEON2_speed;
+		curve_speed_mod: switch_chameleon_curve_speed_mod;
 		power: 							switch_CHAMELEON2_wetrail_power_switch;
 		weight: 							100; //engine only
 		tractive_effort_coefficient:		switch_CHAMELEON2_wetrail_te_switch; //engine only
@@ -32342,6 +30347,7 @@ item(FEAT_TRAINS, item_CHAMELEON3, 125) { //ID125
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        18000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -32365,6 +30371,7 @@ item(FEAT_TRAINS, item_CHAMELEON3, 125) { //ID125
 		additional_text: string(info_mono_chameleon_3);
 		articulated_part: switch_CHAMELEON3_articulated;
 		speed: 							switch_CHAMELEON3_speed;
+		curve_speed_mod: switch_chameleon_curve_speed_mod;
 		power: 							switch_CHAMELEON3_wetrail_power_switch;
 		weight: 							100; //engine only
 		tractive_effort_coefficient:		switch_CHAMELEON3_wetrail_te_switch; //engine only
@@ -32760,6 +30767,7 @@ item(FEAT_TRAINS, item_CHAMELEON4, 127) { //ID127
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        18000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -32783,6 +30791,7 @@ item(FEAT_TRAINS, item_CHAMELEON4, 127) { //ID127
 		additional_text: string(info_mono_chameleon_4);
 		articulated_part: switch_CHAMELEON4_articulated;
 		speed: 							switch_CHAMELEON4_speed;
+		curve_speed_mod: switch_chameleon_curve_speed_mod;
 		power: 							switch_CHAMELEON4_wetrail_power_switch;
 		weight: 							100; //engine only
 		tractive_effort_coefficient:		switch_CHAMELEON4_wetrail_te_switch; //engine only
@@ -33109,20 +31118,20 @@ return CB_RESULT_NO_MORE_ARTICULATED_PARTS;
 
 switch (FEAT_TRAINS, SELF, switch_CHAMELEON5_speed, num_vehs_in_consist){
 2 : 355;//TL0.5
-4 : 300;//TL1
-6 : 300 - (2 *6);//TL1.5
-8 : 300 - (4 *6);//TL2
-10: 300 - (6 *6);//TL2.5
-12: 300 - (8 *6);//TL3
-14: 300 - (10*6);//TL3.5
-16: 300 - (12*6);//TL4
-18: 300 - (14*6);//TL4.5
-20: 300 - (16*6);//TL5
-22: 300 - (18*6);//TL5.5
-24: 300 - (20*6);//TL6
-26: 300 - (22*6);//TL6.5
-28: 300 - (24*6);//TL7
-300-(25*6);
+4 : 298;//TL1
+6 : 298 - (2 *6);//TL1.5
+8 : 298 - (4 *6);//TL2
+10: 298 - (6 *6);//TL2.5
+12: 298 - (8 *6);//TL3
+14: 298 - (10*6);//TL3.5
+16: 298 - (12*6);//TL4
+18: 298 - (14*6);//TL4.5
+20: 298 - (16*6);//TL5
+22: 298 - (18*6);//TL5.5
+24: 298 - (20*6);//TL6
+26: 298 - (22*6);//TL6.5
+28: 298 - (24*6);//TL7
+298-(25*6);
 } //was 323 *7
 
 switch(FEAT_TRAINS, SELF, switch_CHAMELEON5_wetrail_power_switch, current_railtype){
@@ -33166,6 +31175,7 @@ item(FEAT_TRAINS, item_CHAMELEON5, 129) { //ID129
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        18000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -33189,6 +31199,7 @@ item(FEAT_TRAINS, item_CHAMELEON5, 129) { //ID129
 		additional_text: string(info_mono_chameleon_5);
 		articulated_part: switch_CHAMELEON5_articulated;
 		speed: 							switch_CHAMELEON5_speed;
+		curve_speed_mod: switch_chameleon_curve_speed_mod;
 		power: 							switch_CHAMELEON5_wetrail_power_switch;
 		weight: 							100; //engine only
 		tractive_effort_coefficient:		switch_CHAMELEON5_wetrail_te_switch; //engine only
@@ -33376,6 +31387,7 @@ item(FEAT_TRAINS, item_MEOWCHAMI_1, 130) { //ID130
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        18000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -33399,6 +31411,7 @@ item(FEAT_TRAINS, item_MEOWCHAMI_1, 130) { //ID130
 		additional_text: string(info_mono_MEOWCHAMI_1);
 		articulated_part: switch_MEOWCHAMI_1_articulated;
 		speed: 							MEOWCHAMI_speed_switch;
+		curve_speed_mod: switch_chameleon_curve_speed_mod;
 		power: 							MEOWCHAMI_power_switch;
 		weight: 							80; //engine only
 		tractive_effort_coefficient:			MEOWCHAMI_te_switch; //engine only
@@ -35290,6 +33303,7 @@ item(FEAT_TRAINS, item_MEOW_rail_01_tender, 781) { //ID291
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35330,6 +33344,7 @@ item(FEAT_TRAINS, item_MEOW_rail_02_tender, 782) { //ID291
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35370,6 +33385,7 @@ item(FEAT_TRAINS, item_MEOW_rail_03_tender, 783) { //ID291
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35410,6 +33426,7 @@ item(FEAT_TRAINS, item_MEOW_rail_04_tender, 784) { //ID291
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35450,6 +33467,7 @@ item(FEAT_TRAINS, item_MEOW_rail_05_tender, 785) { //ID291
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35490,6 +33508,7 @@ item(FEAT_TRAINS, item_MEOW_rail_06_tender, 786) { //ID291
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35530,6 +33549,7 @@ item(FEAT_TRAINS, item_MEOW_rail_07_tender, 787) { //ID291
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35570,6 +33590,7 @@ item(FEAT_TRAINS, item_MEOW_rail_08_tender, 788) { //ID291
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35610,6 +33631,7 @@ item(FEAT_TRAINS, item_MEOW_rail_09_tender, 789) { //ID291
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35650,6 +33672,7 @@ item(FEAT_TRAINS, item_MEOW_rail_b1_tender, 790) { //ID291
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35715,6 +33738,7 @@ item(FEAT_TRAINS, item_MEOW_rail_01, 801) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35788,6 +33812,7 @@ item(FEAT_TRAINS, item_MEOW_rail_02, 802) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35861,6 +33886,7 @@ item(FEAT_TRAINS, item_MEOW_rail_03, 803) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -35934,6 +33960,7 @@ item(FEAT_TRAINS, item_MEOW_rail_04, 804) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -36007,6 +34034,7 @@ item(FEAT_TRAINS, item_MEOW_rail_05, 805) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -36080,6 +34108,7 @@ item(FEAT_TRAINS, item_MEOW_rail_06, 806) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -36152,6 +34181,7 @@ item(FEAT_TRAINS, item_MEOW_rail_07, 807) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -36224,6 +34254,7 @@ item(FEAT_TRAINS, item_MEOW_rail_08, 808) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -36296,6 +34327,7 @@ item(FEAT_TRAINS, item_MEOW_rail_09, 809) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -36368,6 +34400,7 @@ item(FEAT_TRAINS, item_MEOW_rail_b1, 820) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              0;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -36431,6 +34464,7 @@ item(FEAT_TRAINS, item_MEOW_mono_01, 831) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -36491,6 +34525,7 @@ item(FEAT_TRAINS, item_MEOW_mono_02, 832) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -36551,6 +34586,7 @@ item(FEAT_TRAINS, item_MEOW_mono_03, 833) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -36611,6 +34647,7 @@ item(FEAT_TRAINS, item_MEOW_mono_04, 834) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -36671,6 +34708,7 @@ item(FEAT_TRAINS, item_MEOW_mono_05, 835) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -36731,6 +34769,7 @@ item(FEAT_TRAINS, item_MEOW_mono_06, 836) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -36791,6 +34830,7 @@ item(FEAT_TRAINS, item_MEOW_mono_b1, 850) {
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              0.5;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        10000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -36870,6 +34910,7 @@ item(FEAT_TRAINS, item_logicRail, 351) { //ID351
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              63;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        65000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -36914,6 +34955,7 @@ item(FEAT_TRAINS, item_logicMonorail, 361) { //ID361
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              63;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        65000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -36959,6 +35001,7 @@ item(FEAT_TRAINS, item_logicMaglev, 371) { //ID371
         misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MGLV;
+		curve_speed_mod:              63;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        65000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -37201,6 +35244,7 @@ item(FEAT_TRAINS, item_SHIarticulator, 670) { //ID670
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   WETR;
+		curve_speed_mod:              32;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;

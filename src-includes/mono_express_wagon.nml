@@ -778,6 +778,7 @@ switch_monoICE_wagon_capacity_VALU;
 }
 
 
+
 //PAX WAGON CAPACITY SWITCH
 switch (FEAT_TRAINS, PARENT, pax_global_capacity_switch, vehicle_type_id) {
 item_railcom1: railpax50_capacity_switch;
@@ -810,17 +811,12 @@ item_monoice2: switch_monoICE_wagon_capacity;
 item_monoice3: switch_monoICE_wagon_capacity;
 item_monoice4: switch_monoICE_wagon_capacity;
 
-item_magice1: magpax30_capacity_switch;
-item_magice2: magpax30_capacity_switch;
-item_magice3: magpax35_capacity_switch;
-item_magice4: magpax30_capacity_switch;
+
 
 item_doombringer: railpax40_capacity_switch;
 item_NYAN: monopax30_capacity_switch;
 item_SLUG: magpaxSLUGwagon_capacity_switch;
-item_ANIMALEXPRESS: magpaxSLUGwagon_capacity_switch;
-item_RAINBOWSLUG: magpaxSLUGwagon_capacity_switch;
-item_MagCom1: magpax_local1_wagon_capacity_switch;
+
 
 item_railsuperstrong1: railpax_cargo_capacity_switch;
 item_railsuperstrong2: railpax_cargo_capacity_switch;
@@ -871,15 +867,6 @@ item_monoWTF1: monopax_cargo_capacity_switch;
 item_monoWTF2: monopax_cargo_capacity_switch;
 item_monoWTF3: monopax_cargo_capacity_switch;
 item_monoWTF4: monopax_cargo_capacity_switch;
-
-item_magstrong1: magpax_cargo_capacity_switch;
-item_magstrong2: magpax_cargo_capacity_switch;
-item_magstrong3: magpax_cargo_capacity_switch;
-item_magstrong4: magpax_cargo_capacity_switch;
-item_magfast1: magpax_cargo_capacity_switch;
-item_magfast2: magpax_cargo_capacity_switch;
-item_magfast3: magpax_cargo_capacity_switch;
-item_magfast4: magpax_cargo_capacity_switch;
 
 90;
 }
@@ -965,6 +952,7 @@ item(FEAT_TRAINS, item_railpax, 451) { //ID451
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              32;
         ai_special_flag:              AI_FLAG_PASSENGER;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;
@@ -1147,6 +1135,7 @@ item(FEAT_TRAINS, item_monopax, 551) { //ID551
         misc_flags:                   bitmask(TRAIN_FLAG_TILT, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC, TRAIN_FLAG_MU);
         refit_cost:                   0;
         track_type:                   MONO;
+		curve_speed_mod:              32;
         ai_special_flag:              AI_FLAG_PASSENGER;
         power:                        0;
         running_cost_base:            RUNNING_COST_NONE;

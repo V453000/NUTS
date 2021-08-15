@@ -1,0 +1,224 @@
+
+//SLUGS
+
+spriteset(spriteset_purchaseMenu_SLUG, 				"gfx/PurchaseMenu.png"){template_purchaseMenu2(4,25)}
+spriteset(spriteset_train_SLUGfront, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,0)}
+spriteset(spriteset_train_SLUGrear, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,1)}
+spriteset(spriteset_train_SLUGmiddle, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,2)}
+
+alternative_sprites (spriteset_train_SLUGfront, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) 	{template_32bpp_x1_vehicle8_MASK(0x00,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUGrear, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) 	{template_32bpp_x1_vehicle8_MASK(0x01,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUGmiddle, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x02,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+
+alternative_sprites (spriteset_train_SLUGfront, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle8_MASK(0x00,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUGrear, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle8_MASK(0x01,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUGmiddle, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x02,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+
+
+switch (FEAT_TRAINS, SELF, switch_SLUG_consist_rear, position_in_consist_from_end){
+0: spriteset_train_SLUGrear;
+return spriteset_train_SLUGmiddle;
+}
+switch (FEAT_TRAINS, SELF, switch_SLUG_consist_front, position_in_consist){
+0: spriteset_train_SLUGfront;
+return switch_SLUG_consist_rear;
+}
+
+switch (FEAT_TRAINS, SELF, switch_SLUG_attach, vehicle_type_id){
+	item_magpax: CB_RESULT_ATTACH_ALLOW;
+	item_maglevhopper: CB_RESULT_ATTACH_ALLOW;
+	item_maglevflatbed: CB_RESULT_ATTACH_ALLOW;
+	item_maglevtanker: CB_RESULT_ATTACH_ALLOW;
+	item_maglevuniversal: CB_RESULT_ATTACH_ALLOW;
+	item_SLUG: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mglv_freight);
+}
+
+item(FEAT_TRAINS, item_SLUG, 321) { //ID321
+	property {
+		name:                         string(STR_NAME_SLUG);
+        climates_available:           ALL_CLIMATES;
+        introduction_date:            date(2069, 1, 1);
+        model_life:                   VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                 255;
+        reliability_decay:            5;
+		//Just an engine, no refit
+        refittable_cargo_classes:     bitmask();
+        non_refittable_cargo_classes: bitmask();
+
+        loading_speed:                5;
+        cost_factor:                  10;
+        running_cost_factor:          100;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        speed:                        350 km/h;
+        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
+        refit_cost:                   0;
+        track_type:                   MGLV;
+		curve_speed_mod:              1;
+        ai_special_flag:              AI_FLAG_CARGO;
+        power:                        20000 hp;
+        running_cost_base:            RUNNING_COST_ELECTRIC;
+        dual_headed:                  1;
+        cargo_capacity:               0;
+        weight:                       30 ton;
+        ai_engine_rank:               0;
+        engine_class:                 ENGINE_CLASS_MAGLEV;
+        extra_power_per_wagon:        0 kW;
+        tractive_effort_coefficient:  1;
+        air_drag_coefficient:         0.004;
+        length: 8;
+        visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
+        extra_weight_per_wagon:       0 ton;
+        bitmask_vehicle_info:         0;
+	}
+	graphics {
+		default: switch_SLUG_consist_front;//SLUGreverseswitch;
+		can_attach_wagon: switch_SLUG_attach;
+		additional_text: string(info_mglv_SLUG);
+		purchase: spriteset_purchaseMenu_SLUG;
+		speed: 							264; //maybe for wagons later, not now
+		power: 							32500; //engine only
+		weight: 							100; //engine only
+		tractive_effort_coefficient:		255; //engine only
+		loading_speed:					switch_pax_loadspeed; //express engines AND all wagons
+		//cargo_capacity:					magpaxSLUG_capacity_switch; //express engines AND all wagons
+		//purchase_cargo_capacity:		magpax_capacity_switch; //express engines A
+		cost_factor:						40; //everything
+		running_cost_factor:				100; //only engines
+		purchase_power: 32500;
+		}
+
+}
+
+
+spriteset(spriteset_purchaseMenu_SLUG2, 				"gfx/PurchaseMenu.png"){template_purchaseMenu2(5,25)}
+spriteset(spriteset_train_SLUG2rear, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,5)}
+spriteset(spriteset_train_SLUG2front1, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,6)}
+spriteset(spriteset_train_SLUG2front2, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,7)}
+spriteset(spriteset_train_SLUG2front3, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,8)}
+spriteset(spriteset_train_SLUG2front4, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,9)}
+spriteset(spriteset_train_SLUG2front5, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,10)}
+spriteset(spriteset_train_SLUG2front6, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,11)}
+spriteset(spriteset_train_SLUG2front7, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,12)}
+spriteset(spriteset_train_SLUG2front8, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,13)}
+spriteset(spriteset_train_SLUG2front9, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,14)}
+spriteset(spriteset_train_SLUG2front10, "gfx/SLUGwtf2.png") {template_engine32WTF_SLUG2(0,15)}
+
+
+alternative_sprites (spriteset_train_SLUG2rear, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) 	{template_32bpp_vehicle8_MASK(0x01,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUG2front1, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x10,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUG2front2, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x11,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUG2front3, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x12,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUG2front4, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x13,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUG2front5, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x14,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUG2front6, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x15,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUG2front7, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x16,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUG2front8, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x17,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUG2front9, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x18,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUG2front10, ZOOM_LEVEL_IN_4X, BIT_DEPTH_32BPP) {template_32bpp_vehicle8_MASK(0x19,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+
+alternative_sprites (spriteset_train_SLUG2rear, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) 	{template_32bpp_x1_vehicle8_MASK(0x01,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUG2front1, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x10,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUG2front2, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x11,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUG2front3, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x12,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUG2front4, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x13,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUG2front5, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x14,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUG2front6, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x15,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUG2front7, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x16,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUG2front8, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x17,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUG2front9, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x18,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+alternative_sprites (spriteset_train_SLUG2front10, ZOOM_LEVEL_NORMAL, BIT_DEPTH_32BPP) {template_32bpp_x1_vehicle8_MASK(0x19,0,"gfx_32bpp/SLUG_0000.png","gfx_32bpp/SLUG_mask_8bpp.png")}
+
+
+random_switch(FEAT_TRAINS,SELF,SLUG2frontrandom){
+3: spriteset_train_SLUG2front1;
+3: spriteset_train_SLUG2front2;
+3: spriteset_train_SLUG2front3;
+3: spriteset_train_SLUG2front4;
+1: spriteset_train_SLUG2front5;
+3: spriteset_train_SLUG2front6;
+3: spriteset_train_SLUG2front7;
+3: spriteset_train_SLUG2front8;
+3: spriteset_train_SLUG2front9;
+1: spriteset_train_SLUG2front10;
+}
+
+switch (FEAT_TRAINS, SELF, switch_SLUG2_consist_rear, position_in_consist_from_end){
+0: spriteset_train_SLUG2rear;
+return spriteset_train_SLUGmiddle;
+}
+switch (FEAT_TRAINS, SELF, switch_SLUG2_consist_front, position_in_consist){
+0: SLUG2frontrandom;
+return switch_SLUG2_consist_rear;
+}
+switch(FEAT_TRAINS, SELF, SLUG2_wetrail_power_switch, current_railtype){
+WETR: 28000*7/10;
+28000;
+}
+
+switch (FEAT_TRAINS, SELF, switch_ANIMALEXPRESS_attach, vehicle_type_id){
+	item_magpax: CB_RESULT_ATTACH_ALLOW;
+	item_maglevhopper: CB_RESULT_ATTACH_ALLOW;
+	item_maglevflatbed: CB_RESULT_ATTACH_ALLOW;
+	item_maglevtanker: CB_RESULT_ATTACH_ALLOW;
+	item_maglevuniversal: CB_RESULT_ATTACH_ALLOW;
+	item_ANIMALEXPRESS: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mglv_freight);
+}
+
+
+item(FEAT_TRAINS, item_ANIMALEXPRESS, 319) { //ID323
+	property {
+		name:                         string(STR_NAME_SLUG2);
+        climates_available:           ALL_CLIMATES;
+        introduction_date:            date(2016, 1, 1);
+        model_life:                   VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                 255;
+        reliability_decay:            5;
+		//Just an engine, no refit
+        refittable_cargo_classes:     bitmask();
+        non_refittable_cargo_classes: bitmask();
+
+        loading_speed:                5;
+        cost_factor:                  10;
+        running_cost_factor:          100;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        speed:                        350 km/h;
+        misc_flags:                   bitmask(TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
+        refit_cost:                   0;
+        track_type:                   MGLV;
+		curve_speed_mod:              1.4;
+        ai_special_flag:              AI_FLAG_CARGO;
+        power:                        20000 hp;
+        running_cost_base:            RUNNING_COST_ELECTRIC;
+        dual_headed:                  1;
+        cargo_capacity:               0;
+        weight:                       30 ton;
+        ai_engine_rank:               0;
+        engine_class:                 ENGINE_CLASS_MAGLEV;
+        extra_power_per_wagon:        0 kW;
+        tractive_effort_coefficient:  1;
+        air_drag_coefficient:         0.004;
+        length: 8;
+        visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
+        extra_weight_per_wagon:       0 ton;
+        bitmask_vehicle_info:         0;
+	}
+	graphics {
+		default: switch_SLUG2_consist_front;
+		can_attach_wagon: switch_ANIMALEXPRESS_attach;
+		additional_text: string(ingo_mglv_animal_express);
+		purchase: spriteset_purchaseMenu_SLUG2;
+		speed: 							211; //maybe for wagons later, not now
+		power: 							SLUG2_wetrail_power_switch; //engine only
+		weight: 							100; //engine only
+		tractive_effort_coefficient:		255; //engine only
+		loading_speed:					switch_pax_loadspeed; //express engines AND all wagons
+		//cargo_capacity:					magpaxSLUG_capacity_switch; //express engines AND all wagons
+		//purchase_cargo_capacity:		magpax_capacity_switch; //express engines A
+		cost_factor:						34; //everything
+		running_cost_factor:				100; //only engines
+		purchase_power: 28000;
+		}
+
+}

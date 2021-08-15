@@ -1,4 +1,9 @@
-
+switch(FEAT_TRAINS, SELF, switch_mglv_strong4_curve_speed, num_vehs_in_consist) {
+    1..4:   667; //TL1
+    5..6:   423;
+    7..8:   304; //TL2
+    256;
+}
 switch (FEAT_TRAINS, SELF, switch_mglv_strong4_attach, vehicle_type_id){
 	item_magstrong4:      CB_RESULT_ATTACH_ALLOW;
 	
@@ -36,6 +41,7 @@ item(FEAT_TRAINS, item_magstrong4, 217) { //ID217
         misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   MGLV;
+		curve_speed_mod:              1;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        22000 hp;
         running_cost_base:            RUNNING_COST_ELECTRIC;
@@ -57,6 +63,7 @@ item(FEAT_TRAINS, item_magstrong4, 217) { //ID217
 		can_attach_wagon: switch_mglv_strong4_attach;
 		additional_text: string(info_mglv_medium_4);
 		speed: 							400; //maybe for wagons later, not now
+        curve_speed_mod: switch_mglv_strong4_curve_speed;
 		
 		weight: 							50; //engine only
 		tractive_effort_coefficient:		255; //engine only

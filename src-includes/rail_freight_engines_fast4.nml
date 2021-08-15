@@ -74,6 +74,7 @@ item(FEAT_TRAINS, item_railfast4, 57) { //ID57
         misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.50;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        1300 hp;
         running_cost_base:            RUNNING_COST_DIESEL;
@@ -100,7 +101,7 @@ item(FEAT_TRAINS, item_railfast4, 57) { //ID57
 		can_attach_wagon: switch_railfast4_attach;
 		additional_text: string(info_rail_fast_4);
 		speed: 								170;
-		power: 								3200/2; //engine only
+		power: 								3200/2*3/2; //engine only
 		weight: 							80; //engine only
 		tractive_effort_coefficient:			56; //engine only
 		cost_factor:						12; //everything

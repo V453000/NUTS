@@ -1,0 +1,86 @@
+
+//MAGLEV ICE 4
+
+//#include src-generated/magice4_graphics.nml
+
+switch(FEAT_TRAINS, SELF, magice4_wetrail_power_switch, current_railtype){
+WETR: 25000*7/10;
+25000;
+}
+
+switch(FEAT_TRAINS, SELF, switch_magice4_attach, vehicle_type_id){
+	item_magice4:            CB_RESULT_ATTACH_ALLOW;
+	item_magpax: CB_RESULT_ATTACH_ALLOW;
+	string(error_attach_mglv_express);
+}
+
+switch(FEAT_TRAINS, SELF, switch_magice4_curve_speed, num_vehs_in_consist) {
+    1..4:   667; //TL1
+    5..6:   423;
+    7..8:   304; //TL2
+    256;
+}
+
+switch (FEAT_TRAINS, SELF, switch_magice4_articulated, extra_callback_info1){
+	1: item_magice4;
+	2: item_magice4;
+	3: item_magice4;
+	CB_RESULT_NO_MORE_ARTICULATED_PARTS;
+}
+
+item(FEAT_TRAINS, item_magice4, 277) { //ID277
+	property {
+		name:                         string(STR_NAME_MagICE4);
+        climates_available:           ALL_CLIMATES;
+        introduction_date:            date(2059, 1, 1);
+        model_life:                   VEHICLE_NEVER_EXPIRES;
+        vehicle_life:                 255;
+        reliability_decay:            5;
+				cargo_capacity:               30;
+        refittable_cargo_classes:     bitmask(CC_PASSENGERS, CC_MAIL, CC_ARMOURED);
+        non_refittable_cargo_classes: bitmask();
+        default_cargo_type:			  		PASS;
+				cargo_allow_refit:		     		[YETI, YETY];
+        loading_speed:                5;
+        cost_factor:                  10;
+        running_cost_factor:          100;
+        sprite_id:                    SPRITE_ID_NEW_TRAIN;
+        speed:                        666 km/h;
+        misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_MU, TRAIN_FLAG_2CC);
+        refit_cost:                   0;
+        track_type:                   MGLV;
+		curve_speed_mod:              1;
+        ai_special_flag:              AI_FLAG_CARGO;
+        power:                        35000 hp;
+        running_cost_base:            RUNNING_COST_ELECTRIC;
+        dual_headed:                  0;
+
+        weight:                       110 ton;
+        ai_engine_rank:               0;
+        engine_class:                 ENGINE_CLASS_MAGLEV;
+        extra_power_per_wagon:        0 kW;
+        tractive_effort_coefficient:  0;
+        air_drag_coefficient:         0.004;
+        length: 4;
+        visual_effect_and_powered:    visual_effect_and_powered(1, 2, DISABLE_WAGON_POWER);
+        extra_weight_per_wagon:       0 ton;
+        bitmask_vehicle_info:         0;
+	}
+	graphics {
+		default: magice4_graphics;
+		purchase: spriteset_purchaseMenu_magice4;
+		can_attach_wagon: switch_magice4_attach;
+		cargo_capacity: magice_capacity_switch;
+		//purchase_cargo_capacity: 10;
+		additional_text: string(info_mglv_intercity_4);
+		speed: 							400; //maybe for wagons later, not now
+    curve_speed_mod: switch_magice4_curve_speed;
+		power: 							magice4_wetrail_power_switch; //engine only
+		weight: 							100; //engine only
+		tractive_effort_coefficient:		255; //engine only
+		loading_speed:					switch_pax_loadspeed; //express engines AND all wagons
+		cost_factor:						36; //everything
+		running_cost_factor:				100; //only engines
+    articulated_part: switch_magice4_articulated;
+		}
+}

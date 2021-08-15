@@ -71,6 +71,7 @@ item(FEAT_TRAINS, item_railfast1, 51) {
         misc_flags:                   bitmask(TRAIN_FLAG_SPRITE_STACK, TRAIN_FLAG_FLIP, TRAIN_FLAG_2CC);
         refit_cost:                   0;
         track_type:                   RAIL;
+		curve_speed_mod:              -0.50;
         ai_special_flag:              AI_FLAG_CARGO;
         power:                        500 hp;
         running_cost_base:            RUNNING_COST_STEAM;
@@ -99,7 +100,7 @@ item(FEAT_TRAINS, item_railfast1, 51) {
 		can_attach_wagon: switch_railfast1_attach;
 		additional_text: string(info_rail_fast_1);
 		speed: 								120; //maybe for wagons later, not now
-		power: 								1200/2; //engine only
+		power: 								1200/2*3/2; //engine only
 		weight: 							80; //engine only
 		tractive_effort_coefficient:		24; //engine only
 		cost_factor:						9; //everything
