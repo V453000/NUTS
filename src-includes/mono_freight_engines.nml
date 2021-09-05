@@ -220,9 +220,9 @@ switch(FEAT_TRAINS, SELF, switch_mono_freight_engine_capacity, cargo_type_in_veh
   15;
 }
 switch(FEAT_TRAINS, SELF, switch_mono_freight_engine_loadspeed, cargo_type_in_veh){
-  PASS: 3;
-  GOOD: 3;
-  3;
+  PASS: 4;
+  GOOD: 4;
+  4;
 }
 
 

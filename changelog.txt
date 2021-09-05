@@ -1,3 +1,6 @@
+0.8.6
+	Loading speed of monorail freight wagon and engine was inconsistent. Fixed for 4 loading stages.
+
 0.8.5
 	### Started making use of curve_speed_mod property for vehicles ###
 	
