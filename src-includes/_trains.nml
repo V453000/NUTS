@@ -9058,7 +9058,7 @@ item(FEAT_TRAINS, item_CHAMELEONpax, 510) { //ID510
 
 
 switch (FEAT_TRAINS, SELF, monoice_loadspeed_switch, cargo_type_in_veh) {
-PASS: 1;
+PASS: 2;
 MAIL: 1;
 VALU: 1;
 GOLD: 1;

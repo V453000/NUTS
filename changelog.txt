@@ -1,3 +1,7 @@
+0.8.6
+	Loading speed of monorail freight wagon and engine was inconsistent. Fixed for 4 loading stages.
+	Monorail intercity engines load passengers a little bit faster so they don't delay wagons.
+
 0.8.5
 	### Started making use of curve_speed_mod property for vehicles ###
 	
